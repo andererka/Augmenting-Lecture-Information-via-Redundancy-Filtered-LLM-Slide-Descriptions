@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testset name="MCIF-Custom" type="source">
+  <task track="long" text_lang="en">
+    <sample id="0" iid="CUSTOM_QA_0" task="QA">
+      <instruction>Answer the following question concisely given the English content: Which formulas are presented in the talk?</instruction>
+      <audio_path>BIdHavzwsU.wav</audio_path>
+      <video_path>BIdHavzwsU.mp4</video_path>
+      <text_path>BIdHavzwsU.en</text_path>
+    </sample>
+    <sample id="1" iid="CUSTOM_QA_1" task="QA">
+      <instruction>Answer the following question concisely given the English content: Name the 5 criteria for attractive NLP Projects</instruction>
+      <audio_path>BIdHavzwsU.wav</audio_path>
+      <video_path>BIdHavzwsU.mp4</video_path>
+      <text_path>BIdHavzwsU.en</text_path>
+    </sample>
+    <sample id="2" iid="CUSTOM_QA_2" task="QA">
+      <instruction>Answer the following question concisely given the English content: What is the mathematical formula for word-level KD (or logits KD)?</instruction>
+      <audio_path>BIdHavzwsU.wav</audio_path>
+      <video_path>BIdHavzwsU.mp4</video_path>
+      <text_path>BIdHavzwsU.en</text_path>
+    </sample>
+    <sample id="3" iid="CUSTOM_QA_3" task="QA">
+      <instruction>Answer the following question concisely given the English content: Is the Macro-F1 score for the AG News higher for Original or for CC?</instruction>
+      <audio_path>CEQmOPEoZZ.wav</audio_path>
+      <video_path>CEQmOPEoZZ.mp4</video_path>
+      <text_path>CEQmOPEoZZ.en</text_path>
+    </sample>
+    <sample id="4" iid="CUSTOM_QA_4" task="QA">
+      <instruction>Answer the following question concisely given the English content: What are the layers of the audio-visual meta-mapper network?</instruction>
+      <audio_path>CPfTgsOEan.wav</audio_path>
+      <video_path>CPfTgsOEan.mp4</video_path>
+      <text_path>CPfTgsOEan.en</text_path>
+    </sample>
+    <sample id="5" iid="CUSTOM_QA_5" task="QA">
+      <instruction>Answer the following question concisely given the English content: What is the motivation behind the work presented?</instruction>
+      <audio_path>CPfTgsOEan.wav</audio_path>
+      <video_path>CPfTgsOEan.mp4</video_path>
+      <text_path>CPfTgsOEan.en</text_path>
+    </sample>
+    <sample id="6" iid="CUSTOM_QA_6" task="QA">
+      <instruction>Answer the following question concisely given the English content: What is the Bleu-1 score for TAVT (A_recc) for MSR-VTT (multi-modal)?</instruction>
+      <audio_path>CPfTgsOEan.wav</audio_path>
+      <video_path>CPfTgsOEan.mp4</video_path>
+      <text_path>CPfTgsOEan.en</text_path>
+    </sample>
+    <sample id="7" iid="CUSTOM_QA_7" task="QA">
+      <instruction>Answer the following question concisely given the English content: What are the cross domains of the dataset presented?</instruction>
+      <audio_path>CPfTgsOEan.wav</audio_path>
+      <video_path>CPfTgsOEan.mp4</video_path>
+      <text_path>CPfTgsOEan.en</text_path>
+    </sample>
+    <sample id="8" iid="CUSTOM_QA_8" task="QA">
+      <instruction>Answer the following question concisely given the English content: Which actions of a man does the example video for Zero-shot Temporal Sentence Localization show?</instruction>
+      <audio_path>DIsuMwxeqw.wav</audio_path>
+      <video_path>DIsuMwxeqw.mp4</video_path>
+      <text_path>DIsuMwxeqw.en</text_path>
+    </sample>
+    <sample id="9" iid="CUSTOM_QA_9" task="QA">
+      <instruction>Answer the following question concisely given the English content: Describe the graph about pseudo event generation.</instruction>
+      <audio_path>DIsuMwxeqw.wav</audio_path>
+      <video_path>DIsuMwxeqw.mp4</video_path>
+      <text_path>DIsuMwxeqw.en</text_path>
+    </sample>
+    <sample id="10" iid="CUSTOM_QA_10" task="QA">
+      <instruction>Answer the following question concisely given the English content: Based on the table, what was the score performance of SPL on the mIoU dataset?</instruction>
+      <audio_path>DIsuMwxeqw.wav</audio_path>
+      <video_path>DIsuMwxeqw.mp4</video_path>
+      <text_path>DIsuMwxeqw.en</text_path>
+    </sample>
+    <sample id="11" iid="CUSTOM_QA_11" task="QA">
+      <instruction>Answer the following question concisely given the English content: To which two kinds of audiences does the Message go in the graph about the speaker and the meaning?</instruction>
+      <audio_path>DIvTWvVcoq.wav</audio_path>
+      <video_path>DIvTWvVcoq.mp4</video_path>
+      <text_path>DIvTWvVcoq.en</text_path>
+    </sample>
+    <sample id="12" iid="CUSTOM_QA_12" task="QA">
+      <instruction>Answer the following question concisely given the English content: Based on the graph about the proportion of speeches containing dogwhistles in the US: Which events or politicians led to increases?</instruction>
+      <audio_path>DIvTWvVcoq.wav</audio_path>
+      <video_path>DIvTWvVcoq.mp4</video_path>
+      <text_path>DIvTWvVcoq.en</text_path>
+    </sample>
+    <sample id="13" iid="CUSTOM_QA_13" task="QA">
+      <instruction>Answer the following question concisely given the English content: Based on the graph about conversatism over time, which terms are more associated with conservatism over time? Which less?</instruction>
+      <audio_path>DIvTWvVcoq.wav</audio_path>
+      <video_path>DIvTWvVcoq.mp4</video_path>
+      <text_path>DIvTWvVcoq.en</text_path>
+    </sample>
+    <sample id="14" iid="CUSTOM_QA_14" task="QA">
+      <instruction>Answer the following question concisely given the English content: What is the peercentage of dogwhistles surfaces from GPT-3, coming from the authors glossary?</instruction>
+      <audio_path>DIvTWvVcoq.wav</audio_path>
+      <video_path>DIvTWvVcoq.mp4</video_path>
+      <text_path>DIvTWvVcoq.en</text_path>
+    </sample>
+    <sample id="15" iid="CUSTOM_QA_15" task="QA">
+      <instruction>Answer the following question concisely given the English content: Did GPT identify more than 50% covert meaning in the formal register, for the conditin 'only secret cue'?</instruction>
+      <audio_path>DIvTWvVcoq.wav</audio_path>
+      <video_path>DIvTWvVcoq.mp4</video_path>
+      <text_path>DIvTWvVcoq.en</text_path>
+    </sample>
+    <sample id="16" iid="CUSTOM_QA_16" task="QA">
+      <instruction>Answer the following question concisely given the English content: What are the three references for datasets and models having positionality??</instruction>
+      <audio_path>DyXpuURBMP.wav</audio_path>
+      <video_path>DyXpuURBMP.mp4</video_path>
+      <text_path>DyXpuURBMP.en</text_path>
+    </sample>
+    <sample id="17" iid="CUSTOM_QA_17" task="QA">
+      <instruction>Answer the following question concisely given the English content: Which different demographics are included in the analysis in the framework graph presented?</instruction>
+      <audio_path>DyXpuURBMP.wav</audio_path>
+      <video_path>DyXpuURBMP.mp4</video_path>
+      <text_path>DyXpuURBMP.en</text_path>
+    </sample>
+    <sample id="18" iid="CUSTOM_QA_18" task="QA">
+      <instruction>Answer the following question concisely given the English content: Which label is circled in gold color for the example 'Eating with Hands' in the framwork presented?</instruction>
+      <audio_path>DyXpuURBMP.wav</audio_path>
+      <video_path>DyXpuURBMP.mp4</video_path>
+      <text_path>DyXpuURBMP.en</text_path>
+    </sample>
+    <sample id="19" iid="CUSTOM_QA_19" task="QA">
+      <instruction>Answer the following question concisely given the English content: Are datasets and models more aligned to college or high school people?</instruction>
+      <audio_path>DyXpuURBMP.wav</audio_path>
+      <video_path>DyXpuURBMP.mp4</video_path>
+      <text_path>DyXpuURBMP.en</text_path>
+    </sample>
+    <sample id="20" iid="CUSTOM_QA_20" task="QA">
+      <instruction>Answer the following question concisely given the English content: Are datasets and models more aligned to pre-high school or PhD?</instruction>
+      <audio_path>DyXpuURBMP.wav</audio_path>
+      <video_path>DyXpuURBMP.mp4</video_path>
+      <text_path>DyXpuURBMP.en</text_path>
+    </sample>
+    <sample id="21" iid="CUSTOM_QA_21" task="QA">
+      <instruction>Answer the following question concisely given the English content: What was the QFE score for the Editor model based on the table on Factual Error Detection and Correction?</instruction>
+      <audio_path>ENFYRpspKg.wav</audio_path>
+      <video_path>ENFYRpspKg.mp4</video_path>
+      <text_path>ENFYRpspKg.en</text_path>
+    </sample>
+    <sample id="22" iid="CUSTOM_QA_22" task="QA">
+      <instruction>Answer the following question concisely given the English content: How is the component called from where an arrow points to trigger number in the graph presented for EmbMarker?</instruction>
+      <audio_path>EqmWoxNDIr.wav</audio_path>
+      <video_path>EqmWoxNDIr.mp4</video_path>
+      <text_path>EqmWoxNDIr.en</text_path>
+    </sample>
+    <sample id="23" iid="CUSTOM_QA_23" task="QA">
+      <instruction>Answer the following question concisely given the English content: Name the four categories in which existing work was classified</instruction>
+      <audio_path>EqmWoxNDIr.wav</audio_path>
+      <video_path>EqmWoxNDIr.mp4</video_path>
+      <text_path>EqmWoxNDIr.en</text_path>
+    </sample>
+    <sample id="24" iid="CUSTOM_QA_24" task="QA">
+      <instruction>Answer the following question concisely given the English content: What is the formula for the similarity difference metric of EmbMarker?</instruction>
+      <audio_path>EqmWoxNDIr.wav</audio_path>
+      <video_path>EqmWoxNDIr.mp4</video_path>
+      <text_path>EqmWoxNDIr.en</text_path>
+    </sample>
+    <sample id="25" iid="CUSTOM_QA_25" task="QA">
+      <instruction>Answer the following question concisely given the English content: According to the table, what is the similarity difference value for the SST2 dataset for the EmbMarker method?</instruction>
+      <audio_path>EqmWoxNDIr.wav</audio_path>
+      <video_path>EqmWoxNDIr.mp4</video_path>
+      <text_path>EqmWoxNDIr.en</text_path>
+    </sample>
+    <sample id="26" iid="CUSTOM_QA_26" task="QA">
+      <instruction>Answer the following question concisely given the English content: Based on the graph about the EmbMarker, name the depicted components of the watermark injection</instruction>
+      <audio_path>EqmWoxNDIr.wav</audio_path>
+      <video_path>EqmWoxNDIr.mp4</video_path>
+      <text_path>EqmWoxNDIr.en</text_path>
+    </sample>
+    <sample id="27" iid="CUSTOM_QA_27" task="QA">
+      <instruction>Answer the following question concisely given the English content: According to the graph presented in the introduction,  which benchmark performed best?</instruction>
+      <audio_path>EsdybtoHYe.wav</audio_path>
+      <video_path>EsdybtoHYe.mp4</video_path>
+      <text_path>EsdybtoHYe.en</text_path>
+    </sample>
+    <sample id="28" iid="CUSTOM_QA_28" task="QA">
+      <instruction>Answer the following question concisely given the English content: What adds to an increase of evidence of models brittleness?</instruction>
+      <audio_path>EsdybtoHYe.wav</audio_path>
+      <video_path>EsdybtoHYe.mp4</video_path>
+      <text_path>EsdybtoHYe.en</text_path>
+    </sample>
+    <sample id="29" iid="CUSTOM_QA_29" task="QA">
+      <instruction>Answer the following question concisely given the English content: Describe the graph given as example for the reasoning type 'One hop'</instruction>
+      <audio_path>FHHyKHgcbZ.wav</audio_path>
+      <video_path>FHHyKHgcbZ.mp4</video_path>
+      <text_path>FHHyKHgcbZ.en</text_path>
+    </sample>
+    <sample id="30" iid="CUSTOM_QA_30" task="QA">
+      <instruction>Answer the following question concisely given the English content: According to the table for the baseline experiments, what was the total score for GEAR, with evidence input type?</instruction>
+      <audio_path>FHHyKHgcbZ.wav</audio_path>
+      <video_path>FHHyKHgcbZ.mp4</video_path>
+      <text_path>FHHyKHgcbZ.en</text_path>
+    </sample>
+    <sample id="31" iid="CUSTOM_QA_31" task="QA">
+      <instruction>Answer the following question concisely given the English content: What are the five types of reasoning on Knowledge Graphs?</instruction>
+      <audio_path>FHHyKHgcbZ.wav</audio_path>
+      <video_path>FHHyKHgcbZ.mp4</video_path>
+      <text_path>FHHyKHgcbZ.en</text_path>
+    </sample>
+    <sample id="32" iid="CUSTOM_QA_32" task="QA">
+      <instruction>Answer the following question concisely given the English content: Which 5 datasets are described in the analysis?</instruction>
+      <audio_path>GPKqavlRfX.wav</audio_path>
+      <video_path>GPKqavlRfX.mp4</video_path>
+      <text_path>GPKqavlRfX.en</text_path>
+    </sample>
+    <sample id="33" iid="CUSTOM_QA_33" task="QA">
+      <instruction>Answer the following question concisely given the English content: What is the percentage of positive labels and negative labels for the SAMSum dataset, according to the pie chart?</instruction>
+      <audio_path>GPKqavlRfX.wav</audio_path>
+      <video_path>GPKqavlRfX.mp4</video_path>
+      <text_path>GPKqavlRfX.en</text_path>
+    </sample>
+    <sample id="34" iid="CUSTOM_QA_34" task="QA">
+      <instruction>Answer the following question concisely given the English content: List the rooms shown in the floor plan with their belonging color</instruction>
+      <audio_path>GzwcngoTzb.wav</audio_path>
+      <video_path>GzwcngoTzb.mp4</video_path>
+      <text_path>GzwcngoTzb.en</text_path>
+    </sample>
+    <sample id="35" iid="CUSTOM_QA_35" task="QA">
+      <instruction>Answer the following question concisely given the English content: How many human annotated data does the Tell2 Design Dataset include?</instruction>
+      <audio_path>GzwcngoTzb.wav</audio_path>
+      <video_path>GzwcngoTzb.mp4</video_path>
+      <text_path>GzwcngoTzb.en</text_path>
+    </sample>
+    <sample id="36" iid="CUSTOM_QA_36" task="QA">
+      <instruction>Answer the following question concisely given the English content: What ts table about shown in the slides?</instruction>
+      <audio_path>GzwcngoTzb.wav</audio_path>
+      <video_path>GzwcngoTzb.mp4</video_path>
+      <text_path>GzwcngoTzb.en</text_path>
+    </sample>
+    <sample id="37" iid="CUSTOM_QA_37" task="QA">
+      <instruction>Answer the following question concisely given the English content: What was the number of meetings in the training set for the MeetingQA?</instruction>
+      <audio_path>HiWpKvzyxh.wav</audio_path>
+      <video_path>HiWpKvzyxh.mp4</video_path>
+      <text_path>HiWpKvzyxh.en</text_path>
+    </sample>
+    <sample id="38" iid="CUSTOM_QA_38" task="QA">
+      <instruction>Answer the following question concisely given the English content: How many total questions does the MeetingQA contain</instruction>
+      <audio_path>HiWpKvzyxh.wav</audio_path>
+      <video_path>HiWpKvzyxh.mp4</video_path>
+      <text_path>HiWpKvzyxh.en</text_path>
+    </sample>
+    <sample id="39" iid="CUSTOM_QA_39" task="QA">
+      <instruction>Answer the following question concisely given the English content: Was the distribution of answer lengths right skewed, left skewed or normalley distributed?</instruction>
+      <audio_path>HiWpKvzyxh.wav</audio_path>
+      <video_path>HiWpKvzyxh.mp4</video_path>
+      <text_path>HiWpKvzyxh.en</text_path>
+    </sample>
+    <sample id="40" iid="CUSTOM_QA_40" task="QA">
+      <instruction>Answer the following question concisely given the English content: According to the bar chart presented, how many tweets were most likely violating and how many were clearly violating?</instruction>
+      <audio_path>JJuRCeungt.wav</audio_path>
+      <video_path>JJuRCeungt.mp4</video_path>
+      <text_path>JJuRCeungt.en</text_path>
+    </sample>
+    <sample id="41" iid="CUSTOM_QA_41" task="QA">
+      <instruction>Answer the following question concisely given the English content: What is the percentage of tweets most likely violating or clearly violating Twitters policies?</instruction>
+      <audio_path>JJuRCeungt.wav</audio_path>
+      <video_path>JJuRCeungt.mp4</video_path>
+      <text_path>JJuRCeungt.en</text_path>
+    </sample>
+    <sample id="42" iid="CUSTOM_QA_42" task="QA">
+      <instruction>Answer the following question concisely given the English content: According to chart, which evaluation method had the highest inter-annotator agreement?</instruction>
+      <audio_path>JRrbTnEZbF.wav</audio_path>
+      <video_path>JRrbTnEZbF.mp4</video_path>
+      <text_path>JRrbTnEZbF.en</text_path>
+    </sample>
+    <sample id="43" iid="CUSTOM_QA_43" task="QA">
+      <instruction>Answer the following question concisely given the English content: Which evaluation method had the lowest incremental validity?</instruction>
+      <audio_path>JRrbTnEZbF.wav</audio_path>
+      <video_path>JRrbTnEZbF.mp4</video_path>
+      <text_path>JRrbTnEZbF.en</text_path>
+    </sample>
+    <sample id="44" iid="CUSTOM_QA_44" task="QA">
+      <instruction>Answer the following question concisely given the English content: What was the response to 'If ur homeless u probably wouldn't have a phone' from 'B'?</instruction>
+      <audio_path>JyeewMtgdX.wav</audio_path>
+      <video_path>JyeewMtgdX.mp4</video_path>
+      <text_path>JyeewMtgdX.en</text_path>
+    </sample>
+    <sample id="45" iid="CUSTOM_QA_45" task="QA">
+      <instruction>Answer the following question concisely given the English content: What was the exact time window for data collection?</instruction>
+      <audio_path>JyeewMtgdX.wav</audio_path>
+      <video_path>JyeewMtgdX.mp4</video_path>
+      <text_path>JyeewMtgdX.en</text_path>
+    </sample>
+    <sample id="46" iid="CUSTOM_QA_46" task="QA">
+      <instruction>Answer the following question concisely given the English content: What was the variation score in irony perception between Ireland and UK?</instruction>
+      <audio_path>JyeewMtgdX.wav</audio_path>
+      <video_path>JyeewMtgdX.mp4</video_path>
+      <text_path>JyeewMtgdX.en</text_path>
+    </sample>
+    <sample id="47" iid="CUSTOM_QA_47" task="QA">
+      <instruction>Answer the following question concisely given the English content: Which two generations show the highest vraiation in irony perception?</instruction>
+      <audio_path>JyeewMtgdX.wav</audio_path>
+      <video_path>JyeewMtgdX.mp4</video_path>
+      <text_path>JyeewMtgdX.en</text_path>
+    </sample>
+    <sample id="48" iid="CUSTOM_QA_48" task="QA">
+      <instruction>Answer the following question concisely given the English content: What is written on the final slide?</instruction>
+      <audio_path>JyeewMtgdX.wav</audio_path>
+      <video_path>JyeewMtgdX.mp4</video_path>
+      <text_path>JyeewMtgdX.en</text_path>
+    </sample>
+    <sample id="49" iid="CUSTOM_QA_49" task="QA">
+      <instruction>Answer the following question concisely given the English content: Give the formula for the sample weighted focal contrastive loss</instruction>
+      <audio_path>LVIpHbZSwf.wav</audio_path>
+      <video_path>LVIpHbZSwf.mp4</video_path>
+      <text_path>LVIpHbZSwf.en</text_path>
+    </sample>
+    <sample id="50" iid="CUSTOM_QA_50" task="QA">
+      <instruction>Answer the following question concisely given the English content: What are the six target domains from the problem setup graph?</instruction>
+      <audio_path>MRUOlPljnN.wav</audio_path>
+      <video_path>MRUOlPljnN.mp4</video_path>
+      <text_path>MRUOlPljnN.en</text_path>
+    </sample>
+    <sample id="51" iid="CUSTOM_QA_51" task="QA">
+      <instruction>Answer the following question concisely given the English content: How is the corner named with low reader compatibility but high retriever compatibility?</instruction>
+      <audio_path>MRUOlPljnN.wav</audio_path>
+      <video_path>MRUOlPljnN.mp4</video_path>
+      <text_path>MRUOlPljnN.en</text_path>
+    </sample>
+    <sample id="52" iid="CUSTOM_QA_52" task="QA">
+      <instruction>Answer the following question concisely given the English content: Which two models does the graph about Open Domain QA involve?</instruction>
+      <audio_path>MRUOlPljnN.wav</audio_path>
+      <video_path>MRUOlPljnN.mp4</video_path>
+      <text_path>MRUOlPljnN.en</text_path>
+    </sample>
+  </task>
+</testset>

@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testset name="MCIF-Custom">
+  <task track="long" text_lang="en">
+    <sample id="0" iid="CUSTOM_QA_0" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>BIdHavzwsU.wav</audio_path>
+      <video_path>BIdHavzwsU.mp4</video_path>
+      <text_path>BIdHavzwsU.en</text_path>
+      <reference>The first describes the Word-Level Knowledge Destillation (KD) and the second the Sequence Level KD.</reference>
+    </sample>
+    <sample id="1" iid="CUSTOM_QA_1" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>BIdHavzwsU.wav</audio_path>
+      <video_path>BIdHavzwsU.mp4</video_path>
+      <text_path>BIdHavzwsU.en</text_path>
+      <reference>1. a medium resource labeled dataset. 2. plentiful unlabeled data. 3. off-the shelf, small to medium size + fine-tuned LMs. 4. Inference-time efficiency is our goal. 5. One-time computational training resources are negligible</reference>
+    </sample>
+    <sample id="2" iid="CUSTOM_QA_2" task="QA" qa_type="formula-extraction" qa_origin="Custom">
+      <audio_path>BIdHavzwsU.wav</audio_path>
+      <video_path>BIdHavzwsU.mp4</video_path>
+      <text_path>BIdHavzwsU.en</text_path>
+      <reference>LLog(x, y) = ∑ |y|i=1 KL(Ps(y|x, y&lt;i), Pr(y|x, y&lt;i))</reference>
+    </sample>
+    <sample id="3" iid="CUSTOM_QA_3" task="QA" qa_type="table-extraction" qa_origin="Custom">
+      <audio_path>CEQmOPEoZZ.wav</audio_path>
+      <video_path>CEQmOPEoZZ.mp4</video_path>
+      <text_path>CEQmOPEoZZ.en</text_path>
+      <reference>It's higher for CC</reference>
+    </sample>
+    <sample id="4" iid="CUSTOM_QA_4" task="QA" qa_type="V" qa_origin="graph-related">
+      <audio_path>CPfTgsOEan.wav</audio_path>
+      <video_path>CPfTgsOEan.mp4</video_path>
+      <text_path>CPfTgsOEan.en</text_path>
+      <reference>self-attention, linear, softmax prob, weighted sum</reference>
+    </sample>
+    <sample id="5" iid="CUSTOM_QA_5" task="QA" qa_type="text-extraction" qa_origin="text-extraction">
+      <audio_path>CPfTgsOEan.wav</audio_path>
+      <video_path>CPfTgsOEan.mp4</video_path>
+      <text_path>CPfTgsOEan.en</text_path>
+      <reference>While audio and visual are often correlated in natural events and jointly affect human perception, they have different characteristics. Timber is an intrinsic property of the object.</reference>
+    </sample>
+    <sample id="6" iid="CUSTOM_QA_6" task="QA" qa_type="table-extraction" qa_origin="Custom">
+      <audio_path>CPfTgsOEan.wav</audio_path>
+      <video_path>CPfTgsOEan.mp4</video_path>
+      <text_path>CPfTgsOEan.en</text_path>
+      <reference>78.3</reference>
+    </sample>
+    <sample id="7" iid="CUSTOM_QA_7" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>CPfTgsOEan.wav</audio_path>
+      <video_path>CPfTgsOEan.mp4</video_path>
+      <text_path>CPfTgsOEan.en</text_path>
+      <reference>Animation, Music, Animal, Kids and Beauty.</reference>
+    </sample>
+    <sample id="8" iid="CUSTOM_QA_8" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>DIsuMwxeqw.wav</audio_path>
+      <video_path>DIsuMwxeqw.mp4</video_path>
+      <text_path>DIsuMwxeqw.en</text_path>
+      <reference>The man puts on his gloves and cleans off the snow from a car.</reference>
+    </sample>
+    <sample id="9" iid="CUSTOM_QA_9" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>DIsuMwxeqw.wav</audio_path>
+      <video_path>DIsuMwxeqw.mp4</video_path>
+      <text_path>DIsuMwxeqw.en</text_path>
+      <reference>The graph visualizes that a series of images gets a description, which is then compared with query candidates. A similarity is calculated, and similar queries are kept, while dissimiliar ones are dropped.</reference>
+    </sample>
+    <sample id="10" iid="CUSTOM_QA_10" task="QA" qa_type="table-extraction" qa_origin="Custom">
+      <audio_path>DIsuMwxeqw.wav</audio_path>
+      <video_path>DIsuMwxeqw.mp4</video_path>
+      <text_path>DIsuMwxeqw.en</text_path>
+      <reference>35.44</reference>
+    </sample>
+    <sample id="11" iid="CUSTOM_QA_11" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>DIvTWvVcoq.wav</audio_path>
+      <video_path>DIvTWvVcoq.mp4</video_path>
+      <text_path>DIvTWvVcoq.en</text_path>
+      <reference>Outgroup and Ingroup</reference>
+    </sample>
+    <sample id="12" iid="CUSTOM_QA_12" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>DIvTWvVcoq.wav</audio_path>
+      <video_path>DIvTWvVcoq.mp4</video_path>
+      <text_path>DIvTWvVcoq.en</text_path>
+      <reference>Reagan, Crime Bill, 9/11 and Trump led to increases as there are peaks right after the event.</reference>
+    </sample>
+    <sample id="13" iid="CUSTOM_QA_13" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>DIvTWvVcoq.wav</audio_path>
+      <video_path>DIvTWvVcoq.mp4</video_path>
+      <text_path>DIvTWvVcoq.en</text_path>
+      <reference>Property rights, welfare reform, thug and hardworking americans are more associated with conservatism, while Willi Horton is less associated with conservatism.</reference>
+    </sample>
+    <sample id="14" iid="CUSTOM_QA_14" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>DIvTWvVcoq.wav</audio_path>
+      <video_path>DIvTWvVcoq.mp4</video_path>
+      <text_path>DIvTWvVcoq.en</text_path>
+      <reference>45%</reference>
+    </sample>
+    <sample id="15" iid="CUSTOM_QA_15" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>DIvTWvVcoq.wav</audio_path>
+      <video_path>DIvTWvVcoq.mp4</video_path>
+      <text_path>DIvTWvVcoq.en</text_path>
+      <reference>No, slightly less than 50%</reference>
+    </sample>
+    <sample id="16" iid="CUSTOM_QA_16" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>DyXpuURBMP.wav</audio_path>
+      <video_path>DyXpuURBMP.mp4</video_path>
+      <text_path>DyXpuURBMP.en</text_path>
+      <reference>• [1] Blasi, et al. 'Systematic Inequalities in Language Technology Performance across the World's Languages.' ACL 2022. • [2] Levine et al. 'GEOLAMA: Geo-Diverse Commonsense Probing on Multilingual Pre-Trained Language Models.' EMNLP 2022.• [3] Cambo &amp; Gergle. 'Model Positionality and Computational Reflexivity: Promoting Reflexivity in Data Science.' CHI 2022.</reference>
+    </sample>
+    <sample id="17" iid="CUSTOM_QA_17" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>DyXpuURBMP.wav</audio_path>
+      <video_path>DyXpuURBMP.mp4</video_path>
+      <text_path>DyXpuURBMP.en</text_path>
+      <reference>Age, Gender, Ethnicity, Education, Country.</reference>
+    </sample>
+    <sample id="18" iid="CUSTOM_QA_18" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>DyXpuURBMP.wav</audio_path>
+      <video_path>DyXpuURBMP.mp4</video_path>
+      <text_path>DyXpuURBMP.en</text_path>
+      <reference>Bad</reference>
+    </sample>
+    <sample id="19" iid="CUSTOM_QA_19" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>DyXpuURBMP.wav</audio_path>
+      <video_path>DyXpuURBMP.mp4</video_path>
+      <text_path>DyXpuURBMP.en</text_path>
+      <reference>They are more aligned to college.</reference>
+    </sample>
+    <sample id="20" iid="CUSTOM_QA_20" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>DyXpuURBMP.wav</audio_path>
+      <video_path>DyXpuURBMP.mp4</video_path>
+      <text_path>DyXpuURBMP.en</text_path>
+      <reference>They are more aligned to PhD</reference>
+    </sample>
+    <sample id="21" iid="CUSTOM_QA_21" task="QA" qa_type="table-extraction" qa_origin="Custom">
+      <audio_path>ENFYRpspKg.wav</audio_path>
+      <video_path>ENFYRpspKg.mp4</video_path>
+      <text_path>ENFYRpspKg.en</text_path>
+      <reference>2.250</reference>
+    </sample>
+    <sample id="22" iid="CUSTOM_QA_22" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>EqmWoxNDIr.wav</audio_path>
+      <video_path>EqmWoxNDIr.mp4</video_path>
+      <text_path>EqmWoxNDIr.en</text_path>
+      <reference>trigger set.</reference>
+    </sample>
+    <sample id="23" iid="CUSTOM_QA_23" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>EqmWoxNDIr.wav</audio_path>
+      <video_path>EqmWoxNDIr.mp4</video_path>
+      <text_path>EqmWoxNDIr.en</text_path>
+      <reference>Parameter-based watermark, lexival watermark, backdoor-based watermark and adversarial based watermark.</reference>
+    </sample>
+    <sample id="24" iid="CUSTOM_QA_24" task="QA" qa_type="formula-extraction" qa_origin="Custom">
+      <audio_path>EqmWoxNDIr.wav</audio_path>
+      <video_path>EqmWoxNDIr.mp4</video_path>
+      <text_path>EqmWoxNDIr.en</text_path>
+      <reference>Δcos = 1/|Cb| ∑ᵢ - 1/|Cn| ∑ⱼ </reference>
+    </sample>
+    <sample id="25" iid="CUSTOM_QA_25" task="QA" qa_type="table-extraction" qa_origin="Custom">
+      <audio_path>EqmWoxNDIr.wav</audio_path>
+      <video_path>EqmWoxNDIr.mp4</video_path>
+      <text_path>EqmWoxNDIr.en</text_path>
+      <reference>4.07</reference>
+    </sample>
+    <sample id="26" iid="CUSTOM_QA_26" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>EqmWoxNDIr.wav</audio_path>
+      <video_path>EqmWoxNDIr.mp4</video_path>
+      <text_path>EqmWoxNDIr.en</text_path>
+      <reference>Trigger set, providers model, trigger number, original embedding, backdoor weight, target embedding, provided embedding.</reference>
+    </sample>
+    <sample id="27" iid="CUSTOM_QA_27" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>EsdybtoHYe.wav</audio_path>
+      <video_path>EsdybtoHYe.mp4</video_path>
+      <text_path>EsdybtoHYe.en</text_path>
+      <reference>RACE</reference>
+    </sample>
+    <sample id="28" iid="CUSTOM_QA_28" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>EsdybtoHYe.wav</audio_path>
+      <video_path>EsdybtoHYe.mp4</video_path>
+      <text_path>EsdybtoHYe.en</text_path>
+      <reference>ot-of domain generalization, adversarial attacks, spurious patterns, lack of sensitivity to basic linguistic perturbations, over-sensitivity to perturbations that should not matter</reference>
+    </sample>
+    <sample id="29" iid="CUSTOM_QA_29" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>FHHyKHgcbZ.wav</audio_path>
+      <video_path>FHHyKHgcbZ.mp4</video_path>
+      <text_path>FHHyKHgcbZ.en</text_path>
+      <reference>There are two nodes, s and m. There is an arrow from s to m. The edge is called r_2.</reference>
+    </sample>
+    <sample id="30" iid="CUSTOM_QA_30" task="QA" qa_type="table-extraction" qa_origin="Custom">
+      <audio_path>FHHyKHgcbZ.wav</audio_path>
+      <video_path>FHHyKHgcbZ.mp4</video_path>
+      <text_path>FHHyKHgcbZ.en</text_path>
+      <reference>77.65</reference>
+    </sample>
+    <sample id="31" iid="CUSTOM_QA_31" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>FHHyKHgcbZ.wav</audio_path>
+      <video_path>FHHyKHgcbZ.mp4</video_path>
+      <text_path>FHHyKHgcbZ.en</text_path>
+      <reference>One-hop, conjunction, existence, multi-hop, and negation</reference>
+    </sample>
+    <sample id="32" iid="CUSTOM_QA_32" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>GPKqavlRfX.wav</audio_path>
+      <video_path>GPKqavlRfX.mp4</video_path>
+      <text_path>GPKqavlRfX.en</text_path>
+      <reference>SAMSum, DialogSum, EmailSum, QMSum, TweetSum</reference>
+    </sample>
+    <sample id="33" iid="CUSTOM_QA_33" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>GPKqavlRfX.wav</audio_path>
+      <video_path>GPKqavlRfX.mp4</video_path>
+      <text_path>GPKqavlRfX.en</text_path>
+      <reference>85% of negative labels, and 15% of positive labels.</reference>
+    </sample>
+    <sample id="34" iid="CUSTOM_QA_34" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>GzwcngoTzb.wav</audio_path>
+      <video_path>GzwcngoTzb.mp4</video_path>
+      <text_path>GzwcngoTzb.en</text_path>
+      <reference>Kitchen is pink/red, Living Room is light green, bath room is blue, master room is orange, balcony is green, and the common room is yellow</reference>
+    </sample>
+    <sample id="35" iid="CUSTOM_QA_35" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>GzwcngoTzb.wav</audio_path>
+      <video_path>GzwcngoTzb.mp4</video_path>
+      <text_path>GzwcngoTzb.en</text_path>
+      <reference>5,051 human annotated data</reference>
+    </sample>
+    <sample id="36" iid="CUSTOM_QA_36" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>GzwcngoTzb.wav</audio_path>
+      <video_path>GzwcngoTzb.mp4</video_path>
+      <text_path>GzwcngoTzb.en</text_path>
+      <reference>It compares the performance of different models and training methods on calculating the MicroIoU and Macro IoU.</reference>
+    </sample>
+    <sample id="37" iid="CUSTOM_QA_37" task="QA" qa_type="table-extraction" qa_origin="Custom">
+      <audio_path>HiWpKvzyxh.wav</audio_path>
+      <video_path>HiWpKvzyxh.mp4</video_path>
+      <text_path>HiWpKvzyxh.en</text_path>
+      <reference>64</reference>
+    </sample>
+    <sample id="38" iid="CUSTOM_QA_38" task="QA" qa_type="table-extraction" qa_origin="Custom">
+      <audio_path>HiWpKvzyxh.wav</audio_path>
+      <video_path>HiWpKvzyxh.mp4</video_path>
+      <text_path>HiWpKvzyxh.en</text_path>
+      <reference>7,735</reference>
+    </sample>
+    <sample id="39" iid="CUSTOM_QA_39" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>HiWpKvzyxh.wav</audio_path>
+      <video_path>HiWpKvzyxh.mp4</video_path>
+      <text_path>HiWpKvzyxh.en</text_path>
+      <reference>Right skewed</reference>
+    </sample>
+    <sample id="40" iid="CUSTOM_QA_40" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>JJuRCeungt.wav</audio_path>
+      <video_path>JJuRCeungt.mp4</video_path>
+      <text_path>JJuRCeungt.en</text_path>
+      <reference>3151 were most likly violating and 3467 clearly violating</reference>
+    </sample>
+    <sample id="41" iid="CUSTOM_QA_41" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>JJuRCeungt.wav</audio_path>
+      <video_path>JJuRCeungt.mp4</video_path>
+      <text_path>JJuRCeungt.en</text_path>
+      <reference>65%</reference>
+    </sample>
+    <sample id="42" iid="CUSTOM_QA_42" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>JRrbTnEZbF.wav</audio_path>
+      <video_path>JRrbTnEZbF.mp4</video_path>
+      <text_path>JRrbTnEZbF.en</text_path>
+      <reference>ABC-Eval</reference>
+    </sample>
+    <sample id="43" iid="CUSTOM_QA_43" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>JRrbTnEZbF.wav</audio_path>
+      <video_path>JRrbTnEZbF.mp4</video_path>
+      <text_path>JRrbTnEZbF.en</text_path>
+      <reference>Dialogue Likert</reference>
+    </sample>
+    <sample id="44" iid="CUSTOM_QA_44" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>JyeewMtgdX.wav</audio_path>
+      <video_path>JyeewMtgdX.mp4</video_path>
+      <text_path>JyeewMtgdX.en</text_path>
+      <reference>'Yes, and all your belongings would be in a handkerchief tied at the end of a stick'</reference>
+    </sample>
+    <sample id="45" iid="CUSTOM_QA_45" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>JyeewMtgdX.wav</audio_path>
+      <video_path>JyeewMtgdX.mp4</video_path>
+      <text_path>JyeewMtgdX.en</text_path>
+      <reference>January 2020 - June 2021</reference>
+    </sample>
+    <sample id="46" iid="CUSTOM_QA_46" task="QA" qa_type="table-extraction" qa_origin="Custom">
+      <audio_path>JyeewMtgdX.wav</audio_path>
+      <video_path>JyeewMtgdX.mp4</video_path>
+      <text_path>JyeewMtgdX.en</text_path>
+      <reference>0.88</reference>
+    </sample>
+    <sample id="47" iid="CUSTOM_QA_47" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>JyeewMtgdX.wav</audio_path>
+      <video_path>JyeewMtgdX.mp4</video_path>
+      <text_path>JyeewMtgdX.en</text_path>
+      <reference>boomers and genZ</reference>
+    </sample>
+    <sample id="48" iid="CUSTOM_QA_48" task="QA" qa_type="text-extraction" qa_origin="Custom">
+      <audio_path>JyeewMtgdX.wav</audio_path>
+      <video_path>JyeewMtgdX.mp4</video_path>
+      <text_path>JyeewMtgdX.en</text_path>
+      <reference>Thanks for your attention! See you at the posters in Toronto</reference>
+    </sample>
+    <sample id="49" iid="CUSTOM_QA_49" task="QA" qa_type="formula-extraction" qa_origin="Custom">
+      <audio_path>LVIpHbZSwf.wav</audio_path>
+      <video_path>LVIpHbZSwf.mp4</video_path>
+      <text_path>LVIpHbZSwf.en</text_path>
+      <reference>LSWFC = - Σi=1M Σj=1N (C(i)/ηy,i,j)α * (1/|Ri,j|) * Σzi,g∈Ri,j (1 - si,g)γ log si,gCopy</reference>
+    </sample>
+    <sample id="50" iid="CUSTOM_QA_50" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>MRUOlPljnN.wav</audio_path>
+      <video_path>MRUOlPljnN.mp4</video_path>
+      <text_path>MRUOlPljnN.en</text_path>
+      <reference>Pubmed, Dailymail, Stackoverflow, Wikipedia, Reddit and Legal Codes</reference>
+    </sample>
+    <sample id="51" iid="CUSTOM_QA_51" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>MRUOlPljnN.wav</audio_path>
+      <video_path>MRUOlPljnN.mp4</video_path>
+      <text_path>MRUOlPljnN.en</text_path>
+      <reference>Covariate Shift</reference>
+    </sample>
+    <sample id="52" iid="CUSTOM_QA_52" task="QA" qa_type="graph-related" qa_origin="Custom">
+      <audio_path>MRUOlPljnN.wav</audio_path>
+      <video_path>MRUOlPljnN.mp4</video_path>
+      <text_path>MRUOlPljnN.en</text_path>
+      <reference>Retriever Model and Reader Model</reference>
+    </sample>
+  </task>
+</testset>
