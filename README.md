@@ -113,13 +113,6 @@ Average scores under the primary judge (`mistral-small`), 53 questions per condi
 | `Mistral-Eff-v2` | 0.415 | 0.844 | 0.204 | 0.557 |
 | `Mistral-Eff-v3` | **0.566** | 0.846 | 0.232 | 0.566 |
 
-Every slide-description condition beats `Transcript-only` on the LLM judge, and
-all such comparisons are significant after multiple-comparison correction (see
-`statistical_tests_llm_judge.csv`). `Mistral-Eff-v3` matches the best unfiltered
-condition (`Gemma-Full-P2`, 0.547) while using far fewer words — 1047 vs. 1627 on
-average, a compression ratio of 0.64. `Mistral-Eff-v1` reaches 0.528 at 608 words
-(compression 0.37); full word counts, uniqueness and compression figures are in
-`description_efficiency/desc_efficiency_metrics.json`.
 
 ### Judge reliability
 
@@ -133,9 +126,7 @@ Pooled linear-weighted Cohen's κ and Spearman ρ:
 | human vs `mistral-small` | 80 | 0.698 | 0.798 |
 
 The two `n=419` rows exclude 5 items whose stored QA answer is an API-error
-string rather than a real answer. Agreement is substantial throughout, and
-comparable within and across model families, indicating that the automatic
-scores are not an artifact of using a single model family as judge.
+string rather than a real answer. 
 
 ### Human rating
 
@@ -145,24 +136,6 @@ neither the condition nor the automatic scores; `rating_key.csv` maps each
 `item_id` back to its condition and the automatic scores.
 
 - `ratings_human_first-author.csv` — all 80 items, rated by the first author
-- `RATING_INSTRUCTIONS.md` — the rubric given to the rater, matching the LLM judge's rubric
-
-A `notes` cell beginning with `REF?` marks an item whose reference answer does not
-answer its question; 7 of the 80 items are flagged this way. The reliability
-figures reported here include all 80 items.
-
-## Notes and limitations
-
-- Sampling parameters (`temperature`, `top_p`, random seed) were not set for any
-  generation or judging call, so outputs are single draws under provider and
-  model defaults and are not reproducible run-to-run.
-- `mistral-small` was queried through the floating `mistral-small-latest` alias,
-  so the exact served snapshot cannot be recovered retrospectively.
-- Six QA answer files contain one item each whose answer is a stored API-error
-  string; these are excluded from the interrater reliability figures but are still
-  present in the per-condition means.
-- The evaluation set is 53 questions over 18 lectures, so per-condition estimates
-  carry wide confidence intervals.
 
 ## Other sources
 
