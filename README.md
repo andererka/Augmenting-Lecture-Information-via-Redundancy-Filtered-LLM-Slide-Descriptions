@@ -1,6 +1,6 @@
 # Augmenting Lecture Information via Redundancy-Filtered LLM Slide Descriptions
 
-Data and results accompanying the paper. Lecture slide descriptions are generated
+Data and results accompanying the paper (TODO: add link!). Lecture slide descriptions are generated
 by an LLM and then **redundancy-filtered** against the spoken transcript, so that
 the description retains only what a listener cannot get from the audio alone
 (diagrams, chart values, table numbers, formulas). The resulting descriptions are
@@ -164,8 +164,7 @@ figures reported here include all 80 items.
 - The evaluation set is 53 questions over 18 lectures, so per-condition estimates
   carry wide confidence intervals.
 
-## Source
+## Other sources
 
-The generation and evaluation code lives in the companion repository
-`slide_descriptions_for_lectures`. The lecture material is derived from the
+The lecture material is from the
 [MCIF benchmark](https://huggingface.co/datasets/FBK-MT/MCIF) (FBK-MT).
