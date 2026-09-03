@@ -1,0 +1,91 @@
+Here is the refined visual description, focusing only on elements not explicitly covered in the speaker's transcript:
+
+---
+
+**Slide 3**
+Timestamp: 16.50s
+- **Title:** Open-domain QA
+- **Text content:**
+  - Question: *"What is produced in plants of narora, kakrapar, tarapur?"*
+- **Visual Elements:**
+  - A light blue background.
+  - A beige rectangular box containing the question.
+  - A blue cylinder (database/hard drive icon) below the text, labeled "Wikipedia" in white text.
+
+---
+
+**Slide 4**
+Timestamp: 39.50s
+- **Title:** Open-domain QA
+- **Visual Elements:**
+  - Light blue background.
+  - A diagram illustrating the Open-domain QA process:
+    - **Left side:** A blue cylinder labeled "Wikipedia" at the bottom.
+    - **Middle:** Two yellow gear icons labeled "Retriever (Source) Model" (top) and "Reader (Source) Model" (bottom).
+    - **Right side:** The answer *"nuclear power"* in white text.
+  - Arrows connecting:
+    - Wikipedia → Retriever Model
+    - Retriever Model → Reader Model
+    - Reader Model → Answer
+
+---
+
+**Slide 5**
+Timestamp: 71.50s
+- **Title:** Open-domain QA
+- **Text content:**
+  - Question: *"How to answer questions from biomedical (or any new domain)?"*
+  - Bullet points:
+    - *"Wikipedia can probably answer a few"*
+    - *"Replace Wikipedia with biomedical (or other domain corpus) – might not be sufficient due to sparse availability"*
+    - *"Easiest way is to just expand the retrieval corpus"*
+
+---
+
+**Slide 6**
+Timestamp: 97.50s
+- **Title:** Open-domain QA
+- **Visual Elements:**
+  - Light blue background.
+  - Diagram showing:
+    - **Top:** Question *"What is produced in plants of narora, kakrapur, tarapur?"*
+    - **Bottom left:** Two blue cylinders labeled "Wikipedia" and "PubMed."
+    - **Middle:** Two yellow gear icons labeled "Retriever Model" (top) and "Reader Model" (bottom).
+    - **Bottom right:** Answer *"Oat flour"* with a sad emoji.
+  - Arrows connecting:
+    - Question → Retriever Model
+    - Retriever Model → Wikipedia & PubMed
+    - Wikipedia & PubMed → Reader Model
+    - Reader Model → Answer
+
+---
+
+**Slide 7 & 8**
+Timestamp: 117.50s & 135.50s
+- **Title:** Contributions
+- **Text content:**
+  - Three bullet points (identical in both slides):
+    1. *"Investigate data interventions to enable out of domain generalization."*
+    2. *"Understand how compatible the source model is for a target domain."*
+    3. *"Determine whether there is a relationship between the type of data interventions that would be effective under a particular dataset shift."*
+- **Visual Elements:**
+  - Dark blue background.
+  - White title and bullet points.
+  - Slide 8 includes a clean, minimalist layout with no additional visuals.
+
+---
+
+**Slide 9**
+Timestamp: 284.00s
+- **Title:** Generalizability test
+- **Visual Elements:**
+  - Dark gray background.
+  - A 2x2 matrix with pink axes:
+    - **Vertical axis:** "Retriever compatibility" (labeled "Incompatible" at bottom, "Compatible" at top).
+    - **Horizontal axis:** "Reader compatibility" (labeled "Incompatible" at left, "Compatible" at right).
+  - Quadrants labeled:
+    - **Top-left:** "Concept shift"
+    - **Top-right:** "No shift"
+    - **Bottom-left:** "Full shift"
+    - **Bottom-right:** "Covariate shift"
+  - Slide number "22" in the bottom-right corner.

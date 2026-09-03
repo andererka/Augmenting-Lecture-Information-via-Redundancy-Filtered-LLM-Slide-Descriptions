@@ -1,0 +1,108 @@
+Here’s the refined visual description, omitting details already covered in the speaker’s transcript while preserving key elements like diagrams, charts, and precise metrics:
+
+---
+
+### **Slide 1: New Dataset for Factual Consistency**
+- **Labels**:
+  - Factual consistency check (yes/no)
+  - Error type classification:
+    - *Intrinsic errors*: Misinterpretation of source text.
+    - *Extrinsic errors*: Hallucination of unsupported facts.
+
+---
+
+### **Slide 2: Data Collection Details**
+- **Dataset**: XSum (news articles with short summaries).
+- **Model**: Pegasus (pre-trained encoder-decoder).
+- **Example**:
+  - **Input Document**: BBC’s rebuttal about a *Planet Earth II* scene being "faked."
+  - **Initial Summary**: Incorrectly attributes claim to *Planet Earth II*.
+  - **Explanation**: Source text lacks mention of the show.
+  - **Evidence**: BBC’s direct quote.
+  - **Instruction**: Remove *Planet Earth II* reference.
+  - **Edited Summary**: Corrected version omitting the show’s name.
+
+---
+
+### **Slide 3: Data Statistics**
+- **Dataset Size**: 2,561 data points (71.1% contain errors).
+  - **Error Breakdown**:
+    - Intrinsic: 22.0% (563)
+    - Extrinsic: 58.76% (1,505)
+    - Both: 10.4% (267)
+- **Train/Val/Test Split**:
+  - Train: 1,000
+  - Val: 486
+  - Test: 1,075
+- **Cumulative Distribution Graph**:
+  - X-axis: Instruction number (1–20).
+  - Y-axis: Cumulative percentage (0–100%).
+  - Trend: Most data points have few instructions; long tail of high-instruction cases.
+
+---
+
+### **Slide 4: Data Analysis – Human-Edited Summaries**
+- **Automatic Factuality Scores** (higher = better):
+  | Metric       | Reference | System Output | Human-Edited |
+  |--------------|-----------|---------------|--------------|
+  | DAE          | 0.6176    | 0.6904        | **0.8975**   |
+  | QAFactEval   | 1.549     | 1.826         | **2.540**    |
+
+- **Textual Similarity (ROUGE F1)**:
+  | Comparison       | R1   | R2   | RL   |
+  |------------------|------|------|------|
+  | Ref. vs. Sys.    | 48.01| 25.54| 40.45|
+  | Ref. vs. Human   | 40.30| 18.22| 33.86|
+  | Sys. vs. Human   | **75.79**| **66.17**| **74.89**|
+
+---
+
+### **Slide 5: Data Analysis – Editing Instructions**
+- **Bar Graph**: Distribution of 6 instruction types across error categories.
+  - **Top 2 Operations**:
+    - *Remove* (most common, especially for extrinsic errors).
+    - *Replace* (dominant for intrinsic errors).
+  - **Other Operations**: Add, modify, rewrite, other (each <10%).
+
+---
+
+### **Slide 6: NLG Task 1 – Summary Editing**
+- **Diagram**:
+  - Inputs: Document + Initial Summary + Human Feedback → Editing Model → Edited Summary.
+- **Performance Tables**:
+  - **Fine-tuned Models**:
+    - Best variant: **B+S(8)** (ROUGE-1: 82.36, DAE: 2.258).
+  - **GPT-3.5**:
+    - With human feedback (**B+S**): ROUGE-1: 80.32, QAFactEval: 2.430.
+    - With generated feedback (**D+S(2)**): ROUGE-1: 72.22, QAFactEval: 2.501.
+
+---
+
+### **Slide 7: NLG Task 2 – Feedback Generation**
+- **Diagram**:
+  - Inputs: Document + Initial Summary → Critic Model → Generated Feedback → Editing Model → Edited Summary.
+- **Performance Tables**:
+  - **Critic Model Outputs**:
+    - GPT-4 underperforms (ROUGE-1: 53.88) vs. human-written (100).
+  - **Editing with Generated Feedback**:
+    - GPT-4 feedback yields lower scores (ROUGE-1: 53.88) than human (100).
+
+---
+
+### **Slide 8: NLG Task 3 – Explanation Automatic Factual Error Correction**
+- **Diagram**:
+  - Input Document → Editor Model → Initial Summary + Human Feedback → Edited Summary.
+- **Performance Tables**:
+  - **Correcting Known Errors**:
+    - Editor models outperform baselines (e.g., Editor2: DAE 0.867 vs. Sys 0.704).
+  - **Factual Error Detection/Correction**:
+    - Editor model (DAE: 0.833, QAFactEval: 2.250) vs. baselines (e.g., Pegasus: DAE 0.763).
+
+---
+
+### **Slide 9: Further Advantages**
+- **Key Benefits**:
+  - Improved human evaluation clarity.
+  - Fine-grained annotations for error analysis.
+  - Training/fine-tuning of factuality metrics.
+  - Meta-evaluation framework for metric robustness.

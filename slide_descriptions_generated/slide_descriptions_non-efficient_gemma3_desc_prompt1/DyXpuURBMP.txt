@@ -1,0 +1,238 @@
+Slide 1
+Timestamp: 10.38s
+------------------------------
+- Main topic: This slide introduces the topic of "NLPositionality" and presents the authors of the research.
+- Key points:
+    - The slide's title is "NLPositionality: Characterizing Design Biases of Datasets and Models."
+- Visual elements:
+    - Five headshots of the authors are displayed horizontally across the bottom of the slide.
+    - Each headshot is labeled with the author's name and affiliation.
+- Notable text:
+    - "NLPositionality"
+    - "Characterizing Design Biases of Datasets and Models"
+    - Sebastian Santy, University of Washington
+    - Jenny T. Liang*, Carnegie Mellon University
+    - Ronan Le Bras, Allen Institute for AI
+    - Katharina Reinecke, University of Washington
+    - Maarten Sap, Carnegie Mellon University
+    - * indicates a corresponding author.
+
+Slide 2
+Timestamp: 22.26s
+------------------------------
+- Main topic: This slide introduces the topic of "NLPositionality" and presents the authors of the research.
+- Key points:
+    - The slide's title is "NLPositionality: Characterizing Design Biases of Datasets and Models."
+- Visual elements:
+    - Five headshots of the authors are displayed in a horizontal row below the title.
+    - Each headshot is accompanied by the author's name and affiliation.
+- Notable text:
+    - "NLPositionality"
+    - "Characterizing Design Biases of Datasets and Models"
+    - Sebastian Santy, University of Washington
+    - Jenny T. Liang*, Carnegie Mellon University
+    - Ronan Le Bras, Allen Institute for AI
+    - Katharina Reinecke, University of Washington
+    - Maarten Sap, Carnegie Mellon University
+    - * indicates a corresponding author.
+
+Slide 3
+Timestamp: 36.12s
+------------------------------
+- Main topic: This slide introduces a scenario to prompt the audience to consider a specific concept.
+- Key points:
+    - The slide presents a prompt to "Imagine..."
+- Visual elements:
+    - A headshot of a woman is in the upper right corner.
+    - A small icon resembling a stylized eye is in the lower left corner, labeled with "= PerspectiveAPI score".
+- Notable text:
+    - "Imagine..." (large font, centered at the top of the slide)
+    - "= PerspectiveAPI score" (small font, lower left corner)
+
+Slide 4
+Timestamp: 44.04s
+------------------------------
+- Main topic: This slide illustrates how Perspective API scores can vary based on the perceived sender of a message.
+
+- Key points:
+*   The slide presents a scenario where the same message is sent by two different individuals.
+*   The message is "Can you stop being a jerk?".
+*   The Perspective API score for this message is 0.82, indicating a high probability of toxicity.
+*   The message is attributed to Carl Jones, Tech Lead at the New York Times.
+*   The same message is also attributed to Aditya Sharma, Tech Lead at Times of India.
+
+- Visual elements:
+*   Two circular profile images representing Carl Jones and Aditya Sharma.
+*   A speech bubble containing the message "Can you stop being a jerk?" with a Perspective API score of 0.82 and a checkmark.
+*   Labels identifying each person's name, job title, and company.
+*   A footnote explaining that the Perspective API score is represented by a symbol.
+
+- Notable text:
+*   "Imagine..." (title)
+*   "Can you stop being a jerk?" (message)
+*   "(0.82)" (Perspective API score)
+*   "Carl Jones, Tech Lead, New York Times"
+*   "Aditya Sharma, Tech Lead, Times of India"
+*   "PerspectiveAPI score" (footnote label)
+
+Slide 5
+Timestamp: 68.80s
+------------------------------
+- Main topic: This slide introduces the concept of "positionality" in qualitative research.
+- Key points:
+    - The slide title is "Positionality."
+- Visual elements:
+    - A photograph of a person (likely the lecturer) is displayed in the upper right corner. The person is standing in front of a bookshelf.
+- Notable text:
+    - Citation: "[1] Savin-Baden, Maggi, and Claire Howell-Major. “Qualitative research: The essential guide to theory and practice.” Qualitative Research: The Essential Guide to Theory and Practice. Routledge (2013)."
+
+Slide 6
+Timestamp: 160.87s
+------------------------------
+- Main topic: This slide introduces "NLPositionality," a framework for characterizing design biases in Natural Language Processing (NLP) datasets and models.
+- Key points:
+    - The slide presents NLPositionality as a framework.
+    - The framework aims to characterize design biases.
+    - The focus is on both NLP datasets and models.
+- Visual elements:
+    - Large, bold text "NLPositionality" is centered on the slide.
+    - Below the title, a subtitle reads "A framework for characterizing design biases in NLP datasets and models."
+- Notable text:
+    - NLPositionality
+    - A framework for characterizing design biases in NLP datasets and models.
+    - NLP datasets
+    - Models
+    - Design biases
+
+Slide 7
+Timestamp: 162.85s
+------------------------------
+- Main topic: This slide introduces "NLPositionality," a framework for characterizing design biases in Natural Language Processing (NLP) datasets and models.
+- Key points:
+    - The slide presents NLPositionality as a framework.
+    - The framework aims to characterize design biases.
+    - The focus is on both NLP datasets and models.
+- Visual elements:
+    - Large, bold text "NLPositionality" is centered on the slide.
+    - Below the title, a subtitle reads "A framework for characterizing design biases in NLP datasets and models."
+- Notable text:
+    - NLPositionality
+    - A framework for characterizing design biases in NLP datasets and models.
+
+Slide 8
+Timestamp: 214.34s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide outlines a framework for comparing human annotations with machine learning models across different demographic groups.
+
+- **Key points:**
+    * The framework involves a three-stage process: Collection, Processing, and Analysis.
+    * In the Collection stage, human annotators are paired with machine learning models.
+    * The Processing stage uses a neural network to generate model predictions.
+    * The Analysis stage compares annotations by demographic to models and datasets using Pearson's R scores.
+
+- **Visual elements:**
+    * **Flowchart:** A flowchart illustrates the framework's stages and steps.
+        * **Collection:** Shows a sequence of steps: "Pairing with Human," "Pairing with ML Model," and "Pairing with Both."
+        * **Processing:** Depicts a neural network generating model predictions and a table displaying the model's performance.
+        * **Analysis:** Shows a bar chart representing demographic groups (Age, Gender, Ethnicity, Education).
+    * **Bar Chart:** A bar chart displays the distribution of participants across four demographic categories:
+        * Age: Ranges from 18-24 (26%), 25-34 (31%), 35-44 (24%), 45+ (19%).
+        * Gender: Male (48%), Female (52%).
+        * Ethnicity: White (68%), Black (13%), Asian (11%), Other (8%).
+        * Education: High School (15%), Some College (25%), Bachelor's (35%), College (25%).
+
+- **Notable text:**
+    * **Title:** "Framework"
+    * **Stage Labels:** "Collection," "Processing," "Analysis"
+    * **Step Descriptions:** Short descriptions accompany each step in the flowchart.
+    * **Annotation:** "Compare annotations by demographic to models and datasets via Pearson's R scores."
+    * **Demographic Categories:** "Age," "Gender," "Ethnicity," "Education"
+    * **Pearson's R scores:** Highlighted as the method for comparison.
+
+Slide 9
+Timestamp: 256.91s
+------------------------------
+- Main topic: This slide illustrates Task A, which focuses on social acceptability and involves participants comparing their responses to others and an AI.
+- Key points:
+    - Participants read a situation: "Wanting to make a lot of money."
+    - Participants enter their thoughts about the situation.
+    - Participants see what an AI and others thought about the situation.
+- Visual elements:
+    - Screenshot of a user interface with three steps: "Read the situation," "Enter what you think about it," and "See what an AI and others thought about it."
+    - A bar graph showing the responses of study participants in the United States.
+    - A cartoon-style robot representing the AI.
+- Notable text:
+    - Title: "Task A: Social Acceptability"
+    - Step labels: "Read the situation," "Enter what you think about it," "See what an AI and others thought about it."
+    - Text within the UI: "Wanting to make a lot of money," "What do you think about this situation?"
+    - Text near the robot: "The AI speculates," "I expect that the AI's response will be considered acceptable."
+    - Annotation: "Participants compare their responses to others' and an AI's."
+
+Slide 10
+Timestamp: 263.84s
+------------------------------
+- Main topic: This slide introduces Task A, which focuses on social acceptability analysis.
+- Key points:
+    - Task A is focused on social acceptability analysis.
+    - The dataset used is the Social Chemistry dataset.
+    - The models being used are Delphi and GPT-4.
+- Visual elements: The slide has a white background with black text. A small image of a person is visible in the upper right corner.
+- Notable text:
+    - Title: Task A: Social Acceptability Analysis
+    - Datasets: Social Chemistry
+    - Models: Delphi, GPT-4
+
+Slide 11
+Timestamp: 273.74s
+------------------------------
+- Main topic: This slide describes Task B, which focuses on assessing the toxicity of text instances from the Dynahate dataset.
+- Key points:
+    - Participants read an example text instance.
+    - Participants rate whether they think an instance is hate speech.
+    - Participants can see what an AI and study participants in Afghanistan thought about the instance.
+- Visual elements:
+    - A screenshot of the task interface is displayed, showing a text example ("English people smell like sour milk").
+    - Below the text is a binary choice question: "Do you think this speech is hateful?" with options "Yes" and "No."
+    - To the right of the question is a small bar graph labeled "Study participants in Afghanistan said."
+    - To the left of the text is a cartoon robot with the label "The AI speculates."
+- Notable text:
+    - Title: "Task B: Toxicity"
+    - Labels: "Read the example," "Enter what you think about it," "See what others thought about it"
+    - Text example: "English people smell like sour milk"
+    - Question: "Do you think this speech is hateful?"
+    - Labels: "Yes" and "No"
+    - Labels: "The AI speculates" and "Study participants in Afghanistan said"
+
+Slide 12
+Timestamp: 391.56s
+------------------------------
+- Main topic: This slide presents recommendations for building more inclusive and responsible NLP datasets and models.
+- Key points:
+    - Keep a record of all relevant design choices made throughout building datasets or models.
+    - Do NLP research through the lens of perspectivism.
+        - Share disaggregated dataset labels.
+        - Use modeling techniques that can handle annotator disagreement.
+    - Building specialized datasets and models with and for specific communities is suitable for inclusive NLP (e.g., Masakhane initiative).
+- Visual elements: A photograph of a person is present in the upper right corner.
+- Notable text: "Recommendations," "perspectivism," "annotator disagreement," "Masakhane initiative," and the URL "https://www.masakhane.io" are highlighted.
+
+Slide 13
+Timestamp: 396.02s
+------------------------------
+- Main topic: This slide serves as a concluding thank you slide, providing links to a dashboard and a research paper related to the lecture.
+- Key points:
+    - Acknowledges the audience with "Thanks!".
+    - Provides a link to a dashboard: nlp.positionality.cs.washington.edu/
+    - Provides a link to the research paper: bit.ly/NLPositionalty-Paper/
+- Visual elements:
+    - Six bar charts are displayed, each representing a different demographic attribute: Age, Gender, Ethnicities, Religion, Education Level, Country (Residence), Country (Longest), and Native Language.
+    - A logo for "Delphi" is displayed above the charts.
+- Notable text:
+    - "Thanks!"
+    - "Dashboard Link:" followed by the URL.
+    - "Paper:" followed by the URL.
+    - Labels for each bar chart: Age, Gender, Ethnicities, Religion, Education Level, Country (Residence), Country (Longest), Native Language.
+
+Total slides processed: 13

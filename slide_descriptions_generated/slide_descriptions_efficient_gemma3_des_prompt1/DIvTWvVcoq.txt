@@ -1,0 +1,163 @@
+Slide 1
+Timestamp: 27.50s
+------------------------------
+- **Slide Content Description:**
+
+- **Main visual:** A screenshot of a speech by Senator Josh Hawley.
+- **Text:** The slide contains a title, a few key phrases highlighted in red, and a citation.
+- **Overall impression:** The slide is text-heavy and focuses on defining and illustrating the concept of a dogwhistle using the example of the term "cosmopolitan."
+- **Slide number:** 57
+
+Slide 2
+Timestamp: 56.50s
+------------------------------
+- **Slide Content Description**
+
+The slide features a flowchart diagram illustrating the process of coded rhetoric and its impact on different audiences. The diagram is divided into three sections: Source, Audience, and Meaning.
+
+- **Visual elements:**
+    * A flowchart diagram with three main sections: Source, Audience, and Meaning.
+    * The Source section contains a microphone icon and a picture of a man in a suit.
+    * The Audience section contains a group of diverse people icons.
+    * The Meaning section contains a brain icon with gears.
+    * Arrows indicate the flow of information between the elements.
+    * Rectangles represent the different stages of the process.
+    * The diagram visually represents the flow of information and interpretation between the speaker, the message, and the audience.
+
+Slide 3
+Timestamp: 75.50s
+------------------------------
+- **Visual elements:**
+    * Three distinct line-art icons are displayed side-by-side.
+        * The first icon depicts a head with three overlapping circles inside.
+        * The second icon shows a stylized figure with radiating lines emanating from their mouth.
+        * The third icon shows a cartoonish head with an angry expression and a censored speech bubble.
+- **Notable text:**
+    * Title: "Understanding dogwhistles is important"
+
+Slide 4
+Timestamp: 82.50s
+------------------------------
+- Main visual element: A sign reading "LET'S GO BRANDON" is displayed at the bottom right corner.
+- Slide number: 60
+
+Slide 5
+Timestamp: 162.50s
+------------------------------
+- **Slide Content Description:**
+
+The slide is a visual summary of a research project, divided into four sections, each represented by an icon and a brief description. The icons are: a book with an "A-Z" index, a person giving a speech, a computer screen with code, and a head with a censored mouth. The descriptions below the icons are: "Typology & glossary with rich contextual information," "Case study of historical U.S. political speeches," "Evaluate dogwhistle recognition in language models," and "Show how dogwhistles evade content moderation." The slide also includes a page number of 73.
+
+Slide 6
+Timestamp: 189.50s
+------------------------------
+- Visual elements:
+    - A line graph displays the DW-NOMINATE score over time (1940 to 2020).
+    - Four lines are plotted on the graph, each representing a different phrase.
+    - A vertical red line is present around 1980.
+
+- Notable text:
+    - Title: "Higher association with conservatism over time"
+    - Y-axis label: "DW-NOMINATE Score (Dim. 1) Conservative - Liberal"
+    - X-axis range: 1940 to 2020
+    - Legend labels: "property rights," "welfare return," "hardworking Americans," "thug"
+    - DW-NOMINATE (dim 1)
+
+Slide 7
+Timestamp: 216.50s
+------------------------------
+- The slide presents findings on GPT-3's ability to identify dogwhistles.
+- It highlights that GPT-3 surfaces a higher percentage of dogwhistles when they belong to a "formal" register.
+- It also notes that GPT-3 can identify dogwhistles not explicitly included in the glossary.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these findings.
+- The slide uses the term "GPT-3" and "dogwhistles" prominently.
+- The slide uses the term "formal register" to describe a specific category of dogwhistles.
+- The slide uses the terms "tax relief" and "patriotism" as examples of dogwhistles.
+- The slide uses bullet points to present these
+
+Slide 8
+Timestamp: 227.50s
+------------------------------
+- A bar graph displays the percentage surfaced by GPT-3 on the y-axis, and the register (informal/online vs. formal/offline) on the x-axis.
+- Four bars for each register represent different personas: transphobic, antisemitic, anti-Black, white supremacist, and Islamophobic.
+- The y-axis ranges from 0 to 100.
+- The bars show varying percentages for each persona and register combination.
+- Notes at the bottom of the graph mention potential reasons for the performance variations.
+-
+-
+
+Slide 9
+Timestamp: 241.50s
+------------------------------
+-
+
+Slide 10
+Timestamp: 251.50s
+------------------------------
+- A bar graph displays GPT-3 identified covert meaning (fraction of generations) against prompt type.
+- The x-axis represents prompt types: "No Definition Nor Secret Cue," "Only Secret Cue," "Only Dogwhistle Definition," and "Definition & Secret Cue."
+- The y-axis ranges from 0.0 to 0.7.
+- Two sets of bars are shown for each prompt type: one in blue representing the informal register, and one in orange representing the formal register.
+- Error bars are present on each bar.
+- The graph shows that the formal register benefits from both a dogwhistle definition and a secret cue, while the informal register is significantly helped only by a dogwhistle definition.
+
+Slide 11
+Timestamp: 268.50s
+------------------------------
+**Visual Description:**
+
+The slide contains two tables. Table A.5 displays sample hateful sentences with placeholders for identity terms. Table A.6 lists terms categorized as racist, antisemitic, and transphobic, each accompanied by a small graphic. The slide also includes references to Rouger et al., 2021.
+-
+
+Slide 12
+Timestamp: 289.50s
+------------------------------
+- **Slide Content Description:**
+
+The slide is a visual summary of a research project, divided into four sections, each represented by an icon and a brief description. The icons are: a book labeled "A-Z," a podium with a speaker, a computer screen with code, and a cartoonish head with angry expression and symbols representing profanity. The number "66" is displayed in the bottom right corner.
+
+Total slides processed: 12

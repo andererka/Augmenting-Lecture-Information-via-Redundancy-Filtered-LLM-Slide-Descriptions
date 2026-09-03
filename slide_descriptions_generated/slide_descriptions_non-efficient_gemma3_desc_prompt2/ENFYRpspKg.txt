@@ -1,0 +1,339 @@
+Slide 1
+Timestamp: 90.08s
+------------------------------
+**Slide Content:**
+
+**New Dataset for Factual Consistency**
+
+*   Goal: collecting human demonstrations and feedback for improving factual consistency of summarization models given original system-generated summaries
+*   Labels
+    *   If the summary is factually consistent
+    *   Type of the factuality error
+        *   Intrinsic errors are those that arise as a result of misinterpreting information from the source text.
+        *   Extrinsic errors are those that hallucinate new information or facts not present in the source text.
+*   Human Demonstrations: human-corrected, factually consistent summaries based on the initial system-generated summaries
+*   Human Feedback: instructions, explanation, evidence
+
+Slide 2
+Timestamp: 181.65s
+------------------------------
+**Slide Content:**
+
+**Data Collection Details**
+
+*   Dataset: XSum
+    *   News articles, short summaries (one sentence), more than 70% reference summaries containing factuality errors
+*   Model: Pegasus, large pretrained Encoder-Decoder model
+
+Input document
+Reports on Wednesday suggested more than one iguana was actually filmed, with scenes then stitched together. But the BBC has said only one animal was chased by the snakes - with other iguanas only filmed for close-ups. But the BBC defended the Sir David Attenborough-fronted programme, with a spokesperson saying: "The BBC strongly refutes any suggestion that the award-winning iguana v snakes sequence was 'faked'. The final iguana chase scene in which one iguana chased the snakes was filming - shot using two cameras, allowing us to follow both the individual iguana and the snakes' point of view.
+
+Initial Summary
+The BBC has "strongly refuted" claims that the iguana v snakes scene in Planet Earth II was faked.
+
+Explanation
+Planet Earth II was not mentioned in the source text.
+
+Evidence
+"The BBC strongly refutes any suggestion that the award-winning iguana v snakes sequence was 'faked'."
+
+Instruction
+Remove the information about Planet Earth II from the summary.
+
+Edited Summary
+The BBC has "strongly refuted" claims that the iguana v snakes scene was faked.
+
+Slide 3
+Timestamp: 196.50s
+------------------------------
+**Slide Content:**
+
+**Data Statistics**
+
+*   Data Distribution
+    *   2561 data points
+    *   1821 errors (71.1%)
+        *   563 (22.0%) intrinsic errors
+        *   1505 (58.76%) extrinsic errors
+*   More than one instruction on average (1.52)
+
+|               | Train | Val | Test | All |
+| :------------- | :---- | :-- | :--- | :-- |
+| All           | 1000  | 486 | 1075 | 2561 |
+| w/ Errors | 701  | 341 | 779 | 1821 |
+
+Table 1: Numbers of data points in DeFacto dataset. 71.1% of annotated summaries contain factual errors.
+
+**Figure Description:**
+
+The slide includes a line graph titled "Cumulative Distribution of Instruction Number."
+
+*   **X-axis:** Labeled "Instruction Number," ranging from 1 to approximately 20.
+*   **Y-axis:** Labeled "Cumulative Percentage," ranging from 0% to 100%.
+*   **Data:** A single blue line starts at (1, 10%) and gradually increases, flattening out around (18, 95%). The line reaches 100% at approximately x=20.
+*   **Trend:** The line shows a cumulative distribution, indicating that a small number of data points contain a large proportion of the instructions. The curve flattens out, suggesting that the remaining data points have a relatively small number of instructions each.
+
+Slide 4
+Timestamp: 227.19s
+------------------------------
+**Slide Content:**
+
+**Data Analysis: Human-edited Summaries**
+
+*   Improved Automatic Factualty Scores
+*   Lower ROUGE scores with reference summaries compared to the original system outputs
+
+|                     | DAE     | QAFactEval |
+| ------------------- | ------- | ---------- |
+| Reference           | 0.6176  | 1.549      |
+| System-output       | 0.6904  | 1.826      |
+| Human-edited       | 0.8975  | 2.540      |
+
+Table 2: Automatic factuality scores on the reference summaries, initial system outputs and human edited summaries. The human edited summaries in DEFACTO dataset have significantly higher (p < 0.01) factual consistency according to the automatic factuality metrics.
+
+|                     |       R1 |       R2 |       RL |
+| ------------------- | ------- | ------- | ------- |
+| Ref. vs. Sys.       | 48.01   | 25.54   | 40.45   |
+| Ref. vs. Human     | 40.30   | 18.22   | 33.86   |
+| Sys. vs. Human     | 75.79   | 66.17   | 74.89   |
+
+Table 3: Textual similarity. R1, R2, RL stand for ROUGE-1/2/L F1 scores respectively. Ref. denotes reference summaries, Sys. denotes initial system outputs, and Human denotes the human-edited summaries.
+
+Slide 5
+Timestamp: 242.04s
+------------------------------
+**Slide Content:**
+
+**Title:** Data Analysis: Editing Instructions
+
+**Text content:**
+
+*   Removing information and replacing information are two most common editing operations
+*   Intrinsic error require more diverse editing operations
+
+**Figures/graphs:**
+
+The slide contains a bar graph titled "Figure 3: Distribution of six different types of instructions."
+
+**Axes:**
+
+*   X-axis: Instruction Type. The categories are: remove, replace, add, modify, rewrite, other.
+*   Y-axis: Ratio. The scale ranges from 0.0 to 0.6.
+
+**Bars:**
+
+There are six sets of bars, one for each instruction type, and four colors representing different error types (all, extrinsic, intrinsic, both).
+
+*   **remove:**
+    *   all: A bar reaching approximately 0.52.
+    *   extrinsic: A bar reaching approximately 0.43.
+    *   intrinsic: A bar reaching approximately 0.35.
+    *   both: A bar reaching approximately 0.38.
+*   **replace:**
+    *   all: A bar reaching approximately 0.45.
+    *   extrinsic: A bar reaching approximately 0.35.
+    *   intrinsic: A bar reaching approximately 0.28.
+    *   both: A bar reaching approximately 0.32.
+*   **add:**
+    *   all: A bar reaching approximately 0.07.
+    *   extrinsic: A bar reaching approximately 0.06.
+    *   intrinsic: A bar reaching approximately 0.09.
+    *   both: A bar reaching approximately 0.07.
+*   **modify:**
+    *   all: A bar reaching approximately 0.07.
+    *   extrinsic: A bar reaching approximately 0.06.
+    *   intrinsic: A bar reaching approximately 0.08.
+    *   both: A bar reaching approximately 0.07.
+*   **rewrite:**
+    *   all: A bar reaching approximately 0.06.
+    *   extrinsic: A bar reaching approximately 0.05.
+    *   intrinsic: A bar reaching approximately 0.07.
+    *   both: A bar reaching approximately 0.06.
+*   **other:**
+    *   all: A bar reaching approximately 0.05.
+    *   extrinsic: A bar reaching approximately 0.04.
+    *   intrinsic: A bar reaching approximately 0.06.
+    *   both: A bar reaching approximately 0.05.
+
+**Legend:**
+
+The legend is located in the top right corner of the graph.
+
+*   all: Blue
+*   extrinsic: Orange
+*   intrinsic: Green
+*   both: Teal
+
+**Caption:**
+
+Figure 3: Distribution of six different types of instructions. removing information and replacing information are the most frequent types. Extrinsic errors are more likely to be corrected by removing while Intrinsic errors are more likely to be corrected by replacing.
+
+Slide 6
+Timestamp: 265.80s
+------------------------------
+**Slide Content:**
+
+**NLG Task 1: Summary Editing – Editing Model**
+
+[Diagram]
+The diagram shows a flow of information.
+1.  **Input Document** (blue rectangle)
+2.  **Initial Summary** (blue rectangle)
+3.  **Human Feedback** (blue rectangle)
+These three inputs flow into an **Editing Model** (grey oval).
+The output of the Editing Model is an **Edited Summary** (green rectangle).
+
+**Table 1: Performance with different versions of the Editing Model et al.**
+
+| Model | Tipp | 79-30 | 75-50 |
+|---|---|---|---|
+| **B+S** | 77.04 | 62.06 | 71.99 |
+| **B+S(1)** | 80.32 | 66.46 | 75.89 |
+| **B+S(2)** | 81.47 | 68.02 | 2.203 |
+| **B+S(4)** | 82.01 | 2.269 | 2.404 |
+| **B+S(8)** | 82.36 | 2.247 | 2.417 |
+| **D+S(1)** | 79.28 | 2.233 | 2.409 |
+| **D+S(4)** | 2.249 | 2.256 | 2.418 |
+| **D+S(8)** | 2.258 | 2.265 | 2.425 |
+
+R1, R2 stand for the ROUGE-1/2 F1 scores. DAE is from Goyal and Das (2020) while QFE is from Belz et al. (2022). D, S, and (n) stand for Input Document, initial Summary, human written Instructions, human written Explanation respectively, of which the combinations stand for different input variants. The best results with each input variant are highlighted.
+
+**Table 2: Performance of GPT-3.5 for summary editing.**
+
+| Model | Input | R1 | R2 | DAE | QFE |
+|---|---|---|---|---|---|
+| **Sys.** | 75.98 | 66.32 | 0.704 | 1.837 |
+| **Human.** | 100 | 100 | 0.905 | 2.501 |
+| **Tipp** | 77.04 | 62.06 | 0.835 | 2.248 |
+| **B+S** | 80.32 | 66.32 | 0.904 | 2.430 |
+| **GPT-3.5** | **B+S** | 21.98 | 0.092 | 2.061 |
+| **GPT-3.5** | **D+S(2)** | 72.22 | 60.59 | 0.910 | 2.501 |
+
+R1, R2 stand for the ROUGE-1/2 F1 scores calculated against the human-edited summary. Sys. denotes the human-edited summary outputs, and Human denotes the human-edited summary.
+
+Slide 7
+Timestamp: 287.58s
+------------------------------
+## Slide Analysis:
+
+**Title:** NLG Task 2: Feedback Generation – Critic Model
+
+**Text Content:**
+
+The slide describes a Natural Language Generation (NLG) task focused on feedback generation using a "Critic Model." It outlines the process and presents experimental results.
+
+**Diagram:**
+
+The slide contains a diagram illustrating the workflow:
+
+1.  **Input Document** (labeled box at the top)
+2.  **Initial Summary** (labeled box below Input Document)
+3.  **Critic Model** (box with an arrow from Input Document and Initial Summary)
+    *   Input Document -> Critic Model -> Generated Feedback
+    *   Initial Summary -> Critic Model -> Generated Feedback
+4.  **Editing Model** (box to the right of the Critic Model)
+    *   The Editing Model takes the Input Document, Initial Summary, and Generated Feedback as input.
+    *   Editing Model -> Edited Summary
+5.  **Edited Summary** (labeled box to the right of the Editing Model)
+
+**Tables:**
+
+**Table 10: Case study of instruction generation with LLMs. Instructions generated by the Critic models are used to instruct the Editing model.**
+
+| Method | Critic | R1 | R2 | DAE | QFE |
+|---|---|---|---|---|---|
+| Sys | - | 75.98 | 66.32 | 0.704 | 1.837 |
+| Human | - | 100 | 99.65 | 0.905 | 2.550 |
+| D+S+T | - | 75.10 | 65.15 | 0.859 | 2.296 |
+| D+S+T GPT-3.5 | - | 60.41 | 48.18 | 0.868 | 2.566 |
+| D+S+T GPT-4 | - | 53.88 | 41.13 | 0.868 | 2.404 |
+
+**Table 9: Editing model performance (T+gp) with the instructions generated by the Critic model. R1, R2 stand for the ROUGE-1/2 F1 scores calculated against the human-edited summary. Sys. denotes against sys-tem summaries, and Human denotes the human-edited summaries. D, S, I stand for Input Document, Initial Summary, human-written Instructions. T stands for the instructions generated by the Critic model.**
+
+| Method | Critic | R1 | R2 | DAE | QFE |
+|---|---|---|---|---|---|
+| Sys | - | 75.98 | 66.32 | 0.704 | 1.837 |
+| Human | - | 100 | 99.65 | 0.905 | 2.550 |
+| D+S+T | - | 75.10 | 65.15 | 0.859 | 2.296 |
+| D+S+T GPT-3.5 | - | 60.41 | 48.18 | 0.868 | 2.566 |
+| D+S+T GPT-4 | - | 53.88 | 41.13 | 0.868 | 2.404 |
+
+**Notes:**
+
+*   "Sys" likely refers to a system or baseline model.
+*   "Human" refers to human-generated summaries or instructions.
+*   "D+S+T" likely represents a combination of Input Document, Initial Summary, and instructions.
+*   "GPT-3.5" and "GPT-4" refer to specific language models.
+*   R1 and R2 likely represent ROUGE-1 and ROUGE-2 F1 scores.
+*   DAE likely stands for Delta Average Error.
+*   QFE likely stands for Quality Feedback Error.
+
+Slide 8
+Timestamp: 315.30s
+------------------------------
+## Slide Analysis: NLG Task 3: Explanation Automatic Factual Error Correction – Editor Model
+
+**Title:** NLG Task 3: Explanation Automatic Factual Error Correction – Editor Model
+
+**Text Content:**
+
+The slide presents a diagram and two tables related to an NLG task focused on automatic factual error correction using an "Editor Model."
+
+**Diagram:**
+
+The diagram illustrates the process flow:
+
+1.  **Input Document** (blue box)
+2.  **Editor Model** (arrow pointing from Input Document)
+3.  **Initial Summary** (orange box, positioned after the Editor Model)
+4.  **Human Feedback** (arrow pointing from Initial Summary)
+5.  **Edited Summary** (green box, positioned after Human Feedback)
+
+**Tables:**
+
+**Table 1: Correct Known Factual Errors**
+
+| Method | R1   | R2   | DAE  | QFE  |
+| :------- | :--- | :--- | :--- | :--- |
+| Sys      | 75.98 | 66.32 | 0.704 | 1.537 |
+| Human    | 100   | 100   | 0.905 | 2.550 |
+| Editing  | 77.04 | 67.96 | 0.825 | 2.240 |
+| Editor1  | 78.01 | 69.01 | 0.864 | 2.109 |
+| Editor2  | 78.46 | 69.70 | 0.867 | 2.109 |
+| Editing  | 76.10 | 66.06 | 0.808 | 2.132 |
+| Editor1  | 77.46 | 68.29 | 0.821 | 2.112 |
+| Editor2  | 77.97 | 69.02 | 0.824 | 2.109 |
+| Editing  | 75.22 | 67.95 | 0.794 | 2.121 |
+| Editor1  | 76.83 | 69.46 | 0.826 | 2.104 |
+| Editor2  | 77.02 | 69.82 | 0.830 | 2.104 |
+| Editing  | 76.22 | 67.42 | 0.796 | 2.114 |
+
+**Table 6: Factual Error Detection and Correction**
+
+| System | R1   | R2   | R1_ | DAE  | QFE  |
+| :------- | :--- | :--- | :--- | :--- | :--- |
+| Pegasus  | 47.35 | 24.61 | 39.59 | 0.763 | 2.029 |
+| Human    | 41.94 | 19.49 | 34.97 | 0.905 | 2.550 |
+| CCGS     | 45.11 | 21.06 | 36.60 | 0.760 | 1.847 |
+| CLIFF    | 46.46 | 23.38 | 36.73 | 0.780 | 2.068 |
+| ReDRESS  | 43.50 | 19.77 | 35.28 | 0.830 | 2.065 |
+| FactPegasus| 38.95 | 15.99 | 31.68 | 0.882 | 1.941 |
+| CompEdit | 46.02 | 21.93 | 34.73 | 0.811 | 1.964 |
+| Editor   | 45.14 | 22.27 | 37.89 | 0.833 | 2.250 |
+
+Slide 9
+Timestamp: 331.14s
+------------------------------
+**Slide Content:**
+
+**Further Advantages**
+
+*   Better Human Evaluation: Requiring annotators to provide demonstrations and feedback helps them to better understand the evaluation task
+
+*   Fine-grained annotations: our dataset helps researchers to understand the factual errors thanks to the human-written explanations and instructions
+
+*   Training better factuality metrics: our dataset can be used to training new factuality metrics
+
+*   Meta-evaluation: the information-rich format of our dataset is helpful for more in-depth evaluation of factuality metrics
+
+Total slides processed: 9

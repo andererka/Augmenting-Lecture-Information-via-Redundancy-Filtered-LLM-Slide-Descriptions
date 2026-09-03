@@ -1,0 +1,273 @@
+Slide 1
+Timestamp: 3.95s
+------------------------------
+Here's the breakdown of the slide:
+
+**Title:** Towards Understanding Omission in Dialogue Summarization
+
+**Text content:**
+* Yicheng Zou¹*, Kaitao Song¹, Xu Tan², Zhongkai Fu², Qi Zhang¹, Dongsheng Li¹, Tao Gui¹*
+¹School of Computer Science, Fudan University, Shanghai, China
+²Microsoft Research Asia, China
+³Institute of Modern Languages and Linguistics, Fudan University, Shanghai, China
+{yiczhou18, tgui} @fudan.edu.cn
+{kaitaosong, xuta, zhongfu, dongsheng.li} @microsoft.com
+
+The 61st Annual Meeting of the Association for Computational Linguistics
+Toronto, Canada
+July 9-14, 2023
+
+**Visual elements:**
+
+*   **Logo:** Top left corner, a logo with Chinese characters (likely Fudan University) and a Microsoft logo.
+*   **Image:** Background image of the Toronto skyline.
+*   **Presenter:** A small image of the presenter in the bottom right corner, wearing headphones.
+
+**Note:** There are no formulas, tables, or figures on this slide.
+
+Slide 2
+Timestamp: 9.39s
+------------------------------
+Here's the breakdown of the slide:
+
+**Title:** Towards Understanding Omission in Dialogue Summarization
+
+**Text content:**
+* Yicheng Zou¹*, Kaitao Song¹, Xu Tan², Zhongkai Fu¹, Qi Zhang¹, Dongsheng Li¹, Tao Gui¹*
+¹School of Computer Science, Fudan University, Shanghai, China
+²Microsoft Research Asia, China
+³Institute of Modern Languages and Linguistics, Fudan University, Shanghai, China
+{yiczhou18, tgui} @fudan.edu.cn
+{kaitaosong, xuta, zhongfu, dongsheng.li} @microsoft.com
+
+The 61st Annual Meeting of the Association for Computational Linguistics
+Toronto, Canada
+July 9-14, 2023
+
+**Visual elements:**
+
+*   **Logo:** Top left corner, a logo with Chinese characters (likely Fudan University) and the Microsoft logo.
+*   **Background Image:** A cityscape of Toronto, Canada, with several skyscrapers visible.
+*   **Presenter Image:** A small image of the presenter (a person wearing headphones) in the bottom right corner.
+
+**Summary:**
+
+The slide presents a research paper titled "Towards Understanding Omission in Dialogue Summarization." It lists the authors and their affiliations (Fudan University and Microsoft Research Asia). It also indicates that the paper was presented at the 61st Annual Meeting of the Association for Computational Linguistics in Toronto, Canada, from July 9-14, 2023. The slide includes logos for Fudan University and Microsoft, a background image of the Toronto skyline, and a picture of the presenter.
+
+Slide 3
+Timestamp: 36.12s
+------------------------------
+**Slide Content:**
+
+**Background**
+
+Dialogue Summarization
+Produce summaries for dialogues in various scenarios.
+
+[Image: Six icons arranged in a 2x3 grid. Each icon is associated with a label below it.]
+
+Customer Service [Icon: A person sitting at a laptop with a speech bubble above their head.]
+Medical Consultation [Icon: A person in a white coat with a speech bubble above their head.]
+Meetings [Icon: A circular icon with multiple speech bubbles around a central "MEETING" text.]
+Movie Scripts [Icon: A script page with a pencil.]
+Mail Threads [Icon: An envelope icon.]
+Chat Logs [Icon: A green speech bubble icon.]
+
+Slide 4
+Timestamp: 138.10s
+------------------------------
+**Slide Content:**
+
+**Background**
+
+*   Omission in Dialogue Summarization
+
+**Figure 1: Omission Rate vs. Dataset**
+
+A box plot graph is displayed, comparing the omission rates of different models across various datasets.
+
+**X-axis:** Dataset names: SAMSam, DialogSum, EmailSum, QMSam, TweetSum.
+**Y-axis:** Omission Rate (percentage), ranging from 0% to 100%.
+
+**Legend:**
+*   BARTLarge: Red circle markers
+*   BARTbase: Green square markers
+*   Pegasus: Yellow triangle markers
+*   T5Large: Blue diamond markers
+*   T5base: Purple cross markers
+*   Transformer: Pink star markers
+
+**Data Points:**
+
+*   **SAMSam:** BARTLarge (around 82%), BARTbase (around 83%), Pegasus (around 85%), T5Large (around 86%), T5base (around 84%), Transformer (around 83%).
+*   **DialogSum:** BARTLarge (around 85%), BARTbase (around 86%), Pegasus (around 88%), T5Large (around 89%), T5base (around 87%), Transformer (around 86%).
+*   **EmailSum:** BARTLarge (around 88%), BARTbase (around 89%), Pegasus (around 91%), T5Large (around 92%), T5base (around 90%), Transformer (around 89%).
+*   **QMSam:** BARTLarge (around 91%), BARTbase (around 92%), Pegasus (around 94%), T5Large (around 95%), T5base (around 93%), Transformer (around 92%).
+*   **TweetSum:** BARTLarge (around 89%), BARTbase (around 90%), Pegasus (around 92%), T5Large (around 93%), T5base (around 91%), Transformer (around 89%).
+
+**Text below the graph:**
+
+Omission is a serious and general problem in dialogue summarization.
+
+**Figure 2: Predictions in Dialogue**
+
+A series of violin plots are displayed, showing the distribution of predictions in dialogue for different datasets.
+
+**X-axis:** Intervals of Utterance Numbers (Dialogue Length), ranging from 1 to 110.
+**Y-axis:** Predictions in Dialogue.
+
+**Violin Plots:**
+
+*   **SAMSam:** Violin plot showing a wide distribution of predictions, with a peak around 1-5 utterances.
+*   **DialogSum:** Violin plot showing a distribution similar to SAMSam, but slightly more concentrated around 1-5 utterances.
+*   **EmailSum:** Violin plot showing a distribution similar to DialogSum, but with a wider range of predictions.
+*   **QMSam:** Violin plot showing a narrower distribution of predictions, concentrated around 1-10 utterances.
+*   **TweetSum:** Violin plot showing a very narrow distribution of predictions, concentrated around 1-5 utterances.
+
+Slide 5
+Timestamp: 233.15s
+------------------------------
+**Slide Content:**
+
+**New Dataset**
+
+*   OLDS: A Dataset for Omission Detection in Dialogue Summarization
+
+| Domain | Split | # of dialogue turns | Avg. Len. of dialogue turns | Len. of summary |  | # of candidate summaries (Avg. ROUGE-1 score) |
+|---|---|---|---|---|---|---|
+|  |  |  |  |  | BART<sub>s</sub> | BART<sub>l</sub> | T5<sub>s</sub> | T5<sub>l</sub> | Transformer | Pegasus |
+| **SAMSum** | Train | 14,732 | 11.2 | 21.4 |  | 25,434 (50.6) | 2,687 (48.2) | 29,471 (57.2) | 32,959 (41.0) | 46,777 (57.5) | 0 |
+|  | Dev | 819 | 10.8 | 21.2 |  | 1,686 (54.4) | 462 (44.0) | 1,836 (61.0) | 1,636 (47.1) | 49,926 (59.2) | 0 |
+|  | Test | 379 | 11.4 | 21.4 |  | 803 (52.6) | 132 (41.3) | 868 (59.3) | 843 (47.6) | 29,789 (59.1) | 6,639 (20.4) |
+| **DialogSum** | Train | 819 | 9.5 | 18.7 |  | 3,706 (50.6) | 1,441 (41.3) | 2,897 (54.7) | 2,989 (49.3) | 29,749 (59.1) | 1,000 (40.4) |
+|  | Dev | 300 | 9.3 | 18.5 |  | 1,086 (56.5) | 388 (44.0) | 1,098 (60.1) | 1,086 (49.1) | 4,388 (59.3) | 600 (40.4) |
+|  | Test | 300 | 23.2 | 39.9 |  | 1,000 (51.3) | 368 (41.3) | 998 (53.6) | 998 (49.3) | 2,547 (59.1) | 600 (40.4) |
+| **EmailSum** | Train | 1,886 | 6.7 | 20.6 |  | 3,706 (52.3) | 1,441 (41.3) | 2,897 (54.7) | 2,989 (49.3) | 2,547 (59.1) | 600 (40.4) |
+|  | Dev | 300 | 6.5 | 5.9 |  | 1,086 (56.5) | 388 (44.0) | 1,098 (60.1) | 1,086 (49.1) | 4,388 (59.3) | 600 (40.4) |
+|  | Test | 300 | 23.2 | 39.9 |  | 1,000 (51.3) | 368 (41.3) | 998 (53.6) | 998 (49.3) | 2,547 (59.1) | 600 (40.4) |
+| **TopicSum** | Train | 1,095 | 11.4 | 21.4 |  | 2,697 (50.6) | 1,441 (48.2) | 2,471 (57.2) | 32,959 (41.0) | 46,777 (57.5) | 0 |
+|  | Dev | 300 | 10.8 | 21.2 |  | 1,686 (54.4) | 462 (44.0) | 1,836 (61.0) | 1,636 (47.1) | 49,926 (59.2) | 0 |
+|  | Test | 300 | 11.4 | 21.4 |  | 803 (52.6) | 132 (41.3) | 868 (59.3) | 843 (47.6) | 29,789 (59.1) | 6,639 (20.4) |
+| **NewsSum** | Train | 1,095 | 11.4 | 21.4 |  | 2,697 (50.6) | 1,441 (48.2) | 2,471 (57.2) | 32,959 (41.0) | 46,777 (57.5) | 0 |
+|  | Dev | 300 | 10.8 | 21.2 |  | 1,686 (54.4) | 462 (44.0) | 1,836 (61.0) | 1,636 (47.1) | 49,926 (59.2) | 0 |
+|  | Test | 300 | 11.4 | 21.4 |  | 803 (52.6) | 132 (41.3) | 868 (59.3) | 843 (47.6) | 29,789 (59.1) | 6,639 (20.4) |
+| **TwitterSum** | Train | 1,095 | 11.4 | 21.4 |  | 2,697 (50.6) | 1,441 (48.2) | 2,471 (57.2) | 32,959 (41.0) | 46,777 (57.5) | 0 |
+|  | Dev | 300 | 10.8 | 21.2 |  | 1,686 (54.4) | 462 (44.0) | 1,836 (61.0) | 1,636 (47.1) | 49,926 (59.2) | 0 |
+|  | Test | 300 | 11.4 | 21.4 |  | 803 (52.6) | 132 (41.3) | 868 (59.3) | 843 (47.6) | 29,789 (59.1) | 6,639 (20.4) |
+
+Slide 6
+Timestamp: 285.63s
+------------------------------
+## Slide Analysis:
+
+**Title:** Analysis
+
+**Text Content:**
+
+*   Baselines and Results
+*   Pair-wise Classification (Text Matching)
+*   Sequence Labeling (Extractive Summarization)
+*   Pointer Network (Question Answering)
+
+**Figures/Graphs:**
+
+There are five pie charts, each representing a different dataset (SAMSum, DialogSum, EmailSum, QMSum, TweetSum). Each pie chart is divided into two sections:
+
+*   **Positive Labels (Green):** Represents the percentage of positive omission detection labels.
+*   **Negative Labels (Blue):** Represents the percentage of negative omission detection labels.
+
+Here's a breakdown of the percentages for each dataset:
+
+*   **SAMSum:** Positive: 19%, Negative: 81%
+*   **DialogSum:** Positive: 22%, Negative: 78%
+*   **EmailSum:** Positive: 27%, Negative: 73%
+*   **QMSum:** Positive: 19%, Negative: 81%
+*   **TweetSum:** Positive: 23%, Negative: 77%
+
+**Tables:**
+
+The slide contains a table with model names (BERT, RoBERTa) and performance metrics (P, R, F1, WR) for each dataset (SAMSum, DialogSum, EmailSum, QMSum, TweetSum) across three tasks (Pair-wise Classification, Sequence Labeling, Pointer Network).
+
+**Table Data:**
+
+| Model   | SAMSum | DialogSum | EmailSum | QMSum | TweetSum |
+| :------ | :----- | :-------- | :------- | :---- | :------- |
+|         | P       | R         | F1       | WR     | P       | R         | F1       | WR     |
+| BERT    | 41.86   | 50.60     | 40.07    | 50.07  | 41.86   | 50.60     | 40.07    | 50.07  | 33.97   | 59.12   | 39.12   | 60.73  | 41.84   | 47.17   | 44.35   | 53.86  |
+| RoBERTa | 42.45   | 53.27     | 42.59    | 53.41  | 42.45   | 53.27     | 42.59    | 53.41  | 43.11   | 65.63   | 45.81   | 66.99  | 41.57   | 49.14   | 45.14   | 57.08  |
+|         | P       | R         | F1       | WR     | P       | R         | F1       | WR     |
+| BERT    | 43.18   | 53.57     | 41.07    | 50.71  | 40.71   | 46.21     | 0.50    | 51.13  | 41.11   | 27.55   | 42.29   | 45.29  | 40.70   | 40.75   | 40.88   | 50.41  |
+| RoBERTa | 42.61   | 54.85     | 42.15    | 53.17  | 42.61   | 24.85     | 42.15    | 53.17  | 44.81   | 40.90   | 36.77   | 52.82  | 42.91   | 42.91   | 42.91   | 53.12  |
+|         | P       | R         | F1       | WR     | P       | R         | F1       | WR     |
+| BERT    | 41.27   | 50.00     | 37.79    | 47.23  | 41.27   | 42.79     | 0.00    | 49.01  | 45.31   | 77.73   | 55.63   | 60.00  | 40.69   | 45.30   | 42.10   | 50.00  |
+| RoBERTa | 50.64   | 41.90     | 45.58    | 45.58  | 50.64   | 45.90     | 40.60    | 40.60  | 44.81   | 19.16   | 30.00   | 36.00  | 42.23   | 45.38   | 43.08   | 50.00  |
+
+**Other Visual Elements:**
+
+*   A picture of a person wearing headphones is present on the right side of the slide.
+*   The text "Omission Detection is a challenging task." is displayed at the bottom of the slide in red.
+
+Slide 7
+Timestamp: 332.16s
+------------------------------
+**Slide Content:**
+
+**Analysis**
+
+*   Omission-based Summary Refinement
+
+**Figures/Graphs:**
+
+There are two graphs presented on the slide. Both graphs are line graphs with ROUGE-1 score on the y-axis and different datasets on the x-axis. The datasets are: SAM, Dial, Email, QM, Tweet.
+
+**Top Graph: BART-large**
+
+*   **Title:** BART-large
+*   **Y-axis label:** ROUGE-1
+*   **Y-axis range:** 30 to 60
+*   **X-axis label:** (Implied: Dataset)
+*   **Datasets:** SAM, Dial, Email, QM, Tweet
+*   **Lines:**
+    *   **Raw:** Yellow line. Values: SAM (55.4), Dial (46.5), Email (36.2), QM (31.4), Tweet (41.1)
+    *   **+Dial:** Orange line. Values: SAM (56.3), Dial (48.2), Email (38.1), QM (33.1), Tweet (43.8)
+    *   **+Omit:** Red line. Values: SAM (56.5), Dial (51.5), Email (40.2), QM (34.2), Tweet (46.5)
+
+**Bottom Graph: T5-small**
+
+*   **Title:** T5-small
+*   **Y-axis label:** ROUGE-1
+*   **Y-axis range:** 20 to 60
+*   **X-axis label:** (Implied: Dataset)
+*   **Datasets:** SAM, Dial, Email, QM, Tweet
+*   **Lines:**
+    *   **Raw:** Yellow line. Values: SAM (55.5), Dial (45.6), Email (36.1), QM (31.1), Tweet (41.2)
+    *   **+Dial:** Orange line. Values: SAM (56.3), Dial (48.1), Email (38.1), QM (33.1), Tweet (43.8)
+    *   **+Omit:** Red line. Values: SAM (56.5), Dial (51.1), Email (40.1), QM (34.1), Tweet (46.2)
+
+**Other visual elements:**
+
+*   At the bottom of the slide, in red text: "Omission Detection is a valuable task."
+
+Slide 8
+Timestamp: 335.13s
+------------------------------
+Here's the breakdown of the slide:
+
+**Title:** Not explicitly present, but the slide is part of "The 61st Annual Meeting of the Association for Computational Linguistics" in Toronto, Canada, July 9-14, 2023.
+
+**Text content:**
+
+Thank you!
+
+Contact: yczou18@fudan.edu.cn
+https://arxiv.org/abs/2211.07145
+https://github.com/microsoft/msummarizer
+
+**Other visual elements:**
+
+*   A QR code is present on the left side of the slide.
+*   On the bottom of the slide is an image of the Toronto skyline at dusk. The CN Tower is prominently visible.
+*   The text "The 61st Annual Meeting of the Association for Computational Linguistics" is overlaid on the image of the skyline.
+*   Below the title is the location "Toronto, Canada" and the dates "July 9-14, 2023".
+
+Total slides processed: 8

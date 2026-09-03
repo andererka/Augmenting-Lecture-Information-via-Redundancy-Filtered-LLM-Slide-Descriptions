@@ -1,0 +1,191 @@
+Slide 1
+Timestamp: 5.17s
+------------------------------
+- Main topic: This slide introduces the "EPIC" project, which focuses on multi-perspective annotation of a corpus of irony.
+- Key points:
+    - The project is titled "EPIC: Multi-Perspective Annotation of a Corpus of Irony."
+    - The project is a collaboration between the University of Torino and Amazon Alexa.
+    - The slide lists the project contributors: Anna Frenda, Alessandro Pedrani, Valerio Basile, Soda Harem Lo, Alessandra Teresia Cignarella, Raffaella Panizzon, Cristina Marco, Bianca Scarlini, Viviana Patti, Cristina Bosco, Davide Bernardi.
+- Visual elements:
+    - The slide has a background image of a stylized cityscape, likely representing Turin, Italy.
+    - The logos of the University of Torino and Amazon Alexa are displayed in the top left and right corners, respectively.
+- Notable text:
+    - "EPIC: Multi-Perspective Annotation of a Corpus of Irony" is the title of the project, prominently displayed.
+    - The list of contributors is presented in a smaller font size below the title.
+
+Slide 2
+Timestamp: 11.85s
+------------------------------
+- Main topic: This slide introduces the "EPIC" project, which focuses on multi-perspective annotation of a corpus of irony.
+- Key points:
+    - The project is titled "EPIC: Multi-Perspective Annotation of a Corpus of Irony."
+    - The project is a collaboration between the University of Torino and Amazon Alexa.
+    - The slide lists the project contributors: Anna Frenda, Alessandro Pedrani, Valerio Basile, Soda Harem Lo, Alessandra Teresia Cignarella, Raffaella Panizzon, Cristina Marco, Bianca Scarlini, Viviana Patti, Cristina Bosco, Davide Bernardi.
+- Visual elements:
+    - The slide has a background image of a stylized cityscape, likely representing Turin, Italy.
+    - The logos of the University of Torino and Amazon Alexa are displayed in the top left and right corners, respectively.
+- Notable text:
+    - "EPIC: Multi-Perspective Annotation of a Corpus of Irony" is the title of the project, prominently displayed.
+    - The list of contributors is presented in a smaller font size below the title.
+
+Slide 3
+Timestamp: 58.56s
+------------------------------
+- Main topic: This slide explains the motivation for using perspectives in Natural Language Understanding (NLU) due to the limitations of the ground truth paradigm.
+- Key points:
+    - Modern NLU is primarily based on supervised machine learning and data-driven approaches.
+    - These approaches rely on large sets of manually annotated data that encode human knowledge.
+    - The ground truth paradigm has limitations, particularly in subjective tasks.
+- Visual elements: Three stick figures are displayed. Two are purple and stand side-by-side, while one is gray and stands to the right of the purple figures.
+- Notable text:
+    - Title: WHY PERSPECTIVES?
+    - Terms: Natural Language Understanding (NLU), supervised machine learning, data-driven approaches, ground truth.
+
+Slide 4
+Timestamp: 199.66s
+------------------------------
+- Main topic: This slide presents an annotation task where the viewer must determine if a reply is ironic.
+- Key points:
+    - The message states that a brother and his wife married on Feb 29th and it is their fifth anniversary.
+    - The reply states "Means it's been 20 years since their marriage?".
+    - The viewer is asked to determine if the reply is ironic.
+- Visual elements:
+    - Two rectangular boxes, one blue and one green, contain the message and reply respectively.
+    - Two buttons labeled "Ironic" and "Not ironic" are presented for the viewer to select an answer.
+- Notable text:
+    - Title: "ANNOTATION TASK"
+    - Labels: "Message", "Reply", "Is the reply ironic?"
+
+Slide 5
+Timestamp: 230.16s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide displays the distribution of IAA (Indole-3-acetic acid) among different perspectives.
+
+- **Key points:**
+    * IAA distribution is analyzed across six categories: by Gender, by Stage Group, by Heterozygote, by Student Status, and by Supplementation Status.
+    * Each category is further divided into subgroups, likely representing different levels or conditions within that category.
+
+- **Visual elements:**
+    * The slide contains six violin plots arranged in a 2x3 grid.
+    * Each violin plot represents the distribution of IAA values for a specific perspective and subgroup.
+    * The width of each violin indicates the density of data points at a given IAA value; wider sections indicate higher density.
+    * The plots show the median IAA value as a solid line within each violin.
+    * The plots also show the interquartile range (IQR) as the area between the edges of the violin.
+
+- **Notable text:**
+    * Title: "DISTRIBUTION OF IAA AMONG PERSPECTIVES"
+    * X-axis labels: "By Gender", "By Stage Group", "By Heterozygote", "By Student Status", and "By Supplementation Status"
+    * Y-axis label: "Degree of Variance in Degree of IAA Level"
+    * Subgroup labels: Within each plot, subgroups are labeled along the x-axis, representing different conditions or levels within each perspective (e.g., Male, Female for "By Gender").
+
+Slide 6
+Timestamp: 253.04s
+------------------------------
+- Main topic: This slide introduces the research project "Modelling Perspectives with EPIC" and its goal of understanding the importance of a perspectivist approach to irony detection.
+- Key points:
+    - The research aims to compare a perspectivist approach to irony detection with a standard non-perspectivist approach.
+    - The non-perspectivist approach uses a gold standard dataset for training and testing.
+- Visual elements:
+    - Three cartoon figures are displayed, colored yellow, purple, and gray. They are simple stick figures with basic shapes for heads and limbs.
+- Notable text:
+    - Title: "MODELLING PERSPECTIVES WITH EPIC"
+    - Text: "we want to understand the importance of a perspectivist approach for irony detection compared to a standard non-perspectivist approach, whose training and testing is based on a gold standard dataset"
+
+Slide 7
+Timestamp: 290.22s
+------------------------------
+**Slide Content Description:**
+
+**Main topic:** This slide presents an analysis of perspective-aware models compared to non-perspective models, focusing on their confidence levels in different test sets.
+
+**Key points:**
+*   Perspective-aware models tend to take decisions with less uncertainty than standard non-perspective models.
+*   Perspective-aware models are inclined to be more confident when tested on a test set representative of their perspective.
+*   The slide compares the F1-score and confidence levels of various models (non-perspective, fem-persp, male-persp, Boomers-persp, GenX-persp, GenY-persp, GenZ-persp, UK-persp, US-persp, EU-persp, IN-persp, UK-persp) across two test sets: a "gold" test set and a "perspective-based" test set.
+*   The slide shows the change in confidence (Δ Confidence) between the gold and perspective-based test sets for each model.
+
+**Visual elements:**
+*   A table with multiple rows and columns.
+    *   Rows represent different models (e.g., non-perspective, fem-persp, male-persp, etc.).
+    *   Columns represent metrics: F1-score, standard deviation (std), confidence, and average (avg) for both the "gold" test set and the "perspective-based" test set.
+    *   A column labeled "Δ Confidence" shows the difference in confidence between the two test sets.
+
+**Notable text:**
+*   Title: "MODELLING PERSPECTIVES"
+*   Highlighted text boxes:
+    *   "Perspective-aware models tend to take a decision with less uncertainty than standard non-perspective models." (Blue box)
+    *   "Perspective-aware models are inclined to be more confident when they are tested on a test set representative of their perspective." (Yellow box)
+*   Column headers: "F1-score," "std," "Confidence," "avg"
+*   Test set labels: "GOLD TEST SET" and "PERSPECTIVE-BASED TEST SET"
+*   Model names: non-perspective, fem-persp, male-persp, Boomers-persp, GenX-persp, GenY-persp, GenZ-persp, UK-persp, US-persp, EU-persp, IN-persp, UK-persp.
+*   Δ Confidence label.
+
+Slide 8
+Timestamp: 296.90s
+------------------------------
+- Main topic: This slide presents data on variation in irony perception across different generations and countries.
+
+- Key points:
+    - Contiguous generations perceive irony differently, with the highest variation observed between Boomers and Gen Y.
+    - The highest variation in irony perception is reported between the United Kingdom and Ireland.
+
+- Visual elements:
+    - A table showing irony perception scores for different generations (Boomers, Gen X, Gen Y, Gen Z) and genders (male, female).
+    - A table showing irony perception scores for different countries (Australia, United States, Ireland, United Kingdom).
+    - The highest scores in each table are highlighted in red.
+
+- Notable text:
+    - Title: "VARIATION IN IRONY PERCEPTION"
+    - Text box: "In general, contiguous generations seem to perceive irony in different way (boomers vs. genY results in the highest variation)."
+    - Text box: "The highest variation is reported between the United Kingdom and Ireland."
+    - Labels: "male", "fem", "genX", "genY", "genZ", "Au", "US", "Ir", "UK"
+    - Numerical data within the tables.
+
+Slide 9
+Timestamp: 302.62s
+------------------------------
+- Main topic: This slide introduces the topic of variation in irony perception and poses the question of which dimension shows the highest variation.
+- Key points:
+    - The goal is to identify the dimension along which the highest variation in irony perception can be observed.
+- Visual elements:
+    - Three stick figures are displayed, colored yellow, purple, and gray, respectively. They are positioned in a row across the bottom of the slide.
+- Notable text:
+    - Title: "Variation in Irony Perception"
+    - Text: "we want to examine, along which dimension, we can observe the highest variation in the perception of irony"
+
+Slide 10
+Timestamp: 341.70s
+------------------------------
+- Main topic: This slide presents data on variation in irony perception across different generations and countries.
+
+- Key points:
+    - Contiguous generations perceive irony differently, with the highest variation observed between Boomers and Gen Y.
+    - The highest variation in irony perception is reported between the United Kingdom and Ireland.
+
+- Visual elements:
+    - A table showing irony perception scores for different generations (Boomers, Gen X, Gen Y, Gen Z) and genders (male, female).
+    - A table showing irony perception scores for different countries (Australia, United States, Ireland, United Kingdom).
+    - The highest scores in each table are highlighted in red.
+
+- Notable text:
+    - Title: "VARIATION IN IRONY PERCEPTION"
+    - Text box: "In general, contiguous generations seem to perceive irony in different way (boomers vs. genY results in the highest variation)."
+    - Text box: "The highest variation is reported between the United Kingdom and Ireland."
+    - Labels: "male", "fem", "genX", "genY", "genZ", "Au", "US", "Ir", "UK"
+    - Numerical data within the tables.
+
+Slide 11
+Timestamp: 347.42s
+------------------------------
+- Main topic: This slide serves as a concluding message, thanking the audience for their attention and inviting them to a poster session in Toronto.
+- Key points:
+    - Thanks the audience for their attention.
+    - Invites the audience to attend a poster session in Toronto.
+- Visual elements: The slide features a background pattern of numerous stylized faces.
+- Notable text:
+    - "Thanks for your attention!"
+    - "See you at the poster session in Toronto"
+
+Total slides processed: 11

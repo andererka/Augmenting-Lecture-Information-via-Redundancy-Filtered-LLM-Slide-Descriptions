@@ -1,0 +1,20 @@
+Here is the refined slide description containing only information not derivable from the transcript:
+
+---
+
+**Slide 9**
+Timestamp: 284.00s
+
+**Title:** Generalizability test
+
+**Figures/graphs:**
+- A 2x2 matrix with a gray background, divided into four quadrants.
+- The matrix is framed by two pink arrows:
+  - Vertical arrow labeled "Retriever compatibility" (bottom to top: "Incompatible" to "Compatible").
+  - Horizontal arrow labeled "Reader compatibility" (left to right: "Incompatible" to "Compatible").
+- Quadrant labels:
+  - Top-left: "Concept shift" (white text).
+  - Top-right: "No shift" (white text).
+  - Bottom-left: "Full shift" (white text).
+  - Bottom-right: "Covariate shift" (white text).
+- Slide number "22" in the bottom right corner.

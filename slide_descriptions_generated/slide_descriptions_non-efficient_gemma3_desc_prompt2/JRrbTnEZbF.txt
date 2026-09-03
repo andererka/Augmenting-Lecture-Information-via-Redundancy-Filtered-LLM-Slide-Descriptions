@@ -1,0 +1,462 @@
+Slide 1
+Timestamp: 17.00s
+------------------------------
+**Slide Content:**
+
+**Title:** Don't Forget Your ABC's: Evaluating the State-of-the-Art in Chat-Oriented Dialogue Systems
+
+**Text content:**
+Sarah E. Finch, James D. Finch, and Jinho D. Choi
+
+**Visual Elements:**
+
+*   **Logos:**
+    *   Emory University logo (shield with "Emory" and "University" text)
+    *   Emory NLP Research Lab logo (circular logo with "Emory NLP Research Lab" text)
+    *   Alexa logo (Amazon Alexa logo)
+
+**Notes:**
+
+The slide has a dark blue background. The title is in white, large font. The author names are below the title in a smaller font. The logos are arranged horizontally at the bottom of the slide.
+
+Slide 2
+Timestamp: 35.50s
+------------------------------
+**Slide Content:**
+
+**Title:** Comparative Evaluation
+
+**Visual Elements:**
+
+The slide features a cartoon-style diagram illustrating a comparative evaluation process.
+
+*   **Left Side:**
+    *   A cartoon representation of a person (female, with short black hair) is shown with a speech bubble above her.
+    *   A cartoon robot is shown next to the person, also with a speech bubble above it.
+*   **Right Side:**
+    *   Another cartoon representation of a person (female, with short black hair) is shown with a speech bubble above her.
+    *   Another cartoon robot is shown next to the person, also with a speech bubble above it. A green checkmark is next to the robot.
+*   **Center:**
+    *   A cartoon judge (male, with white hair and a white wig) is shown wearing a black robe and holding a gavel.
+
+**Logos:**
+
+*   Bottom Left: Emory University logo
+*   Bottom Right: Amazon Alexa logo
+
+**Additional Notes:**
+
+The speech bubbles above the people and robots are empty, indicating that they are providing input or responses during the evaluation. The green checkmark next to the robot on the right side suggests that it has passed the evaluation.
+
+Slide 3
+Timestamp: 45.50s
+------------------------------
+**Slide Analysis:**
+
+**Title:** Dimensions of Dialogue Quality
+
+**Text content:**
+
+Dialogue Quality
+
+**Other visual elements:**
+
+*   A pink rectangular button labeled "Dialogue Quality" is centered on the slide.
+*   The Emory University logo is in the bottom left corner.
+*   An Alexa logo is in the bottom right corner.
+
+Slide 4
+Timestamp: 71.50s
+------------------------------
+**Slide Content:**
+
+**Title:** Likert Rating Evaluation
+
+**Text content:**
+Rate the relevance of the bot's responses
+
+**Figures/graphs:**
+
+The slide features a cartoon-style illustration depicting a conversation between a person and a chatbot.
+
+*   **Person:** A silhouette of a person's head is shown on the left side of the illustration. A speech bubble is emanating from the person's head.
+*   **Chatbot:** Two blue robot heads are shown on the right side of the illustration. Each robot head has a speech bubble emanating from it.
+*   **Conversation Flow:** The person's speech bubble is connected to the first chatbot's speech bubble, indicating a response. The first chatbot's speech bubble is then connected to the second chatbot's speech bubble, suggesting a follow-up or alternative response.
+*   **Rating Scale:** Below the conversation illustration, there is a horizontal rating scale with numbers 1 to 5.
+    *   The scale is represented by circles connected by a line.
+    *   A green checkmark is positioned above the number 5, indicating a positive rating.
+*   **Judge:** A cartoon judge is shown at the bottom left of the illustration, holding a gavel.
+
+**Other visual elements:**
+
+*   The slide has a dark blue header with white text.
+*   The Emory University logo is present in the bottom left corner.
+*   The Amazon Alexa logo is present in the bottom right corner.
+
+**Note:** The slide is designed to visually represent the process of evaluating a chatbot's responses using a Likert scale, where users rate the relevance of the bot's answers on a scale of 1 to 5.
+
+Slide 5
+Timestamp: 98.50s
+------------------------------
+**Slide Content:**
+
+**Title:** Annotating Behaviors in Chat (ABC-Eval)
+
+**Text content:**
+(No text content other than the title)
+
+**Figures/graphs:**
+
+The slide features a diagram illustrating the ABC-Eval process for annotating behaviors in chat.
+
+*   **Layout:** The diagram is structured with a vertical flow, representing a sequence of interactions.
+*   **Elements:**
+    *   **Human Icons:** Three stylized human head icons are arranged vertically on the left side of the diagram. They represent a user engaging in a chat conversation.
+    *   **Chat Bubbles:** Three blue chat bubbles are positioned to the right of the human icons, representing the user's responses in the chat. Arrows point from the human icons to the chat bubbles, indicating the flow of conversation.
+    *   **Robot Icons:** Three robot head icons are positioned between the human icons and the chat bubbles. They represent the AI chatbot responding to the user.
+    *   **Annotation Labels:** Two annotation labels are positioned below the third chat bubble:
+        *   "Lack of Empathy"
+        *   "Self Contradiction"
+    *   **Irrelevant Label:** One annotation label is positioned above the first chat bubble:
+        *   "Irrelevant"
+
+**Other visual elements:**
+
+*   **Logos:** Two logos are displayed at the bottom left corner of the slide:
+    *   Emory University logo
+    *   A stylized head icon
+*   **Logo:** One logo is displayed at the bottom right corner of the slide:
+    *   Amazon Alexa logo
+
+Slide 6
+Timestamp: 153.50s
+------------------------------
+**Slide Content:**
+
+**Title:** Baseline Evaluations
+
+**Text content:**
+(No text content other than the title)
+
+**Figures/graphs:**
+
+The slide contains three diagrams illustrating different evaluation methods. Each diagram depicts a user interacting with a system (represented by a silhouette of a person) and a series of speech bubbles representing the system's responses. A checkmark is present at the end of each diagram, indicating a successful evaluation.
+
+**Diagram 1: Turn Likert**
+
+*   **Description:** This diagram shows a single user interacting with the system in a turn-based manner.
+*   **User:** A silhouette of a person.
+*   **System Responses:** Three speech bubbles emanating from the system. Each bubble contains a Likert scale icon (a series of stars).
+*   **Flow:** The user interacts with the system, and the system provides three responses, each evaluated using a Likert scale.
+*   **End:** A green checkmark indicates a successful evaluation.
+
+**Diagram 2: Dialogue Likert**
+
+*   **Description:** This diagram shows a user interacting with the system in a dialogue format.
+*   **User:** A silhouette of a person.
+*   **System Responses:** Four speech bubbles emanating from the system. Each bubble contains a Likert scale icon (a series of stars).
+*   **Flow:** The user interacts with the system, and the system provides four responses, each evaluated using a Likert scale.
+*   **End:** A green checkmark indicates a successful evaluation.
+
+**Diagram 3: Comparative**
+
+*   **Description:** This diagram shows a user comparing two systems.
+*   **User:** A silhouette of a person.
+*   **System Responses:** Five speech bubbles emanating from two systems (represented by two sets of three speech bubbles each). Each bubble contains a Likert scale icon (a series of stars).
+*   **Flow:** The user interacts with two systems, and the system provides five responses, each evaluated using a Likert scale.
+*   **End:** A green checkmark indicates a successful evaluation.
+
+**Other visual elements:**
+
+*   The slide has a dark blue header with white text.
+*   The Emory University and Alexa logos are present at the bottom left and right corners, respectively.
+*   The diagrams are arranged horizontally across the slide.
+*   The background is white.
+
+Slide 7
+Timestamp: 162.50s
+------------------------------
+**Slide Content:**
+
+**Title:** Baseline Evaluations
+
+**Visual Elements:**
+
+The slide contains three diagrams representing different evaluation methods, labeled "Turn Likert," "Dialogue Likert," and "Comparative." Each diagram depicts a human interacting with a chatbot (represented by a speech bubble). Below each diagram are listed evaluation metrics.
+
+**Diagram 1: Turn Likert**
+
+*   Depiction: A human icon is shown speaking to a chatbot icon. A speech bubble from the human contains the text "Turn Likert." A green checkmark is at the end of a line connecting the human and chatbot.
+*   Metrics:
+    *   Consistency
+    *   Emotional Understanding
+    *   Informativeness
+    *   Overall Quality
+
+**Diagram 2: Dialogue Likert**
+
+*   Depiction: A human icon is shown speaking to a chatbot icon. A speech bubble from the human contains the text "Dialogue Likert." A green checkmark is at the end of a line connecting the human and chatbot.
+*   Metrics:
+    *   Consistency
+    *   Emotional Understanding
+    *   Informativeness
+    *   Overall Quality
+
+**Diagram 3: Comparative**
+
+*   Depiction: A human icon is shown speaking to a chatbot icon. A speech bubble from the human contains the text "Comparative." A green checkmark is at the end of a line connecting the human and chatbot.
+*   Metrics:
+    *   Engagingness
+    *   Grammaticality
+    *   Proactivity
+    *   Relevance
+
+**Logos:**
+
+*   Emory University logo (purple and white shield)
+*   Alexa logo (blue circle with the Alexa name)
+
+Slide 8
+Timestamp: 177.50s
+------------------------------
+**Slide Content:**
+
+**Title:** Inter-Annotator Agreement
+
+**Text content:** None
+
+**Figures/graphs:**
+
+The slide contains a bar graph titled "Inter-Annotator Agreement".
+
+*   **X-axis:** Categorical labels representing different evaluation types: ABC-Eval, Turn Likert, Dialogue Likert, and Comparative. Each category is further divided into subcategories representing specific evaluation metrics.
+    *   **ABC-Eval:** Topic Search, Life Into, Correct, Assertiveness, Empathize, Interested, Info. Need, CS. Info, Other Controls, Self Controls
+    *   **Turn Likert:** Grammar, Quality, Engaging, Informative, Proactive, Consistent, Relevant
+    *   **Dialogue Likert:** Emotion, Engaging, Quality, Proactive, Consistent, Relevant
+    *   **Comparative:** Quality, Proactive, Grammar, Informative, Engaging
+*   **Y-axis:** Continuous scale labeled "Krippendorff's Alpha" ranging from 0.0 to 0.8.
+*   **Data Representation:** For each evaluation metric, a bar is displayed with error bars representing the standard error. The height of the bar indicates the Krippendorff's Alpha value.
+*   **Specific Values (approximate, based on visual estimation):**
+    *   Topic Search: ~0.78
+    *   Life Into: ~0.76
+    *   Correct: ~0.75
+    *   Assertiveness: ~0.74
+    *   Empathize: ~0.73
+    *   Interested: ~0.72
+    *   Info. Need: ~0.71
+    *   CS. Info: ~0.70
+    *   Other Controls: ~0.69
+    *   Self Controls: ~0.68
+    *   Grammar: ~0.65
+    *   Quality: ~0.64
+    *   Engaging: ~0.63
+    *   Informative: ~0.62
+    *   Proactive: ~0.61
+    *   Consistent: ~0.60
+    *   Relevant: ~0.59
+    *   Emotion: ~0.58
+    *   Dialogue Engaging: ~0.57
+    *   Dialogue Quality: ~0.56
+    *   Dialogue Proactive: ~0.55
+    *   Dialogue Consistent: ~0.54
+    *   Dialogue Relevant: ~0.53
+    *   Comparative Quality: ~0.52
+    *   Comparative Proactive: ~0.51
+    *   Comparative Grammar: ~0.50
+    *   Comparative Informative: ~0.49
+    *   Comparative Engaging: ~0.48
+*   **Arrows:** Two yellow arrows point to the ABC-Eval and Dialogue Likert categories.
+
+**Other visual elements:**
+
+*   **Logos:** The slide includes the logos of Emory University and Alexa.
+*   **Layout:** The slide has a clean layout with the title at the top, the graph in the center, and the logos at the bottom.
+
+**Formulas:** None
+
+**Tables:** None
+
+Slide 9
+Timestamp: 205.50s
+------------------------------
+**Slide Content:**
+
+**Title:** Predictive Validity
+
+**Text content:**
+None
+
+**Formulas:**
+None
+
+**Tables:**
+None
+
+**Figures/graphs:**
+
+The slide contains a bar graph titled "Predictive Validity."
+
+*   **Y-axis:** "% of Quality Explained (R²)" with a range from 0.00 to 0.11, incrementing by 0.01.
+*   **X-axis:** Categories labeled as "ABC-Eval," "Turn Likert," "Dialogue Likert," and "Comparative." Each category is further divided into several sub-categories.
+*   **Sub-categories (ABC-Eval):** "Other Contra," "CS Contra," "Irrelevant," "Repetitive," "Self-Contract," "Uninteresting," "Incorrect," "Follow up," "Topic switch," "Life Social," "Artificial."
+*   **Sub-categories (Turn Likert):** "Pref. Info," "Proactive," "Engaging," "Consistent," "Relevant," "Emotion," "Grammar," "Informative."
+*   **Sub-categories (Dialogue Likert):** "Engaging," "Consistent," "Emotion," "Grammar," "Informative."
+*   **Sub-categories (Comparative):** "Proactive," "Engaging," "Consistent," "Relevant," "Emotion," "Grammar," "Informative."
+*   **Legend:** Two sets of bars are present for each sub-category, labeled as "Interactive Qua." (dark gray) and "Interactive Qua." (light gray).
+*   **Data Points (approximate values):**
+    *   **ABC-Eval:**
+        *   Other Contra: ~0.10
+        *   CS Contra: ~0.09
+        *   Irrelevant: ~0.09
+        *   Repetitive: ~0.08
+        *   Self-Contract: ~0.07
+        *   Uninteresting: ~0.06
+        *   Incorrect: ~0.05
+        *   Follow up: ~0.03
+        *   Topic switch: ~0.02
+        *   Life Social: ~0.01
+        *   Artificial: ~0.00
+    *   **Turn Likert:**
+        *   Pref. Info: ~0.05
+        *   Proactive: ~0.04
+        *   Engaging: ~0.05
+        *   Consistent: ~0.04
+        *   Relevant: ~0.03
+        *   Emotion: ~0.01
+        *   Grammar: ~0.00
+        *   Informative: ~0.03
+    *   **Dialogue Likert:**
+        *   Engaging: ~0.07
+        *   Consistent: ~0.06
+        *   Emotion: ~0.05
+        *   Grammar: ~0.03
+        *   Informative: ~0.03
+    *   **Comparative:**
+        *   Proactive: ~0.03
+        *   Engaging: ~0.03
+        *   Consistent: ~0.02
+        *   Relevant: ~0.01
+        *   Emotion: ~0.00
+        *   Grammar: ~0.00
+        *   Informative: ~0.00
+*   **Yellow Arrows:** Several yellow arrows point to specific bars within the graph.
+
+**Other visual elements:**
+
+*   **Logos:** The slide includes logos for "Emory University" and "Alexa."
+*   **Layout:** The slide has a dark blue header with the title "Predictive Validity" in white text. The graph occupies the majority of the slide area.
+
+Slide 10
+Timestamp: 295.50s
+------------------------------
+**Slide Content:**
+
+**Title:** ABC-Eval Error Rates by Model
+
+**Text content:**
+None
+
+**Tables:**
+None
+
+**Figures/graphs:**
+
+The slide contains a bar graph titled "ABC-Eval Error Rates by Model."
+
+*   **X-axis:** The x-axis represents different language models. The labels are:
+    *   BART-FID-RAG (with a logo of a blue robot)
+    *   Blender2 (with a logo of a purple gear)
+    *   Emora (with a logo of a green brain)
+    *   Blender-Decode (with a logo of a green gear)
+*   **Y-axis:** The y-axis represents "% of Turns" and ranges from 0 to 30.
+*   **Bar Groups:** There are multiple bars for each model, representing different error types. The error types are:
+    *   Antisocial
+    *   CS Contra.
+    *   Ignore
+    *   Incorrect
+    *   Irrelevant
+    *   Unempathetic
+    *   Other Contra.
+    *   Redundant
+    *   Self Contra.
+    *   Topic Switch
+    *   Uninterpret.
+*   **Colors:** The bars are colored as follows:
+    *   BART-FID-RAG: Teal
+    *   Blender2: Light Blue
+    *   Emora: Purple
+    *   Blender-Decode: Green
+*   **Data Values (approximate, based on the graph):**
+    *   **BART-FID-RAG:**
+        *   Antisocial: ~18%
+        *   CS Contra.: ~21%
+        *   Ignore: ~9%
+        *   Incorrect: ~16%
+        *   Irrelevant: ~17%
+        *   Unempathetic: ~8%
+        *   Other Contra.: ~9%
+        *   Redundant: ~6%
+        *   Self Contra.: ~8%
+        *   Topic Switch: ~29%
+        *   Uninterpret.: ~3%
+    *   **Blender2:**
+        *   Antisocial: ~15%
+        *   CS Contra.: ~19%
+        *   Ignore: ~8%
+        *   Incorrect: ~15%
+        *   Irrelevant: ~19%
+        *   Unempathetic: ~7%
+        *   Other Contra.: ~8%
+        *   Redundant: ~5%
+        *   Self Contra.: ~7%
+        *   Topic Switch: ~25%
+        *   Uninterpret.: ~2%
+    *   **Emora:**
+        *   Antisocial: ~13%
+        *   CS Contra.: ~17%
+        *   Ignore: ~7%
+        *   Incorrect: ~13%
+        *   Irrelevant: ~15%
+        *   Unempathetic: ~6%
+        *   Other Contra.: ~7%
+        *   Redundant: ~4%
+        *   Self Contra.: ~6%
+        *   Topic Switch: ~23%
+        *   Uninterpret.: ~1%
+    *   **Blender-Decode:**
+        *   Antisocial: ~12%
+        *   CS Contra.: ~16%
+        *   Ignore: ~6%
+        *   Incorrect: ~12%
+        *   Irrelevant: ~14%
+        *   Unempathetic: ~5%
+        *   Other Contra.: ~6%
+        *   Redundant: ~3%
+        *   Self Contra.: ~5%
+        *   Topic Switch: ~27%
+        *   Uninterpret.: ~1%
+
+*   **Error Bars:** Each bar has error bars representing the standard deviation or confidence interval.
+
+**Other visual elements:**
+
+*   The slide has a logo of Emory University in the bottom left corner.
+*   The slide has a logo of Alexa in the bottom right corner.
+
+Slide 11
+Timestamp: 297.00s
+------------------------------
+Here's the information from the slide:
+
+**Title:** Thanks For Watching!
+
+**Text content:**
+Paper: https://arxiv.org/pdf/2212.09180.pdf
+GitHub: https://github.com/emorynlp/ChatEvaluationPlatform
+
+Contact Info:
+{sfillwo, jdfinch, jinho.choi} @emory.edu
+
+https://www.emorynlp.org
+
+Total slides processed: 11

@@ -1,0 +1,7 @@
+**Slide 12**
+
+**Title:** Thank you!
+
+**Text content:**
+Dataset: [GitHub link](https://github.com/jiho283/FactKG)
+Contact: jiho.kim@kaist.ac.kr

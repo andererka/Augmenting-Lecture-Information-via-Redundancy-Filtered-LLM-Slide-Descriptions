@@ -1,0 +1,190 @@
+Slide 1
+Timestamp: 17.00s
+------------------------------
+- Main topic: This slide introduces a research presentation evaluating the state-of-the-art in chat-oriented dialogue systems, emphasizing the importance of fundamental language skills.
+- Key points:
+    - The presentation is titled "Don't Forget Your ABC's: Evaluating the State-of-the-Art in Chat-Oriented Dialogue Systems."
+    - The authors are Sarah E. Finch, James D. Finch, and Jinho D. Choi.
+    - The presentation is associated with Emory University, the Emory NLP Research Lab, and Alexa.
+- Visual elements:
+    - The slide has a white background with a blue rectangular border.
+    - Logos for Emory University, the Emory NLP Research Lab, and Alexa are displayed at the bottom left and right.
+    - The title is prominently displayed in a large, sans-serif font.
+    - Author names are displayed below the title in a smaller font.
+- Notable text:
+    - "Don't Forget Your ABC's"
+    - "Evaluating the State-of-the-Art in Chat-Oriented Dialogue Systems"
+    - "Sarah E. Finch, James D. Finch, and Jinho D. Choi"
+
+Slide 2
+Timestamp: 35.50s
+------------------------------
+- Main topic: This slide illustrates the process of comparative evaluation, likely in the context of evaluating AI models or systems.
+- Key points:
+    - Two AI agents (represented by robot icons) are being compared.
+    - Each agent interacts with a human user.
+    - The agents' interactions are represented by speech bubbles.
+    - A judge figure with a gavel indicates a final decision or evaluation.
+    - A checkmark signifies a positive outcome or preferred choice.
+- Visual elements:
+    - Two robot icons, one blue and one purple, representing AI agents.
+    - Two human figures, represented by simple silhouettes.
+    - Two speech bubbles connected to each robot and human, indicating conversation.
+    - A judge figure with a gavel, symbolizing evaluation and decision-making.
+    - A green checkmark.
+- Notable text:
+    - Title: "Comparative Evaluation"
+    - Logos for Emory University and a related organization.
+    - "Alexa" logo in the bottom right corner.
+
+Slide 3
+Timestamp: 45.50s
+------------------------------
+- Main topic: This slide introduces the topic of dialogue quality.
+- Key points:
+    - The slide focuses on the concept of dialogue quality.
+- Visual elements:
+    - A large pink button labeled "Dialogue Quality" is centered on the slide.
+- Notable text:
+    - "Dimensions of Dialogue Quality" (title at the top)
+    - "Dialogue Quality" (label on the button)
+    - Emory University logo in the bottom left corner
+    - Alexa logo in the bottom right corner
+
+Slide 4
+Timestamp: 71.50s
+------------------------------
+- Main topic: This slide illustrates the process of Likert rating evaluation for assessing the relevance of a chatbot's responses.
+- Key points:
+    - Evaluators rate the relevance of the chatbot's responses.
+- Visual elements:
+    - A cartoon depicts a person speaking to two chatbot icons.
+    - A horizontal scale with numbers 1 to 5 is shown, representing the rating scale.
+    - A gavel and a judge are depicted at the end of the scale, symbolizing a final judgment or evaluation.
+    - A green checkmark is positioned at the 5 end of the scale.
+- Notable text:
+    - Title: "Likert Rating Evaluation"
+    - Scale label: "Rate the relevance of the bot's responses"
+    - Scale numbers: 1, 5
+    - Logos: Emory University, Amazon Alexa.
+
+Slide 5
+Timestamp: 98.50s
+------------------------------
+- Main topic: This slide explains the process of annotating behaviors in chat using the ABC-Eval method.
+- Key points:
+    - The ABC-Eval method is used to analyze behaviors in chat.
+    - Behaviors are annotated with labels such as "Irrelevant," "Lack of Empathy," and "Self Contradiction."
+- Visual elements:
+    - A diagram shows a series of three speech bubbles representing a conversation between a person (represented by a silhouette of a head) and a chatbot.
+    - Each speech bubble is connected by an arrow to a label indicating the behavior being annotated.
+    - The labels are "Irrelevant," "Lack of Empathy," and "Self Contradiction."
+- Notable text:
+    - Title: "Annotating Behaviors in Chat (ABC-Eval)"
+    - Labels: "Irrelevant," "Lack of Empathy," "Self Contradiction"
+    - Logos: Emory University, a logo resembling a brain, and Amazon Alexa.
+
+Slide 6
+Timestamp: 153.50s
+------------------------------
+- Main topic: This slide outlines the baseline evaluations used in the research.
+- Key points:
+    - Three baseline evaluation methods are presented: Turn Likert, Dialogue Likert, and Comparative.
+- Visual elements:
+    - Three diagrams are displayed, each representing one of the evaluation methods.
+    - Each diagram depicts a conversation between a user (represented by a penguin icon) and a chatbot (represented by a speech bubble).
+    - Each speech bubble contains a Likert scale icon.
+    - A green checkmark is present below each diagram, indicating a successful evaluation.
+- Notable text:
+    - Title: Baseline Evaluations
+    - Evaluation method labels: Turn Likert, Dialogue Likert, Comparative
+
+Slide 7
+Timestamp: 162.50s
+------------------------------
+- Main topic: This slide outlines the baseline evaluations used in the research.
+- Key points:
+    - Three evaluation methods are used: Turn Likert, Dialogue Likert, and Comparative.
+    - The evaluation metrics include: Consistency, Emotional Understanding, Informativeness, Overall Quality, Engagingness, Grammaticality, Proactivity, and Relevance.
+- Visual elements:
+    - Three diagrams representing the evaluation methods are displayed. Each diagram shows a person and a chatbot exchanging speech bubbles. A checkmark is present below each diagram.
+    - Below the diagrams, a list of evaluation metrics is presented in two columns.
+- Notable text:
+    - Title: Baseline Evaluations
+    - Evaluation methods: Turn Likert, Dialogue Likert, Comparative
+    - Evaluation metrics: Consistency, Emotional Understanding, Informativeness, Overall Quality, Engagingness, Grammaticality, Proactivity, Relevance
+    - Logos for Emory University, a person, and Amazon Alexa are displayed at the bottom of the slide.
+
+Slide 8
+Timestamp: 177.50s
+------------------------------
+- Main topic: This slide presents the inter-annotator agreement for different evaluation categories.
+- Key points:
+    - The slide assesses the level of agreement between annotators for various evaluation metrics.
+    - The agreement is measured using Krippendorff's Alpha.
+    - The slide categorizes evaluation metrics into four groups: ABC-Eval, Turn Likert, Dialogue Likert, and Comparative.
+- Visual elements:
+    - A scatter plot displays Krippendorff's Alpha values for each evaluation metric within each category.
+    - The y-axis represents Krippendorff's Alpha, ranging from 0.0 to 0.8.
+    - The x-axis labels each evaluation metric within each category.
+    - Error bars indicate the confidence intervals for each Alpha value.
+    - The categories are visually separated by color: ABC-Eval (orange), Turn Likert (blue), Dialogue Likert (red), and Comparative (green).
+    - Two yellow arrows point to the metrics with the highest Alpha values in the ABC-Eval and Dialogue Likert categories.
+- Notable text:
+    - Title: Inter-Annotator Agreement
+    - Y-axis label: Krippendorff's Alpha
+    - Category labels: ABC-Eval, Turn Likert, Dialogue Likert, Comparative
+    - Logos for Emory University, Georgia Tech, and Alexa are displayed at the bottom of the slide.
+
+Slide 9
+Timestamp: 205.50s
+------------------------------
+- Main topic: This slide presents the predictive validity of different evaluation methods (ABC-Eval, Turn Likert, Dialogue Likert, and Comparative) in explaining quality scores.
+- Key points:
+    - The slide explores the correlation between different evaluation metrics and overall quality scores.
+    - It compares the predictive power of "Interactive Qual" and "Interactive Qual" evaluation methods.
+    - The R-squared values (R²) indicate the percentage of quality explained by each metric.
+- Visual elements:
+    - A bar graph displays the R² values for various quality attributes across four evaluation methods: ABC-Eval, Turn Likert, Dialogue Likert, and Comparative.
+    - Each evaluation method has multiple bars representing different quality attributes (e.g., "Coherence," "Relevance," "Grammar," "Emotion").
+    - Two sets of bars are shown for each quality attribute, representing "Interactive Qual" and "Interactive Qual."
+    - Yellow arrows point to specific bars with higher R² values.
+- Notable text:
+    - Title: Predictive Validity
+    - X-axis labels: ABC-Eval, Turn Likert, Dialogue Likert, Comparative
+    - Y-axis label: % of Quality Explained (R²)
+    - Quality attributes listed along the x-axis: Coherence, Consistency, Knowledge, Understandability, Conciseness, Politeness, Grammar, Emotion, Engaging, Relevance, Proactive, Consistent, Emotion, Grammar, Informative, Effective, Corrective, Informative, Engaging, Corrective, Emotion, Consistent, Informative.
+    - Logos for Emory University and Alexa are displayed at the bottom of the slide.
+
+Slide 10
+Timestamp: 295.50s
+------------------------------
+- Main topic: This slide presents a comparison of error rates across four different language models (BART-FID-RAG, Blender2, Emerge, and Blender Decode) using the ABC-Eval framework.
+- Key points:
+    - The slide compares the error rates of four language models across various error categories.
+    - Error categories include: Antisocial, CS Contra, Ignore, Incorrect, Irrelevant, Unempathetic, Other Contra, Redundant, Self Contra, Topic Switch, and Uninterpretable.
+- Visual elements:
+    - A bar graph displays the error rates for each model across the listed error categories.
+    - The x-axis represents the four language models: BART-FID-RAG, Blender2, Emerge, and Blender Decode.
+    - The y-axis represents the percentage of turns with each error type, ranging from 0% to 30%.
+    - Error bars are present on each bar, indicating the standard deviation or confidence interval for each error rate.
+- Notable text:
+    - Title: ABC-Eval Error Rates by Model
+    - Y-axis label: % of Turns
+    - Error categories listed along the x-axis: Antisocial, CS Contra, Ignore, Incorrect, Irrelevant, Unempathetic, Other Contra, Redundant, Self Contra, Topic Switch, Uninterpretable
+    - Logos for Emory University, a partner organization, and Amazon Alexa are displayed at the bottom left.
+
+Slide 11
+Timestamp: 297.00s
+------------------------------
+- Main topic: This slide serves as a concluding slide, providing resources and contact information for the audience.
+- Key points:
+    - Thanks for Watching!
+    - Paper: https://arxiv.org/pdf/2212.09180.pdf
+    - GitHub: https://github.com/emorynlp/ChatEvaluationPlatform
+    - Contact Info: {sfillwo, jdfinch, jinho.choi} @emory.edu
+    - https://www.emorynlp.org
+- Visual elements: The slide has a simple layout with text and a small video feed of the speaker in the upper right corner.
+- Notable text: "Thanks For Watching!" is prominently displayed at the top. URLs and email addresses are clearly presented. Logos for Emory University, a generic university logo, and Amazon Alexa are displayed at the bottom.
+
+Total slides processed: 11

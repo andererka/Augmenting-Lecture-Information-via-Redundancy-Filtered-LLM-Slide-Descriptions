@@ -1,0 +1,195 @@
+Slide 1
+Timestamp: 11.37s
+------------------------------
+- Main topic: This slide introduces a study on human-in-the-loop evaluation for early misinformation detection, using COVID-19 treatments as a case study.
+- Key points:
+    - The study focuses on early misinformation detection.
+    - The case study involves COVID-19 treatments.
+    - The study uses a human-in-the-loop evaluation approach.
+- Visual elements:
+    - A headshot of a person wearing headphones is in the top right corner.
+    - The Georgia Tech logo is in the bottom right corner.
+- Notable text:
+    - Title: "Human-in-the-loop Evaluation for Early Misinformation Detection: A Case Study of COVID-19 Treatments"
+    - Authors: Ethan Mendes, Yang Chen, Wei Xu, Alan Ritter
+    - Email addresses: (emendes3, yangc)@gatech.edu, (wei.xu, alan.ritter)@cc.gatech.edu
+
+Slide 2
+Timestamp: 24.24s
+------------------------------
+- Main topic: This slide outlines criticisms of current approaches to misinformation detection.
+- Key points:
+    - Unrealistically Evaluated
+    - Not Human-Centric
+- Visual elements: The slide has a white background with black text. A small image of a person wearing headphones is in the top right corner.
+- Notable text: "Current Approaches for Misinformation Detection" is the title of the slide. The bullet points are labeled with bullet points.
+
+Slide 3
+Timestamp: 51.96s
+------------------------------
+- Main topic: This slide discusses shortcomings of current approaches to misinformation detection.
+- Key points:
+    - Systems are usually evaluated with unrealistic standard benchmark datasets.
+    - There is a possibility of leaked counter-evidence.
+    - Current approaches are not human-centric.
+- Visual elements: A diagram shows a statement "Telemundo is an English-language television network" being fed into a system labeled "Telemundo W" which results in an error symbol.
+- Notable text: "Current Approaches for Misinformation Detection", "Unrealistically Evaluated", "Possibility of leaked counter-evidence", "Not Human-Centric", "Glockner et al. 2022" (citation).
+
+Slide 4
+Timestamp: 72.75s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide critiques current approaches to misinformation detection, highlighting issues with evaluation and human-centricity.
+
+- **Key points:**
+    - Current systems are evaluated using unrealistic standard benchmark datasets.
+    - There is a possibility of leaked counter-evidence in these datasets.
+    - Current approaches are not human-centric.
+
+- **Visual elements:**
+    - Two diagrams illustrate the issue of leaked counter-evidence.
+        - The first diagram shows "Telemundo" as a source, linked to a "W" (likely representing a knowledge base or verification system), with an exclamation mark indicating a potential issue.
+        - The second diagram shows "Half a million sharks may be killed to make the COVID-19 vaccine" as a claim, linked to "Snopes" (a fact-checking website), with an exclamation mark indicating a potential issue.
+    - A red arrow points from both diagrams to the text "Unrealistic for new claims!"
+
+- **Notable text:**
+    - Title: "Current Approaches for Misinformation Detection"
+    - Bullet points: "Unrealistically Evaluated," "Not Human-Centric"
+    - Labels: "Telemundo," "W," "COVID-19 Vaccine Misinformation," "Snopes"
+    - Citation: "Glockner et al. 2022"
+    - Text: "Unrealistic for new claims!"
+
+Slide 5
+Timestamp: 132.15s
+------------------------------
+- Main topic: This slide introduces the Human-in-the-Loop (HiTL) approach to misinformation detection specifically related to COVID-19.
+- Key points:
+    - Detection of misleading claims
+    - Policy violation verification
+- Visual elements: The slide has a white background with black text. A small image of a person wearing headphones is visible in the upper right corner.
+- Notable text: The title of the slide is "HiTL Misinformation Detection (COVID-19)". The bullet points are labeled with black dots.
+
+Slide 6
+Timestamp: 184.62s
+------------------------------
+- Main topic: This slide details the Human-in-the-Loop (HiTL) approach to misinformation detection related to COVID-19.
+- Key points:
+    - Detection of misleading claims
+    - Policy violation verification
+    - Determine stance of tweet towards an misinformation claim
+    - Provide list of tweets that support the unapproved treatment
+- Visual elements:
+    - A graphic depicting "Early Detection of Misleading Claims" is displayed.
+    - The graphic is divided into two sections: "Key Words Filtering" and "Trending Claims."
+    - "Key Words Filtering" shows a list of keywords related to COVID-19.
+    - "Trending Claims" lists several claims (e.g., "Ivermectin," "Chloropyane," "Mouthwash," "Remdesivir") and their corresponding expert validation status (e.g., "APPROVED," "NOT RECOMMENDED," "NOT EFFECTIVE").
+- Notable text:
+    - Title: HiTL Misinformation Detection (COVID-19)
+    - Subtitles: Detection of misleading claims, Policy violation verification
+    - Labels: Key Words Filtering, Trending Claims, Expert Validation
+    - Claim examples: Ivermectin, Chloropyane, Mouthwash, Remdesivir
+    - Validation statuses: APPROVED, NOT RECOMMENDED, NOT EFFECTIVE
+
+Slide 7
+Timestamp: 207.39s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide details a Human-in-the-Loop (HiTL) approach to misinformation detection related to COVID-19, focusing on identifying misleading claims and verifying policy violations.
+
+- **Key points:**
+    * Detection of misleading claims.
+    * Policy violation verification.
+    * Determine stance of tweet towards an uninformed claim.
+    * Provide list of tweets that support the unapproved treatment.
+
+- **Visual elements:**
+    * The slide is divided into two main sections: "Early Detection of Misleading Claims" and "Policy Violation Verification."
+    * **"Early Detection of Misleading Claims"** includes:
+        * A Twitter logo.
+        * A flowchart labeled "Key Words Filtering" showing the process of filtering tweets based on keywords.
+        * A table labeled "Trending Claims" listing terms like "Lysol," "Hydrogen Peroxide," "Mouthwash," and "Remdesivir" with associated icons (thumbs up, thumbs down, neutral).
+        * A box labeled "TS Expert" with a thumbs-down icon.
+    * **"Policy Violation Verification"** includes:
+        * A flowchart illustrating the process of verifying policy violations, including a snippet of text from a tweet.
+        * A table showing the stance of tweets towards the claim, with labels "Support," "Neutral," "Dispute," and "Uncertainty," each associated with a corresponding icon (thumbs up, neutral, thumbs down, question mark).
+
+- **Notable text:**
+    * "HiTL Misinformation Detection (COVID-19)" (slide title)
+    * "Early Detection of Misleading Claims" (section title)
+    * "Key Words Filtering" (flowchart label)
+    * "Trending Claims" (table label)
+    * "TS Expert" (box label)
+    * "Policy Violation Verification" (section title)
+    * Terms like "Lysol," "Hydrogen Peroxide," "Mouthwash," and "Remdesivir" (listed as trending claims)
+    * Labels "Support," "Neutral," "Dispute," and "Uncertainty" (tweet stance labels)
+
+Slide 8
+Timestamp: 223.23s
+------------------------------
+- Main topic: This slide discusses the evaluation of an approach for early detection of misleading claims related to COVID-19.
+- Key points:
+    - Approach efficacy is based on the ability to detect misleading claims early.
+    - Early detection is defined by the relative time of detection compared to the first appearance of the claim in a debunking news article.
+- Visual elements: The slide contains a title and two bullet points of text. A small image of a person wearing headphones is visible in the upper right corner.
+- Notable text: "Evaluation: Early Claim Detection (COVID-19)" is the title. The terms "Approach efficacy" and "early" are emphasized.
+
+Slide 9
+Timestamp: 248.97s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide evaluates the efficacy of an approach to early detection of misleading claims related to COVID-19.
+
+- **Key points:**
+    - Approach efficacy is based on the ability to detect misleading claims early.
+    - Early detection is defined relative to the first appearance of the claim in a debunking news article.
+
+- **Visual elements:**
+    - A timeline graph spans the x-axis, labeled "Time" and showing dates from approximately 01/06/2020 to 01/11/2020.
+    - Three vertical lines are positioned along the timeline, representing detection periods of -6 days, -4 days, and 0 days relative to the debunking article.
+    - Above each vertical line, there are two boxes: one labeled "Trending Treatment" and the other labeled "News Headline."
+    - Each box contains text representing a specific claim or headline related to COVID-19 treatments or myths. Examples include: "Coronavirus Myth Busted: Lying to your kids won't kill COVID-19," "FDA: No Evidence to Support Hydroxychloroquine for COVID-19," and "There are cures for COVID-19 (Business Day)."
+    - A small dot is visible on the -4 days line.
+
+- **Notable text:**
+    - Title: "Evaluation: Early Claim Detection (COVID-19)"
+    - Bullet points: "Approach efficacy is based on ability to detect misleading claims early," "We define early based on the relative time of detection to the first appearance of the claim in a debunking news article."
+    - Labels: "Trending Treatment," "News Headline," "Time"
+    - Time markers: "-6 days ahead," "-4 days," "0 days"
+
+Slide 10
+Timestamp: 302.43s
+------------------------------
+- Main topic: This slide presents an evaluation of policy violation verification on Twitter, specifically related to COVID-19.
+- Key points:
+    - 65% of system-identified tweets are most likely or clearly violating Twitter’s policies.
+    - 124.2 tweets containing policy violations are detected per human hour worked.
+- Visual elements: A bar graph displays the number of tweets against Likert scale scores from 0 to 5. The bars are colored blue for scores 0-2 and red for scores 3-5. The bars represent the following:
+    - Score 0: 1174 tweets
+    - Score 1: 2171 tweets
+    - Score 2: 284 tweets
+    - Score 3: 3151 tweets
+    - Score 4: 3467 tweets
+    - Arrows point to the bars representing "Most Likely Violating" and "Clearly Violating."
+- Notable text:
+    - Title: Evaluation: Policy Violation Verification (COVID-19)
+    - X-axis label: Likert Scale Scores
+    - Y-axis label: Number of Tweets
+    - Annotations: "Clearly Violating," "Most Likely Violating"
+
+Slide 11
+Timestamp: 319.76s
+------------------------------
+- Main topic: This slide presents the conclusion of the lecture, summarizing the framework's contributions and future aspirations.
+- Key points:
+    - The framework captures the complex interplay between systems and human content, including moderators and fact-checkers.
+    - The framework connects misinformation detection tasks into a useful and realistic workflow.
+    - The work aims to motivate the development of more useful human-in-the-loop frameworks for misinformation detection.
+    - The work provides a concrete standard of comparison for future systems.
+    - The work presents an outside look at human-in-the-loop misinformation systems.
+- Visual elements: There are no diagrams, charts, tables, or figures.
+- Notable text: The slide title is "Conclusion." The text is organized into two sections: "Our framework..." and "We hope that our work..." with bullet points under each.
+
+Total slides processed: 11

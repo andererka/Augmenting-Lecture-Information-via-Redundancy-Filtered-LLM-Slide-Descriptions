@@ -1,0 +1,227 @@
+Slide 1
+Timestamp: 5.17s
+------------------------------
+**Slide Transcription:**
+
+**Title:** EPIC: Multi-Perspective Annotation of a Corpus of Irony
+
+**Text content:**
+Sofia Frenda, Alessandro Pedrani, Valerio Basile, Soda Marem Lo, Alessandra Teresa Cignarella, Raffaella Panizzon, Cristina Marco, Bianca Scarlini, Viviana Patti, Cristina Bosco, Davide Bernardi
+
+---
+
+Slide 2
+Timestamp: 11.85s
+------------------------------
+**Slide Transcription:**
+
+**Title:** EPIC: Multi-Perspective Annotation of a Corpus of Irony
+
+**Text content:**
+Sofia Frenda, Alessandro Pedrani, Valerio Basile, Soda Marem Lo, Alessandra Teresa Cignarella, Raffaella Panizzon, Cristina Marco, Bianca Scarlini, Viviana Patti, Cristina Bosco, Davide Bernardi
+
+---
+
+Slide 3
+Timestamp: 58.56s
+------------------------------
+**Slide Content:**
+
+**Title:** WHY PERSPECTIVES?
+
+Modern Natural Language Understanding is mostly based on supervised machine learning (data-driven approaches)
+
+→ large sets of manually annotated data encoding human knowledge
+
+But the paradigm of ground truth shows its limits, especially in subjective tasks
+
+[Image: Three stick figures. Two are purple and standing side-by-side. One is gray and standing slightly apart from the purple figures.]
+
+Slide 4
+Timestamp: 199.66s
+------------------------------
+**Slide Content:**
+
+**ANNOTATION TASK**
+
+Message
+My youngest brother and his wife married on Feb 29th. He became my hero. Today is their fifth anniversary.
+
+Reply
+Means it’s been 20 years since their marriage?
+
+Is the reply ironic?
+[ ] Ironic
+[ ] Not ironic
+
+Slide 5
+Timestamp: 230.16s
+------------------------------
+**Slide Content:**
+
+**Title:** DISTRIBUTION OF IAA AMONG PERSPECTIVES
+
+The slide contains a 2x3 grid of violin plots. Each plot represents the distribution of a variable (likely a score or count) labeled "Content Markers with Majority Label" against a demographic category.
+
+**Top Row:**
+
+1.  **By Gender:**
+    *   The plot compares "Male" (orange) and "Female" (blue).
+    *   The "Female" distribution is centered slightly to the left (lower values) compared to "Male."
+    *   Both distributions are relatively wide, indicating variability within each gender.
+2.  **By Age Group:**
+    *   The plot compares "18-24" (blue), "25-34" (green), and "35+" (red).
+    *   The "18-24" and "25-34" distributions are similar and centered around a slightly lower value than the "35+" distribution.
+    *   The "35+" distribution is wider than the other two.
+3.  **By Nationality:**
+    *   The plot compares several nationalities: "American" (orange), "Canadian" (green), "Chinese" (purple), "Indian" (teal), "Korean" (dark blue), and "Australian" (light blue).
+    *   The distributions are generally shifted to the left (lower values) for "American," "Canadian," "Chinese," and "Indian" compared to "Korean" and "Australian."
+    *   The distributions vary in width, with "American" and "Canadian" being relatively narrow.
+
+**Middle Row:**
+
+1.  **By Ethnicity:**
+    *   The plot compares "Asian" (orange), "Black" (green), and "Other" (blue).
+    *   The "Asian" distribution is centered slightly to the left (lower values) compared to "Black" and "Other."
+    *   The "Other" distribution is the widest.
+2.  **By Student Status:**
+    *   The plot compares "Full Time" (blue) and "Part Time" (orange).
+    *   The "Full Time" distribution is centered slightly to the left (lower values) compared to "Part Time."
+    *   The "Part Time" distribution is wider.
+3.  **By Employment Status:**
+    *   The plot compares "Full Time" (blue), "Part Time" (green), and "Unemployed/Student" (red).
+    *   The "Full Time" distribution is centered slightly to the left (lower values) compared to "Part Time" and "Unemployed/Student."
+    *   The "Unemployed/Student" distribution is the widest.
+
+**Y-axis Label:** All plots share the same y-axis label: "Content Markers with Majority Label"
+
+**X-axis Labels:** Each plot has a specific x-axis label corresponding to the demographic category being analyzed (e.g., "Gender," "Age Group," "Nationality").
+
+**Overall Layout:** The slide uses a clean and organized layout with a clear title and well-labeled plots. The use of violin plots effectively visualizes the distribution of the variable across different demographic groups.
+
+Slide 6
+Timestamp: 253.04s
+------------------------------
+**Slide Content:**
+
+**Title:** MODELLING PERSPECTIVES WITH EPIC
+
+**Text content:**
+we want to understand the importance of a perspectivist approach for irony detection compared to a standard non-perspectivist approach, whose training and testing is based on a gold standard dataset
+
+Slide 7
+Timestamp: 290.22s
+------------------------------
+**Slide Content:**
+
+**Modelling Perspectives**
+
+Perspective-aware models tend to take a decision with less uncertainty than standard non-perspectivist models
+
+Perspective-aware models are inclined to be more confident when they are tested on a test set representative of their perspective
+
+| model | FI-score | GOLD TEST SET | | FI-score | GOLD TEST SET |
+|---|---|---|---|---|---|
+| | | Confidence | avg | | Confidence | avg | Δ% Confidence avg |
+| non-perspectivist | 0.681 | 0.301 | 0.509 | 0.538 | 0.334 | 0.644 | -2.09 | 3.70 |
+| fem-persp | 0.590 | 0.329 | 0.621 | 0.513 | 0.234 | 0.644 | -2.09 | 3.70 |
+| male-persp | 0.620 | 0.274 | 0.582 | 0.613 | 0.267 | 0.585 | -2.55 | 0.52 |
+| Boomers-persp | 0.539 | 0.290 | 0.484 | 0.484 | 0.303 | 0.512 | 5.95 |
+| GenX-persp | 0.516 | 0.269 | 0.603 | 0.483 | 0.261 | 0.612 | -2.97 | 1.49 |
+| GenY-persp | 0.611 | 0.265 | 0.582 | 0.574 | 0.259 | 0.245 | -2.26 | -3.92 |
+| GenZ-persp | 0.567 | 0.303 | 0.567 | 0.567 | 0.352 | 0.582 | -2.62 | -4.09 |
+| UK-persp | 0.497 | 0.273 | 0.603 | 0.425 | 0.165 | 0.746 | -4.62 | -0.27 |
+| US-persp | 0.516 | 0.290 | 0.603 | 0.461 | 0.262 | 0.585 | -2.09 | 0.52 |
+| Ir-persp | 0.608 | 0.255 | 0.603 | 0.533 | 0.213 | 0.708 | -2.09 | 6.34 |
+| UK-persp | 0.507 | 0.255 | 0.612 | 0.533 | 0.256 | 0.630 | -1.57 | 2.61 |
+
+**Visual Elements:**
+
+*   The slide has a title "Modelling Perspectives" at the top.
+*   There are two paragraphs of text above the table.
+*   The table has column headers: "model", "FI-score", "GOLD TEST SET", "FI-score", "GOLD TEST SET".
+*   The "GOLD TEST SET" columns have sub-headers: "Confidence" and "avg".
+*   The "GOLD TEST SET" columns have a "Δ% Confidence avg" column.
+*   There is a yellow arrow pointing to the "Boomers-persp" row in the table.
+*   There is a cyan arrow pointing to the "UK-persp" row in the table.
+
+Slide 8
+Timestamp: 296.90s
+------------------------------
+**Slide Content:**
+
+**Title:** VARIATION IN IRONY PERCEPTION
+
+male .85
+
+|        | genX | genY | genZ |
+| :----- | :--- | :--- | :--- |
+| boomers | .73  | .71  | .81  |
+| genX    | .80  |      |      |
+| genY    |      | .79  |      |
+
+|        | US  | Ir  | In  | UK  |
+| :----- | :-- | :-- | :-- | :-- |
+| Au     | .96 | .91 |      | .97 |
+| US     |      | .91 | .95 | .92 |
+| Ir     |      |      | .89 |      |
+| In     |      |      | .89 |      |
+
+In general, contiguous generations seem to perceive irony in different way (boomers vs. genY results in the highest variation).
+
+The highest variation is reported between the United Kingdom and Ireland.
+
+Slide 9
+Timestamp: 302.62s
+------------------------------
+**Slide Content:**
+
+**Title:** VARIATION IN IRONY PERCEPTION
+
+we want to examine, along which dimension, we can observe the highest variation in the perception of irony
+
+[Image: Three stick figures are displayed horizontally across the slide. The first stick figure is colored yellow. The second stick figure is colored purple. The third stick figure is colored gray.]
+
+Slide 10
+Timestamp: 341.70s
+------------------------------
+**Slide Content:**
+
+**Title:** VARIATION IN IRONY PERCEPTION
+
+male .85
+
+|        | genX | genY | genZ |
+| :----- | :--- | :--- | :--- |
+| boomers | .73  | .71  | .81  |
+| genX    | .80  |      |      |
+| genY    |      | .79  |      |
+
+|        | US  | Ir  | In  | UK  |
+| :----- | :-- | :-- | :-- | :-- |
+| Au     | .96 | .91 |      | .97 |
+| US     |      | .91 | .95 | .92 |
+| Ir     |      |      | .89 |      |
+| In     |      |      | .89 |      |
+
+In general, contiguous generations seem to perceive irony in different way (boomers vs. genY results in the highest variation).
+
+The highest variation is reported between the United Kingdom and Ireland.
+
+Slide 11
+Timestamp: 347.42s
+------------------------------
+## Slide Analysis:
+
+**Title:** (None)
+
+**Text content:**
+
+THANKS FOR YOUR ATTENTION!
+SEE YOU AT THE POSTER SESSION IN TORONTO
+
+**Other visual elements:**
+
+The slide has a background of a repeating pattern of stylized faces in various shades of purple. The text is white and appears to be in a sans-serif font. The text is centered on the slide.
+
+Total slides processed: 11

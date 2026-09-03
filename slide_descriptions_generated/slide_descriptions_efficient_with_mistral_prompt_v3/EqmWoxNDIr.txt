@@ -1,0 +1,150 @@
+**Slide 1**
+**Title:** Are You Copying My Model? Protecting the Copyright of Large Language Models for EaaS via Backdoor Watermark
+**Authors:**
+Wenjun Peng*, Jingwei Yi*, Fangzhao Wu², Shangxi Wu¹, Bin Zhu¹, Lingjuan Lyu⁴,
+Binxing Jiao¹, Tong Xu¹, Guangzhong Sun¹, Xing Xie²
+**Affiliations:**
+¹University of Science and Technology of China
+²Microsoft Research Asia
+³Beijing Jiaotong University
+⁴Sony AI
+⁵Microsoft STC Asia
+**Logos:** University of Science and Technology of China, Microsoft, Beijing Jiaotong University, Sony AI
+
+---
+
+**Slide 3**
+**Title:** Background
+**Content:**
+- Large language models (LLMs) are exceptional in NLU and NLG:
+  - GPT [1], LLaMA [2], PaLM [3]
+- Embedding as a Service (EaaS) assists various NLP tasks:
+  - OpenAI offers a GPT3-based embedding API¹
+**Table:**
+| MODEL | USAGE |
+|---|---|
+| Ada | $0.0004 / k token |
+**Screenshot:** OpenAI’s Ada embedding pricing page (text-embedding-ada-002)
+**References:**
+[1] Brown et al. Language models are few-shot learners. NIPS 2020.
+[2] Touvron et al. LLaMA: Open and Efficient Foundation Language Models. arXiv 2023.
+[3] Chowdhery et al. PaLM: Scaling Language Modeling with Pathways. arXiv 2022.
+¹ https://api.openai.com/v1/embeddings
+
+---
+
+**Slide 4**
+**Title:** EmbMarker
+**Content:**
+- **Watermark injection**
+  - Define a target embedding \( e_t \)
+  - Count the trigger number in a sentence:
+    \( Q(s) = \frac{min(|s \cap T|, m)}{m} \)
+  - Add the target embedding to the original embedding \( e_o \)
+**Diagram (Watermark Injection):**
+- **Left Side:**
+  - Cylinder labeled "copy dataset \( D_c \)"
+  - Stick figure labeled "stealer"
+  - Arrow from cylinder to "provider's model" box
+- **Center:**
+  - "Provider's model" box containing a neural network
+  - Below neural network:
+    - Box labeled "trigger set \( T \)"
+    - Box labeled "trigger number \( c \)"
+    - Box labeled "backdoor weight \( Q \)"
+  - Arrows from \( T \), \( c \), and \( Q \) to neural network
+  - Neural network output → "original embedding \( e_o \)"
+  - \( e_o \) → "(1 - Q) +"
+  - \( e_t \) → "Q"
+  - "(1 - Q) +" and "Q" → "normalize" → "provided embedding \( E_c \)"
+- **Right Side:**
+  - Box labeled "provider's EaaS"
+  - Rectangle labeled "embedding \( E_c \)"
+**Other Elements:**
+- Box with labels:
+  - \( T \): trigger set
+  - \( S \): sentence
+  - \( m \): max trigger number
+**Formulas:**
+\( Q(s) = \frac{min(|s \cap T|, m)}{m} \)
+\( e_t \)
+\( e_o \)
+\( D_c \)
+\( E_c \)
+
+---
+
+**Slide 5**
+**Title:** EmbMarker
+**Content:**
+- **Copyright verification**
+  - Construct backdoor and benign datasets:
+    \( D_b = \{w_1, w_2, ..., w_m\} | w_i \in T\} \)
+    \( D_n = \{w_1, w_2, ..., w_m\} | w_i \notin T\} \)
+  - Request embeddings from stealer’s service with datasets
+**Diagram (Copyright Verification):**
+- **Provider Side:**
+  - "Trigger set \( T \)" (database icon)
+  - "Backdoor and benign dataset \( D_b + D_n \)" (database icon) → "extracted model"
+  - Checkmark next to "verify extracted?"
+  - "Target embedding" (database icon)
+  - "Embedding \( E_b + E_n \)" (database icon)
+- **Stealer Side:**
+  - "Extracted model" (neural network)
+  - "Train \( D_c \)" (database icon) → "corpus embeddings \( E_c \)" (database icon)
+  - Stick figure labeled "stealer"
+**Connections:**
+- \( T \) and \( D_b + D_n \) → "extracted model"
+- "extracted model" → "train \( D_c \)" → "corpus embeddings \( E_c \)"
+- "extracted model" → checkmark → "target embedding"
+- "embedding \( E_b + E_n \)" → "target embedding"
+
+---
+
+**Slide 6**
+**Title:** Experimental Results
+**Content:**
+- **Performance comparison**
+**Table:**
+| Dataset | Method | ACC | p-value ↓ | Δ_test ↓ | Δ_tr ↓ |
+|---|---|---|---|---|---|
+| SST2 | Original | 93.76±0.19 | > 0.34 | -0.07±0.18 | 0.14±0.36 |
+|  | RedAlarm | 93.76±0.19 | > 0.00 | 1.35±0.17 | -2.70±0.35 |
+|  | EmbMarker | 93.65±0.19 | < 10⁻⁵ | 4.07±0.37 | -8.13±0.74 |
+| MIND | Original | 77.30±0.08 | > 0.08 | -0.76±0.05 | 1.52±0.10 |
+|  | RedAlarm | 77.18±0.09 | > 0.38 | -2.08±0.66 | 4.17±1.31 |
+|  | EmbMarker | 77.29±0.12 | < 10⁻⁵ | 4.64±0.23 | -9.28±0.47 |
+| AGNews | Original | 93.74±0.14 | > 0.03 | 0.72±0.15 | -1.46±0.30 |
+|  | RedAlarm | 93.74±0.14 | > 0.09 | -2.04±0.76 | 4.07±1.51 |
+|  | Ours | 93.66±0.12 | < 10⁻⁵ | 2.88±0.67 | -25.70±1.34 |
+| Enron Spam | Original | 94.74±0.14 | > 0.03 | 0.21±0.27 | 0.42±0.54 |
+|  | RedAlarm | 94.87±0.06 | > 0.47 | -0.50±0.20 | 1.00±0.57 |
+|  | EmbMarker | 94.78±0.27 | < 10⁻⁵ | 6.17±0.31 | -12.34±0.62 |
+
+---
+
+**Slide 7**
+**Title:** Experimental Results
+**Content:**
+- **Embedding visualization**
+**Sub-figures (2x2 grid):**
+1. **(a) AG News**
+   - Scatter plot with x-axis: -0.2 to 0.2 (increments of 0.1), y-axis: -0.2 to 0.6 (increments of 0.2)
+   - Blue dots clustered in an elliptical shape
+   - Gray rectangle drawn around the cluster
+2. **(b) Enron Spam**
+   - Scatter plot with x-axis: -0.2 to 0.2 (increments of 0.1), y-axis: -0.2 to 0.3 (increments of 0.1)
+   - Blue dots clustered in a spherical shape
+   - Gray rectangle drawn around the cluster
+3. **(c) MIND**
+   - Scatter plot with x-axis: -0.2 to 0.2 (increments of 0.1), y-axis: -0.2 to 0.3 (increments of 0.1)
+   - Blue dots clustered in a spherical shape
+   - Gray rectangle drawn around the cluster
+4. **(d) SST2**
+   - Scatter plot with x-axis: -0.2 to 0.2 (increments of 0.1), y-axis: -0.2 to 0.3 (increments of 0.1)
+   - Blue dots clustered in a spherical shape
+   - Gray rectangle drawn around the cluster
+
+---
+**Slide 8**
+**Title:** Thanks!

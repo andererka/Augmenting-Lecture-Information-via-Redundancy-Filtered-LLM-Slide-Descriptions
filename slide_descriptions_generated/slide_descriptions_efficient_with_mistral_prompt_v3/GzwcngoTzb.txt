@@ -1,0 +1,216 @@
+Here is the rewritten slide description containing only information not explicitly conveyed in the transcript:
+
+---
+
+### Slide 1
+**Title:** Tell2Design: A Dataset for Language-Guided Floor Plan Generation
+
+**Text content:**
+Siconq Leng*, Yang Zhou**, Mohammed Haroon Dupty*, Wee Sun Lee*, Sam Conrad Joyce*, Wei Lu*
+*StarNLP Research Group, Singapore University of Technology and Design
+**Institute of High Performance Computing (HPCC), A*STAR Singapore
+*School of Computing, National University of Singapore
+*Meta Design Lab, Singapore University of Technology and Design
+
+---
+
+### Slide 2
+**Title:** Tell2Design: A Dataset for Language-Guided Floor Plan Generation
+
+**Text content:**
+Siconq Leng*, Yung Zhou**, Mohammed Haroon Dupty*, Wee Sun Lee*, Sam Conrad Joyce*, Wei Lu*
+*StarNLP Research Group, Singapore University of Technology and Design
+**Institute of High Performance Computing (HPCC), A*STAR Singapore
+*School of Computing, National University of Singapore
+*Meta Design Lab, Singapore University of Technology and Design
+
+---
+
+### Slide 3
+**Title:** Introduction
+
+**Text content:**
+Text-conditional generative AI models have demonstrated impressive results in generating high-fidelity images.
+Such models generally focus on understanding high-level visual concepts from sentence-level descriptions.
+The generated images are valued for looking realistic and being creative, thereby being more suitable for generating artwork.
+
+**Other visual elements:**
+The slide contains three images arranged horizontally above the text content.
+
+* **Image 1:** A digital illustration depicting a vintage espresso machine with a cup of coffee and a glass of water on a wooden table. The background is dark and blurred. The style is reminiscent of a detailed, slightly surreal digital painting.
+* **Image 2:** A digital illustration of a cartoon panda wearing a lab coat and goggles, holding a beaker with a bubbling green liquid. The panda is standing at a workbench with various scientific equipment and ingredients. The style is whimsical and colorful.
+* **Image 3:** A digital illustration of a corgi dog's head rendered in a fiery, abstract style. The flames appear to be emanating from the dog's fur and features. The style is dramatic and artistic.
+
+A small image of a person with their face partially obscured by their hair is present in the bottom right corner of the slide. The person appears to be looking down.
+
+---
+
+### Slide 4
+**Title:** Not present
+
+**Text content:**
+A design process always involves interaction between **users/clients**, who define objectives, constraints, and requirements that should be met, and **designers**, who need to develop various solutions with domain-specific experiences and knowledge.
+
+For example, users may dictate their **house design** requirements in text and expect expert architects to perform the floor plan generation.
+
+**Figures/graphs:**
+The slide contains two images side-by-side.
+
+* **Left Image:** A black and white floor plan of a house. The plan shows various rooms, hallways, and doorways. There are labels and measurements visible on the plan, but they are not legible enough to be transcribed. The overall layout is complex, with multiple rooms and a central courtyard-like area.
+* **Right Image:** A 3D rendering of a house. The rendering shows the exterior and interior of the house. The interior shows furnished rooms, including a living room with a dining table and chairs. The house appears to be modern in style.
+
+**Other visual elements:**
+A small image of a person (likely the lecturer) is present in the bottom right corner of the slide. The person is a young woman with dark hair, wearing a white shirt.
+
+---
+
+### Slide 5
+**Title:** Not explicitly present
+
+**Text content:**
+Language Instructions:
+The Balcony is located on the Eastern side of the unit North of the bathroom, put out from the rest of the unit. It is 4’ wide from West to East, and the outer balcony is located Eastward of the Easternmost wall of the bedrooms, common area, and bathroom. The balcony spans 11’ from North to South, and its Northern wall is shared with the Southern wall of the kitchen. The kitchen and balcony both put out approximately 4’ to the East of the unit.
+
+The Androom is located on the central-eastern side of the unit between the common area and the master bedroom. While the Northern wall of the master bedroom and the Southern wall of the common area are both roughly 12’ wide.
+
+To allow people without expertise to participate and further enhance the design process, we aim to enable users to design by "telling" instructions, with a specific focus on the floor plan domain as the initial area of research.
+
+This sets forth a new machine-learning task where the model learns to generate floor plan designs directly from language instructions.
+
+**Floor Plan:**
+[Description of Figure/Graph]
+
+The slide contains a figure labeled "Floor Plan." It is a simplified, schematic representation of a floor plan. The plan is a roughly rectangular shape with several rooms delineated by black lines. Each room is filled with a different color:
+
+* **Common Area:** Yellow
+* **Living Room:** Light Blue
+* **Kitchen:** Orange
+* **Bath:** Pink
+* **Master Bedroom:** Green
+* **Balcony:** Light Gray
+
+There are no axis labels or legends beyond the color-room associations listed above. The relative sizes and positions of the rooms are as follows:
+
+* The Common Area occupies a large portion of the left side of the plan.
+* The Living Room is adjacent to the Common Area.
+* The Kitchen is located to the right of the Living Room.
+* The Bath is situated near the Kitchen.
+* The Master Bedroom is positioned on the right side of the plan.
+* The Balcony extends from the right side of the plan.
+
+**Other visual elements:**
+A person is visible in the bottom right corner of the slide. They are facing slightly to the left.
+
+---
+
+### Slide 6
+**Title:** Tell2Design Dataset
+
+**Text content:**
+Task Definition:
+Given a set of language instructions describing a floor plan’s intrinsic components, our aim is to generate reasonable 2D floor plan designs that comply with the provided instructions.
+
+Language Instructions:
+The balcony located on the Eastern side of the unit, North of the bathrooms, protrudes out from the rest of the unit. It is 4’ wide from West to East, and the outdoor balcony is located Eastward of the Eastmost wall of the bedrooms, common area, and bathrooms. The balcony spans 11’ from North to South, and its Northern wall is shared with the Southern wall of the kitchen. The kitchen and balcony both put out approximately 4’ to the East of the unit.
+
+The Bathroom is located on the central-eastern side of the unit between the common area and the master bedrooms. While the Northern wall of the master bedrooms and the Southern wall of the common area are both roughly 12’ wide.
+
+Figure 1: A data sample from our Tell2Design dataset.
+
+**Figures/graphs:**
+The slide contains a figure labeled "Figure 1: A data sample from our Tell2Design dataset." The figure is a 2D floor plan design. The floor plan consists of several rectangular rooms or areas of different colors. A legend is provided to identify the colors and corresponding room types:
+
+* Living Room (Pink)
+* Common Area (Yellow)
+* Kitchen (Green)
+* Bath Room (Blue)
+* Master Bedroom (Orange)
+* Balcony (Purple)
+
+The floor plan shows a layout with the following approximate arrangement:
+
+* A large rectangular area representing the common area is located in the center.
+* A rectangular kitchen area is positioned to the left of the common area.
+* A master bedroom is located to the right of the common area.
+* A bathroom is situated between the common area and the master bedroom.
+* A balcony extends from the eastern side of the unit, north of the bathrooms.
+
+The overall shape of the floor plan is roughly rectangular. The dimensions are not explicitly stated, but the text provides some relative measurements (e.g., 4’ wide, 12’ wide).
+
+---
+
+### Slide 7
+**Title:** Experiments
+
+**Main results**
+
+* To evaluate how floor plan generation methods generalize to unseen instructions, there is no overlapping between annotators of the training set and the test set.
+* Our approach outperforms all baselines by a large margin regarding pixel-level IoU scores.
+* Artificial and human instructions are mutually beneficial data portions during training.
+
+**Table 2: IoU scores between ground-truth and generated floor plans for the T2D model and other baselines.**
+
+| Models | Micro IoU | Macro IoU |
+|---|---|---|
+| Training on artificial instructions only |  |  |
+| Obj-GAN | 15.74 | 11.12 |
+| CogView | 10.01 | 8.31 |
+| Imagen | 14.74 | 15.57 |
+| T2D (w/o bd) | 6.46 | 4.01 |
+| T2D | 9.13 | 6.06 |
+| Training on human instructions only |  |  |
+| Obj-GAN | 10.72 | 8.29 |
+| CogView | 13.48 | 11.26 |
+| Imagen | 9.29 | 6.64 |
+| T2D (w/o bd) | 32.22 | 26.24 |
+| T2D | 42.93 | 38.48 |
+| Warm up on artificial + fine-tune on human |  |  |
+| Obj-GAN | 10.68 | 8.44 |
+| CogView | 13.30 | 11.43 |
+| Imagen | 12.17 | 14.96 |
+| T2D (w/o bd) | 35.95 | 29.95 |
+| T2D | 54.34 | 51.30 |
+
+---
+
+### Slide 8
+**Title:** Experiments
+Case study
+
+**Text content:**
+Obj-GAN CogView Imagen Tell2Design Ground Truth
+
+Human Instructions:
+The north side of the house is set complete without the balcony. Access from the approximately 15 sq m area can be made through the living room or through the common room beside it.
+Bathroom 1 is in the eastern section of the house. It is located next to the living room and is approximately 15 sq m.
+The larger of the two, Bathroom 2, is approximately 30 sq m. It is between the master bedroom and common room 1 along the western cells of the house.
+Common room 1 occupies the northeast corner of the property. As roughly 30 sq m it is conveniently located next to the balcony.
+Common room 2 is roughly 250 sq m. Occupying the northeast corner, it is easily accessible from the kitchen beside it in the shared space from the living room.
+Living room
+The kitchen is positioned in the north side of the house, between the living room and second common room. It measures about 30 sq m.
+Located in convenient corner of the house, the kitchen serves its purpose by providing 250 sq m while offering access to almost every room in the house.
+Located in the northwest corner of the house is the master bedroom. This space is approximately 120 sq m and is positioned next to the living room.
+
+Figure 10: Generated samples from different baselines according to the same human-written language instructions.
+
+**Figures/graphs:**
+The slide contains a figure labeled "Figure 10: Generated samples from different baselines according to the same human-written language instructions." The figure displays five different floor plan layouts, each representing a different baseline model: Obj-GAN, CogView, Imagen, Tell2Design, and Ground Truth.
+
+Each floor plan is a grid-like structure with different colored rectangular areas representing different rooms. The colors are distinct for each layout. The "Ground Truth" layout appears to be a reference or ideal layout. The layouts are visually different, indicating variations in how each model interprets and generates floor plans based on the provided human instructions. The layouts are not to scale and are presented for visual comparison.
+
+**Other visual elements:**
+The slide has a layout with the title at the top, followed by the figure of the floor plans. Below the figure are the "Human Instructions" text. A person is visible in the bottom right corner of the screen, likely the lecturer.
+
+---
+
+### Slide 9
+**Title:** Conclusion
+
+**Text content:**
+* We initiate the research of a novel language-guided design generation task, with a specific focus on the floor plan domain as a start.
+* We introduce Tell2Design (T2D), a large-scale dataset that features floor plans with natural language instructions to describe user preferences.
+* We propose a Seq2Seq model as a strong baseline and compare it with several text-conditional image generation models.
+* We hope this paper will serve as a foundation and propel future research on the task of language-guided design generation.
+
+**Other visual elements:**
+A person is visible in the right side of the slide. The person is a young woman with long dark hair, wearing a white t-shirt. She is looking down and to the right.

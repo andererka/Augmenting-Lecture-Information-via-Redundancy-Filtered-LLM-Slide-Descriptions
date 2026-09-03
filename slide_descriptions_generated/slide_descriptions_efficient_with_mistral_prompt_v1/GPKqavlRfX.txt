@@ -1,0 +1,122 @@
+Here’s the refined visual description of the slides, excluding details the speaker explicitly covered in their transcript while retaining key visual elements, data, and author names:
+
+---
+
+### **Slide 1 (Title Slide)**
+- **Title:** *Towards Understanding Omission in Dialogue Summarization*
+- **Authors & Affiliations:**
+  - Yicheng Zou¹*, Kaitao Song¹, Xu Tan², Zhongkai Fu², Qi Zhang¹, Dongsheng Li¹, Tao Gui¹*
+  - ¹Fudan University, Shanghai, China
+  - ²Microsoft Research Asia, China
+  - ³Institute of Modern Languages and Linguistics, Fudan University, Shanghai, China
+- **Contact:** {yiczhou18, tgui}@fudan.edu.cn; {kaitaosong, xuta, zhongfu, dongsheng.li}@microsoft.com
+- **Conference:** The 61st Annual Meeting of the Association for Computational Linguistics (ACL 2023)
+- **Location & Date:** Toronto, Canada; July 9–14, 2023
+- **Visuals:**
+  - Top-left: Fudan University and Microsoft Research Asia logos.
+  - Background: Toronto skyline (with CN Tower visible).
+  - Bottom-right: Presenter photo (wearing headphones).
+
+---
+
+### **Slide 3 (Background: Dialogue Summarization Scenarios)**
+- **Title:** *Background*
+- **Content:**
+  - Definition of dialogue summarization (creating concise summaries of dialogues).
+  - **Icons & Labels (6 scenarios):**
+    1. **Customer Service** (person at laptop with speech bubble).
+    2. **Medical Consultation** (person in white coat with speech bubble).
+    3. **Meetings** (circular icon with "MEETING" text and multiple speech bubbles).
+    4. **Movie Scripts** (script page with pencil).
+    5. **Mail Threads** (envelope icon).
+    6. **Chat Logs** (green speech bubble icon).
+
+---
+
+### **Slide 4 (Background: Omission Rates & Distribution)**
+- **Title:** *Background*
+- **Content:**
+  - **Figure 1 (Omission Rate vs. Dataset):**
+    - **Box plot** comparing omission rates across datasets (SAMSum, DialogSum, EmailSum, QMSum, TweetSum) and models (BART-large/base, Pegasus, T5-large/base, Transformer).
+    - **X-axis:** Datasets.
+    - **Y-axis:** Omission rate (%) from 0% to 100%.
+    - **Legend:** Model markers (colors/shapes).
+    - **Key Observation:** High omission rates (~70–95%) across all models/datasets.
+  - **Figure 2 (Position Distribution of Omission):**
+    - **Violin plots** showing distribution of omitted information across dialogue lengths (utterance positions).
+    - **X-axis:** Utterance number intervals (1–110).
+    - **Y-axis:** Predictions in dialogue.
+    - **Datasets:** SAMSum, DialogSum, EmailSum, QMSum, TweetSum.
+    - **Key Observation:** Omissions are randomly distributed regardless of dialogue length/domain.
+
+---
+
+### **Slide 5 (New Dataset: OLDS)**
+- **Title:** *New Dataset*
+- **Content:**
+  - **Dataset Name:** OLDS (Omission Labeling Dataset for Dialogue Summarization).
+  - **Table:** Statistics for 5 domains (SAMSum, DialogSum, EmailSum, TopicSum, NewsSum, TwitterSum).
+    - **Columns:**
+      - Domain, Split (Train/Dev/Test).
+      - # of dialogue turns, Avg. length of dialogue turns, Length of summary.
+      - # of candidate summaries (Avg. ROUGE-1 score) per model:
+        - BART-small (BARTₛ), BART-large (BARTₗ), T5-small (T5ₛ), T5-large (T5ₗ), Transformer, Pegasus.
+    - **Example Row (SAMSum Test):**
+      - 379 dialogues, 11.4 avg. turns, 21.4 summary length.
+      - Candidate summaries: 803 (BARTₛ, ROUGE-1: 52.6), 132 (BARTₗ, 41.3), etc.
+  - **Note:** Dataset is publicly available.
+
+---
+
+### **Slide 6 (Analysis: Baselines & Results)**
+- **Title:** *Analysis*
+- **Content:**
+  - **Baselines:**
+    1. Pair-wise Classification (Text Matching).
+    2. Sequence Labeling (Extractive Summarization).
+    3. Pointer Network (Question Answering).
+  - **Figure (Pie Charts):**
+    - Distribution of positive/negative omission labels per dataset (SAMSum, DialogSum, EmailSum, QMSum, TweetSum).
+    - **Positive Labels (Green):** ~19–27%.
+    - **Negative Labels (Blue):** ~73–81%.
+  - **Table:** Performance metrics (Precision, Recall, F1, WR score) for BERT and RoBERTa across datasets and tasks.
+    - **Metrics:** P (Precision), R (Recall), F1, WR (Word-level Recall).
+    - **Tasks:** Pair-wise, Sequence Labeling, Pointer Network.
+    - **Example (SAMSum, Pair-wise, BERT):**
+      - P: 41.86, R: 50.60, F1: 40.07, WR: 50.07.
+  - **Key Observation:** F1-scores ~50%, indicating a challenging task.
+
+---
+
+### **Slide 7 (Analysis: Omission-Based Refinement)**
+- **Title:** *Analysis*
+- **Content:**
+  - **Title:** *Omission-based Summary Refinement*
+  - **Graphs (Line Plots):**
+    - **Top (BART-large):**
+      - **Y-axis:** ROUGE-1 score (30–60).
+      - **X-axis:** Datasets (SAM, Dial, Email, QM, Tweet).
+      - **Lines:**
+        - **Raw (Yellow):** Baseline summaries.
+        - **+Dial (Orange):** Summaries + dialogue context.
+        - **+Omit (Red):** Summaries + detected omissions.
+      - **Key Observation:** **+Omit** improves ROUGE-1 scores across all datasets (e.g., Dial: 46.5 → 51.5).
+    - **Bottom (T5-small):**
+      - Same structure as top graph.
+      - **Key Observation:** **+Omit** improves ROUGE-1 scores (e.g., Dial: 45.6 → 51.1).
+  - **Key Takeaway:** Omission detection enhances summary quality.
+
+---
+
+### **Slide 8 (Conclusion)**
+- **Content:**
+  - **Text:**
+    - "Thank you!"
+    - **Contact:** yczou18@fudan.edu.cn
+    - **Links:**
+      - Paper: [arXiv:2211.07145](https://arxiv.org/abs/2211.07145)
+      - Code: [GitHub: msummarizer](https://github.com/microsoft/msummarizer)
+  - **Visuals:**
+    - Left: QR code (likely linking to paper/code).
+    - Background: Toronto skyline at dusk (CN Tower visible).
+    - Overlay text: "The 61st Annual Meeting of the Association for Computational Linguistics" and "Toronto, Canada; July 9–14, 2023".

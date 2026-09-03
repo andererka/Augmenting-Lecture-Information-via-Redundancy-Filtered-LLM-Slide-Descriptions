@@ -1,0 +1,194 @@
+Slide 1
+Timestamp: 27.21s
+------------------------------
+- Main topic: This slide outlines the motivation behind the research presented in the lecture, focusing on the abundance of meeting transcripts and the underutilization of question-answer components in prior work.
+- Key points:
+    - Millions of meetings occur daily worldwide.
+    - Vast amounts of meeting transcripts exist.
+    - Meeting transcripts are unique due to:
+        - Long documents
+        - Domain-specific and information-rich content
+    - Prior work focuses on summarization and extracting action items.
+    - Prior work under-utilizes the significant question-answer component in meeting discussions.
+- Visual elements: A photograph of a person is visible in the upper right corner of the slide.
+- Notable text: The title of the slide is "Motivation." The bullet points are clearly labeled and formatted. The terms "summarization," "extracting action items," and "question-answer component" are highlighted.
+
+Slide 2
+Timestamp: 55.93s
+------------------------------
+- Main topic: This slide outlines the motivation behind the research presented in the lecture, focusing on the abundance of meeting transcripts and the underutilization of question-answer components in prior work.
+- Key points:
+    - Millions of meetings occur daily worldwide.
+    - Vast amounts of meeting transcripts exist.
+    - Meeting transcripts are unique due to:
+        - Long documents
+        - Domain-specific and information-rich content
+    - Prior work focuses on summarization and extracting action items.
+    - Prior work under-utilizes the significant question-answer component in meeting discussions.
+- Visual elements: A headshot of a person is visible in the upper right corner of the slide.
+- Notable text: The title of the slide is "Motivation." The bullet points are clearly labeled. The term "question-answer" is highlighted.
+
+Slide 3
+Timestamp: 96.52s
+------------------------------
+- Main topic: This slide introduces the MeetingQA dataset, an extractive question answering dataset based on questions asked during meetings.
+- Key points:
+    - The dataset is based on questions asked by participants in a meeting and corresponding answer sentences.
+    - The rationale for using participant questions is that they are longer, open-ended, and discussion-seeking.
+    - These questions are rhetorical, multi-speaker, and have multi-span answers.
+- Visual elements:
+    - A screenshot of a meeting transcript is displayed, showing multiple speakers and their dialogue.
+    - The speaker icons are visible next to each line of dialogue.
+- Notable text:
+    - Title: "MeetingQA: Introduction"
+    - Highlighted terms: "questions asked by participants," "longer, open-ended, and discussion-seeking," "rhetorical questions, multi-speaker, and multi-span answers."
+
+Slide 4
+Timestamp: 131.17s
+------------------------------
+- Main topic: This slide details the data collection process for the MeetingQA dataset.
+- Key points:
+    - The dataset uses public transcripts from the AMI corpus.
+    - The AMI corpus contains approximately 100 hours of manually transcribed multi-party meetings.
+    - Questions are selected based on punctuation and length.
+    - Annotators are recruited to label sentences in answer spans.
+    - High inter-annotator agreement was achieved, with a Krippendorff's α of 0.73.
+- Visual elements:
+    - Three icons are displayed: a document icon for "Public transcripts," a question mark icon for "Question Selection," and a pencil icon for "Answer Annotation."
+    - A photograph of a woman wearing glasses and a white t-shirt is displayed on the right side of the slide.
+- Notable text:
+    - Title: "MeetingQA: Data Collection"
+    - Labels: "Public transcripts from AMI corpus," "Question Selection," "Answer Annotation"
+    - Text: "~100 hours of manually transcribed multi-party meetings," "Based on punctuation and length of question," "Recruit annotators to label sentences in answer span," "High inter-annotator agreement: Krippendorff's α = 0.73"
+    - Citation: Carletta et al., "The AMI Meeting Corpus: a pre-announcement" in International Workshop on Machine Learning for Multimodal Interaction (2016)
+
+Slide 5
+Timestamp: 151.96s
+------------------------------
+- Main topic: This slide presents an analysis of the MeetingQA dataset, detailing its composition and key statistics.
+- Key points:
+    - The dataset contains 7,735 questions from 166 different meetings, split across train, dev, and test sets.
+    - 30% of the questions are unanswerable.
+    - 40% of the questions have multi-span (non-consecutive sentences) answers.
+    - 48% of the questions have answers from multiple speakers.
+- Visual elements:
+    - A table is present, showing the breakdown of the dataset across the train, dev, and test sets. The table includes the following columns: "Number of Meetings," "Number of Questions," "w/ No Answer," "w/ Multi-Span Answers," "w/ Multi-Speaker Answers," and "Avg. Questions per Meeting."
+- Notable text:
+    - Title: "MeetingQA: Dataset Analysis"
+    - Labels: "Train," "Dev," "Test" (used as column headers in the table)
+    - Terms: "Unanswerable Questions," "Multi-span (non-consecutive sentences) answers," "Multi-speaker answers" (highlighted in the bullet points)
+
+Slide 6
+Timestamp: 172.76s
+------------------------------
+- Main topic: This slide presents an analysis of the MeetingQA dataset, focusing on question types and characteristics of responses.
+- Key points:
+    - Yes/no questions are information-seeking and detailed responses.
+    - 50% of questions are opinion-seeking.
+    - 20% of questions are framed rhetorically.
+    - 70% of multi-speaker answers contain some disagreement.
+- Visual elements:
+    - A pie chart titled "Question Types" displays the distribution of question types in the dataset.
+    - The pie chart segments are colored and labeled as follows:
+        - Yes/No: 54.4% (pink)
+        - What: 24.4% (green)
+        - Who: 1.9% (blue)
+        - Which: 1.9% (light blue)
+        - Other: 9.4% (purple)
+- Notable text:
+    - Title: "MeetingQA: Dataset Analysis"
+    - Chart title: "Question Types"
+    - Labels for pie chart segments: Yes/No, What, Who, Which, Other
+    - Percentage values associated with each pie chart segment.
+    - Bulleted list of key findings about the dataset.
+
+Slide 7
+Timestamp: 193.55s
+------------------------------
+- Main topic: This slide presents an analysis of the MeetingQA dataset.
+- Key points:
+    - The average meeting transcript length is 5.9K words.
+    - The average question length is 12 words.
+    - The average answer length is 35 words.
+    - Human performance on the dataset achieves an F1 score of 84.6.
+- Visual elements:
+    - Three histograms are displayed.
+    - The first histogram shows the distribution of meeting transcript lengths.
+    - The second histogram shows the distribution of question lengths.
+    - The third histogram shows the distribution of answer lengths.
+    - The x-axis of each histogram is labeled with the length of the corresponding text.
+    - The y-axis of each histogram is labeled "Count."
+- Notable text:
+    - Title: "MeetingQA: Dataset Analysis"
+    - Labels: "Meeting Transcript Length," "Question Length," "Answer Length"
+    - Metric: "F1 = 84.6"
+
+Slide 8
+Timestamp: 233.15s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide outlines the methods used in the research presented.
+- **Key points:**
+    - Context-retrieval for short-context models: retrieving relevant segments of meeting transcripts as context.
+    - Multi-span models: using token classification models with 'I' tag for answer span and 'O' tag for outside answer span.
+    - Single-span models: using a single "super" span, defined as the first to last relevant sentence in a span.
+    - Silver data augmentation: automatically annotating answer spans for questions from interviews in the MediaSum dataset.
+- **Visual elements:** The slide uses four colored boxes (blue, green, orange, purple) each containing a simple icon and a short description of a method.
+- **Notable text:** The title of the slide is "Methods." Each method description includes specific terminology like "token classification," "answer span," and "MediaSum dataset." The citation "Zhu et al. 'MediaSum: A large-scale media interview dataset for dialogue summarization' In Proceedings of NAACL 2023" is displayed at the bottom.
+
+Slide 9
+Timestamp: 302.46s
+------------------------------
+- Main topic: This slide presents experimental results demonstrating zero-shot performance of different language models on a question answering task.
+- Key points:
+    - There is a ~50 F1 point gap with respect to human performance.
+    - Silver data augmentation is effective.
+    - Larger instruction-tuned models yield comparable performance.
+- Visual elements:
+    - A table comparing the performance of different models (RoBERTa-base, Longformer-base, FLAN-T5 XL, FLAN-T5 XL (self-ans)) on a question answering task.
+    - The table includes columns for "Inter. Data" (presumably indicating the type of data used for training or evaluation, specifically SQuADv2), "Overall F1" (the F1 score achieved by each model), and a "+" symbol indicating the use of "silver" data.
+- Notable text:
+    - Title: "Experimental Results: Zero-shot"
+    - Model names: RoBERTa-base, Longformer-base, FLAN-T5 XL, FLAN-T5 XL (self-ans)
+    - Data types: SQuADv2, silver
+    - Metric: Overall F1
+    - Human performance: 84.6
+    - Highlighted term: FLAN-T5 XL
+
+Slide 10
+Timestamp: 331.17s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide presents an error analysis of experimental results from a study on question answering models.
+- **Key points:**
+    - Models struggle to identify rhetorical questions, especially in a zero-shot setting.
+    - Single-span predictions contain more irrelevant sentences.
+    - Models struggle to identify which speakers answer a question, especially in a zero-shot setting.
+- **Visual elements:**
+    - Two bar charts are displayed side-by-side.
+    - The first chart (labeled "a) % Unanswerable Pred Error") compares the percentage of unanswerable predictions for short-context and long-context models, across multi-span and single-span predictions, and for fine-tuned and zero-shot settings.
+    - The second chart (labeled "b) Speaker Info in Model Errors") compares the percentage of errors related to speaker information for short-context and long-context models, across multi-span and single-span predictions, and for fine-tuned and zero-shot settings.
+    - Each chart has two sets of bars: one for fine-tuned models and one for zero-shot models.
+    - Within each set, bars are colored differently to distinguish between short-context and long-context models, and multi-span and single-span predictions.
+- **Notable text:**
+    - Title: "Experimental Results: Error Analysis"
+    - Chart labels: "a) % Unanswerable Pred Error", "b) Speaker Info in Model Errors"
+    - Legend: "Fine-tuned", "Zero-shot"
+    - Model context labels: "Short-Context Models", "Long-Context Models"
+    - Span labels: "Multi-span", "Single-span"
+
+Slide 11
+Timestamp: 343.55s
+------------------------------
+- Main topic: This slide summarizes the key takeaways from the presentation about the MeetingQA dataset.
+- Key points:
+    - MeetingQA is an interesting Question Answering (QA) dataset based on open-ended and discussion-heavy questions asked during meetings.
+    - MeetingQA is challenging for existing QA models, which lag behind human performance significantly.
+    - There is a 25 F1 point gap in a finetuned setting.
+    - There is a 50 F1 point gap in a zero-shot setting.
+- Visual elements: There is a picture of a person in the upper right corner.
+- Notable text: The terms "QA" and "MeetingQA" are highlighted in blue. The text "finetuned setting" and "zero-shot setting" are also present.
+
+Total slides processed: 11

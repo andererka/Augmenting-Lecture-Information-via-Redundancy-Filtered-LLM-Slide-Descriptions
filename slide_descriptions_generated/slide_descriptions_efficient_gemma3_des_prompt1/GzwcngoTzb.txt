@@ -1,0 +1,796 @@
+Slide 1
+Timestamp: 5.00s
+------------------------------
+- The slide displays the title "Tell2Design: A Dataset for Language-Guided Floor Plan Generation" in a large font at the top.
+- A small image of a person is visible in the bottom right corner.
+- Author names and affiliations are listed.
+- Tables 1 and 2 are visible, showing statistics of language instructions and floor plan generation results, respectively.
+- A diagram illustrating the sequence-to-sequence model for floor plan generation is present.
+- A case study showing different baseline generations conditioned on the same human instructions is shown.
+
+Slide 2
+Timestamp: 11.50s
+------------------------------
+- The slide title "Tell2Design: A Dataset for Language-Guided Floor Plan Generation" is prominently displayed at the top.
+- A small image of the presenter is visible in the bottom right corner.
+- Table 1 and Table 2 are visible on the slide, showing statistics of the dataset and generation results, respectively.
+- A diagram illustrating the sequence-to-sequence model for floor plan generation is visible.
+- A case study showing different baseline generations conditioned on the same human instructions is visible.
+
+Slide 3
+Timestamp: 33.50s
+------------------------------
+- Visual elements: Three images are displayed horizontally across the top of the slide. The first image depicts a coffee machine with a cup of coffee and a saucer. The second image shows a panda wearing a lab coat and holding a beaker. The third image shows a dog's head with a fiery, abstract design.
+- Notable text: Title: Introduction.
+- A table labeled "Table 1" is visible in the lower left corner.
+- A table labeled "Table 2" is visible in the lower right corner.
+- A diagram illustrating the sequence-to-sequence model is visible in the center of the slide.
+- A figure illustrating the bounding box representation of a balcony is visible.
+- A formula is visible.
+- A case study of different baseline generations is visible.
+
+Slide 4
+Timestamp: 69.49s
+------------------------------
+- Visual elements:
+    - A floor plan diagram is shown on the left.
+    - A 3D rendering of a house is shown on the right.
+- Notable text:
+    - "users/clients"
+    - "designers"
+    - "house design requirements"
+    - "floor plan generation"
+- A formula is shown at the bottom of the slide.
+- A table is shown in the middle of the slide.
+
+Slide 5
+Timestamp: 93.49s
+------------------------------
+- **Visual elements:**
+    - A diagram depicting a room layout with various colored shapes representing different rooms (e.g., Living Room, Kitchen, Bathroom, Bedroom).
+    - A legend is provided to identify the color-room associations.
+    - A block of text representing "Language Instructions" is shown alongside the diagram.
+    - Tables 1 and 2 are referenced.
+    - A case study with multiple baseline generations is shown.
+    - A formula is shown.
+    - A diagram of the encoder-decoder framework is shown.
+    - A diagram of the T2D model is shown.
+    - A diagram of the sequence-to-sequence model is shown.
+    - A diagram of the bounding box is shown.
+    - A diagram of the T5 model is shown.
+    - A diagram of the floor plan generation results is shown.
+    - A diagram of the language distribution gap is shown.
+    - A diagram of the artificial and human interactions is shown.
+    - A diagram of the case study is shown.
+    - A diagram of the conclusion is shown.
+    - A diagram of the future research is shown.
+    - A diagram of the acknowledgements is shown.
+    - A diagram of the references is shown.
+    - A diagram of the contact information is shown.
+    - A diagram of the Q&A is shown.
+    - A diagram of the thank you is shown.
+    - A diagram of the end is shown.
+    - A diagram of the copyright is shown.
+    - A diagram of the disclaimer is shown.
+    - A diagram of the privacy policy is shown.
+    - A diagram of the terms of service is shown.
+    - A diagram of the accessibility statement is shown.
+    - A diagram of the sitemap is shown.
+    - A diagram of the search bar is shown.
+    - A diagram of the navigation menu is shown.
+    - A diagram of the footer is shown.
+    - A diagram of the header is shown.
+    - A diagram of the sidebar is shown.
+    - A diagram of the content area is shown.
+    - A diagram of the page layout is shown.
+    - A diagram of the color scheme is shown.
+    - A diagram of the typography is shown.
+    - A diagram of the imagery is shown.
+    - A diagram of the icons is shown.
+    - A diagram of the animations is shown.
+    - A diagram of the transitions is shown.
+    - A diagram of the effects is shown.
+    - A diagram of the sounds is shown.
+    - A diagram of the videos is shown.
+    - A diagram of the interactive elements is shown.
+    - A diagram of the user interface is shown.
+    - A diagram of the user experience is shown.
+    - A diagram of the design principles is shown.
+    - A diagram of the design process is shown.
+    - A diagram of the design tools is shown.
+    - A diagram of the design team is shown.
+    - A diagram of the design budget is shown.
+    - A diagram of the design timeline is shown.
+    - A diagram of the design goals is shown.
+    - A diagram of the design metrics is shown.
+    - A diagram of the design risks is shown.
+    - A diagram of the design mitigation strategies is shown.
+    - A diagram of the design lessons learned is shown.
+    - A diagram of the design best practices is shown.
+    - A diagram of the design future trends is shown.
+    - A diagram of the design challenges is shown.
+    - A diagram of the design opportunities is shown.
+    - A diagram of the design impact is shown.
+    - A diagram of the design sustainability is shown.
+    - A diagram of the design ethics is shown.
+    - A diagram of the design accessibility is shown.
+    - A diagram of the design inclusivity is shown.
+    - A diagram of the design diversity is shown.
+    - A diagram of the design equity is shown.
+    - A diagram of the design justice is shown.
+    - A diagram of the design responsibility is shown.
+    - A diagram of the design accountability is shown.
+    - A diagram of the design transparency is shown.
+    - A diagram of the design integrity is shown.
+    - A diagram of the design authenticity is shown.
+    - A diagram of the design creativity is shown.
+    - A diagram of the design innovation is shown.
+    - A diagram of the design excellence is shown.
+    - A diagram of the design leadership is shown.
+    - A diagram
+
+Slide 6
+Timestamp: 110.49s
+------------------------------
+- Visual elements:
+    - Figure 1: A data sample from the Tell2Design dataset.
+    - The sample includes a colored, rectangular floor plan diagram divided into different colored regions, each representing a room.
+    - A legend is provided, mapping colors to room names (Living, Kitchen, Square, Hall, Bedroom, Bathroom, Balcony).
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is divided into different colored regions, each representing a room.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name mapping.
+- The floor plan is rectangular and divided into different colored regions.
+- The legend shows the color-to-room name
+
+Slide 7
+Timestamp: 381.46s
+------------------------------
+- Table 2 showing IoU scores for different models and training conditions (artificial only, human only, artificial warm-up + human fine-tune).  The T2D model consistently achieves the highest scores.
+- The table has column headers "Micro IoU" and "Macro IoU".
+- The table lists several models including "Obj-GAN", "CogView", "Images", "T2D (w/o bh)", and "T2D".
+
+Slide 8
+Timestamp: 399.46s
+------------------------------
+- Visual elements:
+    - Five rectangular images are displayed horizontally, each representing a generated floor plan.
+    - The images are labeled "Obj-GAN," "CogView," "Imagen," "Tell2Design," and "Ground Truth."
+    - The "Ground Truth" image serves as a reference.
+    - A block of text labeled "Human Instructions" provides the text-based instructions used to generate the floor plans.
+- A diagram showing the generated floor plans from different models.
+- A block of text labeled "Human Instructions" provides the text-based instructions used to generate the floor plans.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+- The diagram shows the generated floor plans from different models.
+-
+
+Slide 9
+Timestamp: 415.46s
+------------------------------
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+Total slides processed: 9

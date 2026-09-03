@@ -1,0 +1,151 @@
+sample_id,iid,qa_type,reference,hypothesis,llm_score,llm_reason
+0,CUSTOM_QA_0,text-extraction,The first describes the Word-Level Knowledge Destillation (KD) and the second the Sequence Level KD.,"The provided slides and transcript do not explicitly present any mathematical formulas. The content primarily discusses concepts, methodologies, and experimental setups related to knowledge distillation for natural language generation (NLG), but no specific formulas are shown or mentioned.",0.0,"The reference says the first item is Word-Level Knowledge Distillation and the second is Sequence-Level KD. The model answer instead says no formulas are presented, which does not address the requested identification and misses the key information entirely."
+1,CUSTOM_QA_1,text-extraction,"1. a medium resource labeled dataset. 2. plentiful unlabeled data. 3. off-the shelf, small to medium size + fine-tuned LMs. 4. Inference-time efficiency is our goal. 5. One-time computational training resources are negligible","The five criteria for attractive NLP projects, as outlined in the slide, are:
+
+1. **Medium-resource labeled dataset** (several thousands of examples)
+2. **Plentiful unlabeled data**
+3. **Off-the-shelf, small-to-medium size fine-tuned language models**
+4. **Inference time efficiency** (high compression)
+5. **Negligible one-time computational training resources**",1.0,The model answer matches all five criteria in the reference with the same meaning; added phrasing like 'several thousands of examples' and 'high compression' is consistent and does not change the core content.
+2,CUSTOM_QA_2,formula-extraction,"LLog(x, y) = ∑ |y|i=1 KL(Ps(y|x, y<i), Pr(y|x, y<i))","The mathematical formula for **word-level Knowledge Distillation (KD)**, also known as **logits KD**, is:
+
+\[
+\mathcal{L}_{KD} = \text{KL}\left(\sigma\left(\frac{\mathbf{z}_s}{T}\right), \sigma\left(\frac{\mathbf{z}_t}{T}\right)\right)
+\]
+
+Where:
+- \(\mathbf{z}_s\) and \(\mathbf{z}_t\) are the logits (unnormalized predictions) of the **student** and **teacher** models, respectively.
+- \(\sigma\) is the **softmax** function.
+- \(T\) is the **temperature** parameter (typically \(T > 1\) to soften the probability distribution).
+- \(\text{KL}\) is the **Kullback-Leibler divergence** between the softened student and teacher distributions.
+
+This loss encourages the student to mimic the teacher's output probabilities.",0.5,"The model identifies KD as a KL divergence between student and teacher output distributions, which matches the core idea. However, it gives a generic softened-logits formula with temperature and does not match the reference's sequence-level word-by-word loss summed over positions conditioned on x and previous target tokens."
+3,CUSTOM_QA_3,table-extraction,It's higher for CC,The Macro-F1 score for the AG News is higher for **CC** (Contextual Calibration) than for the **Original** method.,1.0,The model answer matches the reference: it states that AG News has a higher Macro-F1 score for CC than for the Original method.
+4,CUSTOM_QA_4,V,"self-attention, linear, softmax prob, weighted sum","The **audio-visual meta-mapper network (AVMM)** in the proposed framework does not explicitly specify its layers in the provided content. However, based on the description, it appears to involve:
+
+1. **Learnable tokens (visual prefix)** – Used to map visual concepts into a unified audio semantic space.
+2. **Audio clustering (k-means)** – To define the unified audio semantic space.
+3. **Probability distribution generation** – For reconstructing audio from visual content.
+
+The exact architectural layers (e.g., transformer blocks, attention mechanisms) are not detailed in the given text. The focus is on its functional role rather than its structural composition.",0.0,"The reference specifies key components/layers: self-attention, linear, softmax probability, and weighted sum. The model answer does not mention these and instead discusses unrelated concepts like learnable tokens and k-means, so it misses the key information."
+5,CUSTOM_QA_5,text-extraction,"While audio and visual are often correlated in natural events and jointly affect human perception, they have different characteristics. Timber is an intrinsic property of the object.","The motivation behind the work is to address the challenges of **arduous and expensive data annotation** and **severe performance degradation** in multimodal text generation tasks due to **multi-modal domain shifts** (e.g., visual style, audio energy). The authors propose leveraging a **unified auditory semantic space** to align visual concepts across domains, as audio content (e.g., rhythm, energy) is more stable for event understanding than visual content, which varies significantly with style or angle. This approach aims to enable models to adapt quickly to new domains with limited labeled data.",0.0,"The model answer is largely irrelevant to the reference. It discusses multimodal domain shifts and adaptation, but misses the key point that audio and visual modalities differ in characteristics despite correlation, and that timbre is an intrinsic property of the object."
+6,CUSTOM_QA_6,table-extraction,78.3,The Bleu-1 score for TAVT (A_recc) for MSR-VTT (multi-modal) is **47.6**.,0.0,"The model answer gives 47.6, which does not match the reference answer 78.3."
+7,CUSTOM_QA_7,text-extraction,"Animation, Music, Animal, Kids and Beauty.","The cross domains of the dataset presented are Animation, Music, Animal, Kids, and Beauty.",1.0,"The model answer lists the same five cross domains as the reference: Animation, Music, Animal, Kids, and Beauty."
+8,CUSTOM_QA_8,graph-related,The man puts on his gloves and cleans off the snow from a car.,The example video for Zero-shot Temporal Sentence Localization shows a man putting on gloves and then cleaning snow.,1.0,"The model answer matches the key actions in the reference: the man puts on gloves and cleans snow, which conveys the same essential information."
+9,CUSTOM_QA_9,graph-related,"The graph visualizes that a series of images gets a description, which is then compared with query candidates. A similarity is calculated, and similar queries are kept, while dissimiliar ones are dropped.","The graph about **pseudo event generation** illustrates the process of selecting the most relevant video segment (pseudo-event) for a given pseudo-query. It shows three curves representing **event proposals** over time, with the y-axis indicating similarity scores. The key components are:
+
+1. **Event Proposals**: Time intervals considered as potential pseudo-events.
+2. **Mean Similarity within Event (si)**: Average similarity between video frames inside the event and the pseudo-query.
+3. **Mean Similarity outside Event (s0)**: Average similarity between video frames outside the event and the pseudo-query.
+4. **Event Quality (Qik)**: Calculated as the difference between *si* and *s0*, determining the best pseudo-event.
+
+The proposal with the **highest event quality** (greatest difference between inside and outside similarity) is selected. For example, the interval **[46, 152]** is chosen as it maximizes this difference, ensuring high relevance within the event and low relevance outside it.",0.0,"The model answer describes pseudo event generation in videos with event proposals and similarity over time, which does not match the reference. The reference is about images receiving descriptions, comparing them with query candidates, computing similarity, and keeping similar queries while dropping dissimilar ones."
+10,CUSTOM_QA_10,table-extraction,35.44,"The slide does not provide a specific numerical score for SPL's performance on the mIoU metric. It only states that the method achieves the best zero-shot performance on two datasets, ActivityNet Captions and Charades-STA, without giving exact values. For detailed scores, you would need to refer to the paper itself.",0.0,"The reference answer gives a specific numerical value, 35.44, while the model answer incorrectly says no specific score is provided and does not match the ground truth."
+11,CUSTOM_QA_11,graph-related,Outgroup and Ingroup,"The Message goes to two kinds of audiences in the graph: the **Outgroup** and the **Ingroup**. The Outgroup interprets the message literally (e.g., ""cosmopolitan"" as ""worldly""), while the Ingroup interprets it with the coded meaning (e.g., ""Jewish"").",1.0,"The model correctly identifies the two audiences as the Outgroup and the Ingroup, matching the reference. The extra explanation is consistent and does not conflict with the reference."
+12,CUSTOM_QA_12,graph-related,"Reagan, Crime Bill, 9/11 and Trump led to increases as there are peaks right after the event.","The graph in **Slide 6** shows that the use of racial dogwhistles in U.S. political speeches increased significantly around the **Civil Rights era (post-1960s)**, coinciding with the **Republican Southern Strategy**, which aimed to appeal to white voters in the South by using coded racial language. The vertical red line around **1980** marks this shift, indicating a rise in conservative-leaning politicians employing such rhetoric. Specific politicians or events aren't detailed in the slide, but the trend aligns with the political realignment where explicit racism became less socially acceptable, pushing racially charged language into dogwhistles.",0.0,"The model answer does not mention the key events/politicians in the reference (Reagan, Crime Bill, 9/11, Trump) and instead discusses the Civil Rights era and Southern Strategy, which is different from the referenced peaks."
+13,CUSTOM_QA_13,graph-related,"Property rights, welfare reform, thug and hardworking americans are more associated with conservatism, while Willi Horton is less associated with conservatism.","Based on the graph, the terms ""property rights,"" ""welfare queen,"" ""hardworking Americans,"" and ""thug"" show an increasing association with conservatism over time, as indicated by their rising DW-NOMINATE scores. Conversely, no terms are shown to be less associated with conservatism over time; the graph only illustrates this upward trend for the listed terms.",0.5,"The model correctly identifies property rights, hardworking Americans, and thug as more associated with conservatism, but it incorrectly says no terms are less associated with conservatism and replaces 'welfare reform' with 'welfare queen,' missing the reference point that Willie Horton is less associated with conservatism."
+14,CUSTOM_QA_14,text-extraction,45%,GPT-3 surfaces **45%** of the dogwhistles from the authors' glossary.,1.0,The model answer matches the reference exactly on the key information: 45%.
+15,CUSTOM_QA_15,graph-related,"No, slightly less than 50%","No, GPT-3 did not identify more than 50% covert meaning in the formal register for the condition ""only secret cue."" The bar graph on Slide 10 shows that the fraction of generations identified was below 0.5 (50%) for this condition.",1.0,"The model answer matches the reference: it clearly says 'No' and indicates the value was below 50%, consistent with 'slightly less than 50%'."
+16,CUSTOM_QA_16,text-extraction,"• [1] Blasi, et al. 'Systematic Inequalities in Language Technology Performance across the World's Languages.' ACL 2022. • [2] Levine et al. 'GEOLAMA: Geo-Diverse Commonsense Probing on Multilingual Pre-Trained Language Models.' EMNLP 2022.• [3] Cambo & Gergle. 'Model Positionality and Computational Reflexivity: Promoting Reflexivity in Data Science.' CHI 2022.","The three references for datasets and models having positionality mentioned in the presentation are:
+
+1. **Cultural gaps in models and datasets** (prior anecdotal evidence)
+2. **Theoretical definitions of model positionality** (prior work)
+3. **Empirical evidence from NLPositionality** (this work’s findings)",0.0,"The model answer does not list the three specific referenced works/authors/titles from the presentation and instead gives generic categories, so it misses the key information entirely."
+17,CUSTOM_QA_17,text-extraction,"Age, Gender, Ethnicity, Education, Country.","The demographics included in the analysis in the framework graph are:
+
+- Age
+- Gender
+- Ethnicity
+- Education",0.5,"The model includes Age, Gender, Ethnicity, and Education, but omits Country, which is part of the reference answer."
+18,CUSTOM_QA_18,graph-related,Bad,"The label circled in gold color for the example 'Eating with Hands' in the framework presented is **""Not Acceptable""**.",0.0,"The reference answer is 'Bad', but the model answered 'Not Acceptable', which does not match the ground truth label."
+19,CUSTOM_QA_19,text-extraction,They are more aligned to college.,Datasets and models are more aligned with people who have a college education or higher.,1.0,"The model answer matches the reference by stating alignment with people who have a college education or higher, which conveys the same key idea as being more aligned to college."
+20,CUSTOM_QA_20,graph-related,They are more aligned to PhD,Datasets and models are more aligned to people with a college education or Graduate School education (PhD level) rather than pre-high school.,1.0,The model answer matches the reference by stating they are more aligned to graduate/PhD-level education rather than lower education levels.
+21,CUSTOM_QA_21,table-extraction,2.250,The QFE score for the Editor model in the table on Factual Error Detection and Correction is **0.540**.,0.0,"The model answer gives 0.540, which does not match the reference answer 2.250."
+22,CUSTOM_QA_22,graph-related,trigger set.,"The component is called the **""trigger set"" (T)**.",1.0,"The model answer matches the reference exactly, identifying the component as the trigger set."
+23,CUSTOM_QA_23,text-extraction,"Parameter-based watermark, lexival watermark, backdoor-based watermark and adversarial based watermark.",Existing works can be broadly classified into four categories.,0.5,"The model answer correctly states there are four categories, but it does not provide the actual categories listed in the reference answer."
+24,CUSTOM_QA_24,formula-extraction,Δcos = 1/|Cb| ∑ᵢ - 1/|Cn| ∑ⱼ,"The formula for the similarity difference metric of EmbMarker is not explicitly provided in the slides. However, based on the description, it involves computing the difference in cosine and L2 similarity between the requested embedding and the target embedding for backdoor and benign datasets, defined as delta cosine and delta L2. Additionally, the KS test p-value is used as a third metric.",0.0,"The reference gives a specific formula for Δcos as the difference of averaged cosine similarities over backdoor and normal sets. The model answer does not provide this formula and instead gives vague, partially unrelated description."
+25,CUSTOM_QA_25,table-extraction,4.07,"According to the table, the similarity difference value (Δ_text) for the SST2 dataset using the EmbMarker method is **0.134 ± 0.011**.",0.0,"The reference answer is 4.07, but the model answer gives a different value (0.134 ± 0.011) and appears to refer to a different metric."
+26,CUSTOM_QA_26,graph-related,"Trigger set, providers model, trigger number, original embedding, backdoor weight, target embedding, provided embedding.","Based on the graph about the EmbMarker watermark injection, the depicted components are:
+
+1. **Trigger set (T)**
+2. **Sentence (S)**
+3. **Trigger number (Q(S))**
+4. **Backdoor weight (q)**
+5. **Original embedding (e_o)**
+6. **Target embedding (e_t)**
+7. **Provided embedding (E)**
+8. **Copy dataset (D_c)**
+9. **Max trigger number (m)**",0.5,"The model includes most reference components (trigger set, trigger number, original embedding, backdoor weight, target embedding, provided embedding) but misses 'providers model' and adds several extra items not in the reference."
+27,CUSTOM_QA_27,graph-related,RACE,"According to the graph in the introduction, the **MARQA** benchmark performed best, as it shows the highest relative performance compared to human baselines (significantly exceeding human performance).",0.0,"The reference answer is RACE, but the model answered MARQA, which is a different benchmark and therefore incorrect."
+28,CUSTOM_QA_28,text-extraction,"ot-of domain generalization, adversarial attacks, spurious patterns, lack of sensitivity to basic linguistic perturbations, over-sensitivity to perturbations that should not matter","Models' brittleness is further evidenced by their lack of generalization, vulnerability to adversarial attacks, reliance on spurious patterns, insensitivity to basic perturbations like negation, and over-sensitivity to irrelevant perturbations.",1.0,"The model answer matches all key points from the reference: out-of-domain/generalization issues, adversarial vulnerability, reliance on spurious patterns, lack of sensitivity to basic linguistic perturbations, and over-sensitivity to irrelevant perturbations."
+29,CUSTOM_QA_29,graph-related,"There are two nodes, s and m. There is an arrow from s to m. The edge is called r_2.",(API error after retries),0.0,"The model provided no substantive answer, only an API error message, so it does not convey any of the reference information."
+30,CUSTOM_QA_30,table-extraction,77.65,The total score for GEAR with evidence input type is 75.8.,0.0,"The model answer gives 75.8, which does not match the reference value 77.65."
+31,CUSTOM_QA_31,text-extraction,"One-hop, conjunction, existence, multi-hop, and negation","The five types of reasoning on Knowledge Graphs in the FACTKG dataset are:
+
+1. **One-hop**
+2. **Conjunction**
+3. **Existence**
+4. **Multi-hop**
+5. **Negation**",1.0,"The model answer exactly matches the reference by listing all five reasoning types: one-hop, conjunction, existence, multi-hop, and negation."
+32,CUSTOM_QA_32,text-extraction,"SAMSum, DialogSum, EmailSum, QMSum, TweetSum","The five datasets described in the analysis are:
+
+1. SAMSum
+2. DialogSum
+3. EmailSum
+4. QMSum
+5. TweetSum",1.0,"The model answer exactly matches the five datasets in the reference answer: SAMSum, DialogSum, EmailSum, QMSum, and TweetSum."
+33,CUSTOM_QA_33,graph-related,"85% of negative labels, and 15% of positive labels.",The pie chart for the SAMSum dataset shows approximately **70% positive labels** and **30% omission (negative) labels**.,0.0,"The model answer reverses and significantly misstates the proportions. The reference says 85% negative and 15% positive, while the model says 30% negative and 70% positive."
+34,CUSTOM_QA_34,graph-related,"Kitchen is pink/red, Living Room is light green, bath room is blue, master room is orange, balcony is green, and the common room is yellow","Based on the description of **Slide 5**, the rooms shown in the floor plan and their corresponding colors are:
+
+- **Living Room** (Yellow)
+- **Kitchen** (Green)
+- **Bathroom** (Blue)
+- **Bedroom** (Pink)
+- **Hallway** (Gray)
+- **Door** (Black)
+- **Window** (White)
+- **Balcony** (Light Blue)",0.0,"The model answer assigns mostly incorrect colors and rooms compared to the reference: living room should be light green not yellow, kitchen should be pink/red not green, balcony should be green not light blue, master/common rooms are missing, and it adds irrelevant items like hallway, door, and window."
+35,CUSTOM_QA_35,text-extraction,"5,051 human annotated data","The Tell2Design dataset includes **5,051 human-annotated language instructions**.",1.0,"The model answer matches the reference exactly in meaning, stating that the Tell2Design dataset includes 5,051 human-annotated data/instructions."
+36,CUSTOM_QA_36,graph-related,It compares the performance of different models and training methods on calculating the MicroIoU and Macro IoU.,"The table shown in the slides (Slide 7) is titled **""Table 2: IoU scores between ground-truth and generated floor plans for the T2D model and other baselines.""** It compares the performance of different models (Obj-GAN, CogView, Imagen, T2D) using **Micro IoU** and **Macro IoU** metrics under three training conditions:
+1. Training on artificial instructions only.
+2. Training on human instructions only.
+3. Warm-up on artificial + fine-tune on human instructions.",1.0,The model answer matches the reference by stating that the table compares different models and training methods using Micro IoU and Macro IoU metrics.
+37,CUSTOM_QA_37,table-extraction,64,The number of meetings in the **training set** for the MeetingQA dataset is **116**.,0.0,"The reference answer is 64, but the model answer states 116, which does not match."
+38,CUSTOM_QA_38,table-extraction,"7,735","The MeetingQA dataset contains a total of **7,735 questions**.",1.0,"The model answer exactly matches the reference answer, stating that the MeetingQA dataset contains 7,735 questions."
+39,CUSTOM_QA_39,graph-related,Right skewed,"The distribution of answer lengths in the MeetingQA dataset was **right-skewed** (positively skewed). This is evident from the histogram in Slide 7, where the tail extends more towards the higher values (longer answers), and the majority of answers are concentrated on the lower end (shorter lengths).",1.0,"The model answer matches the reference exactly by identifying the distribution as right-skewed, with only additional explanatory detail."
+40,CUSTOM_QA_40,graph-related,3151 were most likly violating and 3467 clearly violating,"According to the bar chart, **3,151 tweets** were most likely violating and **6,918 tweets** (3,467 + 3,451) were clearly violating Twitter’s policies.",0.5,"It correctly states 3,151 as most likely violating, but incorrectly gives clearly violating as 6,918 instead of 3,467."
+41,CUSTOM_QA_41,text-extraction,65%,65%,1.0,The model answer exactly matches the reference answer: 65%.
+42,CUSTOM_QA_42,graph-related,ABC-Eval,"According to the chart on Slide 8, the **Dialogue Likert** evaluation method had the highest inter-annotator agreement, as indicated by the yellow arrow pointing to its highest Krippendorff's Alpha value.",0.0,"The reference answer is 'ABC-Eval', but the model answer identifies 'Dialogue Likert', which does not match."
+43,CUSTOM_QA_43,graph-related,Dialogue Likert,"The evaluation method with the **lowest incremental validity** was the **Dialogue Likert** ratings, as removing its metrics resulted in the least loss of explained variance in overall conversation quality compared to other methods.",1.0,The model answer correctly identifies 'Dialogue Likert' as the evaluation method with the lowest incremental validity and matches the reference.
+44,CUSTOM_QA_44,graph-related,"'Yes, and all your belongings would be in a handkerchief tied at the end of a stick'","The response from 'B' was ""Ironic.""",0.0,"The model answer does not match the reference at all. The reference says 'Yes' and adds the detail about belongings in a handkerchief on a stick, while the model answer says the response was 'Ironic.'"
+45,CUSTOM_QA_45,text-extraction,January 2020 - June 2021,The data collection spanned a time window of **1½ years**.,0.5,"The model conveys the approximate duration (1.5 years) but omits the specific start and end dates, so it only partially matches the reference."
+46,CUSTOM_QA_46,table-extraction,0.88,The variation score in irony perception between Ireland and the UK was the highest reported.,0.0,"The reference answer is the numeric value 0.88, while the model answer gives a qualitative statement and does not provide the correct value."
+47,CUSTOM_QA_47,text-extraction,boomers and genZ,The two generations that show the highest variation in irony perception are Boomers and Gen Y.,0.5,"It correctly identifies Boomers, but incorrectly says Gen Y instead of Gen Z."
+48,CUSTOM_QA_48,text-extraction,Thanks for your attention! See you at the posters in Toronto,"The final slide reads:
+
+**""Thanks for your attention!**
+**See you at the poster session in Toronto""**",0.5,"The model captures the thank-you and Toronto poster-related message, but changes 'See you at the posters in Toronto' to 'See you at the poster session in Toronto,' which is a minor wording difference from the reference."
+49,CUSTOM_QA_49,formula-extraction,"LSWFC = - Σi=1M Σj=1N (C(i)/ηy,i,j)α * (1/|Ri,j|) * Σzi,g∈Ri,j (1 - si,g)γ log si,gCopy","The **Sample-Weighted Focal Contrastive (SWFC) Loss** is defined as:
+
+\[
+\mathcal{L}_{SWFC} = \frac{1}{N} \sum_{i=1}^{N} \alpha_i (1 - p_i)^\gamma \cdot \mathcal{L}_{contrastive}(y_i, \hat{y}_i)
+\]
+
+where:
+- \(N\) = number of samples,
+- \(\alpha_i\) = class-specific weight (higher for minority classes),
+- \(\gamma\) = focusing parameter (controls emphasis on hard examples),
+- \(p_i\) = predicted probability for the true class,
+- \(\mathcal{L}_{contrastive}\) = contrastive loss term (e.g., cosine similarity or Euclidean distance between embeddings of same/different classes).
+
+This loss combines **focal loss** (for class imbalance) with **contrastive loss** (for inter-class separation).",0.0,"The model gives a different, generic focal-contrastive loss formula rather than the referenced SWFC expression. It misses the specific double summation over classes/regions, the class-frequency term C(i)/ηy,i,j, the region average over zi,g in Ri,j, and the log si,g term."
+50,CUSTOM_QA_50,graph-related,"Pubmed, Dailymail, Stackoverflow, Wikipedia, Reddit and Legal Codes","The six target domains from the problem setup graph are:
+
+1. Biomedical (PubMed)
+2. News
+3. Reviews
+4. Reddit
+5. Wikipedia
+6. Science",0.5,"The answer gets PubMed, Reddit, and Wikipedia correct, but replaces Dailymail, Stackoverflow, and Legal Codes with News, Reviews, and Science, which do not match the reference."
+51,CUSTOM_QA_51,graph-related,Covariate Shift,"The corner with low reader compatibility but high retriever compatibility is labeled **""Concept shift""** in the 2x2 matrix. This indicates that while the retriever can find relevant passages (compatible), the reader struggles to generate the correct answer due to a mismatch in reasoning requirements (incompatible).",0.0,"The reference answer is 'Covariate Shift,' but the model answered 'Concept shift,' which is a different label and therefore incorrect."
+52,CUSTOM_QA_52,graph-related,Retriever Model and Reader Model,The graph about Open Domain QA involves the **Retriever Model** and the **Reader Model**.,1.0,"The model answer exactly matches the reference, identifying the two components as the Retriever Model and the Reader Model."

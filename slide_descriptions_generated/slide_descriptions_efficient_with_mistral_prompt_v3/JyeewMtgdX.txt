@@ -1,0 +1,150 @@
+Here is the rewritten slide description containing only information not explicitly conveyed in the transcript:
+
+---
+
+**Slide 1 & 2 (Timestamp: 5.17s, 11.85s)**
+- **Title:** EPIC: Multi-Perspective Annotation of a Corpus of Irony
+- **Authors:**
+  Sofia Frenda, Alessandro Pedrani, Valerio Basile, Soda Marem Lo, Alessandra Teresa Cignarella, Raffaella Panizzon, Cristina Marco, Bianca Scarlini, Viviana Patti, Cristina Bosco, Davide Bernardi
+
+---
+
+**Slide 3 (Timestamp: 58.56s)**
+- **Title:** WHY PERSPECTIVES?
+- **Content:**
+  - Modern Natural Language Understanding is mostly based on supervised machine learning (data-driven approaches).
+  - Requires large sets of manually annotated data encoding human knowledge.
+  - The paradigm of ground truth shows its limits, especially in subjective tasks.
+- **Visual:**
+  - Three stick figures: two purple figures standing side-by-side, one gray figure standing slightly apart.
+
+---
+
+**Slide 4 (Timestamp: 199.66s)**
+- **Title:** ANNOTATION TASK
+- **Content:**
+  - **Message:**
+    *"My youngest brother and his wife married on Feb 29th. He became my hero. Today is their fifth anniversary."*
+  - **Reply:**
+    *"Means it’s been 20 years since their marriage?"*
+  - **Question:**
+    *"Is the reply ironic?"*
+  - **Options:**
+    - [ ] Ironic
+    - [ ] Not ironic
+
+---
+
+**Slide 5 (Timestamp: 230.16s)**
+- **Title:** DISTRIBUTION OF IAA AMONG PERSPECTIVES
+- **Content:**
+  - A 2x3 grid of violin plots showing the distribution of a variable ("Content Markers with Majority Label") across different demographic categories.
+- **Top Row:**
+  1. **By Gender:**
+     - Male (orange), Female (blue)
+     - Female distribution slightly left-shifted compared to Male.
+     - Both distributions wide, indicating variability.
+  2. **By Age Group:**
+     - 18-24 (blue), 25-34 (green), 35+ (red)
+     - 18-24 and 25-34 similar, centered lower than 35+.
+     - 35+ distribution wider.
+  3. **By Nationality:**
+     - American (orange), Canadian (green), Chinese (purple), Indian (teal), Korean (dark blue), Australian (light blue)
+     - American, Canadian, Chinese, Indian left-shifted compared to Korean and Australian.
+     - Varying distribution widths.
+- **Middle Row:**
+  1. **By Ethnicity:**
+     - Asian (orange), Black (green), Other (blue)
+     - Asian slightly left-shifted compared to Black and Other.
+     - "Other" distribution widest.
+  2. **By Student Status:**
+     - Full Time (blue), Part Time (orange)
+     - Full Time slightly left-shifted compared to Part Time.
+     - Part Time distribution wider.
+  3. **By Employment Status:**
+     - Full Time (blue), Part Time (green), Unemployed/Student (red)
+     - Full Time slightly left-shifted compared to Part Time and Unemployed/Student.
+     - Unemployed/Student distribution widest.
+- **Y-axis Label:** "Content Markers with Majority Label" (shared across all plots).
+- **X-axis Labels:** Correspond to each demographic category (e.g., "Gender," "Age Group," "Nationality").
+
+---
+
+**Slide 6 (Timestamp: 253.04s)**
+- **Title:** MODELLING PERSPECTIVES WITH EPIC
+- **Content:**
+  - Text: *"we want to understand the importance of a perspectivist approach for irony detection compared to a standard non-perspectivist approach, whose training and testing is based on a gold standard dataset"*
+
+---
+
+**Slide 7 (Timestamp: 290.22s)**
+- **Title:** Modelling Perspectives
+- **Content:**
+  - **Text:**
+    - *"Perspective-aware models tend to take a decision with less uncertainty than standard non-perspectivist models"*
+    - *"Perspective-aware models are inclined to be more confident when they are tested on a test set representative of their perspective"*
+  - **Table:**
+    | model | FI-score | GOLD TEST SET | | FI-score | GOLD TEST SET |
+    |---|---|---|---|---|---|
+    | | | Confidence | avg | | Confidence | avg | Δ% Confidence avg |
+    | non-perspectivist | 0.681 | 0.301 | 0.509 | 0.538 | 0.334 | 0.644 | -2.09 | 3.70 |
+    | fem-persp | 0.590 | 0.329 | 0.621 | 0.513 | 0.234 | 0.644 | -2.09 | 3.70 |
+    | male-persp | 0.620 | 0.274 | 0.582 | 0.613 | 0.267 | 0.585 | -2.55 | 0.52 |
+    | Boomers-persp | 0.539 | 0.290 | 0.484 | 0.484 | 0.303 | 0.512 | 5.95 |
+    | GenX-persp | 0.516 | 0.269 | 0.603 | 0.483 | 0.261 | 0.612 | -2.97 | 1.49 |
+    | GenY-persp | 0.611 | 0.265 | 0.582 | 0.574 | 0.259 | 0.245 | -2.26 | -3.92 |
+    | GenZ-persp | 0.567 | 0.303 | 0.567 | 0.567 | 0.352 | 0.582 | -2.62 | -4.09 |
+    | UK-persp | 0.497 | 0.273 | 0.603 | 0.425 | 0.165 | 0.746 | -4.62 | -0.27 |
+    | US-persp | 0.516 | 0.290 | 0.603 | 0.461 | 0.262 | 0.585 | -2.09 | 0.52 |
+    | Ir-persp | 0.608 | 0.255 | 0.603 | 0.533 | 0.213 | 0.708 | -2.09 | 6.34 |
+    | UK-persp | 0.507 | 0.255 | 0.612 | 0.533 | 0.256 | 0.630 | -1.57 | 2.61 |
+- **Visual Elements:**
+  - Yellow arrow pointing to the "Boomers-persp" row.
+  - Cyan arrow pointing to the "UK-persp" row.
+
+---
+
+**Slide 8 & 10 (Timestamp: 296.90s, 341.70s)**
+- **Title:** VARIATION IN IRONY PERCEPTION
+- **Content:**
+  - **Text:**
+    - *"In general, contiguous generations seem to perceive irony in different way (boomers vs. genY results in the highest variation)."*
+    - *"The highest variation is reported between the United Kingdom and Ireland."*
+  - **Tables:**
+    - **Generational Variation:**
+      |        | genX | genY | genZ |
+      | :----- | :--- | :--- | :--- |
+      | boomers | .73  | .71  | .81  |
+      | genX    | .80  |      |      |
+      | genY    |      | .79  |      |
+    - **Geographical Variation:**
+      |        | US  | Ir  | In  | UK  |
+      | :----- | :-- | :-- | :-- | :-- |
+      | Au     | .96 | .91 |      | .97 |
+      | US     |      | .91 | .95 | .92 |
+      | Ir     |      |      | .89 |      |
+      | In     |      |      | .89 |      |
+  - **Additional Text:**
+    - *"male .85"* (appears above the generational table).
+
+---
+
+**Slide 9 & 11 (Timestamp: 302.62s, 347.42s)**
+- **Title:** VARIATION IN IRONY PERCEPTION
+- **Content:**
+  - **Text:**
+    - *"we want to examine, along which dimension, we can observe the highest variation in the perception of irony"*
+  - **Visual:**
+    - Three stick figures horizontally aligned: first yellow, second purple, third gray.
+
+---
+
+**Slide 11 (Timestamp: 347.42s)**
+- **Title:** (None)
+- **Content:**
+  - **Text:**
+    - *"THANKS FOR YOUR ATTENTION!"*
+    - *"SEE YOU AT THE POSTER SESSION IN TORONTO"*
+  - **Visual:**
+    - Background: Repeating pattern of stylized faces in various shades of purple.
+    - Text: White, sans-serif font, centered.

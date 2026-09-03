@@ -1,0 +1,86 @@
+**Slide 1**
+**Title:** Human-in-the-loop Evaluation for Early Misinformation Detection: A Case Study of COVID-19 Treatments
+
+**Text content:**
+Ethan Mendes, Yang Chen, Wei Xu, Alan Ritter
+(emendes3, yangc@gatech.edu, {wei.xu, alan.ritter}@cc.gatech.edu)
+
+[Georgia Tech Logo]
+
+---
+
+**Slide 3**
+**Title:** Current Approaches for Misinformation Detection
+
+*   Unrealistically Evaluated
+    *   Possibility of leaked counter-evidence¹:
+
+    “Telemundo is an English-language television network”
+    →
+    Telemundo W
+    ⚠️
+
+*   Not Human-Centric
+
+¹ Glöckner et al. 2022
+
+---
+
+**Slide 4**
+**Title:** Current Approaches for Misinformation Detection
+
+*   Unrealistically Evaluated
+    *   Possibility of leaked counter-evidence:
+
+    “Half a million sharks may be killed to make the COVID-19 vaccine”
+    [Diagram: A box labeled "COVID-19 Vaccine Misinformation" with an arrow pointing to a box labeled "Snopes" with an exclamation mark inside the "Snopes" box]
+
+    Unrealistic for new claims!
+
+*   Not Human-Centric
+
+<sup>1</sup> Glöckner et al. 2022
+
+---
+
+**Slide 6**
+**Title:** HiTL Misinformation Detection (COVID-19)
+
+**Text content:**
+
+*   Detection of misleading claims
+*   Policy violation verification
+    *   Determine stance of tweet towards an misinformed claim
+    *   Provide list of tweets that support the unapproved treatment
+
+**Image:**
+The image is a screenshot of a dashboard labeled "Early Detection of Misleading Claims." The dashboard is divided into three main sections: "Key Words Filtering," "Trending Claims," and "Raw Tweets."
+
+**Key Words Filtering:**
+This section has a label "Key Words Filtering" and a list of keywords:
+*   ivermectin
+*   COVID-19
+*   hydroxychloroquine
+*   azithromycin
+
+**Trending Claims:**
+This section has a label "Trending Claims" and a table with the following columns:
+*   Claim
+*   Expert Validation
+
+The table contains the following rows:
+*   Ivermectin COVID-19: Not Approved
+*   Umbliconyane: Not Approved
+*   Mouthwash: Not Approved
+*   Remdesivir: Approved
+
+---
+
+**Slide 9**
+**Title:** Evaluation: Early Claim Detection (COVID-19)
+
+[Figure: A timeline graph with three columns representing -5 days ahead, +6 days, and +6 days relative to a debunking news article. The x-axis is labeled "Time" and spans from 03/05/2020 to 09/06/2020. The y-axis is not labeled. Each column contains "Trending Treatment" and "News Headline" sections.
+
+**-5 days ahead (↓)**
+
+*   **Trending Treatment:** "Used to treat severe COVID-19 cases, used by the FDA, used by the NIH, used by the CDC, used for COVID-19 treatment, used for COVID-1

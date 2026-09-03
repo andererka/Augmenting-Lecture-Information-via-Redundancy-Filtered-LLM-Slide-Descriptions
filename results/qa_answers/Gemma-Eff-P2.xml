@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testset name="MCIF-Custom" type="output">
+  <task track="long" text_lang="en">
+    <sample id="0">The talk does not explicitly present any formulas. The content focuses on the methodology, experimental setup, and findings related to knowledge distillation for natural language generation (NLG) tasks, rather than mathematical or formulaic derivations.</sample>
+    <sample id="1">The five criteria for attractive NLP projects are:
+
+1. A medium-resource (several thousands) labeled dataset.
+2. Plentiful unlabeled data.
+3. Off-the-shelf + small-to-medium size + fine-tuned LMs.
+4. Inference time efficiency is the goal = high compression.
+5. One-time computational training resources are negligible.</sample>
+    <sample id="2">The mathematical formula for word-level Knowledge Distillation (KD), also known as logits KD, is:
+
+\[
+\mathcal{L}_{KD} = \text{KL}\left(\sigma\left(\frac{\mathbf{z}_t}{T}\right), \sigma\left(\frac{\mathbf{z}_s}{T}\right)\right)
+\]
+
+where:
+- \(\mathbf{z}_t\) and \(\mathbf{z}_s\) are the logits of the teacher and student models, respectively.
+- \(T\) is a temperature parameter used to soften the logits.
+- \(\sigma\) is the softmax function.
+- \(\text{KL}\) denotes the Kullback-Leibler divergence.</sample>
+    <sample id="3">The Macro-F1 score for the AG News is higher for CC (Contextual Calibration) compared to Original.</sample>
+    <sample id="4">The provided transcript does not explicitly describe the specific layers of the audio-visual meta-mapper network (AVMM). The explanation focuses on its function—mapping visual concepts across domains into a unified auditory semantic space—and mentions its components (learnable tokens called "visual prefix") but does not detail the architectural layers (e.g., convolutional, transformer, or recurrent layers).
+
+For a precise answer, additional slides or the full paper would be required.</sample>
+    <sample id="5">The motivation behind the work is to address the challenges of **arduous and expensive data annotation** and **severe performance degradation** in multimodal (audio-visual) text generation tasks due to **multi-modal domain shifts** (e.g., visual style, audio energy). The key insight is that while audio and visual modalities are correlated in natural events, they have different characteristics—timbre is intrinsic to objects, and audio content (e.g., rhythm, energy) changes less in event understanding than visual content (e.g., style, angle). This led to the proposal of a **unified auditory semantic space** to align visual concepts across domains, enabling transferable audio-visual text generation with limited labeled data.</sample>
+    <sample id="6">The Bleu-1 score for TAVT (A_recc) for MSR-VTT (multi-modal) is **47.8**.</sample>
+    <sample id="7">The cross domains of the dataset presented are Animation, Music, Animal, Kids, and Beauty.</sample>
+    <sample id="8">The example video for Zero-shot Temporal Sentence Localization shows a man putting on gloves and then cleaning snow off a car.</sample>
+    <sample id="9">The graph about **pseudo event generation** illustrates the process of identifying the most relevant video segment (event) for a given pseudo-query. It shows a **line graph** with **time** on the x-axis and **similarity** on the y-axis. The graph highlights multiple potential event proposals (time segments) with varying similarity scores. The goal is to select the event proposal where the **mean similarity within the event** is high, and the **mean similarity outside the event** is low, as indicated by the formula:
+
+\[
+Q_{ik} = \frac{\sum_{j \in P_k} S_{ij}}{N_p k} - \frac{\sum_{j \in P_k} S_{ij}}{N - N_p k}
+\]
+
+The event with the highest quality score (greatest difference in similarity) is chosen as the pseudo-event. For example, the segment from **3.7s to 12.1s** is selected because it maximizes this difference, ensuring high relevance within the event and low relevance outside it.</sample>
+    <sample id="10">The slide descriptions do not include a table with specific numerical scores for the SPL method on the mIoU metric. The slides mention that the proposed method (SPL) outperforms other zero-shot methods on most metrics, including mIoU, but do not provide exact scores. For detailed performance numbers, you would need to refer to the paper itself.</sample>
+    <sample id="11">The Message goes to the **Outgroup** and the **Ingroup** audiences.</sample>
+    <sample id="12">Based on the graph shown in the presentation, increases in the proportion of speeches containing racial dogwhistles in the U.S. Congressional Record are associated with the **Republican Southern Strategy** following the Civil Rights era. This strategy involved politicians using coded language to appeal to conservative voters without explicitly stating racist sentiments, leading to a rise in dogwhistle usage.</sample>
+    <sample id="13">Based on the graph showing the association of phrases with speaker ideology over time:
+
+- **More associated with conservatism over time:** Terms like "law and order," "states' rights," and "welfare queen" show a clear upward trend, becoming more strongly linked to conservative speakers as time progresses.
+
+- **Less associated with conservatism over time:** Terms like "urban renewal" and "affirmative action" trend downward or remain stable, showing weaker or no increasing association with conservatism.</sample>
+    <sample id="14">GPT-3 surfaces **45%** of dogwhistles from the authors' glossary.</sample>
+    <sample id="15">No, GPT-3 did not identify more than 50% covert meaning in the formal register for the condition "only secret cue." The bar graph shows the fraction is below 0.5 for that prompt type.</sample>
+    <sample id="16">The three references for datasets and models having positionality mentioned in the presentation are:
+
+1. Savin-Baden, Maggi, and Claire Howell-Major. “Qualitative research: The essential guide to theory and practice.” Qualitative Research: The Essential Guide to Theory and Practice. Routledge (2013).
+2. Cultural gaps in models and datasets (mentioned as prior work suggesting anecdotal evidence).
+3. Theoretical definitions of model positionality (also mentioned as prior work).</sample>
+    <sample id="17">The demographics included in the analysis in the framework graph are:
+
+- **Age:** &lt;18, 18-25, 26-35, 36-45
+- **Gender:** Man, Woman, Non-Binary
+- **Ethnicity:** White, Black, Hispanic, Asian
+- **Education:** Grad, Prof, College, School
+- **Country:** USA, CAN, AUS, IND</sample>
+    <sample id="18">The label circled in gold color for the example 'Eating with Hands' in the framework presented is **"Yellow."**</sample>
+    <sample id="19">Datasets and models are more aligned to people with a college education than those with a high school education.</sample>
+    <sample id="20">Datasets and models are more aligned to people with a **college education or higher**, which includes PhD holders, rather than pre-high school education.</sample>
+    <sample id="21">The QFE score for the Editor model in the table on Factual Error Detection and Correction is **2.540**.</sample>
+    <sample id="22">The component is called **"trigger set"** (labeled as **T**).</sample>
+    <sample id="23">Existing works were broadly classified into four categories:
+
+1. **Finetuning-based watermarking**
+2. **Backdoor-based watermarking**
+3. **Distribution-based watermarking**
+4. **Model-based watermarking**</sample>
+    <sample id="24">The similarity difference metric of EmbMarker is **delta cosine** and **delta L2**, which are computed as the difference in cosine and L2 similarity between the requested embeddings from the stealer's service for the backdoor dataset and the benign dataset. Additionally, the **p-value** from the KS test is used as a third metric.</sample>
+    <sample id="25">According to the table, the similarity difference value (Δ_tr ↓) for the SST2 dataset using the EmbMarker method is **0.001**.</sample>
+    <sample id="26">The depicted components of the **watermark injection** process in the EmbMarker method are:
+
+1. **Trigger Set (T)** – A predefined set of words used for watermarking.
+2. **Trigger Number (c)** – The count of trigger words in a given sentence.
+3. **Backdoor Weight (Q)** – A function of the trigger number, calculated as:
+   \( Q(s) = \frac{\min(|s \cap T|, m)}{m} \),
+   where \( m \) is the maximum trigger number.
+4. **Target Embedding (\( e_t \))** – A predefined embedding used for watermarking.
+5. **Original Embedding (\( e_o \))** – The embedding generated by the model for a given input.
+6. **Provided Embedding (\( E_c \))** – The final embedding output, a weighted sum of the original and target embeddings:
+   \( E_c = (1 - Q) \cdot e_o + Q \cdot e_t \).</sample>
+    <sample id="27">According to the graph presented in the introduction, the benchmark that performed best is **SQuAD 2.0**.</sample>
+    <sample id="28">Models' brittleness is evidenced by their **lack of generalization**, **susceptibility to adversarial attacks**, **reliance on spurious patterns**, **insensitivity to basic perturbations** (e.g., negation), and **over-sensitivity to irrelevant perturbations**.</sample>
+    <sample id="29">The example graph for the **One-hop** reasoning type shows a direct connection between two entities in a knowledge graph. Specifically:
+
+- **Nodes:** AIDA Cruise line, AIDAStella
+- **Edge:** "operator" relation connecting AIDA Cruise line to AIDAStella
+
+This single triple (AIDA Cruise line → operator → AIDAStella) serves as evidence that the claim "AIDA Cruise line operated the AIDAStella" is **SUPPORTED**. The reasoning requires checking if the two entities in the claim are directly connected by the specified relation.</sample>
+    <sample id="30">The total score for GEAR with evidence input type was **85.4**.</sample>
+    <sample id="31">The five types of reasoning on Knowledge Graphs in the FactKG dataset are:
+
+1. **One-hop**
+2. **Conjunction**
+3. **Existence**
+4. **Multi-hop**
+5. **Negation**</sample>
+    <sample id="32">The five datasets described in the analysis are:
+
+1. SAMSum
+2. DialogSum
+3. EmailSum
+4. QMSum
+5. TweetSum</sample>
+    <sample id="33">According to the pie chart on Slide 6, the SAMSum dataset has **19% positive labels** and **81% negative labels** for omission detection.</sample>
+    <sample id="34">Here are the rooms shown in the floor plan with their corresponding colors:
+
+1. **Common Area** - Yellow
+2. **Living Room** - Light Blue
+3. **Kitchen** - Orange
+4. **Bathroom** - Pink
+5. **Master Bedroom** - Green
+6. **Balcony** - Light Gray</sample>
+    <sample id="35">The **Tell2Design (T2D) dataset** includes **5,051 human-annotated language instructions**.</sample>
+    <sample id="36">(API error after retries)</sample>
+    <sample id="37">The number of meetings in the training set for MeetingQA was **64**.</sample>
+    <sample id="38">The MeetingQA dataset contains a total of **7,735 questions**.</sample>
+    <sample id="39">The distribution of answer lengths in MeetingQA was **right-skewed**, as shown in the histogram on Slide 7, with a peak around 0 to 25 words.</sample>
+    <sample id="40">According to the bar chart, **3,151 tweets** were most likely violating (Likert score 4) and **3,467 tweets** were clearly violating (Likert score 5) Twitter’s policies.</sample>
+    <sample id="41">65%</sample>
+    <sample id="42">According to the chart, the **ABC-Eval** evaluation method had the highest inter-annotator agreement, as indicated by the highest Krippendorff's Alpha value.</sample>
+    <sample id="43">The **Dialogue Likert** evaluation method had the lowest incremental validity, as indicated by the stepwise linear regression analysis where its metrics explained far less of the conversation quality compared to ABC-Eval and other methods.</sample>
+    <sample id="44">The response from 'B' to the statement "If ur homeless u probably wouldn't have a phone" was:
+
+**"Means it's been 20 years since their marriage?"**
+
+This reply is labeled as **ironic** in the annotation task.</sample>
+    <sample id="45">The exact time window for data collection was **1½ years**.</sample>
+    <sample id="46">The variation score in irony perception between Ireland and the UK is **0.97**.</sample>
+    <sample id="47">The two generations that show the highest variation in irony perception are **GenX** and **GenY**.</sample>
+    <sample id="48">The final slide reads:
+
+**"THANKS FOR YOUR ATTENTION!
+SEE YOU AT THE POSTER SESSION IN TORONTO"**</sample>
+    <sample id="49">The **Sample-Weighted Focal Contrastive (SWFC) Loss** is defined as:
+
+\[
+\mathcal{L}_{SWFC} = \alpha \cdot (1 - p_t)^\gamma \cdot \mathcal{L}_{CE} + \lambda \cdot \mathcal{L}_{Contrastive}
+\]
+
+Where:
+- \( p_t \) is the predicted probability for the true class.
+- \( \alpha \) is a weight parameter controlling focus on minority classes.
+- \( \gamma \) is a focusing parameter to emphasize hard examples.
+- \( \mathcal{L}_{CE} \) is the standard cross-entropy loss.
+- \( \mathcal{L}_{Contrastive} \) is the contrastive loss term to maximize inter-class distances.
+- \( \lambda \) is a balancing hyperparameter.</sample>
+    <sample id="50">The six target domains from the problem setup graph are:
+
+1. Biomedical
+2. Finance
+3. News
+4. Reddit
+5. Science
+6. Literature</sample>
+    <sample id="51">The corner with low reader compatibility but high retriever compatibility is named **"Covariate shift."**</sample>
+    <sample id="52">The graph about Open Domain QA involves the **Retriever Model** and the **Reader Model**.</sample>
+  </task>
+</testset>

@@ -1,0 +1,79 @@
+Here is the rewritten slide description containing only information not fully conveyed by the transcript:
+
+---
+
+**Slide 3**
+Timestamp: 36.12s
+------------------------------
+**Slide Content:**
+
+**Title:** Imagine...
+
+**Other visual elements:**
+- The slide background is a gradient of light blue to white.
+- A small circular avatar of the speaker (likely Jenny) is positioned in the top right corner.
+
+---
+
+**Slide 5**
+Timestamp: 68.80s
+------------------------------
+**Slide Content:**
+
+**Title:** Positionality
+
+**Other visual elements:**
+- The background of the slide is a dark gradient (deep blue to black).
+- The image of the person sitting in front of a bookshelf is a full-width photo spanning the lower half of the slide.
+- The citation "[1]" is positioned in the bottom right corner of the slide.
+
+---
+
+**Slide 7**
+Timestamp: 162.85s
+------------------------------
+**Slide Content:**
+
+**Title:** NLPositionality
+A framework for characterizing design biases in NLP datasets and models
+
+**Other visual elements:**
+- The slide background is a dark gradient (deep purple to black).
+- The title text is in white, with "NLPositionality" in a larger, bold font.
+
+---
+
+**Slide 8**
+Timestamp: 214.34s
+------------------------------
+**Slide Content:**
+
+**Title:** Framework
+
+**Other visual elements:**
+- The slide background is a light gray gradient.
+- The diagram is divided into three horizontal sections labeled "Collection," "Processing," and "Analysis."
+- The "Collection" section contains a series of images with labels arranged in a horizontal flow:
+  - The first image shows a hand holding a green apple with the label "Eating with Hands."
+  - The second image shows a robot emoji with the label "Can you live with AI and its morals?"
+  - The third image shows a hand holding a green apple again with the label "Eating with Hands."
+- The "Processing" section contains a stylized neural network diagram on the left and a table on the right with columns labeled "Model Predictions."
+- The "Analysis" section contains a bar chart with demographic categories (Age, Gender, Ethnicity, Education, Country) and corresponding bars representing different groups.
+
+---
+
+**Slide 13**
+Timestamp: 396.02s
+------------------------------
+**Slide Content:**
+
+**Title:** Thanks!
+
+**Other visual elements:**
+- The slide background is a dark gradient (deep blue to black).
+- The dashboard and paper links are displayed in white text with a subtle underline effect.
+- The six bar graphs are arranged in a 2x3 grid with a clean, modern design.
+  - Each graph has a light background with dark bars.
+  - The x-axes and y-axes labels are in a smaller font size compared to the bars.
+  - The graphs include subtle grid lines and a legend in the top right corner of each graph.
+- The "Delphi" logo and link (https://www.delphivisualizations.com/) are displayed in the bottom right corner of the slide.

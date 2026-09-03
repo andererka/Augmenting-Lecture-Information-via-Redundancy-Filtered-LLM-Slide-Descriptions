@@ -1,0 +1,104 @@
+Here is the refined slide description containing only information not explicitly conveyed in the transcript:
+
+---
+
+**Slide 3**
+Timestamp: 36.12s
+------------------------------
+**Visual elements:**
+- Six icons arranged in a 2x3 grid, each paired with a label below:
+  - **Customer Service:** Icon of a person sitting at a laptop with a speech bubble above their head.
+  - **Medical Consultation:** Icon of a person in a white coat with a speech bubble above their head.
+  - **Meetings:** Circular icon with multiple speech bubbles around a central "MEETING" text.
+  - **Movie Scripts:** Icon of a script page with a pencil.
+  - **Mail Threads:** Icon of an envelope.
+  - **Chat Logs:** Icon of a green speech bubble.
+
+---
+
+**Slide 4**
+Timestamp: 138.10s
+------------------------------
+**Visual elements:**
+- **Figure 1 (Omission Rate vs. Dataset):**
+  - **Box plot graph** comparing omission rates across datasets (SAMSam, DialogSum, EmailSum, QMSam, TweetSum).
+  - **Legend:** Six models represented by different markers:
+    - BARTLarge (red circle)
+    - BARTbase (green square)
+    - Pegasus (yellow triangle)
+    - T5Large (blue diamond)
+    - T5base (purple cross)
+    - Transformer (pink star)
+  - **X-axis:** Dataset names.
+  - **Y-axis:** Omission Rate (0% to 100%).
+
+- **Figure 2 (Predictions in Dialogue):**
+  - **Five violin plots** showing the distribution of predicted omissions across dialogue lengths for each dataset.
+  - **X-axis:** Intervals of utterance numbers (dialogue length, ranging from 1 to 110).
+  - **Y-axis:** Predictions in dialogue.
+
+---
+
+**Slide 5**
+Timestamp: 233.15s
+------------------------------
+**Visual elements:**
+- **Table:** Detailed statistics of the OLDS dataset, including:
+  - **Columns:** Domain, Split, number of dialogue turns, average length of dialogue turns, length of summary, and number of candidate summaries (with average ROUGE-1 scores) for each model (BART<sub>s</sub>, BART<sub>l</sub>, T5<sub>s</sub>, T5<sub>l</sub>, Transformer, Pegasus).
+  - **Domains:** SAMSum, DialogSum, EmailSum, TopicSum, NewsSum, TwitterSum.
+  - **Splits:** Train, Dev, Test.
+  - **Highlighted cells:** Some cells contain zero values or repeated values, indicating missing or placeholder data.
+
+---
+
+**Slide 6**
+Timestamp: 285.63s
+------------------------------
+**Visual elements:**
+- **Five pie charts** representing label imbalance for each dataset (SAMSum, DialogSum, EmailSum, QMSum, TweetSum):
+  - **Positive Labels (Green):** Percentage of positive omission detection labels.
+  - **Negative Labels (Blue):** Percentage of negative omission labels.
+  - **Percentages:**
+    - SAMSum: Positive 19%, Negative 81%
+    - DialogSum: Positive 22%, Negative 78%
+    - EmailSum: Positive 27%, Negative 73%
+    - QMSum: Positive 19%, Negative 81%
+    - TweetSum: Positive 23%, Negative 77%
+
+- **Table:** Performance metrics (Precision, Recall, F1-score, WR score) for different models (BERT, RoBERTa) across three tasks (Pair-wise Classification, Sequence Labeling, Pointer Network) and five datasets.
+  - **Metrics:** P (Precision), R (Recall), F1, WR (Word-level Recall).
+  - **Models:** BERT, RoBERTa.
+  - **Tasks:** Pair-wise Classification, Sequence Labeling, Pointer Network.
+  - **Datasets:** SAMSum, DialogSum, EmailSum, QMSum, TweetSum.
+
+---
+
+**Slide 7**
+Timestamp: 332.16s
+------------------------------
+**Visual elements:**
+- **Two line graphs** showing ROUGE-1 scores for different datasets with three conditions:
+  - **Top Graph (BART-large):**
+    - **Datasets:** SAM, Dial, Email, QM, Tweet.
+    - **Lines:**
+      - Raw (yellow): SAM (55.4), Dial (46.5), Email (36.2), QM (31.4), Tweet (41.1)
+      - +Dial (orange): SAM (56.3), Dial (48.2), Email (38.1), QM (33.1), Tweet (43.8)
+      - +Omit (red): SAM (56.5), Dial (51.5), Email (40.2), QM (34.2), Tweet (46.5)
+
+  - **Bottom Graph (T5-small):**
+    - **Datasets:** SAM, Dial, Email, QM, Tweet.
+    - **Lines:**
+      - Raw (yellow): SAM (55.5), Dial (45.6), Email (36.1), QM (31.1), Tweet (41.2)
+      - +Dial (orange): SAM (56.3), Dial (48.1), Email (38.1), QM (33.1), Tweet (43.8)
+      - +Omit (red): SAM (56.5), Dial (51.1), Email (40.1), QM (34.1), Tweet (46.2)
+
+---
+
+**Slide 8**
+Timestamp: 335.13s
+------------------------------
+**Visual elements:**
+- **QR code** on the left side of the slide.
+- **Image:** Toronto skyline at dusk with the CN Tower prominently visible.
+- **Overlay text:** "The 61st Annual Meeting of the Association for Computational Linguistics" on the skyline image.
+- **Location and dates:** "Toronto, Canada" and "July 9-14, 2023" below the title.

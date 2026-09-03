@@ -1,0 +1,234 @@
+Slide 1
+Timestamp: 3.95s
+------------------------------
+- Main topic: This slide introduces the research paper "Towards Understanding Omission in Dialogue Summarization" and lists the authors and their affiliations.
+- Visual elements:
+    - The slide displays the logos of Fudan University and Microsoft.
+    - A background image shows the Toronto skyline.
+    - Two figures are displayed:
+        - Left figure: Shows the omission rate of summaries from five domains and six pre-trained models.
+        - Right figure: Shows the position distribution of omission information in dialogues.
+    - A table is displayed showing the statistics of the OLDS dataset, including the total number and the ROUGE-1 score of candidate summaries for each model and domain.
+    - A table is displayed showing the results of the omission detection models, including Precision, Recall, and F1-score.
+- Notable text:
+    - Title: "Towards Understanding Omission in Dialogue Summarization"
+    - Authors' names and affiliations
+    - Conference title and dates
+    - Email address: [kaitao.song, xuta, zhongkai.fu, dongsheng.li]@microsoft.com
+- No formulas or figures are displayed.
+- The slide contains charts and tables.
+- The slide contains logos.
+- The slide contains a background image.
+- The slide contains text.
+- The slide contains a title.
+- The slide contains a list of authors.
+- The slide contains a list of affiliations.
+- The slide contains a list of email addresses.
+- The slide contains a list of results.
+- The slide contains a list of statistics.
+- The slide contains a list of domains.
+- The slide contains a list of models.
+- The slide contains a list of scores.
+- The slide contains a list of positions.
+- The slide contains a list of words.
+- The slide contains a list of utterances.
+- The slide contains a list of summaries.
+- The slide contains a list of candidates.
+- The slide contains a list of methods.
+- The slide contains a list of frameworks.
+- The slide contains a list of tasks.
+- The slide contains a list of questions.
+- The slide contains a list of directions.
+- The slide contains a list of refinements.
+- The slide contains a list of improvements.
+- The slide contains a list of percentages.
+- The slide contains a list of scores.
+- The slide contains a list of words.
+- The slide contains a list of utterances.
+- The slide contains a list of summaries.
+- The slide contains a list of candidates.
+- The slide contains a list of methods.
+- The slide contains a list of frameworks.
+- The slide contains a list of tasks.
+- The slide contains a list of questions.
+- The slide contains a list of directions.
+- The slide contains a list of refinements.
+- The slide contains a list of improvements.
+- The slide contains a list of percentages.
+- The slide contains a list of scores.
+- The slide contains a list of words.
+- The slide contains a list of utterances.
+- The slide contains a list of summaries.
+- The slide contains a list of candidates.
+- The slide contains a list of methods.
+- The slide contains a list of frameworks.
+- The slide contains a list of tasks.
+- The slide contains a list of questions.
+- The slide contains a list of directions.
+- The slide contains a list of refinements.
+- The slide contains a list of improvements.
+- The slide contains a list of percentages.
+- The slide contains a list of scores.
+- The slide contains a list of words.
+- The slide contains a list of utterances.
+- The slide contains a list of summaries.
+- The slide contains a list of candidates.
+- The slide contains a list of methods.
+- The slide contains a list of frameworks.
+- The slide contains a list of tasks.
+- The slide contains a list of questions.
+- The slide contains a list of directions.
+- The slide contains a list of refinements.
+- The slide contains a list of improvements.
+- The slide contains a list of percentages.
+- The slide contains a list of scores.
+- The slide contains a list of words.
+- The slide contains a list of utterances.
+- The slide contains a list of summaries.
+- The slide contains a list of candidates.
+- The slide contains a list of methods.
+- The slide contains a list of frameworks.
+- The slide contains a list of tasks.
+- The slide contains a list of questions.
+- The slide contains a list of directions.
+- The slide contains a list of refinements.
+- The slide contains a
+
+Slide 2
+Timestamp: 9.39s
+------------------------------
+- Visual elements:
+    - The slide features the logos of Fudan University and Microsoft.
+    - A background image of the Toronto skyline is present.
+    - Two figures are displayed:
+        - The left figure shows the omission rate of summaries from five domains and six pre-trained models.
+        - The right figure shows the position distribution of omission information in dialogues.
+    - A table is shown, displaying the label imbalance problem in the dataset.
+    - A figure shows the performance boost when providing omission content for summary refinement.
+- Notable text:
+    - Conference title and dates are displayed.
+    - Author names and affiliations are clearly listed.
+    - Contact email addresses are provided.
+- Layout:
+    - The slide is divided into sections for title, authors/affiliations, and conference information.
+    - Figures and tables are strategically placed to support the speaker's explanation.
+- Color scheme:
+    - The slide uses a professional color scheme, likely incorporating the branding colors of Fudan University and Microsoft.
+- Font:
+    - A clear and readable font is used throughout the slide.
+- Overall impression:
+    - The slide is well-organized and visually appealing, effectively conveying the key information about the paper and the conference.
+-
+
+Slide 3
+Timestamp: 36.12s
+------------------------------
+- Visual elements:
+    - Six icons representing different scenarios: a man at a computer, a doctor with a speech bubble, a group of people around a table, a movie script with a pencil, an envelope, and a chat bubble.
+- Notable text:
+    - Title: Background
+    - Subtitle: Dialogue Summarization
+    - Labels for each icon: Customer Service, Medical Consultation, Meetings, Movie Scripts, Mail Threads, Chat Logs.
+- Two figures:
+    - Left figure: A bar chart showing the omission rate of summaries from five domains and six pre-trained models.
+    - Right figure: A distribution chart showing the position distribution of omission information in dialogues.
+- Table: A table showing the statistics of the OLDS dataset, including the total number and the ROUGE-1 score of candidate summaries for each model and domain.
+- Chart: A chart showing the label imbalance problem in the dataset.
+- Table: A table showing the results of omission detection models, including Precision, Recall, and F1-score.
+- Chart: A chart showing the performance boost when providing omission content for summary refinement.
+
+-
+
+Slide 4
+Timestamp: 138.10s
+------------------------------
+- Visual elements:
+    - A box plot graph on the left compares the omission rate of five models (SAMSum, DialogueSum, EmailSum, QMSum, TweetSum) across different domains.
+    - A series of line graphs on the right show the position distribution of omission information in dialogues.
+    - A table showing the statistics of the OLDS dataset, including the total number and the ROUGE-1 score of candidate summaries for each model and domain.
+    - A bar chart showing the F1-score of different omission detection models.
+- Notable visual elements:
+    - X-axis labels: Domain, Position
+    - Y-axis label: Omission Rate, F1-score
+    - Table columns: Model, Domain, Total Number, ROUGE-1 Score
+- Chart types: Box plot, Line graph, Table, Bar chart
+
+Slide 5
+Timestamp: 233.15s
+------------------------------
+- A large table dominates the slide, presenting dataset statistics.
+- The table has multiple rows representing different domains (Samsung, DialogSum, EmailSum, TweetSum) and columns for various metrics.
+- The table includes columns for: # of dialogues, Avg. len. of dialogues, Len. of summaries, # of candidate summaries, Avg. ROUGE-1 score, and Precision.
+- The table lists model names: BART, T5, Transformer.
+- A person wearing headphones is visible in the upper right corner of the slide.
+
+Slide 6
+Timestamp: 285.63s
+------------------------------
+-
+
+Slide 7
+Timestamp: 332.16s
+------------------------------
+- Visual elements:
+    - Two bar charts are displayed, one for BART-large and one for T5-small.
+    - Each chart compares three conditions: "Raw," "+Dial.," and "+Omit."
+    - The x-axis of both charts represents different datasets: SAM, Dial., Email, QM, and Tweet.
+    - The y-axis of both charts represents ROUGE-1 scores.
+- Notable text:
+    - Title: Analysis
+    - Subtitle: Omission-based Summary Refinement
+    - Labels: BART-large, T5-small, Raw, +Dial., +Omit., SAM, Dial., Email, QM, Tweet, ROUGE-1
+- Chart data:
+    - BART-large:
+        - SAM (Raw): ~35.5
+        - SAM (+Dial.): ~36.0
+        - SAM (+Omit.): ~37.5
+        - Dial. (Raw): ~32.0
+        - Dial. (+Dial.): ~32.5
+        - Dial. (+Omit.): ~34.0
+        - Email (Raw): ~33.0
+        - Email (+Dial.): ~33.5
+        - Email (+Omit.): ~35.0
+        - QM (Raw): ~34.0
+        - QM (+Dial.): ~34.5
+        - QM (+Omit.): ~36.0
+        - Tweet (Raw): ~32.5
+        - Tweet (+Dial.): ~33.0
+        - Tweet (+Omit.): ~34.5
+    - T5-small:
+        - SAM (Raw): ~33.0
+        - SAM (+Dial.): ~33.5
+        - SAM (+Omit.): ~35.0
+        - Dial. (Raw): ~30.0
+        - Dial. (+Dial.): ~30.5
+        - Dial. (+Omit.): ~32.0
+        - Email (Raw): ~31.0
+        - Email (+Dial.): ~31.5
+        - Email (+Omit.): ~33.0
+        - QM (Raw): ~32.0
+        - QM (+Dial.): ~32.5
+        - QM (+Omit.): ~34.0
+        - Tweet (Raw): ~30.0
+        - Tweet (+Dial.): ~30.5
+        - Tweet (+Omit.): ~32.0
+
+Slide 8
+Timestamp: 335.13s
+------------------------------
+- Main topic: This slide serves as a concluding slide, expressing gratitude and providing contact information and links to related resources.
+- Visual elements:
+    - A QR code is displayed.
+    - A photograph of the speaker is visible in the upper right corner.
+    - A background image of the Toronto skyline is present.
+- Notable text:
+    - "Thank you!"
+    - "Contact: yezou18@fudan.edu.cn"
+    - "https://arxiv.org/abs/2211.07145"
+    - "https://github.com/microsoft/msummarizer"
+    - "The 61st Annual Meeting of the Association for Computational Linguistics"
+    - "Toronto, Canada"
+    - "July 9-14, 2023"
+-
+
+Total slides processed: 8

@@ -1,0 +1,216 @@
+Here are the rewritten visual descriptions with redundant speaker explanations removed while retaining key visual elements:
+
+---
+
+**Slide 1**
+**Title:** Generating Structured Pseudo Labels for Noise-resistant Zero-shot Video Sentence Localization
+**Text content:**
+Minghang Zheng¹, Shaogang Gong², Hailin Jin³, Yuxin Peng⁴, and Yang Liu¹.⁵
+¹Wangxuan Institute of Computer Technology, Peking University
+²Queen Mary University of London, ³Adobe Research
+⁴ National Key Laboratory for Multimedia Information Processing, Peking University
+⁵ National Key Laboratory of General Artificial Intelligence, BIGAI
+{minghang, pengyuxin, yangliu}@pku.edu.cn
+s.gong@qmul.ac.uk, hljin@adobe.com
+
+---
+
+**Slide 3**
+**Title:** Task
+**Text content:**
+Zero-shot Temporal Sentence Localization
+* Inputs: Video + Sentence query
+* Outputs: Target video clip (start and end timestamps)
+* Zero-shot Setting: No manual annotation required
+
+**Video:**
+[Image of a video sequence showing a man putting on gloves and cleaning snow off a car. The video is represented as a series of 8 frames. The first frame has a white arrow pointing to the left.]
+
+**Query:**
+A man puts on gloves and then clean the snow
+
+Output
+5.5s ---------------------> 15.1s
+
+**Other visual elements:**
+* ACL 2023 logo in the top right corner
+* Slide number "2" in the bottom right corner
+
+---
+
+**Slide 4**
+**Title:** Method
+**Text content:**
+Our Structured Pseudo-Label (SPL) generation:
+* Generate free-form pseudo-queries using image description models
+* Generate pseudo-events based on the event temporal structure
+    * High correlation between video inside event and query
+    * Low correlation between video outside event and query
+* Reduce noise during training
+    * Sample re-weight and label refinement
+
+**Video:**
+Step 1. Pseudo Query: A man cleans the snow with a brush
+Step 2. Similarity [Graph showing similarity over time]
+Step 3. Pseudo Event: [4s, 15s] Aligned
+
+**Other visual elements:**
+* ACL 2023 logo in the top right corner
+* Slide labeled "(d) Ours pipeline" at the bottom
+* Video frames showing a man cleaning snow off a car with a brush
+
+---
+
+**Slide 5**
+**Title:** 1. Pseudo Query Generation
+**Text content:**
+Aims: Generate free-form pseudo-queries
+* Densely sample video frames
+* Generate pseudo queries from video frames using pretrained BLIP¹ model
+
+¹Li, Junnan, et al. "BLip: Bootstrapping language-image pre-training for unified vision-language understanding and generation." International Conference on Machine Learning. ICML, 2022.
+
+**Figures:**
+* Top: Row of 6 colored video frame images
+* Center: "Image Caption" box
+* Bottom: "Query Candidates:" box containing:
+    * A woman takes shoes off.
+    * A woman sitting on a bed.
+    * A bed in the room.
+    * ...
+
+**Other visual elements:**
+* ACL 2023 logo in the top right corner
+* Slide number "5" in the bottom right corner
+
+---
+
+**Slide 6**
+**Title:** 2. Pseudo Event Generation
+**Text content:**
+Aims: Generate pseudo-events based on event temporal structure
+* Videos within events have high relevance to queries
+* Videos outside events have low relevance to queries
+
+* Calculate similarity S between pseudo-query and video frames
+* Event quality:  $Q_{ik} = -\frac{\sum_{j \in P_k} S_{ij}}{N_p k} - \frac{\sum_{j \in P_k} S_{ij}}{N - N_p k}$
+* Choose the event proposal with highest quality
+
+**Graph:**
+* X-axis: Time
+* Y-axis: Similarity
+* Fluctuating curve with segments labeled:
+    * 3.7s - 12.1s: s = $s_i - s_o$ = 0.2 - 0.5 = -0.3
+    * 3.7s - 12.1s: s = $s_i - s_o$ = 0.8 - 0.2 = 0.6
+    * 3.7s - 12.1s: s = $s_i - s_o$ = 0.5 - 0.2 = 0.3
+
+**Legend:**
+* → Event Proposals
+* $s_i$ Mean similarity within event
+* $s_o$ Mean similarity outside event
+* $s$ Event quality
+
+**Other visual elements:**
+* ACL 2023 logo in the top right corner
+* Slide number "6" in the bottom right corner
+
+---
+
+**Slide 7**
+**Title:** 2. Pseudo Event Generation
+**Text content:**
+* Filter out low-quality pseudo-query event pairs
+* Keep top K pseudo-query-event pairs with high event quality
+* Use non-maximum suppression to eliminate pairs with high overlap
+
+**Figures:**
+* Top: Video frames → Image Caption → Query Candidates ("A woman takes shoes off.", "A woman sitting on a bed.", "A bed in the room.")
+* Three similarity graphs:
+    1. Kept: Line graph with annotations s₁=0.2, s₂=0.5, etc.
+    2. Kept: Line graph with annotations s₁=0.5, s₂=0.5, etc.
+    3. Dropped: Line graph with annotations s₁=0.1, s₂=0.5, etc.
+* "Pseudo Label" box containing:
+    * "A woman takes shoes off. [3.7%, 12.1%]”
+    * “A woman sitting on a bed. [3.5%, 17.2%]”
+
+**Legend:**
+* Event Proposals
+* $s_i$: Mean similarity within event
+* $s_o$: Mean similarity outside event
+* x: Event quality
+
+**Other visual elements:**
+* ACL 2023 logo in the top right corner
+
+---
+
+**Slide 8**
+**Title:** 3. Training with Noisy Pseudo Labels
+**Text content:**
+Aims: Train model using pseudo-labels and reduce noise
+* Sample re-weight: $w = \alpha \frac{1}{s^{iou}} + (1-\alpha) \frac{1}{s^{conf}}$
+* Label refinement: High-confidence predictions become new pseudo-labels
+
+**Diagram:**
+1. "Pseudo Label" box:
+   * "A woman takes shoes off [3.7s, 12.1s]"
+   * "A woman sitting on a bed [3.6s, 17.2s]"
+2. Arrow to "Fully Supervised Model"
+3. Outputs:
+   * Noise estimation: 0.9, 0.7
+   * Label refinement: [4.1s, 11.8s], [5.2s, 18.1s]
+4. Both lead to "Reweight loss" ($L_{nop}$)
+
+**Other visual elements:**
+* ACL 2023 logo in the top right corner
+
+---
+
+**Slide 9**
+**Title:** Experiments
+**Text content:**
+Datasets
+* ActivityNet Captions
+* Charades-STA
+
+Metrics
+* R@m
+* mIoU
+
+**Figures:**
+**(a) ActivityNet Captions:**
+* 8 video frames of a person crossing monkey bars
+* Query: "A man in a red tank top is crossing the monkey bars."
+
+**(b) Charades-STA:**
+* 8 video frames of a person running toward a table
+* Query: "Person runs to a table."
+
+**Other visual elements:**
+* ACL 2023 logo in the top right corner
+
+---
+
+**Slide 10**
+**Title:** Conclusion
+**Text content:**
+- Propose a zero-shot video sentence localization method based on structured pseudo-label generation that is robust to noise
+- Generate free-form pseudo-queries and pseudo-events based on event temporal structure
+- Reduce noise via sample reweight and label refinement
+- Best zero-shot performance on two datasets
+
+**Other visual elements:**
+* ACL 2023 logo in the top right corner
+* Slide number "11" in the bottom right corner
+
+---
+
+**Slide 11**
+**Text content:**
+Thank you!
+Code
+
+**Other visual elements:**
+* ACL 2023 logo in the top right corner
+* QR code below "Code"
+* Slide number "12" in the bottom right corner

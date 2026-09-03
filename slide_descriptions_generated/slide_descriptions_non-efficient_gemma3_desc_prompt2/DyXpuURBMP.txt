@@ -1,0 +1,364 @@
+Slide 1
+Timestamp: 10.38s
+------------------------------
+**Slide Content:**
+
+**Title:** NLPositionality: Characterizing Design Biases of Datasets and Models
+
+**Text content:**
+
+*   Sebastian Santy
+    University of Washington
+*   Jenny T. Liang*
+    Carnegie Mellon University
+*   Ronan Le Bras
+    Allen Institute for AI
+*   Katharina Reinecke
+    University of Washington
+*   Maarten Sap
+    Carnegie Mellon University
+
+**Visual Elements:**
+
+*   Five headshots of the authors are arranged horizontally below the title.
+    *   Sebastian Santy: A man with short dark hair and a beard, wearing a dark shirt.
+    *   Jenny T. Liang: A woman with long dark hair, wearing a floral top.
+    *   Ronan Le Bras: A man with short brown hair, wearing a light blue polo shirt.
+    *   Katharina Reinecke: A woman with blonde hair, wearing a light-colored top.
+    *   Maarten Sap: A man with short dark hair, wearing a purple sweater.
+
+Slide 2
+Timestamp: 22.26s
+------------------------------
+**Slide Content:**
+
+**Title:** NLPositionality: Characterizing Design Biases of Datasets and Models
+
+**Text content:**
+
+*   Sebastian Santy
+    University of Washington
+*   Jenny T. Liang\*
+    Carnegie Mellon University
+*   Ronan Le Bras
+    Allen Institute for AI
+*   Katharina Reinecke
+    University of Washington
+*   Maarten Sap
+    Carnegie Mellon University
+
+**Other visual elements:**
+
+*   Five small headshot images are arranged horizontally below the title.
+    *   The first image is of Sebastian Santy.
+    *   The second image is of Jenny T. Liang.
+    *   The third image is of Ronan Le Bras.
+    *   The fourth image is of Katharina Reinecke.
+    *   The fifth image is of Maarten Sap.
+*   An asterisk (*) is next to Jenny T. Liang's name.
+
+Slide 3
+Timestamp: 36.12s
+------------------------------
+**Slide Content:**
+
+**Title:** Imagine...
+
+**Text content:**
+= PerspectiveAPI score
+
+**Other visual elements:**
+- A small image of a person (likely the lecturer) is present in the top right corner of the slide.
+- The slide has a predominantly white background.
+
+Slide 4
+Timestamp: 44.04s
+------------------------------
+**Slide Content:**
+
+**Title:** Imagine...
+
+**Text content:**
+
+Can you stop being a jerk? 🤖: (0.82) ✅
+
+Carl Jones
+Tech Lead,
+New York Times
+
+🤖 = PerspectiveAPI score
+
+Aditya Sharma
+Tech Lead,
+Times of India
+
+**Visual Elements:**
+
+The slide features two circular avatars on either side of a central text box.
+
+*   **Left Avatar:** A male avatar with short red hair and a white shirt with a red tie. Below the avatar, the text "Carl Jones" is displayed, followed by "Tech Lead," and "New York Times."
+*   **Right Avatar:** A male avatar with a dark beard and a white coat. Below the avatar, the text "Aditya Sharma" is displayed, followed by "Tech Lead," and "Times of India."
+*   **Central Text Box:** A white box containing the text "Can you stop being a jerk?" followed by a robot emoji 🤖 and a score in parentheses: (0.82). A green checkmark ✅ is displayed to the right of the score.
+*   **Bottom Label:** Below the avatars, the text "🤖 = PerspectiveAPI score" is displayed.
+
+**Overall Layout:**
+
+The slide has a clean and simple layout. The title "Imagine..." is at the top left. The avatars and text box are arranged horizontally in the center of the slide. The bottom label is centered below the avatars. A person is visible in the top right corner of the slide.
+
+Slide 5
+Timestamp: 68.80s
+------------------------------
+**Slide Content:**
+
+**Title:** Positionality
+
+[Image of a person sitting in front of a bookshelf]
+
+[1] Savin-Baden, Maggi, and Claire Howell-Major. “Qualitative research: The essential guide to theory and practice.” Qualitative Research: The Essential Guide to Theory and Practice. Routledge (2013).
+
+Slide 6
+Timestamp: 160.87s
+------------------------------
+**Slide Content:**
+
+**Title:** NLPositionality
+A framework for characterizing design biases in NLP datasets and models
+
+Slide 7
+Timestamp: 162.85s
+------------------------------
+**Slide Content:**
+
+**Title:** NLPositionality
+A framework for characterizing design biases in NLP datasets and models
+
+Slide 8
+Timestamp: 214.34s
+------------------------------
+**Slide Content:**
+
+**Framework**
+
+**(Diagram with three sections: Collection, Processing, and Analysis)**
+
+**Collection**
+
+1.  100 compactors from a compactors dataset
+2.  Each compactor has an associated gold label
+3.  Each support has an associated gold label
+4.  Part of a study on LTM
+5.  Annotate the world
+
+**(Diagram showing a series of images with labels)**
+
+*   Image 1: "Eating with Hands" with options "Red" and "Green"
+*   Image 2: "Can you live with AI and it's morals?" with options "Red" and "Green"
+*   Image 3: "Eating with Hands" with options "Red", "Green", and "Yellow"
+*   Image 1: "Eating with Hands" with options "Red", "Green", and "Yellow"
+
+**Processing**
+
+**(Diagram showing a neural network and a table)**
+
+*   Model Predictions
+*   The repeated annotations aggregated with the gold labels from the dataset and predictions from the models
+
+**Analysis**
+
+1.  Compare annotations by demographic to models and datasets via Pearson’s R scores.
+2.  Pearson’s correlation is measured between gold labels, model predictions and annotations for each demographic separately.
+
+**(Demographic categories with bars representing different groups)**
+
+*   **Age:**
+    *   <18
+    *   18-25
+    *   26-35
+    *   36-45
+*   **Gender:**
+    *   Man
+    *   Woman
+    *   Non-Binary
+*   **Ethnicity:**
+    *   White
+    *   Black
+    *   Hispanic
+    *   Asian
+*   **Education:**
+    *   Grad
+    *   Prof
+    *   College
+    *   School
+*   **Country:**
+    *   USA
+    *   CAN
+    *   AUS
+    *   IND
+
+Slide 9
+Timestamp: 256.91s
+------------------------------
+**Slide Content:**
+
+**Title:** Task A: Social Acceptability
+
+**Text Content:**
+
+1) Read the situation
+2) Enter what you think about it
+3) See what an AI and others thought about it!
+
+Participants compare their responses to others' and an AI's.
+
+**Figure/Graph Description:**
+
+The slide features a screenshot of a web interface divided into three sections labeled 1, 2, and 3.
+
+**Section 1: Read the situation**
+- Displays a text box with the following text: "Wanting to make a lot of money."
+- The text box has a small "1/10" indicator in the top right corner.
+
+**Section 2: Enter what you think about it**
+- Contains a text input field labeled "What do you think about this person's goal?"
+- Below the text field are radio buttons with the following options: "Admirable," "Neutral," "Unadmirable."
+- There is a "Submit" button below the radio buttons.
+- A short paragraph of text is displayed below the submit button: "Find how your opinion compares to others' and what an AI would think."
+
+**Section 3: See what an AI and others thought about it!**
+- Contains two sub-sections: "The AI speculates" and "Study participants in the United States said."
+- **The AI speculates:** Displays a cartoon image of a blue robot with a speech bubble. The speech bubble contains the following text: "I speculate that AI understands ambition. Hmm. Maybe I'm incorrect as well."
+- **Study participants in the United States said:** Displays a bar graph.
+    - **X-axis label:** None
+    - **Y-axis label:** Frequency
+    - **Bars:** Three bars are displayed.
+        - The first bar (leftmost) is labeled "Admirable" and has a height corresponding to a frequency of approximately 6.
+        - The second bar (middle) is labeled "Neutral" and has a height corresponding to a frequency of approximately 4.
+        - The third bar (rightmost) is labeled "Unadmirable" and has a height corresponding to a frequency of approximately 2.
+- No legend is present.
+
+Slide 10
+Timestamp: 263.84s
+------------------------------
+**Slide Content:**
+
+**Title:** Task A: Social Acceptability Analysis
+
+**Text content:**
+- Datasets
+  - Social Chemistry
+
+- Models
+  - Delphi
+  - GPT-4
+
+Slide 11
+Timestamp: 273.74s
+------------------------------
+**Slide Content:**
+
+**Task B: Toxicity**
+
+[Image of a computer screen with a user interface]
+
+1) Read the example
+[Text box on the screen: "English people smell like sour milk"]
+7/29
+
+2) Enter what you think about it
+[Radio buttons on the screen: "Do you think this is hateful?" Yes / No]
+[Text box on the screen: "Please give your reason for your rating"]
+
+3) See what others thought about it!
+
+The AI speculates:
+[Bar graph with two bars. The left bar is green and the right bar is red. The x-axis is labeled "Rate Hateful" and the y-axis is labeled "Count". The green bar represents the rate "Do Hateful" and the red bar represents the rate "Don't Do Hateful".]
+Study participants in Afghanistan said:
+[Bar graph with two bars. The left bar is green and the right bar is red. The x-axis is labeled "Rate Hateful" and the y-axis is labeled "Count". The green bar represents the rate "Do Hateful" and the red bar represents the rate "Don't Do Hateful".]
+
+[Text on the right side of the slide]
+Participants read an instance from the Dynahate dataset.
+
+Participants rate whether they think an instance is hate speech.
+
+Slide 12
+Timestamp: 391.56s
+------------------------------
+**Slide Content:**
+
+**Recommendations**
+
+1. Keep a record of all relevant design choices made throughout building datasets or models.
+
+2. Do NLP research through the lens of perspectivism:
+    a. Share disaggregated dataset labels!
+    b. Use modeling techniques that can handle annotator disagreement.
+
+3. Building specialized datasets and models with and for specific communities is valuable for inclusive NLP (e.g., Masakhane initiative').
+
+[1] https://www.masakhane.io
+
+Slide 13
+Timestamp: 396.02s
+------------------------------
+**Slide Content:**
+
+**Title:** Thanks!
+
+**Text content:**
+Dashboard Link: nlpositionality.cs.washington.edu/
+Paper: bit.ly/NLPositionality-Paper/
+
+**Figures/graphs:**
+
+The slide contains six bar graphs arranged in a 2x3 grid. Each graph represents a different demographic attribute. The graphs are created using the "Delphi" tool (https://www.delphivisualizations.com/).
+
+1.  **Age:**
+    *   X-axis label: Age
+    *   Y-axis label: Count
+    *   Bars represent age ranges (e.g., 18-24, 25-34, 35-44, 45-54, 55-64, 65+).
+    *   The bar for 18-24 is the tallest, followed by 25-34, then 35-44. The bars decrease in height as age increases.
+    *   The bar for 65+ is the shortest.
+
+2.  **Gender:**
+    *   X-axis label: Gender
+    *   Y-axis label: Count
+    *   Categories: Male, Female, Other
+    *   The "Female" bar is the tallest, followed by "Male", and then "Other".
+
+3.  **Ethnicities:**
+    *   X-axis label: Ethnicities
+    *   Y-axis label: Count
+    *   Categories: White, Asian, Black, Hispanic, Other
+    *   The "White" bar is the tallest, followed by "Asian", then "Black", "Hispanic", and "Other".
+
+4.  **Religion:**
+    *   X-axis label: Religion
+    *   Y-axis label: Count
+    *   Categories: Christian, Muslim, Hindu, Buddhist, Jewish, Other
+    *   The "Christian" bar is the tallest, followed by "Muslim", "Hindu", "Buddhist", "Jewish", and "Other".
+
+5.  **Education Level:**
+    *   X-axis label: Education Level
+    *   Y-axis label: Count
+    *   Categories: High School, Bachelor's, Master's, PhD
+    *   The "Bachelor's" bar is the tallest, followed by "Master's", "PhD", and "High School".
+
+6.  **Country (Residence):**
+    *   X-axis label: Country (Residence)
+    *   Y-axis label: Count
+    *   Categories: USA, Canada, UK, India, China, Other
+    *   The "USA" bar is the tallest, followed by "Canada", "UK", "India", "China", and "Other".
+
+7.  **Country (Longest):**
+    *   X-axis label: Country (Longest)
+    *   Y-axis label: Count
+    *   Categories: USA, China, India, UK, Canada, Other
+    *   The "USA" bar is the tallest, followed by "China", "India", "UK", "Canada", and "Other".
+
+8.  **Native Language:**
+    *   X-axis label: Native Language
+    *   Y-axis label: Count
+    *   Categories: English, Chinese, Spanish, Hindi, Arabic, Other
+    *   The "English" bar is the tallest, followed by "Chinese", "Spanish", "Hindi", "Arabic", and "Other".
+
+Total slides processed: 13

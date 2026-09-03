@@ -1,0 +1,321 @@
+Slide 1
+Timestamp: 1.50s
+------------------------------
+- Main topic: This slide introduces the research topic of mitigating label biases in in-context learning.
+- Key points:
+    - The research is focused on addressing label biases within the context of in-context learning.
+- Visual elements:
+    - Four headshots of the researchers: Yu Fei, Yifan Hou, Zeming Chen, and Antoine Bosselut.
+    - Logos for EPFL, NTP, and ETH Zurich.
+    - A small headshot of another researcher in the bottom right corner.
+- Notable text:
+    - Title: "Mitigating Label Biases for In-context Learning"
+    - Names of the researchers: Yu Fei, Yifan Hou, Zeming Chen, Antoine Bosselut
+    - Affiliations: EPFL, NTP, ETH Zurich
+
+Slide 2
+Timestamp: 4.50s
+------------------------------
+- Main topic: This slide introduces the research topic of mitigating label biases in in-context learning.
+- Key points:
+    - The research is focused on addressing label biases within the context of in-context learning.
+- Visual elements:
+    - Four headshots of the researchers: Yu Fei, Yifan Hou, Zeming Chen, and Antoine Bosselut.
+    - Logos for EPFL, NTP, and ETH Zurich.
+- Notable text:
+    - Title: "Mitigating Label Biases for In-context Learning"
+    - Names of the researchers: Yu Fei, Yifan Hou, Zeming Chen, Antoine Bosselut
+    - Affiliations: EPFL, NTP, ETH Zurich
+
+Slide 3
+Timestamp: 72.50s
+------------------------------
+- Main topic: This slide discusses bias in in-context learning and introduces a typology of label biases.
+
+- Key points:
+    - In-context learning is unstable due to various design choices.
+    - There is a lack of systematic discussion regarding bias in this area.
+    - The work aims to categorize existing findings, detect new biases, and mitigate different types of biases.
+    - The work introduces a typology of label biases.
+    - The work identifies domain-label bias and domain-context calling.
+
+- Visual elements:
+    - A central oval containing the word "Bias" and the citation "(Zhou et al., 2021)".
+    - An arrow pointing from "in-context examples" to the "Bias" oval.
+    - A diagram illustrating the relationship between "label names" (negative, positive) and a model, with question marks indicating uncertainty.
+    - A flowchart-like structure with two columns: "There's no systematic discussion to..." and "In this work:".
+    - A list of bullet points under each column.
+
+- Notable text:
+    - "In-context learning is unstable due to various design choices"
+    - "Bias (Zhou et al., 2021)"
+    - "There's no systematic discussion to..."
+    - "In this work:"
+    - "A typology of label biases"
+    - "Domain-label bias"
+    - "Domain-context calling"
+    - "label names" (negative, positive)
+    - "Review: It's a good movie!"
+    - "Review: I hate it."
+    - "Review: A masterpiece!"
+    - "Review: Great movie!"
+    - "Sentiment: positive"
+    - "Sentiment: negative"
+    - A list of authors at the bottom of the slide.
+
+Slide 4
+Timestamp: 155.50s
+------------------------------
+**Slide Description:**
+
+- **Main topic:** This slide illustrates the effects of the task corpus on a language model's prediction, specifically demonstrating domain-label bias.
+
+- **Key points:**
+    * Language models exhibit a preference for predicting labels based on the characteristics of the training data (domain).
+    * Random English words do not show a preference for any particular label.
+    * Random in-domain words severely bias the model's prediction.
+    * The slide presents results for two different tasks: Tweet hate detection and SST-2 sentiment analysis.
+
+- **Visual elements:**
+    * Two bar charts are displayed side-by-side.
+    * The left chart represents Tweet hate detection, with bars showing the probability of predicting "neutral" (blue) and "hate" (orange) for random English words ("Eng. words") and random in-domain words ("i.d. words").
+    * The right chart represents SST-2 sentiment analysis, with bars showing the probability of predicting "positive" (blue) and "negative" (orange) for random English words and random in-domain words.
+    * The y-axis of both charts represents probability, ranging from 0 to 1.
+    * Text boxes are placed below each chart, providing brief explanations of the results.
+
+- **Notable text:**
+    * Title: "Domain-label bias: Effects of the task corpus on the model's prediction"
+    * Labels: "Text: random words Label: ? -> GPT"
+    * Labels: "Eng. words" and "i.d. words" (referring to English words and in-domain words, respectively)
+    * Labels: "neutral," "hate," "positive," and "negative" (representing the labels being predicted)
+    * Text boxes: "Random English words do not show such preference," "Tweet hate," "Random in-domain words severely bias the model's prediction," and "SST-2"
+
+Slide 5
+Timestamp: 187.50s
+------------------------------
+- Main topic: This slide illustrates how large language models (LLMs) exhibit different in-context learning behaviors depending on the level of domain-label bias present in the tasks.
+
+- Key points:
+    - LLMs demonstrate varying performance on tasks with small domain-label bias.
+    - Domain-label bias restricts LLMs' performance to chance level when the bias is large.
+    - Even with prior calibration methods, large domain-label bias still limits LLM performance.
+
+- Visual elements:
+    - Two bar graphs are displayed.
+    - The top graph represents "Small domain-label bias tasks" and the bottom graph represents "Large domain-label bias tasks."
+    - Each graph plots "Macro-F1 (%)" on the y-axis and task names on the x-axis.
+    - Each task has three bars: "Chance," "Original," and "CC."
+    - The top graph shows that the "Original" and "CC" bars are generally above the "Chance" bar, indicating improved performance.
+    - The bottom graph shows that the "Original" and "CC" bars are close to the "Chance" bar, indicating near-chance performance.
+    - A box highlights "Domain-label bias restricts LLMs' performance to chance-level" and "Even with prior calibration method."
+    - The top graph includes arrows indicating the performance shift between "Original" and "CC" bars.
+    - The tasks listed on the x-axis of the bottom graph are: "Tweet hate," "Posent sentiment," "Hate speech38," "Ethnic religion," and "Ethnic nation."
+
+- Notable text:
+    - Title: "LLMs have different in-context learning behaviors on tasks with different levels of domain-label bias"
+    - Subtitles: "Small domain-label bias tasks" and "Large domain-label bias tasks"
+    - Labels: "Chance," "Original," and "CC"
+    - Y-axis label: "Macro-F1 (%)"
+    - Highlighted text: "Domain-label bias restricts LLMs' performance to chance-level" and "Even with prior calibration method."
+
+Slide 6
+Timestamp: 215.50s
+------------------------------
+- Main topic: This slide explains how to mitigate label biases holistically using domain-context calibration.
+- Key points:
+    - The method addresses label biases by estimating bias and calibrating original predictions.
+    - The approach considers the context of the input data.
+    - The goal is to predict the sentiment of content-free text.
+- Visual elements:
+    - A diagram illustrating the process of estimating bias and calibrating predictions.
+    - A bar chart showing the estimated bias for negative and positive sentiments.
+    - A flowchart showing the steps of estimating bias and calibrating predictions.
+- Notable text:
+    - Title: "Mitigating the effects of label biases holistically with Domain-context calibration"
+    - Labels: "Context," "Review," "Sentiment," "Estimate bias," "Calibrate original predictions"
+    - Equation:  `ŷ = argmax_{y ∈ C} P(y|x, C) / bias`
+    - Example reviews with associated sentiments: "It's a good movie" (positive), "I hate it" (negative), "A masterpiece!" (positive), "content-free text" (?)
+
+Slide 7
+Timestamp: 217.50s
+------------------------------
+- Main topic: This slide explains how to mitigate label biases holistically using domain-context calibration.
+- Key points:
+    - The method addresses label biases by estimating bias and calibrating original predictions.
+    - The approach considers the context of the input text.
+    - The goal is to predict the sentiment of content-free text.
+- Visual elements:
+    - A diagram illustrating the process of estimating bias and calibrating predictions.
+    - Three example reviews with associated sentiments (positive, negative, positive).
+    - A fourth example review labeled as "content-free text" with an unknown sentiment.
+    - A bar chart showing estimated biases for negative and positive sentiments.
+    - A second bar chart showing the calibration process, with the formula:  η = argmax y∈C p(y|x, C) / bias
+- Notable text:
+    - Title: "Mitigating the effects of label biases holistically with Domain-context calibration"
+    - Labels: "Context", "Review", "Sentiment", "Estimate bias", "Calibrate original predictions"
+    - Terms: "Domain-context calibration", "label biases"
+    - Formula: η = argmax y∈C p(y|x, C) / bias
+
+Slide 8
+Timestamp: 254.50s
+------------------------------
+- Main topic: This slide presents Domain-context calibration as a method for mitigating label biases in machine learning models, particularly in scenarios where the domain of the input text influences the model's predictions.
+
+- Key points:
+    - The method aims to holistically address label biases by considering both context and domain.
+    - It estimates bias using a combination of context and domain-specific words.
+    - The slide compares Domain-context calibration (DC) with Contextual Calibration (CC) in terms of bias estimation.
+    - DC is designed to address domain-label bias, which CC does not.
+
+- Visual elements:
+    - A diagram illustrating the process of estimating bias and calibrating original predictions.
+    - A table comparing Contextual Calibration (CC) and Domain-context Calibration (DC) across three types of bias: Vanilla-label bias, Context-label bias, and Domain-label bias.
+    - Example reviews with corresponding sentiment labels are shown to illustrate the concept of context.
+
+- Notable text:
+    - Title: "Mitigating the effects of label biases holistically with Domain-context calibration"
+    - Terms: "Contextual Calibration (CC)", "Domain-context Calibration (DC)", "Vanilla-label bias", "Context-label bias", "Domain-label bias"
+    - Citation: "Zhao et al. 2021"
+    - Equations: P(y|n, A, C) and (1/M) Σ P(y|n, W_i, C)
+    - Labels: "Review", "Sentiment", "Estimate bias", "Calibrate original predictions"
+
+Slide 9
+Timestamp: 277.50s
+------------------------------
+- Main topic: This slide presents findings demonstrating that domain-context calibration (DC) generally improves in-context learning, particularly on tasks with significant domain-label bias.
+
+- Key points:
+    - Domain-context calibration (DC) generally improves in-context learning.
+    - Improvement is especially noticeable on tasks with large domain-label bias.
+    - The findings are based on experiments using GPT-J (6B) and GPT-3 (175B).
+    - The experiments involved 24 datasets.
+    - Each dataset was tested with 5 random seeds.
+    - The experiments were conducted using an 8-shot setting.
+
+- Visual elements:
+    - A bar graph titled "GPT-J (6B) 8-shot" displays Macro F1 (%) on the y-axis and different datasets on the x-axis.
+    - Four datasets are shown: "All datasets," "Small UK," "Medium US," and "Large UK."
+    - Each dataset has four bars representing: "Chance," "Original," "Contextual Calibration," and "Domain-context Calibration."
+    - A legend identifies the colors corresponding to each of the four bar types.
+    - A highlighted box repeats the main point: "DC generally improves in-context learning."
+
+- Notable text:
+    - Title: "DC generally improves in-context learning, especially on tasks with large domain-label bias."
+    - Subtitle: "GPT-J (6B) 8-shot"
+    - Labels: "Macro F1 (%)", "All datasets", "Small UK", "Medium US", "Large UK", "Chance", "Original", "Contextual Calibration", "Domain-context Calibration"
+    - Model names: "GPT-J (6B)", "GPT-3 (175B)"
+    - Experiment details: "24 datasets", "5 random seeds", "8-shots"
+
+Slide 10
+Timestamp: 307.50s
+------------------------------
+- Main topic: This slide presents the results of a study demonstrating that domain-aware calibration (DC) generally improves in-context learning, particularly on tasks with a large domain-label bias.
+
+- Key points:
+    - Domain-aware calibration (DC) improves in-context learning.
+    - The improvement is especially noticeable on tasks with a large domain-label bias.
+    - The trend holds for larger models (GPT-3 175B).
+    - The study used GPT-J (6B) and GPT-3 (175B) models.
+    - The experiments were conducted on 24 datasets.
+    - Each experiment was run with 5 random seeds.
+    - The experiments used an 8-shot setting.
+
+- Visual elements:
+    - Two bar graphs are displayed, one for GPT-J (6B) and one for GPT-3 (175B).
+    - Each graph has four bars representing different levels of domain-label bias: "No Bias," "Small DLB," "Medium DLB," and "Large DLB."
+    - Within each graph, four colored bars represent different calibration methods: "Chance," "Original," "Conventional Calibration," and "Domain-aware Calibration."
+    - A small inset bar graph shows a comparison of the mean and standard deviation of the "Original" and "Domain-aware Calibration" results for "Medium DLB."
+
+- Notable text:
+    - Title: "DC generally improves in-context learning, especially on tasks with large domain-label bias."
+    - Labels: "GPT-J (6B)," "GPT-3 (175B)," "8-shots," "24 datasets," "5 random seeds."
+    - Legend: "Chance," "Original," "Conventional Calibration," "Domain-aware Calibration."
+    - Text box: "The trend holds for larger models (GPT-3 175B)."
+    - Axis labels: "Mean Acc (%)" (y-axis), "DLB" (x-axis).
+    - Inset graph labels: "Original," "DC," "Mean ± 0.5%"
+
+Slide 11
+Timestamp: 317.50s
+------------------------------
+- Main topic: This slide explains why the proposed "DC" method outperforms previous calibration attempts.
+- Key points:
+    - The slide presents a comparison of the Macro F1 scores of different calibration methods across 24 datasets.
+    - The "DC" method consistently achieves higher scores than previous methods.
+    - Several variations of the "DC" method are shown, with different configurations of "Eng" (likely referring to an engineering or algorithmic component).
+- Visual elements:
+    - A bar chart displays the Macro F1 scores (in percentage) on the y-axis and the different calibration methods on the x-axis.
+    - The chart includes bars for: "Original," "CC," "DC-Eng (one word)," "DC-Eng (1.0.1)," "DC-Eng (1.0.2)," "DC-Eng (1.0.3)," "DC-Eng (1.0.4)," "DC-Eng (1.0.5)," "DC-Eng (one word)," "DC-Eng (1.0.1)," "DC-Eng (1.0.2)," "DC-Eng (1.0.3)," "DC-Eng (1.0.4)," "DC-Eng (1.0.5)."
+    - The chart indicates that the results are an average across 24 datasets, using 5 seeds.
+- Notable text:
+    - Title: "Why is DC better than previous calibration attempts?"
+    - Y-axis label: "Macro F1 (%)"
+    - X-axis label: "24 datasets average (5 seeds)"
+    - Method names: "Original," "CC," "DC-Eng (one word)," and various "DC-Eng (x.x.x)" variations.
+    - A yellow circle highlights a specific bar in the chart.
+
+Slide 12
+Timestamp: 328.50s
+------------------------------
+- Main topic: This slide explains why the proposed DC calibration method is superior to previous attempts.
+- Key points:
+    - DC calibration outperforms previous calibration methods.
+    - Calibration is performed with one random English word.
+    - Pre-defined content-free tokens, like "N/A," can be biased.
+- Visual elements:
+    - A bar graph displays the Macro F1 score (%) on the y-axis and the different calibration methods on the x-axis. The methods are: Original, DC, DC-Eta (one word), DC-Eta (5 words), DC-Eta (10 words), and DC-Eta (20 words). The graph shows the average across 24 datasets with 5 seeds.
+    - A highlighted box indicates "Calibrate with one random English word."
+- Notable text:
+    - Title: "Why is DC better than previous calibration attempts?"
+    - Y-axis label: "Macro F1 (%)"
+    - X-axis label: "24 datasets average (5 seeds)"
+    - Right-side text: "Pre-defined content-free token, like 'N/A', can also be biased"
+
+Slide 13
+Timestamp: 349.50s
+------------------------------
+- Main topic: This slide explains why the proposed DC (calibrate with random in-domain words) method outperforms previous calibration attempts.
+- Key points:
+    - Pre-defined content-free tokens, like "N/A", can also be biased.
+    - Using only one content-free token is sub-optimal.
+    - Calibrate using random in-domain words removes DLB (domain label bias).
+- Visual elements:
+    - A bar graph titled "Mean F1" (y-axis) versus "20 datasets average ± 1.5 std" (x-axis).
+    - Multiple bars representing different calibration methods: "Original", "CC", "DC-Eng (Time World)", "DC-Eng (HLL)", "DC-Eng (ML)", "DC-Eng (HLL)", "DC-Eng (ML)", "DC-Eng (HLL)", "DC-Eng (ML)", "DC-Eng (HLL)", "DC-Eng (ML)", "DC-Eng (HLL)", "DC-Eng (ML)".
+    - A green circle highlights the "Calibrate with random in-domain words (DC)" section.
+    - A curved line is drawn above the bars, likely representing a trend.
+- Notable text:
+    - Title: "Ablation: Why is DC better than previous calibration attempts?"
+    - "Mean F1"
+    - "20 datasets average ± 1.5 std"
+    - "Original"
+    - "CC"
+    - "DC-Eng (Time World)"
+    - "DC-Eng (HLL)"
+    - "DC-Eng (ML)"
+    - "Calibrate with random in-domain words (DC)"
+    - "DLB"
+    - "N/A"
+
+Slide 14
+Timestamp: 378.50s
+------------------------------
+- Main topic: This slide summarizes the key findings of the lecture regarding label biases in in-context learning for classification tasks.
+- Key points:
+    - A typology of label biases in in-context learning for classification tasks was presented.
+    - Domain label bias is identified as a major source of label bias.
+    - Domain-context calibration mitigates all three types of label biases and improves in-context learning performance.
+- Visual elements: The slide contains a simple list of bullet points.
+- Notable text: The title is "Summary." The bullet points are numbered 1, 2, and 3. The terms "in-context learning," "label biases," and "domain-context calibration" are highlighted.
+
+Slide 15
+Timestamp: 379.50s
+------------------------------
+- Main topic: This slide directs the audience to consult the authors' paper for further information.
+- Key points:
+    - The audience is encouraged to read the paper for more details.
+- Visual elements:
+    - A small square video feed of the speaker is present in the bottom right corner.
+- Notable text:
+    - "Check our paper for more details!" is displayed in the center of the slide.
+
+Total slides processed: 15

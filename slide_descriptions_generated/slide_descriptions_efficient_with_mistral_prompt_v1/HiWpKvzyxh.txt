@@ -1,0 +1,94 @@
+Here’s the revised visual description without redundant details from the speaker’s transcript:
+
+---
+
+### Slide 1 & 2 (Motivation)
+**Title:** Motivation
+- Bulleted list outlining the uniqueness of meeting transcripts (long, domain-specific, information-rich) and prior work’s focus on summarization/action items.
+
+### Slide 3 (MeetingQA: Introduction)
+**Title:** MeetingQA: Introduction
+- Image of a meeting transcript with highlighted questions (red) and answers (blue).
+- Key points:
+  - Extractive QA dataset based on participant questions.
+  - Unique features: open-ended questions, rhetorical/multi-speaker/multi-span answers.
+
+### Slide 4 (MeetingQA: Data Collection)
+**Title:** MeetingQA: Data Collection
+- **Icons:** Folder (transcripts), question mark (selection), pen (annotation).
+- **Text:**
+  - Source: AMI corpus (~100 hours of transcribed meetings).
+  - Question selection: Punctuation/length-based filtering.
+  - Annotation: Sentence-level answer spans with high inter-annotator agreement (*Krippendorff’s alpha = 0.73*).
+- **Citation:** Carlotto et al. (2005) at the bottom.
+
+### Slide 5 (MeetingQA: Dataset Analysis)
+**Title:** MeetingQA: Dataset Analysis
+- **Table:**
+  |                   | Train | Dev  | Test |
+  |-------------------|-------|------|------|
+  | Meetings          | 64    | 48   | 54   |
+  | Questions         | 3007  | 2252 | 2476 |
+  | No Answer         | 956   | 621  | 764  |
+  | Multi-Span Answers| 787   | 548  | 663  |
+  | Multi-Speaker Answers| 1016 | 737  | 840  |
+  | Avg. Questions/Meeting | 46.98 | 46.92 | 45.85 |
+
+### Slide 6 (MeetingQA: Dataset Analysis)
+**Title:** MeetingQA: Dataset Analysis
+- **Pie Chart (Question Types):**
+  - Yes/No: 54.4% (pink)
+  - What: 24.4% (light green)
+  - Who: 1.6% (blue)
+  - Which: 8.1% (yellow)
+  - How: 1.9% (purple)
+  - Other: 9.4% (orange)
+- **Bullet points:**
+  - Yes/no questions elicit detailed responses.
+  - 50% opinion-seeking, 20% rhetorical, 70% multi-speaker answers contain disagreement.
+
+### Slide 7 (MeetingQA: Dataset Analysis)
+**Title:** MeetingQA: Dataset Analysis
+- **Histograms:**
+  1. **Meeting Transcript Length:** Right-skewed (peak ~5K–10K words).
+  2. **Question Length:** Right-skewed (peak ~0–10 words, max count ~1300).
+  3. **Answer Length:** Right-skewed (peak ~0–25 words, max count ~1250).
+- **Stats:** Avg. transcript = 5.9K words, question = 12 words, answer = 35 words; human F1 = 84.6.
+
+### Slide 8 (Methods)
+**Title:** Methods
+- **Four colored circles (2x2 grid):**
+  1. **Blue:** Context-retrieval for short-context models (retrieves relevant transcript segments).
+  2. **Green:** Multi-span models (token classification: `/` = in span, `O` = outside).
+  3. **Orange:** Single-span models (outputs a single "super" span from first to last relevant sentence).
+  4. **Purple:** Silver data augmentation (auto-annotated answers from MediaSum interviews).
+- **Citation:** Zhu et al. (2021) at the bottom.
+
+### Slide 9 (Experimental Results: Zero-shot)
+**Title:** Experimental Results: Zero-shot
+- **Table:**
+  | Model            | Inter. Data | Overall F1 |
+  |------------------|-------------|------------|
+  | RoBERTa-base     | SQuADv2     | 27.9       |
+  | RoBERTa-base     | + silver    | 34.6       |
+  | Longformer-base  | SQuADv2     | 15.1       |
+  | Longformer-base  | + silver    | 32.5       |
+  | FLAN-T5 XL       | —           | 33.8       |
+  | FLAN-T5 XL (self ans) | —      | 34.0       |
+  | Human performance| —           | 84.6       |
+
+### Slide 10 (Experimental Results: Error Analysis)
+**Title:** Experimental Results: Error Analysis
+- **Two bar graphs:**
+  1. **(a) Unanswerable Pred Error:**
+     - **Y-axis:** Percentage (%).
+     - **Bars:** Multi-span (finetuned ~10%, zero-shot ~35%) vs. single-span (finetuned ~25%, zero-shot ~40%).
+  2. **(b) Speaker IoU in Model Errors:**
+     - **Y-axis:** Intersection over Union (IoU).
+     - **Bars:** Multi-span (finetuned ~30%, zero-shot ~45%) vs. single-span (finetuned ~40%, zero-shot ~50%).
+
+### Slide 11 (Takeaways)
+**Title:** Takeaways
+- **Text:**
+  - MeetingQA is an **interesting QA dataset** based on open-ended, discussion-heavy meeting questions.
+  - **Challenging for existing QA models** (25 F1-point gap finetuned, 50 F1-point gap zero-shot).

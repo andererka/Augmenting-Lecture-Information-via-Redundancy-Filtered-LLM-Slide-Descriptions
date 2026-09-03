@@ -1,0 +1,110 @@
+Here’s the refined visual description of the slides, excluding details already covered in the speaker’s transcript while retaining precise information not explicitly mentioned:
+
+---
+
+### **Slide 1 (Timestamp: 6.00s)**
+**Title:** *A Systematic Study of Knowledge Distillation for Natural Language Generation with Pseudo-Target Training*
+**Text Content:**
+- Authors: *Nitay Calderon*, Subhabrata Mukherjee, Roi Reichart, Amir Kantor
+- Affiliations: Technion, Microsoft Research
+- Note: *Work was mainly done during an internship at Microsoft MSAI*
+
+**Visual Elements:**
+- **Logos:** ACL 2023 (top-left), Technion (top-right), Microsoft (top-right)
+- **QR Codes:** Two codes labeled "Paper" and "Code" (right side)
+- **Image:** A photo of Nitay Calderon (right side)
+
+---
+
+### **Slide 3 (Timestamp: 49.49s)**
+**Title:** *Motivation*
+**Text Content:**
+- Bullet points:
+  - NLG systems (LLMs) have massive computational/storage/financial costs.
+  - Industry demand for compression while preserving performance.
+
+**Visual Elements:**
+- **Bubble Chart:** Growth of LLMs (2018–2023) by parameter size.
+  - **2018:** GPT-3, Jurassic-1, Llama 30B (small bubbles)
+  - **2019:** GPT-3 (small bubble)
+  - **2021:** GPT-3, Jurassic-1, Llama 65B, Gopher (medium bubbles)
+  - **2022:** MT-NLG (large central bubble), Luminous, PaLM, BLOOM, OPT-175B, Chinchilla, LaMDA (medium/small)
+  - **2023:** OPT-4, GLM-130B, Galactica (small/medium)
+- **Source:** lifearchitecture.ai/models
+
+---
+
+### **Slide 4 (Timestamp: 141.48s)**
+**Title:** *Our Study*
+**Text Content:**
+- **Research gaps:**
+  - Most KD works focus on NLU or task-agnostic KD (pre-training).
+  - NLG KD works focus on single tasks (e.g., NMT) with large labeled datasets, ignoring unlabeled data.
+- **This study:**
+  - Systematic task-specific KD for NLG across multiple tasks in realistic setups.
+
+**Visual Elements:**
+- **Image:** Partial view of a person (bottom-right, dark shirt, short dark hair).
+
+---
+
+### **Slide 5 (Timestamp: 185.48s)**
+**Title:** *Realistic Setup*
+**Text Content:**
+- **5 criteria:**
+  1. Medium-resource labeled dataset (several thousand examples).
+  2. Plentiful unlabeled data.
+  3. Off-the-shelf + small-to-medium fine-tuned LMs.
+  4. Inference-time efficiency (high compression).
+  5. One-time training resources are negligible.
+
+**Visual Elements:**
+- **Icons:** Stack of papers (1), stack of documents (2), neural network with smiling face/Homer Simpson (3), clock with upward arrow (4), balance scale (5).
+- **Background:** Yellow.
+
+---
+
+### **Slide 6 (Timestamp: 204.48s)**
+**Title:** *Realistic Setup – Tasks and Datasets*
+**Text Content:**
+- **Tasks:**
+  - Summarization (XSUM)
+  - Question generation (SQuAD)
+  - Common sense reasoning (ART)
+  - Simplification/style transfer (Shakespeare)
+
+**Table:**
+| **Name**   | **Train** | **Unlabeled** | **Dev** | **Test** | **Input** | **Target** |
+|------------|----------|--------------|--------|---------|----------|-----------|
+| XSUM40     | 40K      | 164K         | 5K     | 11.3K   | 480      | 32        |
+| SQuAD17    | 17.5K    | 70K          | 1.57K  | 9K      | 320      | 32        |
+| ART10      | 10K      | 40K          | 1.25K  | 14.3K   | 48       | 48        |
+| Shake7     | 7K       | 28K          | 0.75K  | 0.8K    | 48       | 48        |
+
+**Visual Elements:**
+- **Background:** Yellow.
+- **Image:** Partial view of a person (bottom-right).
+
+---
+
+### **Slide 7 (Timestamp: 347.46s)**
+**Title:** *A Systematic Study*
+**Text Content:**
+- **Table Headers:**
+  Sl., Architecture, Pruning, Objective, PTs, Unlabeled, Number of PTs, PTs Decoding, Joint-Teaching
+- **Rows:** Experimental setups (e.g., encoder-decoder, pruning, logits KD, pseudo-targets).
+
+**Visual Elements:**
+- **Image:** Person (bottom-right, red shirt, headphones, dark hair).
+
+---
+### **Slide 8 (Timestamp: 350.96s)**
+**Title:** *Knowledge Distillation Recipe*
+**Text Content:**
+- **6 steps:**
+  1. Use encoder-decoder models for conditional generation.
+  2. Prune decoder layers to speed up autoregressive generation.
+  3. If no labeled data: Generate pseudo-targets (PTs) with a large LM (e.g., GPT-4) and fine-tune a medium teacher.
+  4. Generate multiple PTs via sampling (labeled + unlabeled).
+  5. Apply logits KD, augmenting training data with PTs.
+  6. Use joint-teaching: Apply logits KD to PTs from both teacher and student.

@@ -1,0 +1,163 @@
+Here is the rewritten slide description containing only information not explicitly conveyed in the transcript:
+
+---
+
+**Slide 1**
+- **Title:** Generating Structured Pseudo Labels for Noise-resistant Zero-shot Video Sentence Localization
+- **Author affiliations and emails:**
+  - Minghang Zheng¹, Shaogang Gong², Hailin Jin³, Yuxin Peng⁴, and Yang Liu¹.⁵
+  - ¹Wangxuan Institute of Computer Technology, Peking University
+  - ²Queen Mary University of London
+  - ³Adobe Research
+  - ⁴National Key Laboratory for Multimedia Information Processing, Peking University
+  - ⁵National Key Laboratory of General Artificial Intelligence, BIGAI
+  - Contact emails:
+    - {minghang, pengyuxin, yangliu}@pku.edu.cn
+    - s.gong@qmul.ac.uk
+    - hljin@adobe.com
+
+---
+
+**Slide 3**
+- **ACL 2023 logo** in the top right corner
+- **Slide number:** "2" in the bottom right corner
+- **Visual layout:**
+  - The "Output" section is visually separated from the "Unavailable" section by curly braces
+  - The timestamps 5.5s and 15.1s are connected by an arrow indicating the target video clip
+- **Video frames:**
+  - A sequence of 8 frames showing a man putting on gloves and cleaning snow off a car
+  - The first frame has a white arrow pointing to the left
+
+---
+
+**Slide 4**
+- **ACL 2023 logo** in the upper right corner
+- **Slide label:** "(d) Ours pipeline" at the bottom
+- **Video frames:**
+  - A sequence of 6 frames showing a man cleaning snow off a car with a brush
+- **Graph details:**
+  - X-axis: Time
+  - Y-axis: Similarity
+  - The graph shows a curve that initially rises, peaks, then declines, and then rises again
+  - The peak is not labeled with a specific value
+  - "[4s, 15s]" is marked on the x-axis, indicating a segment of the video
+  - "Aligned" is marked on the x-axis, indicating another segment of the video
+
+---
+
+**Slide 5**
+- **ACL 2023 logo** in the upper right corner (stylized "ACL" with a red square and the number "61" next to it)
+- **Slide number:** "5" in the bottom right corner
+- **Diagram details:**
+  - Top: A row of six rectangular images representing video frames, colored with a variety of hues
+  - Center: A box labeled "Image Caption" positioned below the video frames
+  - Bottom: A box labeled "Query Candidates:" containing a list of text strings:
+    - A woman takes shoes off.
+    - A woman sitting on a bed.
+    - A bed in the room.
+    - ... (indicating more candidates)
+
+---
+
+**Slide 6**
+- **ACL 2023 logo** in the top right corner (red)
+- **Slide number:** "6" in the bottom right corner
+- **Graph details:**
+  - X-axis: Time
+  - Y-axis: Similarity
+  - The graph shows a fluctuating curve over time
+  - Three event proposals are labeled with time ranges:
+    - 3.7s - 12.1s: s = sᵢ - sₒ = 0.2 - 0.5 = -0.3
+    - 3.7s - 12.1s: s = sᵢ - sₒ = 0.8 - 0.2 = 0.6
+    - 3.7s - 12.1s: s = sᵢ - sₒ = 0.5 - 0.2 = 0.3
+- **Legend:**
+  - → Event Proposals
+  - sᵢ: Mean similarity within event
+  - sₒ: Mean similarity outside event
+  - s: Event quality
+
+---
+
+**Slide 7**
+- **ACL 2023 logo** in the top right corner
+- **Slide number:** "7" in the bottom right corner
+- **Diagram details:**
+  - Top: A series of images connected to an "Image Caption" box
+  - The "Image Caption" box is connected to a "Query Candidates" box listing three queries:
+    - "A woman takes shoes off."
+    - "A woman sitting on a bed."
+    - "A bed in the room."
+  - Below: Three similarity graphs labeled "Similarity," each with a line representing similarity over time
+  - Each graph has a label indicating whether the corresponding pseudo-query-event pair was "Kept" or "Dropped"
+  - To the right of the "Kept" graphs, a "Pseudo Label" box contains:
+    - "A woman takes shoes off. [3.7%, 12.1%]"
+    - "A woman sitting on a bed. [3.5%, 17.2%]"
+- **Graph details:**
+  - **Graph 1 (Kept):**
+    - X-axis: Time
+    - Y-axis: Similarity
+    - Line starts at 3.7%, peaks at 12.1%, then decreases
+    - Annotations: s₁ = 0.2, s₂ = 0.5, s₃ = 0.2, s₄ = 0.2, s₅ = 0.5, s₆ = 0.2
+  - **Graph 2 (Kept):**
+    - X-axis: Time
+    - Y-axis: Similarity
+    - Line starts at 3.5%, peaks at 17.2%, then decreases
+    - Annotations: s₁ = 0.5, s₂ = 0.5, s₃ = 0.2
+  - **Graph 3 (Dropped):**
+    - X-axis: Time
+    - Y-axis: Similarity
+    - Line starts at 0.1%, peaks at 6.9%, then decreases
+    - Annotations: s₁ = 0.1, s₂ = 0.5, s₃ = 0.1
+- **Legend:**
+  - Event Proposals
+  - sᵢ: Mean similarity within event
+  - sᵢ: Mean similarity outside event
+  - x: Event quality
+
+---
+
+**Slide 8**
+- **ACL 2023 logo** in the top right corner
+- **Slide number:** "8" in the bottom right corner
+- **Diagram details:**
+  - Flowchart with the following components:
+    - "Pseudo Label" box with example:
+      - "A woman takes shoes off [3.7s, 12.1s]"
+      - "A woman sitting on a bed [3.6s, 17.2s]"
+    - Arrow to "Fully Supervised Model"
+    - Output to "Noise estimation" box with values:
+      - 0.9
+      - 0.7
+    - Output to "Label refinement" box with values:
+      - [4.1s, 11.8s]
+      - [5.2s, 18.1s]
+    - Arrows from both "Noise estimation" and "Label refinement" to "Reweight loss" box labeled: Lₙₒₚ
+- **Formulas:**
+  - w = α (1 / sⁱᵒᵘ) + (1 - α) (1 / sᶜᵒⁿᶠ)
+  - Lₙₒₚ
+
+---
+
+**Slide 9**
+- **ACL 2023 logo** in the top right corner
+- **Slide number:** "9" in the bottom right corner
+- **Image panels:**
+  - **(a) ActivityNet Captions:**
+    - A horizontal row of 8 images depicting a person crossing monkey bars
+    - Query above the panel: "A man in a red tank top is crossing the monkey bars."
+  - **(b) Charades-STA:**
+    - A horizontal row of 8 images depicting a person running towards a table
+    - Query above the panel: "Person runs to a table."
+
+---
+
+**Slide 10**
+- **ACL 2023 logo** in the top right corner (with "61" next to it)
+- **Slide number:** "11" in the bottom right corner
+
+---
+
+**Slide 11**
+- **ACL 2023 logo** in the top right corner (with "61" next to it)
+- **Slide number:** "12" in the bottom right corner
+- **QR code** below the text "Code"

@@ -1,0 +1,123 @@
+Here’s the revised visual description, focusing on elements not explicitly detailed in the speaker’s transcript while preserving key diagrams, charts, and author names:
+
+---
+
+### Slide 1
+**Title:** Tell2Design: A Dataset for Language-Guided Floor Plan Generation
+**Authors:**
+- Siconq Leng*, Yang Zhou**, Mohammed Haroon Dupty*, Wee Sun Lee*, Sam Conrad Joyce*, Wei Lu*
+- *StarNLP Research Group, Singapore University of Technology and Design
+- **Institute of High Performance Computing (HPCC), A*STAR Singapore
+- *School of Computing, National University of Singapore
+- *Meta Design Lab, Singapore University of Technology and Design
+
+---
+
+### Slide 3
+**Title:** Introduction
+**Text:**
+- Text-conditional generative AI models excel at high-fidelity image generation.
+- Focus on high-level visual concepts from sentence-level descriptions.
+- Generated images prioritize realism and creativity, ideal for artwork.
+
+**Visuals:**
+- Three horizontal images:
+  1. A detailed digital illustration of a vintage espresso machine with a cup of coffee and glass of water on a wooden table (dark, blurred background).
+  2. A whimsical cartoon panda in a lab coat holding a beaker with green liquid, surrounded by scientific equipment.
+  3. A dramatic abstract rendering of a corgi’s head in fiery flames.
+
+---
+
+### Slide 4
+**Text:**
+- Design process involves **users** (define objectives/constraints) and **designers** (develop solutions with expertise).
+- Example: Users specify house design requirements in text; architects generate floor plans.
+
+**Visuals:**
+- Two side-by-side images:
+  1. A black-and-white floor plan with labeled rooms, hallways, and measurements (legible but not transcribed).
+  2. A 3D rendering of a modern house interior (furnished living/dining area).
+
+---
+
+### Slide 5
+**Text:**
+- Language instructions example:
+  *"The Balcony is located on the Eastern side... 4’ wide from West to East... spans 11’ from North to South."*
+  *"The Bedroom is located on the central-eastern side... Northern wall of the master bedroom is roughly 12’ wide."*
+
+**Visuals:**
+- Simplified floor plan schematic with colored rooms:
+  - Common Area (Yellow)
+  - Living Room (Light Blue)
+  - Kitchen (Orange)
+  - Bath (Pink)
+  - Master Bedroom (Green)
+  - Balcony (Light Gray)
+
+---
+
+### Slide 6
+**Title:** Tell2Design Dataset
+**Text:**
+- Task: Generate 2D floor plans from language instructions describing intrinsic components (semantics, geometry, topology).
+- Language instructions example:
+  *"The balcony located on the Eastern side... protrudes out from the rest of the unit. It is 4’ wide from West to East..."*
+
+**Visuals:**
+- Figure 1: A data sample from the Tell2Design dataset.
+  - Floor plan with colored rooms:
+    - Living Room (Pink)
+    - Common Area (Yellow)
+    - Kitchen (Green)
+    - Bathroom (Blue)
+    - Master Bedroom (Orange)
+    - Balcony (Purple)
+
+---
+
+### Slide 7
+**Title:** Experiments – Main Results
+**Table 2: IoU Scores**
+| Models                          | Micro IoU | Macro IoU |
+|---------------------------------|-----------|-----------|
+| **Training on artificial instructions only** |           |           |
+| Obj-GAN                         | 15.74     | 11.12     |
+| CogView                         | 10.01     | 8.31      |
+| Imagen                          | 14.74     | 15.57     |
+| T2D (w/o bd)                    | 6.46      | 4.01      |
+| T2D                             | 9.13      | 6.06      |
+| **Training on human instructions only** |           |           |
+| Obj-GAN                         | 10.72     | 8.29      |
+| CogView                         | 13.48     | 11.26     |
+| Imagen                          | 9.29      | 6.64      |
+| T2D (w/o bd)                    | 32.22     | 26.24     |
+| T2D                             | 42.93     | 38.48     |
+| **Warm-up on artificial + fine-tune on human** |           |           |
+| Obj-GAN                         | 10.68     | 8.44      |
+| CogView                         | 13.30     | 11.43     |
+| Imagen                          | 12.17     | 14.96     |
+| T2D (w/o bd)                    | 35.95     | 29.95     |
+| T2D                             | 54.34     | 51.30     |
+
+---
+
+### Slide 8
+**Title:** Experiments – Case Study
+**Text:**
+- Human instructions example:
+  *"The north side of the house is set complete without the balcony... Bathroom 1 is in the eastern section... Common room 1 occupies the northeast corner..."*
+
+**Visuals:**
+- Figure 10: Generated samples from baselines vs. ground truth.
+  - Five floor plans (Obj-GAN, CogView, Imagen, Tell2Design, Ground Truth), each with distinct room layouts and colors.
+
+---
+
+### Slide 9
+**Title:** Conclusion
+**Text:**
+- Introduces a novel language-guided design generation task (floor plan domain).
+- Presents Tell2Design (T2D), a large-scale dataset with natural language instructions.
+- Proposes a Seq2Seq model as a baseline, outperforming text-conditional image generation models.
+- Aims to propel future research in language-guided design generation.

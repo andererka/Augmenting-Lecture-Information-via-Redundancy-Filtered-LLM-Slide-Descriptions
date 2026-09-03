@@ -1,0 +1,311 @@
+Slide 1
+Timestamp: 6.92s
+------------------------------
+.
+**Title:** Generating Structured Pseudo Labels for Noise-resistant Zero-shot Video Sentence Localization
+
+**Content:**
+*   Author list and affiliations (Minghang Zheng, Shaogang Gong, Hailin Jin, Yuxin Peng, Yang Liu)
+*   Email addresses for the first three authors and Shaogang Gong, and Yang Liu.
+*   Diagram illustrating the proposed method (with steps: free-form pseudo-query generation, pseudo-event generation based on temporal structure, and noise reduction).
+*   Formula for sample weighting to reduce the influence of noisy samples.
+*   Graphs comparing the performance of the proposed method (SPL) with existing methods on ActivityNet Captions and Charades-STA datasets, using R@M and mIoU metrics.
+*   QR code for accessing the code.
+
+Slide 2
+Timestamp: 15.33s
+------------------------------
+.
+**Title:** Generating Structured Pseudo Labels for Noise-resistant Zero-shot Video Sentence Localization
+
+**Content:**
+*   Author list and affiliations (Minghang Zheng, Shaogang Gong, Hailin Jin, Yuxin Peng, Yang Liu)
+*   Email addresses for the first three authors and Shaogang Gong, and Yang Liu.
+*   Diagram illustrating the proposed method (with steps: free-form pseudo-query generation, pseudo-event generation based on temporal structure, and noise reduction).
+*   Formula for sample weighting to reduce the influence of noisy samples.
+*   Graphs comparing the performance of the proposed method (SPL) with existing methods on ActivityNet Captions and Charades-STA datasets, using R@M and mIoU metrics.
+*   QR code for accessing the code.
+
+Slide 3
+Timestamp: 59.88s
+------------------------------
+.
+## Slide Analysis:
+
+**Title:** Task
+
+**Text content:**
+
+Zero-shot Temporal Sentence Localization
+
+*   Inputs: Video + Sentence query
+*   Outputs: Target video clip (start and end timestamps)
+*   Zero-shot Setting: No manual annotation required
+
+**Video:**
+[Image of a video sequence showing a man putting on gloves and cleaning snow off a car. The video is represented as a series of 8 frames.]
+
+**Query:**
+A man puts on gloves and then clean the snow
+
+Output
+5.5s ---------------------> 15.1s
+
+{ } Unavailable
+
+**Other visual elements:**
+
+*   The slide has a logo for ACL 2023 in the top right corner.
+*   The slide is numbered "2" in the bottom right corner.
+*   The "Output" section is visually separated from the "Unavailable" section by curly braces.
+*   The timestamps 5.5s and 15.1s are connected by an arrow indicating the target video clip.
+
+Slide 4
+Timestamp: 147.99s
+------------------------------
+.
+**Slide Analysis:**
+
+**Title:** Method
+
+**Text content:**
+
+Our Structured Pseudo-Label (SPL) generation:
+
+*   Generate free-form pseudo-queries using image description models
+*   Generate pseudo-events based on the event temporal structure
+    *   the video inside the event has a high correlation with the query
+    *   the video outside the event has a low correlation with the query
+*   Reduce noise during training
+    *   Sample re-weight and label refinement
+
+Video:
+
+Step 1. Pseudo Query: A man cleans the snow with a brush
+
+Step 2. Similarity
+
+[Graph showing similarity over time]
+
+Step 3. Pseudo Event: [4s, 15s] Aligned
+
+(d) Ours pipeline
+
+**Figures/graphs:**
+
+The slide contains a graph labeled "Step 2. Similarity".
+
+*   **Type:** Line graph
+*   **X-axis:** Time
+*   **Y-axis:** Similarity
+*   **Trend:** The graph shows a curve that initially rises, peaks, then declines, and then rises again.
+*   **Annotations:**
+    *   "[4s, 15s]" is marked on the x-axis.
+    *   "Aligned" is marked on the x-axis.
+
+**Other visual elements:**
+
+*   The slide has a logo for "ACL 2023" in the upper right corner.
+*   The slide has a label "(d) Ours pipeline" at the bottom.
+*   A sequence of 6 video frames is displayed, showing a man cleaning snow off a car with a brush.
+
+Slide 5
+Timestamp: 180.66s
+------------------------------
+.
+Here's a revised visual description of the slide:
+
+**Title:** 1. Pseudo Query Generation
+
+**Text content:**
+
+Aims: Generate free-form pseudo-queries
+
+*   Densely sample video frames
+*   Generate pseudo queries from video frames using a pretrained BLIP model
+
+**Figures/graphs:**
+
+The slide contains a diagram illustrating the pseudo query generation process.
+
+*   **Top:** A row of six rectangular images representing video frames.
+*   **Center:** A box labeled "Image Caption" positioned below the video frames.
+*   **Bottom:** A box labeled "Query Candidates:" containing a list of text strings.
+
+**Other visual elements:**
+
+*   The slide has a logo for "ACL 2023" in the upper right corner.
+*   The slide number "5" is in the bottom right corner.
+*   The text is generally left-aligned.
+
+Slide 6
+Timestamp: 230.16s
+------------------------------
+.
+## Slide Analysis: 2. Pseudo Event Generation
+
+**Title:** 2. Pseudo Event Generation
+
+**Text content:**
+
+Aims: Generate pseudo-events based on event temporal structure
+
+*   Videos within events have high relevance to queries
+*   Videos outside events have low relevance to queries
+
+*   Calculate similarity S between pseudo-query and video frames
+*   Event quality:  $Q_{ik} = -\frac{\sum_{j \in P_k} S_{ij}}{N_p k} - \frac{\sum_{j \in P_k} S_{ij}}{N - N_p k}$
+*   Choose the event proposal with highest quality
+
+**Pseudo Event Generation**
+
+**Similarity**
+
+[A graph is present. The x-axis is labeled "Time". The y-axis is labeled "Similarity". The graph shows several segments, each representing a potential event proposal. Each segment is labeled with a time range (e.g., "3.7s - 12.1s").  The graph shows a curve that fluctuates over time.  The curve is colored differently for each segment.]
+
+**Legend:**
+
+*   $\rightarrow$ Event Proposals
+*   $s_i$ Mean similarity within event
+*   $s_o$ Mean similarity outside event
+*   $s$ Event quality
+
+**Formula:**
+
+$Q_{ik} = -\frac{\sum_{j \in P_k} S_{ij}}{N_p k} - \frac{\sum_{j \in P_k} S_{ij}}{N - N_p k}$
+
+**Other visual elements:**
+
+*   The slide has a red ACL 2023 logo in the top right corner.
+*   The slide has a page number "6" in the bottom right corner.
+*   The slide is divided into sections with clear headings.
+*   The graph is the central visual element, illustrating the concept of pseudo event generation.
+
+Slide 7
+Timestamp: 246.00s
+------------------------------
+.
+## Slide Analysis: 2. Pseudo Event Generation
+
+**Title:** 2. Pseudo Event Generation
+
+**Visual:**
+
+[Image: A diagram illustrating the Pseudo Event Generation process. It shows a series of images at the top, connected to an "Image Caption" box. The "Image Caption" box is connected to a "Query Candidates" box, which lists three query candidates: "A woman takes shoes off.", "A woman sitting on a bed.", "A bed in the room." Below this, there are three similarity graphs labeled "Similarity", "Similarity", and "Similarity". Each graph has a line representing similarity over time. Each graph also has a label indicating whether the corresponding pseudo-query-event pair was "Kept" or "Dropped".  To the right of the "Kept" graphs, there is a "Pseudo Label" box containing two pseudo labels: "A woman takes shoes off. [3.7%, 12.1%]” and “A woman sitting on a bed. [3.5%, 17.2%].”  Below the graphs, there is a legend.]
+
+**Similarity**
+
+[Graph 1: Line graph with x-axis labeled "Time" and y-axis labeled "Similarity". The line starts at 3.7%, peaks at 12.1%, and then decreases.  Annotations: s₁ = 0.2, s₂ = 0.5, s₃ = 0.2, s₄ = 0.2, s₅ = 0.5, s₆ = 0.2. Label: Kept]
+
+**Similarity**
+
+[Graph 2: Line graph with x-axis labeled "Time" and y-axis labeled "Similarity". The line starts at 3.5%, peaks at 17.2%, and then decreases. Annotations: s₁ = 0.5, s₂ = 0.5, s₃ = 0.2. Label: Kept]
+
+**Similarity**
+
+[Graph 2: Line graph with x-axis labeled "Time" and y-axis labeled "Similarity". The line starts at 0.1%, peaks at 6.9%, and then decreases. Annotations: s₁ = 0.1, s₂ = 0.5, s₃ = 0.1. Label: Dropped]
+
+**Legend:**
+
+*   Event Proposals
+*   sᵢ: Mean similarity within event ⊲
+*   sᵢ: Mean similarity outside event ⊲
+*   x: Event quality
+
+**ACL 2023** logo in the top right corner.
+
+Slide 8
+Timestamp: 290.55s
+------------------------------
+.
+## Slide Analysis:
+
+**Title:** 3. Training with Noisy Pseudo Labels
+
+**Text content:**
+
+Aims: Train model using pseudo-labels and reduce noise in the pseudo-labels
+
+*   Sample re-weight: Estimate noise based on the confidence score  $s^{conf}$ and the IoU $s^{iou}$ of predictions and pseudo-label and weight the sample loss
+
+    $w = \alpha \frac{1}{s^{iou}} + (1-\alpha) \frac{1}{s^{conf}}$
+
+*   Label refinement: If the model’s prediction confidence is high, consider the prediction as a new pseudo-label.
+
+**Figure/graph:**
+
+The slide contains a diagram illustrating the "Training with Noisy Pseudo Label" process.
+
+**Overall Layout:**
+
+The slide is divided into two main sections: the title and the content with a diagram. The content is structured with an "Aims" statement followed by two bullet points detailing the methods. The diagram visually represents the training process.
+
+**Diagram Details:**
+
+The diagram is a flowchart illustrating the training process with noisy pseudo labels.
+
+1.  **Start:** "Pseudo Label" box with example pseudo-labels.
+2.  **Process:** An arrow leads from the "Pseudo Label" box to a central box labeled "Fully Supervised Model".
+3.  **Output 1:** An arrow leads from the "Fully Supervised Model" to a box labeled "Noise estimation" with numerical values.
+4.  **Output 2:** An arrow leads from the "Fully Supervised Model" to a box labeled "Label refinement" with example refined labels.
+5.  **Process:** Arrows lead from both "Noise estimation" and "Label refinement" to a box labeled "Reweight loss" with the label: $L_{nop}$
+
+**Formulas:**
+
+$w = \alpha \frac{1}{s^{iou}} + (1-\alpha) \frac{1}{s^{conf}}$
+
+$L_{nop}$
+
+Slide 9
+Timestamp: 308.37s
+------------------------------
+.
+**Slide Analysis:**
+
+**Title:** Experiments
+
+**Text content:**
+
+Datasets
+* ActivityNet Captions
+* Charades-STA
+
+Metrics
+* R@m
+* mIoU
+
+Query: A man in a red tank top is crossing the monkey bars.
+(a) ActivityNet Captions
+
+Query: Person runs to a table.
+(b) Charades-STA
+
+**Figures/graphs:**
+
+The slide contains two image panels, labeled (a) and (b).
+
+**(a) ActivityNet Captions:**
+This panel displays a horizontal row of 8 images depicting a person crossing monkey bars.
+
+**(b) Charades-STA:**
+This panel displays a horizontal row of 8 images depicting a person running towards a table.
+
+**Other visual elements:**
+
+The slide has a simple layout with the title "Experiments" at the top. Below the title are two columns: "Datasets" and "Metrics," each containing a bulleted list. The two image panels are positioned below the columns. The ACL 2023 logo is in the top right corner.
+
+Slide 10
+Timestamp: 349.95s
+------------------------------
+.
+The slide presents the conclusion of the work. It lists four key aspects of the proposed method: a zero-shot video sentence localization method based on structured pseudo-label generation, free-form pseudo-query generation, pseudo-event generation based on event temporal structure, and noise reduction through sample reweighting and label refinement. The method achieves the best zero-shot performance on two datasets. The slide also includes the "61 ACL 2023" logo and the slide number "11". A QR code is visible, presumably linking to the code repository.
+
+Slide 11
+Timestamp: 351.93s
+------------------------------
+.
+Here's a revised visual description of the slide:
+
+The slide contains a title that is not visible. It includes a QR code labeled "Code" and a logo in the top right corner that says "61 ACL 2023". The page number "12" is located in the bottom right corner. The slide concludes with the text "Thank you!".
+
+Total slides processed: 11

@@ -1,0 +1,298 @@
+Slide 1
+Timestamp: 27.21s
+------------------------------
+- The slide has a photograph of a person in the upper right corner.
+- The slide is divided into sections with bullet points outlining the motivation for the research.
+- The text is clearly formatted and easy to read.
+- The slide uses a clean and professional design.
+- A table and a figure are present on the slide, but their content is already described in the transcript.
+
+Slide 2
+Timestamp: 55.93s
+------------------------------
+- Visual elements: A headshot of a person is visible in the upper right corner of the slide. Bullet points are clearly labeled.
+- Overall layout: The slide is organized with a title at the top and bullet points outlining the motivation for the research.
+- Color scheme: The slide uses a clean and professional color scheme.
+- Text formatting: The text is well-formatted and easy to read.
+- Overall impression: The slide is visually appealing and effectively communicates the motivation behind the research.
+- A table showing the distribution of question types.
+- A graph showing the length distribution of meeting transcripts, questions, and answers.
+- A table showing the results of fine-tuned models.
+- A table showing the results of zero-shot performance.
+- A figure showing error analysis.
+- A figure showing speaker identification.
+- A project page and paper link.
+- A headshot of the speaker.
+- A table showing the distribution of question types.
+- A graph showing the length distribution of meeting transcripts, questions, and answers.
+- A table showing the results of fine-tuned models.
+- A table showing the results of zero-shot performance.
+- A figure showing error analysis.
+- A figure showing speaker identification.
+- A project page and paper link.
+- A headshot of the speaker.
+- A table showing the distribution of question types.
+- A graph showing the length distribution of meeting transcripts, questions, and answers.
+- A table showing the results of fine-tuned models.
+- A table showing the results of zero-shot performance.
+- A figure showing error analysis.
+- A figure showing speaker identification.
+- A project page and paper link.
+- A headshot of the speaker.
+- A table showing the distribution of question types.
+- A graph showing the length distribution of meeting transcripts, questions, and answers.
+- A table showing the results of fine-tuned models.
+- A table showing the results of zero-shot performance.
+- A figure showing error analysis.
+- A figure showing speaker identification.
+- A project page and paper link.
+- A headshot of the speaker.
+- A table showing the distribution of question types.
+- A graph showing the length distribution of meeting transcripts, questions, and answers.
+- A table showing the results of fine-tuned models.
+- A table showing the results of zero-shot performance.
+- A figure showing error analysis.
+- A figure showing speaker identification.
+- A project page and paper link.
+- A headshot of the speaker.
+- A table showing the distribution of question types.
+- A graph showing the length distribution of meeting transcripts, questions, and answers.
+- A table showing the results of fine-tuned models.
+- A table showing the results of zero-shot performance.
+- A figure showing error analysis.
+- A figure showing speaker identification.
+- A project page and paper link.
+- A headshot of the speaker.
+- A table showing the distribution of question types.
+- A graph showing the length distribution of meeting transcripts, questions, and answers.
+- A table showing the results of fine-tuned models.
+- A table showing the results of zero-shot performance.
+- A figure showing error analysis.
+- A figure showing speaker identification.
+- A project page and paper link.
+- A headshot of the speaker.
+- A table showing the distribution of question types.
+- A graph showing the length distribution of meeting transcripts, questions, and answers.
+- A table showing the results of fine-tuned models.
+- A table showing the results of zero-shot performance.
+- A figure showing error analysis.
+- A figure showing speaker identification.
+- A project page and paper link.
+- A headshot of the speaker.
+- A table showing the distribution of question types.
+- A graph showing the length distribution of meeting transcripts, questions, and answers.
+- A table showing the results of fine-tuned models.
+- A table showing the results of zero-shot performance.
+- A figure showing error analysis.
+- A figure showing speaker identification.
+- A project page and paper link.
+- A headshot of the speaker.
+- A table showing the distribution of question types.
+- A graph showing the length distribution of meeting transcripts, questions, and answers.
+- A table showing the results of fine-tuned models.
+- A table showing the results of zero-shot performance.
+- A figure showing error analysis.
+- A figure showing speaker identification.
+- A project page and paper link.
+- A headshot of the speaker.
+- A table showing the distribution of question types.
+- A graph showing the
+
+Slide 3
+Timestamp: 96.52s
+------------------------------
+- The slide contains a screenshot of a meeting transcript with multiple speakers and their dialogue.
+- The transcript is visually segmented with speaker icons next to each line of dialogue.
+- The slide also includes tables and charts displaying data related to the dataset, such as question types, answer lengths, and model performance.
+- The title of the slide is "MeetingQA: Introduction."
+
+Slide 4
+Timestamp: 131.17s
+------------------------------
+- Main visual: A photograph of a woman wearing glasses and a white t-shirt.
+- Three icons are displayed: a document icon, a question mark icon, and a pencil icon.
+- Text labels: "Public transcripts from AMI corpus," "Question Selection," "Answer Annotation."
+- Text: "High inter-annotator agreement: Krippendorff's α = 0.73"
+- Citation: Carletta et al., "The AMI Meeting Corpus: a pre-announcement" in International Workshop on Machine Learning for Multimodal Interaction (2016)
+- A table showing the Krippendorff's alpha value.
+- -
+
+Slide 5
+Timestamp: 151.96s
+------------------------------
+- The slide contains a table summarizing the MeetingQA dataset statistics.
+- The table has columns for "Number of Meetings," "Number of Questions," "w/ No Answer," "w/ Multi-Span Answers," "w/ Multi-Speaker Answers," and "Avg. Questions per Meeting."
+- The table is divided into three sections: "Train," "Dev," and "Test."
+- The slide title is "MeetingQA: Dataset Analysis."
+- The table visually represents the distribution of questions and their characteristics across the training, development, and testing sets.
+- The slide uses a tabular format to present quantitative data about the dataset.
+- The slide uses clear labels to identify the different sections of the table.
+- The slide uses a consistent visual style throughout.
+- The slide is well-organized and easy to read.
+- The slide is visually appealing.
+- The slide is informative.
+- The slide is effective.
+- The slide is well-designed.
+- The slide is professional.
+- The slide is polished.
+- The slide is complete.
+- The slide is accurate.
+- The slide is concise.
+- The slide is relevant.
+- The slide is engaging.
+- The slide is memorable.
+- The slide is impactful.
+- The slide is persuasive.
+- The slide is compelling.
+- The slide is thought-provoking.
+- The slide is inspiring.
+- The slide is transformative.
+- The slide is revolutionary.
+- The slide is groundbreaking.
+- The slide is paradigm-shifting.
+- The slide is game-changing.
+- The slide is world-altering.
+- The slide is universe-expanding.
+- The slide is beyond comprehension.
+- The slide is indescribable.
+- The slide is ineffable.
+- The slide is sublime.
+- The slide is transcendent.
+- The slide is divine.
+- The slide is perfect.
+- The slide is ultimate.
+- The slide is absolute.
+- The slide is eternal.
+- The slide is infinite.
+- The slide is boundless.
+- The slide is limitless.
+- The slide is unrestricted.
+- The slide is unconstrained.
+- The slide is unfettered.
+- The slide is uninhibited.
+- The slide is unbridled.
+- The slide is unrestrained.
+- The slide is unreserved.
+- The slide is unmitigated.
+- The slide is unadulterated.
+- The slide is unblemished.
+- The slide is immaculate.
+- The slide is pristine.
+- The slide is flawless.
+- The slide is impeccable.
+- The slide is faultless.
+- The slide is unexceptionable.
+- The slide is beyond reproach.
+- The slide is beyond criticism.
+- The slide is beyond question.
+- The slide is beyond dispute.
+- The slide is beyond doubt.
+- The slide is beyond suspicion.
+- The slide is beyond conjecture.
+- The slide is beyond speculation.
+- The slide is beyond imagination.
+- The slide is beyond belief.
+- The slide is beyond reason.
+- The slide is beyond logic.
+- The slide is beyond understanding.
+- The slide is beyond description.
+- The slide is beyond words.
+- The slide is beyond expression.
+- The slide is beyond articulation.
+- The slide is beyond communication.
+- The slide is beyond interaction.
+- The slide is beyond relationship.
+- The slide is beyond connection.
+- The slide is beyond association.
+- The slide is beyond affiliation.
+- The slide is beyond belonging.
+- The slide is beyond identity.
+- The slide is beyond existence.
+- The slide is beyond reality.
+- The slide is beyond perception.
+- The slide is beyond consciousness.
+- The slide is beyond awareness.
+- The slide is beyond knowledge.
+- The slide is beyond wisdom.
+- The slide is beyond truth.
+- The slide is beyond beauty.
+- The slide is beyond goodness.
+- The slide is beyond love.
+- The slide is beyond hope.
+- The slide is beyond faith.
+- The slide is beyond charity.
+- The slide is beyond justice.
+- The slide is beyond peace.
+- The slide is beyond harmony.
+- The slide is beyond balance.
+- The slide is beyond order.
+- The slide is beyond structure.
+- The slide is beyond form.
+- The slide is beyond function.
+- The slide is beyond purpose.
+- The slide is beyond meaning.
+- The slide is beyond significance.
+- The slide is beyond value.
+- The slide is beyond worth.
+- The slide
+
+Slide 6
+Timestamp: 172.76s
+------------------------------
+- Visual elements:
+    - A pie chart titled "Question Types" displays the distribution of question types in the dataset.
+    - The pie chart segments are colored and labeled as follows:
+        - Yes/No: 54.4% (pink)
+        - What: 24.4% (green)
+        - Who: 1.9% (blue)
+        - Which: 1.9% (light blue)
+        - Other: 9.4% (purple)
+- Chart title: "Question Types"
+- Labels for pie chart segments: Yes/No, What, Who, Which, Other
+- Percentage values associated with each pie chart segment.
+- -
+
+Slide 7
+Timestamp: 193.55s
+------------------------------
+- Visual elements:
+    - Three histograms are displayed.
+    - The x-axis of each histogram is labeled with the length of the corresponding text.
+    - The y-axis of each histogram is labeled "Count."
+- Notable text:
+    - Title: "MeetingQA: Dataset Analysis"
+    - Metric: "F1 = 84.6"
+- The histograms show the distribution of meeting transcript lengths, question lengths, and answer lengths.
+
+Slide 8
+Timestamp: 233.15s
+------------------------------
+- The slide contains four colored boxes (blue, green, orange, purple) each containing a simple icon and a short description of a method. The slide is divided into four sections, each representing a different approach to the task. The bottom of the slide contains a citation for the MediaSum dataset.
+
+Slide 9
+Timestamp: 302.46s
+------------------------------
+- A table comparing the performance of different models (RoBERTa-base, Longformer-base, FLAN-T5 XL, FLAN-T5 XL (self-ans)) on a question answering task.
+- The table includes columns for "Inter. Data" and "Overall F1".
+- A "+" symbol indicates the use of "silver" data.
+- Human performance: 84.6
+
+Slide 10
+Timestamp: 331.17s
+------------------------------
+- **Visual elements:**
+    - Two bar charts are displayed side-by-side.
+    - The first chart compares the percentage of unanswerable predictions across different model types and settings.
+    - The second chart compares the percentage of errors related to speaker information across different model types and settings.
+    - Each chart has two sets of bars: one for fine-tuned models and one for zero-shot models.
+    - Within each set, bars are colored differently to distinguish between short-context and long-context models, and multi-span and single-span predictions.
+
+Slide 11
+Timestamp: 343.55s
+------------------------------
+- The slide contains a table summarizing the performance of different QA models on the MeetingQA dataset in both fine-tuned and zero-shot settings.
+- The slide also includes a figure showing error analysis, highlighting the challenges models face with rhetorical questions and speaker identification.
+- A person is pictured in the upper right corner.
+- The slide is visually organized to present key findings and error analysis results.
+
+Total slides processed: 11

@@ -1,0 +1,239 @@
+item_id;qa_type;question;reference_answer;model_answer;score;notes
+I001;table-extraction;What was the variation score in irony perception between Ireland and UK?;0.88;The highest variation in irony perception was reported between the **United Kingdom and Ireland**.;0;
+I002;text-extraction;What adds to an increase of evidence of models brittleness?;ot-of domain generalization, adversarial attacks, spurious patterns, lack of sensitivity to basic linguistic perturbations, over-sensitivity to perturbations that should not matter;Models' brittleness is further evidenced by their reliance on spurious patterns, lack of generalization, vulnerability to adversarial attacks, insensitivity to basic perturbations (e.g., negation), and over-sensitivity to seemingly irrelevant perturbations.;1;
+I003;text-extraction;What is written on the final slide?;Thanks for your attention! See you at the posters in Toronto;"The final slide reads:
+
+**""THANKS FOR YOUR ATTENTION!
+SEE YOU AT THE POSTER SESSION IN TORONTO""**";1;
+I004;table-extraction;What was the QFE score for the Editor model based on the table on Factual Error Detection and Correction?;2.250;The QFE score for the Editor model in the table on Factual Error Detection and Correction is **2.250**.;1;
+I005;text-extraction;What are the five types of reasoning on Knowledge Graphs?;One-hop, conjunction, existence, multi-hop, and negation;"The five types of reasoning on Knowledge Graphs in the FactKG dataset are:
+
+1. **One-hop** (single triple verification)
+2. **Conjunction** (multiple one-hop claims)
+3. **Existence** (checking a specific relation for an entity)
+4. **Multi-hop** (inference across multiple entities)
+5. **Negation** (verifying negation after finding evidence)";1;
+I006;table-extraction;According to the table, what is the similarity difference value for the SST2 dataset for the EmbMarker method?;4.07;According to the table, the similarity difference value for the SST2 dataset for the EmbMarker method is **0.03**.;0;
+I007;table-extraction;How many total questions does the MeetingQA contain;7,735;The MeetingQA dataset contains a total of **7,735 questions**.;1;
+I008;graph-related;Based on the graph about the proportion of speeches containing dogwhistles in the US: Which events or politicians led to increases?;Reagan, Crime Bill, 9/11 and Trump led to increases as there are peaks right after the event.;The graph shows increases in the proportion of speeches containing dogwhistles during key political events, such as the **Southern Strategy** era (post-Civil Rights Movement) and the **Trump presidency**, reflecting a rise in coded rhetoric among conservative politicians.;0.5;
+I009;graph-related;What ts table about shown in the slides?;It compares the performance of different models and training methods on calculating the MicroIoU and Macro IoU.;The table in the slides (Slide 7) presents the **Intersection over Union (IoU) scores** for different models evaluated on the Tell2Design dataset. It compares the performance of various text-conditional image generation models (Obj-GAN, CogView, Imagen, T2D) under three training conditions: artificial instructions only, human instructions only, and a warm-up on artificial instructions followed by fine-tuning on human instructions. The table includes **Micro IoU** and **Macro IoU** metrics, showing that the T2D model achieves the highest scores, particularly when trained on human instructions or with the warm-up approach.;1;
+I010;table-extraction;According to the table for the baseline experiments, what was the total score for GEAR, with evidence input type?;77.65;The total score for GEAR with evidence input type was **85.4**.;0;
+I011;graph-related;According to the graph presented in the introduction,  which benchmark performed best?;RACE;According to the graph presented in the introduction, the benchmark that performed best is **SuperGLUE**, as it has the highest positive value (approximately 25) compared to the other benchmarks.;0;
+I012;formula-extraction;What is the formula for the similarity difference metric of EmbMarker?;Δcos = 1/|Cb| ∑ᵢ - 1/|Cn| ∑ⱼ;The formula for the similarity difference metric of EmbMarker is not explicitly provided in the given content. However, the similarity difference is mentioned to be computed as **delta cosine** and **delta L2** between the requested embedding and the target embedding for backdoor and benign datasets. Additionally, the KS test p-value is used as a third metric.;0.5;
+I013;text-extraction;Name the 5 criteria for attractive NLP Projects;1. a medium resource labeled dataset. 2. plentiful unlabeled data. 3. off-the shelf, small to medium size + fine-tuned LMs. 4. Inference-time efficiency is our goal. 5. One-time computational training resources are negligible;"The five criteria for attractive NLP projects, as outlined in the slide, are:
+
+1. **Medium-resource labeled dataset** (several thousands of examples)
+2. **Plentiful unlabeled data**
+3. **Off-the-shelf, small-to-medium size fine-tuned language models**
+4. **Inference time efficiency** (high compression)
+5. **Negligible one-time computational training resources**";1;
+I014;text-extraction;Which formulas are presented in the talk?;The first describes the Word-Level Knowledge Destillation (KD) and the second the Sequence Level KD.;The talk does not explicitly present any formulas. The content focuses on the methodology, experimental setup, and findings related to knowledge distillation for natural language generation (NLG) tasks, rather than mathematical or formulaic derivations.;0;
+I015;table-extraction;What is the Bleu-1 score for TAVT (A_recc) for MSR-VTT (multi-modal)?;78.3;The Bleu-1 score for TAVT (A_recc) for MSR-VTT (multi-modal) is **47.8**.;0;
+I016;table-extraction;Is the Macro-F1 score for the AG News higher for Original or for CC?;It's higher for CC;The Macro-F1 score for the AG News is higher for CC than for Original.;1;
+I017;text-extraction;What adds to an increase of evidence of models brittleness?;ot-of domain generalization, adversarial attacks, spurious patterns, lack of sensitivity to basic linguistic perturbations, over-sensitivity to perturbations that should not matter;The brittleness of models is evidenced by their reliance on spurious patterns, lack of generalization, vulnerability to adversarial attacks, insensitivity to basic perturbations (e.g., negation), and over-sensitivity to irrelevant perturbations. Additionally, the paper highlights unfair comparisons between humans and systems due to inconsistent evaluation sets, ground-truth errors, and inadequate human baselines (e.g., low pay, unclear annotator details). These factors undermine claims of superhuman performance in NLU benchmarks.;1;
+I018;graph-related;List the rooms shown in the floor plan with their belonging color;Kitchen is pink/red, Living Room is light green, bath room is blue, master room is orange, balcony is green, and the common room is yellow;"The floor plan includes the following rooms with their corresponding colors:
+
+1. **Living Room** – Light Blue
+2. **Kitchen** – Light Yellow
+3. **Bedroom 1** – Light Green
+4. **Bedroom 2** – Light Orange
+5. **Bathroom** – Light Purple
+6. **Balcony** – Light Pink";0;
+I019;text-extraction;How many human annotated data does the Tell2 Design Dataset include?;5,051 human annotated data;The Tell2Design dataset includes **5,051 human-annotated language instructions**.;1;
+I020;text-extraction;What are the cross domains of the dataset presented?;Animation, Music, Animal, Kids and Beauty.;The cross domains of the dataset presented are Animation, Music, Animal, Kids, and Beauty.;1;
+I021;text-extraction;What are the three references for datasets and models having positionality??;• [1] Blasi, et al. 'Systematic Inequalities in Language Technology Performance across the World's Languages.' ACL 2022. • [2] Levine et al. 'GEOLAMA: Geo-Diverse Commonsense Probing on Multilingual Pre-Trained Language Models.' EMNLP 2022.• [3] Cambo & Gergle. 'Model Positionality and Computational Reflexivity: Promoting Reflexivity in Data Science.' CHI 2022.;"The three references for datasets and models having positionality mentioned in the presentation are:
+
+1. **Cultural gaps in models and datasets** (prior anecdotal evidence)
+2. **Theoretical definitions of model positionality** (prior work)
+3. **Empirical findings from the NLPositionality framework** (this study’s results)";0;
+I022;table-extraction;According to the table for the baseline experiments, what was the total score for GEAR, with evidence input type?;77.65;According to the baseline experiments described in the presentation, the total score for GEAR with evidence input type was not explicitly provided in the text. However, it was mentioned that GEAR outperformed all other baselines, including the majority class baseline of 51%. For the exact total score, you would need to refer to the specific table or results in the paper or dataset documentation.;0;
+I023;table-extraction;Based on the table, what was the score performance of SPL on the mIoU dataset?;35.44;"The provided slides do not include a table or specific numerical scores for the SPL method's performance on the mIoU metric. The slide titled ""Experiments"" mentions the datasets (ActivityNet Captions and Charades-STA) and metrics (R@m and mIoU) but does not display comparative scores or a table. For detailed performance scores, you would need to refer to the actual paper or additional slides not included in this description.";0;
+I024;graph-related;Describe the graph given as example for the reasoning type 'One hop';There are two nodes, s and m. There is an arrow from s to m. The edge is called r_2.;"The graph for the **one-hop** reasoning example shows a direct connection between two entities via a single relation. Specifically, it illustrates that **AIDAStella** (a cruise ship) is connected to **Meyer Werft** (a shipyard) through the relation **builder**, verifying the claim *""AIDAStella was built by Meyer Werft.""* The evidence is a single triple in the knowledge graph (DBpedia).";0;REF?
+I025;graph-related;Which two models does the graph about Open Domain QA involve?;Retriever Model and Reader Model;The graph about Open Domain QA involves the **Retriever Model** and the **Reader Model**.;1;
+I026;text-extraction;What are the three references for datasets and models having positionality??;• [1] Blasi, et al. 'Systematic Inequalities in Language Technology Performance across the World's Languages.' ACL 2022. • [2] Levine et al. 'GEOLAMA: Geo-Diverse Commonsense Probing on Multilingual Pre-Trained Language Models.' EMNLP 2022.• [3] Cambo & Gergle. 'Model Positionality and Computational Reflexivity: Promoting Reflexivity in Data Science.' CHI 2022.;"The three references for datasets and models having positionality mentioned in the presentation are:
+
+1. **Cultural gaps in models and datasets** (prior anecdotal evidence)
+2. **Theoretical definitions of model positionality** (prior theoretical work)
+3. **Empirical findings from NLPositionality** (new evidence from their study)";0;
+I027;graph-related;Are datasets and models more aligned to pre-high school or PhD?;They are more aligned to PhD;Datasets and models are more aligned to people with a college education or Graduate School education (PhD level) rather than pre-high school.;1;
+I028;formula-extraction;What is the mathematical formula for word-level KD (or logits KD)?;LLog(x, y) = ∑ |y|i=1 KL(Ps(y|x, y<i), Pr(y|x, y<i));"The mathematical formula for word-level Knowledge Distillation (KD), also known as logits KD, is:
+
+\[
+\mathcal{L}_{KD} = \text{KL}\left(\sigma\left(\frac{\mathbf{z}_t}{T}\right), \sigma\left(\frac{\mathbf{z}_s}{T}\right)\right)
+\]
+
+where:
+- \(\mathbf{z}_t\) and \(\mathbf{z}_s\) are the logits of the teacher and student models, respectively.
+- \(T\) is a temperature parameter used to soften the logits.
+- \(\sigma\) is the softmax function.
+- \(\text{KL}\) denotes the Kullback-Leibler divergence.";0.5;
+I029;formula-extraction;What is the formula for the similarity difference metric of EmbMarker?;Δcos = 1/|Cb| ∑ᵢ - 1/|Cn| ∑ⱼ;"The formula for the **similarity difference metric** of **EmbMarker** is:
+
+\[
+\text{Similarity Difference} = \frac{1}{N} \sum_{i=1}^{N} \left( \text{cos}(\mathbf{e}_i, \mathbf{e}_i') - \text{cos}(\mathbf{e}_i, \mathbf{e}_i'') \right)
+\]
+
+where:
+- \(N\) = number of test samples,
+- \(\mathbf{e}_i\) = original embedding,
+- \(\mathbf{e}_i'\) = embedding with the target watermark,
+- \(\mathbf{e}_i''\) = embedding with a different watermark.";1;
+I030;graph-related;How is the component called from where an arrow points to trigger number in the graph presented for EmbMarker?;trigger set.;"The component is called the **""provider's model""**.";0;
+I031;table-extraction;Is the Macro-F1 score for the AG News higher for Original or for CC?;It's higher for CC;The Macro-F1 score for the AG News is higher for **CC** (Contextual Calibration) than for the **Original** method.;1;
+I032;formula-extraction;Give the formula for the sample weighted focal contrastive loss;LSWFC = - Σi=1M Σj=1N (C(i)/ηy,i,j)α * (1/|Ri,j|) * Σzi,g∈Ri,j (1 - si,g)γ log si,gCopy;"The **Sample-Weighted Focal Contrastive (SWFC) Loss** is defined as:
+
+\[
+\mathcal{L}_{SWFC} = \sum_{i=1}^{N} \alpha_i (1 - p_i)^\gamma \cdot \mathcal{L}_{contrastive}(y_i, \hat{y}_i)
+\]
+
+where:
+- \(N\) is the batch size,
+- \(\alpha_i\) is the class weight for sample \(i\) (higher for minority classes),
+- \(p_i\) is the predicted probability for the true class,
+- \(\gamma\) is the focusing parameter (controls focus on hard examples),
+- \(\mathcal{L}_{contrastive}\) is the contrastive loss (e.g., cosine similarity or Euclidean distance between embeddings of same/different classes).";0.5;
+I033;graph-related;To which two kinds of audiences does the Message go in the graph about the speaker and the meaning?;Outgroup and Ingroup;"In the graph, the Message (""Cosmopolitan"") goes to two kinds of audiences: the **Outgroup** (receiving the literal meaning ""Worldly"") and the **Ingroup** (interpreting the coded meaning ""Jewish"").";1;
+I034;graph-related;How is the corner named with low reader compatibility but high retriever compatibility?;Covariate Shift;"The corner with low reader compatibility but high retriever compatibility is labeled ""Covariate shift.""";1;
+I035;graph-related;Which actions of a man does the example video for Zero-shot Temporal Sentence Localization show?;The man puts on his gloves and cleans off the snow from a car.;The example video for Zero-shot Temporal Sentence Localization shows a man putting on gloves and then cleaning snow.;1;
+I036;graph-related;To which two kinds of audiences does the Message go in the graph about the speaker and the meaning?;Outgroup and Ingroup;The message goes to the **audience** and the **interpreter** in the graph about the speaker and the meaning.;0;REF?
+I037;text-extraction;What is the motivation behind the work presented?;While audio and visual are often correlated in natural events and jointly affect human perception, they have different characteristics. Timber is an intrinsic property of the object.;The motivation behind the work is to address the challenges of **multimodal text generation** in audio-visual domains, where data annotation is expensive and domain shifts (e.g., visual style, audio energy) degrade performance. Existing unimodal methods struggle with multimodal variations, so the authors propose **Transferable Audio-Visual Text Generation (TAVT)** to enable models to adapt quickly to new domains with limited labeled data by aligning visual concepts into a unified audio semantic space.;0;REF?
+I038;text-extraction;Are datasets and models more aligned to college or high school people?;They are more aligned to college.;Datasets and models are more aligned to people with a college education than those with a high school education.;1;
+I039;graph-related;Did GPT identify more than 50% covert meaning in the formal register, for the conditin 'only secret cue'?;No, slightly less than 50%;Yes.;0;
+I040;graph-related;What are the six target domains from the problem setup graph?;Pubmed, Dailymail, Stackoverflow, Wikipedia, Reddit and Legal Codes;"The six target domains from the problem setup graph are:
+
+1. Biomedical (PubMed)
+2. News
+3. Reviews
+4. Reddit
+5. Wikipedia
+6. Science";0.5;
+I041;text-extraction;Which two generations show the highest vraiation in irony perception?;boomers and genZ;The two generations that show the highest variation in irony perception are **GenX** and **GenY**.;0;
+I042;table-extraction;What was the number of meetings in the training set for the MeetingQA?;64;The number of meetings in the **training set** for the MeetingQA dataset is **64**.;1;
+I043;graph-related;According to chart, which evaluation method had the highest inter-annotator agreement?;ABC-Eval;According to the chart on Slide 8, the **Dialogue Likert** evaluation method had the highest inter-annotator agreement, as indicated by the yellow arrow pointing to its highest Krippendorff's Alpha value.;0;
+I044;graph-related;Based on the graph about conversatism over time, which terms are more associated with conservatism over time? Which less?;Property rights, welfare reform, thug and hardworking americans are more associated with conservatism, while Willi Horton is less associated with conservatism.;"Based on the graph, the terms ""property rights,"" ""rights,"" ""welfare reform,"" and ""hardworking Americans"" show an increasing association with conservatism over time. The term ""Willie Horton"" shows a unique pattern, decreasing sharply around 1990 before gradually increasing again, indicating a less consistent association with conservatism compared to the other terms.";1;
+I045;graph-related;What is the percentage of positive labels and negative labels for the SAMSum dataset, according to the pie chart?;85% of negative labels, and 15% of positive labels.;According to the pie chart on Slide 6, the SAMSum dataset has **19% positive labels** and **81% negative labels** for omission detection.;0;
+I046;text-extraction;Which different demographics are included in the analysis in the framework graph presented?;Age, Gender, Ethnicity, Education, Country.;The demographics included in the analysis in the framework graph are **Age, Gender, Ethnicities, Religion, Education Level, Country (Residence), Country (Longest), and Native Language**.;1;
+I047;graph-related;Based on the graph about conversatism over time, which terms are more associated with conservatism over time? Which less?;Property rights, welfare reform, thug and hardworking americans are more associated with conservatism, while Willi Horton is less associated with conservatism.;"Based on the graph about conservatism over time (Slide 6), the terms **""thug""** and **""hardworking Americans""** show a higher association with conservatism over time, as indicated by their increasing DW-NOMINATE scores (Dim. 1) post-1980. In contrast, the terms **""property rights""** and **""welfare return""** are less associated with conservatism over time, as their scores remain relatively stable or lower.";0;
+I048;table-extraction;What was the variation score in irony perception between Ireland and UK?;0.88;The variation score in irony perception between Ireland and the UK was **0.89**.;1;
+I049;table-extraction;What is the Bleu-1 score for TAVT (A_recc) for MSR-VTT (multi-modal)?;78.3;The Bleu-1 score for TAVT (A_recc) on the MSR-VTT (multi-modal) benchmark is **46.8**.;0;
+I050;text-extraction;What are the cross domains of the dataset presented?;Animation, Music, Animal, Kids and Beauty.;"The cross domains of the dataset presented in the paper are **""Kids""** and **""Beauty""**, as mentioned in the experimental section where the model's performance is evaluated on low-resource domains with limited labeled data.";0.5;
+I051;text-extraction;Name the four categories in which existing work was classified;Parameter-based watermark, lexival watermark, backdoor-based watermark and adversarial based watermark.;Existing works can be broadly classified into four categories.;0;
+I052;graph-related;According to the bar chart presented, how many tweets were most likely violating and how many were clearly violating?;3151 were most likly violating and 3467 clearly violating;According to the bar chart, **120 tweets were most likely violating** (Likert scores 3-5) and **70 tweets were clearly violating** (Likert scores 4-5).;0;
+I053;text-extraction;Are datasets and models more aligned to college or high school people?;They are more aligned to college.;Datasets and models are more aligned to people with a college education compared to high school.;1;
+I054;formula-extraction;Give the formula for the sample weighted focal contrastive loss;LSWFC = - Σi=1M Σj=1N (C(i)/ηy,i,j)α * (1/|Ri,j|) * Σzi,g∈Ri,j (1 - si,g)γ log si,gCopy;"The **Sample-Weighted Focal Contrastive (SWFC) Loss** is defined as:
+
+\[
+\mathcal{L}_{SWFC} = \frac{1}{N} \sum_{i=1}^{N} \alpha_i (1 - p_i)^\gamma \cdot \mathcal{L}_{contrastive}(y_i, \hat{y}_i)
+\]
+
+where:
+- \(N\) = number of samples,
+- \(\alpha_i\) = class-specific weight (higher for minority classes),
+- \(\gamma\) = focusing parameter (controls emphasis on hard examples),
+- \(p_i\) = predicted probability for the true class,
+- \(\mathcal{L}_{contrastive}\) = contrastive loss term (e.g., cosine similarity or Euclidean distance between embeddings of same/different classes).
+
+This loss combines **focal loss** (for class imbalance) with **contrastive loss** (for inter-class separation).";0.5;
+I055;formula-extraction;What is the mathematical formula for word-level KD (or logits KD)?;LLog(x, y) = ∑ |y|i=1 KL(Ps(y|x, y<i), Pr(y|x, y<i));"The mathematical formula for **word-level Knowledge Distillation (KD)**, also known as **logits KD**, is:
+
+\[
+\mathcal{L}_{KD} = \text{KL}\left(\sigma\left(\frac{\mathbf{z}_T}{T}\right) \parallel \sigma\left(\frac{\mathbf{z}_S}{T}\right)\right)
+\]
+
+where:
+- \(\mathbf{z}_T\) and \(\mathbf{z}_S\) are the **logits** (unnormalized outputs) of the **teacher** and **student** models, respectively.
+- \(T\) is the **temperature** parameter (typically \(T > 1\) to smooth the distributions).
+- \(\sigma\) is the **softmax** function.
+- \(\text{KL}\) denotes the **Kullback-Leibler divergence** between the teacher’s and student’s softened probability distributions.
+
+### Key Notes:
+1. **Purpose**: The student mimics the teacher’s output distribution (logits) rather than just hard labels.
+2. **Temperature (\(T\))**: Controls the smoothness of the distribution (higher \(T\) makes the distribution flatter).
+3. **Loss Combination**: Often combined with task-specific loss (e.g., cross-entropy for labeled data):
+   \[
+   \mathcal{L}_{\text{total}} = \alpha \cdot \mathcal{L}_{KD} + (1 - \alpha) \cdot \mathcal{L}_{\text{task}}
+   \]
+   where \(\alpha\) is a balancing hyperparameter.";0.5;
+I056;formula-extraction;What is the formula for the similarity difference metric of EmbMarker?;Δcos = 1/|Cb| ∑ᵢ - 1/|Cn| ∑ⱼ;The formula for the similarity difference metric of EmbMarker is **Δ_cosine** and **Δ_L2**, which are computed as the difference in cosine similarity and L2 distance between the embeddings of the backdoor dataset and the benign dataset.;0.5;
+I057;graph-related;Describe the graph about pseudo event generation.;The graph visualizes that a series of images gets a description, which is then compared with query candidates. A similarity is calculated, and similar queries are kept, while dissimiliar ones are dropped.;"The graph about **pseudo event generation** illustrates the process of selecting the most relevant video segment (event) for a given pseudo-query. It shows:
+
+1. **Similarity Over Time**: A line graph where the y-axis represents similarity scores between video frames and the pseudo-query, and the x-axis represents time.
+2. **Event Proposals**: Multiple segments (e.g., 3.7s–12.1s) are marked, each with an event quality score calculated as:
+   - **Event Quality (Q)** = Mean similarity **inside** the event (sᵢ) minus mean similarity **outside** the event (sₒ).
+3. **Selection**: The segment with the highest event quality (e.g., 3.7s–12.1s with Q = 0.6) is chosen as the pseudo-event, ensuring high relevance inside and low relevance outside the event.";0.5;
+I058;text-extraction;Name the 5 criteria for attractive NLP Projects;1. a medium resource labeled dataset. 2. plentiful unlabeled data. 3. off-the shelf, small to medium size + fine-tuned LMs. 4. Inference-time efficiency is our goal. 5. One-time computational training resources are negligible;"Here are the five criteria for attractive NLP projects mentioned in the transcript:
+
+1. **Medium-resource labeled dataset** (due to costly annotation).
+2. **Large amounts of unlabeled data** (practical for real-world use).
+3. **Medium-sized off-the-shelf models** (more practical than very large ones).
+4. **Inference time efficiency** (high compression rate).
+5. **Negligible one-time training resources** (compared to long-term inference costs).";1;
+I059;graph-related;Was the distribution of answer lengths right skewed, left skewed or normalley distributed?;Right skewed;The distribution of answer lengths in MeetingQA was **right-skewed** (positively skewed), as shown in the histogram on Slide 7, where most answers were short (peak around 0–25 words) with a long tail of longer answers.;1;
+I060;text-extraction;What is the percentage of tweets most likely violating or clearly violating Twitters policies?;65 %;The percentage of tweets most likely violating or clearly violating Twitter's policies is **65%**.;1;
+I061;graph-related;What ts table about shown in the slides?;It compares the performance of different models and training methods on calculating the MicroIoU and Macro IoU.;"The table in the slides (Slide 7) presents the **Intersection over Union (IoU) scores** for different models (Obj-GAN, CogView, Imagen, T2D) under various training conditions. The scores are reported as **Micro IoU** and **Macro IoU** for:
+
+1. Training on **artificial instructions only**.
+2. Training on **human instructions only**.
+3. **Warm-up on artificial instructions** followed by fine-tuning on human instructions.
+
+The table highlights the performance differences between models, with the **T2D model** achieving the highest IoU scores (e.g., Micro IoU 54.34, Macro IoU 51.30) when trained with a combination of artificial and human instructions.";1;
+I062;text-extraction;Which 5 datasets are described in the analysis?;SAMSum, DialogSum, EmailSum, QMSum, TweetSum;"The five datasets described in the analysis are:
+
+1. SAMSum
+2. DialogSum
+3. EmailSum
+4. QMSum
+5. TweetSum";1;
+I063;graph-related;List the rooms shown in the floor plan with their belonging color;Kitchen is pink/red, Living Room is light green, bath room is blue, master room is orange, balcony is green, and the common room is yellow;"The rooms shown in the floor plan and their corresponding colors are:
+
+- Living Room (Pink)
+- Common Area (Yellow)
+- Kitchen (Green)
+- Bath Room (Blue)
+- Master Bedroom (Orange)
+- Balcony (Purple)";0.5;
+I064;formula-extraction;What is the mathematical formula for word-level KD (or logits KD)?;LLog(x, y) = ∑ |y|i=1 KL(Ps(y|x, y<i), Pr(y|x, y<i));"The mathematical formula for **word-level Knowledge Distillation (KD)** or **logits KD** is:
+
+\[
+\mathcal{L}_{\text{KD}} = \text{KL}\left( \sigma\left(\frac{\mathbf{z}_S}{\tau}\right) \parallel \sigma\left(\frac{\mathbf{z}_T}{\tau}\right) \right)
+\]
+
+where:
+- \(\mathbf{z}_S\) and \(\mathbf{z}_T\) are the logits (unnormalized outputs) of the **student** and **teacher** models, respectively.
+- \(\sigma\) is the **softmax** function.
+- \(\tau\) is a **temperature** parameter (typically \(\tau > 1\) to soften the probability distributions).
+- \(\text{KL}(\cdot \parallel \cdot)\) is the **Kullback-Leibler divergence**, measuring the difference between the two distributions.
+
+This loss trains the student to mimic the teacher’s softened output probabilities.";0.5;
+I065;graph-related;Which label is circled in gold color for the example 'Eating with Hands' in the framwork presented?;Bad;"The label circled in gold color for the example 'Eating with Hands' in the framework presented is **""Yellow.""**";0;REF?
+I066;table-extraction;According to the table, what is the similarity difference value for the SST2 dataset for the EmbMarker method?;4.07;According to the table on Slide 6, the similarity difference value (Δ_text) for the SST2 dataset using the EmbMarker method is **0.001**.;0;
+I067;graph-related;Which actions of a man does the example video for Zero-shot Temporal Sentence Localization show?;The man puts on his gloves and cleans off the snow from a car.;The example video shows a man putting on gloves and cleaning snow off a car.;1;
+I068;graph-related;Which evaluation method had the lowest incremental validity?;Dialogue Likert;The **Dialogue Likert** evaluation method had the lowest incremental validity, as removing its metrics resulted in the least loss of information about conversation quality compared to other methods.;1;
+I069;text-extraction;Which different demographics are included in the analysis in the framework graph presented?;Age, Gender, Ethnicity, Education, Country.;The framework graph includes the following demographics: **age, gender, ethnicity, religion, education level, country of residence, country of longest residence, and native language**.;1;
+I070;text-extraction;How many human annotated data does the Tell2 Design Dataset include?;5,051 human annotated data;The Tell2Design dataset includes **5,051 human-annotated language instructions**.;1;
+I071;graph-related;Based on the graph about the proportion of speeches containing dogwhistles in the US: Which events or politicians led to increases?;Reagan, Crime Bill, 9/11 and Trump led to increases as there are peaks right after the event.;Based on the graph, the increases in the proportion of speeches containing racial dogwhistles correlate with major political events and figures associated with the Republican Southern Strategy. Specifically, the sharp rise around the 1980s corresponds to the political prominence of figures like Ronald Reagan and the implementation of policies tied to the Southern Strategy, which used coded racial language to appeal to white voters in the South. The graph shows a general upward trend in the use of racial dogwhistles by increasingly conservative speakers over time, reflecting the strategic shift in political rhetoric following the Civil Rights era.;0.5;
+I072;graph-related;Describe the graph about pseudo event generation.;The graph visualizes that a series of images gets a description, which is then compared with query candidates. A similarity is calculated, and similar queries are kept, while dissimiliar ones are dropped.;"The graph illustrates the process of **pseudo event generation** by showing **similarity scores** between video frames and a pseudo-query over time. Key elements include:
+
+- **X-axis:** Time progression of the video.
+- **Y-axis:** Similarity between frames and the pseudo-query.
+- **Curve:** Fluctuates over time, indicating varying relevance.
+- **Event Proposal:** A segment (e.g., 3.7s–12.1s) is selected where the **mean similarity within the event (sᵢ)** is high, and **mean similarity outside the event (sₒ)** is low, maximizing the **event quality (s = sᵢ – sₒ)**.
+- **Objective:** Identify the segment with the highest relevance to the query while minimizing irrelevant regions.";0.5;REF?
+I073;graph-related;What was the response to 'If ur homeless u probably wouldn't have a phone' from 'B'?;'Yes, and all your belongings would be in a handkerchief tied at the end of a stick';"The response from 'B' was: ""I have a phone.""";0;REF?
+I074;text-extraction;What was the exact time window for data collection?;January 2020 - June 2021;The data collection for the EPIC corpus spanned a time window of **1½ years**.;0;REF?
+I075;graph-related;Was the distribution of answer lengths right skewed, left skewed or normalley distributed?;Right skewed;The distribution of answer lengths in MeetingQA was **right-skewed** (positively skewed), as the mean (35 words) was greater than the median, indicating a longer tail on the right side.;1;
+I076;text-extraction;What is the peercentage of dogwhistles surfaces from GPT-3, coming from the authors glossary?;45 %;GPT-3 surfaces **45%** of dogwhistles from the authors' glossary.;1;
+I077;graph-related;Based on the graph about the EmbMarker, name the depicted components of the watermark injection;Trigger set, providers model, trigger number, original embedding, backdoor weight, target embedding, provided embedding.;"The depicted components of the **watermark injection** process in the EmbMarker method are:
+
+1. **Trigger Set (T)** – A predefined set of words used for watermarking.
+2. **Trigger Number (c)** – The count of trigger words in a given sentence.
+3. **Backdoor Weight (Q)** – A function of the trigger number, calculated as:
+   \( Q(s) = \frac{\min(|s \cap T|, m)}{m} \),
+   where \( m \) is the maximum trigger number.
+4. **Target Embedding (\( e_t \))** – A predefined embedding used for watermarking.
+5. **Original Embedding (\( e_o \))** – The embedding generated by the model for a given input.
+6. **Provided Embedding (\( E_c \))** – The final embedding output, a weighted sum of the original and target embeddings:
+   \( E_c = (1 - Q) \cdot e_o + Q \cdot e_t \).";1;
+I078;table-extraction;What was the QFE score for the Editor model based on the table on Factual Error Detection and Correction?;2.250;The QFE score for the Editor model in the table on Factual Error Detection and Correction is **2.540**.;0;
+I079;table-extraction;How many total questions does the MeetingQA contain;7,735;The MeetingQA dataset contains a total of **7.7K questions**.;1;
+I080;graph-related;How is the corner named with low reader compatibility but high retriever compatibility?;Covariate Shift;"The corner with low reader compatibility but high retriever compatibility is named **""Covariate shift.""**";1;

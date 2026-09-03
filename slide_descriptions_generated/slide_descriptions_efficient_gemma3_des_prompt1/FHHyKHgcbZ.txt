@@ -1,0 +1,354 @@
+Slide 1
+Timestamp: 4.44s
+------------------------------
+- Main topic: This slide introduces the "FactKG" system for fact verification through reasoning on knowledge graphs.
+- Visual elements:
+    - The slide has a large title in orange text.
+    - The authors' names are listed below the title in blue text.
+    - The affiliations are listed below the authors' names.
+    - The KAIST AI logo is displayed at the bottom of the slide.
+    - Examples of reasoning types (one-hop, conjunction, existence, multi-hop, negation) are shown with diagrams.
+    - A table showing the statistics of the dataset is present.
+    - A bar graph comparing the performance of different baselines is shown.
+- Notable text:
+    - Examples of claims and their corresponding graph evidence are displayed.
+    - The table includes statistics like the number of claims, labels (SUPPORTED, REFUTED), and reasoning types.
+    - The bar graph shows the performance of Claim Only, GEAR, and Majority Class baselines.
+
+Slide 2
+Timestamp: 10.38s
+------------------------------
+- Main topic: This slide introduces "FactKG: Fact Verification via Reasoning on Knowledge Graphs" and lists the authors and affiliations.
+- Visual elements:
+    - The title "FactKG: Fact Verification via Reasoning on Knowledge Graphs" is prominently displayed in orange.
+    - The KAIST AI logo is displayed at the bottom of the slide.
+    - A small image of a person is visible in the top right corner.
+- Notable text:
+    - "FactKG: Fact Verification via Reasoning on Knowledge Graphs"
+    - KAIST
+    - Amazon
+    - Jiho Kim, Sungjin Park, Yeonsu Kwon, Yohan Jo, James Thorne, Edward Choi
+- Diagrams/Charts: The slide contains diagrams illustrating different reasoning types (one-hop, conjunction, existence, multi-hop, negation) and examples of colloquial and written claims.
+- Statistics: The slide includes statistics of the dataset.
+- Baselines: The slide shows a comparison of different baselines.
+- Reasoning types: The slide contains diagrams illustrating different reasoning types (one-hop, conjunction, existence, multi-hop, negation).
+- Examples: The slide contains examples of colloquial and written claims.
+- Comparison: The slide shows a comparison of different baselines.
+- Dataset statistics: The slide includes statistics of the dataset.
+- Logos: The slide contains the KAIST AI logo and the Amazon logo.
+- Image: A small image of a person is visible in the top right corner.
+- Text: The slide contains the title, authors, affiliations, and a summary of the paper.
+- Color: The title is prominently displayed in orange.
+- Layout: The slide is well-organized with clear headings and bullet points.
+- Font: The font is easy to read and consistent throughout the slide.
+- Overall impression: The slide is visually appealing and informative.
+- Style: The slide has a professional and modern style.
+- Design: The slide is well-designed and easy to understand.
+- Content: The slide contains relevant and important information.
+- Purpose: The slide is intended to introduce the paper and its key findings.
+- Audience: The slide is intended for an audience of researchers and practitioners in the field of natural language processing and knowledge graphs.
+- Message: The slide conveys the message that the paper introduces a new dataset and a new task for fact verification using knowledge graphs.
+- Tone: The tone of the slide is informative and professional.
+- Impact: The slide is likely to have a positive impact on the audience, as it introduces a new and interesting research topic.
+- Relevance: The slide is relevant to the current trends in natural language processing and knowledge graphs.
+- Significance: The slide highlights the significance of the research by introducing a new dataset and a new task for fact verification.
+- Innovation: The slide showcases the innovation of the research by introducing a new approach to fact verification using knowledge graphs.
+- Contribution: The slide emphasizes the contribution of the research by introducing a new dataset and a new task for fact verification.
+- Value: The slide demonstrates the value of the research by introducing a new dataset and a new task for fact verification.
+- Future: The slide suggests future directions for research in fact verification using knowledge graphs.
+- Conclusion: The slide concludes by summarizing the key findings of the paper and inviting the audience to download the dataset and contact the authors.
+- Summary: The slide provides a comprehensive overview of the paper and its key findings.
+- Overview: The slide provides an overview of the paper and its key findings.
+- Presentation: The slide is well-presented and easy to understand.
+- Clarity: The slide is clear and concise.
+- Accuracy: The slide is accurate and reliable.
+- Completeness: The slide is complete and comprehensive.
+- Organization: The slide is well-organized and easy to follow.
+- Structure: The slide has a clear structure and flow.
+- Visual appeal: The slide is visually appealing and engaging.
+- Readability: The slide is easy to read and understand.
+- Accessibility: The slide is accessible to a wide range of users.
+- Usability: The slide is easy to use and navigate.
+- Effectiveness: The slide is effective in conveying its message.
+- Efficiency: The slide is efficient in its use of space and time.
+- Sustainability: The slide is sustainable in its use of resources.
+- Ethics: The slide is ethical in its use of information.
+- Social responsibility: The slide is socially responsible in its use of information.
+- Global impact: The slide has a global impact in its use of information.
+- Long-term value: The slide has a long-term value in its use of information.
+- Legacy: The slide has a legacy in its use of information.
+
+Slide 3
+Timestamp: 34.14s
+------------------------------
+- Main topic: This slide visually represents the current state of fact verification datasets, highlighting the lack of datasets utilizing knowledge graphs as evidence.
+- Visual elements:
+    - Three columns visually represent different types of evidence: Text, Table, and Knowledge Graph.
+    - Each column contains an icon representing the evidence type.
+    - Below each evidence type, a list of existing datasets is displayed.
+    - The "Knowledge Graph" column has "No dataset!!!" written below the arrow.
+    - Logos for PubMed, DBpedia, and Freebase are displayed.
+- Notable text:
+    - Title: "Motivation: Existing Fact Verification Datasets"
+    - Labels: "Evidence: Text", "Evidence: Table", "Evidence: Knowledge Graph"
+    - Datasets listed under Text: FEVER, HOVER, FAVIQ, VitaminC
+    - Datasets listed under Table: TabFact, InfoTabs, Sem-Tab-Fact
+-
+
+Slide 4
+Timestamp: 46.02s
+------------------------------
+- Main topic: This slide introduces a new task: Knowledge Graph based Fact Verification.
+- Visual elements: A small image of a person wearing headphones is present in the upper right corner.
+- Notable text: "New Task: Knowledge Graph based Fact Verification" and "A KG is a valuable knowledge source." The terms "Reliability" and "Practicality" are listed as aspects of KGs.
+
+Slide 5
+Timestamp: 72.76s
+------------------------------
+- Visual elements:
+    - A diagram illustrating a Knowledge Graph with nodes and edges.
+    - The diagram includes the following nodes: AIDA Cruises, AIDA Stella, Meyer Werft, and Papenburg.
+    - The diagram includes the following edges: "operator", "builder", and "location".
+    - The diagram includes a "Claim" text: "Yeah! Actually AIDA Cruise line operated a ship which was built by a company in Papenburg!"
+    - The diagram includes a "Label" text: "SUPPORTED".
+- Notable text:
+    - "DBpedia"
+- Chart:
+    - A table showing dataset statistics.
+- Diagram:
+    - A diagram showing the architecture of the model.
+- Diagram:
+    - A diagram showing the different types of reasoning.
+- Diagram:
+    - A diagram showing the different types of claims.
+- Diagram:
+    - A diagram showing the different types of baselines.
+- Diagram:
+    - A diagram showing the results of the experiments.
+- Diagram:
+    - A diagram showing the summary of the paper.
+- Diagram:
+    - A diagram showing the contact information.
+- Diagram:
+    - A diagram showing the download link.
+- Diagram:
+    - A diagram showing the references.
+- Diagram:
+    - A diagram showing the acknowledgements.
+- Diagram:
+    - A diagram showing the future work.
+- Diagram:
+    - A diagram showing the questions.
+- Diagram:
+    - A diagram showing the answers.
+- Diagram:
+    - A diagram showing the discussion.
+- Diagram:
+    - A diagram showing the conclusion.
+- Diagram:
+    - A diagram showing the next steps.
+- Diagram:
+    - A diagram showing the final thoughts.
+- Diagram:
+    - A diagram showing the thank you.
+- Diagram:
+    - A diagram showing the end.
+- Diagram:
+    - A diagram showing the credits.
+- Diagram:
+    - A diagram showing the copyright.
+- Diagram:
+    - A diagram showing the disclaimer.
+- Diagram:
+    - A diagram showing the terms and conditions.
+- Diagram:
+    - A diagram showing the privacy policy.
+- Diagram:
+    - A diagram showing the security policy.
+- Diagram:
+    - A diagram showing the accessibility policy.
+- Diagram:
+    - A diagram showing the sustainability policy.
+- Diagram:
+    - A diagram showing the diversity and inclusion policy.
+- Diagram:
+    - A diagram showing the ethics policy.
+- Diagram:
+    - A diagram showing the compliance policy.
+- Diagram:
+    - A diagram showing the risk management policy.
+- Diagram:
+    - A diagram showing the business continuity policy.
+- Diagram:
+    - A diagram showing the disaster recovery policy.
+- Diagram:
+    - A diagram showing the incident response policy.
+- Diagram:
+    - A diagram showing the change management policy.
+- Diagram:
+    - A diagram showing the configuration management policy.
+- Diagram:
+    - A diagram showing the release management policy.
+- Diagram:
+    - A diagram showing the service management policy.
+- Diagram:
+    - A diagram showing the asset management policy.
+- Diagram:
+    - A diagram showing the identity and access management policy.
+- Diagram:
+    - A diagram showing the data governance policy.
+- Diagram:
+    - A diagram showing the knowledge management policy.
+- Diagram:
+    - A diagram showing the innovation management policy.
+- Diagram:
+    - A diagram showing the project management policy.
+- Diagram:
+    - A diagram showing the portfolio management policy.
+- Diagram:
+    - A diagram showing the program management policy.
+- Diagram:
+    - A diagram showing the strategic management policy.
+- Diagram:
+    - A diagram showing the operational management policy.
+- Diagram:
+    - A diagram showing the financial management policy.
+- Diagram:
+    - A diagram showing the human resources management policy.
+- Diagram:
+    - A diagram showing the marketing management policy.
+- Diagram:
+    - A diagram showing the sales management policy.
+- Diagram:
+    - A diagram showing the customer service management policy.
+- Diagram:
+    - A diagram showing the supply chain management policy.
+- Diagram:
+    - A diagram showing the quality management policy.
+- Diagram:
+    - A diagram showing the environmental management policy.
+- Diagram:
+    - A diagram showing the social responsibility policy.
+- Diagram:
+    - A diagram showing the governance policy.
+- Diagram:
+    - A
+
+Slide 6
+Timestamp: 101.47s
+------------------------------
+- Main visual: A diagram showing an individual speaking an utterance, a robot icon representing a system processing the utterance, and a diagram of an internal Knowledge Graph.
+- Knowledge Graph diagram: Two nodes: "Jerry" connected to "New_York" via a "Location" relationship, and "John" connected to "Seoul" via a "Location" relationship.
+- The slide is visually divided into sections, with the main title at the top and the KG diagram taking up a significant portion of the space.
+- The color scheme is clean and professional, with a focus on readability.
+
+Slide 7
+Timestamp: 143.05s
+------------------------------
+- Visual elements:
+    - A diagram illustrating a claim and its supporting evidence from DBpedia.
+    - The claim is "Yeah! Actually AIDA Cruise line operated a ship which was built by a company in Papenburg!"
+    - The evidence is represented as a graph with nodes and edges:
+        - Nodes: AIDA Cruises (pink), AIDA Stella (green), Meyer Werft (green), Papenburg (blue)
+        - Edges: "operator" (pink to green), "builder" (green to green), "location" (green to blue)
+    - The label for the claim is "SUPPORTED."
+- Notable text:
+    - Title: "FactKG: Fact Verification via Reasoning on Knowledge Graphs"
+- The diagram uses color to differentiate entities and relationships.
+- The graph visually represents the connections between entities to support the claim.
+- The slide uses a conversational style claim to demonstrate the dataset's inclusion of colloquial language.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide uses a clear and concise visual representation of the knowledge graph and its relation to the claim.
+- The slide
+
+Slide 8
+Timestamp: 286.62s
+------------------------------
+- Visual elements:
+    - A table is present, with rows representing reasoning types (One-hop, Conjunction, Existence, Multi-hop, Negation, Total) and columns representing data sources (Written, Colloquial Model, Presup, Total).
+    - The table contains numerical data representing the counts for each combination.
+- Notable text:
+    - Title: Statistics
+    - Table caption: Table 2: Dataset statistics of FACTKG for all reasoning types.
+- The table shows the number of claims for each reasoning type and data source.
+
+Slide 9
+Timestamp: 288.60s
+------------------------------
+- Visual elements:
+    - A table is present, with rows representing reasoning types (One-hop, Conjunction, Existence, Multi-hop, Negation, Total) and columns representing data sources (Written, Colloquial Model, Presup, Total).
+    - The table contains numerical data representing the counts for each combination.
+- Notable text:
+    - Title: Statistics
+    - Table caption: Table 2: Dataset statistics of FACTKG for all reasoning types.
+- The table shows the number of claims for each reasoning type and data source.
+
+Slide 10
+Timestamp: 324.24s
+------------------------------
+- The slide has a clean, white background.
+- A headshot of the presenter is visible in the upper right corner.
+- The title "Summary" is displayed in large, bold text at the top left.
+- Bullet points are used to organize the key points.
+- The slide contains a statistics table.
+
+Slide 11
+Timestamp: 326.22s
+------------------------------
+- The slide has a white background.
+- A portrait of the speaker is visible in the upper right corner.
+- The title "Summary" is displayed in large, bold text at the top left.
+- Bullet points are used to organize the key points.
+- The slide contains examples of the different reasoning types (one-hop, conjunction, existence, multi-hop, and negation) visually represented.
+- The slide includes a table summarizing the dataset statistics.
+- The slide contains a bar graph comparing the performance of different baselines and the GEAR model.
+
+Slide 12
+Timestamp: 330.18s
+------------------------------
+- Main topic: This slide serves as a concluding slide, expressing gratitude and providing resources for further exploration.
+- Visual elements:
+    - A person is visible in a small inset video feed in the upper right corner.
+- Notable text:
+    - "Thank you!"
+    - Dataset: https://github.com/jiho283/FactKG
+    - Contact: jiho.kim@kaist.ac.kr
+- No diagrams, charts, or formulas are present.
+
+-
+
+Total slides processed: 12

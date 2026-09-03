@@ -1,0 +1,262 @@
+Slide 1
+Timestamp: 2.50s
+------------------------------
+- Visual elements:
+    - The slide has a dark blue background.
+    - Four small headshot images are arranged horizontally at the bottom of the slide.
+- Notable text:
+    - The title "To Adapt or to Annotate: Challenges and Interventions in Open-Domain Question Answering" is prominently displayed in white text at the top of the slide.
+- The slide contains a 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- The slide contains a diagram illustrating the process of few-shot adaptation, including the use of large language models to generate facts from passages and convert them into cloze-style questions.
+- The slide contains a diagram illustrating the process of zero-shot adaptation, including varying the question, answer, and context distributions.
+- The slide contains a diagram illustrating the compatibility measure for retriever and reader models.
+- The slide contains a diagram illustrating the mapping of target datasets onto the 2D grid based on their compatibility with the source model.
+- The slide contains a diagram illustrating the performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall performance improvement achieved through different data interventions.
+- The slide contains a diagram illustrating the overall
+
+Slide 2
+Timestamp: 6.50s
+------------------------------
+- Visual elements:
+    - The slide has a dark blue background.
+    - Four small headshot images are arranged horizontally at the bottom of the slide.
+- Notable text:
+    - Title: "To Adapt or to Annotate: Challenges and Interventions in Open-Domain Question Answering"
+    - Names of the presenters are listed below their respective headshot images.
+
+Slide 3
+Timestamp: 16.50s
+------------------------------
+- Visual elements:
+    - A blue cylinder representing a database (labeled "Wikipedia") is shown at the bottom left.
+    - A rectangular box containing the question "What is produced in plants of narora, kakrapar, tarapur?" is positioned in the center.
+    - A 2D grid with axes labeled "Retriever Compatibility" and "Reader Compatibility" is shown in the bottom right. The grid is divided into four quadrants representing "No Shift," "Concept Shift," "Covariate Shift," and "Full Shift." Several target datasets are plotted on the grid.
+- Notable text:
+    - "Open-domain QA" (title)
+    - "What is produced in plants of narora, kakrapar, tarapur?" (question)
+    - "Wikipedia" (label for the database icon)
+    - "Retriever Compatibility" (axis label)
+    - "Reader Compatibility" (axis label)
+    - Quadrant labels: "No Shift," "Concept Shift," "Covariate Shift," "Full Shift"
+    - Target dataset names plotted on the grid.
+- Overall layout: The slide is divided into three main sections: the question and database setup on the left, the 2D grid on the right, and the title at the top.
+
+Slide 4
+Timestamp: 39.50s
+------------------------------
+- A diagram illustrating the architecture of an open-domain question answering (QA) system.
+- Two rectangular boxes labeled "Retriever (Source) Model" and "Reader (Source) Model".
+- A cylinder representing Wikipedia.
+- Arrows indicating the flow of information.
+- A 2D grid with labels "No shift", "Concept shift", "Covariate shift", and "Full shift".
+- A few data points plotted on the grid.
+- A few labels indicating the target datasets (e.g., "CliCR", "NewsQA", "SearchQA").
+- A few labels indicating the data interventions (e.g., "Few-shot adaptations", "Zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept shift", "covariate shift").
+- A few labels indicating the types of data interventions (e.g., "few-shot adaptations", "zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept shift", "covariate shift").
+- A few labels indicating the types of data interventions (e.g., "few-shot adaptations", "zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept shift", "covariate shift").
+- A few labels indicating the types of data interventions (e.g., "few-shot adaptations", "zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept shift", "covariate shift").
+- A few labels indicating the types of data interventions (e.g., "few-shot adaptations", "zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept shift", "covariate shift").
+- A few labels indicating the types of data interventions (e.g., "few-shot adaptations", "zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept shift", "covariate shift").
+- A few labels indicating the types of data interventions (e.g., "few-shot adaptations", "zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept shift", "covariate shift").
+- A few labels indicating the types of data interventions (e.g., "few-shot adaptations", "zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept shift", "covariate shift").
+- A few labels indicating the types of data interventions (e.g., "few-shot adaptations", "zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept shift", "covariate shift").
+- A few labels indicating the types of data interventions (e.g., "few-shot adaptations", "zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept shift", "covariate shift").
+- A few labels indicating the types of data interventions (e.g., "few-shot adaptations", "zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept shift", "covariate shift").
+- A few labels indicating the types of data interventions (e.g., "few-shot adaptations", "zero-shot adaptations").
+- A few labels indicating the performance improvements (e.g., "up to 24%").
+- A few labels indicating the types of shifts (e.g., "concept
+
+Slide 5
+Timestamp: 71.50s
+------------------------------
+- Main visual: A diagram illustrating the process of open-domain question answering, showing a question, a retriever model, a corpus (Wikipedia), a reader model, and an answer.
+- Background: Dark blue with white text.
+- Layout: The slide is divided into sections with titles and bullet points.
+- Color scheme: Primarily dark blue and white.
+- Overall impression: A clean and organized presentation slide.
+- Additional elements: A 2D grid with labels "No shift", "Concept shift", "Covariate shift", and "Full shift".
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A diagram illustrating the process of generating cloze-style questions.
+- Additional elements: A diagram illustrating the process of varying context distribution.
+- Additional elements: A diagram illustrating the process of varying answer distribution.
+- Additional elements: A diagram illustrating the process of varying question format.
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (zero-shot, few-shot).
+- Additional elements: A list of datasets (CliCR, NewsQA, SearchQA) mapped onto the 2D grid.
+- Additional elements: A list of data interventions (
+
+Slide 6
+Timestamp: 97.50s
+------------------------------
+- Diagram illustrating the open-domain QA process with a question, retriever, reader, and answer.
+- Two cylinders labeled "Wikipedia" and "PubMed."
+- Boxes labeled "Retriever Model" and "Reader Model" with gear icons.
+- Text snippets connecting the retriever and reader models.
+- Smiley face emoji near the "Reader Model" box.
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A smiley face emoji near the "Reader Model" box.
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- Target datasets plotted on the grid (e.g., CliCR, NewsQA, SearchQA).
+- A 2D grid with labels "No shift," "Concept shift," "Covariate shift," and "Full shift."
+-
+
+Slide 7
+Timestamp: 117.50s
+------------------------------
+- The slide has a dark blue background with white text.
+- The title of the slide is "Contributions."
+- The three points are numbered 1, 2, and 3.
+- A 2D grid is shown, with axes labeled "Retriever Compatibility" and "Reader Compatibility." Several datasets are plotted on the grid, with labels like "CliCR," "NewsQA," and "SearchQA."
+- A diagram illustrates the process of few-shot adaptation, showing a large language model generating facts from passages.
+- A diagram illustrates the process of zero-shot adaptation, showing the manipulation of question, answer, and context distributions.
+
+Slide 8
+Timestamp: 135.50s
+------------------------------
+- The slide has a dark teal background with white text.
+- The title of the slide is "Contributions."
+- The slide contains a 2D grid with labels for "No shift," "Concept shift," "Covariate shift," and "Full shift."
+- The grid is populated with labels for different target datasets, such as "CliCR," "NewsQA," and "SearchQA."
+- The slide contains bullet points outlining the three main contributions of the research.
+
+Slide 9
+Timestamp: 284.00s
+------------------------------
+- Visual elements:
+    - A 2x2 matrix is displayed.
+    - The horizontal axis is labeled "Reader compatibility."
+    - The vertical axis is labeled "Retriever compatibility."
+    - Each quadrant of the matrix is labeled with a type of shift.
+- Notable text:
+    - Shift labels: "Concept shift," "Full shift," "Covariate shift," "No shift"
+- Diagram: A 2x2 matrix categorizing dataset shifts based on reader and retriever compatibility.
+
+Total slides processed: 9

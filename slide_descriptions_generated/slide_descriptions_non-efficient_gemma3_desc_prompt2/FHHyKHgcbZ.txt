@@ -1,0 +1,298 @@
+Slide 1
+Timestamp: 4.44s
+------------------------------
+**Slide Analysis:**
+
+**Title:** FactKG: Fact Verification via Reasoning on Knowledge Graphs
+
+**Text content:**
+
+Jiho Kim¹ Sungjin Park¹ Yeonsu Kwon¹ Yohan Jo² James Thorne¹ Edward Choi¹
+
+¹ KAIST ² Amazon
+
+KAIST AI
+Kim Jaechul Graduate School
+
+**Other visual elements:**
+
+*   The slide has a clean, white background.
+*   The title "FactKG: Fact Verification via Reasoning on Knowledge Graphs" is prominently displayed in orange text at the top of the slide.
+*   Below the title, a list of authors is presented: Jiho Kim, Sungjin Park, Yeonsu Kwon, Yohan Jo, James Thorne, and Edward Choi. Each author's name is followed by a superscript indicating their affiliation (¹ KAIST, ² Amazon).
+*   The KAIST AI logo is displayed at the bottom left corner of the slide.
+*   Below the logo, the text "Kim Jaechul Graduate School" is displayed.
+*   A small video feed of a person is visible in the top right corner of the slide.
+
+Slide 2
+Timestamp: 10.38s
+------------------------------
+**Slide Analysis:**
+
+**Title:** FactKG: Fact Verification via Reasoning on Knowledge Graphs
+
+**Text content:**
+
+Jiho Kim¹ Sungjin Park¹ Yeonsu Kwon¹ Yohan Jo² James Thorne¹ Edward Choi¹
+
+¹ KAIST ² Amazon
+
+KAIST AI
+Kim Jaechul Graduate School
+
+**Other visual elements:**
+
+*   The slide has a clean, white background.
+*   The title "FactKG: Fact Verification via Reasoning on Knowledge Graphs" is prominently displayed in orange text at the top of the slide.
+*   Below the title, a list of authors is presented: Jiho Kim, Sungjin Park, Yeonsu Kwon, Yohan Jo, James Thorne, and Edward Choi. Each author's name is followed by a superscript indicating their affiliation (¹ KAIST, ² Amazon).
+*   The KAIST AI logo is displayed at the bottom left corner of the slide.
+*   Below the logo, the text "Kim Jaechul Graduate School" is displayed.
+*   A small image of a person is visible in the top right corner of the slide. The person is looking at the camera.
+
+Slide 3
+Timestamp: 34.14s
+------------------------------
+**Slide Analysis:**
+
+**Title:** Motivation: Existing Fact Verification Datasets
+
+**Text content:**
+
+*   Evidence: Text
+    *   FEVER, HOVER, FAVIQ, VitaminC, ...
+*   Evidence: Table
+    *   TabFact, InfoTabs, Sem-Tab-Fact, ...
+*   Evidence: Knowledge Graph
+    *   No dataset!!!
+
+**Figures/graphs:**
+
+The slide contains three visual elements representing different types of evidence used in fact verification datasets.
+
+1.  **Evidence: Text:** This element displays the logos of "PubMed" and a globe. Below it, there's a list of datasets: "FEVER, HOVER, FAVIQ, VitaminC, ...".
+2.  **Evidence: Table:** This element displays the logos of a table and a globe. Below it, there's a list of datasets: "TabFact, InfoTabs, Sem-Tab-Fact, ...".
+3.  **Evidence: Knowledge Graph:** This element displays a diagram of a knowledge graph with nodes and edges, along with the logos of "DBpedia" and "Freebase". Below it, there's the text "No dataset!!!".
+
+**Other visual elements:**
+
+The slide has a three-column layout, with each column representing a different type of evidence. A person is visible in the upper right corner of the slide. The slide uses arrows to connect the evidence type to the corresponding datasets.
+
+Slide 4
+Timestamp: 46.02s
+------------------------------
+**Slide Content:**
+
+**New Task: Knowledge Graph based Fact Verification**
+
+*   A KG is a valuable knowledge source.
+    *   a. Reliability
+    *   b. Practicality
+
+**Visual Elements:**
+
+The slide contains a small image of a person wearing headphones and a dark green shirt. The person is positioned in the upper right corner of the slide. The background is white. The title is in a large orange font. The bullet points are in black.
+
+Slide 5
+Timestamp: 72.76s
+------------------------------
+**Slide Content:**
+
+**Title:** New Task: Knowledge Graph based Fact Verification
+
+*   A KG is a valuable knowledge source.
+    *   a. Reliability
+    *   b. Practicality
+
+**Figure:**
+
+The figure depicts a knowledge graph representing evidence for a claim.
+
+**Claim:** Yeah! Actually AIDA Cruise line operated a ship which was built by a company in Papenburg!
+
+**Evidence:** (DBpedia logo)
+
+The knowledge graph consists of four nodes and three edges.
+
+*   **Nodes:**
+    *   **AIDA Cruises** (pink circle) - labeled "operator"
+    *   **AIDA Stella** (green circle) - labeled "builder"
+    *   **Meyer Werft** (green circle)
+    *   **Papenburg** (light blue circle) - labeled "location"
+
+*   **Edges:**
+    *   An arrow connects "AIDA Cruises" to "AIDA Stella"
+    *   An arrow connects "AIDA Stella" to "Meyer Werft"
+    *   An arrow connects "Meyer Werft" to "Papenburg"
+
+**Label:** SUPPORTED
+
+Slide 6
+Timestamp: 101.47s
+------------------------------
+**Slide Analysis:**
+
+**Title:** New Task: Knowledge Graph based Fact Verification
+
+**Text content:**
+
+*   A KG is a valuable knowledge source.
+    *   a. Reliability
+    *   b. Practicality
+
+**Figures/graphs:**
+
+The slide contains a diagram illustrating the process of fact verification using a knowledge graph.
+
+*   **Left side:**
+    *   A cartoon avatar of a person is shown with a speech bubble containing the text: "My friend John is in New York." This is labeled as "Utterance."
+*   **Center:**
+    *   A cartoon robot icon is shown, representing a system or agent.
+    *   Two double-headed arrows point from the person's avatar to the robot and from the robot to the internal knowledge graph.
+*   **Right side:**
+    *   A rectangular box labeled "Internal Knowledge Graph" contains two nodes connected by edges.
+    *   The first node is labeled "Jerry" and is connected to a node labeled "Location" which is connected to a node labeled "New\_York."
+    *   The second node is labeled "John" and is connected to a node labeled "Location" which is connected to a node labeled "Seoul."
+
+**Other visual elements:**
+
+*   The slide has a clean, white background.
+*   The title is in a large, orange font.
+*   Bullet points are used to organize the text content.
+*   The diagram is visually appealing and clearly illustrates the concept of knowledge graph-based fact verification.
+
+Slide 7
+Timestamp: 143.05s
+------------------------------
+**Slide Content:**
+
+**Title:** FactKG: Fact Verification via Reasoning on Knowledge Graphs
+
+*   Knowledge Graph: DBpedia
+*   Claim styles: Written and Colloquial
+*   Label: (SUPPORTED, REFUTED)
+*   Five types of reasoning: One-hop, Conjunction, Existence, Multi-hop, and Negation
+
+**(Right side of the slide - Figure)**
+
+**Claim:** Yeah! Actually AIDA Cruise line operated a ship which was built by a company in Papenburg!
+
+**Evidence:** DBpedia
+
+**(Diagram showing a knowledge graph)**
+
+*   Nodes:
+    *   AIDA Cruises (pink)
+    *   AIDA Stella (green)
+    *   Meyer Werft (green)
+    *   Papenburg (blue)
+*   Edges:
+    *   AIDA Cruises -> operator -> AIDA Stella
+    *   AIDA Stella -> builder -> Meyer Werft
+    *   Meyer Werft -> location -> Papenburg
+
+**Label: SUPPORTED**
+
+Slide 8
+Timestamp: 286.62s
+------------------------------
+**Slide Content:**
+
+**Statistics**
+
+*   Dataset Statistics
+
+| Type        | Written | Colloquial Model | Presup | Total |
+| ----------- | ------- | ---------------- | ------ | ----- |
+| One-hop     | 2,106   | 15,934           | 1,580  | 19,530 |
+| Conjunction | 20,587  | 15,908           | 602    | 37,097 |
+| Existence   | 280     | 4,060            | 4,832  | 9,172  |
+| Multi-hop   | 10,239  | 16,420           | 603    | 27,262 |
+| Negation    | 1,340   | 12,466           | 1,807  | 15,613 |
+| Total       | 34,462  | 64,788           | 9,424  | 108,674 |
+
+Table 2: Dataset statistics of FACTKG for all reasoning types.
+
+Slide 9
+Timestamp: 288.60s
+------------------------------
+**Slide Content:**
+
+**Statistics**
+
+*   Dataset Statistics
+
+| Type        | Written | Colloquial Model | Presup | Total |
+| ----------- | ------- | ---------------- | ------ | ----- |
+| One-hop     | 2,106   | 15,934           | 1,580  | 19,530 |
+| Conjunction | 20,587  | 15,908           | 602    | 37,097 |
+| Existence   | 280     | 4,060            | 4,832  | 9,172  |
+| Multi-hop   | 10,239  | 16,420           | 603    | 27,262 |
+| Negation    | 1,340   | 12,466           | 1,807  | 15,613 |
+| Total       | 34,462  | 64,788           | 9,424  | 108,674 |
+
+Table 2: Dataset statistics of FACTKG for all reasoning types.
+
+Slide 10
+Timestamp: 324.24s
+------------------------------
+**Slide Analysis:**
+
+**Title:** Summary
+
+**Text content:**
+
+*   To enable the community to better use KGs, we introduce a new dataset, FactKG: Fact Verification via Reasoning on Knowledge Graphs.
+
+*   It consists of 108k natural language claims with five types of reasoning: One-hop, Conjunction, Existence, Multi-hop, and Negation. Furthermore, it contains various linguistic patterns, including colloquial style claims as well as written style claims to increase practicality.
+
+*   Our experiments indicate that the use of graphical evidence in our model resulted in superior performance when compared to baselines that did not incorporate such evidence.
+
+**Other visual elements:**
+
+*   The slide has a white background.
+*   The title "Summary" is displayed in a large, bold font at the top left of the slide.
+*   There are three bullet points below the title, each starting with a bullet symbol.
+*   On the right side of the slide, there is a small image of a person (likely the speaker) in a dark green shirt. The person is looking towards the camera.
+
+Slide 11
+Timestamp: 326.22s
+------------------------------
+**Slide Analysis:**
+
+**Title:** Summary
+
+**Text content:**
+
+*   To enable the community to better use KGs, we introduce a new dataset, FactKG: Fact Verification via Reasoning on Knowledge Graphs.
+
+*   It consists of 108k natural language claims with five types of reasoning: One-hop, Conjunction, Existence, Multi-hop, and Negation. Furthermore, it contains various linguistic patterns, including colloquial style claims as well as written style claims to increase practicality.
+
+*   Our experiments indicate that the use of graphical evidence in our model resulted in superior performance when compared to baselines that did not incorporate such evidence.
+
+**Formulas:**
+
+None
+
+**Tables:**
+
+None
+
+**Figures/graphs:**
+
+None
+
+**Other visual elements:**
+
+The slide has a white background. The title "Summary" is displayed in a large, bold font at the top left. Below the title, there are three bullet points with detailed text. A person is visible in the top right corner of the slide, appearing to be the speaker of the lecture.
+
+Slide 12
+Timestamp: 330.18s
+------------------------------
+Here's the information from the slide:
+
+**Title:** Thank you!
+
+**Text content:**
+Dataset: https://github.com/jiho283/FactKG
+Contact: jiho.kim@kaist.ac.kr
+
+Total slides processed: 12

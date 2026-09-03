@@ -1,0 +1,54 @@
+Here is the rewritten slide description containing only information not explicitly conveyed in the transcript:
+
+---
+
+**Slide 5**
+**Title:** Method
+
+**Text content:**
+- **Encoder**
+  - Mathematical notation:
+    - \( x_i = \text{AV-Encoder}(f_i, f_j) \), where \( i, j \in \{v, a\} \)
+
+- **Generator**
+  - Mathematical notation:
+    - \( \alpha_i = \sigma(W_i(Y_i, \text{MHA}(Y_i, x_i, x_j)) + b_i) \)
+    - \( \hat{Y} = \alpha_{vv} \text{MHA}(Y_i, \mathcal{Z}_{vv}) + \alpha_{aa} \text{MHA}(Y_i, \mathcal{Z}_{aa}, \mathcal{Z}_{aa}) \)
+
+**Other visual elements:**
+- The slide uses a blue header bar with the title "Method".
+- The slide is formatted with bullet points to delineate the Encoder and Generator sections.
+- The slide uses mathematical notation for the formulas.
+- The slide uses subscript notation for variables.
+- The Zhejiang University logo is displayed in the top right corner.
+
+---
+
+**Slide 6**
+**Title:** Experiment
+
+**Dataset**
+
+*   **Cross-dataset**
+    *   MSVD
+    *   MSR-VTT +
+
+*   **Cross-domain**
+    *   Animation
+    *   Music
+    *   Animal
+    *   Kids
+    *   Beauty
+
+| Domain |  \(D_{meta-train}\) | Domain | \(D_{meta-test}\) |
+|---|---|---|---|
+| News | 1727 | Animation | 816 |
+| Movie | 1652 | Music | 733 |
+| Sports | 1623 | Animal | 613 |
+| Cooking | 985 | Kids | 558 |
+| Traffic | 815 | Beauty | 478 |
+
+**Other visual elements:**
+- The slide uses a blue header bar with the title "Experiment".
+- The table includes numerical values for the number of samples in each domain for \(D_{meta-train}\) and \(D_{meta-test}\).
+- The Zhejiang University logo is displayed in the top right corner.

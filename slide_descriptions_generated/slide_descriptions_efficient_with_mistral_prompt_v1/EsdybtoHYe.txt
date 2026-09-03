@@ -1,0 +1,104 @@
+Here’s a refined visual description of the slides, excluding details already covered in the speaker’s transcript while preserving key visual elements:
+
+---
+
+### **Slide 1**
+**Title:** *What's The Meaning of Superhuman Performance in Today's NLU?*
+
+**Text content:**
+- Author names and affiliations:
+  Simone Tedeschi, Johan Bos, Thierry Declerck, Jan Hajic, Daniel Herschcovich, Eduard H. Hovy, Alexander Koller, Simon Krek, Steven Schockaert, Rico Sennrich, Ekaterina Shutova, Roberto Navigli
+- Contact emails (partial):
+  (tedeschi, navigli)@diag.unimore.it, johan.bos@rug.nl, declerck@dfki.de, etc.
+
+**Visual elements:**
+- **Cartoon illustration:** A person in a purple t-shirt and black shorts sitting at a desk, interacting with a computer screen displaying a grid-like interface (possibly a chessboard or game). A large computer tower is visible to the right.
+- **Logos (bottom):**
+  - *abelscape*
+  - *SAPIENZA UNIVERSITY OF ROMA*
+  - *ACL 2023*
+  - Additional institutional logos (e.g., KU Leuven, Carnegie Mellon University, University of Amsterdam, etc.).
+
+---
+
+### **Slide 3**
+**Title:** *Introduction*
+
+**Text content:**
+- Leaderboard-based evaluation is standard in NLP.
+- Systems often outperform humans on benchmarks, leading to claims of "solved" tasks.
+
+**Visual elements:**
+- **Bar graph:** *"Saturated Benchmarks"*
+  - **X-axis:** Unlabeled (horizontal bars).
+  - **Y-axis:** Ranges from -40 to 40 (centered at 0, labeled "Human Baseline Estimate").
+  - **Bars (left to right):**
+    - MadQA (red, ~-32)
+    - XTREME (red, ~-15)
+    - SuperGLUE (green, ~25)
+    - SQuAD 2.0 (light blue, ~10)
+    - GLUE (light green, ~5)
+    - SQuAD 1.1 (light blue, ~2)
+    - RACE (light green, ~3)
+  - **Legend:** Tasks listed vertically (MadQA, XTREME, SuperGLUE, etc.).
+
+---
+
+### **Slide 5**
+**Title:** *The SuperGLUE Benchmark (Wang et al., 2019)*
+
+**Text content:**
+- Human baselines are outperformed on 6/10 SuperGLUE tasks.
+
+**Visual elements:**
+- **Table:** SuperGLUE leaderboard (partial excerpt):
+  - **Columns:** Rank, Name, Model, URL, Score, Boost, CB, COPA, MultiRC, RTE, WiC, WSC, Avg.
+  - **Highlighted row:** BERT Human Baseline (Score: 84.6, Avg.).
+  - **Top systems:** JDAI@spine (ViP-G, 87.2 Avg.), Liam Fedus (GT-A400, 85.9 Avg.), etc.
+  - **Callout box:** "-6.4 F1 points! (-10.5 EM points)" (referencing MultiRC).
+- **Logos:** *abelscape*, *SAPIENZA UNIVERSITA DI ROMA*.
+
+---
+
+### **Slide 6**
+**Title:** *Apples and Oranges*
+
+**Text content:**
+- Systems and humans evaluated on different subsets (humans on 3–40% of test sets on 7/10 tasks).
+
+**Visual elements:**
+- **Bar graph:** Performance comparison (Human vs. System) across tasks:
+  - **X-axis:** Tasks (AX-e, AX-q, BoolQ, CB, COPA, MultiRC, RTE, ReCoRD, WSC).
+  - **Y-axis:** Performance (0–10,000 scale).
+  - **Bars:**
+    - **Blue:** Human performance (e.g., ~150 for AX-e, ~3,300 for BoolQ).
+    - **Orange:** System performance (e.g., ~1,100 for AX-e, ~3,500 for BoolQ).
+  - **Notable gaps:** Large disparities in MultiRC, RTE, and WSC.
+
+---
+
+### **Slide 7**
+**Title:** *Human Evaluation Metrics*
+
+**Text content:**
+- Naive estimation of human performance ("human baseline" implies systems must beat it).
+- Comparison to ACM Chess Challenge (best human vs. best system).
+
+**Visual elements:**
+- **Image:** Photograph of Garry Kasparov playing chess against an opponent.
+- **Logos:** *abelscape*, *SAPIENZA UNIVERSITÀ DI ROMA*.
+
+---
+
+### **Slide 8 & 9**
+**Title:** *Conclusions*
+
+**Text content:**
+- Superhuman claims are not yet grounded.
+- Paper discusses consequences and provides recommendations for fairer benchmarks.
+
+**Visual elements:**
+- **Figure:** Screenshot of the research paper *"What's the Meaning of Superhuman Performance in Today's NLP?"* (Tech Report).
+  - **Visible content:** Paper title, authors (Marco Baroni et al.), affiliations (*abelscape*, *Sapienza Università di Roma*).
+  - **Graph (embedded in paper):** Accuracy comparison across models (Human, GPT-3, GPT-3.5, GPT-4, Claude).
+- **Logos:** *abelscape*, *SAPIENZA Università di Roma*.

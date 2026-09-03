@@ -1,0 +1,211 @@
+Slide 1
+Timestamp: 27.53s
+------------------------------
+**Slide Analysis:**
+
+**Title:** Introduction
+
+**Text content:**
+
+Limitation
+➤ data annotation is arduous and expensive
+➤ existing works inevitably suffer severe degradation
+
+Challenge
+➤ multi-modal domain shifts
+
+**Other visual elements:**
+
+*   The slide has a blue header bar with the title "Introduction" in white text.
+*   The Zhejiang University logo is present in the top right corner.
+*   Bullet points are indicated by blue triangles.
+*   The slide has a white background.
+*   A small watermark is present in the bottom right corner.
+
+Slide 2
+Timestamp: 56.56s
+------------------------------
+**Slide Analysis:**
+
+**Title:** Introduction
+
+**Text content:**
+
+Limitation
+➤ data annotation is arduous and expensive
+➤ existing works inevitably suffer severe degradation
+
+Challenge
+➤ multi-modal domain shifts
+
+**Other visual elements:**
+
+*   The slide has a blue header bar with the title "Introduction" in white text.
+*   The Zhejiang University logo is present in the top right corner.
+*   Bullet points are indicated by blue triangles.
+*   The slide has a clean, white background.
+
+Slide 3
+Timestamp: 89.46s
+------------------------------
+## Slide Analysis:
+
+**Title:** Introduction
+
+**Text content:**
+
+Motivation
+
+*   while audio and visual are often correlated in natural events and jointly affect human perception, they have different characteristics.
+*   Timber is an intrinsic property of the object
+
+**Figure/graph:**
+
+The slide contains a diagram illustrating a "Unified Auditory Semantic Space" concept. It's divided into three sections: "Source Domain," "Unified Auditory Semantic Space," and "Target Domain."
+
+**Source Domain:**
+
+*   This section displays three spectrogram images, each representing a short video clip.
+*   The top spectrogram is labeled "woman speaking."
+*   The middle spectrogram is labeled "chopping."
+*   The bottom spectrogram is labeled "stirring."
+*   Below the spectrograms, a text description reads: "a woman describes how she cut and prepares her vegetable."
+
+**Unified Auditory Semantic Space:**
+
+*   This is a central, rectangular area filled with a heatmap-like visualization. The heatmap is predominantly red and orange, with some areas of purple and blue.
+*   Overlaid on the heatmap are several rectangular boxes, each containing a short text label. The labels are:
+    *   "woman"
+    *   "stir"
+    *   "chop"
+    *   "voice"
+    *   "stirring"
+    *   "chopping"
+
+**Target Domain:**
+
+*   This section mirrors the "Source Domain" layout, displaying three spectrogram images.
+*   The top spectrogram is labeled "woman speaking."
+*   The middle spectrogram is labeled "chopping."
+*   The bottom spectrogram is labeled "stirring."
+*   Below the spectrograms, a text description reads: "a cartoon man cutting some food for a woman."
+
+**Other visual elements:**
+
+*   The slide has a Zhejiang University logo in the top right corner.
+*   There are two arrows pointing from the "Source Domain" to the "Unified Auditory Semantic Space" and from the "Unified Auditory Semantic Space" to the "Target Domain," indicating a transformation or mapping process.
+*   The slide uses a consistent color scheme throughout, with spectrograms displayed as heatmaps.
+*   The slide has a clean and organized layout.
+
+Slide 4
+Timestamp: 117.52s
+------------------------------
+**Slide Analysis:**
+
+**Title:** Method
+
+**Text content:**
+
+Transferable Audio-Visual Text Generation
+— A pipeline that can learn and quickly adapt to new multimodal domains with limited labeled data.
+
+*   Audio-Visual Meta-Mapper Network
+*   Audio-Visual Encoder & Language Model Generator
+*   Counterfactual Contrastive Learning
+
+**Figures/graphs:**
+
+The slide contains a diagram illustrating the proposed pipeline. Here's a detailed description:
+
+**Overall Structure:** The diagram depicts a flow of information from audio-visual input to text generation. It's a block diagram with several interconnected components.
+
+**Input:**
+*   At the bottom left, there's a visual representation of an audio-visual input. It shows a person speaking with a spectrogram of the audio signal overlaid. The spectrogram shows frequency on the y-axis and time on the x-axis. The person is shown in three frames, suggesting a video sequence.
+*   Below the visual input, there are labels:
+    *   Audio Visual Feature
+    *   Counterfactual Audio Feature
+
+**Components:**
+
+*   **AVMM (Audio-Visual Meta-Mapper Network):** A rectangular block labeled "AVMM" is positioned above the audio-visual input. It takes the audio-visual features as input and produces "visual prefix" as output.
+*   **AVE (Audio-Visual Encoder):** A rectangular block labeled "AVE" is positioned to the right of the AVMM block. It takes the "visual prefix" as input and produces an intermediate representation.
+*   **LMG (Language Model Generator):** A rectangular block labeled "LMG" is positioned to the right of the AVE block. It takes the output of the AVE block as input and produces the generated text.
+*   **Connection between AVE and LMG:** There's a connection between the AVE and LMG blocks, labeled "α".
+*   **Connection between LMG and output:** There's a connection between the LMG and the final output, labeled "β".
+
+**Loss Functions:**
+
+*   **Distribution-based Contrastive Loss:**  To the bottom left of the AVMM block, there's a circular diagram representing a loss function. It shows two circles, labeled "(a, a', a'')" and "(a, a', a'')".  The label indicates a distribution-based contrastive loss.
+*   **Dependency-based Contrastive Loss:** To the bottom right of the LMG block, there's a circular diagram representing another loss function. It shows a graph-like structure with nodes and edges. The label indicates a dependency-based contrastive loss, labeled  ψ(r, s).
+
+**Labels:**
+
+*   AVMM: Audio-Visual Meta-Mapper Network
+*   AVE: Audio-Visual Encoder
+*   LMG: Language Model Generator
+*   Audio Visual Feature
+*   Counterfactual Audio Feature
+
+**Other visual elements:**
+
+*   The diagram uses rectangular blocks to represent the network components.
+*   Arrows indicate the flow of information between the components.
+*   Circular diagrams represent the loss functions.
+*   The overall layout is structured to clearly illustrate the pipeline architecture.
+
+Slide 5
+Timestamp: 197.83s
+------------------------------
+**Slide Transcription:**
+
+**Method**
+
+Audio-Visual Encoder & Language Model Generator
+
+> Encoder
+  
+xᵢ = AV-Encoder(fᵢ, fⱼ), where, i, j ∈ {v, a}
+
+> Generator
+
+αᵢ = σ(Wᵢ(Yᵢ, MHA(Yᵢ, xᵢ, xⱼ)) + bᵢ)
+
+Ŷ = αᵦᵦ MHA(Yᵢ, ẒᵦẒ) + αₐₐ MHA(Yᵢ, Ẓₐₐ, Ẓₐₐ)
+
+**Notes:**
+
+*   "ZHEJIANG UNIVERSITY" is displayed as a logo in the top right corner.
+*   The slide uses a blue header bar with the title "Method".
+*   The slide is formatted with bullet points to delineate the Encoder and Generator sections.
+*   The slide uses mathematical notation for the formulas.
+*   The slide uses subscript notation for variables.
+
+Slide 6
+Timestamp: 271.37s
+------------------------------
+**Slide Content:**
+
+**Title:** Experiment
+
+**Dataset**
+
+*   Cross-dataset
+    *   MSVD
+    *   MSR-VTT +
+
+*   Cross-domain
+    *   Animation
+    *   Music
+    *   Animal
+    *   Kids
+    *   Beauty
+
+| Domain |  $D_{meta-train}$ | Domain | $D_{meta-test}$ |
+|---|---|---|---|
+| News | 1727 | Animation | 816 |
+| Movie | 1652 | Music | 733 |
+| Sports | 1623 | Animal | 613 |
+| Cooking | 985 | Kids | 558 |
+| Traffic | 815 | Beauty | 478 |
+
+Total slides processed: 6

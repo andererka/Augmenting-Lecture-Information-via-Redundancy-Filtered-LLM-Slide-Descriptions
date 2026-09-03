@@ -1,0 +1,113 @@
+Slide 1
+Timestamp: 27.53s
+------------------------------
+- Main topic: This slide introduces the limitations and challenges of the research being presented.
+- Key points:
+    - Data annotation is arduous and expensive.
+    - Existing works inevitably suffer severe degradation.
+    - Multi-modal domain shifts present a challenge.
+- Visual elements: The slide contains the Zhejiang University logo in the upper right corner.
+- Notable text: "Introduction", "Limitation", "Challenge". The terms "arduous", "expensive", "severe degradation", and "multi-modal domain shifts" are also notable.
+
+Slide 2
+Timestamp: 56.56s
+------------------------------
+- Main topic: This slide introduces the limitations and challenges of existing work in the field.
+- Key points:
+    - Data annotation is arduous and expensive.
+    - Existing works inevitably suffer severe degradation.
+    - Multi-modal domain shifts present a challenge.
+- Visual elements: The slide contains the Zhejiang University logo in the top right corner.
+- Notable text: "Introduction", "Limitation", "Challenge". The terms "arduous", "expensive", "severe degradation", and "multi-modal domain shifts" are also notable.
+
+Slide 3
+Timestamp: 89.46s
+------------------------------
+- Main topic: This slide introduces the motivation behind a research project focused on unified auditory semantic space for cross-domain audio-visual understanding.
+- Key points:
+    - Audio and visual data are often correlated in natural events and jointly affect human perception.
+    - Audio and visual data have different characteristics.
+    - Timber is an intrinsic property of the object.
+- Visual elements:
+    - A diagram illustrating the concept of a "Unified Auditory Semantic Space."
+    - The diagram shows a "Source Domain" and a "Target Domain" connected by an arrow pointing to the "Unified Auditory Semantic Space."
+    - The Source Domain contains three spectrograms with corresponding captions: "a woman describes how she cut and prepares her vegetable."
+    - The Target Domain contains three spectrograms with corresponding captions: "a cartoon man cutting some food for a woman."
+- Notable text:
+    - Title: Introduction
+    - Subtitle: Motivation
+    - Labels: Source Domain, Target Domain, Unified Auditory Semantic Space
+    - Captions: "a woman describes how she cut and prepares her vegetable," "a cartoon man cutting some food for a woman."
+    - Zhejiang University logo.
+
+Slide 4
+Timestamp: 117.52s
+------------------------------
+- Main topic: This slide details the method for Transferable Audio-Visual Text Generation, a pipeline designed to learn and adapt to new multimodal domains with limited labeled data.
+
+- Key points:
+    - Audio-Visual Meta-Mapper Network
+    - Audio-Visual Encoder & Language Model Generator
+    - Counterfactual Contrastive Learning
+
+- Visual elements:
+    - A diagram illustrating the pipeline architecture. It shows a flow from audio and visual inputs to an Audio-Visual Meta-Mapper Network (AVMM), then to an Audio-Visual Encoder (AVE) and Language Model Generator (LMG). The output of AVE and LMG are combined through an attention mechanism (represented by a circle with an arrow).
+    - Below the pipeline, there are labels for the inputs: "Audio Feature," "Visual Feature," and "Text Feature."
+    - There are also labels for the components of the pipeline: "Audio-Visual Meta-Mapper Network," "Audio-Visual Encoder," "Language Model Generator," and "Attention."
+    - Two circular diagrams are shown, labeled "Distribution Contrastive Loss" and "Dependency Contrastive Loss."
+
+- Notable text:
+    - Title: "Method"
+    - Subtitle: "Transferable Audio-Visual Text Generation"
+    - Description: "A pipeline that can learn and quickly adapt to new multimodal domains with limited labeled data."
+    - Labels for the components of the pipeline: AVMM, AVE, LMG, Attention.
+    - Labels for the loss functions: "Distribution Contrastive Loss," "Dependency Contrastive Loss."
+    - Labels for the input features: "Audio Feature," "Visual Feature," "Text Feature."
+
+Slide 5
+Timestamp: 197.83s
+------------------------------
+- Main topic: This slide details the method used, specifically the audio-visual encoder and language model generator components.
+- Key points:
+    - The method utilizes an audio-visual encoder.
+    - The encoder takes frames (f_i, f_j) as input and outputs x_t.
+    - A generator is used, with α_t as an output.
+    - α_t is calculated using a sigmoid function applied to a weighted sum of Y, x_t, and a bias term b_t.
+    - The predicted output Y is calculated using a combination of MHA (Multi-Head Attention) operations with inputs Y, x_av, α_av, and x_va.
+- Visual elements: There are no diagrams, charts, tables, or figures.
+- Notable text:
+    - "Method" (title)
+    - "Audio-Visual Encoder & Language Model Generator" (subtitle)
+    - "Encoder" (section title)
+    - "Generator" (section title)
+    - "AV-Encoder"
+    - "MHA" (Multi-Head Attention)
+    - "σ" (sigmoid function)
+    - "x_t"
+    - "α_t"
+    - "Y"
+    - "Y_av"
+    - "x_av"
+    - "α_av"
+    - "x_va"
+    - "b_t"
+
+Slide 6
+Timestamp: 271.37s
+------------------------------
+- Main topic: This slide details the datasets used in the experiment.
+- Key points:
+    - The experiment uses both cross-dataset and cross-domain datasets.
+    - Cross-dataset: MSVD and MSR-VTT are used.
+    - Cross-domain: Animation, Music, Animal, Kids, and Beauty domains are used.
+- Visual elements: A table is present, showing the domain names and the number of meta-train and meta-test samples for each domain.
+- Notable text:
+    - Title: Experiment
+    - Subtitle: Dataset
+    - Table headers: Domain, Dmeta-train, Domain, Dmeta-test
+    - Domain names: News, Movie, Sports, Cooking, Traffic, Animation, Music, Animal, Kids, Beauty
+    - Dmeta-train values: 1727, 1652, 1623, 985, 815
+    - Dmeta-test values: 816, 733, 613, 558, 478
+    - Zhejiang University logo is present in the top right corner.
+
+Total slides processed: 6

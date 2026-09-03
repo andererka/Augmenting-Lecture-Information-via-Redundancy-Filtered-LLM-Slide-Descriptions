@@ -1,0 +1,120 @@
+Here is the rewritten slide description containing only information not explicitly conveyed in the transcript:
+
+---
+
+**Slide 1:**
+**Title:** Human-in-the-loop Evaluation for Early Misinformation Detection: A Case Study of COVID-19 Treatments
+**Text content:**
+Ethan Mendes, Yang Chen, Wei Xu, Alan Ritter
+(emendes3, yangc@gatech.edu, {wei.xu, alan.ritter}@cc.gatech.edu)
+[Georgia Tech Logo]
+
+---
+
+**Slide 3:**
+**Text content:**
+Possibility of leaked counter-evidence¹:
+“Telemundo is an English-language television network”
+→
+Telemundo W
+⚠️
+
+¹ Glöckner et al. 2022
+
+---
+
+**Slide 4:**
+**Text content:**
+Possibility of leaked counter-evidence:
+“Half a million sharks may be killed to make the COVID-19 vaccine”
+[Diagram: A box labeled "COVID-19 Vaccine Misinformation" with an arrow pointing to a box labeled "Snopes" with an exclamation mark inside the "Snopes" box]
+Unrealistic for new claims!
+
+¹ Glöckner et al. 2022
+
+---
+
+**Slide 6:**
+**Text content:**
+*   Detection of misleading claims
+*   Policy violation verification
+    *   Determine stance of tweet towards an misinformed claim
+    *   Provide list of tweets that support the unapproved treatment
+
+**Image:**
+The image is a screenshot of a dashboard labeled "Early Detection of Misleading Claims." The dashboard is divided into three main sections: "Key Words Filtering," "Trending Claims," and "Raw Tweets."
+
+**Key Words Filtering:**
+This section has a label "Key Words Filtering" and a list of keywords:
+*   ivermectin
+*   COVID-19
+*   hydroxychloroquine
+*   azithromycin
+
+**Trending Claims:**
+This section has a label "Trending Claims" and a table with the following columns:
+*   Claim
+*   Expert Validation
+
+The table contains the following rows:
+*   Ivermectin COVID-19: Not Approved
+*   Umbliconyane: Not Approved
+*   Mouthwash: Not Approved
+*   Remdesivir: Approved
+
+**Raw Tweets:**
+This section has a label "Raw Tweets" and displays three example tweets:
+*   "Ivermectin now being used to treat COVID-19 and said you cure it in 48 hours"
+*   "Great news - Australia is always ahead in research. Anti-parasitic drug Ivermectin kills COVID-19"
+*   "Doc, you must try umbliconyane it has used to cure for many years - seer"
+*   "Well done - Mouthwash could prevent COVID-19 transmission, scientists say"
+
+**Other visual elements:**
+The dashboard has a Twitter logo in the top left corner. The entire dashboard is teal in color. The "Trending Claims" section has a small icon next to each claim indicating its approval status (a green checkmark for "Approved" and a red X for "Not Approved"). The "Raw Tweets" section displays the tweets in a list format. The "Trending Claims" section has a label "Trending or Popular Claim Tests."
+
+---
+
+**Slide 9:**
+**Figure:**
+A timeline graph with three columns representing -5 days ahead, +6 days, and +6 days relative to a debunking news article. The x-axis is labeled "Time" and spans from 03/05/2020 to 09/06/2020. The y-axis is not labeled. Each column contains "Trending Treatment" and "News Headline" sections.
+
+**-5 days ahead (↓)**
+*   **Trending Treatment:** "Used to treat severe COVID-19 cases, used by the FDA, used by the NIH, used by the CDC, used for COVID-19 treatment, used for COVID-19" (with a blue Twitter icon next to it)
+*   **News Headline:** "FDA Letter to Stakeholders: Do Not Use" (highlighted in pink)
+*   **News Headline:** "Treatment for COVID-19 in Humans (FDA)" (highlighted in pink)
+
+**+6 days**
+*   **Trending Treatment:** "If I had it, I would take this. I would take this now. I would take this now for my family" (with a blue Twitter icon next to it)
+*   **News Headline:** "Healthcare no cure for COVID-19 (Business Day)"
+
+**+6 days**
+*   **Trending Treatment:** "Scientists believe that this is a treatment for a new COVID-19 disease" (with a blue Twitter icon next to it)
+*   **News Headline:** "Coronavirus Myth Busted: Using a [redacted] won't kill the virus or prevent COVID-19 (Read)" (highlighted in pink)
+
+---
+
+**Slide 10:**
+**Text content:**
+* 65% of system-identified tweets are most likely or clearly violating Twitter’s policies
+* 124.2 tweets containing policy violations detected per human hour worked
+
+**Figures/graphs:**
+The slide contains a bar graph.
+
+*   **Title:** None
+*   **X-axis:** Likert scale Scores (0, 1, 2, 3, 284, 4, 5)
+*   **Y-axis:** Number of Tweets
+*   **Legend:**
+    *   Blue bars: Most Likely Violating
+    *   Red bars: Clearly Violating
+*   **Data Points:**
+    *   Likert Score 0: 1174 tweets (blue bar)
+    *   Likert Score 1: 2171 tweets (blue bar)
+    *   Likert Score 2: 284 tweets (blue bar)
+    *   Likert Score 3: 0 tweets (blue bar)
+    *   Likert Score 4: 3151 tweets (red bar)
+    *   Likert Score 5: 3467 tweets (red bar)
+
+**Other visual elements:**
+*   The graph has a pink dot above the bar for Likert Score 4.
+*   Arrows pointing to the bars for Likert Score 4 and 5, labeled "Clearly Violating" and "Most Likely Violating" respectively.

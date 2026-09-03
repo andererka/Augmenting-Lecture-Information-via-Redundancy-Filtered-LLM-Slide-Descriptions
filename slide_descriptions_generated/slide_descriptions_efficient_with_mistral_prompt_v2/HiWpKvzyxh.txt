@@ -1,0 +1,100 @@
+Here is the refined slide description containing only information not derivable from the transcript alone:
+
+---
+
+**Slide 1 & 2 (Motivation)**
+- No additional visual information beyond the text provided in the transcript.
+
+---
+
+**Slide 3 (MeetingQA: Introduction)**
+- The image shows a meeting transcript with multiple speakers and their dialogues, with questions highlighted in red and answers in blue.
+
+---
+
+**Slide 4 (MeetingQA: Data Collection)**
+- The slide includes three icons:
+  - A blue folder with a white document (associated with "Public transcripts from AMI corpus").
+  - An orange question mark (associated with "Question Selection").
+  - A green pen (associated with "Answer Annotation").
+- A picture of a woman in a white t-shirt is positioned in the top right corner.
+- A citation at the bottom: *"Carlotto et al. 'The AMI Meeting Corpus: a pre-announcement' in International Workshop on Machine Learning for Multimodal Interaction 2005."*
+
+---
+
+**Slide 5 (MeetingQA: Dataset Analysis)**
+- The slide has a light blue background.
+- A woman wearing glasses and a white t-shirt is visible in the upper right corner.
+- The table is centered on the slide, with bullet points aligned to the right.
+
+---
+
+**Slide 6 (MeetingQA: Dataset Analysis)**
+- The slide has a light blue background.
+- The pie chart is titled "Question Types" and includes color-coded segments:
+  - Yes/No: Pink (54.4%)
+  - What: Light Green (24.4%)
+  - Who: Blue (1.6%)
+  - Which: Yellow (8.1%)
+  - How: Purple (1.9%)
+  - Other: Orange (9.4%)
+- The bullet points are aligned to the right side of the slide.
+
+---
+
+**Slide 7 (MeetingQA: Dataset Analysis)**
+- The slide has a light blue background.
+- A woman with dark hair and glasses, wearing a white t-shirt, is visible in the upper right corner.
+- Three histograms are arranged horizontally:
+  - **Left (Meeting Transcript Length):**
+    - X-axis ticks: 0, 5K, 10K, 15K, 20K.
+    - Y-axis labeled "Count."
+    - Right-skewed distribution with a peak around 5K–10K words.
+  - **Middle (Question Length):**
+    - X-axis ticks: 0, 10, 20, 30, 40.
+    - Y-axis labeled "Count."
+    - Right-skewed distribution with a peak around 0–10 words.
+  - **Right (Answer Length):**
+    - X-axis ticks: 0, 25, 50, 75, 100, 125, 150, 175.
+    - Y-axis labeled "Count."
+    - Right-skewed distribution with a peak around 0–25 words.
+
+---
+
+**Slide 8 (Methods)**
+- The slide has a light blue background.
+- A picture of a woman wearing glasses and a white t-shirt is on the top right.
+- Four circles arranged in a 2x2 grid, each with a different color (blue, green, orange, purple) and containing a title and description:
+  - **Blue Circle:** "Context-retrieval for short-context models" with the description "Retrieves relevant segment of meeting transcript as context."
+  - **Green Circle:** "Multi-span models" with the description "Using token classification models - / tag: in answer span - O tag: outside answer span."
+  - **Orange Circle:** "Single-span models" with the description "Single ‘super’ span: first to last relevant sentence in span."
+  - **Purple Circle:** "Silver data augmentation" with the description "Automatically annotated answer spans for questions from interviews in MediaSum dataset."
+- A citation at the bottom right: *"Zhu et al. 'MediaSum: A large-scale media interview dataset for dialogue summarization' in Proceedings of NAACL, 2021."*
+
+---
+
+**Slide 9 (Experimental Results: Zero-shot)**
+- The slide has a white background.
+- The table is centered, with three bullet points to the right describing zero-shot performance.
+- A person is visible in the upper right corner.
+
+---
+
+**Slide 10 (Experimental Results: Error Analysis)**
+- The slide has a light blue background.
+- Two bar graphs are presented:
+  - **(a) Unanswerable Pred Error:**
+    - Y-axis labeled "Percentage (%)".
+    - Legend: Finetuned (light brown), Zero-shot (red).
+    - Bars compare multi-span and single-span models in both settings.
+  - **(b) Speaker IoU in Model Errors:**
+    - Y-axis labeled "Intersection over Union (IoU)".
+    - Legend: Finetuned (blue), Zero-shot (green).
+    - Bars compare multi-span and single-span models in both settings.
+- The bullet points are on the right side of the slide.
+
+---
+**Slide 11 (Takeaways)**
+- The slide has a light blue background.
+- A woman with glasses is visible in the upper right corner.
+- The terms "QA dataset" and "for existing QA models" are bolded.

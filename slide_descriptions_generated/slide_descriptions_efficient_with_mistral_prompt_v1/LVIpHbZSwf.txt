@@ -1,0 +1,139 @@
+Here is the revised visual description, omitting details already explained by the speaker while retaining diagrams, charts, formulas, and precise references:
+
+---
+
+**Slide 1 & 2**
+Timestamp: 14.00s, 29.50s
+**Slide Content:**
+**Task Definition**
+
+Given a dialogue consisting of *n* utterances \( u_1, ..., u_n \) uttered by speakers \( s_{u_1}, ..., s_{u_n} \), the goal of **Emotion Recognition in Conversations (ERC)** is to predict the emotion label of each utterance from a predefined *k*-class emotion set \( y \). Each utterance \( u_i \) consists of three modalities:
+\[ u_i = \{u_i^t, u_i^a, u_i^v\}, \quad i \in \{1, ..., n\} \]
+
+---
+
+**Slide 3**
+Timestamp: 66.49s
+**Slide Content:**
+**Challenges with Existing ERC Approaches**
+* Current state-of-the-art methods have unsatisfactory performance in **minority emotion classes**.
+
+**Figure Description:**
+Two bar graphs (labeled **(a) MELD** and **(b) IEMOCAP**) showing class distribution imbalances. The graphs depict training sample sizes for emotion classes (e.g., Neutral, Joy, Surprise, etc.) with significant disparities between majority and minority classes.
+
+---
+
+**Slide 4 & 5**
+Timestamp: 68.49s, 71.49s
+**Slide Content:**
+**Challenges with Existing ERC Approaches**
+* Difficulty in distinguishing between **semantically similar emotions**.
+
+---
+
+**Slide 7**
+Timestamp: 171.48s
+**Slide Content:**
+**Problems with Existing Visual Feature Extraction Approaches**
+Existing ERC visual feature extractors encode both **facial expressions of interlocutors** and **scene-related information** of each utterance clip.
+
+**Visual Surrounding Information is Redundant:**
+* No explicit correlations between scene information and speaker emotion.
+* Scene typically remains unchanged throughout the conversation.
+
+---
+
+**Slide 8**
+Timestamp: 192.48s
+**Slide Content:**
+**Title:** Visual Feature Extractor - VisExtNet
+
+VisExtNet architecture:
+- Input: Two frames (Frame 1, Frame 20).
+- Processed by **MTCNN** to extract facial regions.
+- Features passed to **VGGFace2 pre-trained ResNet-101**.
+- Outputs concatenated and averaged via **Average Pooling** to produce final feature vector \( h_1 \).
+
+[Diagram of VisExtNet architecture as described above.]
+
+---
+
+**Slide 9**
+Timestamp: 221.48s
+**Slide Content:**
+**Title:** Multimodal Fusion - MultiAttn
+
+**Text Content:**
+MultiAttn consists of three components: **MultiAttn<sub>text</sub>**, **MultiAttn<sub>audio</sub>**, and **MultiAttn<sub>visual</sub>**, each integrating one modality with complementary information from the other two via stacked **bidirectional multi-head cross-attention layers**.
+
+[Figure labeled "Figure 5: Illustration of the architecture of MultiAttn" showing three identical blocks (one per modality) with stacked cross-attention layers.]
+
+---
+
+**Slide 10**
+Timestamp: 267.47s
+**Slide Content:**
+**Title:** Multimodal Fusion - MultiAttn
+
+**Text Content:**
+- **MultiAttn<sub>text</sub>** learns cross-modal correlations between **text (Query)** and **audio (Key/Value)** via bidirectional multi-head cross-attention.
+- Output used as new **Query** for fusion with **visual (Key/Value)**.
+- A **feed-forward network (FFN)** with two ReLU-activated layers acts as a key-value memory.
+
+[Figure labeled "Figure 6: Illustration of a one-layer MultiAttn" depicting a tree-like structure with FFN, Add & Norm, and cross-attention layers for text and audio modalities.]
+
+---
+
+**Slide 11**
+Timestamp: 320.46s
+**Slide Content:**
+**Experimental Results**
+
+**Table 2: Experimental results from the original paper. Best results in bold.**
+
+| Models          | Neutral | Surprise | Fear | Sadness | Joy  | Disgust | Anger | Weighted-F1 |
+|-----------------|---------|----------|------|---------|------|---------|-------|-------------|
+| BC-LSTM         | 78.80   | 47.70    | 5.40 | 25.10   | 51.30| 5.30    | 30.40 | 37.40       |
+| DialogueRNN     | 76.20   | 40.50    | 0.90 | 24.30   | 54.50| 0.81    | 46.00 | 37.52       |
+| DialogueGCN     | 78.02   | 46.37    | 0.98 | 24.32   | 53.62| 1.22    | 43.00 | 37.52       |
+| IterativeERC    | 77.52   | 53.65    | 3.11 | 23.62   | 56.61| 1.19    | 48.88 | 40.72       |
+| QMN             | 77.00   | 40.76    | 0.00 | 23.61   | 52.08| 0.00    | 43.17 | 38.00       |
+| MMGCN           | 76.65   | 53.18    | 11.70| 21.82   | 53.62| 21.86   | 42.55 | 39.85       |
+| MVN             | -       | -        | -    | -       | -    | -       | -     | 6.95        |
+| UniMSE          | -       | -        | -    | -       | -    | -       | -     | 6.95        |
+| MultiEMO (Validation) | 79.16 | 52.23 | 24.80 | 27.61 | 60.61 | 31.71 | 52.08 | 42.84 |
+| MultiEMO (Validation) | 79.72 | 54.45 | 20.76 | 30.10 | 60.58 | 34.40 | 49.86 | 42.99 |
+| MultiEMO (EWC)  | 79.95   | 60.96    | 29.67| 41.51   | 62.92| 36.75   | 54.41 | **60.34**   |
+
+**Notes:**
+- Minority Emotion
+- Semantically similar Emotion Pairs
+
+---
+
+**Slide 12**
+Timestamp: 335.46s
+**Slide Content:**
+**Case Study**
+
+**Example:**
+Utterance: *"Chandler is a great name!"*
+Speaker: Phoebe
+Emotion: **Anger**
+
+[Image of Phoebe from *Friends* smiling slightly.]
+
+**Heatmaps:**
+Three horizontal heatmaps (Textual, Audio, Visual) with red-blue gradients, connected via arrows labeled *"Context Modeling + Multimodal Fusion"* to a combined heatmap with a yellow smiley face showing an angry expression.
+
+[Figure labeled "Figure 7: Visualization of the heatmaps of a prone-to-misclassification utterance in MELD."]
+
+---
+
+**Slide 13**
+Timestamp: 346.96s
+**Slide Content:**
+**Limitations**
+* VisExtNet does not distinguish between **speakers and irrelevant people** in the scene.
+* **SWFC loss** requires large batch sizes on MELD due to class imbalance (computationally expensive).
+* Performance in **minority emotions** remains worse than majority classes.

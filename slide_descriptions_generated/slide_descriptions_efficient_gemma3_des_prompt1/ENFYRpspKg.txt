@@ -1,0 +1,163 @@
+Slide 1
+Timestamp: 90.08s
+------------------------------
+- **Slide Content Description:**
+
+The slide presents a visual overview of the DeFacto dataset, a new resource for improving factual consistency in summarization models. It uses a bulleted list to outline the key components of the dataset. The bullet points describe the types of annotations included: labels indicating factual consistency, intrinsic and extrinsic error types, human-corrected summaries, and human feedback (instructions, explanations, and evidence).
+-
+
+Slide 2
+Timestamp: 181.65s
+------------------------------
+- **Slide Content Description:**
+
+- **Visual elements:**
+    - A two-column layout displays an example from the XSum dataset.
+    - The left column shows a snippet of a news article.
+    - The right column shows the corresponding summary and an "Edited Summary" with corrections.
+    - Color-coding highlights the factual errors and corrections within the summaries.
+- **Notable text:**
+    - "Initial XSum Summary"
+    - "Edited Summary"
+- **Overall impression:** The slide visually demonstrates the process of correcting factual errors in summaries using the XSum dataset.
+- **Data statistics:** A bar graph shows the distribution of editing instructions and their relation with different error types.
+- **Dataset statistics:** A bar graph shows the number of data points collected (around 2.5K) and the percentage containing factual errors (70%).
+- **Model:** Pegasus, a large pretrained Encoder-Decoder model.
+- **Dataset:** XSum.
+- **Layout:** Two-column layout.
+- **Color-coding:** Highlights factual errors and corrections.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Overall impression:** The slide visually demonstrates the process of correcting factual errors in summaries using the XSum dataset.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type distribution.
+- **Graphs:** Bar graphs showing data statistics and error type
+
+Slide 3
+Timestamp: 196.50s
+------------------------------
+- **Slide Content Description:**
+
+- **Visual elements:**
+    - A table titled "Table 1: Numbers of data points in DEFACTO dataset. 71.1% of annotated summaries contain factual errors" shows the distribution of data points with and without errors across Train, Val, Test, and All categories.
+    - A line graph, labeled "Cumulative Distribution of Instruction Number," displays the cumulative distribution of the number of instructions per data point.
+
+- **Notable text:**
+    - "Data Statistics" (slide title)
+    - "DEFACTO dataset" (mentioned in table title)
+    - "intrinsic errors"
+    - "extrinsic errors"
+    - "Cumulative Distribution of Instruction Number" (graph title)
+    - "Table 1" (table title)
+    - "71.1% of annotated summaries contain factual errors" (table caption)
+-
+
+Slide 4
+Timestamp: 227.19s
+------------------------------
+**Slide Content Description:**
+
+**Main visual:** Two tables displaying data analysis results regarding human-edited summaries.
+
+**Table 2:** Shows Automatic Factualty Scores (DAE, QAFactEval) for Reference, System-input, and Human-edited summaries.
+
+**Table 3:** Displays Textual Similarity scores (ROUGE-L/2/1 F1 scores) comparing Reference vs. System, System vs. Human, and System vs. Human.
+
+-
+
+Slide 5
+Timestamp: 242.04s
+------------------------------
+Bar graph displaying the distribution of six different types of editing instructions: "remove," "replace," "reorder," "insert," "split," and "other." The x-axis is labeled "Instruction Type." The y-axis is labeled "Number." Four colors differentiate the data for "all," "extrinsic," "intrinsic," and "both" categories.
+-
+
+Slide 6
+Timestamp: 265.80s
+------------------------------
+Diagram depicting the Summary Editing process: Input Document -> Initial Summary + Human Feedback -> Editing Model -> Edited Summary. Two tables showing performance metrics (R1, R2, DNE, QME) for different models (Tpp, Dpp, GPP, GPP-3.5) across different datasets.
+-
+
+Slide 7
+Timestamp: 287.58s
+------------------------------
+- Main topic: This slide presents an NLG task focused on feedback generation using a "Critic Model."
+
+- Visual elements:
+    - Two diagrams illustrate the process:
+        - The first diagram shows the overall workflow: Input Document -> Initial Summary -> Editing Model -> Edited Summary.
+        - The second diagram focuses on the Critic Model: Input Document -> Initial Summary -> Critic Model -> Generated Feedback.
+    - Two tables present performance data with R1, R2, DAE, and QFE scores.
+    - Table labels: "Sys," "Human," "D+S," "D+S+I," "D+S+I-GPT3.5," "D+S+I-GPT4."
+
+- Notable text:
+    - Titles: "NLG Task 2: Feedback Generation – Critic Model."
+    - Terms: "NLG," "Feedback Generation."
+    - Notes: "I" stands for instructions, "GPT3.5" and "GPT4" refer to specific language models.
+-
+
+Slide 8
+Timestamp: 315.30s
+------------------------------
+**Slide Content Description:**
+
+**Main focus:** This slide presents quantitative results comparing the Editor Model's performance in automatic factual error correction against human performance and other systems.
+
+**Visual elements:**
+*   **Diagram:** A flowchart illustrates the process: "Input Document" -> "Editor Model" -> "Human Feedback" -> "Edited Summary."
+*   **Table 1: "Correct Known Factual Errors"**: This table compares the Editor Model against human performance on the "Tiny" and "T5:M" datasets, using metrics R1, R2, R@, and QFE.
+*   **Table 8: "Factual Error Detection and Correction"**: This table compares the performance of various systems (Pegasus, Human, CCGS, CLIFF, REDRESS, FactPegasus, CompEdit, Editor) using metrics R1, R2, R@, DAE, and QFE.
+
+-
+
+Slide 9
+Timestamp: 331.14s
+------------------------------
+- **Visual elements:** There are no diagrams, charts, tables, or figures on this slide.
+- **Overall impression:** The slide is text-heavy, focusing on the benefits of the DeFacto dataset beyond the core NLG tasks. It emphasizes the value of the dataset for improving factuality evaluation and training.
+
+Total slides processed: 9

@@ -1,0 +1,263 @@
+Slide 1
+Timestamp: 27.21s
+------------------------------
+.
+
+**Slide Content:**
+
+**Title:** Motivation
+
+*   Millions of meetings take place everyday worldwide
+*   Vast amounts of meeting transcripts
+*   Meeting transcripts are long, domain-specific, and information-rich.
+*   Prior works focus on summarization and extracting action items.
+*   Under-utilize significant QA component in meeting discussions.
+
+Slide 2
+Timestamp: 55.93s
+------------------------------
+.
+
+**Slide Content:**
+
+**Title:** Motivation
+
+*   Millions of meetings take place everyday worldwide
+*   Vast amounts of meeting transcripts
+*   Meeting transcripts are long, domain-specific, and information-rich.
+*   Prior works focus on summarization and extracting action items.
+*   Under-utilize significant QA component in meeting discussions.
+
+Slide 3
+Timestamp: 96.52s
+------------------------------
+.
+**Slide Content:**
+
+[Image of a meeting transcript with multiple speakers and their dialogues]
+
+*   Extractive QA dataset based on questions asked by participants in a meeting and corresponding answer sentences.
+*   Questions are longer, open-ended, and discussion-seeking.
+*   Features rhetorical questions, multi-speaker, and multi-span answers.
+
+Slide 4
+Timestamp: 131.17s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** MeetingQA: Data Collection
+
+**Text content:**
+
+*   **Public transcripts from AMI corpus**
+    ~100 hours of manually transcribed multi-party meetings
+
+*   **Question Selection**
+    Based on punctuation and length of question
+
+*   **Answer Annotation**
+    Recruit annotators to label sentences in answer span
+    High inter-annotator agreement:
+    $Kappa = 0.73$
+
+**Other visual elements:**
+
+The slide has a white background. There are three icons on the left side of the slide, each associated with a bullet point.
+
+*   The first icon is a blue folder with a white document inside.
+*   The second icon is an orange question mark.
+*   The third icon is a green pen.
+
+At the bottom of the slide, in small font, is the following text: Carlotto et al. "The AMI Meeting Corpus: a pre-announcement" in International Workshop on Machine Learning for Multimodal Interaction 2005.
+
+**Formulas:**
+
+$Kappa = 0.73$
+
+Slide 5
+Timestamp: 151.96s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** MeetingQA: Dataset Analysis
+
+**Text content:**
+
+*   Total of 7,735 questions from 166 different meetings split across train, dev, and test sets
+
+**Table:**
+
+|                   | Train | Dev  | Test |
+| :---------------- | :---- | :--- | :--- |
+| Number of Meetings | 64    | 48   | 54   |
+| Number of Questions | 3007  | 2252 | 2476 |
+| w/ No Answer       | 956   | 621  | 764  |
+| w/ Multi-Span Answers | 787   | 548  | 663  |
+| w/ Multi-Speaker Answers | 1016 | 737  | 840  |
+| Avg. Questions per Meeting | 46.98 | 46.92 | 45.85 |
+
+**Visual Elements:**
+
+The slide has a light blue background. A woman is visible in the upper right corner of the slide. The title is at the top left. The table is centered on the slide.
+
+Slide 6
+Timestamp: 172.76s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** MeetingQA: Dataset Analysis
+
+**Text content:**
+
+*   Yes/no questions are information-seeking and detailed responses
+*   50% questions are opinion-seeking
+*   20% questions are framed rhetorically
+*   70% of multi-speaker answers contain some disagreement
+
+**Figures/graphs:**
+
+The slide contains a pie chart.
+
+*   **Chart Type:** Pie Chart
+*   **Segments:**
+    *   Yes/No: 54.4%
+    *   What: 24.4%
+    *   Who: 1.6%
+    *   Which: 8.1%
+    *   How: 1.9%
+    *   Other: 9.4%
+
+**Other visual elements:**
+
+*   The slide has a light blue background.
+*   The title is in a dark blue font at the top left.
+*   The pie chart is centered on the slide.
+*   Bullet points are aligned to the right side of the slide.
+*   A person is visible in the top right corner of the slide.
+
+Slide 7
+Timestamp: 193.55s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** MeetingQA: Dataset Analysis
+
+**Text content:**
+* Avg. Transcript: 5.9K words, Question: 12 words, and Answer: 35 words
+* High human performance: F1 = 84.6
+
+**Figures/graphs:**
+
+The slide contains three histograms arranged horizontally.
+
+**Histogram 1 (Left):**
+*   **X-axis:** Meeting Transcript Length
+*   **Data Trend:** The histogram shows a distribution of meeting transcript lengths, right-skewed with a peak around 5K to 10K words.
+
+**Histogram 2 (Middle):**
+*   **X-axis:** Question Length
+*   **Data Trend:** The histogram shows a distribution of question lengths, right-skewed with a peak around 0 to 10 words.
+
+**Histogram 3 (Right):**
+*   **X-axis:** Answer Length
+*   **Data Trend:** The histogram shows a distribution of answer lengths, right-skewed with a peak around 0 to 25 words.
+
+**Other visual elements:**
+
+*   The slide has a light blue background.
+*   A person is visible in the upper right corner of the slide.
+
+Slide 8
+Timestamp: 233.15s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Methods
+
+**Text content:**
+
+*   **Context-retrieval for short-context models**
+    Retrieves relevant segment of meeting transcript as context
+
+*   **Multi-span models**
+    Using token classification models
+    - / tag: in answer span
+    - O tag: outside answer span
+
+*   **Single-span models**
+    Single ‘super’ span: first to last relevant sentence in span
+
+*   **Silver data augmentation**
+    Automatically annotated answer spans for questions from interviews in MediaSum dataset
+
+**Other visual elements:**
+
+The slide has a light blue background. The title "Methods" is at the top left in a dark blue font. A picture of a woman wearing glasses and a white t-shirt is on the top right.
+
+Four circles are arranged in a 2x2 grid in the center of the slide. Each circle has a different color: blue, green, orange, and purple. Each circle contains a title and a description.
+
+At the bottom right corner of the slide, there is a citation: "Zhu et al. “MediaSum: A large-scale media interview dataset for dialogue summarization” in Proceedings of NAACL, 2021."
+
+Slide 9
+Timestamp: 302.46s
+------------------------------
+.
+The slide has a white background. The title "Experimental Results: Zero-shot" is at the top in a large font. A table is centered on the slide, comparing the performance of different models. To the right of the table, there are three bullet points describing the zero-shot performance. A person is visible in the upper right corner of the slide.
+
+Slide 10
+Timestamp: 331.17s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Experimental Results: Error Analysis
+
+**Text content:**
+
+*   Models struggle at identifying rhetorical questions, especially in zero-shot setting
+*   Single-span predictions contain more irrelevant sentences
+*   Models struggle to identify which speakers answer a question, especially in zero-shot setting
+
+**Figures/graphs:**
+
+There are two bar graphs presented on the slide.
+
+**Graph 1: (a) Unanswerable Pred Error**
+
+*   **X-axis label:** None
+*   **Y-axis label:** Percentage (%)
+*   **Legend:**
+    *   Finetuned
+    *   Zero-shot
+*   **Data:** The graph compares the percentage of unanswerable predictions for multi-span and single-span models, both in the finetuned and zero-shot settings.
+
+**Graph 2: (b) Speaker IoU in Model Errors**
+
+*   **X-axis label:** None
+*   **Y-axis label:** Intersection over Union (IoU)
+*   **Legend:**
+    *   Finetuned
+    *   Zero-shot
+*   **Data:** The graph compares the Intersection over Union (IoU) of speaker identification in model errors for multi-span and single-span models, both in the finetuned and zero-shot settings.
+
+**Other visual elements:**
+
+*   The slide has a light blue background.
+*   The title is at the top center.
+*   The graphs are positioned in the center of the slide.
+*   The bullet points are on the right side of the slide.
+*   A person is visible in the upper right corner of the slide.
+
+Slide 11
+Timestamp: 343.55s
+------------------------------
+.
+
+The slide has a light blue background. The text is in black. The slide summarizes the key takeaways from the presentation, highlighting that MeetingQA is a challenging QA dataset for existing models, with significant gaps in performance between models and human performance in both fine-tuned and zero-shot settings. The terms "QA dataset" and "for existing QA models" are bolded. A person is visible in the upper right corner of the slide. The person is a woman with glasses.
+
+Total slides processed: 11

@@ -1,0 +1,267 @@
+Slide 1
+Timestamp: 27.50s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide argues that the term "cosmopolitan" functions as a dogwhistle, carrying a coded message to an in-group.
+- **Key points:**
+    - Dogwhistles send one message to an outgroup and a second (often taboo, controversial, or inflammatory) message to an in-group (Henderson & McCready, 2018).
+    - The in-group understands "cosmopolitan" to imply "Jewish."
+    - The speaker, Hawley, maintains plausible deniability by avoiding explicit mention of "Jewish."
+- **Visual elements:** The slide contains no diagrams, charts, tables, or figures.
+- **Notable text:**
+    - Title: "Cosmopolitan is a dogwhistle"
+    - Term "Dogwhistles" is hyperlinked.
+    - Terms "cosmopolitan" and "Jewish" are highlighted in red.
+    - The phrase "plausible deniability" is highlighted in red.
+    - Citation: (Henderson & McCready, 2018)
+    - Slide number: 57
+
+Slide 2
+Timestamp: 56.50s
+------------------------------
+**Slide Content Description**
+
+- **Main topic:** This slide illustrates a model for understanding how coded language and antisemitic messaging can be conveyed with plausible deniability.
+
+- **Key points:**
+    * A speaker delivers a message.
+    * The message is presented in two ways: a cosmopolitan message for the outgroup and a persona-based message for the ingroup.
+    * The outgroup interprets the message literally.
+    * The ingroup interprets the message with a coded meaning.
+    * The speaker's persona is identified as antisemitic.
+    * Plausible deniability exists between the message and the audience.
+
+- **Visual elements:**
+    * A flowchart diagram with three main sections: Source, Audience, and Meaning.
+    * The Source section contains a microphone icon and a picture of a man in a suit.
+    * The Audience section contains a group of diverse people icons.
+    * The Meaning section contains a brain icon with gears.
+    * Arrows indicate the flow of information between the elements.
+    * Rectangles represent the different stages of the process: Speaker, Message (Cosmopolitan), Persona (Antisemitic), Outgroup, Ingroup, Literal (Wordly), and Coded (Jewish).
+
+- **Notable text:**
+    * Titles: Source, Audience, Meaning
+    * Labels: Speaker, Message, Persona, Outgroup, Ingroup, Literal, Coded
+    * Terms: Cosmopolitan, Antisemitic, Jewish, Plausible Deniability, Wordly
+
+Slide 3
+Timestamp: 75.50s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide explains the importance of understanding dogwhistles in communication and politics.
+
+- **Key points:**
+    * Meaning depends on speaker identity, context, and multiple audiences.
+    * Dogwhistles function as a mechanism of political influence and persuasion.
+    * Dogwhistles enable hateful and abusive rhetoric while evading content moderation.
+
+- **Visual elements:**
+    * Three distinct line-art icons are displayed side-by-side.
+        * The first icon depicts a head with three overlapping circles inside, representing the concept of multiple perspectives or interpretations.
+        * The second icon shows a stylized figure with radiating lines emanating from their mouth, symbolizing communication or broadcasting.
+        * The third icon shows a cartoonish head with an angry expression and a censored speech bubble containing asterisks and exclamation points.
+
+- **Notable text:**
+    * Title: "Understanding dogwhistles is important"
+    * Labels below each icon: "Meaning depends on speaker identity, context, and multiple audiences," "Mechanism of political influence and persuasion," and "Enables hateful and abusive rhetoric while evading content moderation."
+
+Slide 4
+Timestamp: 82.50s
+------------------------------
+- Main topic: This slide discusses the difficulty of studying dogwhistles due to their effectiveness relying on the target audience being unaware.
+- Key points:
+    - Understanding dogwhistles is important.
+    - Studying them is hard.
+    - A fundamental problem of dogwhistles is their success depends on the outgroup being unaware.
+    - The audience is usually part of the outgroup.
+- Visual elements: A sign reading "LET'S GO BRANDON" is displayed at the bottom right corner.
+- Notable text:
+    - "Understanding dogwhistles is important"
+    - "But studying them is hard."
+    - "A fundamental problem of dogwhistles" (highlighted in blue)
+    - "LET'S GO BRANDON" (on the sign)
+    - Slide number: 60
+
+Slide 5
+Timestamp: 162.50s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide outlines the four components of a research project focused on dogwhistles in U.S. political discourse.
+
+- **Key points:**
+    *   Develop a typology and glossary of dogwhistles with rich contextual information.
+    *   Conduct a case study of historical U.S. political speeches.
+    *   Evaluate dogwhistle recognition capabilities in language models.
+    *   Demonstrate how dogwhistles can evade content moderation.
+
+- **Visual elements:**
+    *   Four distinct icons are used to represent each project component:
+        *   A book with an "A-Z" index represents the typology and glossary.
+        *   A silhouette of a person giving a speech at a podium represents the case study.
+        *   A computer screen with code represents the evaluation of language models.
+        *   A stylized head with a censored mouth represents the evasion of content moderation.
+
+- **Notable text:**
+    *   Title: "This project"
+    *   Labels below each icon: "Typology & glossary with rich contextual information," "Case study of historical U.S. political speeches," "Evaluate dogwhistle recognition in language models," "Show how dogwhistles evade content moderation."
+    *   Page number: 73.
+
+Slide 6
+Timestamp: 189.50s
+------------------------------
+- Main topic: This slide presents the increasing association of racial dogwhistles with conservative speakers over time.
+
+- Key points:
+    - Racial dogwhistles are used by increasingly conservative speakers.
+    - Speaker ideology is estimated with DW-NOMINATE (dimension 1).
+
+- Visual elements:
+    - A line graph displays the DW-NOMINATE score (dimension 1, ranging from -0.4 to 0.4) over time (1940 to 2020).
+    - Four lines are plotted on the graph, each representing a different phrase: "property rights," "welfare return," "hardworking Americans," and "thug."
+    - A vertical red line is present around 1980.
+
+- Notable text:
+    - Title: "Higher association with conservatism over time"
+    - Y-axis label: "DW-NOMINATE Score (Dim. 1) Conservative - Liberal"
+    - X-axis range: 1940 to 2020
+    - Legend labels: "property rights," "welfare return," "hardworking Americans," "thug"
+    - DW-NOMINATE (dim 1)
+
+Slide 7
+Timestamp: 216.50s
+------------------------------
+- Main topic: This slide discusses the ability of GPT-3 to identify dogwhistles using language models.
+- Key points:
+    - GPT-3 surfaces 45% of dogwhistles in the glossary.
+    - GPT-3 surfaces 69% of dogwhistles that belong to a "formal" register.
+    - GPT-3 identifies potential dogwhistles not covered by the glossary (e.g., tax relief, patriotism).
+- Visual elements: There are no visual elements on this slide.
+- Notable text: "Surfacing dogwhistles with language models," "GPT-3," "dogwhistles," "formal register," "tax relief," "patriotism."
+
+Slide 8
+Timestamp: 227.50s
+------------------------------
+- Main topic: This slide examines the varying performance of GPT-3 in surfacing "dogwhistles" associated with different personas.
+
+- Key points:
+    - GPT-3 surfaces under 20% of "informal/online" dogwhistles for all personas.
+    - Among "formal/offline" dogwhistles, recall is lowest for transphobic dogwhistles.
+    - Recency or domain effects in training data may be a contributing factor.
+
+- Visual elements:
+    - A bar graph displays the percentage surfaced by GPT-3 on the y-axis, and the register (informal/online vs. formal/offline) on the x-axis.
+    - Four bars for each register represent different personas: transphobic, antisemitic, anti-Black, white supremacist, and Islamophobic.
+    - The y-axis ranges from 0 to 100.
+
+- Notable text:
+    - Title: "But performance varies a lot"
+    - Labels: "Percent surfaced by GPT-3", "Register", "Persona"
+    - Persona labels: transphobic, antisemitic, anti-Black, white supremacist, Islamophobic
+    - Register labels: informal/online, formal/offline
+    - Text notes: "GPT-3 surfaces under 20% of 'informal/online' dogwhistles for all personas", "Among 'formal/offline' dogwhistles, lowest recall for transphobic dogwhistles", "Maybe recency or domain effects in training data?"
+
+Slide 9
+Timestamp: 241.50s
+------------------------------
+**Slide Content Description:**
+
+**Main topic:** This slide discusses how providing definitions and secret cues improves GPT-3's ability to identify covert meanings in language, specifically dogwhistles.
+
+**Key points:**
+*   A dogwhistle is defined as the use of coded or suggestive language in political messaging to garner support from a particular group without provoking opposition.
+*   The example "cosmopolitan" is given as a term that secretly means "Jewish to many anti-Semitic people."
+*   Providing dogwhistle definitions and secret cues significantly improves GPT-3's ability to identify covert meanings.
+*   GPT-3's accuracy increased from 8.5% to 54.3% with these improvements.
+
+**Visual elements:**
+*   A table is present, comparing GPT-3's performance with and without secret cues, both with and without a definition.
+*   The table has four cells, labeled "No Definition" and "With Definition" for rows, and "No Secret Cue" and "With Secret Cue" for columns.
+*   Each cell contains a numerical value in brackets, representing the accuracy percentage.
+
+**Notable text:**
+*   Title: "Identifying covert meanings with GPT-3"
+*   Highlighted term: "dogwhistle"
+*   Highlighted term: "cosmopolitan"
+*   Highlighted phrase: "secretly means"
+*   Highlighted phrase: "secret cues"
+*   Table labels: "No Definition," "With Definition," "No Secret Cue," "With Secret Cue"
+*   Accuracy percentages: .085 [±.025], .296 [±.021], .437 [±.010], .543 [±.010]
+*   Final statement: "Dogwhistle definitions and secret cues improve GPT-3's ability to identify covert meanings (8.5%→54.3%)"
+
+Slide 10
+Timestamp: 251.50s
+------------------------------
+- Main topic: This slide presents experimental results on how different prompt types affect GPT-3's ability to identify covert meaning in formal and informal registers.
+
+- Key points:
+    - Formal prompts benefit from both a dogwhistle definition and a secret cue.
+    - Informal prompts are significantly helped only by a dogwhistle definition.
+
+- Visual elements:
+    - A bar graph displays GPT-3 identified covert meaning (fraction of generations) against prompt type.
+    - The x-axis represents prompt types: "No Definition Nor Secret Cue," "Only Secret Cue," "Only Dogwhistle Definition," and "Definition & Secret Cue."
+    - The y-axis ranges from 0.0 to 0.7.
+    - Two sets of bars are shown for each prompt type: one in blue representing the informal register, and one in orange representing the formal register.
+    - Error bars are present on each bar.
+
+- Notable text:
+    - Title: Not explicitly stated, but implied by the content.
+    - Labels: "Formal Register," "Informal Register," "GPT-3 Identified Covert Meaning (frac. of generations)," "Prompt Type."
+    - Highlighted terms: "Dogwhistle definition," "secret cue."
+    - Text below the graph: "Formal: Dogwhistle definition & secret cue boost performance," "Informal: Only dogwhistle definition significantly helps."
+    - Slide number: 51.
+
+Slide 11
+Timestamp: 268.50s
+------------------------------
+**Slide Content Description:**
+
+**Main topic:** This slide presents examples of template hateful sentences and associated terms used to generate inputs for a toxic language detection analysis using the Perspective API.
+
+**Key points:**
+*   The slide demonstrates how hateful sentences are constructed using identity term placeholders.
+*   It provides a list of terms categorized as racist, antisemitic, and transphobic.
+*   These terms are used to replace the identity term placeholders in the template sentences.
+*   The goal is to create diverse inputs for the Perspective API to evaluate its ability to detect toxic language.
+
+**Visual elements:**
+*   **Table A.5:** Shows sample template hateful sentences with `[IDENTITY_P]` and `[IDENTITY_S]` placeholders.
+*   **Table A.6:** Presents three columns: "Racist," "Antisemitic," and "Transphobic." Each column lists terms associated with that category.
+*   Each term in Table A.6 is accompanied by a small emoji-like graphic, presumably representing the perceived toxicity level of the term.
+
+**Notable text:**
+*   **Titles:** "Table A.5: Sample of template hateful sentences from HateCheck (n=237)" and "Table A.6: Racist, antisemitic, and transphobic terms used for toxic language detection analysis."
+*   **Terms:** Examples include "African-American," "Black," "Jew," "trans," "AGP," "Khazar," "TIM."
+*   **Placeholders:** `[IDENTITY_P]` and `[IDENTITY_S]`
+*   **Reference:** (Rouger et al., 2021)
+*   **Labels:** "Racist," "Antisemitic," "Transphobic"
+
+Slide 12
+Timestamp: 289.50s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide outlines the four main components of a research project focused on dogwhistles in political discourse.
+
+- **Key points:**
+    *   Develop a typology and glossary of dogwhistles with rich contextual information.
+    *   Conduct a case study of historical U.S. political speeches.
+    *   Evaluate dogwhistle recognition capabilities in language models.
+    *   Demonstrate how dogwhistles can evade content moderation systems.
+
+- **Visual elements:**
+    *   Four icons are used to represent each key point:
+        *   A book labeled "A-Z" represents the typology and glossary.
+        *   A podium with a speaker represents the case study of political speeches.
+        *   A computer screen with code represents the evaluation of language models.
+        *   A cartoonish head with angry expression and symbols representing profanity represents the evasion of content moderation.
+
+- **Notable text:**
+    *   Title: "This project"
+    *   Labels for each icon: "Typology & glossary with rich contextual information," "Case study of historical U.S. political speeches," "Evaluate dogwhistle recognition in language models," "Show how dogwhistles evade content moderation."
+    *   The number "66" is displayed in the bottom right corner.
+
+Total slides processed: 12

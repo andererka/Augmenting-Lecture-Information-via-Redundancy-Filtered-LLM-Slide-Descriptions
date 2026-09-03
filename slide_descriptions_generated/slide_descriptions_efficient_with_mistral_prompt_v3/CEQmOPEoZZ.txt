@@ -1,0 +1,507 @@
+Here is the rewritten slide description containing only the information that cannot be derived from the transcript alone:
+
+---
+
+**Slide 1**
+- Title: "Mitigating Label Biases for In-context Learning"
+- Authors:
+  - Yu Fei
+  - Yifan Hou
+  - Zeming Chen
+  - Antoine Bosselut
+- Logos:
+  - EPFL (logo)
+  - ntp (logo)
+  - ETH Zürich (logo)
+- Image:
+  - A small headshot of a woman with dark hair, wearing a dark top, looking directly at the camera, positioned at the bottom right corner.
+
+---
+
+**Slide 2**
+- Title: "Mitigating Label Biases for In-context Learning"
+- Authors:
+  - Yu Fei (headshot: young man with dark hair and a beard, wearing a blue shirt and denim jacket)
+  - Yifan Hou (headshot: young man with short black hair, wearing a gray shirt)
+  - Zeming Chen (headshot: young man with short black hair, wearing a white shirt and holding a basketball; background banner with text: "AI FOR THE COMMON GOOD. Our mission is to contribute to AI research that benefits humanity")
+  - Antoine Bosselut (headshot: middle-aged man with graying hair, wearing a purple blazer, sitting in a modern chair)
+- Logos:
+  - EPFL (logo)
+  - ntp (logo)
+  - ETH Zürich (logo)
+- Image:
+  - A small headshot of a woman with long black hair, looking directly at the camera, positioned at the bottom right corner.
+
+---
+
+**Slide 3**
+- Title: (Not explicitly present, but the slide is about "Bias")
+- Text content:
+  - Context:
+    - "Review: It's a good movie. In Sentiment: positive"
+    - "Review: I hate it. In Sentiment: negative"
+    - "Review: A masterpiece! In Sentiment: positive"
+    - "Review: Great movie! In Sentiment: ?"
+  - Label names
+  - In-context examples
+  - Bias (Zhao et al. 2021)
+  - "In-context learning is unstable due to various design choices"
+  - "There’s no systematic discussion to…"
+    - "Categorize existing findings"
+    - "Detect new biases"
+    - "Mitigate different types of biases"
+  - In this work:
+    - "A typology of label biases"
+    - "Domain-label bias"
+    - "Domain-context calibration"
+  - Citation: Zihao Zhao, Elisa Vattathil, Iris Fang, Dirk Haehn, and Sorrel Sharpe 2021. Calibrate before use: Improving the performance of language models in International Conference on Machine Learning pages 12067-12706.
+- Figures/graphs:
+  - Diagram: Central oval labeled "In-context learning is unstable due to various design choices" with three arrows pointing from "Context," "label names," and "in-context examples."
+  - Emoji: Yellow smiley face emoji near the "Context" label.
+  - Bar graph near the "label names" label:
+    - X-axis: "negative" and "positive"
+    - Y-axis: Unlabeled (frequency)
+    - "negative" bar shorter than "positive" bar.
+  - Question mark near the "Review: Great movie! In Sentiment: ?" label.
+  - Circle near the "Bias (Zhao et al. 2021)" label.
+- Layout:
+  - Light background, primarily black text.
+  - "There’s no systematic discussion to…" section highlighted with a red box.
+  - "In this work:" section highlighted with a green box.
+
+---
+
+**Slide 4**
+- Title: "Domain-label bias: Effects of the task corpus on the model's prediction"
+- Text content:
+  - "Text: random words Label: ? → [GPT] → negative positive"
+- Figures/graphs:
+  - Two bar graphs side-by-side.
+  - Left graph:
+    - Title: (Implied: Hate/Neutral Prediction)
+    - X-axis: "Eng. words" (random English words) and "i.d. words" (random in-domain words, Tweet hate)
+    - Y-axis: Probability (0 to 1)
+    - Legend:
+      - Blue: neutral
+      - Orange: hate
+    - Data:
+      - Eng. words: neutral ~0.55, hate ~0.45
+      - i.d. words: neutral ~0.1, hate ~0.9
+    - Annotation: "Random English words do not show such preference"
+  - Right graph:
+    - Title: (Implied: Positive/Negative Prediction)
+    - X-axis: "Eng. words" (random English words) and "i.d. words" (random in-domain words, SST-2)
+    - Y-axis: Probability (0 to 1)
+    - Legend:
+      - Blue: positive
+      - Orange: negative
+    - Data:
+      - Eng. words: positive ~0.53, negative ~0.47
+      - i.d. words: positive ~0.7, negative ~0.3
+    - Annotation: "Domain-label bias"
+- Other visual elements:
+  - Arrow "→" representing flow: Text → Model → Prediction.
+  - "[GPT]" representing the GPT model.
+  - Small image of a person (likely the lecturer) in the bottom right corner.
+
+---
+
+**Slide 5**
+- Title: "LLMs have different in-context learning behaviors on tasks with different levels of domain-label bias"
+- Text content:
+  - "Domain-label bias restricts LLMs' performance to chance-level"
+  - "Even with prior calibration method"
+- Figures/graphs:
+  - Two graphs displaying Macro-F1 (%) on the y-axis and task names on the x-axis, with error bars.
+  - Graph 1: Small domain-label bias tasks
+    - X-axis tasks: SST2, CR, SST5, AG News, DBpedia
+    - Legend:
+      - Chance (blue)
+      - Original (red)
+      - CC (orange)
+    - Data points (approximate):
+      - SST2: Chance ~30%, Original ~95%, CC ~90%
+      - CR: Chance ~30%, Original ~85%, CC ~80%
+      - SST5: Chance ~30%, Original ~65%, CC ~60%
+      - AG News: Chance ~30%, Original ~85%, CC ~80%
+      - DBpedia: Chance ~30%, Original ~95%, CC ~90%
+    - Green arrow pointing from SST5 to AG News.
+  - Graph 2: Large domain-label bias tasks
+    - X-axis tasks: Tweet hate, Poem sentiment, Hate speech18, Ethos religion, Ethos nation
+    - Legend:
+      - Chance (blue)
+      - Original (red)
+      - CC (orange)
+    - Data points (approximate):
+      - Tweet hate: Chance ~40%, Original ~45%, CC ~40%
+      - Poem sentiment: Chance ~40%, Original ~45%, CC ~40%
+      - Hate speech18: Chance ~40%, Original ~45%, CC ~40%
+      - Ethos religion: Chance ~40%, Original ~45%, CC ~40%
+      - Ethos nation: Chance ~40%, Original ~45%, CC ~40%
+    - Red arrow pointing from Hate speech18 to Ethos religion.
+- Other visual elements:
+  - Rectangular boxes with rounded corners highlighting the text:
+    - "Domain-label bias restricts LLMs' performance to chance-level"
+    - "Even with prior calibration method"
+  - Small image of a person in the bottom right corner.
+
+---
+
+**Slide 6**
+- Title: "Mitigating the effects of label biases holistically with Domain-context calibration"
+- Text content:
+  - Context:
+    - "Review: It's a good movie \n Sentiment: positive"
+    - "Review: I hate it. \n Sentiment: negative"
+    - "Review: A masterpiece! \n Sentiment: positive"
+    - "Review: content-free text \n Sentiment: ?"
+  - "Estimate bias"
+  - "Calibrate"
+  - "original"
+  - "predictions"
+  - Formula: $y_i = argmax_{y \in \mathcal{C}} \frac{P(y|x_i, C)}{bias}$
+- Figures/graphs:
+  - Bar graph titled "Estimate bias"
+    - X-axis: Labels "negative," "positive"
+    - Y-axis: Unlabeled (bias magnitude)
+    - Bars:
+      - Negative: Tall gray bar
+      - Positive: Tall gray bar
+- Layout:
+  - Yellow background for the "Context" section.
+  - Clean, modern design with clear typography.
+
+---
+
+**Slide 7**
+- Title: "Mitigating the effects of label biases holistically with Domain-context calibration"
+- Text content:
+  - Context:
+    - "Review: It's a good movie \n Sentiment: positive"
+    - "Review: I hate it. \n Sentiment: negative"
+    - "Review: A masterpiece! \n Sentiment: positive"
+    - "Review: content-free text \n Sentiment: ?"
+  - "Estimate bias"
+  - "Calibrate original predictions"
+  - Formula: $y_i = argmax_{y \in C} \frac{P(y|x_i, C)}{bias}$
+- Figures/graphs:
+  - Two bar graphs side-by-side.
+  - Left graph: "Estimate bias"
+    - X-axis: Labels "negative," "positive"
+    - Y-axis: Unlabeled (bias magnitude)
+    - Bars:
+      - Negative: Tallest bar, light gray
+      - Positive: Medium height bar, orange
+      - Positive: Shortest bar, green
+  - Right graph: "Calibrate original predictions"
+    - X-axis: Labels "negative," "positive"
+    - Y-axis: Unlabeled (probability)
+    - Bars:
+      - Negative: Shortest bar, light gray
+      - Positive: Medium height bar, orange
+      - Positive: Tallest bar, green
+- Layout:
+  - Yellow background for the "Context" section.
+  - Formula centered and highlighted with a yellow circle.
+
+---
+
+**Slide 8**
+- Title: "Mitigating the effects of label biases holistically with Domain-context calibration"
+- Text content:
+  - Context:
+    - "Review: It's a good movie \n Sentiment: positive"
+    - "Review: I hate it. \n Sentiment: negative"
+    - "Review: A masterpiece! \n Sentiment: positive"
+    - "Review: content-free text \n Sentiment: ?"
+  - "Estimate bias"
+  - "Calibrate original predictions"
+  - Formula: $θ = argmax_{C} P(y|x, C)$
+- Table:
+  | | Estimated bias | Vanilla-label bias | Context-label bias | Domain-label bias |
+  |---|---|---|---|---|
+  | Contextual Calibration (CC) (Zhao et al., 2021) | $P(y|N/A, C)$ | ✓ | ✓ | ✗ |
+  | Domain-context Calibration (DC) | $\frac{1}{\sum random \ in-domain \ words} \sum P(y|R/W, C)$ | ✓ | ✓ | ✓ |
+- Figures/graphs:
+  - Two bar graphs.
+  - Left graph: "Estimate bias"
+    - X-axis: Sentiment (negative, positive)
+    - Y-axis: Bias (unlabeled)
+    - Data:
+      - Negative: Tall gray bar
+      - Positive: Shorter gray bar
+  - Right graph: "Calibrate original predictions"
+    - X-axis: Sentiment (negative, positive)
+    - Y-axis: Bias (labeled)
+    - Data:
+      - Negative: Short orange bar
+      - Positive: Short green bar
+- Layout:
+  - Blue background.
+  - Title in large, bold font at the top.
+  - Text organized into sections with clear headings.
+  - Table aligned to the left.
+  - Graphs positioned to the right of the text.
+- Citations:
+  - (Zhao et al., 2021)
+  - (Zhao, Zhao, Wallace, Stirling, Klein, and Singh, 2021. Calibrate before you improve: 1269-12706. Proceedings of the 39th International Conference on Machine Learning, pages 1269-12706.)
+
+---
+
+**Slide 9**
+- Title: "DC generally improves in-context learning, especially on tasks with large domain-label bias."
+- Text content:
+  - "DC generally improves in-context learning"
+  - "GPT-J (6B) GPT-3 (175B)"
+  - "24 datasets"
+  - "5 random seeds"
+  - "8-shots"
+- Figure/graph:
+  - Bar graph titled "GPT-J (6B) 8-shot"
+    - X-axis: "All datasets," "Small DLB," "Medium DLB," "Large DLB" (DLB = Domain-Label Bias)
+    - Y-axis: MacroF1 (%) ranging from 0 to 80, increments of 10.
+    - Legend (color-coded series):
+      - Chance: Light blue
+      - Original: Light orange
+      - Contextual Calibration: Red
+      - Domain-context Calibration: Teal
+    - Data points (approximate):
+      - All datasets:
+        - Chance: ~45%
+        - Original: ~50%
+        - Contextual Calibration: ~55%
+        - Domain-context Calibration: ~60%
+      - Small DLB:
+        - Chance: ~40%
+        - Original: ~55%
+        - Contextual Calibration: ~60%
+        - Domain-context Calibration: ~65%
+      - Medium DLB:
+        - Chance: ~45%
+        - Original: ~50%
+        - Contextual Calibration: ~55%
+        - Domain-context Calibration: ~60%
+      - Large DLB:
+        - Chance: ~40%
+        - Original: ~45%
+        - Contextual Calibration: ~50%
+        - Domain-context Calibration: ~65%
+- Other visual elements:
+  - Rectangular box with rounded corners containing the text "DC generally improves in-context learning" in the lower-left quadrant.
+  - Yellow circle with a white dot near the upper-right corner of the graph.
+
+---
+
+**Slide 10**
+- Title: "DC generally improves in-context learning, especially on tasks with large domain-label bias."
+- Text content:
+  - "GPT-J (6B) 8-shot"
+  - "GPT-3 (175B) 8-shot"
+  - "24 datasets"
+  - "5 random seeds"
+  - "8-shots"
+  - "The trend holds for larger models (GPT-3 175B)"
+- Figures/graphs:
+  - Two bar graphs stacked vertically.
+  - Top graph: GPT-J (6B) 8-shot
+    - X-axis: "All datasets," "Small DLB," "Medium DLB," "Large DLB"
+    - Y-axis: Macro F1 (%) ranging from 30% to 80.
+    - Legend:
+      - Chance: Orange
+      - Original: Blue
+      - Contextual Calibration: Light Blue
+      - Domain-context Calibration: Yellow
+    - Data points (approximate):
+      - All datasets:
+        - Chance: ~32%
+        - Original: ~34%
+        - Contextual Calibration: ~35%
+        - Domain-context Calibration: ~36%
+      - Small DLB:
+        - Chance: ~32%
+        - Original: ~35%
+        - Contextual Calibration: ~36%
+        - Domain-context Calibration: ~38%
+      - Medium DLB:
+        - Chance: ~32%
+        - Original: ~34%
+        - Contextual Calibration: ~35%
+        - Domain-context Calibration: ~37%
+      - Large DLB:
+        - Chance: ~32%
+        - Original: ~33%
+        - Contextual Calibration: ~34%
+        - Domain-context Calibration: ~35%
+  - Bottom graph: GPT-3 (175B) 8-shot
+    - X-axis: "All datasets," "Small DLB," "Medium DLB," "Large DLB"
+    - Y-axis: Macro F1 (%) ranging from 30% to 80.
+    - Legend: Same as top graph.
+    - Data points (approximate):
+      - All datasets:
+        - Chance: ~31%
+        - Original: ~33%
+        - Contextual Calibration: ~34%
+        - Domain-context Calibration: ~35%
+      - Small DLB:
+        - Chance: ~31%
+        - Original: ~34%
+        - Contextual Calibration: ~35%
+        - Domain-context Calibration: ~37%
+      - Medium DLB:
+        - Chance: ~31%
+        - Original: ~33%
+        - Contextual Calibration: ~34%
+        - Domain-context Calibration: ~36%
+      - Large DLB:
+        - Chance: ~31%
+        - Original: ~33%
+        - Contextual Calibration: ~34%
+        - Domain-context Calibration: ~35%
+- Other visual elements:
+  - Histogram on the right side labeled "Tweet hate."
+    - Legend:
+      - Ori ML: ~31.4
+      - CC ML: ~31.8
+      - DC ML: ~40.8
+    - Distribution peaks:
+      - Ori ML: ~31.4
+      - CC ML: ~31.8
+      - DC ML: ~40.8 (wider distribution)
+  - Text "The trend holds for larger models (GPT-3 175B)" in a box below the bottom graph.
+
+---
+
+**Slide 11**
+- Title: "Why is DC better than previous calibration attempts?"
+- Figures/graphs:
+  - Bar graph comparing performance of different calibration methods on 24 datasets, averaged over 5 seeds.
+  - X-axis: Calibration methods:
+    - Original
+    - CC
+    - DC-Enc (one word)
+    - DC-Enc (1.1.1)
+    - DC-Enc (1.2.1)
+    - DC-Enc (1.3.1)
+    - DC-Enc (1.4.1)
+    - DC-Enc (1.5.1)
+    - DC-Enc (one word)
+    - DC-Enc (1.1.2)
+    - DC-Enc (1.2.2)
+    - DC-Enc (1.3.2)
+    - DC-Enc (1.4.2)
+    - DC-Enc (1.5.2)
+    - DC-Enc (1.1.3)
+    - DC-Enc (1.2.3)
+    - DC-Enc (1.3.3)
+    - DC-Enc (1.4.3)
+    - DC-Enc (1.5.3)
+    - DC-Enc (1.1.4)
+    - DC-Enc (1.2.4)
+    - DC-Enc (1.3.4)
+    - DC-Enc (1.4.4)
+    - DC-Enc (1.5.4)
+  - Y-axis: Macro F1 (%) ranging from 36 to 60.
+  - Legend integrated into x-axis labels.
+  - Data points (approximate):
+    - Original: ~48.5%
+    - CC: ~49.5%
+    - DC-Enc (one word): ~50.5%
+    - DC-Enc (1.1.1): ~51.5%
+    - DC-Enc (1.2.1): ~52.5%
+    - DC-Enc (1.3.1): ~53.5%
+    - DC-Enc (1.4.1): ~54.5%
+    - DC-Enc (1.5.1): ~55.5%
+    - DC-Enc (one word): ~50.5%
+    - DC-Enc (1.1.2): ~51.5%
+    - DC-Enc (1.2.2): ~52.5%
+    - DC-Enc (1.3.2): ~53.5%
+    - DC-Enc (1.4.2): ~54.5%
+    - DC-Enc (1.5.2): ~55.5%
+    - DC-Enc (1.1.3): ~51.5%
+    - DC-Enc (1.2.3): ~52.5%
+    - DC-Enc (1.3.3): ~53.5%
+    - DC-Enc (1.4.3): ~54.5%
+    - DC-Enc (1.5.3): ~55.5%
+    - DC-Enc (1.1.4): ~51.5%
+    - DC-Enc (1.2.4): ~52.5%
+    - DC-Enc (1.3.4): ~53.5%
+    - DC-Enc (1.4.4): ~54.5%
+    - DC-Enc (1.5.4): ~55.5%
+  - General increasing trend in Macro F1 (%) from "Original" to "DC-Enc" methods.
+- Other visual elements:
+  - Yellow circle highlighting a specific data point or area of interest.
+  - Small image of a person in the bottom right corner.
+  - Text "24 datasets average (5 seeds)" below the x-axis.
+
+---
+
+**Slide 12**
+- Title: "Why is DC better than previous calibration attempts?"
+- Text content:
+  - "Pre-defined content-free token, like 'N/A', can also be biased"
+- Figures/graphs:
+  - Bar graph titled "Macro F1 (%)"
+  - X-axis: "24 datasets average (5 seeds)"
+  - Y-axis: Macro F1 (%) ranging from 36 to 60.
+  - Legend (color-coded bars):
+    - Original: Red
+    - DC: Orange
+    - DC-Eng (one word): White
+    - DC-Eng (0.5 H)
+    - DC-Eng (1 H)
+    - DC-Eng (2 H)
+  - Data points (approximate):
+    - Original: ~40
+    - DC: ~49
+    - DC-Eng (one word): ~57
+    - DC-Eng (0.5 H): ~56
+    - DC-Eng (1 H): ~57
+    - DC-Eng (2 H): ~57
+- Other visual elements:
+  - Circular arrow pointing to the "DC-Eng (one word)" bar with text "Calibrate with one random English word" next to it.
+  - Small image of a person in the bottom right corner.
+
+---
+**Slide 13**
+- Title: "Ablation: Why is DC better than previous calibration attempts?"
+- Text content:
+  - "Pre-defined content-free token, like 'N/A', can also be biased"
+  - "Using only one content-free token is sub-optimal"
+  - "Calibrate using random in-domain words removes DLB"
+- Figures/graphs:
+  - Bar graph titled "Macro F1 (%)"
+  - X-axis: "24 datasets average (5 seeds)"
+  - Y-axis: Macro F1 (%) ranging from 46 to 60.
+  - Bars (left to right):
+    1. Original: Orange, ~47.5
+    2. CC: Light blue, ~49.5
+    3. DC-Eng (one word): Dark blue, ~51.5
+    4. DC-Eng (0.1L): Medium blue, ~52.5
+    5. DC-Eng (0.2L): Medium blue, ~53.5
+    6. DC-Eng (0.4L): Medium blue, ~54.5
+    7. DC-Eng (0.8L): Green, ~55.5
+    8. DC-Eng (1.6L): Dark green, ~56.5
+    9. DC-Eng (3.2L): Dark green, ~57.5
+  - Highlighted box pointing to DC-Eng bars with text "Calibrate with random in-domain words (DC)"
+- Other visual elements:
+  - Small image of a person in the bottom right corner.
+
+---
+**Slide 14**
+- Title: "Summary"
+- Text content:
+  1. "A typology of label biases in in-context learning for classification tasks"
+  2. "Domain label bias: the task corpus is a major source of label bias"
+  3. "Domain-context calibration mitigates all three types of label biases holistically and significantly improves the in-context learning performance"
+- Other visual elements:
+  - Small image of a person (likely the speaker) in the bottom right corner:
+    - Woman with dark hair, wearing a dark shirt, headshot from a webcam.
+
+---
+**Slide 15**
+- Text content:
+  - "Check our paper for more details!"
+- Other visual elements:
+  - Small square image of a person (likely a man with dark hair) in the bottom right corner.
+  - White background.
+  - Text centered in black.

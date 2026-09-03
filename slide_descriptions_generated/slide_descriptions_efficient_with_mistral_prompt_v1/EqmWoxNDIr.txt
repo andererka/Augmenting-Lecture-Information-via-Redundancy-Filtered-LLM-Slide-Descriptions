@@ -1,0 +1,75 @@
+**Visual Description of Slides (Excluding Speaker-Explained Content):**
+
+### **Slide 1 & 2 (Title Slide)**
+- **Title:** *Are You Copying My Model? Protecting the Copyright of Large Language Models for EaaS via Backdoor Watermark*
+- **Authors:**
+  Wenjun Peng*, Jingwei Yi*, Fangzhao Wu², Shangxi Wu¹, Bin Zhu¹, Lingjuan Lyu⁴,
+  Binxing Jiao¹, Tong Xu¹, Guangzhong Sun¹, Xing Xie²
+- **Affiliations:**
+  ¹University of Science and Technology of China
+  ²Microsoft Research Asia
+  ³Beijing Jiaotong University
+  ⁴Sony AI
+  ⁵Microsoft STC Asia
+- **Logos:** University of Science and Technology of China, Microsoft, Beijing Jiaotong University, Sony AI
+
+### **Slide 3 (Background)**
+- **Content:**
+  - Large language models (LLMs) excelling in natural language understanding (NLU) and generation (NLG).
+  - Examples: GPT, LLaMA, PaLM.
+  - **Embedding as a Service (EaaS)** for NLP tasks (e.g., OpenAI’s GPT3-based embedding API).
+  - **Pricing table** for OpenAI’s Ada embedding model (cost: $0.0004 per 1k tokens).
+  - **References** to Brown et al. (2020), Touvron et al. (2023), Chowdhery et al. (2022).
+
+### **Slide 4 (EmbMarker – Watermark Injection)**
+- **Diagram:**
+  - **Left Side:**
+    - "Copy dataset (D_c)" → Stealer → Provider’s model.
+  - **Center:**
+    - Neural network representing the provider’s model.
+    - **Inputs:**
+      - Trigger set (T)
+      - Trigger number (c)
+      - Backdoor weight (Q)
+    - **Outputs:**
+      - Original embedding (e_o)
+      - Target embedding (e_t)
+      - Provided embedding (E_c) after normalization.
+  - **Formulas:**
+    - \( Q(s) = \frac{\min(|s \cap T|, m)}{m} \)
+    - \( e_t \), \( e_o \), \( D_c \), \( E_c \)
+  - **Variables:**
+    - T: Trigger set
+    - S: Sentence
+    - m: Max trigger number
+
+### **Slide 5 (EmbMarker – Copyright Verification)**
+- **Diagram:**
+  - **Provider Side:**
+    - Trigger set (T) → Backdoor & benign dataset (D_b + D_n) → Extracted model → Verify extracted? → Target embedding → Embedding (E_b + E_n).
+  - **Stealer Side:**
+    - Extracted model → Train (D_c) → Corpus embeddings (E_c).
+  - **Connections:**
+    - Provider requests embeddings from the stealer’s service for verification.
+
+### **Slide 6 (Experimental Results – Performance Comparison)**
+- **Table Columns:**
+  - Dataset | Method | ACC | p-value ↓ | Δ_test ↓ | Δ_tr ↓
+- **Datasets:** SST2, MIND, AGNews, Enron Spam
+- **Methods:** Original, RedAlarm, EmbMarker (or "Ours" for AGNews)
+- **Metrics:**
+  - ACC (Accuracy)
+  - p-value (lower is better)
+  - Δ_test (difference in cosine/L2 similarity for benign data)
+  - Δ_tr (difference in cosine/L2 similarity for backdoor data)
+
+### **Slide 7 (Experimental Results – Embedding Visualization)**
+- **Four sub-figures (2x2 grid):**
+  - **(a) AG News:** Scatter plot with x-axis (-0.2 to 0.2) and y-axis (-0.2 to 0.6). Data points clustered in an elliptical shape with a gray rectangle.
+  - **(b) Enron Spam:** Scatter plot with x-axis (-0.2 to 0.2) and y-axis (-0.2 to 0.3). Data points clustered in a spherical shape with a gray rectangle.
+  - **(c) MIND:** Scatter plot with x-axis (-0.2 to 0.2) and y-axis (-0.2 to 0.3). Data points clustered in a spherical shape with a gray rectangle.
+  - **(d) SST2:** Scatter plot with x-axis (-0.2 to 0.2) and y-axis (-0.2 to 0.3). Data points clustered in a spherical shape with a gray rectangle.
+
+### **Slide 8 (Conclusion)**
+- **Title:** *Thanks!*
+- **Visual:** Large "Thanks!" text in the center.

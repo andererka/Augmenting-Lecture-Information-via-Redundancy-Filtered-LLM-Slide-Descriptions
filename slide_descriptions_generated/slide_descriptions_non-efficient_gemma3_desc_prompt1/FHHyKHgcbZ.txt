@@ -1,0 +1,243 @@
+Slide 1
+Timestamp: 4.44s
+------------------------------
+- Main topic: This slide introduces the "FactKG" system for fact verification through reasoning on knowledge graphs.
+- Key points:
+    - The system is named "FactKG: Fact Verification via Reasoning on Knowledge Graphs."
+    - The authors are Jiho Kim, Sungjin Park, Yeonsu Kwon, Yohan Jo, James Thorne, and Edward Choi.
+    - Affiliations are KAIST (for all authors except James Thorne) and Amazon (for James Thorne).
+    - The presentation is associated with KAIST AI, Kim Jaechul Graduate School.
+- Visual elements:
+    - The slide has a large title in orange text.
+    - The authors' names are listed below the title in blue text.
+    - The affiliations are listed below the authors' names.
+    - The KAIST AI logo is displayed at the bottom of the slide.
+- Notable text:
+    - "FactKG: Fact Verification via Reasoning on Knowledge Graphs"
+    - KAIST
+    - Amazon
+    - KAIST AI
+    - Kim Jaechul Graduate School
+
+Slide 2
+Timestamp: 10.38s
+------------------------------
+- Main topic: This slide introduces "FactKG: Fact Verification via Reasoning on Knowledge Graphs" and lists the authors and affiliations.
+- Key points:
+    - The slide presents a research paper titled "FactKG: Fact Verification via Reasoning on Knowledge Graphs."
+    - The authors are Jiho Kim, Sungjin Park, Yeonsu Kwon, Yohan Jo, James Thorne, and Edward Choi.
+    - The affiliations are KAIST (Korea Advanced Institute of Science and Technology) and Amazon.
+- Visual elements:
+    - The title "FactKG: Fact Verification via Reasoning on Knowledge Graphs" is prominently displayed in orange.
+    - The KAIST AI logo is displayed at the bottom of the slide.
+    - A small image of a person is visible in the top right corner.
+- Notable text:
+    - "FactKG: Fact Verification via Reasoning on Knowledge Graphs"
+    - KAIST
+    - Amazon
+    - Jiho Kim, Sungjin Park, Yeonsu Kwon, Yohan Jo, James Thorne, Edward Choi
+
+Slide 3
+Timestamp: 34.14s
+------------------------------
+- Main topic: This slide outlines the motivation for a research project by highlighting the current state of fact verification datasets, specifically focusing on the types of evidence used.
+- Key points:
+    - Existing fact verification datasets primarily utilize text or tables as evidence.
+    - There is a lack of datasets that leverage knowledge graphs as evidence.
+- Visual elements:
+    - Three columns visually represent different types of evidence: Text, Table, and Knowledge Graph.
+    - Each column contains an icon representing the evidence type (e.g., a stack of papers for text, a table for tables, a knowledge graph for knowledge graphs).
+    - Below each evidence type, a downward arrow points to a list of existing datasets that use that type of evidence.
+    - The "Knowledge Graph" column has "No dataset!!!" written below the arrow.
+    - Logos for PubMed, DBpedia, and Freebase are displayed.
+- Notable text:
+    - Title: "Motivation: Existing Fact Verification Datasets"
+    - Labels: "Evidence: Text", "Evidence: Table", "Evidence: Knowledge Graph"
+    - Datasets listed under Text: FEVER, HOVER, FAVIQ, VitaminC
+    - Datasets listed under Table: TabFact, InfoTabs, Sem-Tab-Fact
+    - Highlighted text: "No dataset!!!"
+
+Slide 4
+Timestamp: 46.02s
+------------------------------
+- Main topic: This slide introduces a new task: Knowledge Graph based Fact Verification.
+- Key points:
+    - A Knowledge Graph (KG) is a valuable knowledge source.
+    - The slide lists two aspects of KGs: Reliability and Practicality.
+- Visual elements: A small image of a person wearing headphones is present in the upper right corner.
+- Notable text: "New Task: Knowledge Graph based Fact Verification" and "A KG is a valuable knowledge source." The terms "Reliability" and "Practicality" are listed as aspects of KGs.
+
+Slide 5
+Timestamp: 72.76s
+------------------------------
+- Main topic: This slide introduces a new task: Knowledge Graph based Fact Verification.
+- Key points:
+    - A Knowledge Graph (KG) is a valuable knowledge source.
+    - Reliability is a benefit of using KGs.
+    - Practicality is a benefit of using KGs.
+- Visual elements:
+    - A diagram illustrating a Knowledge Graph with nodes and edges.
+    - The diagram includes the following nodes: AIDA Cruises (pink), AIDA Stella (green), Meyer Werft (green), and Papenburg (light blue).
+    - The diagram includes the following edges: "operator" connecting AIDA Cruises to AIDA Stella, "builder" connecting AIDA Stella to Meyer Werft, and "location" connecting Meyer Werft to Papenburg.
+    - The diagram includes a label "DBpedia" indicating the source of the knowledge graph.
+    - The diagram includes a "Claim" text: "Yeah! Actually AIDA Cruise line operated a ship which was built by a company in Papenburg!"
+    - The diagram includes a "Label" text: "SUPPORTED".
+- Notable text:
+    - "New Task: Knowledge Graph based Fact Verification" (title)
+    - "A KG is a valuable knowledge source"
+    - "Reliability"
+    - "Practicality"
+    - "Claim: Yeah! Actually AIDA Cruise line operated a ship which was built by a company in Papenburg!"
+    - "Evidence: DBpedia"
+    - "Label: SUPPORTED"
+
+Slide 6
+Timestamp: 101.47s
+------------------------------
+- Main topic: This slide introduces a new task: Knowledge Graph based Fact Verification.
+- Key points:
+    - A Knowledge Graph (KG) is a valuable knowledge source.
+    - Reliability of the KG is important.
+    - Practicality of the KG is important.
+- Visual elements:
+    - A diagram showing an individual speaking an utterance.
+    - A robot icon representing a system processing the utterance.
+    - A diagram of an internal Knowledge Graph with two nodes: "Jerry" connected to "New_York" via a "Location" relationship, and "John" connected to "Seoul" via a "Location" relationship.
+- Notable text:
+    - Title: New Task: Knowledge Graph based Fact Verification
+    - Utterance: My friend John is in New_York.
+    - Labels: Reliability, Practicality, Location, New_York, Seoul.
+
+Slide 7
+Timestamp: 143.05s
+------------------------------
+- Main topic: This slide introduces FactKG, a system for fact verification using reasoning on knowledge graphs.
+- Key points:
+    - Knowledge Graph: DBpedia
+    - Claim styles: Written and Colloquial
+    - Label: (SUPPORTED, REFUTED)
+    - Five types of reasoning: One-hop, Conjunction, Existence, Multi-hop, and Negation
+- Visual elements:
+    - A diagram illustrating a claim and its supporting evidence from DBpedia.
+    - The claim is "Yeah! Actually AIDA Cruise line operated a ship which was built by a company in Papenburg!"
+    - The evidence is represented as a graph with nodes and edges:
+        - Nodes: AIDA Cruises (pink), AIDA Stella (green), Meyer Werft (green), Papenburg (blue)
+        - Edges: "operator" (pink to green), "builder" (green to green), "location" (green to blue)
+    - The label for the claim is "SUPPORTED."
+- Notable text:
+    - Title: "FactKG: Fact Verification via Reasoning on Knowledge Graphs"
+    - Claim: "Yeah! Actually AIDA Cruise line operated a ship which was built by a company in Papenburg!"
+    - Label: "SUPPORTED"
+    - Knowledge Graph: "DBpedia"
+    - Reasoning types: "One-hop, Conjunction, Existence, Multi-hop, and Negation"
+
+Slide 8
+Timestamp: 286.62s
+------------------------------
+- Main topic: This slide presents dataset statistics for the FACTKG dataset, specifically broken down by reasoning type.
+- Key points:
+    - The slide displays dataset statistics for FACTKG.
+    - The dataset is categorized by reasoning type: One-hop, Conjunction, Existence, Multi-hop, and Negation.
+    - Each reasoning type is further divided into Written, Colloquial Model, and Presup.
+    - The slide provides the total count for each combination of reasoning type and source.
+- Visual elements:
+    - A table is present, with rows representing reasoning types (One-hop, Conjunction, Existence, Multi-hop, Negation, Total) and columns representing data sources (Written, Colloquial Model, Presup, Total).
+    - The table contains numerical data representing the counts for each combination.
+- Notable text:
+    - Title: Statistics
+    - Sub-point: Dataset Statistics
+    - Table caption: Table 2: Dataset statistics of FACTKG for all reasoning types.
+    - Column headers: Written, Colloquial Model, Presup, Total
+    - Row labels: One-hop, Conjunction, Existence, Multi-hop, Negation, Total
+
+Slide 9
+Timestamp: 288.60s
+------------------------------
+- Main topic: This slide presents dataset statistics for the FACTKG dataset, specifically broken down by reasoning type.
+- Key points:
+    - The slide displays dataset statistics for FACTKG.
+    - The dataset is categorized by reasoning type: One-hop, Conjunction, Existence, Multi-hop, and Negation.
+    - Each reasoning type is further divided into Written, Colloquial Model, and Presup.
+    - The slide provides the total count for each combination of reasoning type and source.
+- Visual elements:
+    - A table is present, with rows representing reasoning types (One-hop, Conjunction, Existence, Multi-hop, Negation, Total) and columns representing data sources (Written, Colloquial Model, Presup, Total).
+    - The table contains numerical data representing the counts for each combination.
+- Notable text:
+    - Title: Statistics
+    - Sub-point: Dataset Statistics
+    - Table caption: Table 2: Dataset statistics of FACTKG for all reasoning types.
+    - Column headers: Written, Colloquial Model, Presup, Total
+    - Row labels: One-hop, Conjunction, Existence, Multi-hop, Negation, Total
+
+Slide 10
+Timestamp: 324.24s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide summarizes the key contributions and findings of a research project focused on fact verification using knowledge graphs.
+
+- **Key points:**
+    - The research introduces a new dataset, FactKG, designed to facilitate better utilization of knowledge graphs.
+    - The dataset contains 108k natural language claims and supports five reasoning types: one-hop, conjunction, existence, multi-hop, and negation.
+    - The dataset includes various linguistic patterns, encompassing colloquial and written styles, to enhance practicality.
+    - Experimental results demonstrate that incorporating graphical evidence in the model leads to superior performance compared to baseline models.
+
+- **Visual elements:**
+    - A headshot of the presenter is visible in the upper right corner.
+    - The slide has a clean, white background.
+    - The title "Summary" is displayed in large, bold text at the top left.
+    - Bullet points are used to organize the key points.
+
+- **Notable text:**
+    - "Summary" (title)
+    - "FactKG: Fact Verification via Reasoning on Knowledge Graphs" (dataset name)
+    - "108k natural language claims" (dataset size)
+    - "one-hop, Conjunction, Existence, Multi-hop, and Negation" (reasoning types)
+    - "colloquial style claims as well as written style claims" (linguistic patterns)
+    - "graphical evidence" (model component)
+    - "superior performance" (experimental result)
+
+Slide 11
+Timestamp: 326.22s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide summarizes the key contributions and findings of a research project focused on fact verification using knowledge graphs.
+
+- **Key points:**
+    - The research introduces a new dataset, FactKG, to facilitate better utilization of knowledge graphs.
+    - The dataset contains 108k natural language claims and five types of reasoning: one-hop, conjunction, existence, multi-hop, and negation.
+    - The dataset includes various linguistic patterns, encompassing colloquial and written styles, to enhance practicality.
+    - Experimental results demonstrate that incorporating graphical evidence in the model leads to superior performance compared to baselines.
+
+- **Visual elements:**
+    - The slide has a white background.
+    - A portrait of the speaker is visible in the upper right corner.
+    - The title "Summary" is displayed in large, bold text at the top left.
+    - Bullet points are used to organize the key points.
+
+- **Notable text:**
+    - "Summary" (title)
+    - "FactKG: Fact Verification via Reasoning on Knowledge Graphs" (dataset name)
+    - "108k natural language claims" (dataset size)
+    - "one-hop, conjunction, existence, multi-hop, and negation" (types of reasoning)
+    - "colloquial style claims as well as written style claims" (linguistic patterns)
+    - "graphical evidence" (model component)
+    - "superior performance" (experimental result)
+
+Slide 12
+Timestamp: 330.18s
+------------------------------
+- Main topic: This slide serves as a concluding slide, expressing gratitude and providing resources for further exploration.
+- Key points:
+    - Expresses thanks to the audience.
+    - Provides a link to the dataset used in the presentation.
+    - Provides contact information for the presenter.
+- Visual elements:
+    - A person is visible in a small inset video feed in the upper right corner.
+- Notable text:
+    - "Thank you!"
+    - Dataset: https://github.com/jiho283/FactKG
+    - Contact: jiho.kim@kaist.ac.kr
+
+Total slides processed: 12

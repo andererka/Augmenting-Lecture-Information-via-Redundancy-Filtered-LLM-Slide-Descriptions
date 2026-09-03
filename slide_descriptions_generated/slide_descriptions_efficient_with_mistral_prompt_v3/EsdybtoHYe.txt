@@ -1,0 +1,229 @@
+**Slide 1 (Timestamp: 5.50s)**
+
+**Title:** What's The Meaning of Superhuman Performance in Today's NLU?
+
+**Text content:**
+Simone Tedeschi, Johan Bos, Thierry Declerck,
+Jan Hajic, Daniel Herschcovich, Eduard H. Hovy,
+Alexander Koller, Simon Krek, Steven Schockaert,
+Rico Sennrich, Ekaterina Shutova and Roberto Navigli
+
+(tedeschi, navigli)@diag.unimore.it, johan.bos@rug.nl,
+declerck@dfki.de, hajic@ufal.mff.cuni.cz, dh@di.ku.dk,
+hovy@cmu.edu, koller@coli.uni-saarland.de, simon.krek@ijs.si,
+sschockaerts1@cardiff.ac.uk, sennrich@cl.uzh.ch, e.shutova@uva.nl
+
+**Visual elements:**
+- **Image:** A cartoon-style illustration of a person sitting in front of a computer. The person is wearing a purple t-shirt and black shorts. They are looking intently at a screen displaying a grid-like interface, possibly representing a chess board or a similar game. To the right of the person is a large computer tower.
+- **Logos (bottom row):**
+  - abelscape
+  - SAPIENZA UNIVERSITY OF ROMA
+  - ACL 2023
+  - KU Leuven
+  - Carnegie Mellon University
+  - ChaMeL
+  - University des Saarlandes
+  - University of Amsterdam
+  - University of Ljubljana
+  - University of Zurich
+  - University of Trento
+  - and others (too numerous to list individually)
+- A small image of a person in the bottom right corner, presumably the speaker.
+
+---
+
+**Slide 3 (Timestamp: 35.50s)**
+
+**Title:** Introduction
+
+**Text content:**
+- Leaderboard-based evaluation has become a popular practice in NLP
+- Not infrequently, systems achieve better-than-human performance on several tasks
+- This has led to claims of superhuman capabilities and the provocative idea that certain tasks have been solved
+
+**Figures/graphs:**
+- **Bar graph titled "Saturated Benchmarks"**
+  - **Axes:**
+    - X-axis: No labels are present. The bars are arranged horizontally.
+    - Y-axis: Ranges from -40 to 40. The axis is labeled "0".
+  - **Legend:** Located on the left side of the graph. The legend entries are:
+    - MadQA
+    - XTREME
+    - SuperGLUE
+    - SQuAD 2.0
+    - GLUE
+    - SQuAD 1.1
+    - RACE
+  - **Bars:**
+    - MadQA: A blue bar extending to approximately -32.
+    - XTREME: A red bar extending to approximately -15.
+    - SuperGLUE: A green bar extending to approximately 25.
+    - SQuAD 2.0: A light blue bar extending to approximately 10.
+    - GLUE: A light green bar extending to approximately 5.
+    - SQuAD 1.1: A light blue bar extending to approximately 2.
+    - RACE: A light green bar extending to approximately 3.
+  - **Horizontal Line:** A horizontal line is drawn at y=0. It is labeled "Human Baseline Estimate".
+
+**Other visual elements:**
+- The slide has a white background.
+- The logos of "abelscape" and "SAPIENZA Università di Roma" are present in the bottom left corner.
+- A small image of a person (presumably the speaker) is present in the bottom right corner.
+
+---
+
+**Slide 4 (Timestamp: 42.50s)**
+
+**Title:** Introduction
+
+**Text content:**
+- Microsoft Research Blog
+- Microsoft DeBERTa surpasses human performance SuperGLUE benchmark
+- Published: January 6, 2021
+- By: Hengcheng Li, Principal SDE; Xiaodong Li, Principal Researcher; Jianfeng Gao, Director, President; Wenchu Chen, Partner Science Manager
+
+**Figures/graphs:**
+- **Image 1:** A screenshot of a Microsoft Research Blog post titled "Microsoft DeBERTa surpasses human performance SuperGLUE benchmark." The blog post includes the date "Published: January 6, 2021" and the names of the authors: Hengcheng Li, Xiaodong Li, Jianfeng Gao, and Wenchu Chen.
+- **Image 2:** A graphic with the letters "NLP" in a stylized font, with each letter filled with a different pattern of dots. The text "SuperGLUE" is written vertically around the letters. Below the letters, the text reads: "Google's newest benchmark for understanding language and reasoning."
+- **Bar graph titled "Saturated Benchmarks."**
+  - **X-axis:** Labeled with a vertical line at -40.
+  - **Y-axis:** No label is visible.
+  - **Bars:** There are multiple bars representing different benchmarks. The bars are colored in shades of green and red.
+    - The leftmost bar is red and short.
+    - The next bar is red and slightly taller.
+    - The next bar is red and taller than the previous one.
+    - The next bar is red and taller than the previous one.
+    - The next bar is green and taller than the previous one.
+    - The next bar is green and taller than the previous one.
+    - The next bar is green and taller than the previous one.
+  - **Label:** "Human Baseline Estimate" is written near the rightmost bars.
+
+**Other visual elements:**
+- The slide has a white background.
+- The Microsoft Research Blog screenshot is on the left side of the slide.
+- The "NLP" graphic is in the center of the slide.
+- The bar graph is on the right side of the slide.
+- The logos of "abelscape" and "SAPIENZA" are at the bottom left corner of the slide.
+- A small image of a person (presumably the speaker) is at the bottom right corner of the slide.
+
+---
+
+**Slide 5 (Timestamp: 138.50s)**
+
+**Title:** The SuperGLUE Benchmark (Wang et al., 2019)
+
+**Text content:**
+Human baselines are outperformed on 6 out of 10 SuperGLUE tasks!
+
+**Table:**
+
+| Rank | Name | Model | URL | Score | Boost | CB | COPA | MultiRC | RTE | WiC | WSC | Avg. |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | JDAI@spine | ViP-G | [https://github.com/spine-ai/ViP-G](https://github.com/spine-ai/ViP-G) | 87.2 | 44.8 | 86.8 | 86.2 | 86.8 | 86.2 | 86.8 | 86.8 | 86.8 |
+| + | Liam Fedus | GT-A400 | [https://github.com/Liam-Fedus/GT-A400](https://github.com/Liam-Fedus/GT-A400) | 85.9 | 41.2 | 85.8 | 85.6 | 86.8 | 85.8 | 86.2 | 86.8 | 86.1 |
+| + | Microsoft Research & Tencent | Turing NLM v5 | [https://github.com/microsoft/Turing-NLP](https://github.com/microsoft/Turing-NLP) | 85.3 | 39.6 | 85.4 | 85.2 | 86.8 | 85.6 | 86.2 | 86.8 | 85.8 |
+| + | EFFDG | SPRINCE 5.0 | [https://github.com/allenai/SPRINCE](https://github.com/allenai/SPRINCE) | 84.9 | 38.0 | 85.0 | 84.8 | 86.8 | 85.4 | 86.0 | 86.6 | 85.6 |
+| + | Ti | PaLM 540B | [https://arxiv.org/abs/2204.02311](https://arxiv.org/abs/2204.02311) | 85.4 | 39.3 | 85.2 | 85.0 | 86.8 | 85.6 | 86.2 | 86.8 | 85.8 |
+| + | Zhou Wang | TX + LLGL Single Answer | [https://github.com/google-research/single-answer](https://github.com/google-research/single-answer) | 85.1 | 39.1 | 85.0 | 84.8 | 86.8 | 85.4 | 86.0 | 86.6 | 85.6 |
+| + | Google MT Team | Medusa | [https://github.com/google-research/medusa](https://github.com/google-research/medusa) | 85.6 | 40.1 | 85.4 | 85.2 | 86.8 | 85.6 | 86.2 | 86.8 | 85.8 |
+| + | BERT Human Baseline | SuperGLUE Human Baseline |  | 84.6 | 0.0 | 84.6 | 84.6 | 84.6 | 84.6 | 84.6 | 84.6 | 84.6 |
+
+**Other visual elements:**
+- A logo for "abelscape" is present in the bottom left corner.
+- A logo for "SAPIENZA UNIVERSITA DI ROMA" is present in the bottom left corner.
+- A callout box is present in the bottom center with the text "- 6.4 F1 points! (- 10.5 EM points)"
+- A small text label is present in the bottom right corner: "What's the Meaning of Superhuman Performance in Today's NLP? [The]"
+
+---
+
+**Slide 6 (Timestamp: 181.50s)**
+
+**Title:** Apples and Oranges
+
+**Text content:**
+- Systems and humans are often evaluated on different sets
+  - On 7 out of 10 SuperGLUE tasks, humans are evaluated on a small portion (3%-40%) of the actual test sets
+
+**Figure/Graph:**
+A bar graph comparing the performance of "Human" and "System" on various NLP tasks.
+
+**Axes:**
+- X-axis: NLP tasks (AX-e, AX-q, BoolQ, CB, COPA, MultiRC, RTE, ReCoRD, WSC)
+- Y-axis: Performance (ranging from 0 to 10000, with increments of 1000)
+
+**Legend:**
+- Blue bars: Human performance
+- Orange bars: System performance
+
+**Data Points and Trends:**
+- **AX-e:** Human: ~150, System: ~1100
+- **AX-q:** Human: ~100, System: ~1100
+- **BoolQ:** Human: ~3300, System: ~3500
+- **CB:** Human: ~100, System: ~100
+- **COPA:** Human: ~100, System: ~100
+- **MultiRC:** Human: ~100, System: ~100
+- **RTE:** Human: ~1000, System: ~3000
+- **ReCoRD:** Human: ~10000, System: ~10000
+- **WSC:** Human: ~100, System: ~800
+
+**Other visual elements:**
+- The slide has a light blue background.
+- The Labeledscape logo is in the bottom left corner.
+- The SAPIENZA logo is in the bottom center.
+- Text "What's the Meaning of Superhuman Performance in Today's NLP (Tech)" is in the bottom right corner.
+- A person is visible in the bottom right corner of the screen, presumably the speaker.
+
+---
+
+**Slide 7 (Timestamp: 254.50s)**
+
+**Title:** Human Evaluation Metrics
+
+**Text content:**
+- NLP researchers often naively or vaguely estimate human performance
+  - The term "human baseline" implies that systems need to beat it
+
+- ACM Chess Challenge
+  - Compute the final score
+- ...the score of the best annotator...
+
+**Image:**
+A photograph depicting Garry Kasparov playing chess against an opponent. The chessboard is visible, and both players are seated at a table. A flag is visible in the background.
+
+**Other visual elements:**
+- The logos of "abelscape" and "Sapienza University of Rome" are present.
+- Text "What's the Meaning of Superhuman Performance in Today's NLP?" is present.
+
+---
+
+**Slide 8 (Timestamp: 332.50s)**
+
+**Title:** Conclusions
+
+**Text content:**
+In this presentation:
+- We discussed the tendency to claim superhuman performance for new systems
+- We outlined why such claims are not (yet) grounded
+
+In our paper:
+- We discuss the consequences of the identified issues
+- We provide recommendations to construct fairer and more transparent benchmarks
+
+**Figures/graphs:**
+A figure is present on the right side of the slide. It appears to be a PDF of a research paper titled "What's the Meaning of Superhuman Performance in Today's NLP?" The paper has the following authors: Marco Baroni, Alessandro Rizzuto, Umberto Bernadini, and Matteo Negri. The paper is associated with the following affiliations: abelscape, Sapienza Università di Roma. The figure shows a multi-page document, with visible text and figures within the paper.
+
+**Bar Graph Description:**
+- **Title:** The bar graph does not have a title visible on the slide.
+- **X-axis:** The x-axis is labeled with the following categories: "Human", "GPT-3", "GPT-3.5", "GPT-4", "Claude".
+- **Y-axis:** The y-axis is labeled "Accuracy".
+- **Bars:**
+  - "Human" bar: A blue bar representing human performance.
+  - "GPT-3" bar: A green bar representing GPT-3 performance.
+  - "GPT-3.5" bar: A red bar representing GPT-3.5 performance.
+  - "GPT-4" bar: A purple bar representing GPT-4 performance.
+  - "Claude" bar: A light blue bar representing Claude performance.
+- **Trends:** The graph shows a general trend of increasing accuracy from "Human" to "GPT-3", "GPT-3.5", "GPT-4", and "Claude". The "Claude" bar is the highest.
+
+**Other visual elements:**
+- The slide has a blue background.
+- The logos of "abelscape" and "SAPIENZA Università di Roma" are present at the bottom left and center of the slide, respectively.
+- A small image of the speaker is present at the bottom right corner of the slide.

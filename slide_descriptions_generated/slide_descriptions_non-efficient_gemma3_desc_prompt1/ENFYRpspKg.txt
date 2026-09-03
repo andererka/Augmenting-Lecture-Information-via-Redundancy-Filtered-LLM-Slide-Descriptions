@@ -1,0 +1,212 @@
+Slide 1
+Timestamp: 90.08s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide introduces a new dataset designed to improve the factual consistency of summarization models.
+
+- **Key points:**
+    * The goal is to collect human demonstrations and feedback for improving factual consistency in summarization models given original system-generated summaries.
+    * The dataset includes labels indicating whether a summary is factually consistent and, if not, the type of factual error.
+    * Two types of factual errors are defined: intrinsic errors (misinterpreting information from the source text) and extrinsic errors (hallucinating new information not present in the source text).
+    * Human demonstrations consist of human-corrected, factually consistent summaries based on initial system-generated summaries.
+    * Human feedback includes instructions, explanations, and evidence.
+
+- **Visual elements:** The slide contains a bulleted list of text.
+
+- **Notable text:**
+    * Title: "New Dataset for Factual Consistency"
+    * Labels: "Labels," "Intrinsic errors," "Extrinsic errors," "Human Demonstrations," "Human Feedback"
+    * Highlighted terms: "factual consistency," "summarization models," "system-generated summaries," "instructions," "explanation," "evidence"
+
+Slide 2
+Timestamp: 181.65s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide details the data collection methods and model used in a research project focused on text summarization.
+
+- **Key points:**
+    - The dataset used is XSum.
+    - XSum consists of news articles and short summaries (one sentence).
+    - More than 70% of the reference summaries in XSum contain factual errors.
+    - The model used is Pegasus, a large pretrained Encoder-Decoder model.
+
+- **Visual elements:**
+    - A two-column layout displays an example from the XSum dataset.
+    - The left column, labeled "Input document," shows a snippet of a news article.
+    - The right column, labeled "Explanation," shows the corresponding summary and an "Edited Summary" with corrections.
+    - Color-coding highlights the factual errors and corrections within the summaries.
+
+- **Notable text:**
+    - "Data Collection Details" (slide title)
+    - "Dataset: XSum"
+    - "News articles, short summaries (one sentence), more than 70% reference summaries containing factuality errors"
+    - "Model: Pegasus, large pretrained Encoder-Decoder model"
+    - "Input document" (column label)
+    - "Explanation" (column label)
+    - "Initial XSum Summary"
+    - "Edited Summary"
+
+Slide 3
+Timestamp: 196.50s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide presents data statistics related to a dataset called DEFACTO, highlighting the prevalence of errors and the average number of instructions per data point.
+
+- **Key points:**
+    - The dataset contains 2561 data points.
+    - 1821 data points (71.1%) contain errors.
+    - 563 errors (22.0%) are intrinsic.
+    - 1505 errors (58.76%) are extrinsic.
+    - On average, each data point contains more than one instruction (1.52).
+
+- **Visual elements:**
+    - A table titled "Table 1: Numbers of data points in DEFACTO dataset. 71.1% of annotated summaries contain factual errors" shows the distribution of data points with and without errors across Train, Val, Test, and All categories. The table includes the following values:
+        - All: Train (1000), Val (486), Test (1075), All (2561)
+        - w/ Errors: Train (701), Val (341), Test (779), All (1821)
+    - A line graph, labeled "Cumulative Distribution of Instruction Number," displays the cumulative distribution of the number of instructions per data point. The x-axis represents the number of instructions, and the y-axis represents the cumulative proportion.
+
+- **Notable text:**
+    - "Data Statistics" (slide title)
+    - "DEFACTO dataset" (mentioned in table title)
+    - "intrinsic errors"
+    - "extrinsic errors"
+    - "Cumulative Distribution of Instruction Number" (graph title)
+    - "Table 1" (table title)
+    - "71.1% of annotated summaries contain factual errors" (table caption)
+
+Slide 4
+Timestamp: 227.19s
+------------------------------
+**Slide Content Description:**
+
+**Main topic:** This slide presents the data analysis results regarding human-edited summaries, highlighting improvements in factual accuracy but a decrease in ROUGE scores compared to original system outputs.
+
+**Key points:**
+*   Improved Automatic Factualty Scores
+*   Lower ROUGE scores with reference summaries compared to the original system outputs.
+
+**Visual elements:**
+*   **Table 2:** Displays Automatic Factualty Scores on the reference summaries, initial system outputs, and human-edited summaries. Columns include:
+    *   DAE (Dimensionally Adjusted Error)
+    *   QAFactEval
+    *   Rows include: Reference, System-input, Human-edited
+*   **Table 3:** Displays Textual Similarity scores (ROUGE-L/2/1 F1 scores) with labels R1, R2, and Rl.
+    *   Rows include: Ref. vs. Sys., Sys. vs. Human, and Sys. vs. Human.
+    *   Columns include: R1, R2, and Rl.
+    *   Labels: Ref. denotes reference summaries, Sys. denotes initial system outputs, and Human denotes the human-edited summaries.
+
+**Notable text:**
+*   Title: Data Analysis: Human-edited Summaries
+*   Table 3 label: Textual similarity.
+*   ROUGE-L/2/1 F1 scores
+*   R1, R2, Rl
+*   Ref., Sys., Human
+*   "(p < 0.01) factual consistency"
+
+Slide 5
+Timestamp: 242.04s
+------------------------------
+- Main topic: This slide presents a data analysis of editing instructions.
+- Key points:
+    - Removing information and replacing information are the two most common editing operations.
+    - Intrinsic error require more diverse editing operations.
+- Visual elements: A bar graph displays the distribution of six different types of instructions, labeled as "remove," "replace," "reorder," "insert," "split," and "other." The x-axis represents the instruction type, and the y-axis represents the number of instances. Four different categories are represented by different colors.
+- Notable text: The slide title is "Data Analysis: Editing Instructions." The figure caption reads "Figure 3: Distribution of six different types of instructions. removing information and replacing information are the most frequent types. Extrinsic errors are more likely to be corrected by removing while Intrinsic errors are more likely to be corrected by replacing." The x-axis is labeled "Instruction Type." The y-axis is labeled "Number." The legend labels the four colors as "all," "extrinsic," "intrinsic," and "both."
+
+Slide 6
+Timestamp: 265.80s
+------------------------------
+**Slide Content Description:**
+
+**Main topic:** This slide illustrates the process of summary editing using an editing model in the context of Natural Language Generation (NLG) Task 1.
+
+**Key points:**
+*   The process involves an "Editing Model" that takes an "Initial Summary," the "Input Document," and "Human Feedback" as input.
+*   The output of the editing model is an "Edited Summary."
+*   The slide presents performance metrics (R1, R2, DNE, and QME) for different models across various datasets.
+
+**Visual elements:**
+*   **Diagram:** A flowchart-style diagram depicts the summary editing process. Boxes represent the input elements (Input Document, Initial Summary, Human Feedback), the processing step (Editing Model), and the output (Edited Summary). Arrows indicate the flow of information.
+*   **Tables:** Two tables present performance metrics.
+    *   Table 1 shows performance metrics (R1, R2, DNE, QME) for different models (Tpp, Dpp, GPP, and GPP-3.5) across different datasets (Tpp, Dpp, GPP, and GPP-3.5).
+    *   Table 2 shows performance metrics (R1, R2, DNE, QME) for different models (Tpp, Dpp, GPP, and GPP-3.5) across different datasets (Tpp, Dpp, GPP, and GPP-3.5).
+
+**Notable text:**
+*   **Title:** NLG Task 1: Summary Editing – Editing Model
+*   **Labels:** Input Document, Initial Summary, Human Feedback, Editing Model, Edited Summary, R1, R2, DNE, QME, Tpp, Dpp, GPP, GPP-3.5.
+*   **Terms:** NLG (Natural Language Generation)
+
+Slide 7
+Timestamp: 287.58s
+------------------------------
+- Main topic: This slide presents a natural language generation (NLG) task focused on feedback generation using a "Critic Model."
+
+- Key points:
+    - The task involves generating feedback on an initial summary of an input document.
+    - An "Editing Model" is used to refine the initial summary based on the generated feedback.
+    - The slide evaluates the performance of different methods for generating feedback.
+    - The evaluation metrics used are R1, R2, DAE, and QFE.
+
+- Visual elements:
+    - Two diagrams illustrate the process:
+        - The first diagram shows the overall workflow: Input Document -> Initial Summary -> Editing Model -> Edited Summary.
+        - The second diagram focuses on the Critic Model: Input Document -> Initial Summary -> Critic Model -> Generated Feedback.
+    - Two tables present performance data:
+        - The first table shows the performance of different methods (Sys, Human, D+S, D+S+I) using the Critic Model, with R1, R2, DAE, and QFE scores.
+        - The second table shows the performance of different methods (Sys, Human, D+S+I, D+S+I-GPT3.5, D+S+I-GPT4) using the Editing Model, with R1, R2, DAE, and QFE scores.
+
+- Notable text:
+    - Titles: "NLG Task 2: Feedback Generation – Critic Model," "Table 9: Editing model performance (70%) with the instructions generated by the Critic model," "Table 10: Case study of instruction generation with LLMs. Instructions generated by the Critic models are used to instruct the Editing model."
+    - Labels: "Input Document," "Initial Summary," "Editing Model," "Edited Summary," "Critic Model," "Generated Feedback," "R1," "R2," "DAE," "QFE," "Sys," "Human," "D+S," "D+S+I," "D+S+I-GPT3.5," "D+S+I-GPT4."
+    - Terms: "NLG," "Feedback Generation."
+    - Notes: "I" stands for instructions, "GPT3.5" and "GPT4" refer to specific language models.
+    - Table notes: "Sys" stands for system, "Human" stands for human-written instructions, "D" stands for Input Document, "S" stands for initial summaries, "I" stands for instructions.
+
+Slide 8
+Timestamp: 315.30s
+------------------------------
+**Slide Content Description:**
+
+**Main topic:** This slide presents the results of the NLG Task 3, focusing on an "Editor Model" approach to automatic factual error correction in text summarization.
+
+**Key points:**
+*   The task involves correcting known factual errors in initial summaries generated from input documents.
+*   The Editor Model aims to improve summaries through automated correction, potentially incorporating human feedback.
+*   The slide presents quantitative results comparing the Editor Model against human performance and other systems in factual error detection and correction.
+*   Results are measured using R1, R2, R@, DAE, and QFE metrics.
+
+**Visual elements:**
+*   **Diagram:** A flowchart illustrates the process: "Input Document" -> "Editor Model" -> "Human Feedback" -> "Edited Summary."
+*   **Table 1: "Correct Known Factual Errors"**: This table compares the performance of different methods (Editor, Human) on the "Tiny" and "T5:M" datasets, using metrics R1, R2, R@, and QFE.
+*   **Table 8: "Factual Error Detection and Correction"**: This table compares the performance of various systems (Pegasus, Human, CCGS, CLIFF, REDRESS, FactPegasus, CompEdit, Editor) using metrics R1, R2, R@, DAE, and QFE.
+
+**Notable text:**
+*   **Title:** NLG Task 3: Explanation Automatic Factual Error Correction – Editor Model
+*   **Table Titles:** "Correct Known Factual Errors" and "Factual Error Detection and Correction"
+*   **Metrics:** R1, R2, R@, DAE, QFE (used as column headers in the tables)
+*   **Systems/Methods:** Pegasus, Human, CCGS, CLIFF, REDRESS, FactPegasus, CompEdit, Editor (listed in the tables)
+*   **Datasets:** Tiny, T5:M (mentioned in Table 1)
+
+Slide 9
+Timestamp: 331.14s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide highlights the further advantages of a dataset, specifically regarding human evaluation, annotations, training metrics, and meta-evaluation.
+
+- **Key points:**
+    * Better Human Evaluation: Requiring annotators to provide demonstrations and feedback improves their understanding of the evaluation task.
+    * Fine-grained annotations: The dataset facilitates researchers' understanding of factual errors through human-written explanations and instructions.
+    * Training better factuality metrics: The dataset can be utilized to train new factuality metrics.
+    * Meta-evaluation: The dataset's information-rich format supports in-depth evaluation of factuality metrics.
+
+- **Visual elements:** There are no diagrams, charts, tables, or figures on this slide.
+
+- **Notable text:**
+    * Title: "Further Advantages"
+    * Highlighted terms: "Better Human Evaluation," "Fine-grained annotations," "Training better factuality metrics," "Meta-evaluation"
+
+Total slides processed: 9

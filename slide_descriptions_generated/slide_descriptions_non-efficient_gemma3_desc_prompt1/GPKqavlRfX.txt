@@ -1,0 +1,169 @@
+Slide 1
+Timestamp: 3.95s
+------------------------------
+- Main topic: This slide introduces the research paper "Towards Understanding Omission in Dialogue Summarization" and lists the authors and their affiliations.
+- Key points:
+    - The paper investigates omission in dialogue summarization.
+    - The authors are Yicheng Zou, Kaitao Song, Xu Tan, Zhongkai Fu, Qi Zhang, Dongsheng Li, and Tao Gui.
+    - Affiliations include School of Computer Science, Fudan University, Shanghai, China; Microsoft Research Asia, China; and Institute of Modern Languages and Linguistics, Fudan University, Shanghai, China.
+- Visual elements:
+    - The slide displays the logos of Fudan University and Microsoft.
+    - A background image shows the Toronto skyline, indicating the location of the conference.
+    - The title of the conference, "The 61st Annual Meeting of the Association for Computational Linguistics," is displayed.
+    - The conference dates, "July 9-14, 2023," are also shown.
+- Notable text:
+    - Title: "Towards Understanding Omission in Dialogue Summarization"
+    - Authors' names and affiliations
+    - Conference title and dates
+    - Email address: [kaitao.song, xuta, zhongkai.fu, dongsheng.li]@microsoft.com
+
+Slide 2
+Timestamp: 9.39s
+------------------------------
+- Main topic: This slide introduces the research paper "Towards Understanding Omission in Dialogue Summarization" and lists the authors and affiliations.
+
+- Key points:
+    - The paper investigates omission in dialogue summarization.
+    - The authors are Yicheng Zou, Kaitao Song, Xu Tan, Zhongkai Fu, Qi Zhang, Dongsheng Li, and Tao Gui.
+    - Affiliations include: School of Computer Science, Fudan University, Shanghai, China; Microsoft Research Asia, China; and Institute of Modern Languages and Linguistics, Fudan University, Shanghai, China.
+    - Contact email is provided: kaitao.song, xu.tan, zhongkai.fu, dongsheng.li@microsoft.com
+
+- Visual elements:
+    - The slide features the logos of Fudan University and Microsoft.
+    - A background image of the Toronto skyline is present, indicating the location of the conference.
+    - The title of the conference, "The 61st Annual Meeting of the Association for Computational Linguistics," is displayed.
+    - The conference dates, "July 9-14, 2023," are also shown.
+
+- Notable text:
+    - "Towards Understanding Omission in Dialogue Summarization" (title of the paper)
+    - "The 61st Annual Meeting of the Association for Computational Linguistics" (conference title)
+    - "Toronto, Canada" (conference location)
+    - "July 9-14, 2023" (conference dates)
+    - Author names and affiliations are clearly listed.
+    - Contact email addresses are provided.
+
+Slide 3
+Timestamp: 36.12s
+------------------------------
+- Main topic: This slide introduces the background and purpose of dialogue summarization, focusing on its application across various scenarios.
+- Key points:
+    - The goal is to produce summaries for dialogues.
+    - The application spans multiple scenarios including customer service, medical consultation, meetings, movie scripts, mail threads, and chat logs.
+- Visual elements:
+    - Six icons representing different scenarios: a man at a computer for customer service, a doctor with a speech bubble for medical consultation, a group of people around a table for meetings, a movie script with a pencil, an envelope for mail threads, and a chat bubble for chat logs.
+- Notable text:
+    - Title: Background
+    - Subtitle: Dialogue Summarization
+    - Supporting text: "Produce summaries for dialogues in various scenarios."
+    - Labels for each icon: Customer Service, Medical Consultation, Meetings, Movie Scripts, Mail Threads, Chat Logs.
+
+Slide 4
+Timestamp: 138.10s
+------------------------------
+- Main topic: This slide discusses the problem of omission in dialogue summarization and presents experimental results comparing different summarization models.
+
+- Key points:
+    - Omission is a serious and general problem in dialogue summarization.
+    - Several summarization models are compared: SAMSum, DialogueSum, EmailSum, QMSum, and TweetSum.
+    - The models are evaluated based on their precision in dialogue summarization.
+
+- Visual elements:
+    - A box plot graph on the left compares the precision scores of the five models (SAMSum, DialogueSum, EmailSum, QMSum, TweetSum) across different dialogue lengths. Each model has a set of data points represented by circles, and the box plot shows the median, quartiles, and outliers.
+    - A series of line graphs on the right show the precision scores of each model across different dialogue lengths (intervals of utterance numbers). Each graph displays a range of precision values for each dialogue length, indicating the variability in performance.
+
+- Notable text:
+    - Title: Background
+    - Bullet point: Omission in Dialogue Summarization
+    - Highlighted text: Omission is a serious and general problem in dialogue summarization.
+    - X-axis labels: Dialogue Length (intervals of utterance numbers)
+    - Y-axis label: Precision in Dialogue
+    - Model names: SAMSum, DialogueSum, EmailSum, QMSum, TweetSum
+    - Legend labels: BART-large, BART-base, Pegasus, T5-base, Transformer
+
+Slide 5
+Timestamp: 233.15s
+------------------------------
+- Main topic: This slide introduces the "OLDS" dataset, designed for omission detection in dialogue summarization.
+- Key points:
+    - The dataset is called "OLDS: A Dataset for Omission Detection in Dialogue Summarization."
+    - It contains data from various domains: Samsung, DialogSum, EmailSum, and TweetSum.
+    - For each domain, the slide provides statistics on the training and development splits, including the number of dialogues, average terms per dialogue, length of dialogues, and length of summaries.
+    - It also lists the number of candidate summaries and average ROUGE scores for different models (BART, T5, Transformer).
+    - The slide includes a "Precision" column, likely representing the accuracy of omission detection.
+- Visual elements:
+    - A large table dominates the slide, presenting the dataset statistics.
+    - The table has multiple rows representing different domains and columns for various metrics.
+    - A person wearing headphones is visible in the upper right corner of the slide.
+- Notable text:
+    - "OLDS: A Dataset for Omission Detection in Dialogue Summarization" (title)
+    - Domain (Samsung, DialogSum, EmailSum, TweetSum)
+    - Split (Train, Dev)
+    - Metrics: # of dialogues, Avg. len. of dialogues, Len. of summaries, # of candidate summaries, Avg. ROUGE-1 score, Transformer, Precision.
+    - Model names: BART, T5, Transformer.
+    - "New Dataset" (title at the top of the slide)
+
+Slide 6
+Timestamp: 285.63s
+------------------------------
+**Slide Content Description:**
+
+**Main topic:** This slide presents an analysis of baselines and results for omission detection across various summarization tasks.
+
+**Key points:**
+*   The slide outlines three baseline approaches for omission detection: Pair-wise Classification (Text Matching), Sequence Labeling (Extractive Summarization), and Pointer Network (Question Answering).
+*   It presents performance metrics (Precision, Recall, F1, and W) for different models (BERT and RoBERTa) across six datasets: SAMSum, DialogSum, EmailSum, QMSum, TweetSum, and a combined dataset.
+
+**Visual elements:**
+*   Pie charts are displayed for each dataset (SAMSum, DialogSum, QMSum, TweetSum), illustrating the proportion of Positive and Omission labels.
+*   A table presents quantitative results for BERT and RoBERTa models across the mentioned datasets and baseline approaches.
+
+**Notable text:**
+*   Title: "Analysis"
+*   Subtitle: "Baselines and Results"
+*   Labels: "P", "R", "F1", "W" (representing Precision, Recall, F1 score, and Weighted F1 score, respectively)
+*   Highlighted term: "Omission Detection is a challenging task."
+*   Dataset names: SAMSum, DialogSum, EmailSum, QMSum, TweetSum
+*   Model names: BERT, RoBERTa
+
+Slide 7
+Timestamp: 332.16s
+------------------------------
+- Main topic: This slide presents an analysis of omission-based summary refinement using BART-large and T5-small models.
+- Key points:
+    - Omission-based summary refinement improves summary quality.
+    - Omission detection is a valuable task.
+- Visual elements:
+    - Two bar charts are displayed, one for BART-large and one for T5-small.
+    - Each chart compares three conditions: "Raw" (baseline), "+Dial." (summary with dialogue information), and "+Omit." (summary with omitted information).
+    - The x-axis of both charts represents different datasets: SAM, Dial., Email, QM, and Tweet.
+    - The y-axis of both charts represents ROUGE-1 scores.
+- Notable text:
+    - Title: Analysis
+    - Subtitle: Omission-based Summary Refinement
+    - Labels: BART-large, T5-small, Raw, +Dial., +Omit., SAM, Dial., Email, QM, Tweet, ROUGE-1
+    - Highlighted text: Omission Detection is a valuable task.
+
+Slide 8
+Timestamp: 335.13s
+------------------------------
+- Main topic: This slide serves as a concluding slide, expressing gratitude and providing contact information and links to related resources.
+- Key points:
+    - Expresses gratitude with the text "Thank you!".
+    - Provides contact information: yezou18@fudan.edu.cn
+    - Provides links to:
+        - https://arxiv.org/abs/2211.07145
+        - https://github.com/microsoft/msummarizer
+- Visual elements:
+    - A QR code is displayed.
+    - A photograph of the speaker is visible in the upper right corner.
+    - A background image of the Toronto skyline is present, with text overlayed: "The 61st Annual Meeting of the Association for Computational Linguistics, Toronto, Canada, July 9-14, 2023".
+- Notable text:
+    - "Thank you!"
+    - "Contact: yezou18@fudan.edu.cn"
+    - "https://arxiv.org/abs/2211.07145"
+    - "https://github.com/microsoft/msummarizer"
+    - "The 61st Annual Meeting of the Association for Computational Linguistics"
+    - "Toronto, Canada"
+    - "July 9-14, 2023"
+
+Total slides processed: 8

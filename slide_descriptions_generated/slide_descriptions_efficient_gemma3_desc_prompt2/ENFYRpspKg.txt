@@ -1,0 +1,234 @@
+Slide 1
+Timestamp: 90.08s
+------------------------------
+.
+
+**Slide Content:**
+
+**New Dataset for Factual Consistency**
+
+*   Goal: collecting human demonstrations and feedback for improving factual consistency of summarization models given original system-generated summaries
+*   Labels:
+    *   Factual consistency
+    *   Type of factuality error (intrinsic/extrinsic)
+*   Human Demonstrations: human-corrected, factually consistent summaries
+*   Human Feedback: instructions, explanation, evidence
+
+Slide 2
+Timestamp: 181.65s
+------------------------------
+.
+
+**Slide Content:**
+
+**Data Collection Details**
+
+*   Dataset: XSum
+*   Model: Pegasus
+
+Example of annotated data points, including input document, initial summary, explanation, evidence, instruction, and edited summary.
+Data statistics: 2.5K data points, 70% containing factual errors. Human-edited summaries receive higher automatic factuality scores but have lower textual overlap with reference summaries.
+Data distribution of editing instructions and their relation with different error types.
+
+Slide 3
+Timestamp: 196.50s
+------------------------------
+.
+**Slide Content:**
+
+**Data Statistics**
+
+*   Data Distribution
+    *   2561 data points
+    *   1821 errors (71.1%)
+        *   563 (22.0%) intrinsic errors
+        *   1505 (58.76%) extrinsic errors
+*   More than one instruction on average (1.52)
+
+|               | Train | Val | Test | All |
+| :------------- | :---- | :-- | :--- | :-- |
+| All           | 1000  | 486 | 1075 | 2561 |
+| w/ Errors | 701  | 341 | 779 | 1821 |
+
+Table 1: Numbers of data points in DeFacto dataset. 71.1% of annotated summaries contain factual errors.
+
+**Figure Description:**
+
+The slide includes a line graph titled "Cumulative Distribution of Instruction Number."
+
+*   **X-axis:** Labeled "Instruction Number."
+*   **Y-axis:** Labeled "Cumulative Percentage."
+*   **Data:** A single blue line shows a cumulative distribution, starting at a low percentage and gradually increasing to near 100%. The curve flattens out as the instruction number increases.
+
+Slide 4
+Timestamp: 227.19s
+------------------------------
+.
+**Slide Content:**
+
+Data Analysis: Human-edited Summaries
+
+*   Improved Automatic Factualty Scores
+*   Lower ROUGE scores with reference summaries compared to the original system outputs
+
+|                     | DAE     | QAFactEval |
+| ------------------- | ------- | ---------- |
+| Reference           | 0.6176  | 1.549      |
+| System-output       | 0.6904  | 1.826      |
+| Human-edited       | 0.8975  | 2.540      |
+
+Table 2: Automatic factuality scores on the reference summaries, initial system outputs and human edited summaries.
+
+|                     |       R1 |       R2 |       RL |
+| ------------------- | ------- | ------- | ------- |
+| Ref. vs. Sys.       | 48.01   | 25.54   | 40.45   |
+| Ref. vs. Human     | 40.30   | 18.22   | 33.86   |
+| Sys. vs. Human     | 75.79   | 66.17   | 74.89   |
+
+Table 3: Textual similarity. R1, R2, RL stand for ROUGE-1/2/L F1 scores respectively. Ref. denotes reference summaries, Sys. denotes initial system outputs, and Human denotes the human-edited summaries.
+
+Slide 5
+Timestamp: 242.04s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Data Analysis: Editing Instructions
+
+**Figure/graph:**
+
+The slide contains a bar graph titled "Figure 3: Distribution of six different types of instructions."
+
+**Axes:**
+
+*   X-axis: Instruction Type (remove, replace, add, modify, rewrite, other).
+*   Y-axis: Ratio.
+
+**Bars:**
+
+Six sets of bars, each representing an instruction type, colored to represent different error types (all, extrinsic, intrinsic, both). The bars show the distribution of editing instructions across these categories.
+
+**Caption:**
+
+Figure 3: Distribution of six different types of instructions. Removing information and replacing information are the most frequent types. Extrinsic errors are more likely to be corrected by removing while Intrinsic errors are more likely to be corrected by replacing.
+
+Slide 6
+Timestamp: 265.80s
+------------------------------
+.
+**Slide Content:**
+
+**NLG Task 1: Summary Editing – Editing Model**
+
+[Diagram]
+The diagram shows a flow of information.
+1.  **Input Document**
+2.  **Initial Summary**
+3.  **Human Feedback**
+These three inputs flow into an **Editing Model**.
+The output of the Editing Model is an **Edited Summary**.
+
+**Table 1: Performance with different versions of the Editing Model et al.**
+
+| Model | Tipp | 79-30 | 75-50 |
+|---|---|---|---|
+| **B+S** | 77.04 | 62.06 | 71.99 |
+| **B+S(1)** | 80.32 | 66.46 | 75.89 |
+| **B+S(2)** | 81.47 | 68.02 | 2.203 |
+| **B+S(4)** | 82.01 | 2.269 | 2.404 |
+| **B+S(8)** | 82.36 | 2.247 | 2.417 |
+| **D+S(1)** | 79.28 | 2.233 | 2.409 |
+| **D+S(4)** | 2.249 | 2.256 | 2.418 |
+| **D+S(8)** | 2.258 | 2.265 | 2.425 |
+
+R1, R2 stand for the ROUGE-1/2 F1 scores. DAE is from Goyal and Das (2020) while QFE is from Belz et al. (2022). D, S, and (n) stand for Input Document, initial Summary, human written Instructions, human written Explanation respectively, of which the combinations stand for different input variants. The best results with each input variant are highlighted.
+
+**Table 2: Performance of GPT-3.5 for summary editing.**
+
+| Model | Input | R1 | R2 | DAE | QFE |
+|---|---|---|---|---|---|
+| **Sys.** | 75.98 | 66.32 | 0.704 | 1.837 |
+| **Human.** | 100 | 100 | 0.905 | 2.501 |
+| **Tipp** | 77.04 | 62.06 | 0.835 | 2.248 |
+| **B+S** | 80.32 | 66.32 | 0.904 | 2.430 |
+| **GPT-3.5** | **B+S** | 21.98 | 0.092 | 2.061 |
+| **GPT-3.5** | **D+S(2)** | 72.22 | 60.59 | 0.910 | 2.501 |
+
+R1, R2 stand for the ROUGE-1/2 F1 scores calculated against the human-edited summary. Sys. denotes the human-edited summary outputs, and Human denotes the human-edited summary.
+
+Slide 7
+Timestamp: 287.58s
+------------------------------
+.
+## Slide Analysis:
+
+**Title:** NLG Task 2: Feedback Generation – Critic Model
+
+**Diagram:**
+
+The slide contains a diagram illustrating the workflow:
+
+1.  **Input Document**
+2.  **Initial Summary**
+3.  **Critic Model**
+    *   Generates feedback based on the Input Document and Initial Summary.
+4.  **Editing Model**
+    *   Takes the Input Document, Initial Summary, and Generated Feedback as input.
+    *   Produces an Edited Summary.
+5.  **Edited Summary**
+
+**Tables:**
+
+**Table 9: Editing model performance with instructions generated by the Critic model.**
+
+| Method | Critic | R1 | R2 | DAE | QFE |
+|---|---|---|---|---|---|
+| Sys | - | 75.98 | 66.32 | 0.704 | 1.837 |
+| Human | - | 100 | 99.65 | 0.905 | 2.550 |
+| D+S+T | - | 75.10 | 65.15 | 0.859 | 2.296 |
+| D+S+T GPT-3.5 | - | 60.41 | 48.18 | 0.868 | 2.566 |
+| D+S+T GPT-4 | - | 53.88 | 41.13 | 0.868 | 2.404 |
+
+**Table 10: Case study of instruction generation with LLMs.**
+
+Slide 8
+Timestamp: 315.30s
+------------------------------
+.
+## Slide Analysis: NLG Task 3: Explanation Automatic Factual Error Correction – Editor Model
+
+**Title:** NLG Task 3: Explanation Automatic Factual Error Correction – Editor Model
+
+**Visual Elements:**
+
+The slide features a diagram illustrating a process flow and two tables presenting performance metrics.
+
+**Diagram:**
+
+The diagram depicts a sequence of steps:
+
+1.  **Input Document**
+2.  **Editor Model**
+3.  **Initial Summary**
+4.  **Human Feedback**
+5.  **Edited Summary**
+
+**Tables:**
+
+**Table 1: Correct Known Factual Errors**
+
+The table displays performance metrics (R1, R2, DAE, QFE) for various methods, including "Sys," "Human," "Editing," and multiple "Editor" models (Editor1, Editor2).
+
+**Table 6: Factual Error Detection and Correction**
+
+The table presents performance metrics (R1, R2, R1_, DAE, QFE) for several systems, including "Pegasus," "Human," and various other models like "CCGS," "CLIFF," "ReDRESS," "FactPegasus," "CompEdit," and "Editor."
+
+Slide 9
+Timestamp: 331.14s
+------------------------------
+.
+**Slide Content:**
+
+The slide highlights further advantages of the DeFacto dataset beyond providing a test bed for the proposed NLG tasks. These advantages include enabling better human evaluation due to the inclusion of demonstrations and feedback, facilitating a deeper understanding of factual errors through fine-grained annotations (human-written explanations and instructions), and supporting the training of improved factuality metrics. The dataset's format is also beneficial for more in-depth evaluation of factuality metrics. The dataset has been released on GitHub.
+
+Total slides processed: 9

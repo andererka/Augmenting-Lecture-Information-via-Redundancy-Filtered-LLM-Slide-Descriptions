@@ -1,0 +1,169 @@
+Slide 1
+Timestamp: 2.50s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** To Adapt or to Annotate: Challenges and Interventions in Open-Domain Question Answering
+
+**Text content:**
+
+*   Dheeru Dua
+*   Emma Strubell
+*   Sameer Singh
+*   Pat Verga
+
+**Visual Elements:**
+
+The slide has a dark blue background. The title is large and white, centered at the top. Below the title are four small circular images of the speakers, arranged in a 2x2 grid. Each image has the speaker's name printed below it.
+
+Slide 2
+Timestamp: 6.50s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** To Adapt or to Annotate: Challenges and Interventions in Open-Domain Question Answering
+
+**Text content:**
+
+*   Dheeru Dua
+*   Emma Strubell
+*   Sameer Singh
+*   Pat Verga
+
+**Visual Elements:**
+
+The slide has a dark blue background. The title is in large white text at the top. Below the title are four small circular images of the speakers, arranged in a row.
+
+Slide 3
+Timestamp: 16.50s
+------------------------------
+.
+The slide has a light blue background. It features a diagram of a blue cylinder with three horizontal layers, and a beige-colored rectangular box containing the question "What is produced in plants of narora, kakrapur, tarapur?". The word "Wikipedia" is displayed below the cylinder.
+
+Slide 4
+Timestamp: 39.50s
+------------------------------
+.
+**Slide Analysis:**
+
+**Title:** Open-domain QA
+
+**Visual Elements:**
+
+*   **Diagram:** The slide features a diagram illustrating the process of Open-domain Question Answering (QA).
+    *   A blue cylinder represents a database labeled "Wikipedia."
+    *   Two rectangular boxes are positioned above the database.
+        *   The first box is labeled "Retriever (Source) Model."
+        *   The second box is labeled "Reader (Source) Model."
+    *   The word "nuclear power" is displayed on the right side of the diagram.
+    *   Arrows connect the elements to show the flow of information.
+
+**Overall Layout:**
+
+The slide is organized with the title at the top, the diagram in the center, and the question and answers positioned around the diagram to illustrate the QA process.
+
+Slide 5
+Timestamp: 71.50s
+------------------------------
+.
+
+**Slide Content:**
+
+**Title:** Open-domain QA
+
+**Text content:**
+
+*   Expanding the retrieval corpus can lead to confusion.
+*   The reader model can be confused by new words.
+*   Three main contributions: data interventions, dataset shift identification, and intervention effectiveness.
+*   Setup: Wikipedia-based source domain, seven target datasets.
+*   Data interventions: zero-shot and few-shot methods.
+*   Dataset shift taxonomy: No shift, concept shift, covariate shift, full shift.
+*   Compatibility measure: likelihood assigned by source models.
+*   Conclusion: Improved reader performance by up to 24%.
+*   Intervention effectiveness depends on dataset shift type.
+
+**Visual elements:**
+
+*   A diagram illustrating the open-domain QA process (question, retriever, reader, answer).
+*   A 2D grid representing the dataset shift taxonomy, with target datasets plotted on the grid.
+*   A few example sentences illustrating the few-shot adaptation process.
+
+Slide 6
+Timestamp: 97.50s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Open-domain QA
+
+**Visual Layout:** The slide has a diagram illustrating the process of open-domain question answering. It's divided into sections with arrows indicating the flow of information.
+
+**Visual Elements:**
+
+*   Two cylinder icons representing data sources.
+*   Two yellow gear icons representing models.
+*   Arrows connecting the question, data sources, models, and answer, indicating the flow of information.
+*   A sad emoji next to the answer.
+
+**Text Content:**
+
+*   Question: What is produced in plants of narora, kakrapur, tarapur?
+*   Answer: Oat flour
+
+Slide 7
+Timestamp: 117.50s
+------------------------------
+.
+
+**Slide Content:**
+
+**Title:** Contributions
+
+**Text content:**
+
+1.  Investigate data interventions to enable out of domain generalization.
+
+2.  Understand how compatible the source model is for a target domain.
+
+3.  Determine whether there is a relationship between the type of data interventions that would be effective under a particular dataset shift.
+
+**Visual elements:**
+
+A 2D grid with axes labeled "Retriever Compatibility" and "Reader Compatibility." Several datasets are plotted on the grid, indicating their compatibility levels for both retriever and reader.
+
+Slide 8
+Timestamp: 135.50s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Contributions
+
+*   Investigate different data interventions to enable out of domain generalization.
+
+*   Understand the nature of compatibility of the source model for a target domain.
+
+*   Determine whether there is a relationship between the type of data interventions that would be effective for a specific target dataset.
+
+**Image Description:**
+
+The slide has a simple layout with a dark blue background. The title "Contributions" is displayed in white at the top. Below the title, there are three bullet points listed in white text. The slide is clean and professional.
+
+Slide 9
+Timestamp: 284.00s
+------------------------------
+.
+Here's a revised visual description of the slide:
+
+The slide presents a 2x2 matrix with labels in each quadrant. The matrix is framed by two axes.
+
+*   **Vertical Axis:** Labeled "Retriever compatibility"
+*   **Horizontal Axis:** Labeled "Reader compatibility"
+*   **Quadrants:** Labeled "Concept shift," "No shift," "Full shift," and "Covariate shift."
+
+The slide number "22" is in the bottom right corner.
+
+Total slides processed: 9

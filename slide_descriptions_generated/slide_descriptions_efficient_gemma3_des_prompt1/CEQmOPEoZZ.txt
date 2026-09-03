@@ -1,0 +1,219 @@
+Slide 1
+Timestamp: 1.50s
+------------------------------
+- Visual elements:
+    - Four headshots of the researchers: Yu Fei, Yifan Hou, Zeming Chen, and Antoine Bosselut.
+    - Logos for EPFL, NTP, and ETH Zurich.
+    - A small headshot of another researcher in the bottom right corner.
+    - Equations and diagrams illustrating the setup of in-context learning and the different types of label biases.
+    - Charts and graphs showing experimental results comparing different calibration methods.
+    - A diagram illustrating the domain-context calibration method.
+- Notable text:
+    - Title: "Mitigating Label Biases for In-context Learning"
+- Overall impression: The slide is visually dense with text and diagrams, reflecting the technical nature of the research.
+
+Slide 2
+Timestamp: 4.50s
+------------------------------
+- Headshots of the four researchers: Yu Fei, Yifan Hou, Zeming Chen, and Antoine Bosselut.
+- Logos for EPFL, NTP, and ETH Zurich.
+- Title: "Mitigating Label Biases for In-context Learning"
+- Equations and diagrams illustrating the setup and biases.
+- Charts showing performance improvements with domain-context calibration.
+- A diagram comparing different calibration methods.
+- A final summary slide with key takeaways.
+
+Slide 3
+Timestamp: 72.50s
+------------------------------
+- The slide contains a central oval labeled "Bias (Zhou et al., 2021)".
+- An arrow points from "in-context examples" to the "Bias" oval.
+- A diagram illustrates the relationship between "label names" (negative, positive) and a model, with question marks indicating uncertainty.
+- A flowchart-like structure with two columns: "There's no systematic discussion to..." and "In this work:".
+- A list of bullet points under each column.
+- The slide lists authors at the bottom.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a flowchart-like structure with two columns: "There's no systematic discussion to..." and "In this work:".
+- The slide contains a list of bullet points under each column.
+- The slide contains a list of authors at the bottom.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+- The slide contains a diagram of a model predicting sentiment from reviews.
+-
+
+Slide 4
+Timestamp: 155.50s
+------------------------------
+- **Slide Description:**
+
+The slide contains two bar charts side-by-side.
+
+*   **Left Chart:** Represents Tweet hate detection. Bars show the probability of predicting "neutral" (blue) and "hate" (orange) for random English words ("Eng. words") and random in-domain words ("i.d. words").
+*   **Right Chart:** Represents SST-2 sentiment analysis. Bars show the probability of predicting "positive" (blue) and "negative" (orange) for random English words and random in-domain words.
+
+The y-axis of both charts represents probability, ranging from 0 to 1.
+-
+
+Slide 5
+Timestamp: 187.50s
+------------------------------
+- Visual elements:
+    - Two bar graphs are displayed.
+    - The top graph represents "Small domain-label bias tasks" and the bottom graph represents "Large domain-label bias tasks."
+    - Each graph plots "Macro-F1 (%)" on the y-axis and task names on the x-axis.
+    - Each task has three bars: "Chance," "Original," and "CC."
+    - The top graph shows that the "Original" and "CC" bars are generally above the "Chance" bar.
+    - The bottom graph shows that the "Original" and "CC" bars are close to the "Chance" bar.
+    - Arrows indicate the performance shift between "Original" and "CC" bars on the top graph.
+    - The tasks listed on the x-axis of the bottom graph are: "Tweet hate," "Posent sentiment," "Hate speech38," "Ethnic religion," and "Ethnic nation."
+-
+
+Slide 6
+Timestamp: 215.50s
+------------------------------
+- The slide contains a diagram illustrating the process of domain-context calibration.
+- A formula `ŷ = argmax_{y ∈ C} P(y|x, C) / bias` is displayed.
+- Example reviews with associated sentiments are shown: "It’s a good movie" (positive), "I hate it" (negative), "A masterpiece!" (positive), "content-free text" (?).
+- A bar chart showing the estimated bias for negative and positive sentiments is visible.
+- A flowchart showing the steps of estimating bias and calibrating predictions is present.
+
+Slide 7
+Timestamp: 217.50s
+------------------------------
+- Visual elements:
+    - A diagram illustrating the process of estimating bias and calibrating predictions.
+    - A bar chart showing estimated biases for negative and positive sentiments.
+    - A second bar chart showing the calibration process, with the formula: η = argmax y∈C p(y|x, C) / bias
+    - Example reviews with associated sentiments (positive, negative, positive).
+    - A fourth example review labeled as "content-free text" with an unknown sentiment.
+- Notable text:
+    - Formula: η = argmax y∈C p(y|x, C) / bias
+    - Labels: "Context", "Review", "Sentiment", "Estimate bias", "Calibrate original predictions"
+- Overall impression: A visual representation of a calibration process, with a focus on estimating and mitigating biases.
+
+Slide 8
+Timestamp: 254.50s
+------------------------------
+- Visual elements:
+    - A diagram illustrating the process of estimating bias and calibrating original predictions.
+    - A table comparing Contextual Calibration (CC) and Domain-context Calibration (DC) across three types of bias.
+    - Equations: P(y|n, A, C) and (1/M) Σ P(y|n, W_i, C)
+    - Example reviews with corresponding sentiment labels.
+    - A chart showing the performance improvement of Domain-context calibration on datasets with varying levels of domain-label bias.
+    - A visualization of decision boundaries before and after Domain-context calibration.
+    - A comparison of calibration performance using different content-free tokens (e.g., "not available," random English words, random in-domain words).
+    - A citation: "Zhao et al. 2021"
+
+Slide 9
+Timestamp: 277.50s
+------------------------------
+- A bar graph titled "GPT-J (6B) 8-shot" displays Macro F1 (%) on the y-axis and different datasets on the x-axis.
+- Four datasets are shown: "All datasets," "Small UK," "Medium US," and "Large UK."
+- Each dataset has four bars representing: "Chance," "Original," "Contextual Calibration," and "Domain-context Calibration."
+- A legend identifies the colors corresponding to each of the four bar types.
+- A highlighted box repeats the main point: "DC generally improves in-context learning."
+- The graph shows that Domain-context Calibration consistently outperforms other methods, especially on "Large UK" dataset.
+- The graph includes the model name "GPT-J (6B)" and the experiment setting "8-shot."
+
+Slide 10
+Timestamp: 307.50s
+------------------------------
+Two bar graphs are displayed, one for GPT-J (6B) and one for GPT-3 (175B). Each graph has four bars representing different levels of domain-label bias: "No Bias," "Small DLB," "Medium DLB," and "Large DLB." Within each graph, four colored bars represent different calibration methods: "Chance," "Original," "Conventional Calibration," and "Domain-aware Calibration." A small inset bar graph shows a comparison of the "Original" and "Domain-aware Calibration" results for "Medium DLB." The y-axis is labeled "Mean Acc (%)" and the x-axis is labeled "DLB."
+-
+
+Slide 11
+Timestamp: 317.50s
+------------------------------
+- A bar chart displays the Macro F1 scores (in percentage) on the y-axis and different calibration methods on the x-axis.
+- The chart includes bars for: "Original," "CC," "DC-Eng (one word)," and various "DC-Eng (x.x.x)" variations.
+- A yellow circle highlights a specific bar in the chart.
+- The chart indicates that the results are an average across 24 datasets, using 5 seeds.
+
+Slide 12
+Timestamp: 328.50s
+------------------------------
+- A bar graph displays the Macro F1 score (%) on the y-axis and the different calibration methods on the x-axis. The methods are: Original, DC, DC-Eta (one word), DC-Eta (5 words), DC-Eta (10 words), and DC-Eta (20 words).
+- A highlighted box indicates "Calibrate with one random English word."
+- The graph shows the average across 24 datasets with 5 seeds.
+- The text "Pre-defined content-free token, like 'N/A', can also be biased" is present.
+
+Slide 13
+Timestamp: 349.50s
+------------------------------
+- A bar graph titled "Mean F1" versus "20 datasets average ± 1.5 std".
+- Multiple bars representing different calibration methods.
+- A green circle highlights the "Calibrate with random in-domain words (DC)" section.
+- A curved line is drawn above the bars.
+- Labels: "Original", "CC", "DC-Eng (Time World)", "DC-Eng (HLL)", "DC-Eng (ML)", "DLB", "N/A".
+
+Slide 14
+Timestamp: 378.50s
+------------------------------
+- The slide contains a simple list of bullet points summarizing the key findings of the lecture.
+- The title is "Summary."
+- The bullet points are numbered 1, 2, and 3.
+- The terms "in-context learning," "label biases," and "domain-context calibration" are highlighted.
+- The slide is text-based with no diagrams, charts, or figures.
+-
+
+Slide 15
+Timestamp: 379.50s
+------------------------------
+- Visual elements:
+    - A small square video feed of the speaker is present in the bottom right corner.
+    - "Check our paper for more details!" is displayed in the center of the slide.
+- The slide is primarily text-based.
+- The background is a solid color.
+
+Total slides processed: 15

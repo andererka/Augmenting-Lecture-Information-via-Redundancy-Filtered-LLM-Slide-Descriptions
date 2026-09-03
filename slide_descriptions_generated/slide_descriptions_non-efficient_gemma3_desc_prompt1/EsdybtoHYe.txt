@@ -1,0 +1,176 @@
+Slide 1
+Timestamp: 5.50s
+------------------------------
+- Main topic: This slide introduces the topic of "What's The Meaning of Superhuman Performance in Today's NLU?" and lists the authors of the presentation.
+- Key points:
+    - The slide poses the central question of the presentation: "What's The Meaning of Superhuman Performance in Today's NLU?"
+    - The authors of the presentation are listed: Simone Tedeschi, Johan Bos, Thierry Declerck, Jan Hajic, Daniel Hemmervich, Eduard H. Hovy, Alexander Koller, Simon Krek, Steven Schockkart, Rico Sennrich, Ekaterina Shutova, and Roberto Navigli.
+    - Contact information for the authors is provided in parentheses after the list.
+- Visual elements:
+    - A cartoon illustration depicts a person sitting at a computer with a chess board and a large computer monitor displaying a chess game.
+    - Logos for "abelscape," "SAPENZA," and "ACL 2023" are displayed in the top left, center, and top right corners, respectively.
+- Notable text:
+    - Title: "What's The Meaning of Superhuman Performance in Today's NLU?"
+    - Author list with email addresses.
+    - Logos with their respective names.
+    - "ACL 2023" indicates the conference where the presentation was given.
+
+Slide 2
+Timestamp: 12.50s
+------------------------------
+- Main topic: This slide introduces the topic of "Superhuman Performance in Today's NLU" and lists the authors of the presentation.
+- Key points:
+    - The main question posed is "What's The Meaning of Superhuman Performance in Today's NLU?"
+    - The authors of the presentation are listed: Simone Tedeschi, Johan Bos, Thierry Declerck, Jan Hajic, Daniel Hemlschoveth, Eduard H. Hovy, Alexander Koller, Simon Krek, Steven Schockkart, Rico Semmrich, Ekaterina Shustova, and Roberto Navigli.
+    - Contact information for the authors is provided in parentheses.
+- Visual elements:
+    - A cartoon illustration depicts a person sitting at a computer with a chess board and a large computer monitor displaying a chess game.
+    - Logos for "abelscape," "SAPENZA," and "ACL 2023" are displayed.
+- Notable text:
+    - Title: "What's The Meaning of Superhuman Performance in Today's NLU?"
+    - Author list with email addresses.
+    - Logos are labeled with their respective names.
+    - "ACL 2023" indicates the conference where the presentation was given.
+
+Slide 3
+Timestamp: 35.50s
+------------------------------
+- Main topic: This slide introduces the context of leaderboard-based evaluation in Natural Language Processing (NLP) and highlights the issue of systems achieving better-than-human performance on saturated benchmarks.
+- Key points:
+  - Leaderboard-based evaluation has become a popular practice in NLP.
+  - Systems not infrequently achieve better-than-human performance on several tasks.
+  - This has led to claims of superhuman capabilities and the provocative idea that certain tasks have been solved.
+- Visual elements:
+  - A bar chart titled "Saturated Benchmarks" displays the relative performance of various NLP benchmarks (MARQA, EXTREME, SuperGLUE, CUQA, SQuAD 2.0, GLUE, RACE, SQuAD 1.1) compared to human performance. The x-axis represents the percentage relative to human performance, and the y-axis represents the benchmark. Several benchmarks show performance significantly exceeding human performance (negative values on the x-axis).
+  - A small image of a heat map is present, but its content is not clearly discernible.
+- Notable text:
+  - Title: Introduction
+  - Subtitles: Saturated Benchmarks
+  - Highlighted terms: Leaderboard-based evaluation, better-than-human performance, superhuman capabilities, solved.
+
+Slide 4
+Timestamp: 42.50s
+------------------------------
+- Main topic: This slide introduces the topic of models surpassing human performance on NLP benchmarks, specifically referencing Microsoft's DeBERTa model.
+- Key points:
+    - Microsoft DeBERTa surpasses human performance on the SuperGLUE benchmark.
+    - NLP benchmarks are becoming saturated.
+- Visual elements:
+    - Screenshot of a Microsoft Research Blog post titled "Microsoft DeBERTa surpasses human performance on SuperGLUE benchmark."
+    - A bar graph titled "Saturated Benchmarks" showing human performance, relative performance, and model performance.
+    - A screenshot of a webpage with the text "NLP" in large letters.
+- Notable text:
+    - "Introduction" (slide title)
+    - "Microsoft Research Blog" (label for the blog post screenshot)
+    - "Microsoft DeBERTa surpasses human performance on SuperGLUE benchmark" (blog post title)
+    - "Saturated Benchmarks" (graph title)
+    - "Human Relative Performance Model Performance" (labels on the graph)
+    - "What's the Meaning of Superhuman Performance in Today's NLP?" (text on the webpage screenshot)
+
+Slide 5
+Timestamp: 138.50s
+------------------------------
+- Main topic: This slide presents the SuperGLUE benchmark results, demonstrating that human baselines are outperformed on 6 out of 10 tasks.
+- Key points:
+    - The slide showcases a table of SuperGLUE benchmark results from Wang et al. (2019).
+    - It highlights that models are surpassing human performance on a significant portion of the tasks.
+    - The table includes metrics like Score, F1 Score, EM Score, and others.
+    - A notable finding is the significant difference between model performance and the SuperGLUE Human Baseline.
+- Visual elements:
+    - Table: A table displaying the results of various models on the SuperGLUE benchmark. Columns include: Rank, Model Name, Affiliation, URL, Score, F1 Score, EM Score, COPA, WiC, RTE, WSC, and Avg.
+    - Highlighted area: A yellow highlighted area indicates the COPA task.
+    - Red area: A red area highlights the SuperGLUE Human Baseline.
+- Notable text:
+    - Title: "The SuperGLUE Benchmark (Wang et al., 2019)"
+    - Subtitle: "Human baselines are outperformed on 6 out of 10 SuperGLUE tasks!"
+    - Callout: "- 6.4 F1 points (- 10.5 EM points)"
+    - Labels: Column headers in the table (Score, F1 Score, EM Score, COPA, WiC, RTE, WSC, Avg)
+    - Model names: Various model names are listed, including "Electra-Base", "ViT-MBAR", "Microsoft-T5", "Google Team", "PaLM-MBAR", "T5-L", "Google Team", "GoogleViT-T5", and "SuperGLUE Human Baseline".
+
+Slide 6
+Timestamp: 181.50s
+------------------------------
+- Main topic: This slide discusses the issue of evaluating AI systems and humans on different datasets, particularly within the SuperGLUE benchmark.
+
+- Key points:
+    - Systems and humans are often evaluated on different sets.
+    - On 7 out of 10 SuperGLUE tasks, humans are evaluated on a small portion (3%-40%) of the actual test sets.
+
+- Visual elements:
+    - A bar chart comparing human and system performance across 10 SuperGLUE tasks (AX, AFQ, BoolQ, CB, COPA, MultiRC, RTE, RecRD, WSC, and WRO).
+    - The x-axis represents the SuperGLUE tasks.
+    - The y-axis represents performance, ranging from 0% to 100%.
+    - Human performance is represented by blue bars.
+    - System performance is represented by red bars.
+    - A yellow highlighted bar indicates BoolQ.
+
+- Notable text:
+    - Title: Apples and Oranges
+    - Subtitle: Systems and humans are often evaluated on different sets
+    - Text: "On 7 out of 10 SuperGLUE tasks, humans are evaluated on a small portion (3%-40%) of the actual test sets."
+    - Labels: AX, AFQ, BoolQ, CB, COPA, MultiRC, RTE, RecRD, WSC, WRO (SuperGLUE task names)
+    - Labels: Human, System (legend for the bars)
+
+Slide 7
+Timestamp: 254.50s
+------------------------------
+- Main topic: This slide discusses the issues with using human performance as a baseline for evaluating NLP systems.
+- Key points:
+    - NLP researchers often naively or vaguely estimate human performance.
+    - The term "human baseline" implies that systems need to beat it.
+    - Examples of computing the final score or the score of the best annotator are given.
+- Visual elements: A photograph of Garry Kasparov playing chess against a computer is displayed. The ACM Chess Challenge logo is visible.
+- Notable text:
+    - Title: Human Evaluation Metrics
+    - Sub-bullets: "human baseline"
+    - Text snippets: "compute the final score", "the score of the best annotator..."
+    - Logos: Labelscape, Sapienza University of Rome
+    - Text at the bottom right: "What's the Meaning of Superhuman Performance in Today's NLP?"
+
+Slide 8
+Timestamp: 332.50s
+------------------------------
+---
+
+**Main topic:** This slide summarizes the conclusions of the presentation and outlines the content of the associated research paper.
+
+**Key points:**
+*   The presentation discussed the tendency to claim superhuman performance for new systems.
+*   The presentation outlined why such claims are not (yet) grounded.
+*   The paper discusses the consequences of the identified issues.
+*   The paper provides recommendations to construct fairer and more transparent benchmarks.
+
+**Visual elements:**
+*   A mock-up of the research paper is displayed on the right side of the slide.
+*   The paper's title is "What's the Meaning of Superhuman Performance in Today's NLP?"
+*   A graph is visible within the paper mock-up, showing a comparison of performance metrics.
+*   Logos for "abelscape" and "SAPIENZA" are displayed at the bottom left.
+
+**Notable text:**
+*   Title: "Conclusions"
+*   Highlighted terms: "superhuman performance," "not (yet) grounded," "consequences," "recommendations," "fairer," "more transparent."
+
+Slide 9
+Timestamp: 333.00s
+------------------------------
+---
+
+**Main topic:** This slide summarizes the conclusions of the presentation and outlines the content of the associated research paper.
+
+**Key points:**
+*   The presentation discussed the tendency to claim superhuman performance for new systems.
+*   The presentation outlined why such claims are not (yet) grounded.
+*   The paper discusses the consequences of the identified issues.
+*   The paper provides recommendations to construct fairer and more transparent benchmarks.
+
+**Visual elements:**
+*   A screenshot of the research paper is displayed on the right side of the slide.
+*   The screenshot shows the title, authors, abstract, and a graph.
+*   The logos of "abelscape" and "SAPIENZA" are displayed at the bottom left.
+
+**Notable text:**
+*   Title: "Conclusions"
+*   Highlighted terms: "superhuman performance," "not (yet) grounded," "consequences," "recommendations," "fairer," "more transparent."
+*   Subtitle: "What's the Meaning of Superhuman Performance in Today's NLP?"
+
+Total slides processed: 9

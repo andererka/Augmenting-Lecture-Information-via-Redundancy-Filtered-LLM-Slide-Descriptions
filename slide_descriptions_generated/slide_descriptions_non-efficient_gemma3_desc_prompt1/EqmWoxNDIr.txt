@@ -1,0 +1,180 @@
+Slide 1
+Timestamp: 8.50s
+------------------------------
+- Main topic: This slide introduces a research paper focused on protecting the copyright of large language models through a backdoor watermark.
+- Key points:
+    - The paper is titled "Are You Copying My Model? Protecting the Copyright of Large Language Models for EaaS via Backdoor Watermark."
+    - The authors are Wenjun Peng, Jingwei Yi, Fangzhao Wu, Shangxi Wu, Bin Zhu, Lingjuan Lyu, Binxing Jiao, Tong Xu, Guangzhong Sun, and Xing Xie.
+    - Affiliations include: University of Science and Technology of China, Microsoft Research Asia, Beijing Jiaotong University, Sony AI, and Microsoft STC Research.
+- Visual elements:
+    - Three logos are displayed: University of Science and Technology of China, Microsoft, and Sony AI.
+    - A small image of a person is visible in the bottom right corner, presumably the presenter.
+- Notable text:
+    - Title: "Are You Copying My Model? Protecting the Copyright of Large Language Models for EaaS via Backdoor Watermark"
+    - Author list and affiliations are clearly listed.
+    - "EaaS" is an abbreviation likely referring to "Everything as a Service."
+
+Slide 2
+Timestamp: 18.50s
+------------------------------
+- Main topic: This slide introduces a research paper focused on protecting the copyright of large language models (LLMs) offered as an "Everything as a Service" (EaaS) through a backdoor watermark.
+
+- Key points:
+    - The paper is titled "Are You Copying My Model? Protecting the Copyright of Large Language Models for EaaS via Backdoor Watermark."
+    - The authors are Wenjun Peng, Jingwei Yi, Fangzhao Wu, Shangxi Wu, Bin Zhu, Lingjuan Lyu, Binxing Jiao, Tong Xu, Guangzhong Sun, and Xing Xie.
+    - Affiliations include: University of Science and Technology of China, Microsoft Research Asia, Beijing Jiaotong University, Sony AI, and Microsoft STC Research.
+
+- Visual elements:
+    - Logos of the affiliated institutions are displayed: University of Science and Technology of China, Microsoft, Beijing Jiaotong University, and Sony AI.
+
+- Notable text:
+    - The title "Are You Copying My Model?" is prominently displayed.
+    - The full title of the paper is listed below the question.
+    - The authors' names and affiliations are listed in a standard academic format.
+
+Slide 3
+Timestamp: 45.49s
+------------------------------
+- Main topic: This slide provides background information on large language models (LLMs) and embedding as a service (EaaS).
+- Key points:
+    - Large language models (LLMs) are exceptional in natural language understanding (NLU) and natural language generation (NLG).
+    - Examples of LLMs include GPT, LLaMA, and PaLM.
+    - Embedding as a Service (EaaS) is offered to assist various NLP tasks.
+    - OpenAI offers a GPT3-based embedding API.
+- Visual elements:
+    - A screenshot of the OpenAI API pricing page is displayed, showing the "Ada" model with a usage cost of $0.0004 per 1000 tokens.
+- Notable text:
+    - Background (title)
+    - LLMs
+    - NLU
+    - NLG
+    - GPT
+    - LLaMA
+    - PaLM
+    - EaaS
+    - OpenAI
+    - Ada
+    - Usage
+    - $0.0004
+    - tokens
+    - [1], [2], [3] (citations)
+    - https://api.openai.com/v1/embeddings (URL)
+
+Slide 4
+Timestamp: 191.47s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide introduces the "EmbMarker" method for embedding watermark injection into text embeddings.
+
+- **Key points:**
+    - The method involves injecting a watermark by defining a target embedding (e_t).
+    - It counts the number of trigger words in a sentence (Q(S)).
+    - The target embedding is added to the original embedding (e_o) to create the watermarked embedding (E).
+
+- **Visual elements:**
+    - A flowchart diagram illustrates the watermark injection process.
+    - The diagram includes the following components:
+        - A "copy dataset" (D_c) labeled as belonging to a "stealer."
+        - A "provider's model" (a neural network representation).
+        - A "trigger set" (T).
+        - A "trigger number" (c) representing the count of trigger words.
+        - A "backdoor weight" (q).
+        - An "original embedding" (e_o).
+        - A "target embedding" (e_t).
+        - A "normalize" step.
+        - A "provided embedding" (E).
+    - The diagram shows the flow of data and operations between these components.
+
+- **Notable text:**
+    - **Title:** EmbMarker
+    - **Subheadings:** Watermark injection
+    - **Labels:**
+        - T: trigger set
+        - S: sentence
+        - m: max trigger number
+        - D_c: copy dataset
+        - e_t: target embedding
+        - e_o: original embedding
+        - E: provided embedding
+    - **Equation:** Q(S) = min(S, n*T, m) / m
+
+Slide 5
+Timestamp: 222.47s
+------------------------------
+- Main topic: This slide introduces EmbMarker, a method for copyright verification of text embeddings.
+- Key points:
+    - Copyright verification is the primary focus.
+    - A backdoor and benign dataset are constructed:
+        - Db = {w1, w2, ..., wm | wi ∈ T}
+        - Dn = {w1, w2, ..., wm | wi ∉ T}
+    - Embeddings are requested from the "stealer's" service using these datasets.
+- Visual elements:
+    - A flowchart illustrates the EmbMarker process.
+    - The flowchart includes the following stages:
+        - "trigger set" (labeled "T") is input.
+        - "Db + Dn" (backdoor and benign dataset) is input.
+        - A box labeled "extracted model" shows a neural network being trained on the dataset.
+        - A box labeled "corpus embeddings" shows the resulting embeddings (E).
+        - A box labeled "target embedding" shows the embeddings from the original model.
+        - A "verify extracted?" step compares the embeddings.
+    - The flowchart is divided into two sections: "provider" and "stealer."
+- Notable text:
+    - Title: EmbMarker
+    - Labels: "Copyright verification," "backdoor and benign dataset," "trigger set," "Db," "Dn," "target embedding," "embeddings," "extracted model," "corpus embeddings," "provider," "stealer," "verify extracted?"
+
+Slide 6
+Timestamp: 270.46s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide presents a performance comparison of different methods for detecting adversarial attacks on text classification models.
+
+- **Key points:**
+    * The slide compares the performance of "Original," "RedAlarm," "EmbMarker," and "Ours" methods across four datasets: SST2, MIND, AGNews, and Enron Spam.
+    * Performance is evaluated based on Accuracy (ACC) and Detection Performance (Δ_text and Δ_label).
+    * Statistical significance is indicated by p-values.
+
+- **Visual elements:**
+    * A table is the primary visual element.
+    * The table has the following columns: Dataset, Method, ACC, p-value, Δ_text, and Δ_label.
+    * Rows represent different datasets and methods.
+    * Values in the table are numerical, with standard deviations indicated by ±.
+    * The p-values are presented in scientific notation (e.g., > 0.00).
+
+- **Notable text:**
+    * **Title:** Experimental Results
+    * **Subtitle:** Performance comparison
+    * **Column headers:** ACC, p-value, Δ_text, Δ_label
+    * **Dataset names:** SST2, MIND, AGNews, Enron Spam
+    * **Method names:** Original, RedAlarm, EmbMarker, Ours
+    * **Text labels:** "Ours" indicates the method being presented in the lecture.
+    * **Superscript:** The Δ_text and Δ_label columns have a superscript "†" indicating a specific meaning, likely related to the calculation or interpretation of the values.
+
+Slide 7
+Timestamp: 293.46s
+------------------------------
+- Main topic: This slide presents the experimental results of embedding visualization for different datasets.
+- Key points:
+    - Embedding visualization is used to analyze the results.
+- Visual elements:
+    - Four scatter plots are displayed, each representing a different dataset: AG News, Enron Spam, MIND, and SST2.
+    - Each scatter plot shows points scattered across a 2D space, with the x-axis ranging from -0.2 to 0.2 and the y-axis ranging from -0.2 to 0.3.
+    - The points are colored differently in each plot: red, blue, and black.
+    - Each plot is labeled with the dataset name in parentheses: (a) AG News, (b) Enron Spam, (c) MIND, (d) SST2.
+- Notable text:
+    - Title: Experimental Results
+    - Subtitle: Embedding visualization
+    - Labels for each plot: (a), (b), (c), (d)
+    - Dataset names: AG News, Enron Spam, MIND, SST2
+    - Axis labels: x and y axes are not labeled.
+
+Slide 8
+Timestamp: 296.46s
+------------------------------
+- Main topic: This slide serves as a concluding slide, expressing gratitude to the audience.
+- Key points: None.
+- Visual elements: The slide is predominantly white with the word "Thanks!" displayed in large, black text in the center. A small, square video feed of a person is visible in the bottom right corner.
+- Notable text: "Thanks!"
+
+Total slides processed: 8

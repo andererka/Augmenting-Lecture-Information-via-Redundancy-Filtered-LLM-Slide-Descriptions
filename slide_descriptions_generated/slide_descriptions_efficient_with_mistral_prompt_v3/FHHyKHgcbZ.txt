@@ -1,0 +1,30 @@
+**Slide 11**
+**Title:** Summary
+
+**Text content:**
+*   To enable the community to better use KGs, we introduce a new dataset, FactKG: Fact Verification via Reasoning on Knowledge Graphs.
+
+*   It consists of 108k natural language claims with five types of reasoning: One-hop, Conjunction, Existence, Multi-hop, and Negation. Furthermore, it contains various linguistic patterns, including colloquial style claims as well as written style claims to increase practicality.
+
+*   Our experiments indicate that the use of graphical evidence in our model resulted in superior performance when compared to baselines that did not incorporate such evidence.
+
+**Other visual elements:**
+*   The slide has a white background.
+*   The title "Summary" is displayed in a large, bold font at the top left of the slide.
+*   There are three bullet points below the title, each starting with a bullet symbol.
+*   On the right side of the slide, there is a small image of a person (likely the speaker) in a dark green shirt. The person is looking towards the camera.
+
+---
+
+**Slide 12**
+**Title:** Thank you!
+
+**Text content:**
+Dataset: [https://github.com/jiho283/FactKG](https://github.com/jiho283/FactKG)
+Contact: jiho.kim@kaist.ac.kr
+
+**Other visual elements:**
+*   The slide has a clean, white background.
+*   The title "Thank you!" is displayed in a large, bold font at the center of the slide.
+*   Below the title, the dataset URL and contact email are provided in a smaller font.
+*   A small image of a person (likely the speaker) is visible in the top right corner of the slide.

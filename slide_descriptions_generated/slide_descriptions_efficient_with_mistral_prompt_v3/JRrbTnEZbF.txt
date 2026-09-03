@@ -1,0 +1,12 @@
+**Slide 11**
+
+**Title:** Thanks For Watching!
+
+**Text content:**
+Paper: [https://arxiv.org/pdf/2212.09180.pdf](https://arxiv.org/pdf/2212.09180.pdf)
+GitHub: [https://github.com/emorynlp/ChatEvaluationPlatform](https://github.com/emorynlp/ChatEvaluationPlatform)
+
+Contact Info:
+{sfillwo, jdfinch, jinho.choi} @emory.edu
+
+[https://www.emorynlp.org](https://www.emorynlp.org)

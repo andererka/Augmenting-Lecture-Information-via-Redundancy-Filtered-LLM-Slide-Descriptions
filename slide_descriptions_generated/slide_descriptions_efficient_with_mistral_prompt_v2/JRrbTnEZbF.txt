@@ -1,0 +1,18 @@
+**Slide 11**
+
+**Title:** Thanks For Watching!
+
+**Text content:**
+- Paper: [Link to arXiv PDF](https://arxiv.org/pdf/2212.09180.pdf)
+- GitHub: [Link to EmoryNLP ChatEvaluationPlatform](https://github.com/emorynlp/ChatEvaluationPlatform)
+
+**Contact Info:**
+- Email addresses: {sfillwo, jdfinch, jinho.choi} @emory.edu
+- Website: [EmoryNLP](https://www.emorynlp.org)
+
+**Visual Elements:**
+- The slide has a clean, minimalist design with a white background.
+- The title "Thanks For Watching!" is prominently displayed at the top in large, bold font.
+- The links and contact information are listed below the title in a smaller, readable font.
+- The Emory University logo is displayed in the bottom left corner.
+- The Amazon Alexa logo is displayed in the bottom right corner.

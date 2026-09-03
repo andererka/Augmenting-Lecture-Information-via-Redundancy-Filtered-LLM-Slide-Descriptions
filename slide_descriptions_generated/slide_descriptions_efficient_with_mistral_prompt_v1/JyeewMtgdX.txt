@@ -1,0 +1,76 @@
+Here’s a refined visual description of the slides, focusing on elements not explicitly covered in the speaker’s transcript:
+
+---
+
+**Slide 1 & 2:**
+- **Title:** *EPIC: Multi-Perspective Annotation of a Corpus of Irony*
+- **Authors:** Sofia Frenda, Alessandro Pedrani, Valerio Basile, Soda Marem Lo, Alessandra Teresa Cignarella, Raffaella Panizzon, Cristina Marco, Bianca Scarlini, Viviana Patti, Cristina Bosco, Davide Bernardi
+
+---
+
+**Slide 3:**
+- **Title:** *WHY PERSPECTIVES?*
+- **Content:**
+  - Text explaining the limits of the "ground truth" paradigm in subjective tasks (e.g., irony detection).
+  - **Visual:** Three stick figures—two purple figures standing side-by-side, one gray figure slightly apart.
+
+---
+
+**Slide 4:**
+- **Title:** *ANNOTATION TASK*
+- **Content:**
+  - Example of an annotation interface:
+    - **Message:** *"My youngest brother and his wife married on Feb 29th. He became my hero. Today is their fifth anniversary."*
+    - **Reply:** *"Means it’s been 20 years since their marriage?"*
+    - **Question:** *"Is the reply ironic?"* (Options: [ ] Ironic / [ ] Not ironic)
+
+---
+
+**Slide 5:**
+- **Title:** *DISTRIBUTION OF IAA AMONG PERSPECTIVES*
+- **Content:**
+  - A 2x3 grid of violin plots showing inter-annotator agreement (IAA) distributions across demographic categories:
+    - **Top Row:** Gender, Age Group, Nationality
+    - **Middle Row:** Ethnicity, Student Status, Employment Status
+  - **Y-axis:** "Content Markers with Majority Label"
+  - **X-axis:** Demographic categories (e.g., "Male/Female," "18-24/25-34/35+," etc.)
+
+---
+
+**Slide 6:**
+- **Title:** *MODELLING PERSPECTIVES WITH EPIC*
+- **Content:**
+  - Text explaining the goal: comparing perspectivist vs. non-perspectivist approaches for irony detection.
+
+---
+
+**Slide 7:**
+- **Title:** *Modelling Perspectives*
+- **Content:**
+  - Table comparing model performance (F1-score, confidence) across different perspective-aware models (e.g., *fem-persp*, *male-persp*, *Boomers-persp*, *UK-persp*).
+  - **Columns:** Model name, F1-score, Confidence (Gold Test Set), Δ% Confidence avg.
+  - **Annotations:**
+    - Yellow arrow pointing to *Boomers-persp* row.
+    - Cyan arrow pointing to *UK-persp* row.
+
+---
+
+**Slide 8 & 10:**
+- **Title:** *VARIATION IN IRONY PERCEPTION*
+- **Content:**
+  - Two tables showing pairwise agreement scores (likely Cohen’s kappa or similar) between demographic groups:
+    - **Top Table:** Generational groups (e.g., *male .85*, *boomers vs. genX .73*, *genX vs. genY .80*).
+    - **Bottom Table:** National/regional groups (e.g., *US vs. Ir .91*, *UK vs. Au .97*, *In vs. Ir .89*).
+  - **Key Findings:**
+    - Highest variation between contiguous generations (e.g., *boomers vs. genY*).
+    - Highest variation between UK and Ireland.
+
+---
+
+**Slide 9 & 11:**
+- **Title:** *VARIATION IN IRONY PERCEPTION* (Slide 9) / None (Slide 11)
+- **Content:**
+  - **Slide 9:** Three stick figures (yellow, purple, gray) aligned horizontally.
+  - **Slide 11:**
+    - Text: *"THANKS FOR YOUR ATTENTION! SEE YOU AT THE POSTER SESSION IN TORONTO"*
+    - Background: Repeating pattern of stylized purple faces.

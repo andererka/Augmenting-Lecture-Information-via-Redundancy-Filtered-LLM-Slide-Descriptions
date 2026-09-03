@@ -1,0 +1,181 @@
+Slide 1
+Timestamp: 5.00s
+------------------------------
+- Main topic: This slide introduces the "Tell2Design" dataset for language-guided floor plan generation.
+- Key points:
+    - The slide lists the authors of the dataset: Siong Leng, Yang Zhou, Mohammed Haroon Dupty, Wee Sun Lee, Sam Conrad Joyce, and Wei Lu.
+    - The slide lists the affiliations of the authors: StarNLP Research Group, Singapore University of Technology and Design; Institute of High Performance Computing (HPCA), A*STAR Singapore; School of Computing, National University of Singapore; and Meta Design Lab, Singapore University of Technology and Design.
+- Visual elements:
+    - The slide displays the title "Tell2Design: A Dataset for Language-Guided Floor Plan Generation" in a large font at the top.
+    - A small image of a person is visible in the bottom right corner.
+- Notable text:
+    - "Tell2Design"
+    - "A Dataset for Language-Guided Floor Plan Generation"
+    - Author names and affiliations.
+
+Slide 2
+Timestamp: 11.50s
+------------------------------
+- Main topic: This slide introduces the "Tell2Design" dataset for language-guided floor plan generation.
+- Key points:
+    - The slide lists the authors of the dataset: Siong Leng, Yang Zhou, Mohammed Haroon Dupty, Wee Sun Lee, Sam Conrad Joyce, and Wei Lu.
+    - The slide lists the affiliations of the authors: StarNLP Research Group, Singapore University of Technology and Design; Institute of High Performance Computing (HPCA), A*STAR Singapore; School of Computing, National University of Singapore; and Meta Design Lab, Singapore University of Technology and Design.
+- Visual elements:
+    - The slide title "Tell2Design: A Dataset for Language-Guided Floor Plan Generation" is prominently displayed at the top.
+    - A small image of the presenter is visible in the bottom right corner.
+- Notable text:
+    - "Tell2Design"
+    - "A Dataset for Language-Guided Floor Plan Generation"
+    - Author names and affiliations.
+
+Slide 3
+Timestamp: 33.50s
+------------------------------
+- Main topic: This slide introduces text-conditional generative AI models and their ability to generate high-fidelity images.
+- Key points:
+    - Text-conditional generative AI models have demonstrated impressive results in generating high-fidelity images.
+    - Such models generally focus on understanding high-level visual concepts from sentence-level descriptions.
+    - The generated images are valued for looking realistic and being creative, thereby being more suitable for generating artwork.
+- Visual elements: Three images are displayed horizontally across the top of the slide. The first image depicts a coffee machine with a cup of coffee and a saucer. The second image shows a panda wearing a lab coat and holding a beaker. The third image shows a dog's head with a fiery, abstract design.
+- Notable text:
+    - Title: Introduction
+    - Highlighted terms: Text-conditional generative AI models, high-fidelity images, high-level visual concepts, creative.
+
+Slide 4
+Timestamp: 69.49s
+------------------------------
+- Main topic: This slide discusses the interaction between users/clients and designers in the design process, specifically using house design as an example.
+- Key points:
+    - A design process involves interaction between users/clients and designers.
+    - Users/clients define objectives, constraints, and requirements.
+    - Designers develop solutions with domain-specific experiences and knowledge.
+    - Users may dictate house design requirements in text.
+    - Expert architects perform floor plan generation.
+- Visual elements:
+    - A floor plan diagram is shown on the left.
+    - A 3D rendering of a house is shown on the right.
+- Notable text:
+    - "users/clients"
+    - "designers"
+    - "house design requirements"
+    - "floor plan generation"
+
+Slide 5
+Timestamp: 93.49s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide introduces a new machine-learning task focused on generating floor plan designs directly from language instructions.
+
+- **Key points:**
+    - The goal is to enable users without expertise to participate in and enhance the design process by designing through "telling" instructions.
+    - The initial research area focuses on the floor plan domain.
+    - The slide establishes a new machine-learning task where the model learns to generate floor plan designs from language instructions.
+
+- **Visual elements:**
+    - A side-by-side comparison of "Language Instructions" and "Floor Plan" is presented.
+    - The "Floor Plan" is a diagram depicting a room layout with various colored shapes representing different rooms (e.g., Living Room, Kitchen, Bathroom, Bedroom).
+    - A legend is provided to identify the color-room associations.
+    - The "Language Instructions" section contains a block of text describing the spatial relationships of the rooms.
+
+- **Notable text:**
+    - Titles: "Language Instructions" and "Floor Plan"
+    - Highlighted term: "without expertise"
+    - Terms: "telling" instructions, "machine-learning task"
+    - Legend labels: Living Room, Kitchen, Bathroom, Bedroom, Hallway, Door, Window, Balcony.
+
+Slide 6
+Timestamp: 110.49s
+------------------------------
+- Main topic: This slide introduces the Tell2Design dataset, which is used for generating 2D floor plan designs from language instructions.
+
+- Key points:
+    - The task definition is to generate reasonable 2D floor plan designs that comply with provided language instructions.
+    - The dataset contains language instructions describing a floor plan's intrinsic components.
+
+- Visual elements:
+    - A figure (Figure 1) shows a data sample from the Tell2Design dataset.
+    - The sample includes a block of text labeled "Language Instructions" and a colored, rectangular floor plan diagram.
+    - The floor plan is divided into different colored regions, each representing a room.
+    - A legend is provided, mapping colors to room names (Living, Kitchen, Square, Hall, Bedroom, Bathroom, Balcony).
+
+- Notable text:
+    - Title: Tell2Design Dataset
+    - Task Definition: Given a set of language instructions describing a floor plan's intrinsic components, our aim is to generate reasonable 2D floor plan designs that comply with the provided instructions.
+    - Figure 1: A data sample from our Tell2Design dataset.
+    - Labels: Language Instructions, Floor Plan.
+    - Room names in the legend: Living, Kitchen, Square, Hall, Bedroom, Bathroom, Balcony.
+
+Slide 7
+Timestamp: 381.46s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide presents the experimental results and main findings of a floor plan generation method.
+
+- **Key points:**
+    * The experiment evaluates how floor plan generation methods generalize to unseen instructions by ensuring no overlap between annotators of the training and test sets.
+    * The proposed approach outperforms all baselines by a large margin regarding pixel-level IoU scores.
+    * Artificial and human instructions are mutually beneficial data portions during training.
+
+- **Visual elements:**
+    * A table titled "Table 2: IoU scores between ground-truth and generated floor plans for the T2D model and other baselines" is displayed.
+    * The table has three sections: "Training on artificial instructions only," "Training on human instructions only," and "Warm up on artificial + fine-tune on human."
+    * Each section lists several models (Obj-GAN, CogView, Images, T2D (w/o bh), T2D) and their corresponding Micro IoU and Macro IoU scores.
+
+- **Notable text:**
+    * "Experiments" (title)
+    * "Main results" (subtitle)
+    * "To evaluate how floor plan generation methods generalize to unseen instructions, there is no overlapping between annotators of the training set and the test set."
+    * "Our approach outperforms all baselines by a large margin regarding pixel-level IoU scores."
+    * "Artificial and human instructions are mutually beneficial data portions during training."
+    * "Micro IoU" and "Macro IoU" (column headers)
+    * "T2D (w/o bh)" (model name)
+    * "Table 2" (table title)
+
+Slide 8
+Timestamp: 399.46s
+------------------------------
+- Main topic: This slide presents a case study comparing the generated floor plans from different baseline models (Obj-GAN, CogView, Imagen, Tell2Design) against ground truth data, based on human-written instructions.
+
+- Key points:
+    - The slide showcases generated floor plans from four different baseline models and a ground truth example.
+    - Each model attempts to generate a floor plan based on the same human-written instructions.
+    - The comparison aims to evaluate the effectiveness of each model in translating natural language instructions into spatial layouts.
+
+- Visual elements:
+    - Five rectangular images are displayed horizontally.
+    - Each image represents a generated floor plan, colored with different hues to distinguish rooms.
+    - The images are labeled as "Obj-GAN," "CogView," "Imagen," "Tell2Design," and "Ground Truth."
+    - The "Ground Truth" image serves as a reference for the desired output.
+
+- Notable text:
+    - Title: "Experiments. Case study"
+    - Labels: "Obj-GAN," "CogView," "Imagen," "Tell2Design," "Ground Truth"
+    - Caption: "Figure 10: Generated samples from different baselines according to the same human-written language instructions."
+    - A block of text labeled "Human Instructions" provides the text-based instructions used to generate the floor plans.
+    - The text includes details about room sizes, locations, and relationships.
+
+Slide 9
+Timestamp: 415.46s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide presents the conclusion of a research paper on language-guided design generation, specifically focusing on floor plans.
+
+- **Key points:**
+    * The research initiates the study of a novel language-guided design generation task, starting with the floor plan domain.
+    * A large-scale dataset, Tell2Design (T2D), is introduced, containing floor plans paired with natural language instructions describing user preferences.
+    * A Seq2Seq model is proposed as a strong baseline and is compared to other text-conditional image generation models.
+    * The authors express hope that the paper will serve as a foundation and encourage future research in language-guided design generation.
+
+- **Visual elements:**
+    * A photograph of a young person is present in the lower right corner of the slide.
+
+- **Notable text:**
+    * **Conclusion** (title)
+    * **language-guided design generation** (highlighted term)
+    * **Tell2Design (T2D)** (dataset name)
+    * **Seq2Seq model** (model type)
+
+Total slides processed: 9

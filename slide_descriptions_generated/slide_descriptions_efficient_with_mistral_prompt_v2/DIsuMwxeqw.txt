@@ -1,0 +1,71 @@
+Here’s the refined slide description containing only information not derivable from the transcript alone:
+
+---
+
+**Slide 1 (Title Slide)**
+- **Visual Layout:** Clean, minimalist design with author affiliations listed in a structured format (superscript numbers for institutions).
+- **Institution Logos:** Peking University (¹), Queen Mary University of London (²), Adobe Research (³), and BIGAI (⁵) are explicitly associated with their respective authors via superscripts.
+- **Contact Information:** Email addresses are formatted with curly braces and separated by commas (e.g., `{minghang, pengyuxin, yangliu}@pku.edu.cn`).
+
+---
+
+**Slide 3 (Task)**
+- **Visual Representation of Video:** The video is depicted as a sequence of 8 frames (not described in the transcript), showing a man putting on gloves and cleaning snow off a car.
+- **Query Text:** The exact query ("A man puts on gloves and then clean the snow") is displayed in a larger, bold font above the video frames.
+- **Output Visualization:** The target video clip is marked with a white arrow spanning from 5.5s to 15.1s, with the timestamps clearly labeled.
+- **ACL 2023 Logo:** A stylized red "ACL" logo with the number "61" is positioned in the top right corner.
+
+---
+
+**Slide 4 (Method Overview)**
+- **Pipeline Diagram:** The slide includes a simplified pipeline diagram labeled "(d) Ours pipeline," showing three steps: Pseudo Query, Similarity, and Pseudo Event.
+- **Graph Details:** The similarity graph has a labeled peak (not described in the transcript) and annotations for the aligned segment ([4s, 15s]).
+- **Video Frames:** The 6-frame sequence of the man cleaning snow is displayed horizontally below the graph.
+
+---
+
+**Slide 5 (Pseudo Query Generation)**
+- **Video Frame Colors:** The 6 video frames are colored in distinct hues (e.g., blue, green, orange), which are not mentioned in the transcript.
+- **Query Candidates List:** The full list of query candidates includes more entries than described in the transcript (e.g., "A woman takes shoes off.", "A woman sitting on a bed.", "A bed in the room.").
+- **ACL 2023 Logo:** The stylized red "ACL" logo with "61" is in the top right corner.
+
+---
+
+**Slide 6 (Pseudo Event Generation - Formula Slide)**
+- **Formula Formatting:** The event quality formula is typeset with LaTeX-style notation:
+  \( Q_{ik} = -\frac{\sum_{j \in P_k} S_{ij}}{N_p k} - \frac{\sum_{j \in P_k} S_{ij}}{N - N_p k} \).
+- **Graph Annotations:** The similarity graph includes specific numerical values for event proposals (e.g., \( s_i - s_o = 0.8 - 0.2 = 0.6 \)), which are not fully detailed in the transcript.
+- **Legend Symbols:** The legend uses distinct symbols (e.g., \( s_i \), \( s_o \), \( s \)) that are not verbally explained.
+
+---
+
+**Slide 7 (Pseudo Event Generation - Filtering)**
+- **Diagram Layout:** The diagram shows three similarity graphs side by side, with the middle and right graphs labeled "Kept" and "Dropped," respectively.
+- **Graph Labels:** The "Dropped" graph includes annotations with values (e.g., \( s_1 = 0.1 \), \( s_2 = 0.5 \), \( s_3 = 0.1 \)), which are not mentioned in the transcript.
+- **Pseudo Labels Box:** The final "Pseudo Label" box lists two entries:
+  - "A woman takes shoes off. [3.7%, 12.1%]"
+  - "A woman sitting on a bed. [3.5%, 17.2%]"
+  The percentages and formatting are not described in the transcript.
+
+---
+
+**Slide 8 (Training with Noisy Pseudo Labels)**
+- **Diagram Flow:** The flowchart visually connects "Pseudo Label" → "Fully Supervised Model" → "Noise estimation" and "Label refinement" → "Reweight loss," with arrows indicating the process flow.
+- **Noise Estimation Values:** The "Noise estimation" box displays numerical values (0.9 and 0.7), which are not mentioned in the transcript.
+- **Label Refinement Values:** The "Label refinement" box shows specific timestamps ([4.1s, 11.8s] and [5.2s, 18.1s]), which are not described in the transcript.
+
+---
+**Slide 9 (Experiments)**
+- **Dataset Panels:**
+  - **(a) ActivityNet Captions:** The 8-frame sequence shows a person crossing monkey bars, with the query text in a larger font above the frames.
+  - **(b) Charades-STA:** The 8-frame sequence shows a person running toward a table, with the query text in a larger font above the frames.
+- **Query Text Formatting:** The queries are displayed in bold, larger font (e.g., "A man in a red tank top is crossing the monkey bars.").
+
+---
+**Slide 10 (Conclusion)**
+- **Background:** The slide has a subtle gradient or textured background (not described in the transcript).
+
+---
+**Slide 11 (Thank You)**
+- **QR Code:** A QR code is displayed below the text "Code," which is not described in the transcript.
+- **Background:** The slide has a subtle gradient or textured background.

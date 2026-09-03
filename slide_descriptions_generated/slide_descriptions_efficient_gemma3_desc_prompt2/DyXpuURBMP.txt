@@ -1,0 +1,308 @@
+Slide 1
+Timestamp: 10.38s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** NLPositionality: Characterizing Design Biases of Datasets and Models
+
+**Visual Elements:**
+
+*   Five headshots of the authors are arranged horizontally below the title.
+
+Slide 2
+Timestamp: 22.26s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** NLPositionality: Characterizing Design Biases of Datasets and Models
+
+**Visual elements:**
+
+*   Five small headshot images are arranged horizontally below the title.
+*   Author names are listed below the headshots.
+*   An asterisk (*) is next to one of the author names.
+
+Slide 3
+Timestamp: 36.12s
+------------------------------
+.
+Slide content:
+
+**Title:** Imagine...
+
+**Text content:**
+= PerspectiveAPI score
+
+**Visual elements:**
+- A slide with a white background.
+- A small image is present in the top right corner.
+- A line of text with an equals sign and "PerspectiveAPI score" is displayed.
+
+Slide 4
+Timestamp: 44.04s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Imagine...
+
+**Text content:**
+
+Can you stop being a jerk? 🤖: (0.82) ✅
+
+Carl Jones
+Aditya Sharma
+
+🤖 = PerspectiveAPI score
+
+**Visual Elements:**
+
+The slide features two circular avatars on either side of a central text box.
+
+*   **Left Avatar:** A male avatar with short red hair and a white shirt with a red tie.
+*   **Right Avatar:** A male avatar with a dark beard and a white coat.
+*   **Central Text Box:** A white box containing the text "Can you stop being a jerk?" followed by a robot emoji 🤖 and a score in parentheses: (0.82). A green checkmark ✅ is displayed to the right of the score.
+*   **Bottom Label:** Below the avatars, the text "🤖 = PerspectiveAPI score" is displayed.
+
+**Overall Layout:**
+
+The slide has a clean and simple layout. The title "Imagine..." is at the top left. The avatars and text box are arranged horizontally in the center of the slide. The bottom label is centered below the avatars.
+
+Slide 5
+Timestamp: 68.80s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Positionality
+
+[Image of a person sitting in front of a bookshelf]
+
+[1] Savin-Baden, Maggi, and Claire Howell-Major. “Qualitative research: The essential guide to theory and practice.” Qualitative Research: The Essential Guide to Theory and Practice. Routledge (2013).
+
+Slide 6
+Timestamp: 160.87s
+------------------------------
+.
+
+**Slide Content:**
+
+**Title:** NLPositionality
+A framework for characterizing design biases in NLP datasets and models
+
+**Bullet Points:**
+
+*   Datasets and models aggregate judgments and opinions of real people.
+*   Positionality can influence research outcomes.
+*   NLPositionality framework:
+    *   Re-annotate datasets with diverse annotators.
+    *   Compare annotations with models and datasets using Pearson's R correlation.
+*   Lab in the Wild online experimentation platform.
+*   Over 16,000 annotations from over 1000 annotators from 87 countries.
+*   Datasets and models are most aligned to English-speaking countries and people with a college education.
+*   Some populations are inevitably left behind (e.g., non-binary people).
+*   Recommendations:
+    *   Record design choices.
+    *   Adopt a perspectivist lens.
+    *   Build specialized datasets and models.
+*   Links to dashboard and paper.
+
+Slide 7
+Timestamp: 162.85s
+------------------------------
+.
+
+**Slide Content:**
+
+**Title:** NLPositionality
+A framework for characterizing design biases in NLP datasets and models
+
+**Bullet Points:**
+
+*   Datasets and models aggregate judgments and opinions of real people.
+*   Positionality can influence research outcomes.
+*   NLPositionality framework:
+    *   Re-annotate datasets with diverse annotators.
+    *   Compare annotations with models and datasets using Pearson's R correlation.
+*   Lab in the Wild online experimentation platform.
+*   Over 16,000 annotations from over 1000 annotators from 87 countries.
+*   Datasets and models are most aligned to English-speaking countries and people with a college education.
+*   Some populations are inevitably left behind (e.g., non-binary people).
+*   Recommendations:
+    *   Record design choices.
+    *   Adopt a perspectivist lens.
+    *   Build specialized datasets and models.
+*   Links to dashboard and paper.
+
+Slide 8
+Timestamp: 214.34s
+------------------------------
+.
+**Slide Content:**
+
+**Framework**
+
+**(Diagram with three sections: Collection, Processing, and Analysis)**
+
+**Collection**
+
+*   100 compactors from a compactors dataset
+*   Each compactor has an associated gold label
+*   Each support has an associated gold label
+*   Part of a study on LTM
+*   Annotate the world
+
+**(Diagram showing a series of images with labels)**
+
+*   Image 1: "Eating with Hands" with options "Red" and "Green"
+*   Image 2: "Can you live with AI and it's morals?" with options "Red" and "Green"
+*   Image 3: "Eating with Hands" with options "Red", "Green", and "Yellow"
+*   Image 1: "Eating with Hands" with options "Red", "Green", and "Yellow"
+
+**Processing**
+
+**(Diagram showing a neural network and a table)**
+
+*   Model Predictions
+*   The repeated annotations aggregated with the gold labels from the dataset and predictions from the models
+
+**Analysis**
+
+1.  Compare annotations by demographic to models and datasets via Pearson’s R scores.
+2.  Pearson’s correlation is measured between gold labels, model predictions and annotations for each demographic separately.
+
+**(Demographic categories with bars representing different groups)**
+
+*   **Age:**
+    *   <18
+    *   18-25
+    *   26-35
+    *   36-45
+*   **Gender:**
+    *   Man
+    *   Woman
+    *   Non-Binary
+*   **Ethnicity:**
+    *   White
+    *   Black
+    *   Hispanic
+    *   Asian
+*   **Education:**
+    *   Grad
+    *   Prof
+    *   College
+    *   School
+*   **Country:**
+    *   USA
+    *   CAN
+    *   AUS
+    *   IND
+
+Slide 9
+Timestamp: 256.91s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Task A: Social Acceptability
+
+**Text Content:**
+
+1) Read the situation
+2) Enter what you think about it
+3) See what an AI and others thought about it!
+
+Participants compare their responses to others' and an AI's.
+
+**Figure/Graph Description:**
+
+The slide features a screenshot of a web interface divided into three sections.
+
+**Section 1:** Displays a text box with a situation and a progress indicator.
+
+**Section 2:** Contains a text input field and radio buttons for selecting an opinion. A short paragraph encourages comparison with others and an AI.
+
+**Section 3:** Contains two sub-sections: "The AI speculates" and "Study participants in the United States said."
+- **The AI speculates:** Displays a cartoon image of a blue robot with a speech bubble containing text.
+- **Study participants in the United States said:** Displays a bar graph showing the frequency of different opinions (Admirable, Neutral, Unadmirable).
+
+Slide 10
+Timestamp: 263.84s
+------------------------------
+.
+
+**Slide Content:**
+
+**Title:** Task A: Social Acceptability Analysis
+
+**Text content:**
+- Datasets
+  - Social Chemistry
+
+- Models
+  - Delphi
+  - GPT-4
+
+Slide 11
+Timestamp: 273.74s
+------------------------------
+.
+**Slide Content:**
+
+**Task B: Toxicity**
+
+[Image of a computer screen with a user interface]
+
+1) Read the example
+[Text box on the screen: "English people smell like sour milk"]
+7/29
+
+2) Enter what you think about it
+[Radio buttons on the screen: "Do you think this is hateful?" Yes / No]
+[Text box on the screen: "Please give your rating"]
+
+3) See what others thought about it!
+
+[Bar graphs showing AI and participant ratings for "Rate Hateful"]
+
+Participants read an instance from the Dynahate dataset.
+
+Participants rate whether they think an instance is hate speech.
+
+Slide 12
+Timestamp: 391.56s
+------------------------------
+.
+**Slide Content:**
+
+**Recommendations**
+
+1. Keep a record of all relevant design choices.
+
+2. Do NLP research through the lens of perspectivism:
+    a. Share disaggregated dataset labels!
+    b. Use modeling techniques that can handle annotator disagreement.
+
+3. Building specialized datasets and models with and for specific communities is valuable for inclusive NLP (e.g., Masakhane initiative).
+
+[1] https://www.masakhane.io
+
+Slide 13
+Timestamp: 396.02s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Thanks!
+
+**Text content:**
+Dashboard Link: nlpositionality.cs.washington.edu/
+Paper: bit.ly/NLPositionality-Paper/
+
+**Figures/graphs:**
+
+The slide contains six bar graphs arranged in a 2x3 grid. Each graph represents a different demographic attribute of the annotators. The graphs are created using the "Delphi" tool. The graphs show the distribution of annotators across different categories for each attribute (e.g., age ranges, gender, ethnicities, religion, education level, country of residence, native language). The "USA" bar is consistently the tallest in the graphs related to country.
+
+Total slides processed: 13

@@ -1,0 +1,75 @@
+Here is the rewritten slide description with only information not derivable from the transcript alone:
+
+---
+
+**Slide 1**
+- **Visual Elements:**
+  - Bullet points under "Labels" include:
+    - "Type of the factuality error" with sub-bullets:
+      - "Intrinsic errors are those that arise as a result of misinterpreting information from the source text."
+      - "Extrinsic errors are those that hallucinate new information or facts not present in the source text."
+
+---
+
+**Slide 2**
+- **Visual Elements:**
+  - The input document text is formatted with distinct paragraphs and bullet points for clarity.
+  - The initial summary is highlighted in bold.
+  - The explanation is italicized.
+  - The evidence is enclosed in quotation marks.
+  - The instruction is presented as a standalone sentence in italics.
+
+---
+
+**Slide 3**
+- **Visual Elements:**
+  - The table includes columns for "Train," "Val," and "Test" with specific numbers for each split.
+  - The line graph titled "Cumulative Distribution of Instruction Number" has labeled axes with exact percentage values on the Y-axis (e.g., 10%, 95%, 100%).
+
+---
+
+**Slide 4**
+- **Visual Elements:**
+  - The table headers include "DAE" and "QAFactEval" with numerical values for each row (e.g., 0.6176, 0.6904, 0.8975).
+  - The ROUGE scores table includes specific numerical values for R1, R2, and RL (e.g., 48.01, 25.54, 40.45).
+
+---
+
+**Slide 5**
+- **Visual Elements:**
+  - The bar graph has labeled axes with exact ratio values on the Y-axis (e.g., 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6).
+  - The legend uses distinct colors for each error type (blue for "all," orange for "extrinsic," green for "intrinsic," teal for "both").
+  - The caption explicitly states: "Figure 3: Distribution of six different types of instructions. Removing information and replacing information are the most frequent types. Extrinsic errors are more likely to be corrected by removing while Intrinsic errors are more likely to be corrected by replacing."
+
+---
+
+**Slide 6**
+- **Visual Elements:**
+  - The table includes specific numerical values for R1, R2, DAE, and QFE (e.g., 77.04, 62.06, 71.99).
+  - The table headers include "Tipp," "79-30," and "75-50" with corresponding values.
+  - The legend for input variants (D, S, (n)) is explicitly defined as:
+    - "D" stands for Input Document.
+    - "S" stands for initial Summary.
+    - "(n)" stands for human-written Instructions, human-written Explanation.
+
+---
+
+**Slide 7**
+- **Visual Elements:**
+  - The diagram includes labeled arrows showing the flow from Input Document and Initial Summary to the Critic Model, and from the Critic Model to the Editing Model.
+  - The tables include specific numerical values for R1, R2, DAE, and QFE (e.g., 75.98, 66.32, 0.704).
+  - The table headers include "Sys," "Human," "D+S+T," "D+S+T GPT-3.5," and "D+S+T GPT-4" with corresponding values.
+
+---
+
+**Slide 8**
+- **Visual Elements:**
+  - The diagram includes labeled arrows showing the flow from Input Document to the Editor Model, and from the Editor Model to the Initial Summary, followed by Human Feedback to the Edited Summary.
+  - The tables include specific numerical values for R1, R2, DAE, and QFE (e.g., 75.98, 66.32, 0.704).
+  - The table headers include "Sys," "Human," "Editing," "Editor1," and "Editor2" with corresponding values.
+
+---
+
+**Slide 9**
+- **Visual Elements:**
+  - The bullet points are formatted with distinct indentation and spacing for clarity.

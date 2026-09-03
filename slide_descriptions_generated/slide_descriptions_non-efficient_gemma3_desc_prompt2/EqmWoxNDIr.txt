@@ -1,0 +1,239 @@
+Slide 1
+Timestamp: 8.50s
+------------------------------
+**Slide Content:**
+
+**Title:** Are You Copying My Model? Protecting the Copyright of Large Language Models for EaaS via Backdoor Watermark
+
+**Text content:**
+Wenjun Peng*, Jingwei Yi*, Fangzhao Wu², Shangxi Wu², Bin Zhu², Lingjuan Lyu⁴,
+Binxing Jiao¹, Tong Xu¹, Guangzhong Sun¹, Xing Xie²
+
+¹University of Science and Technology of China ²Microsoft Research Asia
+³Beijing Jiaotong University ⁴Sony AI ⁵Microsoft STC Asia
+
+[Logos of University of Science and Technology of China, Microsoft, Beijing Jiaotong University, and Sony AI are displayed]
+
+Slide 2
+Timestamp: 18.50s
+------------------------------
+**Slide Content:**
+
+**Title:** Are You Copying My Model? Protecting the Copyright of Large Language Models for EaaS via Backdoor Watermark
+
+**Text content:**
+Wenjun Peng*, Jingwei Yi*, Fangzhao Wu², Shangxi Wu¹, Bin Zhu¹, Lingjuan Lyu⁴,
+Binxing Jiao¹, Tong Xu¹, Guangzhong Sun¹, Xing Xie²
+
+¹University of Science and Technology of China ²Microsoft Research Asia
+³Beijing Jiaotong University ⁴Sony AI ⁵Microsoft STC Asia
+
+[Logos of University of Science and Technology of China, Microsoft, Beijing Jiaotong University, and Sony AI are displayed]
+
+Slide 3
+Timestamp: 45.49s
+------------------------------
+**Slide Analysis:**
+
+**Title:** Background
+
+**Text content:**
+
+*   Large language models (LLMs) are exceptional in NLU and NLG
+    *   GPT [1], LLaMA [2], PaLM [3]
+*   Embedding as a Service (EaaS) is offered to assist various NLP tasks
+    *   OpenAI offers a GPT3-based embedding API¹
+
+**Tables:**
+
+| MODEL | USAGE |
+|---|---|
+| Ada | $0.0004 / k token |
+
+*This Ada, text-embedding-ada-002, is a better and lower cost replacement for our older embedding models. Show old pricing*
+
+**References:**
+
+[1] Brown et al. Language models are few-shot learners. NIPS 2020.
+[2] Touvron et al. LLaMA: Open and Efficient Foundation Language Models. arXiv 2023.
+[3] Chowdhery et al. PaLM: Scaling Language Modeling with Pathways. arXiv 2022.
+¹ https://api.openai.com/v1/embeddings
+
+**Other visual elements:**
+
+The slide has a standard academic presentation layout. The title "Background" is at the top.  There is a table in the middle of the slide. A screenshot of a webpage showing pricing information for OpenAI's Ada embedding model is included. A speaker is visible in the bottom right corner of the screen.
+
+Slide 4
+Timestamp: 191.47s
+------------------------------
+**Slide Content:**
+
+**Title:** EmbMarker
+
+**Text content:**
+- Watermark injection
+    - Define a target embedding  $e_t$
+    - Count the trigger number in a sentence
+    $Q(s) = \frac{min(|s \cap T|, m)}{m}$
+    - Add the target embedding on the original embedding $e_o$
+
+**Figures/graphs:**
+
+The slide contains a diagram illustrating the watermark injection process.
+
+**Overall Layout:** The diagram is divided into two sections: (a) Watermark Injection.
+
+**(a) Watermark Injection:**
+
+*   **Left Side:**
+    *   A cylinder labeled "copy dataset $D_c$" is shown.
+    *   A stick figure labeled "stealer" is shown next to the cylinder.
+    *   An arrow points from the cylinder to a box labeled "provider's model".
+*   **Center:**
+    *   A box labeled "provider's model" contains a neural network diagram.
+    *   Below the neural network, there are three boxes:
+        *   A box labeled "trigger set $T$".
+        *   A box labeled "trigger number $c$".
+        *   A box labeled "backdoor weight $Q$".
+    *   An arrow points from "trigger set $T$" to the neural network.
+    *   An arrow points from "trigger number $c$" to the neural network.
+    *   An arrow points from "backdoor weight $Q$" to the neural network.
+    *   The neural network has an output that connects to a box labeled "original embedding $e_o$".
+    *   The "original embedding $e_o$" connects to a box labeled "(1 - Q) +".
+    *   The "target embedding $e_t$" connects to a box labeled "Q".
+    *   The output of "(1 - Q) + " and "Q" connects to a box labeled "normalize".
+    *   The output of "normalize" connects to a box labeled "provided embedding $E_c$".
+*   **Right Side:**
+    *   A box labeled "provider's EaaS".
+    *   A rectangle labeled "embedding $E_c$".
+
+**Other visual elements:**
+
+*   A box with the following labels and values:
+    *   T: trigger set
+    *   S: sentence
+    *   m: max trigger number
+
+**Formulas:**
+
+$Q(s) = \frac{min(|s \cap T|, m)}{m}$
+$e_t$
+$e_o$
+$D_c$
+$E_c$
+
+Slide 5
+Timestamp: 222.47s
+------------------------------
+**Slide Content:**
+
+**Title:** EmbMarker
+
+**Text content:**
+
+*   Copyright verification
+*   Construct a backdoor and benign dataset
+
+    $D_b = \{w_1, w_2, ..., w_m\} | w_i \in T\}$
+
+    $D_n = \{w_1, w_2, ..., w_m\} | w_i \notin T\}$.
+
+*   Request embeddings from stealer’s service with the datasets
+
+**Figure:**
+
+The figure is a diagram illustrating the EmbMarker process. It is divided into two main sections: "provider" and "stealer".
+
+**Provider Side:**
+
+*   **Trigger Set (T):** A box labeled "trigger set" contains a database icon.
+*   **Backdoor and Benign Dataset ($D_b + D_n$):** A box labeled "backdoor and benign dataset" contains a database icon. This box is connected to the "extracted model" box.
+*   **Verify extracted?:** A checkmark icon is next to the text "verify extracted?".
+*   **Target Embedding:** A box labeled "target embedding" contains a database icon.
+*   **Embedding ($E_b + E_n$):** A box labeled "embedding" contains a database icon.
+
+**Stealer Side:**
+
+*   **Extracted Model:** A neural network diagram is shown.
+*   **Train ($D_c$):** The "extracted model" is connected to a box labeled "train" which contains a database icon.
+*   **Corpus Embedding ($E_c$):** A box labeled "corpus embeddings" contains a database icon.
+*   **Stealer:** A person icon is next to the text "stealer".
+
+**Connections:**
+
+*   The "trigger set" (T) and "backdoor and benign dataset" ($D_b + D_n$) are connected to the "extracted model".
+*   The "extracted model" is connected to the "train ($D_c$)" box.
+*   The "train ($D_c$)" box is connected to the "corpus embeddings ($E_c$)" box.
+*   The "extracted model" is connected to the "verify extracted?" checkmark.
+*   The "verify extracted?" checkmark is connected to the "target embedding" box.
+*   The "embedding ($E_b + E_n$)" box is connected to the "target embedding" box.
+
+Slide 6
+Timestamp: 270.46s
+------------------------------
+**Slide Content:**
+
+**Experimental Results**
+
+*   Performance comparison
+
+| Dataset | Method | ACC | p-value ↓ | Δ\_test ↓ | Δ\_tr ↓ |
+|---|---|---|---|---|---|
+| SST2 | Original | 93.76±0.19 | > 0.34 | -0.07±0.18 | 0.14±0.36 |
+|  | RedAlarm | 93.76±0.19 | > 0.00 | 1.35±0.17 | -2.70±0.35 |
+|  | EmbMarker | 93.65±0.19 | < 10⁻⁵ | 4.07±0.37 | -8.13±0.74 |
+| MIND | Original | 77.30±0.08 | > 0.08 | -0.76±0.05 | 1.52±0.10 |
+|  | RedAlarm | 77.18±0.09 | > 0.38 | -2.08±0.66 | 4.17±1.31 |
+|  | EmbMarker | 77.29±0.12 | < 10⁻⁵ | 4.64±0.23 | -9.28±0.47 |
+| AGNews | Original | 93.74±0.14 | > 0.03 | 0.72±0.15 | -1.46±0.30 |
+|  | RedAlarm | 93.74±0.14 | > 0.09 | -2.04±0.76 | 4.07±1.51 |
+|  | Ours | 93.66±0.12 | < 10⁻⁵ | 2.88±0.67 | -25.70±1.34 |
+| Enron Spam | Original | 94.74±0.14 | > 0.03 | 0.21±0.27 | 0.42±0.54 |
+|  | RedAlarm | 94.87±0.06 | > 0.47 | -0.50±0.20 | 1.00±0.57 |
+|  | EmbMarker | 94.78±0.27 | < 10⁻⁵ | 6.17±0.31 | -12.34±0.62 |
+
+**Visual Elements:**
+
+*   The slide has a title "Experimental Results" at the top.
+*   Below the title, there is a bullet point "Performance comparison".
+*   A table is presented with the following columns: "Dataset", "Method", "ACC", "p-value ↓", "Δ\_test ↓", and "Δ\_tr ↓".
+*   The table contains data for four datasets: SST2, MIND, AGNews, and Enron Spam.
+*   Each dataset has three methods: Original, RedAlarm, and EmbMarker (or Ours for AGNews).
+*   A person is visible in the bottom right corner of the screen.
+
+Slide 7
+Timestamp: 293.46s
+------------------------------
+**Slide Content:**
+
+**Experimental Results**
+
+*   Embedding visualization
+
+**(Four sub-figures are displayed in a 2x2 grid)**
+
+**(a) AG News**
+A scatter plot is shown. The x-axis is labeled "−0.2" to "0.2" with increments of 0.1. The y-axis is labeled "−0.2" to "0.6" with increments of 0.2. The data points are blue dots. The data points are clustered in a roughly elliptical shape. A gray rectangle is drawn around the cluster.
+
+**(b) Enrom Spam**
+A scatter plot is shown. The x-axis is labeled "−0.2" to "0.2" with increments of 0.1. The y-axis is labeled "−0.2" to "0.3" with increments of 0.1. The data points are blue dots. The data points are clustered in a roughly spherical shape. A gray rectangle is drawn around the cluster.
+
+**(c) MIND**
+A scatter plot is shown. The x-axis is labeled "−0.2" to "0.2" with increments of 0.1. The y-axis is labeled "−0.2" to "0.3" with increments of 0.1. The data points are blue dots. The data points are clustered in a roughly spherical shape. A gray rectangle is drawn around the cluster.
+
+**(d) SST2**
+A scatter plot is shown. The x-axis is labeled "−0.2" to "0.2" with increments of 0.1. The y-axis is labeled "−0.2" to "0.3" with increments of 0.1. The data points are blue dots. The data points are clustered in a roughly spherical shape. A gray rectangle is drawn around the cluster.
+
+**(A person is visible in the bottom right corner of the screen.)**
+
+Slide 8
+Timestamp: 296.46s
+------------------------------
+**Slide Content:**
+
+Title: Thanks!
+
+The slide has a large "Thanks!" text in the bottom center.
+In the bottom right corner, there is a small video feed of a person.
+
+Total slides processed: 8

@@ -1,0 +1,105 @@
+Slide 1
+Timestamp: 27.53s
+------------------------------
+- The slide contains the Zhejiang University logo in the upper right corner.
+- The slide is divided into three sections: "Limitation", "Challenge", and "Introduction".
+- The text is formatted in a bulleted list.
+
+Slide 2
+Timestamp: 56.56s
+------------------------------
+- The slide contains the Zhejiang University logo in the top right corner.
+- The slide is divided into three sections: "Limitation", "Challenge", and "Introduction".
+- The slide uses bullet points to list key points.
+- The slide uses bold text to highlight important terms.
+
+Slide 3
+Timestamp: 89.46s
+------------------------------
+- Visual elements:
+    - A diagram illustrating the concept of a "Unified Auditory Semantic Space."
+    - The diagram shows a "Source Domain" and a "Target Domain" connected by an arrow pointing to the "Unified Auditory Semantic Space."
+    - The Source Domain contains three spectrograms with corresponding captions.
+    - The Target Domain contains three spectrograms with corresponding captions.
+- Notable text:
+    - Title: Introduction
+    - Subtitle: Motivation
+    - Labels: Source Domain, Target Domain, Unified Auditory Semantic Space
+- Zhejiang University logo.
+
+Slide 4
+Timestamp: 117.52s
+------------------------------
+- Visual elements:
+    - A diagram illustrating the pipeline architecture. It shows a flow from audio and visual inputs to an Audio-Visual Meta-Mapper Network (AVMM), then to an Audio-Visual Encoder (AVE) and Language Model Generator (LMG). The output of AVE and LMG are combined through an attention mechanism.
+    - Two circular diagrams are shown, labeled "Distribution Contrastive Loss" and "Dependency Contrastive Loss."
+    - Labels for the inputs: "Audio Feature," "Visual Feature," "Text Feature."
+    - Labels for the components of the pipeline: AVMM, AVE, LMG, Attention.
+
+Slide 5
+Timestamp: 197.83s
+------------------------------
+- Visual elements: A diagram illustrating the audio-visual encoder and language model generator. The diagram shows the flow of data and the operations performed at each stage.
+- Key components:
+    - Encoder: Takes frames (f_i, f_j) as input and outputs x_t.
+    - Generator: Uses α_t to predict output Y.
+    - α_t calculation: Uses a sigmoid function applied to a weighted sum of Y, x_t, and b_t.
+    - Y prediction: Uses Multi-Head Attention (MHA) operations with inputs Y, x_av, α_av, and x_va.
+- Notable text:
+    - Formulas and equations representing the calculations.
+    - Abbreviations like MHA, α, and x.
+    - Arrows indicating the flow of data.
+- Overall impression: A technical diagram outlining the architecture of the audio-visual encoder and language model generator.
+
+Slide 6
+Timestamp: 271.37s
+------------------------------
+- Visual elements: A table is present, showing the domain names and the number of meta-train and meta-test samples for each domain.
+- Table headers: Domain, Dmeta-train, Domain, Dmeta-test
+- Domain names: News, Movie, Sports, Cooking, Traffic, Animation, Music, Animal, Kids, Beauty
+- Dmeta-train values: 1727, 1652, 1623, 985, 815
+- Dmeta-test values: 816, 733, 613, 558, 478
+- Zhejiang University logo is present in the top right corner.
+- A table showing domain names and the number of meta-train and meta-test samples.
+- The table is split into two columns, one for Dmeta-train and one for Dmeta-test.
+- The domains listed are News, Movie, Sports, Cooking, Traffic, Animation, Music, Animal, Kids, and Beauty.
+- The number of samples for each domain is listed in the corresponding Dmeta-train and Dmeta-test columns.
+- The Zhejiang University logo is in the top right corner.
+- A table with domain names and sample counts for meta-training and meta-testing.
+- The table is split into two columns: Dmeta-train and Dmeta-test.
+- The domains listed are News, Movie, Sports, Cooking, Traffic, Animation, Music, Animal, Kids, and Beauty.
+- The number of samples for each domain is listed in the corresponding Dmeta-train and Dmeta-test columns.
+- The Zhejiang University logo is in the top right corner.
+- A table showing domain names and sample counts for meta-training and meta-testing.
+- The table is split into two columns: Dmeta-train and Dmeta-test.
+- The domains listed are News, Movie, Sports, Cooking, Traffic, Animation, Music, Animal, Kids, and Beauty.
+- The number of samples for each domain is listed in the corresponding Dmeta-train and Dmeta-test columns.
+- The Zhejiang University logo is in the top right corner.
+- A table showing domain names and sample counts for meta-training and meta-testing.
+- The table is split into two columns: Dmeta-train and Dmeta-test.
+- The domains listed are News, Movie, Sports, Cooking, Traffic, Animation, Music, Animal, Kids, and Beauty.
+- The number of samples for each domain is listed in the corresponding Dmeta-train and Dmeta-test columns.
+- The Zhejiang University logo is in the top right corner.
+- A table showing domain names and sample counts for meta-training and meta-testing.
+- The table is split into two columns: Dmeta-train and Dmeta-test.
+- The domains listed are News, Movie, Sports, Cooking, Traffic, Animation, Music, Animal, Kids, and Beauty.
+- The number of samples for each domain is listed in the corresponding Dmeta-train and Dmeta-test columns.
+- The Zhejiang University logo is in the top right corner.
+- A table showing domain names and sample counts for meta-training and meta-testing.
+- The table is split into two columns: Dmeta-train and Dmeta-test.
+- The domains listed are News, Movie, Sports, Cooking, Traffic, Animation, Music, Animal, Kids, and Beauty.
+- The number of samples for each domain is listed in the corresponding Dmeta-train and Dmeta-test columns.
+- The Zhejiang University logo is in the top right corner.
+- A table showing domain names and sample counts for meta-training and meta-testing.
+- The table is split into two columns: Dmeta-train and Dmeta-test.
+- The domains listed are News, Movie, Sports, Cooking, Traffic, Animation, Music, Animal, Kids, and Beauty.
+- The number of samples for each domain is listed in the corresponding Dmeta-train and Dmeta-test columns.
+- The Zhejiang University logo is in the top right corner.
+- A table showing domain names and sample counts for meta-training and meta-testing.
+- The table is split into two columns: Dmeta-train and Dmeta-test.
+- The domains listed are News, Movie, Sports, Cooking, Traffic, Animation, Music, Animal, Kids, and Beauty.
+- The number of samples for each domain is listed in the corresponding Dmeta-train and Dmeta-test columns.
+- The Zhejiang University logo is in the top right corner.
+- A table showing domain names and sample counts for
+
+Total slides processed: 6

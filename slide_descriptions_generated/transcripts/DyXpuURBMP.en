@@ -1,0 +1,54 @@
+Hi everyone.
+I'm Jenny, a first year PhD student at Carnegie Mellon University and today I'll be presenting your work NLPositionality characterising design biases of datasets and Models.
+This work was done in collaboration with some folks at the University of Washington and the Allen Institute for AI, namely Sebastian Santy, Ronan Le Bras, Katharina Reinecke and Maarten Sap.
+So let's start off by imagining that you're working for a newspaper and you're sifting through comments under your news article trying to remove toxic content.
+You might turn towards a popular API like Prospective API for toxicity detection, and this works really well if you're Carl Jones.
+Where prospective API is able to detect correctly toxic instances.
+But that's not really the case for Aditya Sharma.
+Where prospective AP is really not as sensitive to offensive terms that are more common in Indian contexts.
+This is an example of a design bias where we see systematic performance differences of technology between populations.
+Design biases like the one that we just saw before might occur due to the positionality of the NLP researchers and model developers.
+Positionality is simply the perspectives that people hold as a result of their demographics, identity, and life experiences.
+This is a concept widely used in critical studies, specifically in feminist and queer academic spaces.
+And as a researcher, positionality can influence the research process and its outcomes and results because it can change the decisions that researchers make.
+And so one question that people might ask is, do datasets and models have positionality?
+And we're not trying to say that models themselves in data sets themselves have demographic identities and life experiences, but they do aggregate judgments and opinions of real people, and can thus represent certain positionalities over others.
+So prior work has suggested some anecdotal evidence of having positionality, such as cultural gaps and models and data sets, as well as theoretical definitions of model positionality.
+However these works really don't look at comparing end users with the datasets and models themselves, and studying model and data set positionality is increasingly important as NLP tasks become more subjective and socially oriented, and it's challenging to characterise how these positionalities are skewed because not all decisions are documented and many models are hidden behind APIs.
+So to study data set and model positionality, we actually compare the annotations with real users with existing datasets and models.
+We do this through our framework NLPositionality.
+Our framework works in two main steps.
+The first step is to re annotate data sets with diverse annotators.
+And we ought to do this over looking at the demographics of original data sets annotators, because, usually only a few annotators annotate each instance and because demographics are rarely collected and shared.
+And so we opt to re annotate data to get many annotates for instance and to get a rich set of demographic data.
+We then take the annotations by demographic and compare them to the models and datasets using a Pearson's R correlation score, and thus our framework actually differs from annotator disagreement literature by comparing end users with models and datasets, predictions and labels, as opposed to looking at just annotator agreement or modelling annotator distributions.
+Our frame is largely enabled through Lab in the Wild and online crowdsourcing platform for where HCI collaborator.
+In Live in the Wild is an online experimentation platform where we can recruit divers volunteers.
+Compared to the platforms like M Turk which largely have participants from the US or India and further Lab in the Wild still is able to get high quality data.
+We host 2 tasks on lab in the wild, one of them being social acceptability, and the way this works is that participants will read a situation from the social chemistry dataset and, then they'll write how socially acceptable a situation is.
+Afterwards to stay engaged in the study, they can compare their responses to an AI and others.
+We've then compared these, annotations with Social Chemistry, Delphi and GPT 4.
+We then replicate a very similar setup for the toxicity and hate speech detection task, where they'll read an instance from Dynahate and write whether they think it's instance of hate speech.
+We then compared these annotations with Dynahate, Perspective API, Rewire API, Hate Roberta and GPT 4.
+Our study in the end amassed over 16,000 annotations from over 1000 annotators from 87 countries.
+So now we're better equipped to answer who do NLP datasets and models align with the most.
+We find that there is positionality in NLP.
+For example, we find that data sets and models are most aligned to English speaking countries.
+So for the GPT 4 social acceptability analysis, we find that it's most aligned to confucian and English speaking countries.
+We find that Dynahate is also most aligned to English speaking countries.
+We also find most additional alignment with people who have a college education.
+So for GPT 4, in the social acceptability task, we find that it's most aligned to people with a college education or Graduate School education and we find the same for Dynahate where it's most aligned to people with a college education.
+However, when models and data sets are aligned to specific populations, some are inevitably left behind.
+An example of this is that datasets and models are less aligned to non binary people compared to the men and women counterparts.
+We find this in the GPT 4 social acceptability task as well as the Dynahate task analysis as well.
+So, given that there is positionality in NLP, what can we do about it?
+So we have a few recommendations for this.
+First one is keep a record of all relevant design choices throughout the research process.
+And the other is to do NLP research with the lens of perspectivism.
+Our third recommendation is to build specialised datasets and models within 4 specific communities.
+And a good example of this is the Masakhani initiative.
+I mean, we want to emphasise that inclusive NLP isn't just making.
+You know, all technologies work for everyone.
+And so that concludes our presentation.
+But if you'd like to learn more, feel free to check out our dashboard for the most updated analysis results and our paper.
+Thank you.

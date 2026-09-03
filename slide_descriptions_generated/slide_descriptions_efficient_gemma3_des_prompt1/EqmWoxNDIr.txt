@@ -1,0 +1,245 @@
+Slide 1
+Timestamp: 8.50s
+------------------------------
+- Main visual elements:
+    - Three logos are displayed: University of Science and Technology of China, Microsoft, and Sony AI.
+    - A small image of a person is visible in the bottom right corner, presumably the presenter.
+- The slide is text-heavy, with a clear title and author/affiliation information.
+- Visualizations of embedding data (PCA plots) are mentioned, but not shown on the slide itself.
+- The slide is primarily text-based, conveying information through a structured layout.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with a focus on clarity and readability.
+- The slide is designed to be informative and professional, with
+
+Slide 2
+Timestamp: 18.50s
+------------------------------
+- Main visual elements:
+    - Logos of the affiliated institutions: University of Science and Technology of China, Microsoft, Beijing Jiaotong University, and Sony AI.
+    - The title "Are You Copying My Model?" is prominently displayed.
+    - The full title of the paper is listed below the question.
+    - The authors' names and affiliations are listed in a standard academic format.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams, charts, or figures are present on the slide itself.
+- The overall design is clean and professional, typical of an academic presentation.
+- The slide is designed to introduce the paper and its authors to the audience.
+- The slide is text-heavy, primarily consisting of the title, authors, affiliations, and a list of keywords.
+- No diagrams
+
+Slide 3
+Timestamp: 45.49s
+------------------------------
+- Visual elements:
+    - A screenshot of the OpenAI API pricing page is displayed, showing the "Ada" model with a usage cost of $0.0004 per 1000 tokens.
+- Notable text:
+    - $0.0004
+    - tokens
+    - https://api.openai.com/v1/embeddings
+- Citations: [1], [2], [3]
+- The screenshot shows a table with columns for "Model", "Input tokens", "Output tokens", "Cost per 1000 tokens", and "Notes". The "Ada" model is highlighted.
+- The URL is displayed below the screenshot.
+- The screenshot is a visual representation of the cost associated with using the OpenAI API for embedding services.
+- The citations are listed at the bottom of the slide.
+- The slide is designed to provide context for the economic considerations of embedding as a service.
+- The URL is provided for further information.
+- The citations are listed for reference.
+- The slide is visually simple and focuses on the key information about the OpenAI API pricing.
+- The screenshot is a clear and concise representation of the cost of using the OpenAI API.
+- The URL is provided for easy access to the OpenAI API documentation.
+- The citations are listed for further reading.
+- The slide is visually appealing and easy to understand.
+- The screenshot is a valuable resource for anyone considering using the OpenAI API for embedding services.
+- The URL is provided for quick access to the OpenAI API documentation.
+- The citations are listed for further exploration of the topic.
+- The slide is well-designed and effectively communicates the key information about the OpenAI API pricing.
+- The screenshot is a clear and concise representation of the cost of using the OpenAI API.
+- The URL is provided for easy access to the OpenAI API documentation.
+- The citations are listed for further reading.
+- The slide is visually appealing and easy to understand.
+- The screenshot is a valuable resource for anyone considering using the OpenAI API for embedding services.
+- The URL is provided for quick access to the OpenAI API documentation.
+- The citations are listed for further exploration of the topic.
+- The slide is well-designed and effectively communicates the key information about the OpenAI API pricing.
+- The screenshot is a clear and concise representation of the cost of using the OpenAI API.
+- The URL is provided for easy access to the OpenAI API documentation.
+- The citations are listed for further reading.
+- The slide is visually appealing and easy to understand.
+- The screenshot is a valuable resource for anyone considering using the OpenAI API for embedding services.
+- The URL is provided for quick access to the OpenAI API documentation.
+- The citations are listed for further exploration of the topic.
+- The slide is well-designed and effectively communicates the key information about the OpenAI API pricing.
+- The screenshot is a clear and concise representation of the cost of using the OpenAI API.
+- The URL is provided for easy access to the OpenAI API documentation.
+- The citations are listed for further reading.
+- The slide is visually appealing and easy to understand.
+- The screenshot is a valuable resource for anyone considering using the OpenAI API for embedding services.
+- The URL is provided for quick access to the OpenAI API documentation.
+- The citations are listed for further exploration of the topic.
+- The slide is well-designed and effectively communicates the key information about the OpenAI API pricing.
+- The screenshot is a clear and concise representation of the cost of using the OpenAI API.
+- The URL is provided for easy access to the OpenAI API documentation.
+- The citations are listed for further reading.
+- The slide is visually appealing and easy to understand.
+- The screenshot is a valuable resource for anyone considering using the OpenAI API for embedding services.
+- The URL is provided for quick access to the OpenAI API documentation.
+- The citations are listed for further exploration of the topic.
+- The slide is well-designed and effectively communicates the key information about the OpenAI API pricing.
+- The screenshot is a clear and concise representation of the cost of using the OpenAI API.
+- The URL is provided for easy access to the OpenAI API documentation.
+- The citations are listed for further reading.
+- The slide is visually appealing and easy to understand.
+- The screenshot is a valuable resource for anyone considering using the OpenAI API for embedding services.
+- The URL is provided for quick access to the OpenAI API documentation.
+- The citations are listed for further exploration of the topic.
+- The slide is well-designed and effectively communicates the key information about the OpenAI API pricing.
+- The screenshot is a clear and concise representation of the cost of using the OpenAI API.
+- The URL is provided
+
+Slide 4
+Timestamp: 191.47s
+------------------------------
+**Visual Description:**
+
+The slide features a flowchart diagram illustrating the "EmbMarker" watermark injection process. The diagram includes:
+
+- A "copy dataset" (D_c) labeled as belonging to a "stealer."
+- A "provider's model" (a neural network representation).
+- A "trigger set" (T).
+- A "trigger number" (c) representing the count of trigger words.
+- A "backdoor weight" (q).
+- An "original embedding" (e_o).
+- A "target embedding" (e_t).
+- A "normalize" step.
+- A "provided embedding" (E).
+
+The diagram also includes the equation: Q(S) = min(S, n*T, m) / m.
+-
+
+Slide 5
+Timestamp: 222.47s
+------------------------------
+- A flowchart illustrates the EmbMarker process.
+- The flowchart includes the following stages:
+    - "trigger set" (labeled "T") is input.
+    - "Db + Dn" (backdoor and benign dataset) is input.
+    - A box labeled "extracted model" shows a neural network being trained on the dataset.
+    - A box labeled "corpus embeddings" shows the resulting embeddings (E).
+    - A box labeled "target embedding" shows the embeddings from the original model.
+    - A "verify extracted?" step compares the embeddings.
+- The flowchart is divided into two sections: "provider" and "stealer."
+- Visualizations of embeddings on four datasets via PCA are shown, with a legend indicating the number of triggers in each sentence.
+
+Slide 6
+Timestamp: 270.46s
+------------------------------
+- The slide contains a table comparing the performance of different methods (Original, RedAlarm, EmbMarker, Ours) on four datasets (SST2, MIND, AGNews, Enron Spam). The table shows Accuracy (ACC), p-value, Δ_text, and Δ_label for each method and dataset. The table also includes standard deviations for the ACC values. The slide is visually organized with clear column headers and row labels.
+-
+
+Slide 7
+Timestamp: 293.46s
+------------------------------
+- Visual elements:
+    - Four scatter plots are displayed, each representing a different dataset: AG News, Enron Spam, MIND, and SST2.
+    - Each scatter plot shows points scattered across a 2D space.
+    - The points are colored differently in each plot.
+    - Each plot is labeled with the dataset name.
+- Notable text:
+    - Title: Experimental Results
+    - Subtitle: Embedding visualization
+    - Labels for each plot: (a), (b), (c), (d)
+- Legend: The legend of the figures means the number of triggers in each sentence.
+- Axes: x and y axes are not labeled.
+
+Slide 8
+Timestamp: 296.46s
+------------------------------
+- The slide is predominantly white with the word "Thanks!" displayed in large, black text in the center. A small, square video feed of a person is visible in the bottom right corner.
+- The slide contains figures visualizing embeddings on four datasets via PCA. The legend of the figures means the number of triggers in each sentence.
+
+Total slides processed: 8

@@ -1,0 +1,29 @@
+Here is the rewritten slide description containing only information not explicitly conveyed in the transcript:
+
+---
+
+**Slide 9**
+Timestamp: 284.00s
+------------------------------
+**Slide Content:**
+
+**Title:** Generalizability test
+
+**Figures/graphs:**
+- A 2x2 matrix (grid) with four labeled quadrants.
+- The matrix is framed by two axes:
+  - **Vertical axis:** Labeled "Retriever compatibility" with a pink arrow pointing upward, ranging from "Incompatible" (bottom) to "Compatible" (top).
+  - **Horizontal axis:** Labeled "Reader compatibility" with a pink arrow pointing rightward, ranging from "Incompatible" (left) to "Compatible" (right).
+- **Quadrant labels:**
+  - Top-left: "Concept shift"
+  - Top-right: "No shift"
+  - Bottom-left: "Full shift"
+  - Bottom-right: "Covariate shift"
+
+**Other visual elements:**
+- The matrix background is dark gray.
+- All labels (including quadrant names and axis labels) are in white text.
+- The axes are pink.
+- Slide number "22" is displayed in the bottom right corner.
+
+---

@@ -1,0 +1,250 @@
+Slide 1
+Timestamp: 14.00s
+------------------------------
+- Main topic: This slide defines the task of Emotion Recognition in Conversations (ERC).
+- Key points:
+    - The task involves predicting the emotion label of each utterance in a dialogue.
+    - A dialogue consists of n utterances, u1 to un, uttered by speakers S1 to Sun.
+    - Each utterance has textual (t), audio (a), and visual (v) modalities.
+    - The equation u_i = {u_i^t, u_i^a, u_i^v} defines an utterance, where i ranges from 1 to n.
+- Visual elements:
+    - The slide contains a mathematical equation: u_i = {u_i^t, u_i^a, u_i^v}.
+- Notable text:
+    - "Task Definition" (title)
+    - "Emotion Recognition in Conversations (ERC)"
+    - "textual (t), audio (a) and visual (v) modalities"
+    - "k-class emotion category set y"
+    - "u_i = {u_i^t, u_i^a, u_i^v}"
+
+Slide 2
+Timestamp: 29.50s
+------------------------------
+- Main topic: This slide defines the task of Emotion Recognition in Conversations (ERC).
+- Key points:
+    - The task involves predicting the emotion label of each utterance in a dialogue.
+    - A dialogue consists of n utterances, u1 to un, uttered by speakers s1 to sny.
+    - Each utterance has textual (t), audio (a), and visual (v) modalities.
+    - The equation u_i = {u_i^t, u_i^a, u_i^v} defines the i-th utterance, where i ranges from 1 to n.
+- Visual elements:
+    - A mathematical equation is displayed: u_i = {u_i^t, u_i^a, u_i^v}
+- Notable text:
+    - "Task Definition" (title)
+    - "Emotion Recognition in Conversations (ERC)"
+    - "textual (t), audio (a) and visual (v) modalities"
+    - "k-class emotion category set y"
+    - "u_i = {u_i^t, u_i^a, u_i^v}"
+    - "i ∈ {1, ..., n}"
+
+Slide 3
+Timestamp: 66.49s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide discusses the challenges with existing Emotion Recognition in Conversation (ERC) approaches, specifically highlighting the issue of class imbalance.
+
+- **Key points:**
+    - Current state-of-the-art methods exhibit unsatisfactory performance on minority emotion classes.
+
+- **Visual elements:**
+    - Two bar charts are presented, labeled (a) Class distribution in MELD and (b) Class distribution in IEMOCAP.
+    - The x-axis of both charts represents emotion classes (Neutral, Sadness, Anger, Fear, Surprise, Disgust).
+    - The y-axis of both charts represents the number of samples.
+    - The bar heights visually demonstrate a significant class imbalance, with "Neutral" having the highest sample count and other emotions having considerably fewer samples.
+
+- **Notable text:**
+    - Title: Challenges with Existing ERC Approaches
+    - Figure 2: Illustration of the class imbalance problem in MELD and IEMOCAP
+    - Labels: MELD, IEMOCAP, Neutral, Sadness, Anger, Fear, Surprise, Disgust
+    - Text: "Current state-of-the-art methods have unsatisfactory performances in minority emotion classes."
+
+Slide 4
+Timestamp: 68.49s
+------------------------------
+- Main topic: This slide discusses challenges associated with existing emotion recognition and classification (ERC) approaches.
+- Key points:
+    - The difficulty of distinguishing between semantically similar emotions.
+- Visual elements: The slide contains a bullet point list.
+- Notable text: "Challenges with Existing ERC Approaches" and "The difficulty of distinguishing between semantically similar emotions."
+
+Slide 5
+Timestamp: 71.49s
+------------------------------
+- Main topic: This slide discusses challenges associated with existing Emotion Recognition and Classification (ERC) approaches.
+- Key points:
+    - The difficulty of distinguishing between semantically similar emotions.
+- Visual elements: The slide has a plain white background.
+- Notable text:
+    - Title: Challenges with Existing ERC Approaches
+    - Bullet point: The difficulty of distinguishing between semantically similar emotions.
+
+Slide 6
+Timestamp: 93.49s
+------------------------------
+- Main topic: This slide presents the MultiEMO framework, an attention-based, correlation-aware multimodal fusion framework for Emotion Recognition in Conversation (ERC).
+
+- Key points:
+    - The framework consists of three key components: Unimodal Feature Extraction & Context Modeling, Multimodal Fusion, and Emotion Classification.
+    - Unimodal Feature Extraction & Context Modeling processes spatial, audio, and visual modalities separately.
+    - Multimodal Fusion integrates features from different modalities using attention mechanisms.
+    - Emotion Classification produces the final emotion prediction.
+
+- Visual elements:
+    - A flowchart diagram illustrates the overall framework of MultiEMO.
+    - The diagram is divided into three sections corresponding to the three key components.
+    - Each section contains boxes representing different modules or layers within the framework.
+    - Arrows indicate the flow of information between modules.
+    - The spatial, audio, and visual modalities are represented as separate input streams.
+    - Attention mechanisms are visually represented by connecting lines between the unimodal feature extraction and multimodal fusion components.
+
+- Notable text:
+    - Title: "MultiEMO: An Attention-Based Correlation-Aware Multimodal Fusion Framework for ERC"
+    - Section labels: "Unimodal Feature Extraction & Context Modeling," "Multimodal Fusion," "Emotion Classification"
+    - Modality labels: "Spatial Modality," "Audio Modality," "Visual Modality"
+    - Terms: "Attention," "Correlation-Aware," "ERC" (Emotion Recognition in Conversation)
+    - Figure caption: "Illustration of the overall framework of MultiEMO, which consists of three key components: Unimodal Feature Extraction, Context Modeling, Multimodal Fusion and Emotion Classification."
+
+Slide 7
+Timestamp: 171.48s
+------------------------------
+- Main topic: This slide discusses problems with existing visual feature extraction approaches in Emotion Recognition in Conversation (ERC).
+- Key points:
+    - Existing ERC visual feature extractors encode both facial expressions of interlocutors and scene-related information.
+    - Visual surrounding information is redundant.
+    - There are no explicit correlations between scene information and the emotion of the speaker.
+    - The scene normally remains unchanged throughout the conversation.
+- Visual elements: The slide has a simple layout with a title and bullet points.
+- Notable text:
+    - Title: "Problems with Existing visual feature extraction approaches"
+    - Terms: "ERC", "visual feature extractors", "interlocutors", "scene-related information", "emotion"
+
+Slide 8
+Timestamp: 192.48s
+------------------------------
+- Main topic: This slide introduces the Visual Feature Extractor, specifically VisExtNet, and its architecture.
+- Key points:
+    - VisExtNet is composed of an MTCNN and a VGGFace2 pre-trained ResNet-101.
+    - It captures visual cues by integrating facial expressions from multiple frames.
+    - The architecture avoids encoding redundant scene-related information.
+- Visual elements:
+    - A diagram illustrates the architecture of VisExtNet.
+    - The diagram shows multiple frames being processed by an MTCNN.
+    - The output of the MTCNN is fed into multiple ResNet-101 networks.
+    - The output of each ResNet-101 is passed through a "Concat" layer.
+    - The concatenated output is then processed by an "Average Pooling" layer.
+- Notable text:
+    - Title: Visual Feature Extractor - VisExtNet
+    - Figure caption: Illustration of the architecture of VisExtNet
+    - Components: MTCNN, ResNet-101, VGGFace2, Concat, Average Pooling
+    - Term: redundant scene-related information
+    - Frame labels: Frame 1, Frame 2, Frame 3
+
+Slide 9
+Timestamp: 221.48s
+------------------------------
+- Main topic: This slide explains the MultiAttn architecture for multimodal fusion.
+- Key points:
+    - MultiAttn is composed of three components: MultiAttntext, MultiAttn audio, and MultiAttn visual.
+    - Each component aims to integrate one modality with complementary information from the other two modalities.
+    - This integration is achieved through stacked bidirectional multi-head cross-attention layers.
+- Visual elements:
+    - A diagram illustrating the architecture of MultiAttn.
+    - The diagram shows three columns, presumably representing the three components (text, audio, visual).
+    - Each column contains multiple stacked blocks, each block containing attention mechanisms.
+    - The diagram uses color-coding to differentiate the different modalities and attention layers.
+    - A label "Figure 3. Illustration of the architecture of MultiAttn" is present.
+- Notable text:
+    - "Multimodal Fusion - MultiAttn" (title)
+    - "MultiAttn is made up of three components: MultiAttntext, MultiAttn audio, and MultiAttn visual"
+    - "each of which aims to integrate one modality with complementary information from the other two modalities"
+    - "through stacked bidirectional multi-head cross-attention layers"
+
+Slide 10
+Timestamp: 267.47s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide explains the MultiAttn method for multimodal fusion, specifically how it learns cross-modal relationships between textual and audio modalities.
+
+- **Key points:**
+    - MultiAttn initially learns cross-modal correlations and mapping relationships between textual and audio modalities by treating the textual modality as Query and the audio modality as Key and Value for a bidirectional multi-head cross-attention operation.
+    - The output from the first stage is utilized as the new Query, while the visual modality is regarded as Key and Value for another bidirectional multi-head cross-attention layer to fuse the textual modality with visual cues.
+    - A feed-forward network consisting of two fully connected layers with a ReLU is adopted, which operates as a key-value memory.
+
+- **Visual elements:**
+    - A diagram illustrating a one-layer MultiAttn architecture is present.
+    - The diagram shows a sequential flow of operations:
+        - Input (labeled as 'x') goes through an Add & Norm layer.
+        - The output of Add & Norm goes through a Feed Forward Network (FFN).
+        - The output of the FFN goes through a Bidirectional Multi-Head Cross Attention layer (with Query, Key, and Value inputs labeled as Q1, K1, V1).
+        - The output of the Cross Attention layer goes through another Add & Norm layer.
+        - The output of Add & Norm goes through another Bidirectional Multi-Head Cross Attention layer (with Query, Key, and Value inputs labeled as Q2, K2, V2).
+
+- **Notable text:**
+    - Title: "Multimodal Fusion - MultiAttn"
+    - Terms: "MultiAttn," "Query," "Key," "Value," "bidirectional multi-head cross-attention," "Add & Norm," "Feed Forward Network," "ReLU," "key-value memory."
+    - Labels on the diagram: "x," "Q1," "K1," "V1," "Q2," "K2," "V2."
+    - Figure caption: "Figure 1: Illustration of a one-layer MultiAttn."
+
+Slide 11
+Timestamp: 320.46s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide presents the experimental results of the MultiEmo model, demonstrating its state-of-the-art performance on two Emotion Recognition Challenge (ERC) benchmark datasets, MELD and IEMOCAP.
+
+- **Key points:**
+    * MultiEmo achieves state-of-the-art performance on MELD and IEMOCAP datasets.
+    * Significant improvements are observed in minority and semantically similar classes.
+    * The model outperforms several existing models on both datasets.
+
+- **Visual elements:**
+    * **Table 1:** A table titled "MELD" displays the performance of various models (BC-LSTM, DialogueRNN, DialogueGCN, IterativeERC, QMN, MMGCN, MVN, UniMSE, MultiEmo, MultiEmo (w/o EWC), MultiEmo) across different emotion classes (Neutral, Surprise, Fear, Sadness, Joy, Disgust, Anger) and a "Weighted-F1" score. The best results are highlighted in red.
+    * **Table 2:** A table titled "IEMOCAP" displays the performance of the same models across different emotion classes (Neutral, Surprise, Fear, Sadness, Joy, Disgust, Anger) and a "Weighted-F1" score. The best results are highlighted in red.
+    * A small annotation on the right side of the table indicates "Minority Emotion," "Annotated Pain," and "Emotional Pain" with corresponding color codes.
+
+- **Notable text:**
+    * "Experimental Results" (slide title)
+    * "MultiEmo achieves state-of-the-art performances on two ERC benchmark datasets, MELD and IEMOCAP, with significant improvements in minority and semantically similar classes." (introductory text)
+    * "MELD" and "IEMOCAP" (table titles)
+    * Model names listed in the tables (BC-LSTM, DialogueRNN, etc.)
+    * Emotion class names (Neutral, Surprise, Fear, Sadness, Joy, Disgust, Anger)
+    * "Weighted-F1" (performance metric)
+    * "MultiEmo (w/o EWC)" (variant of the MultiEmo model)
+    * "Table 2: Experimental results show the original paper results are highlighted in red." (table caption)
+
+Slide 12
+Timestamp: 335.46s
+------------------------------
+- Main topic: This slide presents a case study demonstrating how MultiEMO can address the asynchronous emotional tendencies across different modalities.
+- Key points:
+    - MultiEMO can tackle the asynchronization of emotional tendencies from different modalities.
+    - The example utterance is "Chandler is a great name!"
+    - The speaker is Phoebe.
+    - The emotion associated with the utterance is anger.
+- Visual elements:
+    - A photograph of a woman (likely Phoebe) is displayed on the left.
+    - A diagram illustrates the processing of textual, audio, and visual data to determine emotion.
+    - Heatmaps are used to represent the emotional intensity of each modality.
+    - A final heatmap represents the fused emotional output.
+    - A yellow smiley face with an angry expression is shown at the bottom right.
+- Notable text:
+    - Title: Case Study
+    - Utterance: "Chandler is a great name!"
+    - Speaker: Phoebe
+    - Emotion: Anger
+    - Figure 7: Visualization of the heatmaps of a prone-to-misclassification utterance in MELD.
+
+Slide 13
+Timestamp: 346.96s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide outlines the limitations of the presented research and models.
+- **Key points:**
+    - VisExtNet does not distinguish between speakers and irrelevant people in the scene.
+    - Due to the class imbalanced issue with MELD, the SWFC loss requires a large batch size on MELD to ensure that for each training sample there exists at least one positive pair in the batch, which can be computationally expensive.
+    - Even though MultiEMO has achieved remarkable improvements in minority emotion categories, the performances of MultiEMO in minority emotions are still worse than majority classes.
+- **Visual elements:** The slide contains a title "Limitations" at the top and a logo in the bottom left corner.
+- **Notable text:** The terms "VisExtNet," "MELD," "SWFC loss," "MultiEMO," and "minority emotion categories" are highlighted.
+
+Total slides processed: 13

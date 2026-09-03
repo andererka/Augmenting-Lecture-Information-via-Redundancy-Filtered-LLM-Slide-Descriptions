@@ -1,0 +1,244 @@
+Here is the rewritten slide description, retaining only information not explicitly conveyed in the transcript:
+
+---
+
+**Slide 1**
+Timestamp: 14.00s
+------------------------------
+**Slide Content:**
+
+**Task Definition**
+
+Given a dialogue consisting of *n* utterances \( u_1, ..., u_n \) uttered by speakers \( s_{u_1}, ..., s_{u_n} \), the goal of Emotion Recognition in Conversations (ERC) is to predict the emotion label of each utterance in the dialogue from a pre-defined *k*-class emotion category set \( y \). Each utterance has its corresponding textual (\( t \)), audio (\( a \)), and visual (\( v \)) modalities:
+
+\[ u_i = \{u_i^t, u_i^a, u_i^v\}, \quad i \in \{1, ..., n\} \]
+
+---
+
+**Slide 3**
+Timestamp: 66.49s
+------------------------------
+**Slide Content:**
+
+**Challenges with Existing ERC Approaches**
+
+- Current state-of-the-art methods have unsatisfactory performance in minority emotion classes.
+
+**Figure Description:**
+
+The slide contains two bar graphs, labeled **(a)** and **(b)**, representing the class distribution in the **MELD** and **IEMOCAP** datasets, respectively. Both graphs share a similar structure and are used to illustrate the class imbalance problem.
+
+**(a) MELD:**
+- **Title:** MELD
+- **X-axis:** Emotion Class
+- **Y-axis:** Training Sample Size
+- **Categories (Emotion Classes):** Neutral, Joy, Surprise, Sadness, Anger, Disgust, Fear
+- **Values (Training Sample Size):**
+  - Neutral: ~6000
+  - Joy: ~6000
+  - Surprise: ~2000
+  - Sadness: ~2000
+  - Anger: ~1000
+  - Disgust: ~500
+  - Fear: ~500
+- **Trend:** The bar graph shows a significant imbalance, with Neutral and Joy having the highest training sample sizes, followed by Surprise and Sadness, and then Anger, Disgust, and Fear having the lowest.
+
+**(b) IEMOCAP:**
+- **Title:** IEMOCAP
+- **X-axis:** Emotion Class
+- **Y-axis:** Training Sample Size
+- **Categories (Emotion Classes):** Neutral, Invocation, Anger, Sadness, Excitement, Happiness
+- **Values (Training Sample Size):**
+  - Neutral: ~2000
+  - Invocation: ~1750
+  - Anger: ~1500
+  - Sadness: ~1250
+  - Excitement: ~1000
+  - Happiness: ~1000
+- **Trend:** Similar to the MELD graph, the IEMOCAP graph also shows a class imbalance, with Neutral and Invocation having the highest training sample sizes, followed by Anger, Sadness, Excitement, and Happiness having lower sample sizes.
+
+---
+
+**Slide 7**
+Timestamp: 171.48s
+------------------------------
+**Slide Content:**
+
+**Problems with Existing Visual Feature Extraction Approaches**
+
+Existing ERC visual feature extractors encode both facial expressions of interlocutors and scene-related information of each utterance clip.
+
+**Visual surrounding information is redundant for two reasons:**
+1. No explicit correlations between scene information and the emotion of the speaker.
+2. The scene normally remains unchanged throughout the conversation.
+
+---
+
+**Slide 8**
+Timestamp: 192.48s
+------------------------------
+**Slide Content:**
+
+**Title:** Visual Feature Extractor - VisExtNet
+
+VisExtNet is made up of an **MTCNN** and a **VGGFace2 pre-trained ResNet-101**, which captures visual cues by integrating facial expressions of interlocutors from multiple frames without encoding redundant scene-related information.
+
+**[Diagram of VisExtNet architecture]**
+
+**Diagram Description:**
+
+The diagram illustrates the architecture of VisExtNet. It shows two input frames, **Frame 1** and **Frame 20**. Each frame is processed by an MTCNN. The output of the MTCNN for each frame is a cropped face image. Each cropped face image is then fed into a VGGFace2 pre-trained ResNet-101. The ResNet-101 outputs a feature vector. The feature vectors from both frames are then concatenated. Finally, the concatenated feature vector is passed through an **average pooling layer**, which outputs a final feature vector labeled as \( h_1 \).
+
+**Specific elements within the diagram:**
+- **Input Frames:** Two rectangular boxes labeled "Frame 1" and "Frame 20".
+- **MTCNN:** Two MTCNN blocks, one for each input frame.
+- **ResNet-101:** Four rectangular boxes labeled "ResNet-101".
+- **Concatenate:** A line connecting the outputs of the ResNet-101 blocks.
+- **Average Pooling:** A rectangular box labeled "Average Pooling".
+- **Output:** A single arrow pointing from the Average Pooling block to a final feature vector labeled "h₁".
+
+---
+
+**Slide 9**
+Timestamp: 221.48s
+------------------------------
+**Slide Content:**
+
+**Title:** Multimodal Fusion - MultiAttn
+
+**Text content:**
+
+MultiAttn is made up of three components: **MultiAttn<sub>text</sub>**, **MultiAttn<sub>audio</sub>**, and **MultiAttn<sub>visual</sub>**, each of which aims to integrate one modality with complementary information from the other two modalities through stacked bidirectional multi-head cross-attention layers.
+
+**[Figure labeled "Figure 5: Illustration of the architecture of MultiAttn."]**
+
+The figure depicts three identical blocks arranged horizontally, presumably representing the three MultiAttn components (text, audio, and visual). Each block has a similar structure, with several layers stacked vertically.
+
+**Detailed Description of Each Block (representing MultiAttn<sub>text</sub>, MultiAttn<sub>audio</sub>, and MultiAttn<sub>visual</sub>):**
+
+Each block consists of the following layers, arranged from top to bottom:
+
+1. **Input Layer:** A rectangular box labeled "Input".
+2. **Layer 1:** A rectangular box labeled "Cross-Attention Layer". Below it is a smaller box labeled "Attention". Below that is a smaller box labeled "Output".
+3. **Layer 2:** A rectangular box labeled "Cross-Attention Layer". Below it is a smaller box labeled "Attention". Below that is a smaller box labeled "Output".
+4. **Layer 3:** A rectangular box labeled "Cross-Attention Layer". Below it is a smaller box labeled "Attention". Below that is a smaller box labeled "Output".
+5. **Layer 11:** A rectangular box labeled "Cross-Attention Layer". Below it is a smaller box labeled "Attention". Below that is a smaller box labeled "Output".
+6. **Output Layer:** A rectangular box labeled "Output".
+
+Each "Cross-Attention Layer" block contains a smaller "Attention" block and an "Output" block. The number of layers is indicated as "11 Layers" on the rightmost block. The blocks are connected vertically, suggesting a sequential flow of information. The three blocks are visually identical, indicating a consistent architecture for each modality.
+
+**Subscript Notation:**
+
+The subscripts "text", "audio", and "visual" are used to denote the specific MultiAttn component for each modality. For example, MultiAttn<sub>text</sub> refers to the MultiAttn component for the text modality.
+
+---
+
+**Slide 10**
+Timestamp: 267.47s
+------------------------------
+**Slide Content:**
+
+**Title:** Multimodal Fusion - MultiAttn
+
+**Text content:**
+
+- MultiAttn<sub>text</sub> first learns cross-modal correlations and mapping relationships between textual and audio modalities by treating the textual modality as **Query** and the audio modality as **Key** and **Value** for the bidirectional multi-head cross-attention operation.
+
+- The learned output from the first stage is utilized as the new **Query** while the visual modality is regarded as **Key** and **Value** for another bidirectional multi-head cross-attention layer to fuse the textual modality with visual cues.
+
+- A feed-forward network consisting of two fully-connected layers with a ReLU activation is adopted, which operates as a key-value memory.
+
+**[Figure labeled "Figure 6: Illustration of a one-layer MultiAttn"]**
+
+The figure is a diagram illustrating the architecture of a one-layer MultiAttn module. It is structured as a tree-like diagram with two main branches, one for the textual modality and one for the audio modality.
+
+**Left Branch (Textual Modality):**
+
+1. **Feed Forward Network:** A rectangular box labeled "Feed Forward Network" with the text "FFN(Q)" inside.
+2. **Add & Norm:** A rectangular box labeled "Add & Norm".
+3. **Bidirectional Multi-Head Cross Attention:** A rectangular box labeled "Bidirectional Multi-Head Cross Attention" with the text "C<sup>t</sup>" inside.
+4. **Add & Norm:** A rectangular box labeled "Add & Norm".
+5. **Bidirectional Multi-Head Cross Attention:** A rectangular box labeled "Bidirectional Multi-Head Cross Attention" with the text "K<sup>t</sup>" and "V<sup>t</sup>" inside.
+
+**Right Branch (Audio Modality):**
+
+The right branch mirrors the left branch but with labels specific to the audio modality:
+
+1. **Feed Forward Network:** A rectangular box labeled "Feed Forward Network" with the text "FFN(K)" inside.
+2. **Add & Norm:** A rectangular box labeled "Add & Norm".
+3. **Bidirectional Multi-Head Cross Attention:** A rectangular box labeled "Bidirectional Multi-Head Cross Attention" with the text "C<sup>a</sup>" inside.
+4. **Add & Norm:** A rectangular box labeled "Add & Norm".
+5. **Bidirectional Multi-Head Cross Attention:** A rectangular box labeled "Bidirectional Multi-Head Cross Attention" with the text "K<sup>a</sup>" and "V<sup>a</sup>" inside.
+
+**Overall Structure:**
+
+The two branches are connected at the "Bidirectional Multi-Head Cross Attention" layers. The diagram visually represents the flow of information through the MultiAttn module, highlighting the use of feed-forward networks, add & norm operations, and bidirectional multi-head cross-attention layers.
+
+---
+
+**Slide 11**
+Timestamp: 320.46s
+------------------------------
+**Slide Content:**
+
+**Experimental Results**
+
+MultiEMO achieves state-of-the-art performances on two ERC benchmark datasets, **MELD** and **IEMOCAP**, with significant improvements in minority and semantically similar classes.
+
+**[Table 2: Experimental results from the original paper. The best results are highlighted in bold.]**
+
+| Models | Neutral | Surprise | Fear | Sadness | Joy | Disgust | Anger | Weighted-F1 |
+|---|---|---|---|---|---|---|---|---|
+| BC-LSTM | 78.80 | 47.70 | 5.40 | 25.10 | 51.30 | 5.30 | 30.40 | 37.40 |
+| DialogueRNN | 76.20 | 40.50 | 0.90 | 24.30 | 54.50 | 0.81 | 46.00 | 37.52 |
+| DialogueGCN | 78.02 | 46.37 | 0.98 | 24.32 | 53.62 | 1.22 | 43.00 | 37.52 |
+| IterativeERC | 77.52 | 53.65 | 3.11 | 23.62 | 56.61 | 1.19 | 48.88 | 40.72 |
+| QMN | 77.00 | 40.76 | 0.00 | 23.61 | 52.08 | 0.00 | 43.17 | 38.00 |
+| MMGCN | 76.65 | 53.18 | 11.70 | 21.82 | 53.62 | 21.86 | 42.55 | 39.85 |
+| MVN | - | - | - | - | - | - | - | 6.95 |
+| UniMSE | - | - | - | - | - | - | - | 6.95 |
+| MultiEMO (Validation) | 79.16 | 52.23 | 24.80 | 27.61 | 60.61 | 31.71 | 52.08 | 42.84 |
+| MultiEMO (Validation) | 79.72 | 54.45 | 20.76 | 30.10 | 60.58 | 34.40 | 49.86 | 42.99 |
+| MultiEMO (EWC) | 79.95 | 60.96 | 29.67 | 41.51 | 62.92 | 36.75 | 54.41 | 60.34 |
+
+**Notes:**
+- Minority Emotion
+- Semantically similar Emotion Pairs
+
+---
+
+**Slide 12**
+Timestamp: 335.46s
+------------------------------
+**Slide Content:**
+
+**Case Study**
+
+MultiEMO can tackle the asynchronization of emotional tendencies from different modalities.
+
+**[Image of a woman, presumably Phoebe from Friends, smiling slightly. She is wearing a dark top and has her hair down.]**
+
+**Textual**
+**Audio**
+**Visual**
+
+**[Diagram showing three horizontal heatmaps, one for Textual, one for Audio, and one for Visual. Each heatmap has a red-blue color gradient. The heatmaps are connected by arrows labeled "Context Modeling + Multimodal Fusion" which leads to a single combined heatmap with a red-blue color gradient and a yellow smiley face with an angry expression.]**
+
+- **Utterance:** "Chandler is a great name!"
+- **Speaker:** Phoebe
+- **Emotion:** Anger
+
+**Figure 7:** Visualization of the heatmaps of a prone-to-misclassification utterance in MELD.
+
+---
+
+**Slide 13**
+Timestamp: 346.96s
+------------------------------
+**Slide Content:**
+
+**Limitations**
+
+- VisExtNet does not distinguish between speakers and irrelevant people in the scene.
+- Due to the class imbalance issue with MELD, the **SWFC loss** requires a large batch size on MELD to ensure that for each training sample there exists at least one positive pair in the batch, which can be computationally expensive.
+- Even though MultiEMO has achieved remarkable improvements in minority emotion categories, the performances of MultiEMO in minority emotions are still worse than majority classes.

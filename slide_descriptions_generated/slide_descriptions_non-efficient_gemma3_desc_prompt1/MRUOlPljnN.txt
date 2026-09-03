@@ -1,0 +1,145 @@
+Slide 1
+Timestamp: 2.50s
+------------------------------
+- Main topic: This slide introduces the lecture topic, "To Adapt or to Annotate: Challenges and Interventions in Open-Domain Question Answering."
+- Key points:
+    - The slide presents the lecture's central theme: exploring the challenges and interventions in open-domain question answering.
+- Visual elements:
+    - The slide has a dark blue background.
+    - Four small headshot images are arranged horizontally at the bottom of the slide.
+    - Each headshot is labeled with the name of a presenter: "Dheeraj Dua," "Emma Strubell," "Sameet Singh," and "Pat Verga."
+- Notable text:
+    - The title "To Adapt or to Annotate: Challenges and Interventions in Open-Domain Question Answering" is prominently displayed in white text at the top of the slide.
+    - Three dots are placed below the title.
+
+Slide 2
+Timestamp: 6.50s
+------------------------------
+- Main topic: This slide introduces the lecture topic, "To Adapt or to Annotate: Challenges and Interventions in Open-Domain Question Answering."
+- Key points:
+    - The slide presents the lecture's central theme: exploring the challenges and interventions in open-domain question answering.
+- Visual elements:
+    - The slide has a dark blue background.
+    - Four small headshot images are arranged horizontally at the bottom of the slide.
+    - The headshots are of the presenters: Dhivya Dua, Emma Strubell, Sameet Singh, and Pat Verga.
+- Notable text:
+    - Title: "To Adapt or to Annotate: Challenges and Interventions in Open-Domain Question Answering"
+    - Names of the presenters are listed below their respective headshots.
+
+Slide 3
+Timestamp: 16.50s
+------------------------------
+- Main topic: This slide introduces the topic of open-domain question answering and presents an example question.
+- Key points:
+    - The slide demonstrates an open-domain question answering task.
+- Visual elements:
+    - A blue cylinder representing a database (labeled "Wikipedia") is shown at the bottom left.
+    - A rectangular box containing the question "What is produced in plants of narora, kakrapar, tarapur?" is positioned in the center.
+- Notable text:
+    - "Open-domain QA" (title)
+    - "What is produced in plants of narora, kakrapar, tarapur?" (question)
+    - "Wikipedia" (label for the database icon)
+
+Slide 4
+Timestamp: 39.50s
+------------------------------
+- Main topic: This slide illustrates the architecture of an open-domain question answering (QA) system.
+- Key points:
+    - The system uses a two-stage process: retrieval and reading.
+    - A question is input to a retriever model.
+    - The retriever model searches a large knowledge base (Wikipedia) to find relevant documents.
+    - The retrieved documents are then passed to a reader model.
+    - The reader model extracts the answer from the retrieved documents.
+- Visual elements:
+    - A diagram showing the flow of information through the system.
+    - A cylinder representing Wikipedia as the knowledge base.
+    - Two rectangular boxes labeled "Retriever (Source) Model" and "Reader (Source) Model" representing the two models.
+    - Arrows indicating the flow of information between the components.
+    - A sample question "What is produced in plants of narora, kakrapur, tarapur?"
+    - A sample retrieved document containing information about Narora and Tarapur Atomic Power Stations.
+    - A sample answer "nuclear power".
+- Notable text:
+    - "Open-domain QA" (title)
+    - "Retriever (Source) Model"
+    - "Reader (Source) Model"
+    - "Wikipedia"
+    - "nuclear power"
+
+Slide 5
+Timestamp: 71.50s
+------------------------------
+- Main topic: This slide discusses approaches to answering questions from specialized domains like biomedicine using open-domain question answering.
+- Key points:
+  - Wikipedia can answer a few questions.
+  - Replacing Wikipedia with a biomedical (or other domain) corpus might not be sufficient due to sparse availability.
+  - The easiest way to improve performance is to expand the retrieval corpus.
+- Visual elements: The slide has a dark blue background with white text. There is a title "Open-domain QA" at the top. Below the title is a section titled "How to answer questions from biomedical (or any new domain)?" followed by three bullet points.
+- Notable text: "Open-domain QA", "biomedical (or any new domain)", "retrieval corpus".
+
+Slide 6
+Timestamp: 97.50s
+------------------------------
+- Main topic: This slide illustrates the process of open-domain question answering using a retriever and reader model.
+- Key points:
+    - The system answers questions using information from Wikipedia and PubMed.
+    - The process begins with a question: "What is produced in plants of natora, kakrapa, tarapur?"
+    - A retriever model selects relevant text snippets from the combined Wikipedia and PubMed databases.
+    - A reader model then analyzes the retrieved text to generate an answer.
+    - The final answer is "Oat flour."
+- Visual elements:
+    - A diagram showing the flow of information from question to answer.
+    - Two cylinders representing Wikipedia and PubMed databases.
+    - A "Retriever Model" box with a gear icon.
+    - A "Reader Model" box with a gear icon.
+    - Text snippets from documents are shown between the retriever and reader models.
+    - A smiley face emoji is present near the "Reader Model" box.
+- Notable text:
+    - Title: "Open-domain QA"
+    - Question: "What is produced in plants of natora, kakrapa, tarapur?"
+    - Database labels: "Wikipedia," "PubMed"
+    - Model labels: "Retriever Model," "Reader Model"
+    - Answer: "Oat flour"
+    - Text snippet: "In this study, oat flour (OF) was used to replace wheat flour in turhana formulation..."
+    - Text snippet: "Polyglutamate synthetase (PGS) catalyzes the attachment of glutamate residues to the folate molecule in plants..."
+
+Slide 7
+Timestamp: 117.50s
+------------------------------
+- Main topic: This slide outlines the contributions of the research presented in the lecture.
+- Key points:
+    - Investigate data interventions to enable out-of-domain generalization.
+    - Understand how compatible the source model is for a target domain.
+    - Determine whether there is a relationship between the type of data interventions that would be effective under a particular dataset shift.
+- Visual elements: The slide has a dark blue background with white text.
+- Notable text: The title of the slide is "Contributions." The three points are numbered 1, 2, and 3.
+
+Slide 8
+Timestamp: 135.50s
+------------------------------
+- Main topic: This slide outlines the contributions of the research presented in the lecture.
+- Key points:
+    - Investigate different data interventions to enable out of domain generalization.
+    - Understand the nature of compatibility of the source model for a target domain.
+    - Determine whether there is a relationship between the type of data interventions that would be effective for a specific target dataset.
+- Visual elements: The slide has a dark teal background with white text.
+- Notable text: The title of the slide is "Contributions." The bullet points are formatted with bullet points.
+
+Slide 9
+Timestamp: 284.00s
+------------------------------
+- Main topic: This slide presents a framework for evaluating the generalizability of a retrieval system by assessing the compatibility of the reader and retriever.
+- Key points:
+    - The slide outlines a generalizability test.
+    - It categorizes shifts in retrieval performance based on two axes: reader compatibility and retriever compatibility.
+    - Four types of shifts are identified: concept shift, full shift, covariate shift, and no shift.
+- Visual elements:
+    - A 2x2 matrix is displayed.
+    - The horizontal axis is labeled "Reader compatibility" with a spectrum ranging from "Incompatible" to "Compatible."
+    - The vertical axis is labeled "Retriever compatibility" with a spectrum ranging from "Incompatible" to "Compatible."
+    - Each quadrant of the matrix is labeled with a type of shift: "Concept shift" (top-left), "No shift" (top-right), "Full shift" (bottom-left), and "Covariate shift" (bottom-right).
+- Notable text:
+    - Title: "Generalizability test"
+    - Axis labels: "Reader compatibility," "Retriever compatibility"
+    - Shift labels: "Concept shift," "Full shift," "Covariate shift," "No shift"
+
+Total slides processed: 9

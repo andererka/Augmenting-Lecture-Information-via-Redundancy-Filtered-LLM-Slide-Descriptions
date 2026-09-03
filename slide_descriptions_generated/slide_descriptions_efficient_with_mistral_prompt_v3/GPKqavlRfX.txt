@@ -1,0 +1,112 @@
+**Slide 3**
+**Visual elements:**
+- Six icons arranged in a 2x3 grid, each with a label below:
+  - **Customer Service** (Icon: Person at laptop with speech bubble)
+  - **Medical Consultation** (Icon: Person in white coat with speech bubble)
+  - **Meetings** (Icon: Circular icon with multiple speech bubbles around "MEETING")
+  - **Movie Scripts** (Icon: Script page with pencil)
+  - **Mail Threads** (Icon: Envelope)
+  - **Chat Logs** (Icon: Green speech bubble)
+
+---
+
+**Slide 4**
+**Visual elements:**
+- **Figure 1: Omission Rate vs. Dataset**
+  - **Graph type:** Box plot
+  - **X-axis:** Dataset names (SAMSam, DialogSum, EmailSum, QMSam, TweetSum)
+  - **Y-axis:** Omission Rate (%) from 0% to 100%
+  - **Legend:** Six models (BARTLarge, BARTbase, Pegasus, T5Large, T5base, Transformer) with distinct markers:
+    - BARTLarge: Red circle
+    - BARTbase: Green square
+    - Pegasus: Yellow triangle
+    - T5Large: Blue diamond
+    - T5base: Purple cross
+    - Transformer: Pink star
+  - **Data points (approximate values):**
+    - **SAMSam:** BARTLarge (82%), BARTbase (83%), Pegasus (85%), T5Large (86%), T5base (84%), Transformer (83%)
+    - **DialogSum:** BARTLarge (85%), BARTbase (86%), Pegasus (88%), T5Large (89%), T5base (87%), Transformer (86%)
+    - **EmailSum:** BARTLarge (88%), BARTbase (89%), Pegasus (91%), T5Large (92%), T5base (90%), Transformer (89%)
+    - **QMSam:** BARTLarge (91%), BARTbase (92%), Pegasus (94%), T5Large (95%), T5base (93%), Transformer (92%)
+    - **TweetSum:** BARTLarge (89%), BARTbase (90%), Pegasus (92%), T5Large (93%), T5base (91%), Transformer (89%)
+
+- **Figure 2: Predictions in Dialogue**
+  - **Graph type:** Violin plots
+  - **X-axis:** Intervals of Utterance Numbers (Dialogue Length) from 1 to 110
+  - **Y-axis:** Predictions in Dialogue
+  - **Datasets:** Five violin plots for SAMSam, DialogSum, EmailSum, QMSam, TweetSum
+  - **Distribution details:**
+    - **SAMSam:** Wide distribution, peak around 1–5 utterances
+    - **DialogSum:** Similar to SAMSam, slightly more concentrated around 1–5 utterances
+    - **EmailSum:** Wider range of predictions than DialogSum
+    - **QMSam:** Narrower distribution, concentrated around 1–10 utterances
+    - **TweetSum:** Very narrow distribution, concentrated around 1–5 utterances
+
+---
+
+**Slide 5**
+**Visual elements:**
+- **Table: OLDS Dataset Statistics**
+  - **Columns:**
+    - Domain (SAMSum, DialogSum, EmailSum, TopicSum, NewsSum, TwitterSum)
+    - Split (Train, Dev, Test)
+    - # of dialogue turns
+    - Avg. Len. of dialogue turns
+    - Len. of summary
+    - # of candidate summaries (Avg. ROUGE-1 score) for models: BARTₛ, BARTₗ, T5ₛ, T5ₗ, Transformer, Pegasus
+  - **Row details (selected examples):**
+    - **SAMSum Train:** 14,732 dialogue turns, Avg. Len. 11.2, Len. of summary 21.4, Candidate summaries: BARTₛ (25,434; 50.6), BARTₗ (2,687; 48.2), T5ₛ (29,471; 57.2), T5ₗ (32,959; 41.0), Transformer (46,777; 57.5), Pegasus (0)
+    - **DialogSum Train:** 819 dialogue turns, Avg. Len. 9.5, Len. of summary 18.7, Candidate summaries: BARTₛ (3,706; 50.6), BARTₗ (1,441; 41.3), T5ₛ (2,897; 54.7), T5ₗ (2,989; 49.3), Transformer (29,749; 59.1), Pegasus (1,000; 40.4)
+    - **EmailSum Train:** 1,886 dialogue turns, Avg. Len. 6.7, Len. of summary 20.6, Candidate summaries: BARTₛ (3,706; 52.3), BARTₗ (1,441; 41.3), T5ₛ (2,897; 54.7), T5ₗ (2,989; 49.3), Transformer (2,547; 59.1), Pegasus (600; 40.4)
+    - **TopicSum Train:** 1,095 dialogue turns, Avg. Len. 11.4, Len. of summary 21.4, Candidate summaries: BARTₛ (2,697; 50.6), BARTₗ (1,441; 48.2), T5ₛ (2,471; 57.2), T5ₗ (32,959; 41.0), Transformer (46,777; 57.5), Pegasus (0)
+    - **NewsSum Train:** 1,095 dialogue turns, Avg. Len. 11.4, Len. of summary 21.4, Candidate summaries: BARTₛ (2,697; 50.6), BARTₗ (1,441; 48.2), T5ₛ (2,471; 57.2), T5ₗ (32,959; 41.0), Transformer (46,777; 57.5), Pegasus (0)
+    - **TwitterSum Train:** 1,095 dialogue turns, Avg. Len. 11.4, Len. of summary 21.4, Candidate summaries: BARTₛ (2,697; 50.6), BARTₗ (1,441; 48.2), T5ₛ (2,471; 57.2), T5ₗ (32,959; 41.0), Transformer (46,777; 57.5), Pegasus (0)
+
+---
+
+**Slide 6**
+**Visual elements:**
+- **Pie charts (5 total, one per dataset: SAMSum, DialogSum, EmailSum, QMSum, TweetSum)**
+  - **SAMSum:** Positive (19%), Negative (81%)
+  - **DialogSum:** Positive (22%), Negative (78%)
+  - **EmailSum:** Positive (27%), Negative (73%)
+  - **QMSum:** Positive (19%), Negative (81%)
+  - **TweetSum:** Positive (23%), Negative (77%)
+
+- **Performance table (metrics: P, R, F1, WR)**
+  - **Rows:** BERT, RoBERTa
+  - **Columns:** Datasets (SAMSum, DialogSum, EmailSum, QMSum, TweetSum)
+  - **Metrics:** Precision (P), Recall (R), F1-score (F1), Word-level Recall (WR)
+  - **Task categories:** Pair-wise Classification, Sequence Labeling, Pointer Network
+  - **Sample values (selected):**
+    - **BERT (Pair-wise Classification, SAMSum):** P=41.86, R=50.60, F1=40.07, WR=50.07
+    - **RoBERTa (Pair-wise Classification, EmailSum):** P=43.11, R=65.63, F1=45.81, WR=66.99
+    - **BERT (Sequence Labeling, QMSum):** P=40.70, R=40.75, F1=40.88, WR=50.41
+    - **RoBERTa (Pointer Network, TweetSum):** P=42.23, R=45.38, F1=43.08, WR=50.00
+
+---
+
+**Slide 7**
+**Visual elements:**
+- **Two line graphs comparing ROUGE-1 scores across datasets (SAM, Dial, Email, QM, Tweet)**
+  - **Top graph (BART-large):**
+    - **Y-axis:** ROUGE-1 (30 to 60)
+    - **Lines:**
+      - **Raw (Yellow):** SAM (55.4), Dial (46.5), Email (36.2), QM (31.4), Tweet (41.1)
+      - **+Dial (Orange):** SAM (56.3), Dial (48.2), Email (38.1), QM (33.1), Tweet (43.8)
+      - **+Omit (Red):** SAM (56.5), Dial (51.5), Email (40.2), QM (34.2), Tweet (46.5)
+  - **Bottom graph (T5-small):**
+    - **Y-axis:** ROUGE-1 (20 to 60)
+    - **Lines:**
+      - **Raw (Yellow):** SAM (55.5), Dial (45.6), Email (36.1), QM (31.1), Tweet (41.2)
+      - **+Dial (Orange):** SAM (56.3), Dial (48.1), Email (38.1), QM (33.1), Tweet (43.8)
+      - **+Omit (Red):** SAM (56.5), Dial (51.1), Email (40.1), QM (34.1), Tweet (46.2)
+
+---
+
+**Slide 8**
+**Visual elements:**
+- **QR code** (left side)
+- **Background image:** Toronto skyline at dusk with CN Tower prominently visible
+- **Overlay text:** "The 61st Annual Meeting of the Association for Computational Linguistics"
+- **Location and date:** "Toronto, Canada" and "July 9-14, 2023" below the title

@@ -1,0 +1,169 @@
+**Slide 1**
+**Title:** Don't Forget Your ABC's: Evaluating the State-of-the-Art in Chat-Oriented Dialogue Systems
+**Text content:**
+Sarah E. Finch, James D. Finch, and Jinho D. Choi
+**Visual Elements:**
+* Logos:
+  * Emory University logo (shield with "Emory" and "University" text)
+  * Emory NLP Research Lab logo (circular logo with "Emory NLP Research Lab" text)
+  * Alexa logo (Amazon Alexa logo)
+**Notes:**
+The slide has a dark blue background. The title is in white, large font. The author names are below the title in a smaller font. The logos are arranged horizontally at the bottom of the slide.
+
+---
+
+**Slide 2**
+**Title:** Comparative Evaluation
+**Visual Elements:**
+* Cartoon-style diagram:
+  * Left side: A person (female, short black hair) with a speech bubble, next to a robot with a speech bubble.
+  * Right side: Another person (female, short black hair) with a speech bubble, next to a robot with a speech bubble and a green checkmark.
+  * Center: A judge (male, white hair, white wig, black robe) holding a gavel.
+**Logos:**
+* Bottom Left: Emory University logo
+* Bottom Right: Amazon Alexa logo
+
+---
+
+**Slide 3**
+**Title:** Dimensions of Dialogue Quality
+**Text content:**
+Dialogue Quality
+**Other visual elements:**
+* A pink rectangular button labeled "Dialogue Quality" is centered on the slide.
+* The Emory University logo is in the bottom left corner.
+* An Alexa logo is in the bottom right corner.
+
+---
+
+**Slide 4**
+**Title:** Likert Rating Evaluation
+**Text content:**
+Rate the relevance of the bot's responses
+**Figures/graphs:**
+* Cartoon-style illustration:
+  * Person silhouette on the left with a speech bubble.
+  * Two blue robot heads on the right with speech bubbles.
+  * Conversation flow: Person's speech bubble → Robot's speech bubble → Second Robot's speech bubble.
+  * Rating scale below: Horizontal scale with numbers 1 to 5 (circles connected by a line). Green checkmark above number 5.
+  * Judge at bottom left holding a gavel.
+**Other visual elements:**
+* Dark blue header with white text.
+* Emory University logo in bottom left.
+* Amazon Alexa logo in bottom right.
+
+---
+
+**Slide 5**
+**Title:** Annotating Behaviors in Chat (ABC-Eval)
+**Figures/graphs:**
+* Diagram illustrating ABC-Eval process:
+  * Vertical flow of interactions:
+    * Three human head icons on the left (user).
+    * Three blue chat bubbles to the right (user responses).
+    * Three robot head icons in between (AI responses).
+  * Annotation labels:
+    * Below third chat bubble: "Lack of Empathy," "Self Contradiction."
+    * Above first chat bubble: "Irrelevant."
+**Logos:**
+* Bottom left: Emory University logo and a stylized head icon.
+* Bottom right: Amazon Alexa logo.
+
+---
+
+**Slide 6**
+**Title:** Baseline Evaluations
+**Figures/graphs:**
+* Three diagrams representing evaluation methods:
+  1. **Turn Likert:**
+     * Human icon → Chatbot icon with speech bubble containing "Turn Likert" text.
+     * Green checkmark at end.
+  2. **Dialogue Likert:**
+     * Human icon → Chatbot icon with speech bubble containing "Dialogue Likert" text.
+     * Green checkmark at end.
+  3. **Comparative:**
+     * Human icon → Two chatbot icons with speech bubbles containing "Comparative" text.
+     * Green checkmark at end.
+* Background: White with dark blue header.
+
+---
+
+**Slide 7**
+**Title:** Baseline Evaluations
+**Visual Elements:**
+* Three diagrams labeled "Turn Likert," "Dialogue Likert," and "Comparative."
+* Below each diagram, listed evaluation metrics:
+  * **Turn Likert:**
+    * Consistency
+    * Emotional Understanding
+    * Informativeness
+    * Overall Quality
+  * **Dialogue Likert:**
+    * Consistency
+    * Emotional Understanding
+    * Informativeness
+    * Overall Quality
+  * **Comparative:**
+    * Engagingness
+    * Grammaticality
+    * Proactivity
+    * Relevance
+**Logos:**
+* Emory University logo (purple and white shield)
+* Alexa logo (blue circle with "Alexa" name)
+
+---
+
+**Slide 8**
+**Title:** Inter-Annotator Agreement
+**Figures/graphs:**
+* Bar graph titled "Inter-Annotator Agreement":
+  * X-axis: Evaluation types (ABC-Eval, Turn Likert, Dialogue Likert, Comparative) with subcategories.
+  * Y-axis: Krippendorff's Alpha (0.0 to 0.8).
+  * Bars with error bars showing values for each metric.
+  * Yellow arrows pointing to ABC-Eval and Dialogue Likert categories.
+**Other visual elements:**
+* Emory University and Alexa logos at bottom.
+
+---
+
+**Slide 9**
+**Title:** Predictive Validity
+**Figures/graphs:**
+* Bar graph titled "Predictive Validity":
+  * Y-axis: "% of Quality Explained (R²)" (0.00 to 0.11).
+  * X-axis: Evaluation categories (ABC-Eval, Turn Likert, Dialogue Likert, Comparative) with subcategories.
+  * Two sets of bars per subcategory (dark gray and light gray).
+  * Yellow arrows pointing to specific bars.
+**Other visual elements:**
+* Emory University and Alexa logos at bottom.
+
+---
+
+**Slide 10**
+**Title:** ABC-Eval Error Rates by Model
+**Figures/graphs:**
+* Bar graph titled "ABC-Eval Error Rates by Model":
+  * X-axis: Language models:
+    * BART-FID-RAG (blue robot logo)
+    * Blender2 (purple gear logo)
+    * Emora (green brain logo)
+    * Blender-Decode (green gear logo)
+  * Y-axis: "% of Turns" (0 to 30).
+  * Multiple bars per model for different error types (e.g., Antisocial, CS Contra., Ignore, etc.).
+  * Colored bars representing each model.
+  * Error bars on each bar.
+**Other visual elements:**
+* Emory University logo (bottom left).
+* Alexa logo (bottom right).
+
+---
+
+**Slide 11**
+**Title:** Thanks For Watching!
+**Text content:**
+Paper: https://arxiv.org/pdf/2212.09180.pdf
+GitHub: https://github.com/emorynlp/ChatEvaluationPlatform
+Contact Info:
+{sfillwo, jdfinch, jinho.choi} @emory.edu
+https://www.emorynlp.org

@@ -1,0 +1,173 @@
+Slide 1
+Timestamp: 6.00s
+------------------------------
+.
+Here's a revised visual description of the slide:
+
+**Title:** A Systematic Study of Knowledge Distillation for Natural Language Generation with Pseudo-Target Training
+
+**Text content:**
+* Nitay Calderon*, Subhabrata Mukherjee, Roi Reichart and Amir Kantor
+* Technion Microsoft Research Technion Microsoft
+* * Work was mainly done during an internship at Microsoft MSAI
+
+**Visual elements:**
+* Logos: ACL 2023, Technion, Microsoft
+* QR codes: Two QR codes, one labeled "Paper" and the other labeled "Code"
+* Image: A picture of a person on the right side of the slide.
+
+Slide 2
+Timestamp: 13.50s
+------------------------------
+.
+Here's a revised visual description of the slide:
+
+**Title:** A Systematic Study of Knowledge Distillation for Natural Language Generation with Pseudo-Target Training
+
+**Visual elements:**
+- Logos for ACL 2023, Technion, and Microsoft are present.
+- Two QR codes are present, labeled "Paper" and "Code".
+- A picture of a person is present in the bottom right corner.
+
+**Text content:**
+Nitay Calderon*, Subhabrata Mukherjee, Roi Reichart and Amir Kantor
+Technion Microsoft Research Technion
+* Work was mainly done during an internship at Microsoft MSAI
+
+Slide 3
+Timestamp: 49.49s
+------------------------------
+.
+**Slide Analysis:**
+
+**Title:** Motivation
+
+**Text content:**
+
+*   NLG systems, which are based on LLMs, have massive computational, storage and financial requirements.
+*   There is a growing demand in the industry for compressing such models while preserving their performance.
+
+**Figures/graphs:**
+
+The slide contains a bubble chart visualizing the growth of LLMs (Large Language Models) from 2018 to 2023. The size of each bubble represents the number of parameters in the model. The chart is organized chronologically, with years labeled at the top: 2018, 2019, 2021, 2022, and 2023. The chart includes bubbles representing models such as GPT-3, Jurassic-1, Llama, Gopher, MT-NLG, PaLM, BLOOM, OPT, GLM, and Galactica.
+
+**Source:** lifearchitecture.ai/models
+
+**Other visual elements:**
+
+The slide has a white background. The title "Motivation" is in a large, bold font at the top. The text content is presented in bullet points below the title. The bubble chart occupies the lower portion of the slide.
+
+Slide 4
+Timestamp: 141.48s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Our Study
+
+**Text content:**
+
+Research gaps:
+* Most KD works focus on NLU tasks, or on task-agnostic KD (pre-training).
+* All KD for NLG works focus on a single generation task.
+* All KD for NLG works consider large datasets and ignore unlabeled data.
+
+This study:
+We conduct a systematic study of task-specific KD for NLG, considering a variety of NLG tasks in realistic setups.
+
+**Other visual elements:**
+
+The slide has a white background. The title "Our Study" is in yellow text at the top left. The text content is in black. A small portion of a person's head and shoulders is visible in the bottom right corner of the slide.
+
+Slide 5
+Timestamp: 185.48s
+------------------------------
+.
+**Slide Analysis:**
+
+**Title:** Realistic Setup
+
+**Text content:**
+
+5 criteria that are attractive for a broad range of NLP practitioners:
+
+(1) A medium-resource (several thousands) labeled dataset.
+(2) Plentiful unlabeled data.
+(3) Off-the-shelf + small-to-medium size + fine-tuned LMs.
+(4) Inference time efficiency is our goal = high compression
+(5) One-time computational training resources are negligible
+
+**Figures/graphs:**
+
+*   A scale with a heavy weight on the "Train" side and a lighter weight on the "Inference" side. The scale is balanced.
+*   A cartoon image of Hugging Face logo with a smiling face and a cartoon image of Homer Simpson.
+
+**Other visual elements:**
+
+*   The slide has a yellow background.
+*   The title "Realistic Setup" is in a large, bold font at the top of the slide.
+*   Each criterion is presented as a bullet point with a corresponding icon.
+    *   Criterion 1: Icon of a stack of papers.
+    *   Criterion 2: Icon of a stack of documents.
+    *   Criterion 3: Icon of a neural network diagram.
+    *   Criterion 4: Icon of a clock with an upward trending arrow.
+    *   Criterion 5: The scale icon.
+
+Slide 6
+Timestamp: 204.48s
+------------------------------
+.
+**Slide Analysis:**
+
+**Title:** Realistic Setup – Tasks and Datasets
+
+**Text content:**
+
+*   Summarization (XSUM, Narayan et al., 2018)
+*   Question generation (SQuAD, Rajpurkar et al., 2016, 2018)
+*   Common sense reasoning (ART, Bhagavatula et al., 2020)
+*   Simplification, style transfer (Shakespeare, Xu et al., 2012; Jhamtani et al., 2017)
+
+**Tables:**
+
+Table 1: Datasets used in our experiments and the number of examples in each split. Input and Target represent the maximum lengths (tokens) we use in experiments.
+
+| Name   | Train | Unlabeled | Dev  | Test | Input | Target |
+| :----- | :---- | :-------- | :--- | :--- | :---- | :----- |
+| XSUM40 | 40K   | 164K      | 5K   | 11.3K | 480   | 32     |
+| SQuAD17 | 17.5K | 70K       | 1.57K | 9K   | 320   | 32     |
+| ART10  | 10K   | 40K       | 1.25K | 14.3K | 48    | 48     |
+| Shake7 | 7K    | 28K       | 0.75K | 0.8K  | 48    | 48     |
+
+**Other visual elements:**
+
+The slide has a yellow background. The title is in a large, bold font at the top. The bullet points are aligned to the left. A table is present below the bullet points.
+
+Slide 7
+Timestamp: 347.46s
+------------------------------
+.
+**Slide Content:**
+
+The slide presents a table summarizing the experimental setups in the study. The table has headers: Sl., Architecture, Pruning, Objective, PTs, Unlabeled, Number of PTs, PTs Decoding, and Joint-Teaching. The table cells contain text describing different experimental configurations.
+
+**Other Visual Elements:**
+
+The slide is structured as a table. A person is visible in the bottom right corner of the screen. They appear to be a male with dark hair, wearing a red shirt and headphones.
+
+Slide 8
+Timestamp: 350.96s
+------------------------------
+.
+**Slide Content:**
+
+**Knowledge Distillation Recipe**
+
+1. Use an Encoder-decoder model.
+2. Prune the decoder layers.
+3. If you lack labeled data: Generate pseudo-targets (PTs) with a large language model (LM) and use them to fine-tune a medium teacher.
+4. Generate multiple PTs with the medium-size teacher via sampling.
+5. Employ Logits KD: Augment the training data with PTs and apply Logits KD.
+6. Embrace Joint-Teaching: Apply Logits KD to PTs generated by both the teacher and the student.
+
+Total slides processed: 8

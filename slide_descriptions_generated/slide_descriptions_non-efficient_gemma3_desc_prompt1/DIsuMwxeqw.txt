@@ -1,0 +1,236 @@
+Slide 1
+Timestamp: 6.92s
+------------------------------
+- Main topic: This slide introduces a research paper titled "Generating Structured Pseudo Labels for Noise-resistant Zero-shot Video Sentence Localization" presented at ACL 2023.
+- Key points:
+    - The paper addresses noise-resistant zero-shot video sentence localization.
+    - The authors are Minghang Zheng, Shaogang Gong, Hailin Jin, Yuxin Peng, and Yang Liu.
+    - Affiliations include Wangxuan Institute of Computer Technology, Peking University, Queen Mary University of London, Adobe Research, National Key Laboratory for Multimedia Information Processing, Peking University, and National Key Laboratory of General Artificial Intelligence, BIGAI.
+    - Contact emails are provided for the authors.
+- Visual elements:
+    - The slide displays the ACL 2023 logo in the upper right corner.
+- Notable text:
+    - Title: "Generating Structured Pseudo Labels for Noise-resistant Zero-shot Video Sentence Localization"
+    - Conference: ACL 2023
+    - Authors: Minghang Zheng, Shaogang Gong, Hailin Jin, Yuxin Peng, and Yang Liu
+    - Affiliations: Wangxuan Institute of Computer Technology, Peking University, Queen Mary University of London, Adobe Research, National Key Laboratory for Multimedia Information Processing, Peking University, and National Key Laboratory of General Artificial Intelligence, BIGAI
+    - Email addresses: {minghang, pengyuxin, yangliu}@pku.edu.cn, s.gong@qmul.ac.uk, hljin@adobe.com
+
+Slide 2
+Timestamp: 15.33s
+------------------------------
+- Main topic: This slide introduces a research paper titled "Generating Structured Pseudo Labels for Noise-resistant Zero-shot Video Sentence Localization" presented at ACL 2023.
+- Key points:
+    - The paper addresses noise-resistant zero-shot video sentence localization.
+    - The authors are Minghang Zheng, Shaogang Gong, Hailin Jin, Yuxin Peng, and Yang Liu.
+    - Affiliations include Wangxuan Institute of Computer Technology, Peking University, Queen Mary University of London, Adobe Research, National Key Laboratory for Multimedia Information Processing, Peking University, and National Key Laboratory of General Artificial Intelligence, BIGAI.
+    - Contact emails are provided for the authors.
+- Visual elements:
+    - The slide displays the ACL 2023 logo in the upper right corner.
+- Notable text:
+    - Title: "Generating Structured Pseudo Labels for Noise-resistant Zero-shot Video Sentence Localization"
+    - Conference: ACL 2023
+    - Authors: Minghang Zheng, Shaogang Gong, Hailin Jin, Yuxin Peng, and Yang Liu
+    - Affiliations: Wangxuan Institute of Computer Technology, Peking University, Queen Mary University of London, Adobe Research, National Key Laboratory for Multimedia Information Processing, Peking University, and National Key Laboratory of General Artificial Intelligence, BIGAI
+    - Email addresses: {minghang, pengyuxin, yangliu}@pku.edu.cn, s.gong@qmul.ac.uk, hljin@adobe.com
+
+Slide 3
+Timestamp: 59.88s
+------------------------------
+- Main topic: This slide introduces the task of zero-shot temporal sentence localization.
+- Key points:
+    - Inputs: Video and sentence query.
+    - Outputs: Target video clip (start and end timestamps).
+    - Zero-shot setting: No manual annotation required.
+- Visual elements:
+    - A horizontal timeline depicting a video sequence with several frames.
+    - A "Video" label above the frames.
+    - A "Query" label below the frames.
+    - A text box containing the query "A man puts on gloves and then clean the snow".
+    - A highlighted "Output" section on the timeline, spanning from 5.5s to 15.1s.
+    - A "Unavailable" label to the right of the timeline.
+- Notable text:
+    - Title: Task
+    - Subtitle: Zero-shot Temporal Sentence Localization
+    - Labels: Video, Query, Output, Unavailable
+    - Time stamps: 5.5s, 15.1s
+    - ACL 2023 logo.
+
+Slide 4
+Timestamp: 147.99s
+------------------------------
+- Main topic: This slide details the method for generating structured pseudo-labels (SPL) used in the research.
+- Key points:
+    - Generate free-form pseudo-queries using image description models.
+    - Generate pseudo-events based on the event temporal structure:
+        - The video inside the event has a high correlation with the query.
+        - The video outside the event has a low correlation with the query.
+    - Reduce noise during training:
+        - Sample re-weight and label refinement.
+- Visual elements:
+    - A sequence of six video frames depicting a man skiing on snow with a beach in the background.
+    - A graph showing similarity over time, with a peak labeled "Aligned" and time intervals [46, 152] highlighted.
+- Notable text:
+    - Title: Method
+    - Subtitle: Our Structured Pseudo-Label (SPL) generation
+    - Step 1: Pseudo Query: A man skis the snow with a beach
+    - Step 2: Similarity
+    - Step 3: Pseudo Event: [46, 152]
+    - (d) Our pipeline
+    - ACL 2023 logo
+
+Slide 5
+Timestamp: 180.66s
+------------------------------
+- Main topic: This slide details the process of pseudo query generation for video analysis.
+- Key points:
+    - The aim is to generate free-form pseudo-queries.
+    - Video frames are densely sampled.
+    - Pseudo queries are generated from video frames using a pretrained BLIP model.
+- Visual elements:
+    - A diagram illustrates the process: a series of video frames are fed into an "Image Caption" box, which then generates "Query Candidates" below.
+- Notable text:
+    - Title: "1. Pseudo Query Generation"
+    - Subtitle: "Aims: Generate free-form pseudo-queries"
+    - Label: "Image Caption"
+    - Label: "Query Candidates"
+    - Example query candidates: "A woman takes shoes off.", "A woman sitting on a bed.", "A bed in the room."
+    - Citation: "Li, Junnan, et al. "BLIP: Bootstrapping language-image pre-training for unified vision-language understanding and generation." International Conference on Machine Learning. ICML, 2022."
+
+Slide 6
+Timestamp: 230.16s
+------------------------------
+- Main topic: This slide details the process of pseudo-event generation based on event temporal structure.
+
+- Key points:
+    - The aim is to generate pseudo-events based on event temporal structure.
+    - Videos within events have high relevance to queries.
+    - Videos outside events have low relevance to queries.
+    - Similarity (S) is calculated between pseudo-query and video frames.
+    - Event quality (Qik) is defined as a formula involving the sum of similarities within and outside events.
+    - The event proposal with the highest quality is chosen.
+
+- Visual elements:
+    - A graph titled "Similarity" is displayed.
+    - The x-axis is labeled "Time."
+    - The y-axis is labeled "1.7s - 12.1s."
+    - Three curves are plotted, representing event proposals.
+    - A legend is provided, defining:
+        - Event Proposals
+        - si: Mean similarity within event
+        - s0: Mean similarity outside event
+        - qik: Event quality
+
+- Notable text:
+    - Title: 2. Pseudo Event Generation
+    - Aims: Generate pseudo-events based on event temporal structure
+    - Formula: Qik = (1/Npk) Σ(epk Si) - (1/(N-Npk)) Σ(j≠pk Sj)
+    - Label: Kept
+    - Labels on the graph: Time, 1.7s - 12.1s, si, s0, qik
+    - ACL 2023 logo is present in the top right corner.
+
+Slide 7
+Timestamp: 246.00s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide details the process of pseudo event generation, focusing on filtering, selection, and suppression techniques.
+
+- **Key points:**
+    - Filter out low-quality pseudo-query event pairs.
+    - Keep top *K* pseudo-query-event pairs with high event quality.
+    - Use non-maximum suppression to eliminate pseudo-query-event pairs with high event overlap.
+
+- **Visual elements:**
+    - **Flowchart (Pseudo Event Generation):** A flowchart illustrates the process: images are fed into an "Image Caption" module, which generates "Query Candidates."
+    - **Similarity Graphs (3):** Three graphs display similarity scores over time. Each graph has a time axis and a similarity score axis. The graphs are labeled "Kept" and "Dropped." The "Kept" graphs show increasing similarity scores, while the "Dropped" graph shows a low similarity score.
+    - **Text Box (Pseudo Label):** A text box displays a pseudo label example: "A woman takes shows off. [3.7%, 12.14%]".
+    - **Legend (Event Proposals):** A legend explains the components of the graphs: 1) Event Proposals, 2) Mean similarity within event, 3) Mean similarity outside event, 4) Event quality.
+
+- **Notable text:**
+    - Title: "2. Pseudo Event Generation"
+    - Subtitle: "Pseudo Event Generation"
+    - "Filter out low-quality pseudo-query event pairs"
+    - "Keep top *K* pseudo-query-event pairs with high event quality"
+    - "Use non-maximum suppression to eliminate pseudo-query-event pairs with high event overlap"
+    - "Query Candidates"
+    - "Event Proposals"
+    - "Mean similarity within event"
+    - "Mean similarity outside event"
+    - "Event quality"
+    - "A woman takes shows off. [3.7%, 12.14%]"
+    - "A woman sitting on a bed in the room. [1.5%, 17.2%]"
+    - ACL 2023 logo
+
+Slide 8
+Timestamp: 290.55s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide details a method for training a model using noisy pseudo-labels and reducing the noise within them.
+
+- **Key points:**
+    *   The goal is to train a model using pseudo-labels while reducing noise in those labels.
+    *   Sample re-weighting is used to estimate noise based on the confidence score *s<sup>conf</sup>* and the IoU *s<sup>iou</sup>* of predictions and pseudo-labels, weighting the sample loss accordingly. The formula for the weighted loss *w* is provided: *w = α + (1 - α) * (1 / (1 - s<sup>conf</sup>)) + (1 - α) * (1 / (1 - s<sup>iou</sup>))*
+    *   Label refinement is performed: if the model's prediction confidence is high, the prediction is considered a new pseudo-label.
+
+- **Visual elements:**
+    *   A flowchart illustrates the training process with noisy pseudo-labels.
+    *   The flowchart begins with a "Pseudo Label" box containing two example sentences with bounding box coordinates: "A woman takes shoes off [3.5%, 12.3%]" and "A woman sitting on a bed [16.5%, 17.2%]".
+    *   The flow continues to a "Fully Supervised Model" box.
+    *   Two branches emerge from the model: "Noise estimation" with a value of 0.9 and "Label refinement" with a value of 0.7.
+    *   The "Noise estimation" branch leads to "Reweight loss" with a value of *L<sub>rew</sub>*.
+    *   The "Label refinement" branch leads to a refined pseudo-label: "A woman sitting on a bed [4.1%, 18.1%]" and *L<sub>rep</sub>*.
+
+- **Notable text:**
+    *   Title: "3. Training with Noisy Pseudo Labels"
+    *   Aims: "Train model using pseudo-labels and reduce noise in the pseudo-labels"
+    *   Terms: *s<sup>conf</sup>*, *s<sup>iou</sup>*, *w*, *L<sub>rew</sub>*, *L<sub>rep</sub>*
+    *   Labels: "Pseudo Label", "Fully Supervised Model", "Noise estimation", "Label refinement", "Reweight loss"
+
+Slide 9
+Timestamp: 308.37s
+------------------------------
+- Main topic: This slide details the experimental setup used in the research, including the datasets and metrics used for evaluation.
+- Key points:
+    - The research utilized two datasets: ActivityNet Captions and Charades-STA.
+    - The evaluation metrics were Recall@m and mIoU.
+- Visual elements:
+    - Two example queries with corresponding image sequences are shown.
+    - The first example, labeled (a), uses ActivityNet Captions and the query is "A man in a red tank top is crossing the monkey bars." The image sequence shows a man performing this action.
+    - The second example, labeled (b), uses Charades-STA and the query is "Person runs to a table." The image sequence shows a person running to a table.
+- Notable text:
+    - Title: Experiments
+    - Dataset labels: ActivityNet Captions, Charades-STA
+    - Metric labels: Recall@m, mIoU
+    - Labels for the image sequences: (a), (b)
+    - ACL 2023 logo in the top right corner.
+
+Slide 10
+Timestamp: 349.95s
+------------------------------
+- Main topic: This slide presents the conclusion of a research paper on zero-shot video sentence localization.
+- Key points:
+    - A zero-shot video sentence localization method is proposed, based on structured pseudo-label generation that is robust to noise.
+    - Free-form pseudo-queries are generated, and pseudo-events are generated based on event temporal structure.
+    - The influence of noise in pseudo-labels is reduced through sample reweighting and label refinement.
+    - The method achieves best zero-shot performance on two datasets.
+- Visual elements: The slide contains the logo for ACL 2023 in the upper right corner.
+- Notable text: "Conclusion," "zero-shot video sentence localization," "structured pseudo-label generation," "robust to noise," "pseudo-queries," "pseudo-events," "event temporal structure," "sample reweight," "label refinement," "best zero-shot performance."
+
+Slide 11
+Timestamp: 351.93s
+------------------------------
+- Main topic: This slide expresses gratitude to the audience and provides a code, likely for accessing additional resources.
+- Key points:
+    - Expresses thanks to the audience.
+    - Provides a code for further access.
+- Visual elements:
+    - A QR code is displayed.
+- Notable text:
+    - "Thank you!"
+    - "Code"
+    - "ACL 2023" (logo in the top right corner)
+    - "12" (page number in the bottom right corner)
+
+Total slides processed: 11

@@ -1,0 +1,341 @@
+Slide 1
+Timestamp: 27.21s
+------------------------------
+**Slide Content:**
+
+**Title:** Motivation
+
+*   Millions of meetings take place everyday worldwide
+*   Vast amounts of meeting transcripts
+*   What makes meeting transcripts unique?
+    *   Long documents
+    *   Domain-specific and information-rich
+*   Prior works focus on summarization and extracting action items
+*   Under-utilize significant QA component in meeting discussions
+
+Slide 2
+Timestamp: 55.93s
+------------------------------
+**Slide Content:**
+
+**Title:** Motivation
+
+*   Millions of meetings take place everyday worldwide
+*   Vast amounts of meeting transcripts
+*   What makes meeting transcripts unique?
+    *   Long documents
+    *   Domain-specific and information-rich
+*   Prior works focus on summarization and extracting action items
+*   Under-utilize significant QA component in meeting discussions
+
+Slide 3
+Timestamp: 96.52s
+------------------------------
+**Slide Content:**
+
+**Title:** MeetingQA: Introduction
+
+[Image of a meeting transcript with multiple speakers and their dialogues]
+
+*   Extractive QA dataset based on **questions asked by participants** in a meeting and corresponding answer sentences
+
+*   Why choose questions asked by participants?
+    *   Questions are longer, open-ended, and discussion-seeking
+    *   Rhetorical questions, multi-speaker, and multi-span answers
+
+Slide 4
+Timestamp: 131.17s
+------------------------------
+**Slide Content:**
+
+**Title:** MeetingQA: Data Collection
+
+**Text content:**
+
+*   **Public transcripts from AMI corpus**
+    ~100 hours of manually transcribed multi-party meetings
+
+*   **Question Selection**
+    Based on punctuation and length of question
+
+*   **Answer Annotation**
+    Recruit annotators to label sentences in answer span
+    High inter-annotator agreement:
+    $Kappa = 0.73$
+
+**Other visual elements:**
+
+The slide has a white background. There are three icons on the left side of the slide, each associated with a bullet point.
+
+*   The first icon is a blue folder with a white document inside.
+*   The second icon is an orange question mark.
+*   The third icon is a green pen.
+
+There is a picture of a woman in a white t-shirt in the top right corner of the slide.
+
+At the bottom of the slide, in small font, is the following text: Carlotto et al. "The AMI Meeting Corpus: a pre-announcement" in International Workshop on Machine Learning for Multimodal Interaction 2005.
+
+**Formulas:**
+
+$Kappa = 0.73$
+
+Slide 5
+Timestamp: 151.96s
+------------------------------
+**Slide Content:**
+
+**Title:** MeetingQA: Dataset Analysis
+
+**Text content:**
+
+*   Total of 7,735 questions from 166 different meetings split across train, dev, and test sets
+
+*   Statistics
+    *   Unanswerable Questions: 30%
+    *   Multi-span (non-consecutive sentences) answers: 40%
+    *   Multi-speaker answers: 48%
+
+**Table:**
+
+|                   | Train | Dev  | Test |
+| :---------------- | :---- | :--- | :--- |
+| Number of Meetings | 64    | 48   | 54   |
+| Number of Questions | 3007  | 2252 | 2476 |
+| w/ No Answer       | 956   | 621  | 764  |
+| w/ Multi-Span Answers | 787   | 548  | 663  |
+| w/ Multi-Speaker Answers | 1016 | 737  | 840  |
+| Avg. Questions per Meeting | 46.98 | 46.92 | 45.85 |
+
+**Visual Elements:**
+
+The slide has a light blue background. A woman is visible in the upper right corner of the slide. She is wearing glasses and a white t-shirt. The title is at the top left. The table is centered on the slide. The bullet points are to the right of the table.
+
+Slide 6
+Timestamp: 172.76s
+------------------------------
+**Slide Content:**
+
+**Title:** MeetingQA: Dataset Analysis
+
+**Text content:**
+
+*   Yes/no questions are information-seeking and detailed responses
+*   50% questions are opinion-seeking
+*   20% questions are framed rhetorically
+*   70% of multi-speaker answers contain some disagreement
+
+**Figures/graphs:**
+
+The slide contains a pie chart titled "Question Types".
+
+*   **Chart Type:** Pie Chart
+*   **Title:** Question Types
+*   **Segments:**
+    *   Yes/No: 54.4% (Pink)
+    *   What: 24.4% (Light Green)
+    *   Who: 1.6% (Blue)
+    *   Which: 8.1% (Yellow)
+    *   How: 1.9% (Purple)
+    *   Other: 9.4% (Orange)
+
+**Other visual elements:**
+
+*   The slide has a light blue background.
+*   The title is in a dark blue font at the top left.
+*   The pie chart is centered on the slide.
+*   The bullet points are aligned to the right side of the slide.
+*   A person is visible in the top right corner of the slide.
+
+Slide 7
+Timestamp: 193.55s
+------------------------------
+**Slide Content:**
+
+**Title:** MeetingQA: Dataset Analysis
+
+**Text content:**
+* Avg. Transcript: 5.9K words, Question: 12 words, and Answer: 35 words
+* High human performance: F1 = 84.6
+
+**Figures/graphs:**
+
+The slide contains three histograms arranged horizontally.
+
+**Histogram 1 (Left):**
+*   **Title:** Meeting Transcript Length
+*   **X-axis:** Meeting Transcript Length
+*   **Y-axis:** Count
+*   **Range of X-axis:** 0 to 20K
+*   **Ticks on X-axis:** 0, 5K, 10K, 15K, 20K
+*   **Data Trend:** The histogram shows a distribution of meeting transcript lengths. The distribution is right-skewed, with a peak around 5K to 10K words. There are many transcripts shorter than 5K words, and fewer transcripts longer than 10K words. The count decreases as the transcript length increases.
+*   **Maximum Count:** Approximately 50 at around 5K words.
+
+**Histogram 2 (Middle):**
+*   **Title:** Question Length
+*   **X-axis:** Question Length
+*   **Y-axis:** Count
+*   **Range of X-axis:** 0 to 40
+*   **Ticks on X-axis:** 0, 10, 20, 30, 40
+*   **Data Trend:** The histogram shows a distribution of question lengths. The distribution is right-skewed, with a peak around 0 to 10 words. The count decreases as the question length increases.
+*   **Maximum Count:** Approximately 1300 at around 0 to 2 words.
+
+**Histogram 3 (Right):**
+*   **Title:** Answer Length
+*   **X-axis:** Answer Length
+*   **Y-axis:** Count
+*   **Range of X-axis:** 0 to 175
+*   **Ticks on X-axis:** 0, 25, 50, 75, 100, 125, 150, 175
+*   **Data Trend:** The histogram shows a distribution of answer lengths. The distribution is right-skewed, with a peak around 0 to 25 words. The count decreases as the answer length increases.
+*   **Maximum Count:** Approximately 1250 at around 0 to 2 words.
+
+**Other visual elements:**
+
+*   The slide has a light blue background.
+*   A person is visible in the upper right corner of the slide. The person is a woman with dark hair and glasses, wearing a white t-shirt.
+
+Slide 8
+Timestamp: 233.15s
+------------------------------
+**Slide Content:**
+
+**Title:** Methods
+
+**Text content:**
+
+*   **Context-retrieval for short-context models**
+    Retrieves relevant segment of meeting transcript as context
+
+*   **Multi-span models**
+    Using token classification models
+    - / tag: in answer span
+    - O tag: outside answer span
+
+*   **Single-span models**
+    Single ‘super’ span: first to last relevant sentence in span
+
+*   **Silver data augmentation**
+    Automatically annotated answer spans for questions from interviews in MediaSum dataset
+
+**Other visual elements:**
+
+The slide has a light blue background. The title "Methods" is at the top left in a dark blue font. A picture of a woman wearing glasses and a white t-shirt is on the top right.
+
+Four circles are arranged in a 2x2 grid in the center of the slide. Each circle has a different color: blue, green, orange, and purple. Each circle contains a title and a description.
+
+*   The blue circle is labeled "Context-retrieval for short-context models" and contains the description "Retrieves relevant segment of meeting transcript as context."
+*   The green circle is labeled "Multi-span models" and contains the description "Using token classification models - / tag: in answer span - O tag: outside answer span."
+*   The orange circle is labeled "Single-span models" and contains the description "Single ‘super’ span: first to last relevant sentence in span."
+*   The purple circle is labeled "Silver data augmentation" and contains the description "Automatically annotated answer spans for questions from interviews in MediaSum dataset."
+
+At the bottom right corner of the slide, there is a citation: "Zhu et al. “MediaSum: A large-scale media interview dataset for dialogue summarization” in Proceedings of NAACL, 2021."
+
+Slide 9
+Timestamp: 302.46s
+------------------------------
+**Slide Content:**
+
+**Title:** Experimental Results: Zero-shot
+
+**Text content:**
+*   ~50 F1 points gap with respect to human performance
+*   Silver data augmentation is effective
+*   Larger instruction tuned models yield comparable performance
+
+**Table:**
+
+| Model | Inter. Data | Overall F1 |
+|---|---|---|
+| RoBERTa-base | SQuADv2 | 27.9 |
+| RoBERTa-base | + silver | 34.6 |
+| Longformer-base | SQuADv2 | 15.1 |
+| Longformer-base | + silver | 32.5 |
+| FLAN-T5 XL | — | 33.8 |
+| FLAN-T5 XL (self ans) | — | 34.0 |
+| Human performance | — | 84.6 |
+
+**Other visual elements:**
+
+The slide has a white background. The title is at the top in a large font. The table is centered on the slide. To the right of the table, there are three bullet points describing the zero-shot performance. A person is visible in the upper right corner of the slide.
+
+Slide 10
+Timestamp: 331.17s
+------------------------------
+**Slide Content:**
+
+**Title:** Experimental Results: Error Analysis
+
+**Text content:**
+
+*   Models struggle at identifying rhetorical questions, especially in zero-shot setting
+*   Single-span predictions contain more irrelevant sentences
+*   Models struggle to identify which speakers answer a question, especially in zero-shot setting
+
+**Figures/graphs:**
+
+There are two bar graphs presented on the slide.
+
+**Graph 1: (a) Unanswerable Pred Error**
+
+*   **Title:** (a) Unanswerable Pred Error
+*   **X-axis label:** None
+*   **Y-axis label:** Percentage (%)
+*   **Legend:**
+    *   Finetuned: Light brown
+    *   Zero-shot: Red
+*   **Data:**
+    *   **Multi-span:**
+        *   Finetuned: Approximately 10%
+        *   Zero-shot: Approximately 35%
+    *   **Single-span:**
+        *   Finetuned: Approximately 25%
+        *   Zero-shot: Approximately 40%
+*   **Description:** The graph compares the percentage of unanswerable predictions for multi-span and single-span models, both in the finetuned and zero-shot settings. The zero-shot setting consistently shows a significantly higher percentage of unanswerable predictions compared to the finetuned setting for both multi-span and single-span models. Single-span models have a higher percentage of unanswerable predictions than multi-span models in both settings.
+
+**Graph 2: (b) Speaker IoU in Model Errors**
+
+*   **Title:** (b) Speaker IoU in Model Errors
+*   **X-axis label:** None
+*   **Y-axis label:** Intersection over Union (IoU)
+*   **Legend:**
+    *   Finetuned: Blue
+    *   Zero-shot: Green
+*   **Data:**
+    *   **Multi-span:**
+        *   Finetuned: Approximately 30%
+        *   Zero-shot: Approximately 45%
+    *   **Single-span:**
+        *   Finetuned: Approximately 40%
+        *   Zero-shot: Approximately 50%
+*   **Description:** The graph compares the Intersection over Union (IoU) of speaker identification in model errors for multi-span and single-span models, both in the finetuned and zero-shot settings. The zero-shot setting consistently shows a higher IoU compared to the finetuned setting for both multi-span and single-span models. Single-span models have a higher IoU than multi-span models in both settings.
+
+**Other visual elements:**
+
+*   The slide has a light blue background.
+*   The title is at the top center.
+*   The graphs are positioned in the center of the slide.
+*   The bullet points are on the right side of the slide.
+*   A person is visible in the upper right corner of the slide.
+
+Slide 11
+Timestamp: 343.55s
+------------------------------
+**Slide Analysis:**
+
+**Title:** Takeaways
+
+**Text content:**
+
+*   MeetingQA is an interesting **QA dataset** based on open-ended and discussion-heavy questions asked during meetings
+
+*   MeetingQA is challenging **for existing QA models** which lag behind human performance significantly
+    *   25 F1 point gap in finetuned setting
+    *   50 F1 point gap in zero-shot setting
+
+**Other visual elements:**
+
+*   The slide has a light blue background.
+*   A person is visible in the upper right corner of the slide. The person is a woman with glasses.
+*   The text is in black.
+*   The terms "QA dataset" and "for existing QA models" are bolded.
+
+Total slides processed: 11

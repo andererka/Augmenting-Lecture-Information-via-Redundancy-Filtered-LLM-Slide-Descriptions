@@ -1,0 +1,121 @@
+Here’s the refined visual description of the slides, excluding details already covered in the speaker’s transcript while preserving unmentioned elements like diagrams, charts, and precise labels:
+
+---
+
+### **Slide 1 & 2 (Timestamp: 27.53s, 56.56s)**
+**Title:** *Introduction*
+- **Text Content:**
+  - **Limitation:**
+    - Data annotation is arduous and expensive.
+    - Existing works suffer severe degradation.
+  - **Challenge:**
+    - Multi-modal domain shifts.
+- **Visual Elements:**
+  - Blue header bar with white title text.
+  - Zhejiang University logo in the top right corner.
+  - Blue triangle bullet points.
+  - Clean white background.
+  - Watermark in the bottom right corner (Slide 1 only).
+
+---
+
+### **Slide 3 (Timestamp: 89.46s)**
+**Title:** *Introduction*
+- **Text Content:**
+  - **Motivation:**
+    - Audio and visual are correlated in natural events but have different characteristics.
+    - Timber is an intrinsic property of the object.
+- **Figure/Graph:**
+  - **Diagram:** "Unified Auditory Semantic Space" concept with three sections:
+    - **Source Domain:**
+      - Three spectrogram images labeled:
+        - "woman speaking"
+        - "chopping"
+        - "stirring"
+      - Text description: *"a woman describes how she cut and prepares her vegetable."*
+    - **Unified Auditory Semantic Space:**
+      - Central heatmap (red/orange/purple/blue) with overlaid text labels:
+        - "woman"
+        - "stir"
+        - "chop"
+        - "voice"
+        - "stirring"
+        - "chopping"
+    - **Target Domain:**
+      - Three spectrogram images labeled:
+        - "woman speaking"
+        - "chopping"
+        - "stirring"
+      - Text description: *"a cartoon man cutting some food for a woman."*
+  - **Arrows:** Connecting Source Domain → Unified Auditory Semantic Space → Target Domain.
+- **Visual Elements:**
+  - Zhejiang University logo in the top right corner.
+  - Consistent color scheme (heatmaps for spectrograms).
+
+---
+
+### **Slide 4 (Timestamp: 117.52s)**
+**Title:** *Method*
+- **Text Content:**
+  - **Pipeline:** Transferable Audio-Visual Text Generation (learns/adapts to new domains with limited labeled data).
+  - **Components:**
+    - Audio-Visual Meta-Mapper Network (AVMM)
+    - Audio-Visual Encoder & Language Model Generator (AVE + LMG)
+    - Counterfactual Contrastive Learning
+- **Figure/Graph:**
+  - **Block Diagram:**
+    - **Input:** Audio-visual feature (person speaking + spectrogram) and counterfactual audio feature.
+    - **AVMM:** Takes audio-visual features → outputs "visual prefix."
+    - **AVE:** Takes visual prefix → intermediate representation.
+    - **LMG:** Takes AVE output → generates text.
+    - **Connections:**
+      - AVE → LMG labeled "α."
+      - LMG → output labeled "β."
+  - **Loss Functions:**
+    - **Distribution-based Contrastive Loss:** Circular diagram with labels "(a, a', a'')" (bottom left of AVMM).
+    - **Dependency-based Contrastive Loss:** Graph-like structure labeled "ψ(r, s)" (bottom right of LMG).
+- **Labels:**
+  - AVMM, AVE, LMG explicitly named.
+  - Inputs/outputs labeled (e.g., "Audio Visual Feature," "Counterfactual Audio Feature").
+
+---
+
+### **Slide 5 (Timestamp: 197.83s)**
+**Title:** *Method*
+- **Text Content:**
+  - **Audio-Visual Encoder & Language Model Generator:**
+    - **Encoder:**
+      - Formula: *xᵢ = AV-Encoder(fᵢ, fⱼ)*, where *i, j ∈ {v, a}*.
+    - **Generator:**
+      - Formula: *αᵢ = σ(Wᵢ(Yᵢ, MHA(Yᵢ, xᵢ, xⱼ)) + bᵢ)*
+      - Formula: *Ŷ = αᵦᵦ MHA(Yᵢ, ẒᵦẒ) + αₐₐ MHA(Yᵢ, Ẓₐₐ, Ẓₐₐ)*
+- **Visual Elements:**
+  - Blue header bar with white title text.
+  - Mathematical notation in bullet points.
+  - Zhejiang University logo in the top right corner.
+
+---
+### **Slide 6 (Timestamp: 271.37s)**
+**Title:** *Experiment*
+- **Text Content:**
+  - **Dataset:**
+    - **Cross-dataset:**
+      - MSVD
+      - MSR-VTT +
+    - **Cross-domain:**
+      - Animation
+      - Music
+      - Animal
+      - Kids
+      - Beauty
+  - **Table:**
+    | **Domain**       | **D_meta-train** | **Domain**  | **D_meta-test** |
+    |------------------|------------------|-------------|-----------------|
+    | News             | 1727             | Animation   | 816             |
+    | Movie            | 1652             | Music       | 733             |
+    | Sports           | 1623             | Animal      | 613             |
+    | Cooking          | 985              | Kids        | 558             |
+    | Traffic          | 815              | Beauty      | 478             |
+- **Visual Elements:**
+  - Blue header bar with white title text.
+  - Zhejiang University logo in the top right corner.

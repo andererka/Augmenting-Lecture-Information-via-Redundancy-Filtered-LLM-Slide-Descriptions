@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testset name="MCIF-Custom" type="output">
+  <task track="long" text_lang="en">
+    <sample id="0">The talk does not explicitly present any mathematical formulas. It focuses on conceptual explanations, comparisons of methods, and high-level descriptions of techniques like knowledge distillation, pruning, and joint-teaching. For detailed formulas, the paper (accessible via the QR code) would need to be consulted.</sample>
+    <sample id="1">Here are the 5 criteria for attractive NLP projects mentioned in the presentation:
+
+1. **Medium-resource labeled dataset** (due to costly annotation in NLG).
+2. **Large amounts of unlabeled data** available.
+3. **Medium-sized off-the-shelf models** (practical for deployment).
+4. **Inference time efficiency** (high compression rate).
+5. **Negligible one-time training resources** (compared to long-term inference costs).</sample>
+    <sample id="2">The mathematical formula for **word-level Knowledge Distillation (KD)** or **logits KD** is:
+
+\[
+\mathcal{L}_{KD} = \text{KL}\left( \sigma(\mathbf{z}_S / T), \sigma(\mathbf{z}_T / T) \right)
+\]
+
+where:
+- \(\mathbf{z}_S\) and \(\mathbf{z}_T\) are the logits of the **student** and **teacher** models, respectively.
+- \(\sigma\) is the **softmax** function.
+- \(T\) is the **temperature** parameter (typically \(T &gt; 1\) to smooth the distributions).
+- \(\text{KL}\) is the **Kullback-Leibler divergence** between the softened student and teacher distributions.
+
+This loss encourages the student to mimic the teacher's output probabilities.</sample>
+    <sample id="3">The Macro-F1 score for the AG News dataset is higher for **Original** than for **CC**.</sample>
+    <sample id="4">The audio-visual meta-mapper network consists of **learnable tokens (visual prefix)** that map visual concepts across domains into a **unified auditory semantic space** (clustered via k-means on audio clips). It also includes a **probability distribution generator** to reconstruct audio from visual content, optimizing alignment between modalities.</sample>
+    <sample id="5">The motivation behind the work is to address the challenges of **multimodal text generation** in audio-visual domains, where data annotation is expensive and domain shifts (e.g., visual style, audio energy) degrade performance. Existing unimodal methods struggle with multimodal variations, so the authors propose **Transferable Audio-Visual Text Generation (TAVT)** to enable models to adapt quickly to new domains with limited labeled data by aligning visual concepts into a unified audio semantic space.</sample>
+    <sample id="6">The Bleu-1 score for TAVT (A_recc) on the MSR-VTT (multi-modal) benchmark is **46.8**.</sample>
+    <sample id="7">The cross domains of the dataset presented in the paper are **"Kids"** and **"Beauty"**, as mentioned in the experimental section where the model's performance is evaluated on low-resource domains with limited labeled data.</sample>
+    <sample id="8">The example video for Zero-shot Temporal Sentence Localization shows a man **playing a guitar**.</sample>
+    <sample id="9">The graph illustrates the process of **pseudo-event generation** in the proposed method:
+
+1. **Pseudo-Query Generation**: A pre-trained image caption model (BLIP) generates free-form pseudo-queries from densely sampled video frames.
+2. **Temporal Structure Modeling**: The relevance between each frame and pseudo-query is measured using pre-trained models (e.g., CLIP).
+3. **Event Quality Calculation**: For each pseudo-query, a sliding window evaluates all possible temporal segments (pseudo-events) by computing:
+   - **High relevance** within the event (average similarity of frames inside the segment to the query).
+   - **Low relevance** outside the event (average similarity of frames outside the segment to the query).
+4. **Optimal Event Selection**: The segment with the highest **event quality** (difference between inside/outside relevance) is chosen as the pseudo-event. For example, the segment from **3.7s to 12.1s** is selected due to its maximal relevance gap.
+
+This ensures pseudo-events align closely with pseudo-queries while minimizing irrelevant noise.</sample>
+    <sample id="10">Based on the table in the presentation, the **SPL (Structured Pseudo-Label) method** achieved an **mIoU (mean Intersection over Union) score of 18.3** on the ActivityNet Captions dataset and **16.4** on the Charades-STA dataset. These results indicate that SPL outperformed other zero-shot methods in terms of average temporal alignment between predicted and ground truth segments.</sample>
+    <sample id="11">The message goes to the **audience** and the **interpreter** in the graph about the speaker and the meaning.</sample>
+    <sample id="12">Based on the graph, increases in the proportion of speeches containing dogwhistles in the US were likely led by events or politicians associated with heightened political polarization, racial tensions, or populist rhetoric. Specific spikes may correlate with contentious political campaigns, major policy debates, or controversial public statements by prominent figures.</sample>
+    <sample id="13">Based on the graph about conservatism over time:
+
+**More associated with conservatism over time:**
+- Traditional
+- Family
+- Religion
+- Stability
+- Order
+
+**Less associated with conservatism over time:**
+- Change
+- Progress
+- Innovation
+- Equality
+- Freedom</sample>
+    <sample id="14">The percentage of dogwhistles surfaced from GPT-3, based on the authors' glossary, is **2.5%**.</sample>
+    <sample id="15">Yes.</sample>
+    <sample id="16">The three references for datasets and models having positionality mentioned in the presentation are:
+
+1. **Cultural gaps in models and datasets** (prior anecdotal evidence)
+2. **Theoretical definitions of model positionality** (prior theoretical work)
+3. **Empirical comparisons of annotations with real users vs. datasets/models** (this work via *NLPositionality*)</sample>
+    <sample id="17">The framework includes demographics such as **country of residence** (e.g., English-speaking, Confucian countries), **education level** (college or graduate school), and **gender identity** (men, women, non-binary).</sample>
+    <sample id="18">The label circled in gold color for the example "Eating with Hands" in the framework is **"Socially Acceptable."**</sample>
+    <sample id="19">Datasets and models are more aligned to people with a college education or graduate school education.</sample>
+    <sample id="20">Datasets and models are more aligned to people with **college education or higher**, which includes PhD holders, rather than pre-high school education. Specifically, GPT 4 and Dynahate showed stronger alignment with individuals having college or graduate-level education.</sample>
+    <sample id="21">The QFE score for the Editor model based on the table on Factual Error Detection and Correction is **0.60**.</sample>
+    <sample id="22">The component is called a **"trigger"** or **"trigger point"**—it is the interactive element (often a small circle or dot) on the graph that, when clicked or hovered over, displays the corresponding **trigger number** (e.g., the count of markers or events). This is common in interactive visualizations like the one in **EmbMarker** to highlight specific data points.</sample>
+    <sample id="23">The four categories in which existing work was classified are:
+
+1. **Approaches based on deep learning**
+2. **Approaches based on machine learning**
+3. **Approaches based on traditional computer vision**
+4. **Approaches based on heuristic methods**</sample>
+    <sample id="24">The formula for the **similarity difference metric** of **EmbMarker** is:
+
+\[
+\text{Similarity Difference} = \frac{1}{N} \sum_{i=1}^{N} \left( \text{cos}(\mathbf{e}_i, \mathbf{e}_i') - \text{cos}(\mathbf{e}_i, \mathbf{e}_i'') \right)
+\]
+
+where:
+- \(N\) = number of test samples,
+- \(\mathbf{e}_i\) = original embedding,
+- \(\mathbf{e}_i'\) = embedding with the target watermark,
+- \(\mathbf{e}_i''\) = embedding with a different watermark.</sample>
+    <sample id="25">According to the table, the similarity difference value for the SST2 dataset for the EmbMarker method is **0.03**.</sample>
+    <sample id="26">Based on the graph depicting the **EmbMarker** watermark injection process, the key components shown are:
+
+1. **Original Image** (Input)
+2. **Watermark Message** (Embedded Data)
+3. **Watermarked Image** (Output)
+4. **Injection Mechanism** (Process/Method)
+5. **Embedding Key** (Secret Key for Extraction)
+
+*(Note: Exact labels depend on the graph’s specifics, but these are the typical components in such a system.)*</sample>
+    <sample id="27">According to the graph presented in the introduction, the **SuperGLUE** benchmark performed best, as the best system outperformed humans by 1.5 points on average.</sample>
+    <sample id="28">The brittleness of models is evidenced by their reliance on spurious patterns, lack of generalization, vulnerability to adversarial attacks, insensitivity to basic perturbations (e.g., negation), and over-sensitivity to irrelevant perturbations. Additionally, the paper highlights unfair comparisons between humans and systems due to inconsistent evaluation sets, ground-truth errors, and inadequate human baselines (e.g., low pay, unclear annotator details). These factors undermine claims of superhuman performance in NLU benchmarks.</sample>
+    <sample id="29">The example graph for the **one-hop** reasoning type shows a direct connection between two entities via a single relation. Specifically, it illustrates that **AIDAStella** (entity) is connected to **Meyer Werft** (entity) through the relation **builder**, verifying the claim *"AIDAStella was built by Meyer Werft."* The evidence is a single triple: **(AIDAStella, builder, Meyer Werft)**.</sample>
+    <sample id="30">According to the table for the baseline experiments, the total score for GEAR with evidence input type was **74.2%**.</sample>
+    <sample id="31">The five types of reasoning on Knowledge Graphs in the FACTKG dataset are:
+
+1. **One-hop**
+2. **Conjunction**
+3. **Existence**
+4. **Multi-hop**
+5. **Negation**</sample>
+    <sample id="32">The five datasets described in the analysis are benchmarks covering five different domains, though the specific names of the datasets are not mentioned in the provided content.</sample>
+    <sample id="33">The pie chart shows that the SAMSum dataset has approximately 20% positive labels (omission) and 80% negative labels (no omission).</sample>
+    <sample id="34">The floor plan includes the following rooms with their corresponding colors:
+
+1. **Living Room** – Light Blue
+2. **Kitchen** – Light Yellow
+3. **Bedroom 1** – Light Green
+4. **Bedroom 2** – Light Orange
+5. **Bathroom** – Light Purple
+6. **Balcony** – Light Pink</sample>
+    <sample id="35">The Tell2Design dataset includes **5,051 human-annotated language instructions**.</sample>
+    <sample id="36">The table shown in the slides is **Table 2**, which presents the **floor plan generation results on the T2D dataset**. It compares the performance of the proposed T2D model with other text-conditional image generation baselines using **IoU (Intersection over Union) scores** (Micro IoU and Macro IoU).</sample>
+    <sample id="37">The number of meetings in the training set for the MeetingQA dataset is not explicitly stated in the provided content. However, the AMI corpus, from which the meeting transcripts are derived, corresponds to nearly 100 hours of manually transcribed multi-party meetings. The exact number of meetings in the training set would require further details from the paper or project page.</sample>
+    <sample id="38">The MeetingQA dataset contains a total of **7.7K questions**.</sample>
+    <sample id="39">The distribution of answer lengths in MeetingQA was **right-skewed** (positively skewed), as the mean (35 words) was greater than the median, indicating a longer tail on the right side.</sample>
+    <sample id="40">According to the bar chart, **5 tweets** were most likely violating (score of 4) and **10 tweets** were clearly violating (score of 5).</sample>
+    <sample id="41">The percentage of tweets most likely violating or clearly violating Twitter's policies is **65%**.</sample>
+    <sample id="42">To determine which evaluation method had the highest inter-annotator agreement according to the chart, you would need to:
+
+1. **Identify the evaluation methods** listed on the chart (e.g., Accuracy, Cohen’s Kappa, Fleiss’ Kappa, etc.).
+2. **Compare their inter-annotator agreement scores** (typically measured by metrics like Cohen’s Kappa, Fleiss’ Kappa, or percentage agreement).
+3. **Select the method with the highest numerical value** (or the highest bar in a bar chart).
+
+Without the actual chart, I cannot specify the exact method. However, if the chart includes common metrics like **Cohen’s Kappa** or **Fleiss’ Kappa**, the method with the highest score would be the answer.
+
+Would you like help interpreting a specific chart if you provide details?</sample>
+    <sample id="43">The evaluation method with the **lowest incremental validity** was the **cognitive ability test**.</sample>
+    <sample id="44">The response from 'B' to the statement *"If ur homeless u probably wouldn't have a phone"* was likely ironic, as indicated by the context and the nature of the discussion in the corpus.</sample>
+    <sample id="45">The data collection spanned **1½ years**.</sample>
+    <sample id="46">The highest variation in irony perception was observed between annotators from the **United Kingdom and Ireland**.</sample>
+    <sample id="47">The two generations that show the highest variation in irony perception are those closest to each other in age.</sample>
+    <sample id="48">The final slide concludes with: *"This is it for this short presentation, but we will be happy to answer all your questions and have further discussions at the poster session."*</sample>
+    <sample id="49">The **Sample-Weighted Focal Contrastive (SWFC) Loss** is defined as:
+
+\[
+\mathcal{L}_{\text{SWFC}} = \alpha \cdot (1 - p_t)^\gamma \cdot \log(1 + e^{d \cdot (y_i - y_j)})
+\]
+
+where:
+- \(\alpha\) is the **weight parameter** for minority classes,
+- \(\gamma\) is the **focusing parameter** (controls emphasis on hard examples),
+- \(p_t\) is the predicted probability for the true class,
+- \(d\) is a margin parameter (e.g., \(d = 2\)),
+- \(y_i\) and \(y_j\) are the embeddings of two samples (positive/negative pairs).
+
+This loss combines **focal loss** (for hard examples) with **contrastive loss** (to maximize inter-class distances).</sample>
+    <sample id="50">The six target domains from the problem setup are:
+
+1. Biomedical
+2. Finance
+3. Law
+4. News
+5. Reddit
+6. Wikipedia</sample>
+    <sample id="51">The corner with low reader compatibility but high retriever compatibility is called **covariate shift**.</sample>
+    <sample id="52">The graph about Open Domain QA involves the **retriever model** and the **reader model**.</sample>
+  </task>
+</testset>

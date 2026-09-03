@@ -1,0 +1,204 @@
+Slide 1
+Timestamp: 14.00s
+------------------------------
+- Main visual element: A mathematical equation: u_i = {u_i^t, u_i^a, u_i^v}.
+- The equation visually represents an utterance (u_i) composed of textual (u_i^t), audio (u_i^a), and visual (u_i^v) components.
+- The slide uses mathematical notation to define the components of an utterance in the context of ERC.
+
+Slide 2
+Timestamp: 29.50s
+------------------------------
+- Mathematical equation: u_i = {u_i^t, u_i^a, u_i^v}
+- Diagram illustrating a dialogue with n utterances, each having textual, audio, and visual components.
+- "k-class emotion category set y" text.
+- "i ∈ {1, ..., n}" text.
+
+Slide 3
+Timestamp: 66.49s
+------------------------------
+- **Slide Content Description:**
+
+- **Visual elements:**
+    - Two bar charts are presented, labeled (a) Class distribution in MELD and (b) Class distribution in IEMOCAP.
+    - The x-axis of both charts represents emotion classes.
+    - The y-axis of both charts represents the number of samples.
+    - The bar heights visually demonstrate a significant class imbalance, with "Neutral" having the highest sample count and other emotions having considerably fewer samples.
+
+- **Notable text:**
+    - Figure 2: Illustration of the class imbalance problem in MELD and IEMOCAP
+    - Labels: MELD, IEMOCAP, Neutral, Sadness, Anger, Fear, Surprise, Disgust
+
+Slide 4
+Timestamp: 68.49s
+------------------------------
+- The slide contains a bullet point list.
+- The slide title is "Challenges with Existing ERC Approaches".
+- The slide lists three challenges:
+    - The complementarity of multimodal information has not been well exploited.
+    - Current state-of-the-art methods have unsatisfactory performances in minority emotion classes.
+    - The difficulty of distinguishing between semantically similar emotions.
+
+Slide 5
+Timestamp: 71.49s
+------------------------------
+- Plain white background.
+- Title: Challenges with Existing ERC Approaches
+- Bullet point: The difficulty of distinguishing between semantically similar emotions.
+- Table 1 and Table 2 (mentioned, but not visible on the slide)
+- Figure 7 (mentioned, but not visible on the slide)
+- VisExtNet (mentioned, but not visible on the slide)
+- MultiAttn (mentioned, but not visible on the slide)
+- SWFC loss (mentioned, but not visible on the slide)
+- Alpha and Gamma (mentioned, but not visible on the slide)
+- MTCNN and VGGFace2 (mentioned, but not visible on the slide)
+- ResNet-101 (mentioned, but not visible on the slide)
+- Multi-head cross-attention layers (mentioned, but not visible on the slide)
+- Feed-forward network (mentioned, but not visible on the slide)
+- Residual connection (mentioned, but not visible on the slide)
+- Layer globalization (mentioned, but not visible on the slide)
+- Key-value memory (mentioned, but not visible on the slide)
+- Large batch size (mentioned, but not visible on the slide)
+- Minority and majority classes (mentioned, but not visible on the slide)
+- State-of-the-art performances (mentioned, but not visible on the slide)
+- MELD and IEMOCAP (mentioned, but not visible on the slide)
+- Heatmaps (mentioned, but not visible on the slide)
+- Emotional tendencies (mentioned, but not visible on the slide)
+- Speakers and irrelevant people (mentioned, but not visible on the slide)
+- SWFC loss (mentioned, but not visible on the slide)
+- Alpha and Gamma (mentioned, but not visible on the slide)
+- MTCNN and VGGFace2 (mentioned, but not visible on the slide)
+- ResNet-101 (mentioned, but not visible on the slide)
+- Multi-head cross-attention layers (mentioned, but not visible on the slide)
+- Feed-forward network (mentioned, but not visible on the slide)
+- Residual connection (mentioned, but not visible on the slide)
+- Layer globalization (mentioned, but not visible on the slide)
+- Key-value memory (mentioned, but not visible on the slide)
+- Large batch size (mentioned, but not visible on the slide)
+- Minority and majority classes (mentioned, but not visible on the slide)
+- State-of-the-art performances (mentioned, but not visible on the slide)
+- MELD and IEMOCAP (mentioned, but not visible on the slide)
+- Heatmaps (mentioned, but not visible on the slide)
+- Emotional tendencies (mentioned, but not visible on the slide)
+- Speakers and irrelevant people (mentioned, but not visible on the slide)
+- SWFC loss (mentioned, but not visible on the slide)
+- Alpha and Gamma (mentioned, but not visible on the slide)
+- MTCNN and VGGFace2 (mentioned, but not visible on the slide)
+- ResNet-101 (mentioned, but not visible on the slide)
+- Multi-head cross-attention layers (mentioned, but not visible on the slide)
+- Feed-forward network (mentioned, but not visible on the slide)
+- Residual connection (mentioned, but not visible on the slide)
+- Layer globalization (mentioned, but not visible on the slide)
+- Key-value memory (mentioned, but not visible on the slide)
+- Large batch size (mentioned, but not visible on the slide)
+- Minority and majority classes (mentioned, but not visible on the slide)
+- State-of-the-art performances (mentioned, but not visible on the slide)
+- MELD and IEMOCAP (mentioned, but not visible on the slide)
+- Heatmaps (mentioned, but not visible on the slide)
+- Emotional tendencies (mentioned, but not visible on the slide)
+- Speakers and irrelevant people (mentioned, but not visible on the slide)
+- SWFC loss (mentioned, but not visible on the slide)
+- Alpha and Gamma (mentioned, but not visible on the slide)
+- MTCNN and VGGFace2 (mentioned, but not visible on the slide)
+- ResNet-101 (mentioned, but not visible on the slide)
+- Multi-head cross-attention layers (mentioned, but not visible on the slide)
+- Feed-forward network (mentioned, but not visible on the slide)
+- Residual connection (mentioned, but not visible on the slide)
+- Layer globalization (mentioned, but not visible on the slide
+
+Slide 6
+Timestamp: 93.49s
+------------------------------
+- A flowchart diagram illustrates the overall framework of MultiEMO.
+- The diagram is divided into three sections: Unimodal Feature Extraction, Context Modeling, and Multimodal Fusion & Emotion Classification.
+- Arrows indicate the flow of information between modules.
+- The spatial, audio, and visual modalities are represented as separate input streams.
+- Attention mechanisms are visually represented by connecting lines between modules.
+- The diagram includes boxes representing different modules or layers within the framework.
+- Figure caption: "Illustration of the overall framework of MultiEMO."
+
+Slide 7
+Timestamp: 171.48s
+------------------------------
+- The slide has a simple layout with a title and bullet points.
+- The title is "Problems with Existing visual feature extraction approaches".
+- The bullet points outline the issues with current visual feature extraction methods in Emotion Recognition in Conversation (ERC).
+- The slide references VisExtNet and the concept of integrating facial expressions from multiple frames.
+- Table 1 and Table 2 are referenced, indicating experimental results.
+- Figure 7 is referenced, depicting a visualization of heatmaps.
+- The slide mentions SWFC loss and its parameters (alpha and gamma).
+- The slide references MTCNN and VGGFace2 pre-trained ResNet-101.
+- The slide references MultiAttn-text.
+- The slide references bidirectional multi-head cross-attention layers.
+- The slide references a feed-forward network.
+- The slide references residual connection and layer globalization.
+- The slide references MELD and IEMOCAP datasets.
+- The slide references a large batch size.
+
+Slide 8
+Timestamp: 192.48s
+------------------------------
+Diagram of VisExtNet architecture:
+- Multiple frames (labeled Frame 1, Frame 1, Frame 1) are input.
+- Each frame is processed by an MTCNN.
+- The output of the MTCNN is fed into multiple VGGFace2 pre-trained ResNet-101 networks.
+- The outputs of the ResNet-101 networks are concatenated ("Concat").
+- The concatenated output is then processed by an Average Pooling layer.
+- The overall architecture aims to capture facial expressions while avoiding redundant scene information.
+
+-
+
+Slide 9
+Timestamp: 221.48s
+------------------------------
+- A diagram illustrating the architecture of MultiAttn.
+- The diagram shows three columns, presumably representing the three components (text, audio, visual).
+- Each column contains multiple stacked blocks, each block containing attention mechanisms.
+- The diagram uses color-coding to differentiate the different modalities and attention layers.
+- Label: "Figure 3. Illustration of the architecture of MultiAttn"
+
+Slide 10
+Timestamp: 267.47s
+------------------------------
+Diagram illustrating a one-layer MultiAttn architecture. The diagram shows a sequential flow of operations: Input (labeled as 'x') goes through an Add & Norm layer. The output of Add & Norm goes through a Feed Forward Network (FFN). The output of the FFN goes through a Bidirectional Multi-Head Cross Attention layer (with Query, Key, and Value inputs labeled as Q1, K1, V1). The output of the Cross Attention layer goes through another Add & Norm layer. The output of Add & Norm goes through another Bidirectional Multi-Head Cross Attention layer (with Query, Key, and Value inputs labeled as Q2, K2, V2).
+-
+
+Slide 11
+Timestamp: 320.46s
+------------------------------
+- **Slide Content Description:**
+
+- **Visual elements:**
+    * **Table 1:** A table titled "MELD" displays the performance of various models across different emotion classes and a "Weighted-F1" score. The best results are highlighted in red.
+    * **Table 2:** A table titled "IEMOCAP" displays the performance of the same models across different emotion classes and a "Weighted-F1" score. The best results are highlighted in red.
+    * A small annotation on the right side of the table indicates "Minority Emotion," "Annotated Pain," and "Emotional Pain" with corresponding color codes.
+    * **Figure 7:** A visualization of heatmaps of a prone-to-misclassification utterance in MELD.
+- **Notable text:**
+    * "Experimental Results" (slide title)
+    * "MELD" and "IEMOCAP" (table titles)
+    * "Weighted-F1" (performance metric)
+    * Model names listed in the tables (BC-LSTM, DialogueRNN, etc.)
+    * Emotion class names (Neutral, Surprise, Fear, Sadness, Joy, Disgust, Anger)
+
+Slide 12
+Timestamp: 335.46s
+------------------------------
+- Visual elements:
+    - Photograph of a woman (likely Phoebe).
+    - Diagram illustrating the processing of textual, audio, and visual data to determine emotion.
+    - Heatmaps representing emotional intensity of each modality.
+    - Final heatmap representing the fused emotional output.
+    - Yellow smiley face with an angry expression.
+- Notable text:
+    - Title: Case Study
+    - Utterance: "Chandler is a great name!"
+    - Speaker: Phoebe
+    - Emotion: Anger
+    - Figure 7: Visualization of the heatmaps of a prone-to-misclassification utterance in MELD.
+
+Slide 13
+Timestamp: 346.96s
+------------------------------
+- The slide contains a title "Limitations" at the top and a logo in the bottom left corner.
+- The slide lists three limitations of the MultiEMO model.
+
+Total slides processed: 13

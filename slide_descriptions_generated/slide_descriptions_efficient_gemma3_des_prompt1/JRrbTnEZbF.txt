@@ -1,0 +1,105 @@
+Slide 1
+Timestamp: 17.00s
+------------------------------
+- Main topic: This slide introduces a research presentation evaluating the state-of-the-art in chat-oriented dialogue systems.
+- Visual elements:
+    - The slide has a white background with a blue rectangular border.
+    - Logos for Emory University, the Emory NLP Research Lab, and Alexa are displayed at the bottom left and right.
+    - The title is prominently displayed in a large, sans-serif font.
+    - Author names are displayed below the title in a smaller font.
+- Notable text:
+    - "Don't Forget Your ABC's"
+    - "Evaluating the State-of-the-Art in Chat-Oriented Dialogue Systems"
+    - "Sarah E. Finch, James D. Finch, and Jinho D. Choi"
+
+Slide 2
+Timestamp: 35.50s
+------------------------------
+- Diagram illustrating a comparative evaluation process.
+- Two AI agents (blue and purple robots) interacting with a human user.
+- Speech bubbles representing conversation.
+- A judge figure with a gavel.
+- A green checkmark.
+- Logos for Emory University and Amazon Alexa.
+- Title: "Comparative Evaluation"
+
+Slide 3
+Timestamp: 45.50s
+------------------------------
+- Main topic: This slide introduces the concept of dialogue quality.
+- Visual elements:
+    - A large pink button labeled "Dialogue Quality" is centered on the slide.
+- Logos:
+    - Emory University logo in the bottom left corner
+    - Alexa logo in the bottom right corner
+- Notable text:
+    - "Dimensions of Dialogue Quality" (title at the top)
+- Overall impression: Clean and simple, with a focus on the central concept of dialogue quality.
+
+-
+
+Slide 4
+Timestamp: 71.50s
+------------------------------
+- Main visual: A cartoon depicts a person speaking to two chatbot icons.
+- Visual elements:
+    - A horizontal scale with numbers 1 to 5 is shown, representing the rating scale.
+    - A gavel and a judge are depicted at the end of the scale.
+    - A green checkmark is positioned at the 5 end of the scale.
+- Logos: Emory University, Amazon Alexa.
+
+Slide 5
+Timestamp: 98.50s
+------------------------------
+- Visual elements:
+    - A diagram shows a series of three speech bubbles representing a conversation between a person and a chatbot.
+    - Each speech bubble is connected by an arrow to a label indicating the behavior being annotated.
+    - The labels are "Irrelevant," "Lack of Empathy," and "Self Contradiction."
+- Logos: Emory University, a logo resembling a brain, and Amazon Alexa.
+
+Slide 6
+Timestamp: 153.50s
+------------------------------
+Diagrams depicting three evaluation methods: Turn Likert, Dialogue Likert, and Comparative. Each diagram shows a conversation between a user (penguin icon) and a chatbot (speech bubble with a Likert scale icon). A green checkmark is present below each diagram.
+
+Slide 7
+Timestamp: 162.50s
+------------------------------
+- Visual elements:
+    - Three diagrams representing the evaluation methods are displayed. Each diagram shows a person and a chatbot exchanging speech bubbles. A checkmark is present below each diagram.
+    - A list of evaluation metrics is presented in two columns.
+- Logos for Emory University, a person, and Amazon Alexa are displayed at the bottom of the slide.
+
+Slide 8
+Timestamp: 177.50s
+------------------------------
+- Main visual: A scatter plot showing Krippendorff's Alpha values for various evaluation metrics, categorized by ABC-Eval (orange), Turn Likert (blue), Dialogue Likert (red), and Comparative (green).
+- Y-axis: Krippendorff's Alpha (0.0 - 0.8).
+- X-axis: Individual evaluation metrics within each category.
+- Error bars are present for each data point.
+- Two yellow arrows highlight specific metrics with high Alpha values within ABC-Eval and Dialogue Likert categories.
+- Logos for Emory University, Georgia Tech, and Alexa are displayed at the bottom.
+
+Slide 9
+Timestamp: 205.50s
+------------------------------
+- A bar graph displays the R² values for various quality attributes across four evaluation methods: ABC-Eval, Turn Likert, Dialogue Likert, and Comparative.
+- Each evaluation method has multiple bars representing different quality attributes.
+- Two sets of bars are shown for each quality attribute.
+- Yellow arrows point to specific bars with higher R² values.
+- Logos for Emory University and Alexa are displayed at the bottom of the slide.
+
+Slide 10
+Timestamp: 295.50s
+------------------------------
+Bar graph displaying error rates for four language models (BART-FID-RAG, Blender2, Emerge, and Blender Decode) across various error categories. The y-axis represents the percentage of turns with each error type, ranging from 0% to 30%. Error bars are present on each bar. Logos for Emory University and Amazon Alexa are displayed at the bottom left.
+-
+
+Slide 11
+Timestamp: 297.00s
+------------------------------
+- Main topic: This slide serves as a concluding slide, providing resources and contact information for the audience.
+- Visual elements: The slide has a simple layout with text and a small video feed of the speaker in the upper right corner. Logos for Emory University, a generic university logo, and Amazon Alexa are displayed at the bottom.
+- Notable text: "Thanks For Watching!" is prominently displayed at the top. URLs and email addresses are clearly presented.
+
+Total slides processed: 11

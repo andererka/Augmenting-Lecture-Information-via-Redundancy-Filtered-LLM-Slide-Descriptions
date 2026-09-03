@@ -1,0 +1,33 @@
+Here is the rewritten slide description with only the information that cannot be derived from the transcript alone:
+
+---
+
+**Slide 7**
+Timestamp: 347.46s
+
+**Title:** A Systematic Study
+
+**Text Content:**
+- A table summarizing experimental setups across different stages of the study.
+
+**Table Structure:**
+- Headers: **Sl. (Stage)**, **Architecture**, **Pruning**, **Objective**, **PTs (Pseudo-Targets)**, **Unlabeled**, **Number of PTs**, **PTs Decoding**, **Joint-Teaching**.
+- The table includes rows for stages 1 through 5, with varying configurations for each column.
+
+**Other Visual Elements:**
+- A person is visible in the bottom right corner of the screen, wearing a red shirt and headphones.
+
+---
+
+**Slide 8**
+Timestamp: 350.96s
+
+**Title:** Knowledge Distillation Recipe
+
+**Text Content:**
+- A numbered list titled "Knowledge Distillation Recipe" with six steps.
+
+**Visual Elements:**
+- The text is presented in a clean, readable format with no additional visual elements beyond the numbered list.
+
+---

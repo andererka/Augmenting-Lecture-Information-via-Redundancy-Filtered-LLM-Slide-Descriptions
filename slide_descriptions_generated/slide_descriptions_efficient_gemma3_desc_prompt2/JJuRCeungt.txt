@@ -1,0 +1,209 @@
+Slide 1
+Timestamp: 11.37s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Human-in-the-loop Evaluation for Early Misinformation Detection: A Case Study of COVID-19 Treatments
+
+**Text content:**
+Ethan Mendes, Yang Chen, Wei Xu, Alan Ritter
+(emendes3, yangc@gatech.edu, {wei.xu, alan.ritter}@cc.gatech.edu)
+
+[Georgia Tech Logo]
+A figure showing examples of unapproved treatments detected by the system before they were debunked in the news.
+A histogram showing the distribution of Likert scale scores for policy violation detection.
+A metric for the number of policy violations that can be confirmed per human hours worked.
+
+Slide 2
+Timestamp: 24.24s
+------------------------------
+.
+
+**Slide Content:**
+
+**Title:** Current Approaches for Misinformation Detection
+
+*   Unrealistically Evaluated
+*   Not Human-Centric
+
+**Visual Elements:**
+
+*   Two bullet points with short descriptions.
+*   A figure showing examples of unapproved treatments detected before debunking news articles.
+*   A histogram showing Likert scale scores for policy violation detection.
+*   A computer metric for the number of policy violations that can be confirmed per human hours worked.
+
+Slide 3
+Timestamp: 51.96s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Current Approaches for Misinformation Detection
+
+*   Unrealistically Evaluated
+    *   Systems usually evaluated with unrealistic standard benchmark datasets
+    *   Possibility of leaked counter-evidence
+
+*   Not Human-Centric
+
+¹ Glöckner et al. 2022
+
+Slide 4
+Timestamp: 72.75s
+------------------------------
+.
+
+**Slide Content:**
+
+**Title:** Current Approaches for Misinformation Detection
+
+*   Unrealistically Evaluated
+    *   Systems usually evaluated with unrealistic standard benchmark datasets
+    *   Possibility of leaked counter-evidence:
+
+    “Telemundo is an English-language television network”
+    [Diagram: A box labeled "Telemundo" with an arrow pointing to a box labeled "W" with an exclamation mark inside the "W" box]
+
+    “Half a million sharks may be killed to make the COVID-19 vaccine”
+    [Diagram: A box labeled "COVID-19 Vaccine Misinformation" with an arrow pointing to a box labeled "Snopes" with an exclamation mark inside the "Snopes" box]
+
+    Unrealistic for new claims!
+
+*   Not Human-Centric
+
+<sup>1</sup> Glöckner et al. 2022
+
+Slide 5
+Timestamp: 132.15s
+------------------------------
+.
+
+**Slide Content:**
+
+**Title:** HiTL Misinformation Detection (COVID-19)
+
+*   Detection of misleading claims
+*   Policy violation verification
+
+The slide contains two main sections: "Detection of misleading claims" and "Policy violation verification." It includes a figure showing examples of unapproved treatments detected before news debunking. A histogram displays scores related to policy violation detection, and a metric for human workload (policy violations confirmed per human hour) is presented.
+
+Slide 6
+Timestamp: 184.62s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** HiTL Misinformation Detection (COVID-19)
+
+**Text content:**
+
+*   Detection of misleading claims
+*   Policy violation verification
+    *   Determine stance of tweet towards an misinformed claim
+    *   Provide list of tweets that support the unapproved treatment
+
+**Image:**
+
+The image is a screenshot of a dashboard labeled "Early Detection of Misleading Claims." The dashboard is divided into three main sections: "Key Words Filtering," "Trending Claims," and "Raw Tweets."
+
+**Key Words Filtering:**
+This section displays a list of keywords:
+*   ivermectin
+*   COVID-19
+*   hydroxychloroquine
+*   azithromycin
+
+**Trending Claims:**
+This section displays a table with the following columns:
+*   Claim
+*   Expert Validation
+
+The table contains rows indicating the status of various treatments.
+
+**Raw Tweets:**
+This section displays example tweets related to COVID-19 treatments.
+
+**Other visual elements:**
+
+The dashboard has a Twitter logo. The entire dashboard is teal in color. The "Trending Claims" section has icons indicating approval status.
+
+Slide 7
+Timestamp: 208.89s
+------------------------------
+Error: No description available
+
+Slide 8
+Timestamp: 223.23s
+------------------------------
+.
+
+**Slide Content:**
+
+**Evaluation: Early Claim Detection (COVID-19)**
+
+*   Approach efficacy is based on ability to detect misleading claims early
+*   Early detection is defined as the relative time of detection to the first appearance of the claim in a debunking news article.
+*   Examples of unapproved treatments detected by the system before they were debunked in the news are shown.
+*   A histogram of Likert scale scores is shown, indicating the likelihood of a tweet violating Twitter's policies.
+
+Slide 9
+Timestamp: 248.97s
+------------------------------
+.
+**Slide Content:**
+
+**Evaluation: Early Claim Detection (COVID-19)**
+
+*   Approach efficacy is based on ability to detect misleading claims early
+*   We define early based on the relative time of detection to the first appearance of the claim in a debunking news article
+
+[Figure: A timeline graph with three columns representing different timeframes relative to a debunking news article. Each column contains "Trending Treatment" and "News Headline" sections. The graph spans from 03/05/2020 to 09/06/2020.]
+
+Slide 10
+Timestamp: 302.43s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Evaluation: Policy Violation Verification (COVID-19)
+
+**Text content:**
+* 65% of system-identified tweets are most likely or clearly violating Twitter’s policies
+* 124.2 tweets containing policy violations detected per human hour worked
+
+**Figures/graphs:**
+
+The slide contains a bar graph.
+
+*   **X-axis:** Likert scale Scores (0, 1, 2, 3, 284, 4, 5)
+*   **Y-axis:** Number of Tweets
+*   **Data Points:**
+    *   Likert Score 0: 1174 tweets
+    *   Likert Score 1: 2171 tweets
+    *   Likert Score 2: 284 tweets
+    *   Likert Score 3: 0 tweets
+    *   Likert Score 4: 3151 tweets
+    *   Likert Score 5: 3467 tweets
+
+**Other visual elements:**
+
+*   The graph has a pink dot above the bar for Likert Score 4.
+*   Arrows pointing to the bars for Likert Score 4 and 5.
+
+Slide 11
+Timestamp: 319.76s
+------------------------------
+.
+**Slide Content:**
+
+**Title:** Conclusion
+
+*   Our framework realistically captures the complex interplay between systems and human content moderators.
+*   We hope our work motivates the development of future human-in-the-loop misinformation detection systems.
+*   Our work provides an outside look at the development and evaluation of misinformation detection systems.
+
+The slide includes bullet points summarizing the key takeaways of the research.
+
+Total slides processed: 11

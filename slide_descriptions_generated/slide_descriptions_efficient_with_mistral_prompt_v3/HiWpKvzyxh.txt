@@ -1,0 +1,223 @@
+Here is the rewritten slide description containing only information not explicitly conveyed in the transcript:
+
+---
+
+### Slide 1 (Motivation)
+- **Visual Elements:**
+  - Slide has a white background.
+  - Title "Motivation" is centered at the top in bold black text.
+  - Bullet points are aligned to the left with a small indentation.
+  - Three icons are aligned to the left of each bullet point:
+    - First icon: Blue folder with a white document.
+    - Second icon: Orange question mark.
+    - Third icon: Green pen.
+
+---
+
+### Slide 2 (Motivation)
+- **Visual Elements:**
+  - Identical to Slide 1 in layout and content.
+
+---
+
+### Slide 3 (MeetingQA: Introduction)
+- **Visual Elements:**
+  - Slide has a white background.
+  - Title "MeetingQA: Introduction" is at the top in bold black text.
+  - An image of a meeting transcript with multiple speakers and their dialogues is centered below the title.
+  - Bullet points are aligned to the right of the image:
+    - "Extractive QA dataset based on **questions asked by participants** in a meeting and corresponding answer sentences."
+    - "Why choose questions asked by participants?"
+      - "Questions are longer, open-ended, and discussion-seeking."
+      - "Rhetorical questions, multi-speaker, and multi-span answers."
+
+---
+
+### Slide 4 (MeetingQA: Data Collection)
+- **Visual Elements:**
+  - Slide has a white background.
+  - Title "MeetingQA: Data Collection" is at the top left in bold black text.
+  - Three icons aligned to the left of the bullet points:
+    - First icon: Blue folder with a white document.
+    - Second icon: Orange question mark.
+    - Third icon: Green pen.
+  - Bullet points are aligned to the right of the icons:
+    - "Public transcripts from AMI corpus."
+      - "~100 hours of manually transcribed multi-party meetings."
+    - "Question Selection."
+      - "Based on punctuation and length of question."
+    - "Answer Annotation."
+      - "Recruit annotators to label sentences in answer span."
+      - "High inter-annotator agreement: Kappa = 0.73."
+  - A picture of a woman in a white t-shirt is in the top right corner.
+  - Citation at the bottom: "Carlotto et al. 'The AMI Meeting Corpus: a pre-announcement' in International Workshop on Machine Learning for Multimodal Interaction 2005."
+  - Formula: $Kappa = 0.73$ is displayed prominently below the bullet points.
+
+---
+
+### Slide 5 (MeetingQA: Dataset Analysis)
+- **Visual Elements:**
+  - Slide has a light blue background.
+  - Title "MeetingQA: Dataset Analysis" is at the top left in bold black text.
+  - A woman is visible in the upper right corner wearing glasses and a white t-shirt.
+  - Bullet points are aligned to the right of the slide:
+    - "Total of 7,735 questions from 166 different meetings split across train, dev, and test sets."
+    - "Statistics."
+      - "Unanswerable Questions: 30%."
+      - "Multi-span (non-consecutive sentences) answers: 40%."
+      - "Multi-speaker answers: 48%."
+  - Table centered on the slide with the following data:
+
+|                   | Train | Dev  | Test |
+| :---------------- | :---- | :--- | :--- |
+| Number of Meetings | 64    | 48   | 54   |
+| Number of Questions | 3007  | 2252 | 2476 |
+| w/ No Answer       | 956   | 621  | 764  |
+| w/ Multi-Span Answers | 787   | 548  | 663  |
+| w/ Multi-Speaker Answers | 1016 | 737  | 840  |
+| Avg. Questions per Meeting | 46.98 | 46.92 | 45.85 |
+
+---
+
+### Slide 6 (MeetingQA: Dataset Analysis)
+- **Visual Elements:**
+  - Slide has a light blue background.
+  - Title "MeetingQA: Dataset Analysis" is at the top left in bold black text.
+  - A woman is visible in the upper right corner wearing glasses and a white t-shirt.
+  - Bullet points are aligned to the right of the slide:
+    - "Yes/no questions are information-seeking and detailed responses."
+    - "50% questions are opinion-seeking."
+    - "20% questions are framed rhetorically."
+    - "70% of multi-speaker answers contain some disagreement."
+  - Pie chart titled "Question Types" is centered on the slide with the following segments and colors:
+    - Yes/No: 54.4% (Pink)
+    - What: 24.4% (Light Green)
+    - Who: 1.6% (Blue)
+    - Which: 8.1% (Yellow)
+    - How: 1.9% (Purple)
+    - Other: 9.4% (Orange)
+
+---
+
+### Slide 7 (MeetingQA: Dataset Analysis)
+- **Visual Elements:**
+  - Slide has a light blue background.
+  - Title "MeetingQA: Dataset Analysis" is at the top left in bold black text.
+  - A woman is visible in the upper right corner wearing glasses and a white t-shirt.
+  - Bullet points are aligned to the right of the slide:
+    - "Avg. Transcript: 5.9K words, Question: 12 words, and Answer: 35 words."
+    - "High human performance: F1 = 84.6."
+  - Three histograms arranged horizontally:
+    - **Left Histogram (Meeting Transcript Length):**
+      - X-axis: Meeting Transcript Length (0 to 20K words).
+      - Y-axis: Count.
+      - Distribution is right-skewed with a peak around 5K to 10K words.
+      - Maximum count: ~50 at around 5K words.
+    - **Middle Histogram (Question Length):**
+      - X-axis: Question Length (0 to 40 words).
+      - Y-axis: Count.
+      - Distribution is right-skewed with a peak around 0 to 10 words.
+      - Maximum count: ~1300 at around 0 to 2 words.
+    - **Right Histogram (Answer Length):**
+      - X-axis: Answer Length (0 to 175 words).
+      - Y-axis: Count.
+      - Distribution is right-skewed with a peak around 0 to 25 words.
+      - Maximum count: ~1250 at around 0 to 2 words.
+
+---
+
+### Slide 8 (Methods)
+- **Visual Elements:**
+  - Slide has a light blue background.
+  - Title "Methods" is at the top left in bold black text.
+  - A picture of a woman wearing glasses and a white t-shirt is on the top right.
+  - Four circles arranged in a 2x2 grid in the center of the slide, each with a different color:
+    - **Blue Circle (Top Left):**
+      - Title: "Context-retrieval for short-context models."
+      - Description: "Retrieves relevant segment of meeting transcript as context."
+    - **Green Circle (Top Right):**
+      - Title: "Multi-span models."
+      - Description: "Using token classification models - / tag: in answer span - O tag: outside answer span."
+    - **Orange Circle (Bottom Left):**
+      - Title: "Single-span models."
+      - Description: "Single ‘super’ span: first to last relevant sentence in span."
+    - **Purple Circle (Bottom Right):**
+      - Title: "Silver data augmentation."
+      - Description: "Automatically annotated answer spans for questions from interviews in MediaSum dataset."
+  - Citation at the bottom right: "Zhu et al. “MediaSum: A large-scale media interview dataset for dialogue summarization” in Proceedings of NAACL, 2021."
+
+---
+
+### Slide 9 (Experimental Results: Zero-shot)
+- **Visual Elements:**
+  - Slide has a white background.
+  - Title "Experimental Results: Zero-shot" is at the top in bold black text.
+  - Table centered on the slide with the following data:
+
+| Model | Inter. Data | Overall F1 |
+|---|---|---|
+| RoBERTa-base | SQuADv2 | 27.9 |
+| RoBERTa-base | + silver | 34.6 |
+| Longformer-base | SQuADv2 | 15.1 |
+| Longformer-base | + silver | 32.5 |
+| FLAN-T5 XL | — | 33.8 |
+| FLAN-T5 XL (self ans) | — | 34.0 |
+| Human performance | — | 84.6 |
+
+- Three bullet points aligned to the right of the table:
+  - "~50 F1 points gap with respect to human performance."
+  - "Silver data augmentation is effective."
+  - "Larger instruction tuned models yield comparable performance."
+- A person is visible in the upper right corner of the slide.
+
+---
+
+### Slide 10 (Experimental Results: Error Analysis)
+- **Visual Elements:**
+  - Slide has a light blue background.
+  - Title "Experimental Results: Error Analysis" is at the top center in bold black text.
+  - Two bar graphs presented on the slide:
+    - **Graph 1 (Left): (a) Unanswerable Pred Error**
+      - X-axis: None (no labels).
+      - Y-axis: Percentage (%).
+      - Legend:
+        - Finetuned: Light brown.
+        - Zero-shot: Red.
+      - Data:
+        - Multi-span:
+          - Finetuned: ~10%.
+          - Zero-shot: ~35%.
+        - Single-span:
+          - Finetuned: ~25%.
+          - Zero-shot: ~40%.
+    - **Graph 2 (Right): (b) Speaker IoU in Model Errors**
+      - X-axis: None (no labels).
+      - Y-axis: Intersection over Union (IoU).
+      - Legend:
+        - Finetuned: Blue.
+        - Zero-shot: Green.
+      - Data:
+        - Multi-span:
+          - Finetuned: ~30%.
+          - Zero-shot: ~45%.
+        - Single-span:
+          - Finetuned: ~40%.
+          - Zero-shot: ~50%.
+  - Bullet points aligned to the right of the graphs:
+    - "Models struggle at identifying rhetorical questions, especially in zero-shot setting."
+    - "Single-span predictions contain more irrelevant sentences."
+    - "Models struggle to identify which speakers answer a question, especially in zero-shot setting."
+
+---
+
+### Slide 11 (Takeaways)
+- **Visual Elements:**
+  - Slide has a light blue background.
+  - Title "Takeaways" is at the top center in bold black text.
+  - A woman is visible in the upper right corner wearing glasses.
+  - Text content:
+    - "MeetingQA is an interesting **QA dataset** based on open-ended and discussion-heavy questions asked during meetings."
+    - "MeetingQA is challenging **for existing QA models** which lag behind human performance significantly."
+      - "25 F1 point gap in finetuned setting."
+      - "50 F1 point gap in zero-shot setting."
+  - The terms "QA dataset" and "for existing QA models" are bolded.

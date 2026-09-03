@@ -1,0 +1,96 @@
+Here’s the refined visual description of the slides, excluding details already covered in the speaker’s transcript while preserving key visual elements:
+
+---
+
+**Slide 1 & 2 (Title Slides)**
+- Clean white background with the title **"FactKG: Fact Verification via Reasoning on Knowledge Graphs"** in orange text at the top.
+- Author list: **Jiho Kim¹, Sungjin Park¹, Yeonsu Kwon¹, Yohan Jo², James Thorne¹, Edward Choi¹** (¹KAIST, ²Amazon).
+- **KAIST AI logo** at the bottom left with **"Kim Jaechul Graduate School"** below it.
+- Small video feed of the speaker in the top right corner.
+
+---
+
+**Slide 3 (Motivation: Existing Fact Verification Datasets)**
+- Three-column layout:
+  1. **Text Evidence**: Logos of *PubMed* and a globe, with datasets listed: *FEVER, HOVER, FAVIQ, VitaminC*.
+  2. **Table Evidence**: Logos of a table and a globe, with datasets: *TabFact, InfoTabs, Sem-Tab-Fact*.
+  3. **Knowledge Graph Evidence**: Diagram of a KG (nodes/edges) with *DBpedia* and *Freebase* logos, labeled **"No dataset!!!"**.
+- Arrows connect each evidence type to its respective datasets.
+
+---
+
+**Slide 4 (New Task: KG-Based Fact Verification)**
+- White background with title in large orange font.
+- Two bullet points:
+  - *"A KG is a valuable knowledge source."*
+    - Sub-bullets: *"a. Reliability"*, *"b. Practicality"*.
+- Speaker image in the top right corner.
+
+---
+
+**Slide 5 (Reliability Example)**
+- Title: **"New Task: Knowledge Graph based Fact Verification"**.
+- **Claim**: *"Yeah! Actually AIDA Cruise line operated a ship which was built by a company in Papenburg!"*
+- **Evidence**: DBpedia logo.
+- **Knowledge Graph Diagram**:
+  - Nodes: *AIDA Cruises* (pink), *AIDA Stella* (green), *Meyer Werft* (green), *Papenburg* (blue).
+  - Edges:
+    - *AIDA Cruises* → *operator* → *AIDA Stella*
+    - *AIDA Stella* → *builder* → *Meyer Werft*
+    - *Meyer Werft* → *location* → *Papenburg*
+- **Label**: *SUPPORTED*.
+
+---
+
+**Slide 6 (Practicality Example)**
+- Title: **"New Task: Knowledge Graph based Fact Verification"**.
+- Diagram:
+  - **Left**: Cartoon avatar with speech bubble: *"My friend John is in New York."* (labeled *"Utterance"*).
+  - **Center**: Robot icon with bidirectional arrows to/from the avatar and an internal KG.
+  - **Right**: Internal KG box showing:
+    - Node *Jerry* → *Location* → *New_York*.
+    - Node *John* → *Location* → *Seoul*.
+
+---
+
+**Slide 7 (FactKG Dataset Overview)**
+- Title: **"FactKG: Fact Verification via Reasoning on Knowledge Graphs"**.
+- Left side:
+  - Bullet points:
+    - *Knowledge Graph*: DBpedia.
+    - *Claim styles*: Written and Colloquial.
+    - *Label*: SUPPORTED/REFUTED.
+    - *Five reasoning types*: One-hop, Conjunction, Existence, Multi-hop, Negation.
+- Right side:
+  - Same KG diagram as Slide 5 (claim about AIDA Cruises, etc.) with *SUPPORTED* label.
+
+---
+
+**Slide 8 & 9 (Dataset Statistics)**
+- Table titled **"Dataset Statistics"** with columns:
+  - *Type* (One-hop, Conjunction, Existence, Multi-hop, Negation).
+  - *Written*, *Colloquial Model*, *Presup*, *Total*.
+- Data rows:
+  - One-hop: 2,106 (Written), 15,934 (Colloquial), 1,580 (Presup), 19,530 (Total).
+  - Conjunction: 20,587 (Written), 15,908 (Colloquial), 602 (Presup), 37,097 (Total).
+  - Existence: 280 (Written), 4,060 (Colloquial), 4,832 (Presup), 9,172 (Total).
+  - Multi-hop: 10,239 (Written), 16,420 (Colloquial), 603 (Presup), 27,262 (Total).
+  - Negation: 1,340 (Written), 12,466 (Colloquial), 1,807 (Presup), 15,613 (Total).
+  - **Grand Total**: 108,674.
+
+---
+
+**Slide 10 & 11 (Summary)**
+- Title: **"Summary"**.
+- Three bullet points:
+  1. Introduction of **FactKG** (108k claims) with five reasoning types.
+  2. Includes written and colloquial claims for practicality.
+  3. Graphical evidence improves model performance over baselines.
+- Speaker image in the top right corner.
+
+---
+**Slide 12 (Acknowledgments)**
+- Title: **"Thank you!"**.
+- Text:
+  - *Dataset*: [GitHub link](https://github.com/jiho283/FactKG).
+  - *Contact*: jiho.kim@kaist.ac.kr.

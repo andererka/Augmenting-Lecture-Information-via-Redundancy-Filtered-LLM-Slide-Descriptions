@@ -1,0 +1,43 @@
+{
+  "llm_judge": {
+    "avg": 0.4151,
+    "correct_1.0": 17,
+    "partial_0.5": 10,
+    "wrong_0.0": 26,
+    "total": 53
+  },
+  "llm_judge_by_qa_type": {
+    "V": {
+      "avg": 0.0,
+      "count": 1
+    },
+    "formula-extraction": {
+      "avg": 0.1667,
+      "count": 3
+    },
+    "graph-related": {
+      "avg": 0.4565,
+      "count": 23
+    },
+    "table-extraction": {
+      "avg": 0.0556,
+      "count": 9
+    },
+    "text-extraction": {
+      "avg": 0.6176,
+      "count": 17
+    }
+  },
+  "bertscore": {
+    "avg_f1": 0.8436,
+    "total": 53
+  },
+  "rouge_l": {
+    "avg_f1": 0.2038,
+    "total": 53
+  },
+  "faithfulness": {
+    "avg": 0.5566,
+    "total": 53
+  }
+}

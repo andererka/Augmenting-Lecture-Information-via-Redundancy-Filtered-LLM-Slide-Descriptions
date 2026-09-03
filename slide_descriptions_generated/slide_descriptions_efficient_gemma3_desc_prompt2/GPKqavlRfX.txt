@@ -1,0 +1,197 @@
+Slide 1
+Timestamp: 3.95s
+------------------------------
+.
+Here's a revised visual description of the slide:
+
+**Title:** Towards Understanding Omission in Dialogue Summarization
+
+**Text content:**
+* Author names and affiliations (Fudan University, Microsoft Research Asia, Institute of Modern Languages and Linguistics)
+* Email addresses for Yicheng Zou and Tao Gui
+* Conference information: 61st Annual Meeting of the Association for Computational Linguistics, Toronto, Canada, July 9-14, 2023
+
+**Visual elements:**
+
+*   Logos for Fudan University and Microsoft.
+*   Background image of the Toronto skyline.
+*   Small image of the presenter in the bottom right corner.
+
+Slide 2
+Timestamp: 9.39s
+------------------------------
+.
+Here's a revised visual description of the slide, focusing on elements not explicitly detailed by the speaker:
+
+**Title:** Towards Understanding Omission in Dialogue Summarization
+
+**Visual elements:**
+
+*   **Logos:** Top left corner, a logo with Chinese characters (likely Fudan University) and the Microsoft logo.
+*   **Background Image:** A cityscape of Toronto, Canada, with several skyscrapers visible.
+*   **Presenter Image:** A small image of the presenter (a person wearing headphones) in the bottom right corner.
+*   **Two Figures:** Two figures are displayed side-by-side. The left figure is a bar chart showing "Omission Rate of Summaries from Five Domains and Six Pre-trained Models." The right figure is a distribution chart titled "Position Distribution of Omission Information in Dialogues."
+*   **Table:** A table is present, showing statistics of the OLDS dataset, including the total number and the ROUGE-1 score of candidate summaries for each model and domain.
+
+**Text content:**
+
+*   Author list with names and affiliations (Fudan University, Microsoft Research Asia, Institute of Modern Languages and Linguistics, Fudan University).
+*   Conference information: 61st Annual Meeting of the Association for Computational Linguistics, Toronto, Canada, July 9-14, 2023.
+
+Slide 3
+Timestamp: 36.12s
+------------------------------
+.
+
+**Slide Content:**
+
+**Background**
+
+Dialogue Summarization
+Produce summaries for dialogues in various scenarios.
+
+[Image: Six icons arranged in a 2x3 grid. Each icon is associated with a label below it.]
+
+[Image: Two figures. The left figure shows a bar chart with five bars representing five domains. The right figure shows a scatter plot.]
+
+**Dataset**
+
+[Image: Example of a dialogue with multiple candidate summaries.]
+
+**Results**
+
+[Image: Table with statistics of the dataset.]
+
+**Experiments**
+
+[Image: Three frameworks as baselines.]
+
+**Conclusion**
+
+[Image: A bar chart showing performance improvement with omission.]
+
+Slide 4
+Timestamp: 138.10s
+------------------------------
+.
+**Slide Content:**
+
+**Background**
+
+*   Omission in Dialogue Summarization
+
+**Figure 1: Omission Rate vs. Dataset**
+
+A box plot graph is displayed, comparing the omission rates of different models across various datasets.
+
+**X-axis:** Dataset names: SAMSam, DialogSum, EmailSum, QMSam, TweetSum.
+**Y-axis:** Omission Rate (percentage).
+
+**Legend:**
+*   BARTLarge
+*   BARTbase
+*   Pegasus
+*   T5Large
+*   T5base
+*   Transformer
+
+**Figure 2: Predictions in Dialogue**
+
+A series of violin plots are displayed, showing the distribution of predictions in dialogue for different datasets.
+
+**X-axis:** Intervals of Utterance Numbers (Dialogue Length).
+**Y-axis:** Predictions in Dialogue.
+
+**Violin Plots:**
+*   SAMSam
+*   DialogSum
+*   EmailSum
+*   QMSam
+*   TweetSum
+
+Slide 5
+Timestamp: 233.15s
+------------------------------
+.
+
+**Slide Content:**
+
+*   OLDS: A Dataset for Omission Detection in Dialogue Summarization
+*   Table showing statistics for the OLDS dataset, including:
+    *   Domain (SAMSum, DialogSum, EmailSum, TopicSum, NewsSum, TwitterSum)
+    *   Split (Train, Dev, Test)
+    *   # of dialogue turns
+    *   Avg. Len. of dialogue turns
+    *   Len. of summary
+    *   # of candidate summaries (Avg. ROUGE-1 score) for various models (BARTs, T5s, Transformers, Pegasus)
+
+Slide 6
+Timestamp: 285.63s
+------------------------------
+.
+## Slide Analysis:
+
+**Title:** Baselines and Results
+
+**Figures/Graphs:**
+
+*   Five pie charts, each representing a different dataset (SAMSum, DialogSum, EmailSum, QMSum, TweetSum). Each pie chart is divided into two sections:
+    *   **Positive Labels (Green):** Represents the percentage of positive omission detection labels.
+    *   **Negative Labels (Blue):** Represents the percentage of negative omission detection labels.
+    *   Percentages for each dataset: SAMSum (19% Positive, 81% Negative), DialogSum (22% Positive, 78% Negative), EmailSum (27% Positive, 73% Negative), QMSum (19% Positive, 81% Negative), TweetSum (23% Positive, 77% Negative).
+*   A picture of a person wearing headphones is present on the right side of the slide.
+
+**Tables:**
+
+*   A table with model names (BERT, RoBERTa) and performance metrics (P, R, F1, WR) for each dataset (SAMSum, DialogSum, EmailSum, QMSum, TweetSum) across three tasks (Pair-wise Classification, Sequence Labeling, Pointer Network).
+*   The table contains numerical data for each model and dataset combination.
+
+**Other Visual Elements:**
+
+*   The text "Omission Detection is a challenging task." is displayed at the bottom of the slide in red.
+
+Slide 7
+Timestamp: 332.16s
+------------------------------
+.
+**Slide Content:**
+
+**Analysis**
+
+*   Omission-based Summary Refinement
+
+**Figures/Graphs:**
+
+There are two line graphs presented on the slide. Both graphs have ROUGE-1 score on the y-axis and different datasets on the x-axis.
+
+**Top Graph: BART-large**
+
+*   **Datasets:** SAM, Dial, Email, QM, Tweet
+*   **Lines:**
+    *   **Raw:** Yellow line.
+    *   **+Dial:** Orange line.
+    *   **+Omit:** Red line.
+
+**Bottom Graph: T5-small**
+
+*   **Datasets:** SAM, Dial, Email, QM, Tweet
+*   **Lines:**
+    *   **Raw:** Yellow line.
+    *   **+Dial:** Orange line.
+    *   **+Omit:** Red line.
+
+**Other visual elements:**
+
+*   At the bottom of the slide, in red text: "Omission Detection is a valuable task."
+
+Slide 8
+Timestamp: 335.13s
+------------------------------
+.
+Here's a revised visual description of the slide:
+
+The slide features a Toronto skyline image at dusk, with the CN Tower clearly visible. Overlaid on the image are the details of the conference: "The 61st Annual Meeting of the Association for Computational Linguistics," "Toronto, Canada," and "July 9-14, 2023."
+
+Below the conference details, contact information is provided: "Contact: yczou18@fudan.edu.cn."  Two URLs are listed: "https://arxiv.org/abs/2211.07145" and "https://github.com/microsoft/msummarizer." A QR code is present on the left side of the slide.
+
+Total slides processed: 8

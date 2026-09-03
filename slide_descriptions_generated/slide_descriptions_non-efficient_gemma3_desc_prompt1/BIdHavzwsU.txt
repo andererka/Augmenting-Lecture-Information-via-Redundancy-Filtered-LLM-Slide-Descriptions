@@ -1,0 +1,189 @@
+Slide 1
+Timestamp: 6.00s
+------------------------------
+- Main topic: This slide presents a research paper titled "A Systematic Study of Knowledge Distillation for Natural Language Generation with Pseudo-Target Training" which was accepted to ACL 2023.
+
+- Key points:
+    - The paper investigates knowledge distillation for natural language generation.
+    - It specifically focuses on pseudo-target training.
+    - The authors are Nitay Calderon, Subhabrata Mukherjee, Roi Reichart, and Amir Kantor.
+    - The affiliations are Technion, Microsoft Research, and Microsoft.
+    - The work of Nitay Calderon was done during an internship at Microsoft MSAI.
+
+- Visual elements:
+    - Logos for ACL 2023, Technion, and Microsoft are displayed.
+    - Two QR codes are present, labeled "Paper" and "Code."
+    - A photograph of Nitay Calderon is in the bottom right corner.
+
+- Notable text:
+    - Title: "A Systematic Study of Knowledge Distillation for Natural Language Generation with Pseudo-Target Training"
+    - Authors: Nitay Calderon*, Subhabrata Mukherjee, Roi Reichart and Amir Kantor
+    - Affiliations: Technion, Microsoft Research, Microsoft
+    - Footnote: "* Work was mainly done during an internship at Microsoft MSAI"
+
+Slide 2
+Timestamp: 13.50s
+------------------------------
+- Main topic: This slide presents a research paper titled "A Systematic Study of Knowledge Distillation for Natural Language Generation with Pseudo-Target Training" which was presented at ACL 2023.
+
+- Key points:
+    - The paper investigates knowledge distillation for natural language generation.
+    - It specifically focuses on pseudo-target training.
+    - The authors are Nitay Calderon, Subhabrata Mukherjee, Roi Reichart, and Amir Kantor.
+    - The research was conducted at Technion and Microsoft Research.
+    - Nitay Calderon's work was primarily done during an internship at Microsoft MSAI.
+
+- Visual elements:
+    - Logos for ACL 2023, Technion, and Microsoft are displayed.
+    - Two QR codes are present, labeled "Paper" and "Code."
+    - A small photo of Nitay Calderon is in the bottom right corner.
+
+- Notable text:
+    - Title: "A Systematic Study of Knowledge Distillation for Natural Language Generation with Pseudo-Target Training"
+    - Authors: Nitay Calderon*, Subhabrata Mukherjee, Roi Reichart and Amir Kantor
+    - Affiliations: Technion, Microsoft Research, Technion, Microsoft
+    - Footnote: "* Work was mainly done during an internship at Microsoft MSAI"
+
+Slide 3
+Timestamp: 49.49s
+------------------------------
+- Main topic: This slide explains the motivation behind research into compressing large language models (LLMs) for natural language generation (NLG) systems.
+- Key points:
+    - NLG systems based on LLMs require massive computational, storage, and financial resources.
+    - There is increasing industry demand for compressing these models while maintaining their performance.
+- Visual elements: A bubble chart displays the evolution of LLMs from 2018 to 2023. Each bubble represents a specific LLM, with the size of the bubble likely indicating its parameter count or significance. The chart is labeled "Lilian Weng's LLM Timeline."
+- Notable text:
+    - Title: Motivation
+    - Bullet points: "NLG systems, which are based on LLMs, have massive computational, storage and financial requirements." and "There is a growing demand in the industry for compressing such models while preserving their performance."
+
+Slide 4
+Timestamp: 141.48s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide outlines the research gaps in knowledge distillation (KD) for natural language generation (NLG) and introduces the study's approach to address these gaps.
+
+- **Key points:**
+    * Most KD works focus on natural language understanding (NLU) tasks or task-agnostic KD (pre-training).
+    * All KD for NLG works focus on a single generation task (such as Neural Machine Translation - NMT).
+    * All KD for NLG works consider large datasets with hundreds of thousands of labeled examples and ignore unlabeled data.
+    * The current approach is not a realistic or industry-driven setup.
+    * The study conducts a systematic study of task-specific KD for NLG, considering a variety of NLG tasks in realistic setups.
+
+- **Visual elements:**
+    * The slide has a white background.
+    * The title "Our Study" is in a yellow rectangle at the top.
+    * The text is primarily black.
+    * Some terms are highlighted in blue.
+    * A small red dot is present near the bottom right of the text.
+    * A person is visible in the right side of the screen, likely the speaker.
+
+- **Notable text:**
+    * "Our Study" (title)
+    * "Research gaps:" (section title)
+    * "NLU" (Natural Language Understanding)
+    * "KD" (Knowledge Distillation)
+    * "NLG" (Natural Language Generation)
+    * "NMT" (Neural Machine Translation)
+    * "This is not a realistic or industry-driven setup."
+    * "We conduct a systematic study of task-specific KD for NLG, considering a variety of NLG tasks in realistic setups."
+
+Slide 5
+Timestamp: 185.48s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide outlines five criteria for a realistic and attractive setup for NLP practitioners.
+
+- **Key points:**
+    - A medium-resource labeled dataset (several thousands).
+    - Plentiful unlabeled data.
+    - Off-the-shelf, small-to-medium size, fine-tuned Language Models (LMs).
+    - Inference time efficiency is the goal, achieved through high compression.
+    - One-time computational training resources are negligible.
+
+- **Visual elements:**
+    - Five icons are used to represent each criterion: a stack of papers, a larger stack of papers, a Hugging Face logo with a smiling face, a graph with a balance scale, and a graph with a balance scale.
+    - The balance scale icons are colored with green and light green to represent train and inference respectively.
+
+- **Notable text:**
+    - Title: "Realistic Setup"
+    - Subtitle: "5 criteria that are attractive for a broad range of NLP practitioners"
+    - Labels for each criterion: (1), (2), (3), (4), (5)
+    - Terms: "labeled dataset," "unlabeled data," "fine-tuned LMs," "Inference time efficiency," "high compression," "computational training resources."
+    - Brand name: "Hugging Face"
+
+Slide 6
+Timestamp: 204.48s
+------------------------------
+- Main topic: This slide details the tasks and datasets used in experiments related to realistic setups.
+- Key points:
+    - The experiments involve summarization (XSUM), question generation (SQuAD), common sense reasoning (ART), and simplification/style transfer (Shakespeare).
+    - The slide lists the names of the datasets used for each task.
+    - It provides statistics for each dataset, including the number of training examples, unlabeled examples, development set examples, test set examples, maximum input length (in tokens), and maximum target length (in tokens).
+- Visual elements:
+    - A table titled "Table 1: Datasets used in our experiments and the number of examples in each split. Input and Target represent the maximum lengths (tokens) we use in experiments."
+    - The table has the following columns: Name, Train, Unlabeled, Dev, Test, Input, Target.
+    - The table rows list the datasets: XSUM48, SQuAD17, ART10, Shakespeare.
+- Notable text:
+    - "Realistic Setup – Tasks and Datasets" (title)
+    - XSUM, Narayan et al., 2018 (dataset and citation)
+    - SQuAD, Rajpurkar et al., 2018 (dataset and citation)
+    - ART, Bhagavatula et al., 2020 (dataset and citation)
+    - Shakespeare, Xu et al., 2012; Jhamtani et al., 2017 (dataset and citations)
+    - "Input and Target represent the maximum lengths (tokens) we use in experiments." (table caption)
+
+Slide 7
+Timestamp: 347.46s
+------------------------------
+**Slide Content Description:**
+
+- **Main topic:** This slide presents a systematic study design exploring various configurations of pre-training techniques (PTs) for language models, considering different resource constraints and setups.
+
+- **Key points:**
+    * The study investigates the impact of architecture, pruning, objective function, pre-training strategies, and joint teaching approaches.
+    * Two setups are considered: a realistic setup with medium-resource labeled data and plentiful unlabeled data, and an extreme setup with no labeled data (GPT-4 to GPT-5).
+    * The study is structured around eight dimensions: architecture, pruning, objective, pre-training techniques, unlabeled data usage, number of pre-training tasks, decoding strategy, and joint teaching.
+    * Each dimension has multiple options, creating a matrix of configurations to be explored.
+
+- **Visual elements:**
+    * A large matrix diagram dominates the slide.
+    * The matrix has eight columns representing the eight dimensions of the study.
+    * Each cell within the matrix represents a specific configuration of the study, combining different options for each dimension.
+    * The matrix is divided into two main sections: one for the "Realistic Setup" and one for the "Extreme Setup."
+    * The "Realistic Setup" section is larger and contains more configurations.
+    * The matrix uses boxes to represent each configuration, with text labels inside indicating the specific options chosen.
+
+- **Notable text:**
+    * **Title:** "A Systematic Study"
+    * **Subtitle:** "Realistic Setup: Medium-resource labeled dataset with plentiful unlabeled data" and "Extreme setup: No labeled data: GPT-4 to T-5"
+    * **Column headers:** St. (Step) 1. Architecture, St. 2. Pruning, St. 3. Objective, St. 4. PTs, St. 5. Unlabeled, St. 6. Number of PTs, St. 7. Decoding, St. 8. Joint Teaching
+    * **Configuration labels:** Examples include "Encoder-decoder," "No PTs," "Fine-tune + Single PT," "Logits KD," "Beam Search," "Only Teacher," "High Temp Sampling."
+    * **Highlighted terms:** "PTs" (pre-training techniques), "KD" (Knowledge Distillation)
+
+Slide 8
+Timestamp: 350.96s
+------------------------------
+**Slide Content Analysis:**
+
+- **Main topic:** This slide outlines a recipe or set of recommendations for performing knowledge distillation.
+
+- **Key points:**
+    * Use an encoder-decoder model: They are better suited for small-to-medium size fine-tuned models in conditional generation tasks.
+    * Prune the decoder layers: This speeds up the autoregressive generation process and minimally impacts the task performance.
+    * If you lack labeled data: Generate with a huge LM (e.g., GPT-4) and use them to fine-tune a medium teacher.
+    * Generate with the medium-size teacher multiple PTs via sampling: For the labeled and the unlabeled examples.
+    * Employ Logits KD: Augment the training data with PTs and apply Logits KD.
+    * Embrace Joint-Teaching: Apply Logits KD not only to PTs generated teacher, but also to PTs generated by the student.
+
+- **Visual elements:**
+    * Numbered list of recommendations.
+    * A person is visible in the lower right corner of the slide.
+
+- **Notable text:**
+    * Title: "Knowledge Distillation Recipe"
+    * Highlighted terms: "Encoder-decoder model," "Prune the decoder layers," "Logits KD," "Joint-Teaching," "PTs" (likely an abbreviation for "Pseudo-labels" or "Prompted Text").
+    * Example LM: "GPT-4"
+    * Abbreviation: "LM" (Language Model)
+
+Total slides processed: 8

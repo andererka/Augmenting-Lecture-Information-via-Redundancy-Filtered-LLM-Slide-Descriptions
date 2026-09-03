@@ -1,0 +1,112 @@
+Here is the rewritten slide description containing only information not explicitly conveyed in the transcript:
+
+---
+
+**Slide 1**
+- **Title:** A Systematic Study of Knowledge Distillation for Natural Language Generation with Pseudo-Target Training
+- **Text content:**
+  - *Nitay Calderon*, Subhabrata Mukherjee, Roi Reichart and Amir Kantor
+  - Technion Microsoft Research Technion Microsoft
+  - * Work was mainly done during an internship at Microsoft MSAI
+- **Visual elements:**
+  - Logos: ACL 2023, Technion, Microsoft (top left and top right corners)
+  - QR codes (right side): "Paper" and "Code"
+  - Image: A photograph of Nitay Calderon (bottom right)
+  - Title in large yellow font; author names and affiliations in black text below the title
+  - Asterisk next to Nitay Calderon’s name with a footnote explaining the internship
+
+**Slide 2**
+*(Identical to Slide 1 in content and layout)*
+
+**Slide 3**
+- **Title:** Motivation
+- **Text content:**
+  - NLG systems, which are based on LLMs, have massive computational, storage and financial requirements.
+  - There is a growing demand in the industry for compressing such models while preserving their performance.
+- **Figures/graphs:**
+  - Bubble chart showing the growth of LLMs (2018–2023) with bubble sizes representing parameter counts
+  - **2018:** GPT-3, Jurassic-1, Llama 30B (small bubbles)
+  - **2019:** GPT-3 (small bubble)
+  - **2021:** GPT-3, Jurassic-1, Llama 65B, Gopher (medium bubbles)
+  - **2022:** MT-NLG (large central bubble), Luminous, PaLM, BLOOM, OPT-175B, Chinchilla, LaMDA (medium bubbles)
+  - **2023:** OPT-4, GLM-130B (medium bubbles), Galactica (small bubble)
+  - Source attribution: "lifearchitecture.ai/models" (bottom right of chart)
+- **Layout:** White background; title in large bold font at the top; bullet points below title; chart occupies lower portion
+
+**Slide 4**
+- **Title:** Our Study
+- **Text content:**
+  - Research gaps:
+    - Most KD works focus on NLU tasks, or on task-agnostic KD (pre-training).
+    - All KD for NLG works focus on a single generation task (such as NMT).
+    - All KD for NLG works consider large datasets with hundreds of thousands of labeled examples and ignore unlabeled data. This is not a realistic or industry-driven setup.
+  - This study:
+    - We conduct a systematic study of task-specific KD for NLG, considering a variety of NLG tasks in realistic setups.
+- **Visual elements:**
+  - White background; title in yellow text at top left; black text for bullet points
+  - Partial view of a person (bottom right): dark shirt, short dark hair
+
+**Slide 5**
+- **Title:** Realistic Setup
+- **Text content:**
+  - 5 criteria that are attractive for a broad range of NLP practitioners:
+    1. A medium-resource (several thousands) labeled dataset.
+    2. Plentiful unlabeled data.
+    3. Off-the-shelf + small-to-medium size + fine-tuned LMs.
+    4. Inference time efficiency is our goal = high compression
+    5. One-time computational training resources are negligible
+- **Figures/graphs:**
+  - **Figure 1:** Scale icon with "Train" side heavily weighted and "Inference" side lightly weighted, balanced
+  - **Figure 2:** Cartoon images of Hugging Face logo (smiling face) and Homer Simpson
+- **Layout:** Yellow background; title in large bold font; bullet points with corresponding icons:
+  - Criterion 1: Stack of papers icon
+  - Criterion 2: Stack of documents icon
+  - Criterion 3: Neural network diagram icon with cartoon faces
+  - Criterion 4: Clock with upward arrow icon
+  - Criterion 5: Scale icon
+
+**Slide 6**
+- **Title:** Realistic Setup – Tasks and Datasets
+- **Text content:**
+  - Summarization (XSUM, Narayan et al., 2018)
+  - Question generation (SQuAD, Rajpurkar et al., 2016, 2018)
+  - Common sense reasoning (ART, Bhagavatula et al., 2020)
+  - Simplification, style transfer (Shakespeare, Xu et al., 2012; Jhamtani et al., 2017)
+- **Tables:**
+  - **Table 1:** Datasets used in experiments with number of examples in each split and max token lengths
+
+| Name   | Train | Unlabeled | Dev  | Test | Input | Target |
+| :----- | :---- | :-------- | :--- | :--- | :---- | :----- |
+| XSUM40 | 40K   | 164K      | 5K   | 11.3K | 480   | 32     |
+| SQuAD17 | 17.5K | 70K       | 1.57K | 9K   | 320   | 32     |
+| ART10  | 10K   | 40K       | 1.25K | 14.3K | 48    | 48     |
+| Shake7 | 7K    | 28K       | 0.75K | 0.8K  | 48    | 48     |
+- **Layout:** Yellow background; title in large bold font; bullet points aligned left; table below; person visible in lower right corner (dark shirt, short dark hair)
+
+**Slide 7**
+- **Title:** A Systematic Study
+- **Text content:**
+  - Realistic setup: Medium-resource labeled dataset with plentiful unlabeled data.
+  - Extreme setup: No labeled data. GPT-4 to T5-S
+- **Tables:**
+  - **Table:** Experimental setups with columns:
+    - Sl. (row number)
+    - Architecture (Encoder-decoder, Decoder-only)
+    - Pruning (No Pruning, Encoder Pruning, Decoder Pruning)
+    - Objective (Fine-tuning, Logits KD, Noisy KD, Attention Relations KD)
+    - PTs (Pseudo-Targets: Fine-tune + Single PT, Logits KD + Single PT)
+    - Unlabeled (Labeled and Unlabeled)
+    - Number of PTs (No PTs, A single PT, Multiple PTs)
+    - PTs Decoding (Beam Search, Sampling, High Temp Sampling)
+    - Joint-Teaching (Only Teacher, Only Student, Joint Teaching)
+- **Layout:** Table structure with headers and filled cells; person visible in bottom right (red shirt, headphones, dark hair)
+
+**Slide 8**
+- **Title:** Knowledge Distillation Recipe
+- **Text content:**
+  1. Use an Encoder-decoder model: They are better suited for small-to-medium size fine-tuned models in conditional generation tasks.
+  2. Prune the decoder layers: This speeds up the autoregressive generation process and minimally impacts the task performance.
+  3. If you lack labeled data: Generate with a huge LM (e.g., GPT-4) PTs and use them to fine-tune a medium teacher.
+  4. Generate with the medium-size teacher multiple PTs via sampling: For the labeled and the unlabeled examples.
+  5. Employ Logits KD: Augment the training data with PTs and apply Logits KD.
+  6. Embrace Joint-Teaching: Apply Logits KD not only to PTs generated by the teacher, but also to PTs generated by the student.

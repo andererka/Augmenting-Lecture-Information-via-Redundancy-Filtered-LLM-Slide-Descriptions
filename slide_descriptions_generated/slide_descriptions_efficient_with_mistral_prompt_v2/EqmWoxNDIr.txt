@@ -1,0 +1,149 @@
+Here is the rewritten slide description with only visual information not derivable from the transcript:
+
+---
+
+**Slide 1 & 2 (Identical)**
+- **Title:** "Are You Copying My Model? Protecting the Copyright of Large Language Models for EaaS via Backdoor Watermark"
+- **Authors & Affiliations:**
+  - Wenjun Peng*, Jingwei Yi*, Fangzhao Wu², Shangxi Wu¹, Bin Zhu¹, Lingjuan Lyu⁴, Binxing Jiao¹, Tong Xu¹, Guangzhong Sun¹, Xing Xie²
+  - Affiliations labeled with superscripts (¹, ², ³, ⁴, ⁵) and corresponding institutions:
+    - ¹University of Science and Technology of China
+    - ²Microsoft Research Asia
+    - ³Beijing Jiaotong University
+    - ⁴Sony AI
+    - ⁵Microsoft STC Asia
+- **Logos:** Four institutional logos displayed in a horizontal row at the bottom:
+  - University of Science and Technology of China
+  - Microsoft Research Asia
+  - Beijing Jiaotong University
+  - Sony AI
+
+---
+
+**Slide 3 (Background)**
+- **Title:** "Background"
+- **Content:**
+  - **Bullet Points:**
+    - "Large language models (LLMs) are exceptional in NLU and NLG" (with GPT, LLaMA, PaLM listed below)
+    - "Embedding as a Service (EaaS) is offered to assist various NLP tasks" (with OpenAI’s GPT3-based embedding API mentioned)
+  - **Table:**
+    - **Header:** "MODEL" | "USAGE"
+    - **Row:** "Ada" | "$0.0004 / k token"
+    - **Additional Note:** "This Ada, text-embedding-ada-002, is a better and lower cost replacement for our older embedding models. Show old pricing" (appears as a callout or footnote below the table)
+  - **References:**
+    - Three academic citations with full details (authors, title, venue, year).
+    - A URL link for OpenAI’s embeddings API.
+  - **Visual Elements:**
+    - A screenshot of a webpage showing OpenAI’s pricing page for the Ada embedding model (visible in the lower portion of the slide).
+    - A speaker icon in the bottom right corner of the slide.
+
+---
+
+**Slide 4 (EmbMarker - Watermark Injection)**
+- **Title:** "EmbMarker"
+- **Content:**
+  - **Bullet Points:**
+    - "Watermark injection"
+    - Definitions:
+      - Target embedding: \( e_t \)
+      - Trigger number in a sentence: \( Q(s) = \frac{min(|s \cap T|, m)}{m} \)
+      - Original embedding: \( e_o \)
+      - Copy dataset: \( D_c \)
+      - Provided embedding: \( E_c \)
+  - **Diagram (Watermark Injection Process):**
+    - **Left Side:**
+      - A cylinder labeled "copy dataset \( D_c \)" with a stick figure labeled "stealer" next to it.
+      - An arrow from the cylinder to a box labeled "provider's model."
+    - **Center:**
+      - A neural network diagram inside a box labeled "provider's model."
+      - Three input boxes feeding into the neural network:
+        - "trigger set \( T \)" (database icon)
+        - "trigger number \( c \)" (database icon)
+        - "backdoor weight \( Q \)" (database icon)
+      - Two output paths from the neural network:
+        - "original embedding \( e_o \)" → "(1 - Q) +"
+        - "target embedding \( e_t \)" → "Q"
+      - Both paths converge into a "normalize" box, producing "provided embedding \( E_c \)."
+    - **Right Side:**
+      - A box labeled "provider's EaaS" with "embedding \( E_c \)" inside.
+    - **Additional Labels:**
+      - \( T \): trigger set
+      - \( S \): sentence
+      - \( m \): max trigger number
+
+---
+
+**Slide 5 (EmbMarker - Copyright Verification)**
+- **Title:** "EmbMarker"
+- **Content:**
+  - **Bullet Points:**
+    - "Copyright verification"
+    - Definitions:
+      - Backdoor dataset: \( D_b = \{w_1, w_2, ..., w_m\} | w_i \in T\} \)
+      - Benign dataset: \( D_n = \{w_1, w_2, ..., w_m\} | w_i \notin T\} \)
+  - **Diagram (Copyright Verification Process):**
+    - **Provider Side:**
+      - "Trigger Set \( T \)" (database icon)
+      - "Backdoor and Benign Dataset \( D_b + D_n \)" (database icon) connected to "extracted model."
+      - A checkmark icon next to "verify extracted?"
+      - "Target Embedding" (database icon)
+      - "Embedding \( E_b + E_n \)" (database icon)
+    - **Stealer Side:**
+      - "Extracted Model" (neural network diagram)
+      - "Train \( D_c \)" (database icon) connected to "corpus embeddings \( E_c \)" (database icon)
+      - A stick figure labeled "stealer" next to the "extracted model."
+    - **Connections:**
+      - Arrows linking "trigger set \( T \)" and "backdoor and benign dataset \( D_b + D_n \)" to the "extracted model."
+      - Arrows from "extracted model" to "train \( D_c \)" and "corpus embeddings \( E_c \)."
+      - Arrows from "verify extracted?" to "target embedding" and "embedding \( E_b + E_n \)."
+
+---
+
+**Slide 6 (Experimental Results - Performance Comparison)**
+- **Title:** "Experimental Results"
+- **Content:**
+  - **Bullet Point:** "Performance comparison"
+  - **Table:**
+    - **Columns:** Dataset | Method | ACC | p-value ↓ | Δ_test ↓ | Δ_tr ↓
+    - **Rows:** Four datasets (SST2, MIND, AGNews, Enron Spam) with three methods each (Original, RedAlarm, EmbMarker/Ours).
+    - **Metrics:**
+      - ACC (accuracy)
+      - p-value (with downward arrow indicating lower is better)
+      - Δ_test (with downward arrow)
+      - Δ_tr (with downward arrow)
+    - **Values:** Mean ± standard deviation for each metric.
+  - **Visual Elements:**
+    - A speaker icon in the bottom right corner of the slide.
+
+---
+
+**Slide 7 (Experimental Results - Embedding Visualization)**
+- **Title:** "Experimental Results"
+- **Content:**
+  - **Bullet Point:** "Embedding visualization"
+  - **Four Sub-Figures (2x2 Grid):**
+    - **(a) AG News:**
+      - Scatter plot with x-axis from -0.2 to 0.2 (increments of 0.1) and y-axis from -0.2 to 0.6 (increments of 0.2).
+      - Data points as blue dots clustered in an elliptical shape.
+      - A gray rectangle drawn around the cluster.
+    - **(b) Enron Spam:**
+      - Scatter plot with x-axis from -0.2 to 0.2 (increments of 0.1) and y-axis from -0.2 to 0.3 (increments of 0.1).
+      - Data points as blue dots clustered in a spherical shape.
+      - A gray rectangle drawn around the cluster.
+    - **(c) MIND:**
+      - Scatter plot with x-axis from -0.2 to 0.2 (increments of 0.1) and y-axis from -0.2 to 0.3 (increments of 0.1).
+      - Data points as blue dots clustered in a spherical shape.
+      - A gray rectangle drawn around the cluster.
+    - **(d) SST2:**
+      - Scatter plot with x-axis from -0.2 to 0.2 (increments of 0.1) and y-axis from -0.2 to 0.3 (increments of 0.1).
+      - Data points as blue dots clustered in a spherical shape.
+      - A gray rectangle drawn around the cluster.
+  - **Visual Elements:**
+    - A speaker icon in the bottom right corner of the slide.
+
+---
+**Slide 8 (Closing)**
+- **Title:** "Thanks!"
+- **Content:**
+  - Large "Thanks!" text centered at the bottom of the slide.
+  - A small video feed of the speaker in the bottom right corner.

@@ -1,0 +1,263 @@
+Here’s the revised visual description, focusing on elements not explicitly covered in the speaker’s transcript while preserving key diagrams, charts, and precise details:
+
+---
+
+### Slide 1
+**Title:** Cosmopolitan is a dogwhistle
+**Timestamp:** 27.50s
+
+**Text content:**
+- Dogwhistles send one message to an outgroup and a second (often taboo, controversial, or inflammatory) message to an in-group (Henderson & McCready, 2018)
+  - In-group knows "cosmopolitan" → Jewish
+  - But Hawley has plausible deniability. He never says Jewish!
+
+**Visual elements:**
+- White background, black text.
+- "cosmopolitan" highlighted in blue; "Jewish" highlighted in red.
+- Slide number "57" in the bottom right corner.
+
+---
+
+### Slide 2
+**Timestamp:** 56.50s
+
+**Title:** *(Not present)*
+
+**Text content:**
+*(None beyond diagram labels)*
+
+**Visual elements:**
+- Diagram illustrating coded communication:
+  - **Source Column:**
+    - Megaphone icon → "Speaker" (image of Tucker Carlson)
+    - Message: "Cosmopolitan"
+    - Persona: "Anti-semite"
+  - **Audience Column:**
+    - Group icon → "Outgroup" / "Ingroup"
+  - **Meaning Column:**
+    - Brain icon → "Literal: Worldly" / "Coded: Jewish"
+  - Arrows:
+    - "Message: Cosmopolitan" → "Outgroup" (literal meaning)
+    - "Persona: Anti-semite" → "Ingroup" (coded meaning)
+  - Horizontal bar labeled "Plausible Deniability" above the Audience column.
+- Slide number "55" in the bottom right corner.
+
+---
+
+### Slide 3
+**Title:** Understanding dogwhistles is important
+**Timestamp:** 75.50s
+
+**Text content:**
+- Meaning depends on speaker identity, context, and multiple audiences.
+- Mechanism of political influence and persuasion.
+- Enables hateful and abusive rhetoric while evading content moderation.
+
+**Visual elements:**
+- Three icons (left to right):
+  1. Head with overlapping circles (symbolizing layered meaning).
+  2. Head emitting radio waves (symbolizing communication).
+  3. Head with censored speech bubble (symbolizing suppression).
+- Slide number "59" in the bottom right corner.
+
+---
+
+### Slide 4
+**Title:** Understanding dogwhistles is important
+**Timestamp:** 82.50s
+
+**Text content:**
+- But studying them is hard.
+- A fundamental problem of dogwhistles:
+  - They are most successful when the outgroup is unaware. And we're usually in the outgroup.
+
+**Visual elements:**
+- Image of a blue flag with white text: "LET'S GO BRANDON".
+- Slide number "60" in the bottom right corner.
+
+---
+
+### Slide 5
+**Title:** This project
+**Timestamp:** 162.50s
+
+**Visual elements:**
+- Light gray background divided into four quadrants:
+  1. **Top-left:** Open book icon (letters "A-Z") → "Typology & glossary with rich contextual information".
+  2. **Top-right:** Podium icon (word "STATE") → "Case study of historical U.S. political speeches".
+  3. **Bottom-left:** Computer monitor icon (code) → "Evaluate dogwhistle recognition in language models".
+  4. **Bottom-right:** Masked head icon (censored speech) → "Show how dogwhistles evade content moderation".
+- Slide number "73" in the bottom right corner.
+
+---
+
+### Slide 6
+**Title:** Higher association with conservatism over time
+**Timestamp:** 189.50s
+
+**Text content:**
+- Racial dogwhistles used by increasingly conservative speakers.
+- Speaker ideology estimated with DW-NOMINATE (dim 1).
+
+**Visual elements:**
+- Line graph:
+  - **X-axis:** Time (1940–2020, increments of 10 years).
+  - **Y-axis:** DW-NOMINATE Score (Dim. 1) from -0.4 (liberal) to 0.4 (conservative).
+  - **Legend (top-right):**
+    - property rights (blue)
+    - rights (green)
+    - welfare reform (orange)
+    - hardworking Americans (red)
+    - Willie Horton (purple)
+  - **Trends:**
+    - property rights: Gradual increase from ~0 to ~0.25 (1940–2020).
+    - rights: Gradual increase from ~0 to ~0.15.
+    - welfare reform: Gradual increase from ~0 to ~0.15.
+    - hardworking Americans: Gradual increase from ~0 to ~0.2.
+    - Willie Horton: Sharp drop to ~-0.4 (1990), then recovery to ~-0.1.
+- Slide number "75" in the bottom right corner.
+
+---
+
+### Slide 7
+**Title:** Surfacing dogwhistles with language models
+**Timestamp:** 216.50s
+
+**Text content:**
+- GPT-3 surfaces 45% of dogwhistles in our glossary, and 69% of dogwhistles that belong to a "formal" register.
+- It also identifies potential dogwhistles not covered by the glossary (e.g., tax relief, patriotism).
+
+**Visual elements:**
+- Slide number "78" in the bottom right corner.
+
+---
+
+### Slide 8
+**Title:** But performance varies a lot
+**Timestamp:** 227.50s
+
+**Text content:**
+- GPT-3 surfaces under 20% of “informal/online” dogwhistles for all personae.
+- Among “formal/offline” dogwhistles, lowest recall for transphobic dogwhistles.
+- Maybe recency or domain effects in training data?
+
+**Visual elements:**
+- Bar graph:
+  - **X-axis:** Two categories—"Informal/Online" and "Formal/Offline".
+  - **Y-axis:** "Percent surfaced by GPT-3".
+  - **Bars (5 per category):**
+    - **Informal/Online:**
+      - transphobic (blue): ~12%
+      - antisemitic (orange): ~15%
+      - anti-Black (green): ~18%
+      - white supremacist (purple): ~16%
+      - Islamophobic (brown): ~14%
+    - **Formal/Offline:**
+      - transphobic (blue): ~42%
+      - antisemitic (orange): ~72%
+      - anti-Black (green): ~75%
+      - white supremacist (purple): ~83%
+      - Islamophobic (brown): ~78%
+- Legend: Persona colors (same as above).
+- Slide number "81" in the bottom right corner.
+
+---
+
+### Slide 9
+**Title:** Identifying covert meanings with GPT-3
+**Timestamp:** 241.50s
+
+**Text content:**
+- Example: "cosmopolitan" secretly means "Jewish" to many anti-Semitic people.
+
+|                   | No Secret Cue | With Secret Cue |
+|-------------------|----------------|-----------------|
+| No Definition     | .085 [±.025]  | .296 [±.021]  |
+| With Definition   | .437 [±.010]  | .543 [±.010]  |
+
+**Visual elements:**
+- Table with two rows (No Definition / With Definition) and two columns (No Secret Cue / With Secret Cue).
+- Slide number "81" in the bottom right corner.
+
+---
+
+### Slide 10
+**Title:** Dogwhistles and Large Language Models
+**Timestamp:** 251.50s
+
+**Text content:**
+- Formal: Dogwhistle definition & secret cue boost performance.
+- Informal: Only dogwhistle definition significantly helps.
+
+**Visual elements:**
+- Bar graph:
+  - **X-axis:** Prompt Type (4 categories):
+    1. No Definition Nor Secret Cue
+    2. Only Secret Cue
+    3. Only Dogwhistle Definition
+    4. Definition & Secret Cue
+  - **Y-axis:** "GPT-3 Identified Covert Meaning (frac. of generations)" (0.0–0.7).
+  - **Bars (2 per prompt type):**
+    - **Informal Register (blue):**
+      - No Definition Nor Secret Cue: ~0.03
+      - Only Secret Cue: ~0.08
+      - Only Dogwhistle Definition: ~0.31
+      - Definition & Secret Cue: ~0.33
+    - **Formal Register (orange):**
+      - No Definition Nor Secret Cue: ~0.05
+      - Only Secret Cue: ~0.48
+      - Only Dogwhistle Definition: ~0.51
+      - Definition & Secret Cue: ~0.69
+  - Error bars present for all bars.
+- Slide number "81" in the bottom right corner.
+
+---
+
+### Slide 11
+**Timestamp:** 268.50s
+
+**Text content:**
+- Table A.5: Sample of template hateful sentences from HateCheck (n=277). Inputs for Perspective API created by replacing identity term placeholders with standard group labels, dogwhistles, or slurs.
+
+**Template Examples:**
+- "So sick of being around [IDENTITY_P] like you."
+- "[IDENTITY_P] are disgusting."
+- "I will cut their [IDENTITY_P] throats."
+- "All [IDENTITY_P] should feel off forever."
+- "Isn’t it typical of a [IDENTITY_S] to be that stupid?"
+
+**Table A.6:** Racist, antisemitic, and transphobic terms used for toxic language detection analysis.
+
+| **Racist**       | **Antisemitic**   | **Transphobic**  |
+|------------------|-------------------|------------------|
+| African-American | Jewish            | transgender      |
+| Black            | Jew               | AGP              |
+| inner-city       | cosmopolitan      | anti-transphile  |
+| welfare queen    | cosmopolitan elite| AAP              |
+| thug             | coastal elite     | autotransphile   |
+| dindu            | globalist         | clownfish        |
+| ghetto           | international banker | troon        |
+| urban            | cultural Marxist  | TIF              |
+| superpredator    | Khazar            | TIM              |
+
+**Visual elements:**
+- Slide number "64" in the bottom right corner.
+
+---
+### Slide 12
+**Title:** This project
+**Timestamp:** 289.50s
+
+**Text content:**
+- Typology & glossary with rich contextual information.
+- Case study of historical U.S. political speeches.
+- Evaluate dogwhistle recognition in language models.
+- Show how dogwhistles evade content moderation.
+
+**Visual elements:**
+- Four horizontal icons:
+  1. Open book (letters "A-Z").
+  2. Podium (word "STATE").
+  3. Computer monitor (code).
+  4. Masked head (censored speech).
+- Watermark "B6" in the bottom right corner.

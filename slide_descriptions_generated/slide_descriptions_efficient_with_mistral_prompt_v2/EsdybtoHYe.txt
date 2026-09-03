@@ -1,0 +1,168 @@
+Here is the refined slide description containing only information not derivable from the transcript alone:
+
+---
+
+**Slide 1**
+**Title:** What's The Meaning of Superhuman Performance in Today's NLU?
+**Text content:**
+Simone Tedeschi, Johan Bos, Thierry Declerck,
+Jan Hajic, Daniel Herschcovich, Eduard H. Hovy,
+Alexander Koller, Simon Krek, Steven Schockaert,
+Rico Sennrich, Ekaterina Shutova and Roberto Navigli
+
+Contact emails:
+(tedeschi, navigli)@diag.unimore.it, johan.bos@rug.nl,
+declerck@dfki.de, hajic@ufal.mff.cuni.cz, dh@di.ku.dk,
+hovy@cmu.edu, koller@coli.uni-saarland.de, simon.krek@ijs.si,
+sschockaerts1@cardiff.ac.uk, sennrich@cl.uzh.ch, e.shutova@uva.nl
+
+**Visual elements:**
+- A cartoon-style illustration of a person sitting at a desk with a computer, wearing a purple t-shirt and black shorts, facing a grid-like interface (possibly a chessboard or game) on the screen. A large computer tower is to the right of the person.
+- Logos at the bottom:
+  - Top row: abelscape, SAPIENZA UNIVERSITY OF ROMA, ACL 2023
+  - Bottom row: KU Leuven, Carnegie Mellon University, ChaMeL, Universität des Saarlandes, University of Amsterdam, University of Ljubljana, University of Zurich, University of Trento, and others (too numerous to list individually).
+- A small circular image of the speaker in the bottom right corner.
+
+---
+
+**Slide 3**
+**Title:** Introduction
+**Text content:**
+- Leaderboard-based evaluation has become a popular practice in NLP
+- Not infrequently, systems achieve better-than-human performance on several tasks
+- This has led to claims of superhuman capabilities and the provocative idea that certain tasks have been solved
+
+**Figures/graphs:**
+- A bar graph titled "Saturated Benchmarks" with the following details:
+  - X-axis: Unlabeled, with bars arranged horizontally.
+  - Y-axis: Ranges from -40 to 40, with "0" marked.
+  - Legend on the left side with entries:
+    - MadQA (blue bar extending to ~-32)
+    - XTREME (red bar extending to ~-15)
+    - SuperGLUE (green bar extending to ~25)
+    - SQuAD 2.0 (light blue bar extending to ~10)
+    - GLUE (light green bar extending to ~5)
+    - SQuAD 1.1 (light blue bar extending to ~2)
+    - RACE (light green bar extending to ~3)
+  - A horizontal line at y=0 labeled "Human Baseline Estimate."
+
+**Other visual elements:**
+- White background.
+- Logos of abelscape and SAPIENZA Università di Roma in the bottom left corner.
+- A small circular image of the speaker in the bottom right corner.
+- Text "What's the Meaning of Superhuman Performance in Today's NLP (Tech" below the speaker image.
+
+---
+
+**Slide 4**
+**Title:** Introduction
+**Text content:**
+- Microsoft Research Blog headline: "Microsoft DeBERTa surpasses human performance SuperGLUE benchmark"
+- Published: January 6, 2021
+- Authors: Hengcheng Li, Principal SDE; Xiaodong Li, Principal Researcher; Jianfeng Gao, Director, President; Wenchu Chen, Partner Science Manager
+
+**Figures/graphs:**
+- Left side: Screenshot of the Microsoft Research Blog post with the headline, date, and author names.
+- Center: A graphic with the letters "NLP" in a stylized dot-pattern font, surrounded vertically by the text "SuperGLUE" and below with "Google's newest benchmark for understanding language and reasoning."
+- Right side: A bar graph titled "Saturated Benchmarks" with:
+  - X-axis: Unlabeled, with bars arranged horizontally.
+  - Y-axis: Unlabeled, with a vertical line at -40.
+  - Multiple bars in shades of green and red, with the leftmost bars red and the rightmost bars green.
+  - A label "Human Baseline Estimate" near the rightmost bars.
+
+**Other visual elements:**
+- White background.
+- Logos of abelscape and SAPIENZA in the bottom left corner.
+- A small circular image of the speaker in the bottom right corner.
+- Text "What's the Meaning of Superhuman Performance in Today's NLP (Tech" below the speaker image.
+
+---
+
+**Slide 6**
+**Title:** Apples and Oranges
+**Text content:**
+- Systems and humans are often evaluated on different sets
+  - On 7 out of 10 SuperGLUE tasks, humans are evaluated on a small portion (3%-40%) of the actual test sets
+
+**Figures/graphs:**
+- A bar graph comparing "Human" and "System" performance across NLP tasks:
+  - X-axis (tasks): AX-e, AX-q, BoolQ, CB, COPA, MultiRC, RTE, ReCoRD, WSC
+  - Y-axis (performance): Ranges from 0 to 10000, with increments of 1000
+  - Legend:
+    - Blue bars: Human performance
+    - Orange bars: System performance
+  - Data points:
+    - AX-e: Human ~150, System ~1100
+    - AX-q: Human ~100, System ~1100
+    - BoolQ: Human ~3300, System ~3500
+    - CB: Human ~100, System ~100
+    - COPA: Human ~100, System ~100
+    - MultiRC: Human ~100, System ~100
+    - RTE: Human ~1000, System ~3000
+    - ReCoRD: Human ~10000, System ~10000
+    - WSC: Human ~100, System ~800
+
+**Other visual elements:**
+- Light blue background.
+- Logos of abelscape (bottom left) and SAPIENZA (bottom center).
+- Text "What's the Meaning of Superhuman Performance in Today's NLP (Tech)" in the bottom right corner.
+- A small circular image of the speaker in the bottom right corner.
+
+---
+
+**Slide 7**
+**Title:** Human Evaluation Metrics
+**Text content:**
+- NLP researchers often naively or vaguely estimate human performance
+  - The term "human baseline" implies that systems need to beat it
+- ACM Chess Challenge: Compute the final score
+- ...the score of the best annotator...
+
+**Figures/graphs:**
+- A photograph of Garry Kasparov playing chess against an opponent, with a chessboard and flags visible in the background.
+
+**Other visual elements:**
+- Logos of abelscape and Sapienza University of Rome.
+- Text "What's the Meaning of Superhuman Performance in Today's NLP?" at the bottom.
+
+---
+
+**Slide 8**
+**Title:** Conclusions
+**Text content:**
+- We discussed the tendency to claim superhuman performance for new systems
+- We outlined why such claims are not (yet) grounded
+- In our paper:
+  - We discuss the consequences of the identified issues
+  - We provide recommendations to construct fairer and more transparent benchmarks
+
+**Figures/graphs:**
+- A figure of a printed research paper titled "What's the Meaning of Superhuman Performance in Today's NLP? (Tech Report)" with visible abstract and main text portions.
+- A bar graph within the paper:
+  - X-axis categories: Human, GPT-3, GPT-3.5, GPT-4, Claude
+  - Y-axis: Accuracy
+  - Bars show increasing accuracy from Human to Claude, with Claude having the highest bar.
+
+**Other visual elements:**
+- Blue background with a white rectangular area containing text and the figure.
+- Logos of abelscape and SAPIENZA Università di Roma at the bottom left and center.
+- Title "What's the Meaning of Superhuman Performance in Today's NLP?" at the bottom right, below the paper figure.
+
+---
+
+**Slide 9**
+**Title:** Conclusions
+**Text content:**
+- We discussed the tendency to claim superhuman performance for new systems
+- We outlined why such claims are not (yet) grounded
+- In our paper:
+  - We discuss the consequences of the identified issues
+  - We provide recommendations to construct fairer and more transparent benchmarks
+
+**Figures/graphs:**
+- A figure showing a multi-page PDF of a research paper titled "What's the Meaning of Superhuman Performance in Today's NLP?" with authors Marco Baroni, Alessandro Rizzuto, Umberto Bernadini, and Matteo Negri, and affiliations abelscape and Sapienza Università di Roma.
+
+**Other visual elements:**
+- Blue background with a white rectangular area containing the figure.
+- Logos of abelscape and SAPIENZA Università di Roma at the bottom left and center.
+- Title "What's the Meaning of Superhuman Performance in Today's NLP?" at the bottom right, below the paper figure.

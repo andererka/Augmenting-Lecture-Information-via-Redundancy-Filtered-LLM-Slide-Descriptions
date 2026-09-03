@@ -1,0 +1,101 @@
+Slide 1
+Timestamp: 6.00s
+------------------------------
+- Main topic: This slide presents a research paper accepted to ACL 2023 titled "A Systematic Study of Knowledge Distillation for Natural Language Generation with Pseudo-Target Training."
+
+- Visual elements:
+    - Logos for ACL 2023, Technion, and Microsoft are displayed.
+    - Two QR codes are present, labeled "Paper" and "Code."
+    - A photograph of Nitay Calderon is in the bottom right corner.
+
+- Notable text:
+    - Title: "A Systematic Study of Knowledge Distillation for Natural Language Generation with Pseudo-Target Training"
+    - Authors: Nitay Calderon*, Subhabrata Mukherjee, Roi Reichart and Amir Kantor
+    - Footnote: "* Work was mainly done during an internship at Microsoft MSAI"
+-
+
+Slide 2
+Timestamp: 13.50s
+------------------------------
+Logos for ACL 2023, Technion, and Microsoft are displayed. Two QR codes are present, labeled "Paper" and "Code." A small photo of Nitay Calderon is in the bottom right corner.
+-
+
+Slide 3
+Timestamp: 49.49s
+------------------------------
+- Visual elements: A bubble chart labeled "Lilian Weng's LLM Timeline" displays the evolution of LLMs from 2018 to 2023.
+- Notable text: Title: Motivation.
+- The slide has a clean, professional design with a focus on readability.
+
+Slide 4
+Timestamp: 141.48s
+------------------------------
+- The slide has a white background.
+- The title "Our Study" is in a yellow rectangle at the top.
+- The text is primarily black.
+- Some terms are highlighted in blue.
+- A small red dot is present near the bottom right of the text.
+- A person is visible in the right side of the screen, likely the speaker.
+
+Slide 5
+Timestamp: 185.48s
+------------------------------
+Visual description of the slide:
+
+- **Slide Content Analysis:**
+    - The slide is divided into five sections, each representing a criterion for a realistic NLG setup.
+    - Each criterion is accompanied by an icon: a stack of papers, a larger stack of papers, a Hugging Face logo with a smiling face, and two graphs with balance scales.
+    - The balance scale icons are colored with green and light green to represent train and inference respectively.
+
+- **Visual elements:**
+    - Five icons are used to represent each criterion.
+    - The balance scale icons are colored with green and light green to represent train and inference respectively.
+
+- **Notable text:**
+    - Title: "Realistic Setup"
+    - Subtitle: "5 criteria that are attractive for a broad range of NLP practitioners"
+    - Labels for each criterion: (1), (2), (3), (4), (5)
+-
+
+Slide 6
+Timestamp: 204.48s
+------------------------------
+- Visual elements:
+    - A table titled "Table 1: Datasets used in our experiments and the number of examples in each split. Input and Target represent the maximum lengths (tokens) we use in experiments."
+    - The table has the following columns: Name, Train, Unlabeled, Dev, Test, Input, Target.
+    - The table rows list the datasets: XSUM48, SQuAD17, ART10, Shakespeare.
+- Notable text:
+    - "Realistic Setup – Tasks and Datasets" (title)
+    - XSUM, Narayan et al., 2018
+    - SQuAD, Rajpurkar et al., 2018
+    - ART, Bhagavatula et al., 2020
+    - Shakespeare, Xu et al., 2012; Jhamtani et al., 2017
+    - "Input and Target represent the maximum lengths (tokens) we use in experiments." (table caption)
+- The table contains numerical data for each dataset across different splits (Train, Unlabeled, Dev, Test) and maximum input/target lengths.
+-
+
+Slide 7
+Timestamp: 347.46s
+------------------------------
+The slide features a large matrix diagram illustrating a systematic study design. The matrix is divided into two sections: "Realistic Setup" and "Extreme Setup." The "Realistic Setup" section is larger and contains more configurations. The matrix has eight columns representing different dimensions of the study: Architecture, Pruning, Objective, Pre-training Techniques (PTs), Unlabeled Data Usage, Number of Pre-training Tasks, Decoding Strategy, and Joint Teaching. Each cell within the matrix represents a specific configuration, with text labels indicating the options chosen for each dimension.
+-
+
+Slide 8
+Timestamp: 350.96s
+------------------------------
+- **Slide Content Analysis:**
+
+- **Main topic:** This slide outlines a recipe or set of recommendations for performing knowledge distillation.
+
+- **Visual elements:**
+    * Numbered list of recommendations.
+    * A person is visible in the lower right corner of the slide.
+
+- **Notable text:**
+    * Title: "Knowledge Distillation Recipe"
+    * Highlighted terms: "Encoder-decoder model," "Prune the decoder layers," "Logits KD," "Joint-Teaching," "PTs" (likely an abbreviation for "Pseudo-labels" or "Prompted Text").
+    * Example LM: "GPT-4"
+    * Abbreviation: "LM" (Language Model)
+-
+
+Total slides processed: 8

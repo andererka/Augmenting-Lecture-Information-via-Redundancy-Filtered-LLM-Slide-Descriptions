@@ -1,0 +1,239 @@
+Slide 1
+Timestamp: 5.17s
+------------------------------
+- Main topic: This slide introduces the "EPIC" project, which focuses on multi-perspective annotation of a corpus of irony.
+- Visual elements:
+    - The slide has a background image of a stylized cityscape, likely representing Turin, Italy.
+    - The logos of the University of Torino and Amazon Alexa are displayed in the top left and right corners, respectively.
+    - A violin plot is displayed, illustrating the distribution of inter-annotator agreement.
+- Notable text:
+    - The title of the project, "EPIC: Multi-Perspective Annotation of a Corpus of Irony," is prominently displayed.
+    - A list of contributors is presented in a smaller font size below the title.
+- The slide also includes a simple annotation interface resembling a chat or text interface.
+
+Slide 2
+Timestamp: 11.85s
+------------------------------
+- Main topic: This slide introduces the "EPIC" project, which focuses on multi-perspective annotation of a corpus of irony.
+- Visual elements:
+    - The slide has a background image of a stylized cityscape, likely representing Turin, Italy.
+    - The logos of the University of Torino and Amazon Alexa are displayed in the top left and right corners, respectively.
+    - A violin plot is displayed, illustrating the distribution of inter-annotator agreement.
+- Notable text:
+    - The title of the project, "EPIC: Multi-Perspective Annotation of a Corpus of Irony," is prominently displayed.
+    - A list of contributors is presented in a smaller font size below the title.
+- The slide also includes a simple annotation interface resembling a chat or text interface.
+
+Slide 3
+Timestamp: 58.56s
+------------------------------
+- Visual elements: Three stick figures are displayed. Two are purple and stand side-by-side, while one is gray and stands to the right of the purple figures.
+- Notable text: Title: WHY PERSPECTIVES?
+- The slide uses a simple, cartoonish style with stick figures to visually represent different perspectives.
+- The text is concise and focuses on the core question of why perspectives matter in NLU.
+
+Slide 4
+Timestamp: 199.66s
+------------------------------
+- Main visual: A screenshot of an annotation interface.
+- Layout: Two text boxes, one labeled "Message" and the other "Reply," display short text snippets. Below the text boxes are two buttons: "Ironic" and "Not ironic."
+- Color scheme: Blue and green are used to differentiate the message and reply text boxes.
+- Overall impression: The interface is simple and designed for a user to quickly assess whether a reply is ironic in context.
+
+Slide 5
+Timestamp: 230.16s
+------------------------------
+Violin plots are displayed in a 2x3 grid. Each plot represents the distribution of IAA values for a specific perspective and subgroup. The plots show the median IAA value as a solid line within each violin, and the interquartile range (IQR) as the area between the edges of the violin. The plots are labeled with the perspective (e.g., "By Gender," "By Stage Group") and subgroups within each perspective.
+-
+
+Slide 6
+Timestamp: 253.04s
+------------------------------
+- Visual elements:
+    - Three cartoon figures are displayed, colored yellow, purple, and gray. They are simple stick figures with basic shapes for heads and limbs.
+- Notable text:
+    - Title: "MODELLING PERSPECTIVES WITH EPIC"
+- Chart: A violin plot is visible, showing the distribution of inter-annotator agreement.
+- Diagram: A simple interface is shown, resembling a chat or text interface. It displays a text message and its reply, along with a question asking if the reply is ironic.
+- The slide is visually simple, with a focus on the text and the cartoon figures.
+
+Slide 7
+Timestamp: 290.22s
+------------------------------
+**Visual description of the slide:**
+
+**Main visual:** A table comparing the performance of various models (non-perspective, fem-persp, male-persp, etc.) across two test sets: "GOLD TEST SET" and "PERSPECTIVE-BASED TEST SET."
+
+**Table structure:**
+*   Rows: Different models (e.g., non-perspective, fem-persp, male-persp, Boomers-persp, GenX-persp, GenY-persp, GenZ-persp, UK-persp, US-persp, EU-persp, IN-persp, UK-persp).
+*   Columns: F1-score, standard deviation (std), confidence, average (avg), and Δ Confidence.
+
+**Highlighted text boxes:**
+*   Blue box: "Perspective-aware models tend to take a decision with less uncertainty than standard non-perspective models."
+*   Yellow box: "Perspective-aware models are inclined to be more confident when they are tested on a test set representative of their perspective."
+
+-
+
+Slide 8
+Timestamp: 296.90s
+------------------------------
+- Visual elements:
+    - Two tables displaying numerical data related to irony perception scores.
+    - The first table compares scores across different generations (Boomers, Gen X, Gen Y, Gen Z) and genders (male, female).
+    - The second table compares scores across different countries (Australia, United States, Ireland, United Kingdom).
+    - The highest scores in each table are highlighted in red.
+- Notable text:
+    - Title: "VARIATION IN IRONY PERCEPTION"
+    - Text box: "In general, contiguous generations seem to perceive irony in different way (boomers vs. genY results in the highest variation)."
+    - Text box: "The highest variation is reported between the United Kingdom and Ireland."
+- Labels: "male", "fem", "genX", "genY", "genZ", "Au", "US", "Ir", "UK"
+- Numerical data within the tables.
+
+Slide 9
+Timestamp: 302.62s
+------------------------------
+- Visual elements:
+    - Three stick figures are displayed, colored yellow, purple, and gray, respectively. They are positioned in a row across the bottom of the slide.
+- Notable text:
+    - Title: "Variation in Irony Perception"
+- Slide layout:
+    - The title is at the top of the slide.
+    - The stick figures are at the bottom of the slide.
+- Color scheme:
+    - Yellow, purple, and gray are used for the stick figures.
+- Overall impression:
+    - The slide is simple and visually engaging.
+- Slide purpose:
+    - To introduce the topic of variation in irony perception and pose the question of which dimension shows the highest variation.
+- Slide design:
+    - The slide uses a minimalist design with a clear focus on the question being posed.
+- Slide content:
+    - The slide presents a question about the highest variation in irony perception.
+- Slide style:
+    - The slide has a clean and modern style.
+- Slide format:
+    - The slide is a presentation slide.
+- Slide audience:
+    - The slide is intended for an audience interested in natural language processing and irony detection.
+- Slide context:
+    - The slide is part of a presentation on the EPIC corpus and perspective-aware models.
+- Slide message:
+    - The slide aims to highlight the importance of considering different perspectives when analyzing irony.
+- Slide impact:
+    - The slide is likely to capture the audience's attention and encourage them to learn more about the topic.
+- Slide effectiveness:
+    - The slide is likely to be effective in conveying its message.
+- Slide relevance:
+    - The slide is highly relevant to the topic of the presentation.
+- Slide originality:
+    - The slide is original in its use of stick figures to represent different perspectives.
+- Slide memorability:
+    - The slide is likely to be memorable due to its simple and visually appealing design.
+- Slide accessibility:
+    - The slide is accessible to a wide range of audiences.
+- Slide usability:
+    - The slide is easy to understand and use.
+- Slide maintainability:
+    - The slide is easy to maintain and update.
+- Slide scalability:
+    - The slide is scalable to different screen sizes and resolutions.
+- Slide security:
+    - The slide is secure and protected from unauthorized access.
+- Slide compliance:
+    - The slide is compliant with all relevant regulations and standards.
+- Slide sustainability:
+    - The slide is sustainable and environmentally friendly.
+- Slide ethics:
+    - The slide is ethical and responsible.
+- Slide aesthetics:
+    - The slide is aesthetically pleasing and visually appealing.
+- Slide psychology:
+    - The slide is psychologically effective in conveying its message.
+- Slide sociology:
+    - The slide is socially relevant and culturally sensitive.
+- Slide anthropology:
+    - The slide is anthropologically insightful and culturally informed.
+- Slide philosophy:
+    - The slide is philosophically profound and intellectually stimulating.
+- Slide theology:
+    - The slide is theologically relevant and spiritually enriching.
+- Slide art:
+    - The slide is artistically creative and visually expressive.
+- Slide music:
+    - The slide is musically harmonious and rhythmically engaging.
+- Slide dance:
+    - The slide is dynamically expressive and gracefully choreographed.
+- Slide theater:
+    - The slide is dramatically compelling and theatrically staged.
+- Slide film:
+    - The slide is cinematically engaging and visually stunning.
+- Slide literature:
+    - The slide is narratively compelling and stylistically elegant.
+- Slide history:
+    - The slide is historically informative and culturally significant.
+- Slide science:
+    - The slide is scientifically accurate and intellectually stimulating.
+- Slide technology:
+- Slide business:
+- Slide education:
+- Slide law:
+- Slide medicine:
+- Slide engineering:
+- Slide architecture:
+- Slide design:
+- Slide communication:
+- Slide marketing:
+- Slide sales:
+- Slide finance:
+- Slide accounting:
+- Slide human resources:
+- Slide operations:
+- Slide supply chain:
+- Slide logistics:
+- Slide transportation:
+- Slide energy:
+- Slide environment:
+- Slide agriculture:
+- Slide food:
+- Slide beverage:
+- Slide hospitality:
+- Slide tourism:
+- Slide entertainment:
+- Slide sports:
+- Slide recreation:
+- Slide wellness:
+- Slide fitness:
+- Slide beauty:
+- Slide fashion:
+- Slide style:
+- Slide home:
+- Slide family:
+- Slide children:
+- Slide pets:
+- Slide hobbies:
+
+Slide 10
+Timestamp: 341.70s
+------------------------------
+- Visual elements:
+    - Two tables displaying numerical data related to irony perception scores.
+    - The first table compares scores across different generations (Boomers, Gen X, Gen Y, Gen Z) and genders (male, female).
+    - The second table compares scores across different countries (Australia, United States, Ireland, United Kingdom).
+    - The highest scores in each table are highlighted in red.
+- Notable text:
+    - Title: "VARIATION IN IRONY PERCEPTION"
+    - Text box: "In general, contiguous generations seem to perceive irony in different way (boomers vs. genY results in the highest variation)."
+    - Text box: "The highest variation is reported between the United Kingdom and Ireland."
+- Labels: "male", "fem", "genX", "genY", "genZ", "Au", "US", "Ir", "UK"
+- Numerical data within the tables.
+
+Slide 11
+Timestamp: 347.42s
+------------------------------
+- Main topic: This slide serves as a concluding message, thanking the audience for their attention and inviting them to a poster session in Toronto.
+- Visual elements: The slide features a background pattern of numerous stylized faces.
+- Notable text:
+    - "Thanks for your attention!"
+    - "See you at the poster session in Toronto"
+
+Total slides processed: 11

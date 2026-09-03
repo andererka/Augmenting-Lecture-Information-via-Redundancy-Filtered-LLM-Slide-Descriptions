@@ -1,0 +1,22 @@
+metric,condition_a,condition_b,n_a,n_b,mean_a,mean_b,mean_diff,statistic,p_raw,p_adj,significant
+uniqueness,Gemma-Eff-P1,Gemma-Full-P1,2080,2376,0.7916,0.7393,0.0523,3220373.5,0.0,0.0,True
+uniqueness,Gemma-Eff-P1,Gemma-Eff-P2,2080,2231,0.7916,0.7656,0.026,2633855.5,0.0,0.0,True
+uniqueness,Gemma-Eff-P1,Gemma-Full-P2,2080,3261,0.7916,0.782,0.0096,3584572.5,0.0004,0.0006,True
+uniqueness,Gemma-Eff-P1,MS v1,2080,1444,0.7916,0.7667,0.0249,1701598.5,0.0,0.0,True
+uniqueness,Gemma-Eff-P1,MS v2,2080,1053,0.7916,0.791,0.0006,1079074.0,0.5023,0.5552,False
+uniqueness,Gemma-Eff-P1,MS v3,2080,2118,0.7916,0.7861,0.0055,2208575.0,0.8815,0.9256,False
+uniqueness,Gemma-Full-P1,Gemma-Eff-P2,2376,2231,0.7393,0.7656,-0.0263,2212678.0,0.0,0.0,True
+uniqueness,Gemma-Full-P1,Gemma-Full-P2,2376,3261,0.7393,0.782,-0.0427,2907032.5,0.0,0.0,True
+uniqueness,Gemma-Full-P1,MS v1,2376,1444,0.7393,0.7667,-0.0275,1435761.5,0.0,0.0,True
+uniqueness,Gemma-Full-P1,MS v2,2376,1053,0.7393,0.791,-0.0517,870885.5,0.0,0.0,True
+uniqueness,Gemma-Full-P1,MS v3,2376,2118,0.7393,0.7861,-0.0468,1790195.0,0.0,0.0,True
+uniqueness,Gemma-Eff-P2,Gemma-Full-P2,2231,3261,0.7656,0.782,-0.0164,3345784.5,0.0,0.0,True
+uniqueness,Gemma-Eff-P2,MS v1,2231,1444,0.7656,0.7667,-0.0012,1610342.0,0.9888,0.9888,False
+uniqueness,Gemma-Eff-P2,MS v2,2231,1053,0.7656,0.791,-0.0254,1006733.0,0.0,0.0,True
+uniqueness,Gemma-Eff-P2,MS v3,2231,2118,0.7656,0.7861,-0.0206,2061717.0,0.0,0.0,True
+uniqueness,Gemma-Full-P2,MS v1,3261,1444,0.782,0.7667,0.0152,2541509.5,0.0,0.0,True
+uniqueness,Gemma-Full-P2,MS v2,3261,1053,0.782,0.791,-0.009,1601688.5,0.001,0.0013,True
+uniqueness,Gemma-Full-P2,MS v3,3261,2118,0.782,0.7861,-0.0041,3274199.5,0.0013,0.0016,True
+uniqueness,MS v1,MS v2,1444,1053,0.7667,0.791,-0.0242,652979.0,0.0,0.0,True
+uniqueness,MS v1,MS v3,1444,2118,0.7667,0.7861,-0.0194,1338252.0,0.0,0.0,True
+uniqueness,MS v2,MS v3,1053,2118,0.791,0.7861,0.0049,1133955.5,0.4381,0.5111,False

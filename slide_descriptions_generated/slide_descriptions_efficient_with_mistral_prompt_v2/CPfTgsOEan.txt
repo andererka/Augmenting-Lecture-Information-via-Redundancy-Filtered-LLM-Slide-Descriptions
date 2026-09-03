@@ -1,0 +1,36 @@
+Here is the rewritten slide description with only information not fully conveyed by the transcript:
+
+---
+
+**Slide Analysis:**
+
+**Title:** Experiment
+
+**Dataset**
+
+*   **Cross-dataset**
+    *   MSVD
+    *   MSR-VTT +
+
+*   **Cross-domain**
+    *   Animation
+    *   Music
+    *   Animal
+    *   Kids
+    *   Beauty
+
+**Table:**
+
+| Domain |  $D_{meta-train}$ | Domain | $D_{meta-test}$ |
+|---|---|---|---|
+| News | 1727 | Animation | 816 |
+| Movie | 1652 | Music | 733 |
+| Sports | 1623 | Animal | 613 |
+| Cooking | 985 | Kids | 558 |
+| Traffic | 815 | Beauty | 478 |
+
+**Other visual elements:**
+* The slide has a blue header bar with the title "Experiment" in white text.
+* The Zhejiang University logo is present in the top right corner.
+* The table uses bold formatting for the domain names and italicized notation for the dataset labels ($D_{meta-train}$ and $D_{meta-test}$).
+* The slide has a clean, white background.

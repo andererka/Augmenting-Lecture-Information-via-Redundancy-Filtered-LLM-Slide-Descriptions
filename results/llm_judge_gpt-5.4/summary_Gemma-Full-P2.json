@@ -1,0 +1,31 @@
+{
+  "llm_judge": {
+    "avg": 0.5472,
+    "correct_1.0": 22,
+    "partial_0.5": 14,
+    "wrong_0.0": 17,
+    "total": 53
+  },
+  "llm_judge_by_qa_type": {
+    "V": {
+      "avg": 0.0,
+      "count": 1
+    },
+    "formula-extraction": {
+      "avg": 0.5,
+      "count": 3
+    },
+    "graph-related": {
+      "avg": 0.5,
+      "count": 23
+    },
+    "table-extraction": {
+      "avg": 0.5,
+      "count": 9
+    },
+    "text-extraction": {
+      "avg": 0.6765,
+      "count": 17
+    }
+  }
+}

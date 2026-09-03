@@ -1,0 +1,78 @@
+Here is the rewritten slide description containing only information not derivable from the transcript alone:
+
+---
+
+**Slide 1 & 2**
+- **Author affiliations** are listed with asterisks indicating different contributions:
+  - *StarNLP Research Group, Singapore University of Technology and Design
+  - **Institute of High Performance Computing (HPCC), A*STAR Singapore
+  - *School of Computing, National University of Singapore
+  - *Meta Design Lab, Singapore University of Technology and Design
+
+---
+
+**Slide 3**
+- **Visual style of the three example images**:
+  - Image 1: A detailed, slightly surreal digital painting of a vintage espresso machine with a cup of coffee and a glass of water on a wooden table against a dark, blurred background.
+  - Image 2: A whimsical, colorful cartoon-style illustration of a panda wearing a lab coat and goggles, holding a beaker with bubbling green liquid, standing at a workbench with scientific equipment.
+  - Image 3: A dramatic, artistic illustration of a corgi dog’s head rendered in fiery, abstract flames emanating from its fur and features.
+
+---
+
+**Slide 4**
+- **The person in the bottom right corner** is a young woman with dark hair, wearing a white shirt.
+
+---
+
+**Slide 5**
+- **The person in the bottom right corner** is facing slightly to the left.
+
+---
+
+**Slide 6**
+- **The floor plan legend** is explicitly labeled with room types and colors:
+  - Living Room (Pink)
+  - Common Area (Yellow)
+  - Kitchen (Green)
+  - Bath Room (Blue)
+  - Master Bedroom (Orange)
+  - Balcony (Purple)
+
+---
+
+**Slide 7**
+- **Table 2** includes numerical IoU scores for each model under different training conditions:
+  - Training on artificial instructions only:
+    - Obj-GAN: Micro IoU 15.74, Macro IoU 11.12
+    - CogView: Micro IoU 10.01, Macro IoU 8.31
+    - Imagen: Micro IoU 14.74, Macro IoU 15.57
+    - T2D (w/o bd): Micro IoU 6.46, Macro IoU 4.01
+    - T2D: Micro IoU 9.13, Macro IoU 6.06
+  - Training on human instructions only:
+    - Obj-GAN: Micro IoU 10.72, Macro IoU 8.29
+    - CogView: Micro IoU 13.48, Macro IoU 11.26
+    - Imagen: Micro IoU 9.29, Macro IoU 6.64
+    - T2D (w/o bd): Micro IoU 32.22, Macro IoU 26.24
+    - T2D: Micro IoU 42.93, Macro IoU 38.48
+  - Warm up on artificial + fine-tune on human:
+    - Obj-GAN: Micro IoU 10.68, Macro IoU 8.44
+    - CogView: Micro IoU 13.30, Macro IoU 11.43
+    - Imagen: Micro IoU 12.17, Macro IoU 14.96
+    - T2D (w/o bd): Micro IoU 35.95, Macro IoU 29.95
+    - T2D: Micro IoU 54.34, Macro IoU 51.30
+
+---
+
+**Slide 8**
+- **The floor plans in Figure 10** are presented in a grid layout with distinct color schemes for each model:
+  - Obj-GAN: One color scheme (e.g., shades of blue)
+  - CogView: Another color scheme (e.g., shades of green)
+  - Imagen: Another color scheme (e.g., shades of orange)
+  - Tell2Design: Another color scheme (e.g., shades of purple)
+  - Ground Truth: A reference layout with its own color scheme
+- **The human instructions** are formatted as a numbered list with specific room descriptions and measurements in square meters.
+
+---
+
+**Slide 9**
+- **The person in the bottom right corner** is a young woman with long dark hair, wearing a white t-shirt, looking down and to the right.

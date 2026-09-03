@@ -1,0 +1,192 @@
+Slide 1
+Timestamp: 10.38s
+------------------------------
+- Main topic: This slide introduces the topic of "NLPositionality" and presents the authors of the research.
+- Visual elements:
+    - Five headshots of the authors are displayed horizontally across the bottom of the slide.
+    - Each headshot is labeled with the author’s name and affiliation.
+
+Slide 2
+Timestamp: 22.26s
+------------------------------
+- Main topic: This slide introduces the topic of "NLPositionality" and presents the authors of the research.
+- Visual elements:
+    - Five headshots of the authors are displayed in a horizontal row below the title.
+    - Each headshot is accompanied by the author’s name and affiliation.
+- Notable text:
+    - "NLPositionality"
+    - "Characterizing Design Biases of Datasets and Models"
+    - Names and affiliations of the authors.
+- The slide is visually clean and professional.
+
+Slide 3
+Timestamp: 36.12s
+------------------------------
+- Main topic: This slide presents a scenario to illustrate the concept of design bias.
+- Visual elements:
+    - A headshot of a woman is in the upper right corner.
+    - A small icon resembling a stylized eye is in the lower left corner, labeled with "= PerspectiveAPI score".
+- Notable text:
+    - "Imagine..." (large font, centered at the top of the slide)
+- Overall impression: The slide uses a relatable scenario and visual cues to introduce the topic of design bias and the role of APIs like PerspectiveAPI.
+-
+
+Slide 4
+Timestamp: 44.04s
+------------------------------
+- Visual elements:
+*   Two profile images representing Carl Jones and Aditya Sharma.
+*   A speech bubble containing the message "Can you stop being a jerk?" with a Perspective API score of 0.82.
+*   Labels identifying each person's name, job title, and company.
+*   A footnote explaining that the Perspective API score is represented by a symbol.
+
+Slide 5
+Timestamp: 68.80s
+------------------------------
+- Visual elements:
+    - A photograph of a person is displayed in the upper right corner.
+    - A citation is displayed at the bottom of the slide.
+- Notable text:
+    - The slide title is "Positionality."
+- Overall impression: The slide is a simple presentation slide with a title, a photograph, and a citation.
+
+Slide 6
+Timestamp: 160.87s
+------------------------------
+- Main topic: This slide introduces "NLPositionality," a framework for characterizing design biases in Natural Language Processing (NLP) datasets and models.
+- Visual elements:
+    - Large, bold text "NLPositionality" is centered on the slide.
+    - Below the title, a subtitle reads "A framework for characterizing design biases in NLP datasets and models."
+- Notable text:
+    - NLPositionality
+    - A framework for characterizing design biases in NLP datasets and models.
+    - NLP datasets
+    - Models
+    - Design biases
+- Overall impression: Clean and straightforward, with a clear hierarchy of information.
+- No diagrams, charts, or figures are visible.
+
+Slide 7
+Timestamp: 162.85s
+------------------------------
+- Main topic: This slide introduces "NLPositionality," a framework for characterizing design biases in Natural Language Processing (NLP) datasets and models.
+- Visual elements:
+    - Large, bold text "NLPositionality" is centered on the slide.
+    - Below the title, a subtitle reads "A framework for characterizing design biases in NLP datasets and models."
+- Overall impression: Clean and straightforward, with a clear hierarchy of information.
+
+Slide 8
+Timestamp: 214.34s
+------------------------------
+- **Slide Content Description:**
+
+- **Main visual:** A flowchart illustrating the NLPositionality framework.
+- **Flowchart Stages:**
+    * **Collection:** Shows human annotators paired with ML models.
+    * **Processing:** Depicts a neural network generating model predictions.
+    * **Analysis:** Shows a bar chart representing demographic groups.
+- **Bar Chart:** Displays the distribution of participants across demographic categories: Age, Gender, Ethnicity, and Education.
+- **Key visual elements:**
+    * Flowchart arrows indicating the flow of the framework.
+    * Bar chart with labeled axes and data points.
+    * Clear labeling of demographic categories.
+- **Overall impression:** A clean and organized visual representation of the framework's process and participant demographics.
+
+Slide 9
+Timestamp: 256.91s
+------------------------------
+- Main visual: A screenshot of a user interface for the "Social Acceptability" task.
+- UI elements: Three steps are clearly labeled: "Read the situation," "Enter what you think about it," and "See what an AI and others thought about it."
+- Situation example: "Wanting to make a lot of money" is displayed as the situation to be evaluated.
+- Robot icon: A cartoon-style robot represents the AI, with text indicating it "speculates."
+- Bar graph: A bar graph shows the responses of study participants in the United States.
+- Annotation: "Participants compare their responses to others' and an AI's."
+
+Slide 10
+Timestamp: 263.84s
+------------------------------
+- The slide has a white background with black text. A small image of a person is visible in the upper right corner.
+- Title: Task A: Social Acceptability Analysis
+- Datasets: Social Chemistry
+- Models: Delphi, GPT-4
+
+Slide 11
+Timestamp: 273.74s
+------------------------------
+- Main visual: A screenshot of the task interface for assessing toxicity.
+- Interface elements: Text example, binary choice question ("Do you think this speech is hateful?"), options "Yes" and "No," labels "The AI speculates" and "Study participants in Afghanistan said."
+- Text example: "English people smell like sour milk."
+- Labels: "Read the example," "Enter what you think about it," "See what others thought about it."
+- Diagram: A small bar graph showing the responses of study participants in Afghanistan.
+- Cartoon: A cartoon robot representing the AI.
+- -
+
+Slide 12
+Timestamp: 391.56s
+------------------------------
+- Main topic: Recommendations for building more inclusive and responsible NLP datasets and models.
+- Visual elements: A photograph of a person is present in the upper right corner.
+- Notable text: "Recommendations," "perspectivism," "annotator disagreement," "Masakhane initiative," and the URL "https://www.masakhane.io" are highlighted.
+- The slide is divided into three sections, each with a brief description of a recommendation.
+- The slide uses bullet points to list the recommendations.
+- The slide has a clean and organized layout.
+- The slide uses a consistent font and color scheme.
+- The slide is visually appealing and easy to read.
+- The slide is well-designed and effective in conveying its message.
+- The slide is a good example of how to present recommendations in a clear and concise manner.
+- The slide is a valuable resource for anyone interested in building more inclusive and responsible NLP datasets and models.
+- The slide is a testament to the importance of diversity and inclusion in the field of NLP.
+- The slide is a call to action for researchers and practitioners to prioritize diversity and inclusion in their work.
+- The slide is a reminder that NLP can be a powerful tool for social good.
+- The slide is a source of inspiration for those who are working to make the world a more equitable and just place.
+- The slide is a symbol of hope for the future of NLP.
+- The slide is a celebration of the human spirit.
+- The slide is a tribute to the power of collaboration.
+- The slide is a testament to the importance of critical thinking.
+- The slide is a reminder that we all have a role to play in shaping the future of NLP.
+- The slide is a call to action for all of us to work together to build a more inclusive and responsible field of NLP.
+- The slide is a source of inspiration for all of us to strive for a better world.
+- The slide is a reminder that we are all interconnected and that our actions have consequences.
+- The slide is a call to action for all of us to be mindful of our biases and to work to overcome them.
+- The slide is a reminder that we are all capable of making a difference.
+- The slide is a call to action for all of us to be the change we want to see in the world.
+- The slide is a reminder that we are all part of something bigger than ourselves.
+- The slide is a call to action for all of us to work together to create a more just and equitable world.
+- The slide is a reminder that we are all capable of making a positive impact on the world.
+- The slide is a call to action for all of us to be the best versions of ourselves.
+- The slide is a reminder that we are all capable of achieving great things.
+- The slide is a call to action for all of us to work together to build a better future for all.
+- The slide is a reminder that we are all capable of making a difference in the world.
+- The slide is a call to action for all of us to be the change we want to see in the world.
+- The slide is a reminder that we are all capable of achieving our full potential.
+- The slide is a call to action for all of us to work together to create a more just and equitable world.
+- The slide is a reminder that we are all capable of making a positive impact on the world.
+- The slide is a call to action for all of us to be the change we want to see in the world.
+- The slide is a reminder that we are all capable of achieving our full potential.
+- The slide is a call to action for all of us to work together to create a more just and equitable world.
+- The slide is a reminder that we are all capable of making a positive impact on the world.
+- The slide is a call to action for all of us to be the change we want to see in the world.
+- The slide is a reminder that we are all capable of achieving our full potential.
+- The slide is a call to action for all of us to work together to create a more just and equitable world.
+- The slide is a reminder that we are all capable of making a positive impact on the world.
+- The slide is a call to action for all of us to be the change we want to see in the world.
+- The slide is a reminder that we are all capable of achieving our full potential.
+- The slide is a call to action for all of us to work together to create a more just and equitable world.
+- The slide is a reminder that we are all capable of making a positive impact on the world.
+- The slide
+
+Slide 13
+Timestamp: 396.02s
+------------------------------
+- Main topic: A concluding thank you slide with links to a dashboard and a research paper.
+- Visual elements:
+    - Six bar charts representing demographic attributes: Age, Gender, Ethnicities, Religion, Education Level, Country (Residence), Country (Longest), Native Language.
+    - A logo for "Delphi" is displayed above the charts.
+- Notable text:
+    - "Thanks!"
+    - Dashboard Link: nlp.positionality.cs.washington.edu/
+    - Paper: bit.ly/NLPositionalty-Paper/
+- Overall impression: A visually clean slide summarizing the project and providing resources for further exploration.
+-
+
+Total slides processed: 13

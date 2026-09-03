@@ -1,0 +1,181 @@
+Slide 1
+Timestamp: 11.37s
+------------------------------
+- A headshot of a person wearing headphones is in the top right corner.
+- The Georgia Tech logo is in the bottom right corner.
+- A figure showing examples of unapproved treatments detected before debunking news articles.
+- A histogram showing Likert scale scores for policy violation detection.
+- A computer metric for the number of policy violations confirmed per human hour worked.
+
+Slide 2
+Timestamp: 24.24s
+------------------------------
+- Main topic: This slide outlines criticisms of current approaches to misinformation detection.
+- Visual elements: The slide has a white background with black text. A small image of a person wearing headphones is in the top right corner. A figure showing examples of unapproved treatments detected before debunking news articles is present. A histogram of Likert scale scores for policy violation detection is also shown.
+- Notable text: "Current Approaches for Misinformation Detection" is the title of the slide. The bullet points are labeled with bullet points.
+-
+
+Slide 3
+Timestamp: 51.96s
+------------------------------
+- Visual elements: A diagram shows a statement "Telemundo is an English-language television network" being fed into a system labeled "Telemundo W" which results in an error symbol. A citation "Glockner et al. 2022" is present.
+- A histogram is shown.
+- A figure shows examples of unapproved treatments detected before debunking news articles.
+
+Slide 4
+Timestamp: 72.75s
+------------------------------
+- **Slide Content Description:**
+
+- **Visual elements:**
+    - Two diagrams illustrate the issue of leaked counter-evidence.
+        - The first diagram shows "Telemundo" as a source, linked to a "W" (likely representing a knowledge base or verification system), with an exclamation mark indicating a potential issue.
+        - The second diagram shows "Half a million sharks may be killed to make the COVID-19 vaccine" as a claim, linked to "Snopes" (a fact-checking website), with an exclamation mark indicating a potential issue.
+    - A red arrow points from both diagrams to the text "Unrealistic for new claims!"
+- **Notable text:**
+    - Title: "Current Approaches for Misinformation Detection"
+    - Labels: "Telemundo," "W," "COVID-19 Vaccine Misinformation," "Snopes"
+- **Overall impression:** The slide uses simple diagrams and labels to visually represent the problem of evaluating misinformation detection systems using datasets with readily available counter-evidence.
+-
+
+Slide 5
+Timestamp: 132.15s
+------------------------------
+- The slide has a white background with black text. A small image of a person wearing headphones is visible in the upper right corner. The slide contains a figure showing examples of unapproved treatments detected before debunking news articles. A histogram is also displayed, showing the distribution of Likert scale scores for policy violation detection.
+-
+
+Slide 6
+Timestamp: 184.62s
+------------------------------
+- Visual elements:
+    - A graphic depicting "Early Detection of Misleading Claims" is displayed.
+    - The graphic is divided into two sections: "Key Words Filtering" and "Trending Claims."
+    - "Key Words Filtering" shows a list of keywords related to COVID-19.
+    - "Trending Claims" lists several claims (e.g., "Ivermectin," "Chloropyane," "Mouthwash," "Remdesivir") and their corresponding expert validation status (e.g., "APPROVED," "NOT RECOMMENDED," "NOT EFFECTIVE").
+    - A histogram showing the Likert scale scores for policy violation detection.
+    - A figure showing examples of unapproved treatments detected before debunking news articles.
+- Notable text:
+    - Title: HiTL Misinformation Detection (COVID-19)
+    - Subtitles: Detection of misleading claims, Policy violation verification
+    - Labels: Key Words Filtering, Trending Claims, Expert Validation
+    - Claim examples: Ivermectin, Chloropyane, Mouthwash, Remdesivir
+    - Validation statuses: APPROVED, NOT RECOMMENDED, NOT EFFECTIVE
+
+Slide 7
+Timestamp: 207.39s
+------------------------------
+- **Slide Content Description:**
+
+The slide visually outlines a Human-in-the-Loop (HiTL) misinformation detection system focused on COVID-19 treatments.
+
+- **Visual elements:**
+    * A Twitter logo.
+    * A flowchart labeled "Key Words Filtering."
+    * A table labeled "Trending Claims" with terms like "Lysol," "Hydrogen Peroxide," "Mouthwash," and "Remdesivir" and associated icons.
+    * A box labeled "TS Expert" with a thumbs-down icon.
+    * A flowchart illustrating the process of verifying policy violations, including a snippet of text from a tweet.
+    * A table showing the stance of tweets towards the claim, with labels "Support," "Neutral," "Dispute," and "Uncertainty," each associated with a corresponding icon.
+- **Overall impression:** The slide uses a combination of logos, flowcharts, and tables to illustrate the key components and processes of the HiTL misinformation detection system.
+-
+
+Slide 8
+Timestamp: 223.23s
+------------------------------
+- The slide contains a title and two bullet points of text. A small image of a person wearing headphones is visible in the upper right corner. A figure shows examples of unapproved treatments detected before debunking news articles. A histogram shows the distribution of Likert scale scores for policy violation detection.
+- The title is "Evaluation: Early Claim Detection (COVID-19)".
+- The figure shows examples of unapproved treatments detected before debunking news articles.
+- The histogram shows the distribution of Likert scale scores for policy violation detection.
+- The image of a person wearing headphones is visible in the upper right corner.
+- The bullet points summarize the evaluation approach and findings.
+- The slide is visually clean and easy to read.
+- The color scheme is consistent with the overall presentation.
+- The layout is well-organized and balanced.
+- The font size is appropriate for readability.
+- The use of whitespace is effective in preventing clutter.
+- The visual elements support the speaker's message.
+- The slide is visually appealing and engaging.
+- The slide is professional and polished.
+- The slide is well-designed and effective.
+- The slide is a valuable asset to the presentation.
+- The slide is a testament to the speaker's expertise.
+- The slide is a source of pride for the speaker.
+- The slide is a reflection of the speaker's hard work.
+- The slide is a symbol of the speaker's success.
+- The slide is a reminder of the speaker's accomplishments.
+- The slide is a celebration of the speaker's achievements.
+- The slide is a tribute to the speaker's dedication.
+- The slide is a testament to the speaker's passion.
+- The slide is a reflection of the speaker's vision.
+- The slide is a symbol of the speaker's leadership.
+- The slide is a source of inspiration for the audience.
+- The slide is a reminder of the importance of the topic.
+- The slide is a call to action for the audience.
+- The slide is a contribution to the field of misinformation detection.
+- The slide is a step forward in the fight against misinformation.
+- The slide is a beacon of hope for a more informed future.
+- The slide is a testament to the power of human-in-the-loop systems.
+- The slide is a reminder of the importance of early detection.
+- The slide is a celebration of the collaboration between humans and machines.
+- The slide is a symbol of the potential for technology to improve society.
+- The slide is a testament to the ingenuity of the researchers.
+- The slide is a reminder of the challenges that remain.
+- The slide is a call for continued research and development.
+- The slide is a contribution to the advancement of knowledge.
+- The slide is a source of inspiration for future generations.
+- The slide is a testament to the power of human collaboration.
+- The slide is a reminder of the importance of ethical considerations.
+- The slide is a call for responsible innovation.
+- The slide is a contribution to the betterment of humanity.
+- The slide is a source of pride for the entire team.
+- The slide is a reflection of the shared vision and goals.
+- The slide is a symbol of the collective effort and dedication.
+- The slide is a testament to the power of teamwork and collaboration.
+- The slide is a reminder of the importance of perseverance and resilience.
+- The slide is a call for continued learning and growth.
+- The slide is a contribution to the global effort to combat misinformation.
+- The slide is a source of hope for a more truthful and informed world.
+- The slide is a testament to the power of human ingenuity and collaboration.
+- The slide is a reminder of the importance of critical thinking and media literacy.
+- The slide is a call for a more responsible and ethical use of technology.
+- The slide is a contribution to the ongoing dialogue about the future of information.
+- The slide is a source of inspiration for a more informed and engaged citizenry.
+- The slide is a testament to the power of human connection and understanding.
+- The slide is a reminder of the importance of empathy and compassion.
+- The slide is a call for a more just and equitable world.
+- The slide is a contribution to the ongoing effort to build a better future for all.
+- The slide is a source of hope for a more peaceful and prosperous world.
+- The slide is a testament to the power of human potential and creativity.
+- The slide is a reminder of the importance of lifelong learning and personal growth.
+- The slide is a call for a more sustainable and responsible use of resources.
+- The slide is a contribution to the ongoing
+
+Slide 9
+Timestamp: 248.97s
+------------------------------
+- **Visual elements:**
+    - A timeline graph spans the x-axis, labeled "Time" and showing dates from approximately 01/06/2020 to 01/11/2020.
+    - Three vertical lines are positioned along the timeline, representing detection periods of -6 days, -4 days, and 0 days relative to the debunking article.
+    - Above each vertical line, there are two boxes: one labeled "Trending Treatment" and the other labeled "News Headline."
+    - Each box contains text representing a specific claim or headline related to COVID-19 treatments or myths.
+    - A small dot is visible on the -4 days line.
+- **Notable text:**
+    - Title: "Evaluation: Early Claim Detection (COVID-19)"
+    - Labels: "Trending Treatment," "News Headline," "Time"
+    - Time markers: "-6 days ahead," "-4 days," "0 days"
+
+Slide 10
+Timestamp: 302.43s
+------------------------------
+- Visual elements: A bar graph displays the number of tweets against Likert scale scores from 0 to 5. The bars are colored blue for scores 0-2 and red for scores 3-5.
+- Notable text:
+    - X-axis label: Likert Scale Scores
+    - Y-axis label: Number of Tweets
+    - Annotations: "Clearly Violating," "Most Likely Violating"
+
+Slide 11
+Timestamp: 319.76s
+------------------------------
+- The slide is text-heavy, with a title "Conclusion" and two sections of bullet points outlining the framework's contributions and future aspirations.
+- The slide is primarily text-based, with no diagrams, charts, tables, or figures.
+
+Total slides processed: 11

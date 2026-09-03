@@ -1,0 +1,144 @@
+**Slide 1**
+**Title:** NLPositionality: Characterizing Design Biases of Datasets and Models
+**Authors:**
+- Sebastian Santy (University of Washington)
+- Jenny T. Liang* (Carnegie Mellon University)
+- Ronan Le Bras (Allen Institute for AI)
+- Katharina Reinecke (University of Washington)
+- Maarten Sap (Carnegie Mellon University)
+
+**Visual Elements:**
+- Five headshots arranged horizontally below the title:
+  - Sebastian Santy: Man with short dark hair and beard, dark shirt.
+  - Jenny T. Liang: Woman with long dark hair, floral top.
+  - Ronan Le Bras: Man with short brown hair, light blue polo shirt.
+  - Katharina Reinecke: Woman with blonde hair, light-colored top.
+  - Maarten Sap: Man with short dark hair, purple sweater.
+
+---
+
+**Slide 3**
+**Title:** Imagine...
+**Text:** PerspectiveAPI score
+**Visual Elements:**
+- Small image of the speaker in the top right corner.
+- White background.
+
+---
+
+**Slide 4**
+**Title:** Imagine...
+**Text:**
+- Central text box: *"Can you stop being a jerk? 🤖 (0.82) ✅"*
+- Left avatar (Carl Jones): Male, red hair, white shirt with red tie. Text: *"Carl Jones, Tech Lead, New York Times"*
+- Right avatar (Aditya Sharma): Male, dark beard, white coat. Text: *"Aditya Sharma, Tech Lead, Times of India"*
+- Bottom label: *"🤖 = PerspectiveAPI score"*
+
+---
+
+**Slide 5**
+**Title:** Positionality
+**Text:**
+- Citation: Savin-Baden, Maggi, and Claire Howell-Major. *Qualitative research: The essential guide to theory and practice*. Routledge (2013).
+**Visual Elements:**
+- Image of a person sitting in front of a bookshelf.
+
+---
+
+**Slide 6 & 7**
+**Title:** NLPositionality
+**Subtitle:** A framework for characterizing design biases in NLP datasets and models
+
+---
+
+**Slide 8**
+**Title:** Framework
+**Sections:**
+1. **Collection**
+   - Diagram with three labeled images:
+     - *"Eating with Hands"* (options: Red, Green)
+     - *"Can you live with AI and its morals?"* (options: Red, Green)
+     - *"Eating with Hands"* (options: Red, Green, Yellow)
+   - Text: *"Annotate the world"*
+
+2. **Processing**
+   - Diagram showing a neural network and a table with model predictions and aggregated annotations.
+
+3. **Analysis**
+   - Text:
+     - *"Compare annotations by demographic to models and datasets via Pearson’s R scores."*
+     - *"Pearson’s correlation is measured between gold labels, model predictions, and annotations for each demographic separately."*
+   - Demographic categories with bar graphs:
+     - **Age:** <18, 18-25, 26-35, 36-44
+     - **Gender:** Man, Woman, Non-Binary
+     - **Ethnicity:** White, Black, Hispanic, Asian
+     - **Education:** Grad, Prof, College, School
+     - **Country:** USA, CAN, AUS, IND
+
+---
+
+**Slide 9**
+**Title:** Task A: Social Acceptability
+**Text:**
+1. Read the situation
+2. Enter what you think about it
+3. See what an AI and others thought about it!
+**Visual Elements:**
+- Screenshot of a web interface with three sections:
+  1. *"Wanting to make a lot of money."* (1/10 indicator)
+  2. Text input field with radio buttons: *"Admirable / Neutral / Unadmirable"* and a submit button.
+  3. *"The AI speculates"* (robot image with speech bubble text) and *"Study participants in the United States said"* (bar graph with frequencies for "Admirable," "Neutral," "Unadmirable").
+
+---
+
+**Slide 10**
+**Title:** Task A: Social Acceptability Analysis
+**Text:**
+- **Datasets:** Social Chemistry
+- **Models:** Delphi, GPT-4
+
+---
+
+**Slide 11**
+**Title:** Task B: Toxicity
+**Text:**
+1. Read the example
+2. Enter what you think about it
+3. See what others thought about it!
+**Visual Elements:**
+- Screenshot of a user interface:
+  1. Text box: *"English people smell like sour milk"* (7/29 indicator).
+  2. Radio buttons: *"Do you think this is hateful? Yes / No"* and a text box for reasoning.
+  3. *"The AI speculates"* (bar graph with "Rate Hateful" counts) and *"Study participants in Afghanistan said"* (bar graph with "Rate Hateful" counts).
+- Right-side text: *"Participants read an instance from the Dynahate dataset. Participants rate whether they think an instance is hate speech."*
+
+---
+
+**Slide 12**
+**Title:** Recommendations
+**Text:**
+1. Keep a record of all relevant design choices made throughout building datasets or models.
+2. Do NLP research through the lens of perspectivism:
+   a. Share disaggregated dataset labels!
+   b. Use modeling techniques that can handle annotator disagreement.
+3. Building specialized datasets and models with and for specific communities is valuable for inclusive NLP (e.g., Masakhane initiative).
+**Link:** [https://www.masakhane.io](https://www.masakhane.io)
+
+---
+
+**Slide 13**
+**Title:** Thanks!
+**Text:**
+- Dashboard Link: [nlpositionality.cs.washington.edu/](https://nlpositionality.cs.washington.edu/)
+- Paper Link: [bit.ly/NLPositionality-Paper](https://bit.ly/NLPositionality-Paper)
+**Visual Elements:**
+- Six bar graphs arranged in a 2x3 grid, representing:
+  1. **Age** (18-24, 25-34, 35-44, 45-54, 55-64, 65+)
+  2. **Gender** (Male, Female, Other)
+  3. **Ethnicities** (White, Asian, Black, Hispanic, Other)
+  4. **Religion** (Christian, Muslim, Hindu, Buddhist, Jewish, Other)
+  5. **Education Level** (High School, Bachelor's, Master's, PhD)
+  6. **Country (Residence)** (USA, Canada, UK, India, China, Other)
+  7. **Country (Longest)** (USA, China, India, UK, Canada, Other)
+  8. **Native Language** (English, Chinese, Spanish, Hindi, Arabic, Other)
+- Note: Graphs created using Delphi ([https://www.delphivisualizations.com/](https://www.delphivisualizations.com/)).
