@@ -1,6 +1,6 @@
 # Augmenting Lecture Information via Redundancy-Filtered LLM Slide Descriptions
 
-Data and results accompanying the paper (TODO: add link!). Lecture slide descriptions are generated
+Data and results accompanying the paper ([INLG 2026 accepted papers](https://2026.inlgmeeting.org/accepted-papers.html)). Lecture slide descriptions are generated
 by an LLM and then **redundancy-filtered** against the spoken transcript, so that
 the description retains only what a listener cannot get from the audio alone
 (diagrams, chart values, table numbers, formulas). The resulting descriptions are
